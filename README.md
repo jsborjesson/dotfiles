@@ -11,8 +11,10 @@
 	+ https://github.com/mathiasbynens/dotfiles/
 	+ https://github.com/paulirish/dotfiles
 
-+ Global gitignore
-
 + Bin-folder
 
 + Instructions for starting it up
+
++ Terminal eye-candy
+
++ z/fasd?
