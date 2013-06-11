@@ -12,9 +12,16 @@
 	+ https://github.com/paulirish/dotfiles
 
 + Bin-folder
-
-+ Instructions for starting it up
-
 + Terminal eye-candy
++ py3
 
-+ z/fasd?
+## Setup
+
+```bash
+source bootstrap.sh
+```
+
+## Descriptions
+
++ `bootstrap.sh` syncs the files with their correct locations, then sources .bash_profile
++ `.bash_profile`
