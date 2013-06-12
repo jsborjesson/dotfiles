@@ -10,10 +10,12 @@
 + Give cred to the people I'm ripping off
 	+ https://github.com/mathiasbynens/dotfiles/
 	+ https://github.com/paulirish/dotfiles
+	+ https://github.com/gf3/dotfiles
 
 + Bin-folder
-+ Terminal eye-candy
 + py3
++ osx -file
+	+ disable open-file-warnings
 
 ## Setup
 
