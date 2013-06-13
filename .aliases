@@ -2,7 +2,7 @@
 alias ..="cd .."
 
 # shortcuts
-alias p="cd ~/Projects"
+alias s="subl ."
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
