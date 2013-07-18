@@ -1,8 +1,0 @@
-# navigation
-alias ..="cd .."
-
-# shortcuts
-alias s="subl ."
-
-# Enable aliases to be sudo’ed
-alias sudo='sudo '
