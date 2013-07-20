@@ -3,8 +3,9 @@
 ## Instructions
 
 1. Set zsh as the default shell. `chsh -s zsh`
-2. Install Prezto TODO: link here
-3. Run `source dottify.sh`
+2. Install [Prezto](https://github.com/sorin-ionescu/prezto)
+3. Backup your previous configuration-files, these scripts sure as hell won't.
+4. Run `source dottify.sh
 
 ## Todo
 
