@@ -1,0 +1,9 @@
+{
+	"color_scheme": "Packages/Perv - Color Scheme/Perv Orange Moonlight.tmTheme",
+	"ignored_packages":
+	[
+		"Dotfiles Syntax Highlighting"
+	],
+	"phoenix-color-orange": true,
+	"theme": "Phoenix Dark.sublime-theme"
+}
