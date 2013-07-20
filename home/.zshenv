@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='subl'
-export VISUAL='subl'
+export EDITOR='subl -w'
+export VISUAL='subl -w'
 export PAGER='less'
 
 #
@@ -43,6 +43,7 @@ typeset -gU cdpath fpath mailpath path
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
+  ~/bin
   $path
 )
 
