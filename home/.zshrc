@@ -5,3 +5,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 
+# nvm
+source ~/.nvm/nvm.sh
+
+# z
+source ~/.z.sh
