@@ -1,9 +1,19 @@
 {
 	"color_scheme": "Packages/Perv - Color Scheme/Perv Orange Moonlight.tmTheme",
-	"ignored_packages":
+	"folder_exclude_patterns":
 	[
-		"Dotfiles Syntax Highlighting"
+		".git",
+		"node_modules"
 	],
-	"phoenix-color-orange": true,
-	"theme": "Phoenix Dark.sublime-theme"
+    "file_exclude_patterns":
+    [
+        ".DS_Store"
+    ],
+	"phoenix_color_orange": true,
+	"phoenix_highlight_current_tab": true,
+	"theme": "Phoenix Dark.sublime-theme",
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+    "ensure_newline_at_eof_on_save": true,
 }
