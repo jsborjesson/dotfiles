@@ -29,6 +29,7 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'osx' \
   'syntax-highlighting' \
+  'node' \
 
 #
 # Editor
