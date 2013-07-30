@@ -1,0 +1,5 @@
+{
+    "shell": "true",
+    "cmd": ["open -a marked \"$file\""],
+    "selector": "text.html.markdown"
+}
