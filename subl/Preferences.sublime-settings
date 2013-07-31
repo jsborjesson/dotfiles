@@ -1,19 +1,25 @@
 {
 	"color_scheme": "Packages/Perv - Color Scheme/Perv Orange Moonlight.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"open_files_in_new_window": false,
+	"file_exclude_patterns":
+	[
+		".DS_Store",
+		"*.sublime-workspace"
+	],
 	"folder_exclude_patterns":
 	[
 		".git",
 		"node_modules"
 	],
-    "file_exclude_patterns":
-    [
-        ".DS_Store"
-    ],
+	"ignored_packages":
+	[
+		"Vintageous"
+	],
 	"phoenix_color_orange": true,
 	"phoenix_highlight_current_tab": true,
-	"theme": "Phoenix Dark.sublime-theme",
 	"tab_size": 4,
+	"theme": "Phoenix Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-    "ensure_newline_at_eof_on_save": true,
+	"trim_trailing_white_space_on_save": true
 }
