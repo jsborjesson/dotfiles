@@ -1,7 +1,9 @@
-
-
 # Sublime-stuff
 *.ca-list
 *.ca-bundle
 *.cache
 *.last-run
+*.sublime-*
+
+# Keep the todo-list local
+TODO.md
