@@ -5,5 +5,6 @@
             { "key": "setting.command_mode", "operand": false },
             { "key": "setting.is_widget", "operand": false }
         ]
-    }
+    },
+    { "keys": ["ctrl+m"], "command": "mark_and_move_do_it_all" }
 ]
