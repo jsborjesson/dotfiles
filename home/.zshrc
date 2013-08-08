@@ -5,7 +5,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # z
-source /usr/local/Cellar/z/1.6/etc/profile.d/z.sh
+source `brew --prefix`/Cellar/z/1.6/etc/profile.d/z.sh
 
 # enter vi-mode with jj
 bindkey -M viins 'jj' vi-cmd-mode
