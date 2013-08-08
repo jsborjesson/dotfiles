@@ -1,10 +1,13 @@
 [
-    { "keys": ["j", "j"], "command": "exit_insert_mode",
+    {
+        "keys": ["j", "j"],
+        "command": "exit_insert_mode",
         "context":
         [
             { "key": "setting.command_mode", "operand": false },
             { "key": "setting.is_widget", "operand": false }
         ]
     },
-    { "keys": ["ctrl+m"], "command": "mark_and_move_do_it_all" }
+    { "keys": ["ctrl+m"], "command": "mark_and_move_do_it_all" },
+    { "keys": ["super+shift+,"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/Semicolon Newline.sublime-macro"} }
 ]
