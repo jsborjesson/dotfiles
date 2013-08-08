@@ -5,13 +5,14 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # z
-source ~/.z.sh
+source /usr/local/Cellar/z/1.6/etc/profile.d/z.sh
 
 # enter vi-mode with jj
 bindkey -M viins 'jj' vi-cmd-mode
 
 
 # vi-mode visual indicator
+# bug: it eats up line above when changing mode
 function zle-line-init zle-keymap-select {
     RPS1="${${KEYMAP/vicmd/-- COMMAND --}/(main|viins)/-- INSERT --}"
     RPS2=$RPS1
