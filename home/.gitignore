@@ -6,3 +6,8 @@
 *.ca-bundle
 *.cache
 *.last-run
+
+# If you want to version the sublime-project, you can use:
+# git add -f your-project.sublime-project
+*.sublime-project
+*.sublime-workspace
