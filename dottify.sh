@@ -1,8 +1,18 @@
 #!/bin/zsh
 
-# relentlessly symlink everything in home/ to ~
-ln -Ffhs ~/Projects/dotfiles/home/.* ~
+# Get the path of this file
+scriptdir=$(dirname $0)
 
-# bin folder
-ln -s ~/Projects/dotfiles/bin ~/.bin
+# Loop the files in ./home
+for file in $scriptdir/home/*;
+do
+    # The filename with a prepended dot
+    dotfile=.${file##*/}
+
+    # Make the link
+    ln -Ffhs $file ~/$dotfile
+done
+
+# link the bin folder
+ln -fhs $scriptdir/bin ~/.bin
 
