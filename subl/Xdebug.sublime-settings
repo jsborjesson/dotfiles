@@ -1,0 +1,11 @@
+{
+    "path_mapping": {
+    },
+    "ide_key": "sublime.xdebug",
+    "url": "http://localhost:8888",
+    "port": 9000,
+    "close_on_stop": true,
+    "max_depth": 3,
+    "max_children": 32,
+    "debug": true
+}
