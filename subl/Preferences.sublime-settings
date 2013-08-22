@@ -1,7 +1,7 @@
 {
 	"color_scheme": "Packages/Perv - Color Scheme/Perv Orange Moonlight.tmTheme",
+	"dictionary": "Packages/Language - Swedish/Swedish.dic",
 	"ensure_newline_at_eof_on_save": true,
-	"open_files_in_new_window": false,
 	"file_exclude_patterns":
 	[
 		".DS_Store",
@@ -12,12 +12,15 @@
 		".git",
 		"node_modules"
 	],
+	"font_face": "Menlo",
+	"font_size": 13,
 	"ignored_packages":
 	[
-		"Vintageous"
 	],
+	"open_files_in_new_window": false,
 	"phoenix_color_orange": true,
 	"phoenix_highlight_current_tab": true,
+	"spell_check": false,
 	"tab_size": 4,
 	"theme": "Phoenix Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
