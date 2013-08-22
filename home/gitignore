@@ -4,6 +4,7 @@
 # Sublime-stuff
 *.ca-list
 *.ca-bundle
+*.system-ca-bundle
 *.cache
 *.last-run
 
