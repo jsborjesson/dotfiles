@@ -2,17 +2,26 @@
 	"installed_packages":
 	[
 		"AdvancedNewFile",
+		"AndyPHP",
+		"BracketHighlighter",
 		"DocBlockr",
 		"Dotfiles Syntax Highlighting",
+		"EditorConfig",
+		"Gist",
 		"Git",
+		"Git Config",
+		"GitGutter",
+		"Markdown Extended",
+		"Missing Palette Commands",
 		"Package Control",
 		"Perv - Color Scheme",
+		"PHP Companion",
+		"Phpcs",
 		"SideBarEnhancements",
 		"SublimeBlockCursor",
 		"Table Editor",
-		"Theme - Nil",
 		"Theme - Phoenix",
 		"Tomorrow Color Schemes",
-		"Vintageous"
+		"Xdebug Client"
 	]
 }
