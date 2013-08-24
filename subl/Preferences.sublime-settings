@@ -1,6 +1,6 @@
 {
 	"color_scheme": "Packages/Perv - Color Scheme/Perv Orange Moonlight.tmTheme",
-	"dictionary": "Packages/Language - Swedish/Swedish.dic",
+	"dictionary": "Packages/Language - English/en_US.dic",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
@@ -16,6 +16,9 @@
 	"font_size": 13,
 	"ignored_packages":
 	[
+		"Markdown Extended",
+		"Sass",
+		"SideBarGit"
 	],
 	"open_files_in_new_window": false,
 	"phoenix_color_orange": true,
@@ -24,5 +27,6 @@
 	"tab_size": 4,
 	"theme": "Phoenix Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"vintage_start_in_command_mode": true
 }
