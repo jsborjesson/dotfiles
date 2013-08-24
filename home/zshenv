@@ -38,7 +38,8 @@ typeset -gU cdpath fpath mailpath path
 path=(
   /usr/local/{bin,sbin}
   ~/.bin
-  /Applications/MAMP/Library/bin
+  $(brew --prefix php55)/bin # php bin
+  /Applications/MAMP/Library/bin # MAMP bin
   $path
 )
 
