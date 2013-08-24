@@ -5,7 +5,7 @@
 # use it as a copy-paste-board.
 
 # TODO
-# nvm, alphabetize list
+# nvm
 
 gem install localtunnel
 
@@ -31,7 +31,6 @@ brew install php55
 # insert shit there
 brew install php55-xdebug
 
-
 # pear install PHP_CodeSniffer
 brew install php-cs-fixer # may need manual install using curl, this didn't work for me last time
 
@@ -41,8 +40,10 @@ brew install php-cs-fixer # may need manual install using curl, this didn't work
 brew tap phinze/homebrew-cask
 brew install brew-cask
 
-# todo alfred
+# Install them in the native Application folder, don't know if this works
+# export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+brew cask install alfred
 brew cask install dropbox
 brew cask install google-chrome
 brew cask install google-chrome-canary
@@ -51,6 +52,8 @@ brew cask install iterm2
 # NOTE: When syncing with Dropbox, mobile devices need to set the keepass.kpdx-file
 # as favorite for it to work with Keepass2Android
 brew cask install keepass-x
+brew cask install moom
+brew cask install spotify
 brew cask install sublime-text
 brew cask install the-unarchiver
 brew cask install virtualbox
@@ -59,6 +62,6 @@ brew cask install vlc
 # Make alfred work
 brew cask alfred link
 
-# todo unset installcask
-
 brew cleanup
+
+exit 0
