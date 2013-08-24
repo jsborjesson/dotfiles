@@ -48,7 +48,7 @@ brew cask install dropbox
 brew cask install google-chrome
 brew cask install google-chrome-canary
 brew cask install iterm2
-# preliminary, I use the alpha-version which is not yet in homebrew. NOTE: When
+# Preliminary, I use the alpha-version which is not yet in homebrew.
 # NOTE: When syncing with Dropbox, mobile devices need to set the keepass.kpdx-file
 # as favorite for it to work with Keepass2Android
 brew cask install keepass-x
