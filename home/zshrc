@@ -9,3 +9,6 @@ source `brew --prefix`/etc/profile.d/z.sh
 
 # bind jj to escape
 bindkey -M viins 'jj' vi-cmd-mode
+
+# Colorized cat
+alias c='pygmentize -O style=monokai -f console256 -g'
