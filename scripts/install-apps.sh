@@ -1,13 +1,26 @@
 #!/bin/zsh
 
 # Here I list lots of useful apps by their install-command
-# You can run this file as a script, but I would probably
+# You can probably run this file as a script, but I would
 # use it as a copy-paste-board.
 
 # TODO
 # nvm
 
+# install rvm and update ruby
+curl -L https://get.rvm.io | bash
+rvm install 2.0
+
+# Ruby
 gem install localtunnel
+gem install guard
+
+
+# Python
+easy_install pip?
+pip3 install Pygments
+
+########## END TODO
 
 ## Homebrew formulas ##
 
@@ -21,10 +34,17 @@ brew install python3
 brew install tree
 brew install z # sourced in zshrc
 
+##############################
 # PHP
+##############################
+
 brew tap homebrew/dupes # dep for php55
 brew tap josegonzalez/homebrew-php
-brew install php55
+brew install php55 --with-mysql
+brew install mysql
+brew install phpmyadmin
+# brew install composer
+brew install phpunit
 
 # php55-xdebug config at <https://github.com/martomo/SublimeTextXdebug>,
 # mamp file in /Applications/MAMP/bin/php/php5.4.10/conf/php.ini
@@ -34,8 +54,10 @@ brew install php55-xdebug
 # pear install PHP_CodeSniffer
 brew install php-cs-fixer # may need manual install using curl, this didn't work for me last time
 
-# Install native apps
-#
+##############################
+# Install native apps (cask)
+##############################
+
 # Tap the brew
 brew tap phinze/homebrew-cask
 brew install brew-cask
@@ -56,6 +78,7 @@ brew cask install moom
 brew cask install spotify
 brew cask install sublime-text
 brew cask install the-unarchiver
+brew cask isntall transmission
 brew cask install virtualbox
 brew cask install vlc
 
