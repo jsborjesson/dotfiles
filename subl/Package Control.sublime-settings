@@ -2,17 +2,13 @@
 	"installed_packages":
 	[
 		"AdvancedNewFile",
-		"AndyPHP",
 		"BracketHighlighter",
 		"DocBlockr",
 		"Dotfiles Syntax Highlighting",
 		"EditorConfig",
-		"Gist",
-		"Git",
 		"Git Config",
 		"GitGutter",
-		"Markdown Extended",
-		"Missing Palette Commands",
+		"MarkAndMove",
 		"Origami",
 		"Package Control",
 		"Perv - Color Scheme",
@@ -20,15 +16,19 @@
 		"Phpcs",
 		"PHPUnit",
 		"PHPUnit Completions",
+		"PHPUnit Snippets",
 		"Sass",
+		"SASS Build",
 		"SideBarEnhancements",
 		"SideBarGit",
+		"sublime-github",
 		"SublimeBlockCursor",
 		"SyncedSideBar",
 		"Table Editor",
 		"Theme - Phoenix",
 		"Tomorrow Color Schemes",
 		"Vintage-Origami",
+		"Wordpress",
 		"Xdebug Client"
 	]
 }
