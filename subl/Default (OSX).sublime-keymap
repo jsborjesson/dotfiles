@@ -10,7 +10,7 @@
     { "keys": ["ctrl+m"],
         "command": "mark_and_move_do_it_all"
     },
-    { "keys": ["super+shift+,"],
+    { "keys": [",", ","],
         "command": "run_macro_file",
         "args": {"file": "Packages/User/Macros/Semicolon Newline.sublime-macro"}
     },
