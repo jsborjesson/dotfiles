@@ -7,7 +7,10 @@ fi
 # Source z
 source `brew --prefix`/etc/profile.d/z.sh
 
-# bind jj to escape
+# Source rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# bind jj to vi mode
 bindkey -M viins 'jj' vi-cmd-mode
 
 # Colorized cat
