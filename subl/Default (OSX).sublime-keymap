@@ -14,6 +14,10 @@
         "command": "run_macro_file",
         "args": {"file": "Packages/User/Macros/Semicolon Newline.sublime-macro"}
     },
+    { "keys": ["-", " ", " "],
+        "command": "run_macro_file",
+        "args": {"file": "Packages/User/Macros/Dash GreaterThan.sublime-macro"}
+    },
     { "keys": ["ctrl+´"],
         "command": "show_panel",
         "args": {"panel": "console", "toggle": true}
