@@ -6,23 +6,32 @@
 
 # TODO
 # nvm
+# xquartz
+
+##############################
+## Ruby
+##############################
 
 # install rvm and update ruby
 curl -L https://get.rvm.io | bash
 rvm install 2.0
 
-# Ruby
+# install gems
 gem install localtunnel
 gem install guard
+gem install guard-livereload
 
+##############################
+## Python
+##############################
 
-# Python
-easy_install pip?
+brew install python3 # IMPORTANT: This breaks the filewatcher in Sublime Text 3 (Build 3047)
 pip3 install Pygments
+pip3 install yuml
 
-########## END TODO
-
-## Homebrew formulas ##
+##############################
+## Homebrew formulas
+##############################
 
 brew install ack
 brew install gibo
@@ -30,12 +39,11 @@ brew install git # newer version than xcode's
 brew install git-ftp
 brew install htop
 brew install multimarkdown
-brew install python3
 brew install tree
 brew install z # sourced in zshrc
 
 ##############################
-# PHP
+## PHP
 ##############################
 
 brew tap homebrew/dupes # dep for php55
@@ -43,40 +51,33 @@ brew tap josegonzalez/homebrew-php
 brew install php55 --with-mysql
 brew install mysql
 brew install phpmyadmin
-# brew install composer
+brew install composer
 brew install phpunit
-
-# php55-xdebug config at <https://github.com/martomo/SublimeTextXdebug>,
-# mamp file in /Applications/MAMP/bin/php/php5.4.10/conf/php.ini
-# insert shit there
 brew install php55-xdebug
-
 # pear install PHP_CodeSniffer
 brew install php-cs-fixer # may need manual install using curl, this didn't work for me last time
 
 ##############################
-# Install native apps (cask)
+## GUI applications (casks)
 ##############################
 
 # Tap the brew
 brew tap phinze/homebrew-cask
 brew install brew-cask
 
-# Install them in the native Application folder, don't know if this works
+# Install them in the native Application folder
 # export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 brew cask install alfred
+brew cask install dia
 brew cask install dropbox
 brew cask install google-chrome
 brew cask install google-chrome-canary
 brew cask install iterm2
-# Preliminary, I use the alpha-version which is not yet in homebrew.
-# NOTE: When syncing with Dropbox, mobile devices need to set the keepass.kpdx-file
-# as favorite for it to work with Keepass2Android
-brew cask install keepass-x
+brew cask install keepass-x # Preliminary, I use the alpha-version which is not yet in homebrew.
 brew cask install moom
 brew cask install spotify
-brew cask install sublime-text
+# brew cask install sublime-text # Waiting for ST3 to be a cask
 brew cask install the-unarchiver
 brew cask isntall transmission
 brew cask install virtualbox
