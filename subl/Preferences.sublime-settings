@@ -14,10 +14,11 @@
 		".git",
 		"node_modules"
 	],
-	"font_face": "Menlo",
+	"font_face": "Source Code Pro",
 	"font_size": 13,
 	"ignored_packages":
 	[
+		"Phpcs"
 	],
 	"open_files_in_new_window": false,
 	"phoenix_color_orange": true,
