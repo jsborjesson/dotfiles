@@ -23,16 +23,14 @@
 		"SASS Build",
 		"SideBarEnhancements",
 		"SideBarGit",
-		"SimplePHPUnit",
 		"sublime-github",
-		"SublimeBlockCursor",
 		"SyncedSideBar",
 		"Table Editor",
 		"Theme - Phoenix",
 		"Tomorrow Color Schemes",
-		"TrailingSpaces",
 		"Vintage-Origami",
 		"Wordpress",
-		"Xdebug Client"
+		"Xdebug Client",
+		"yUML"
 	]
 }
