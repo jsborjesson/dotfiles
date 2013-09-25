@@ -41,6 +41,7 @@ path=(
   $(brew --prefix php55)/bin # php bin
   /Applications/MAMP/Library/bin # MAMP bin
   /.rvm/bin # Add RVM to PATH for scripting
+  vendor/bin/ # relative path, works in all projects
   $path
 )
 
