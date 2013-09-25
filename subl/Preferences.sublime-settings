@@ -15,17 +15,21 @@
 		"node_modules"
 	],
 	"font_face": "Source Code Pro",
-	"font_size": 13,
+	"font_size": 14,
 	"ignored_packages":
 	[
-		"Phpcs"
 	],
 	"open_files_in_new_window": false,
-	"phoenix_color_orange": true,
+	"phoenix_color_blue": true,
 	"phoenix_highlight_current_tab": true,
 	"spell_check": false,
 	"tab_size": 4,
 	"theme": "Phoenix Dark.sublime-theme",
+	"todo": {
+		"folder_exclude_patterns": [
+			"vendor"
+		]
+	},
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"vintage_start_in_command_mode": true
