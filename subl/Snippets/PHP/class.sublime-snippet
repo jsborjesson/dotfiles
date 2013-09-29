@@ -11,6 +11,6 @@ class ${TM_FILENAME/(.*)[.](.*)/$1/g}
     }
 }
 ]]></content>
-    <tabTrigger>phpclass</tabTrigger>
+    <tabTrigger>class</tabTrigger>
     <scope>text.html</scope>
 </snippet>
