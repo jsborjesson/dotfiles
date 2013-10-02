@@ -1,4 +1,4 @@
 {
-	"cmd": ["sass", "--update", "$file:${file_path}/${file_base_name}.css", "--stop-on-error"],
+	"cmd": ["sass", "--update", "$file:${file_path}/../css/${file_base_name}.css", "--stop-on-error"],
 	"selector": "source.sass, source.scss",
 }
