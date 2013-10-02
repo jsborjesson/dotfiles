@@ -1,6 +1,7 @@
 <snippet>
     <content><![CDATA[
 <?php
+
 namespace ${TM_FILEPATH/(?:^.*src\/|\G)(.*?)\/(.*?)\/(?:.*php|\G)/$1\\$2/g};
 
 class ${TM_FILENAME/(.*)[.](.*)/$1/g}
