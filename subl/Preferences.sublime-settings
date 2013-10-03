@@ -12,22 +12,30 @@
 	"folder_exclude_patterns":
 	[
 		".git",
+		".sass-cache",
 		"node_modules"
 	],
 	"font_face": "Source Code Pro",
-	"font_size": 14,
+	"font_size": 15,
 	"ignored_packages":
 	[
 	],
 	"open_files_in_new_window": false,
 	"phoenix_color_blue": true,
 	"phoenix_highlight_current_tab": true,
-	"rulers": [80,120],
+	"reveal-on-activate": true,
+	"rulers":
+	[
+		80,
+		120
+	],
 	"spell_check": false,
 	"tab_size": 4,
 	"theme": "Phoenix Dark.sublime-theme",
-	"todo": {
-		"folder_exclude_patterns": [
+	"todo":
+	{
+		"folder_exclude_patterns":
+		[
 			"vendor"
 		]
 	},
