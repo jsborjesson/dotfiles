@@ -1,14 +1,26 @@
 
-# Source Prezto.
+### Load modules ###
+
+# Prezto
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Source z
+# Z
 source `brew --prefix`/etc/profile.d/z.sh
 
-# Source rvm
+# RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# NVM is sourced in a plugin
+
+### Convenient stuff ###
+
+# Shortcuts
+alias d="cd ~/Documents/Dropbox"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias p="cd ~/Projects"
 
 # Colorized cat
 alias c='pygmentize -O style=monokai -f console256 -g'
