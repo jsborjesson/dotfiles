@@ -2,7 +2,7 @@
     <content><![CDATA[
 <?php
 
-namespace ${TM_FILEPATH/(?:^.*src\/|\G)(.*?)\/(.*?)\/(?:.*php|\G)/$1\\$2/g};
+namespace ${TM_FILEPATH/.*\/([^\/]+)\/([^\/]+)\/[^\/]+\/?\.php$/$1\\$2/};
 
 class ${TM_FILENAME/(.*)[.](.*)/$1/g}
 {
