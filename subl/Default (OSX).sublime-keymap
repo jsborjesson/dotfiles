@@ -12,7 +12,7 @@
     },
     { "keys": [",", ","],
         "command": "run_macro_file",
-        "args": {"file": "Packages/User/Macros/Semicolon Newline.sublime-macro"}
+        "args": {"file": "Packages/User/Macros/EOL Semicolon.sublime-macro"}
     },
     { "keys": ["-", " ", " "],
         "command": "run_macro_file",
@@ -21,6 +21,9 @@
     { "keys": ["ctrl+´"],
         "command": "show_panel",
         "args": {"panel": "console", "toggle": true}
+    },
+    { "keys": ["ctrl+r"],
+        "command": "refresh_folder_list"
     }
 
 ]
