@@ -33,12 +33,15 @@ pip3 install yuml
 ## Homebrew formulas
 ##############################
 
+brew tap homebrew/dupes
+
 brew install ack
 brew install gibo
 brew install git # newer version than xcode's
 brew install git-ftp
 brew install htop
 brew install multimarkdown
+brew install rsync
 brew install tree
 brew install z # sourced in zshrc
 
@@ -46,7 +49,7 @@ brew install z # sourced in zshrc
 ## PHP
 ##############################
 
-brew tap homebrew/dupes # dep for php55
+# brew tap homebrew/dupes # dep for php55
 brew tap josegonzalez/homebrew-php
 brew install php55 --with-mysql
 brew install mysql
