@@ -78,6 +78,7 @@ brew cask install google-chrome
 brew cask install google-chrome-canary
 brew cask install iterm2
 brew cask install keepass-x # Preliminary, I use the alpha-version which is not yet in homebrew.
+brew cask install macpardeluxe
 brew cask install moom
 brew cask install spotify
 # brew cask install sublime-text # Waiting for ST3 to be a cask
