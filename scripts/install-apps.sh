@@ -25,7 +25,7 @@ gem install guard-livereload
 ## Python
 ##############################
 
-brew install python3 # IMPORTANT: This breaks the filewatcher in Sublime Text 3 (Build 3047)
+brew install python3
 pip3 install Pygments
 pip3 install yuml
 
@@ -57,7 +57,9 @@ brew install phpmyadmin
 brew install composer
 brew install phpunit
 brew install php55-xdebug
-# pear install PHP_CodeSniffer
+# for wp standards clone https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards
+# into /usr/local/Cellar/php-code-sniffer/{version}/CodeSniffer/Standards/WordPress
+brew install php-code-sniffer
 brew install php-cs-fixer # may need manual install using curl, this didn't work for me last time
 
 ##############################
