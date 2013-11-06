@@ -1,5 +1,6 @@
 {
-	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night-Bright.tmTheme",
+	"caret_style": "solid",
+	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
 	"dictionary": "Packages/Language - English/en_GB.dic",
@@ -21,7 +22,7 @@
 	[
 	],
 	"open_files_in_new_window": false,
-	"phoenix_color_orange": true,
+	"phoenix_color_blue": true,
 	"phoenix_dirty_bottom_bar": true,
 	"phoenix_solid_current_tab": true,
 	"phoenix_tabs_auto_width": true,
