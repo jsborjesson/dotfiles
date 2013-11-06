@@ -5,7 +5,6 @@
 # use it as a copy-paste-board.
 
 # TODO
-# nvm
 # xquartz
 
 ##############################
@@ -28,6 +27,13 @@ gem install guard-livereload
 brew install python3
 pip3 install Pygments
 pip3 install yuml
+
+##############################
+## Node
+##############################
+
+# Sourced by a plugin
+curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
 ##############################
 ## Homebrew formulas
