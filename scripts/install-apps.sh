@@ -57,9 +57,9 @@ brew install phpmyadmin
 brew install composer
 brew install phpunit
 brew install php55-xdebug
-# for wp standards clone https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards
-# into /usr/local/Cellar/php-code-sniffer/{version}/CodeSniffer/Standards/WordPress
 brew install php-code-sniffer
+# WordPress standards
+git clone https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards /usr/local/Cellar/php-code-sniffer/VERSION/CodeSniffer/Standards/WordPress
 brew install php-cs-fixer # may need manual install using curl, this didn't work for me last time
 
 ##############################
