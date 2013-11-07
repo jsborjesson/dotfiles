@@ -12,10 +12,16 @@ but don't expect them to take any opinions or needs other than mine into conside
 ### Command-line enviornment
 
 1. Set zsh as the default shell. `chsh -s zsh`
-2. Install [Prezto](https://github.com/sorin-ionescu/prezto)
+2. Clone this repo: `git clone --recursive git@github.com:alcesleo/dotfiles.git`
 3. Backup your previous configuration-files, these scripts sure as hell won't.
-4. Run `link-dotfiles.sh`
+4. Run `link-dotfiles.sh` - this will create symlinks to all configuration-files
 5. Set iTerm2 terminal to xterm-256 colors
+
+#### Updating
+
+To update, run this line - this will also keep Prezto up to date.
+
+    git pull && git submodule update --init --recursive
 
 ### Sublime Text 3
 
