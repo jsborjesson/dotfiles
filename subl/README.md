@@ -3,8 +3,8 @@
 ## Install
 
 1. Install Sublime Text and [Package Control].
-2. Symlink this directory as the `Packages/User` folder.
-3. Run "Package Control: Upgrade/Overwrite All Packages" to install all the packages (listed in the Package Control.sublime-settings).
+2. Symlink this directory **as** the `Packages/User` folder.
+3. Run "Package Control: Upgrade/Overwrite All Packages" to install all the packages (listed in `Package Control.sublime-settings`).
 
 ## Notes
 
@@ -14,7 +14,9 @@ To install spellchecks, clone `SublimeText/Dictionaries` and put them in `Packag
 
 ### Manually installing plugins
 
-The best way of dealing with manually installed plugins, I've found, is to leave the `Installed Packages` for [Package Control] to handle by itself, and install the manual ones in `Packages` using `git clone`, and eventually checking out the ST3-branch.
+The best way of dealing with manually installed plugins, I've found, is to leave the `Installed Packages`
+for [Package Control] to handle by itself, and install the manual ones in `Packages`
+using `git clone`, and eventually checking out the ST3-branch.
 
 The current manually installed packages are:
 
@@ -30,7 +32,7 @@ things that are not in your default path **(this is often the case if you use ho
 
         echo $PATH
 
-2. Edit /etc/launchd.conf (if it's not there - create it)
+2. Edit `/etc/launchd.conf` (if it's not there - create it)
 
         # Replace THE_PATH with the output from previous command
         setenv PATH THE_PATH
@@ -38,3 +40,7 @@ things that are not in your default path **(this is often the case if you use ho
 3. Restart your computer
 
 [Package Control]: http://wbond.net/sublime_packages/package_control
+
+### Misc tips and tricks
+
+`ctrl + number` to switch between panels
