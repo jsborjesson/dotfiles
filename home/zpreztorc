@@ -30,6 +30,7 @@ zstyle ':prezto:load' pmodule \
   'osx' \
   'syntax-highlighting' \
   'node' \
+  'ruby' \
 
 #
 # Editor
