@@ -8,6 +8,9 @@
 *.cache
 *.last-run
 
+# My heavily used deploy script
+rsync-deploy.sh
+
 # If you want to version the sublime-project, you can use:
 # git add -f your-project.sublime-project
 *.sublime-project
