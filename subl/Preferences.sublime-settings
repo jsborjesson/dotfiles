@@ -21,6 +21,7 @@
 	"ignored_packages":
 	[
 	],
+	"indent_to_bracket": true,
 	"open_files_in_new_window": false,
 	"phoenix_color_blue": true,
 	"phoenix_dirty_bottom_bar": true,
