@@ -9,5 +9,5 @@ ln -fhs $ABSPATH/bin ~/.bin
 # link prezto
 ln -fhs $ABSPATH/prezto ~/.zprezto
 
-# link all dotfiles to home dir
+# link all dotfiles to home dir, (D) is to include hidden files
 ln -fhsv $ABSPATH/home/*(D) ~/
