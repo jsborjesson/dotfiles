@@ -9,8 +9,5 @@ ln -fhs $ABSPATH/bin ~/.bin
 # link prezto
 ln -fhs $ABSPATH/prezto ~/.zprezto
 
-# Loop the files in ./home
-for file ($ABSPATH/home/*) {
-    ln -Ffhs $file ~/.${file##*/}
-}
-
+# link all dotfiles to home dir
+ln -fhsv $ABSPATH/home/*(D) ~/
