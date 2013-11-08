@@ -19,5 +19,10 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
 
+# Create a new directory and enter it
+function md() {
+    mkdir -p "$@" && cd "$@"
+}
+
 # Colorized cat
 alias c='pygmentize -O style=monokai -f console256 -g'
