@@ -25,6 +25,7 @@ gem install guard-livereload
 ##############################
 
 brew install python3
+pip install virtualenvwrapper
 pip3 install Pygments
 pip3 install yuml
 
