@@ -26,3 +26,8 @@ function md() {
 
 # Colorized cat
 alias c='pygmentize -O style=monokai -f console256 -g'
+
+# Python VirtualEnv
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Projects
+source /usr/local/bin/virtualenvwrapper.sh
