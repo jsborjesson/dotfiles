@@ -8,6 +8,9 @@
 *.cache
 *.last-run
 
+# Python
+*.pyc
+
 # My heavily used deploy script
 rsync-deploy.sh
 
