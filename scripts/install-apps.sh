@@ -4,9 +4,6 @@
 # You can probably run this file as a script, but I would
 # use it as a copy-paste-board.
 
-# TODO
-# xquartz
-
 ##############################
 ## Ruby
 ##############################
@@ -25,7 +22,8 @@ gem install guard-livereload
 ##############################
 
 brew install python3
-pip install virtualenvwrapper
+syspip install --upgrade pip setuptools
+syspip install virtualenvwrapper
 pip3 install Pygments
 pip3 install yuml
 
