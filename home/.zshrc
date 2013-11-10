@@ -1,4 +1,3 @@
-
 ### Load modules ###
 
 # Prezto
@@ -28,10 +27,9 @@ function md() {
 # Colorized cat
 alias c='pygmentize -O style=monokai -f console256 -g'
 
-#
-# Python VirtualEnv
-#
-export PIP_REQUIRE_VIRTUALENV=true
+### Python VirtualEnv ###
+
+export PIP_REQUIRE_VIRTUALENV=true # prevent accidentally calling pip without venv
 export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Projects
@@ -46,9 +44,9 @@ function syspip3() {
     PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
 }
 
-
 # virtualenvwrapper additions
 alias mkve3='mkvirtualenv --no-site-packages --python=/usr/local/bin/python3'
 alias mkve2='mkvirtualenv --no-site-packages --python=/usr/local/bin/python2'
+alias mkve='mkve3'
 alias rmve='rmvirtualenv'
 alias lsve='lsvirtualenv -b'
