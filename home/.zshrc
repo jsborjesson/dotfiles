@@ -41,6 +41,11 @@ source /usr/local/bin/virtualenvwrapper.sh
 function syspip() {
     PIP_REQUIRE_VIRTUALENV="" pip "$@"
 }
+# global pip3
+function syspip3() {
+    PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
+}
+
 
 # virtualenvwrapper additions
 alias mkve3='mkvirtualenv --no-site-packages --python=/usr/local/bin/python3'
