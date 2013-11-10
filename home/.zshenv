@@ -37,11 +37,11 @@ typeset -gU cdpath fpath mailpath path
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
-  ~/.bin
-  $(brew --prefix php55)/bin # php bin
-  /Applications/MAMP/Library/bin # MAMP bin
+  ~/.bin # home
+  $(brew --prefix php55)/bin # brew php
+  /Applications/MAMP/Library/bin # MAMP
   /.rvm/bin # Add RVM to PATH for scripting
-  vendor/bin/ # relative path, works in all projects
+  vendor/bin # Composer relative path, works in all projects
   $path
 )
 
