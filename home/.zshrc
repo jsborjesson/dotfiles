@@ -46,4 +46,4 @@ function syspip() {
 alias mkve3='mkvirtualenv --no-site-packages --python=/usr/local/bin/python3'
 alias mkve2='mkvirtualenv --no-site-packages --python=/usr/local/bin/python2'
 alias rmve='rmvirtualenv'
-aleas lsve='lsvirtualenv -b'
+alias lsve='lsvirtualenv -b'
