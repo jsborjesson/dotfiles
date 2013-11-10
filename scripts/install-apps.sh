@@ -4,6 +4,9 @@
 # You can probably run this file as a script, but I would
 # use it as a copy-paste-board.
 
+brew update
+brew upgrade
+
 ##############################
 ## Ruby
 ##############################
@@ -46,6 +49,7 @@ brew install git # newer version than xcode's
 brew install git-ftp
 brew install htop
 brew install multimarkdown
+brew install postgres
 brew install rsync
 brew install tree
 brew install z # sourced in zshrc
