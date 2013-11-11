@@ -95,7 +95,7 @@ brew cask install spotify
 # brew cask install sublime-text # Waiting for ST3 to be a cask
 brew cask install the-unarchiver
 brew cask isntall transmission
-brew cask install virtualbox
+brew cask install virtualbox # upgrade by running this again
 brew cask install vlc
 
 # Make alfred work
