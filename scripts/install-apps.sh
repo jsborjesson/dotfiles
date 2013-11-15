@@ -24,11 +24,11 @@ gem install guard-livereload
 ## Python
 ##############################
 
-brew install python3
+brew install pyenv
+easy_install pip
 syspip install --upgrade pip setuptools
 syspip install virtualenvwrapper
 pip3 install Pygments
-pip3 install yuml
 
 ##############################
 ## Node
