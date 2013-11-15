@@ -40,7 +40,6 @@ path=(
   ~/.bin # home
   $(brew --prefix php55)/bin # brew php
   /Applications/MAMP/Library/bin # MAMP
-  /.rvm/bin # Add RVM to PATH for scripting
   vendor/bin # Composer relative path, works in all projects
   $path
 )
@@ -79,6 +78,5 @@ fi
 
 export PIP_REQUIRE_VIRTUALENV=true # prevent accidentally calling pip without venv
 export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
-export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Projects
 
