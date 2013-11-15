@@ -27,13 +27,19 @@ function md() {
 # Colorized cat
 alias c='pygmentize -O style=monokai -f console256 -g'
 
-### Python VirtualEnv ###
+### Python Shortcuts ###
 
+# VirtualEnvWrapper
 alias mkve3='mkvirtualenv --no-site-packages --python=/usr/local/bin/python3'
 alias mkve2='mkvirtualenv --no-site-packages --python=/usr/local/bin/python2'
 alias mkve='mkve3'
 alias rmve='rmvirtualenv'
 alias lsve='lsvirtualenv -b'
+
+alias py='python3'
+alias py2='python2'
+alias py3='python3'
+alias ipy='ipython3'
 
 # global pip
 function syspip() {
