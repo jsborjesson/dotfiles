@@ -73,3 +73,12 @@ if [[ ! -d "$TMPPREFIX" ]]; then
   mkdir -p "$TMPPREFIX"
 fi
 
+#
+# Python Virtualenv
+#
+
+export PIP_REQUIRE_VIRTUALENV=true # prevent accidentally calling pip without venv
+export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Projects
+
