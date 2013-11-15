@@ -28,6 +28,7 @@ function md() {
 alias c='pygmentize -O style=monokai -f console256 -g'
 
 ### Python VirtualEnv ###
+# TODO: python prezto plugin
 
 export PIP_REQUIRE_VIRTUALENV=true # prevent accidentally calling pip without venv
 export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
@@ -50,3 +51,4 @@ alias mkve2='mkvirtualenv --no-site-packages --python=/usr/local/bin/python2'
 alias mkve='mkve3'
 alias rmve='rmvirtualenv'
 alias lsve='lsvirtualenv -b'
+alias py='python'
