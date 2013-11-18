@@ -36,7 +36,8 @@ alias mkve='mkve3'
 alias rmve='rmvirtualenv'
 alias lsve='lsvirtualenv -b'
 
-alias py='python3'
+# Interpreters
+alias py='python'
 alias py2='python2'
 alias py3='python3'
 alias ipy='ipython3'
