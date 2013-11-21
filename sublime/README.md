@@ -1,4 +1,4 @@
-# Configuration for Sublime Text
+# Configuration for Sublime Text 3
 
 ## Install
 
@@ -22,6 +22,7 @@ The current manually installed packages are:
 
 - `ingshtrom/BlockCursorEverywhere` (this is no longer being updated, should be replaced shortly)
 - `dnatag/SublimeTODO` (fork for st3)
+- `tmanderson/VintageLines` looks promising, but it jumps the text around a bit too much
 
 ### Fixing path for build systems
 
