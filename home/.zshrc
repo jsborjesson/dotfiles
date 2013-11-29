@@ -12,9 +12,6 @@ source `brew --prefix`/etc/profile.d/z.sh
 
 ### Convenient stuff ###
 
-# give git superpowers
-alias git="hub"
-
 # Shortcuts
 alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
