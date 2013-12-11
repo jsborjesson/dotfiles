@@ -34,4 +34,5 @@ A bunch of commands for installing apps are there aswell.
 
 ## Notes
 
-Next time I install OSX - PLEASE USE CASE SENSITIVE FILE SYSTEM.
+- Next time I install OSX - PLEASE USE CASE SENSITIVE FILE SYSTEM.
+- The `.pydistutils.cfg` file fixes a bug and makes `pip install --user` work
