@@ -4,9 +4,6 @@
 # You can probably run this file as a script, but I would
 # use it as a copy-paste-board.
 
-brew update
-brew upgrade
-
 ##############################
 ## Ruby
 ##############################
@@ -36,14 +33,21 @@ pip3 install Pygments
 
 # Sourced by a plugin
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+npm install -g grunt-cli
+npm install -g bower
+npm install -g requirejs
 
 ##############################
 ## Homebrew formulas
 ##############################
 
+brew update
+brew upgrade
+
 brew tap homebrew/dupes
 
 brew install ack
+brew install fontforge
 brew install gibo
 brew install git # newer version than xcode's
 brew install git-ftp
@@ -52,6 +56,7 @@ brew install multimarkdown
 brew install postgres
 brew install rsync
 brew install tree
+brew install wget
 brew install z # sourced in zshrc
 
 ##############################
@@ -95,8 +100,11 @@ brew cask install spotify
 # brew cask install sublime-text # Waiting for ST3 to be a cask
 brew cask install the-unarchiver
 brew cask isntall transmission
+brew cask install ukelele
 brew cask install virtualbox # upgrade by running this again
 brew cask install vlc
+
+# install Visual Paradigm
 
 # Make alfred work
 brew cask alfred link
