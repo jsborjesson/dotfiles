@@ -24,10 +24,21 @@ function md() {
     mkdir -p "$@" && cd "$@"
 }
 
+# backup and restore files
+function backup() {
+    cp -r "$@" "$@".bak
+}
+function restore() {
+    cp -r "$@".bak "$@"
+}
+
 # Colorized cat
 alias c='pygmentize -O style=monokai -f console256 -g'
 
 ### Python Shortcuts ###
+
+# remove compiled files
+alias rmpyc='find . -name "*.pyc" -exec rm -rf {} \;'
 
 # VirtualEnvWrapper
 alias mkve3='mkvirtualenv --no-site-packages --python=/usr/local/bin/python3'
