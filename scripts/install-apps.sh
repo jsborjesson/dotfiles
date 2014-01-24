@@ -90,6 +90,7 @@ brew install brew-cask
 brew cask install alfred
 brew cask install dia
 brew cask install dropbox
+brew cask install github
 brew cask install google-chrome
 brew cask install google-chrome-canary
 brew cask install iterm2
@@ -105,6 +106,7 @@ brew cask install virtualbox # upgrade by running this again
 brew cask install vlc
 
 # install Visual Paradigm
+# install SCPlugin for SVN (must hold cmd + opt when dragging it to toolbar on 10.9)
 
 # Make alfred work
 brew cask alfred link
