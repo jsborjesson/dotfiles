@@ -11,7 +11,10 @@ fi
 # Z
 source `brew --prefix`/etc/profile.d/z.sh
 
-# RVM & NVM are sourced in plugins
+# NVM are sourced in plugins
+
+# Hub
+alias git='hub'
 
 ### Convenient stuff ###
 
