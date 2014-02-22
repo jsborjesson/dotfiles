@@ -41,6 +41,7 @@ path=(
   $(brew --prefix php55)/bin # brew php
   /Applications/MAMP/Library/bin # MAMP
   vendor/bin # Composer relative path, works in all projects
+  bin # always make bin-files available
   $path
 )
 
