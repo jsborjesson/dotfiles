@@ -13,6 +13,8 @@ task :install do
 
     if File.exist?(File.join(ENV['HOME'], ".#{file}"))
 
+      # TODO: check if link already points here
+
       print "overwrite ~/.#{file}? [ynaq]"
       case $stdin.gets.chomp
       when 'a'
