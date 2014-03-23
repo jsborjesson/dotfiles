@@ -17,7 +17,7 @@
     branch = auto
 
 [push]
-	default = current
+    default = current
 
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
