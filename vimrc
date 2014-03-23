@@ -16,6 +16,10 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'kien/ctrlp.vim'
 
+" theme
+Bundle 'nanotech/jellybeans.vim'
+colorscheme jellybeans
+
 " config
 let mapleader=","
 nmap <space> :
@@ -23,6 +27,7 @@ set noesckeys " no delay on esc
 map Q <Nop>
 map K <Nop>
 autocmd BufWritePre * :%s/\s\+$//e " trim trailing whitespace
+
 
 " make backspace work as expected
 set backspace=indent,eol,start
