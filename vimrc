@@ -15,6 +15,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'kien/ctrlp.vim'
+Bundle 'vim-scripts/tComment'
 
 " theme
 Bundle 'nanotech/jellybeans.vim'
@@ -29,7 +30,6 @@ set noesckeys " no delay on esc
 map Q <Nop>
 map K <Nop>
 autocmd BufWritePre * :%s/\s\+$//e " trim trailing whitespace
-
 
 " make backspace work as expected
 set backspace=indent,eol,start
