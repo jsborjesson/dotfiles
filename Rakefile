@@ -11,7 +11,9 @@ task :install do
   Dir['*'].each do |file|
     next if ignore.include? file
 
-    if File.exist?(File.join(ENV['HOME'], ".#{file}"))
+    full_path = File.join(ENV['HOME'], ".#{file}")
+
+    if File.exists?(full_path) || File.symlink?(full_path)
 
       # TODO: check if link already points here
 
@@ -28,7 +30,7 @@ task :install do
         puts 'aborting'
         exit
       else
-        puts "skipping ~/.#{file}"
+        puts "skipping"
       end
 
     else
