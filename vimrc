@@ -16,6 +16,8 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/tComment'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'tpope/vim-fugitive'
 
 " theme
 Bundle 'nanotech/jellybeans.vim'
