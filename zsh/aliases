@@ -7,12 +7,13 @@ alias ga='git add --all'
 alias gc='git commit -m'
 alias gd='git diff'
 alias gds='git diff --staged'
-
+alias gl='git log --oneline'
 
 # ruby
 alias be='bundle exec'
 
 # navigation
+alias aliases='vim ~/.zsh/aliases'
 alias p='cd ~/Projects'
 alias l='ls -l'
 alias la='ls -a'

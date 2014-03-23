@@ -7,6 +7,7 @@
 
 [alias]
     co = checkout
+    br = branch
 
 [core]
     excludesfile = ~/.gitignore
@@ -17,7 +18,7 @@
     branch = auto
 
 [push]
-	default = current
+    default = current
 
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain

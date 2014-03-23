@@ -10,6 +10,8 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 setopt auto_cd
 
+export EDITOR=vim
+
 # Prepend path
 path=(
   'bin'
