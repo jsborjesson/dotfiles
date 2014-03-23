@@ -8,7 +8,7 @@ call vundle#rc()
 
 filetype plugin indent on " required
 
-" Bundles
+" bundles
 Bundle 'gmarik/vundle'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-surround'
@@ -16,9 +16,13 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'kien/ctrlp.vim'
 
-" better than defaults
+" config
 let mapleader=","
 nmap <space> :
+set noesckeys " no delay on esc
+map Q <Nop>
+map K <Nop>
+autocmd BufWritePre * :%s/\s\+$//e " trim trailing whitespace
 
 " make backspace work as expected
 set backspace=indent,eol,start
