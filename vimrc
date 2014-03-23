@@ -19,6 +19,8 @@ Bundle 'kien/ctrlp.vim'
 " theme
 Bundle 'nanotech/jellybeans.vim'
 colorscheme jellybeans
+set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+let g:airline_powerline_fonts=1
 
 " config
 let mapleader=","
