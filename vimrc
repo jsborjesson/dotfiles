@@ -6,11 +6,31 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+filetype plugin indent on " required
+
 " Bundles
 Bundle 'gmarik/vundle'
 Bundle 'bling/vim-airline'
-Bundle 'wincent/Command-T'
+Bundle 'tpope/vim-surround'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-rails'
+Bundle 'kien/ctrlp.vim'
 
-filetype plugin indent on " required
+" make backspace work as expected
+set backspace=indent,eol,start
 
-set laststatus=2  " Always show status line.
+set laststatus=2  " Always show status line
+
+" indentation
+set expandtab
+set autoindent
+set smartindent
+
+" Enable filetypes
+filetype on
+filetype plugin on
+filetype indent on
+syntax on
+
+let mapleader=","
+
