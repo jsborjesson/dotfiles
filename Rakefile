@@ -15,7 +15,9 @@ task :install do
 
       # TODO: check if link already points here
 
-      print "overwrite ~/.#{file}? [ynaq]"
+      replace_file(file) and next if replace_all
+
+      print "overwrite ~/.#{file}? [ynaq] "
       case $stdin.gets.chomp
       when 'a'
         replace_all = true
@@ -23,6 +25,7 @@ task :install do
       when 'y'
         replace_file(file)
       when 'q'
+        puts 'aborting'
         exit
       else
         puts "skipping ~/.#{file}"
