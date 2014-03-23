@@ -1,0 +1,23 @@
+[user]
+    name = Jimmy Börjesson
+    email = lagginglion@gmail.com
+
+[github]
+    user = alcesleo
+
+[alias]
+    co = checkout
+
+[core]
+    excludesfile = ~/.gitignore
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+
+[push]
+	default = current
+
+[credential]
+	helper = osxkeychain
