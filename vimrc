@@ -23,8 +23,21 @@ set laststatus=2  " Always show status line
 
 " indentation
 set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set autoindent
 set smartindent
+set smarttab
+
+" line numbers
+set number
+set relativenumber
+
+" searching
+set incsearch
+set ignorecase
+set smartcase
 
 " Enable filetypes
 filetype on
