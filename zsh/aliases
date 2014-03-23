@@ -1,0 +1,17 @@
+# git
+alias g='git'
+alias git='hub'
+
+alias gs='git status --short'
+alias ga='git add --all'
+alias gc='git commit -m'
+
+
+# ruby
+alias be='bundle exec'
+
+# navigation
+alias l='ls -l'
+alias la='ls -a'
+
+
