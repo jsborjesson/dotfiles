@@ -11,6 +11,7 @@ alias gc='git commit -m'
 alias be='bundle exec'
 
 # navigation
+alias p='cd ~/Projects'
 alias l='ls -l'
 alias la='ls -a'
 
