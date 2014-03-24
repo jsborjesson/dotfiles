@@ -18,37 +18,12 @@ Bundle 'vim-scripts/tComment'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'itspriddle/vim-marked'
-
-" git
-Bundle 'tpope/vim-fugitive'
-nmap <leader>gc :Gcommit<cr>
-nmap <leader>ga :Gwrite<cr>
-nmap <leader>gd :Gdiff<cr>
-nmap <leader>gp :Git push<cr>
-nmap <leader>gb :Gbrowse<cr>
-
-" whitespace
-Bundle 'bronson/vim-trailing-whitespace'
-nmap <leader>fw :FixWhitespace<cr>
-
-" multiple cursors - the best feature of sublime I can't live without
-Bundle 'terryma/vim-multiple-cursors'
-let g:multi_cursor_next_key='<C-d>'
-
-" NERDTree
 Bundle 'scrooloose/nerdtree'
-let NERDTreeQuitOnOpen=1
-nmap <leader>p :NERDTree<cr>
-
-" theme
-Bundle 'nanotech/jellybeans.vim'
-colorscheme jellybeans
-set guifont=Source\ Code\ Pro\ for\ Powerline:h12
-
+Bundle 'tpope/vim-fugitive'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'bling/vim-airline'
-let g:airline_powerline_fonts=1
-set laststatus=2  " Always show status line
-
+Bundle 'nanotech/jellybeans.vim'
 
 " config
 let mapleader=","
@@ -83,4 +58,30 @@ set relativenumber
 set incsearch
 set ignorecase
 set smartcase
+
+" git
+nmap <leader>gc :Gcommit<cr>
+nmap <leader>ga :Gwrite<cr>
+nmap <leader>gd :Gdiff<cr>
+nmap <leader>gp :Git push<cr>
+nmap <leader>gb :Gbrowse<cr>
+
+" whitespace
+nmap <leader>fw :FixWhitespace<cr>
+
+" multiple cursors - the best feature of sublime I can't live without
+let g:multi_cursor_next_key='<C-d>'
+
+" NERDTree
+set autochdir
+let NERDTreeQuitOnOpen=1
+let NERDTreeChDirMode=2
+nnoremap <leader>p :NERDTree .<cr>
+
+" theme
+colorscheme jellybeans
+set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+
+let g:airline_powerline_fonts=1
+set laststatus=2  " Always show status line
 
