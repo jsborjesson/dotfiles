@@ -30,6 +30,7 @@ nmap <leader>gc :Gcommit<cr>
 nmap <leader>ga :Gwrite<cr>
 nmap <leader>gd :Gdiff<cr>
 nmap <leader>gp :Git push<cr>
+nmap <leader>gb :Gbrowse<cr>
 
 " whitespace
 Bundle 'bronson/vim-trailing-whitespace'
