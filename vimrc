@@ -14,25 +14,34 @@ Bundle 'vim-scripts/tComment'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'itspriddle/vim-marked'
-Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'bronson/vim-trailing-whitespace'
-Bundle 'bling/vim-airline'
+
+let mapleader=","
+
+" NERDTree
+Bundle 'scrooloose/nerdtree'
+set autochdir
+let NERDTreeQuitOnOpen=1
+let NERDTreeChDirMode=2
+nnoremap <leader>p :NERDTree .<cr>
+
+" aesthetics
 Bundle 'nanotech/jellybeans.vim'
+colorscheme jellybeans
+set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+
+" airline
+Bundle 'bling/vim-airline'
+set laststatus=2  " Always show status line
+let g:airline_powerline_fonts=1
 
 " Enable filetypes
 syntax on
 filetype on
 filetype plugin indent on
 
-" theme
-colorscheme jellybeans
-set guifont=Source\ Code\ Pro\ for\ Powerline:h12
-set laststatus=2  " Always show status line
-let g:airline_powerline_fonts=1
-
-let mapleader=","
 
 " git
 nmap <leader>gc :Gcommit<cr>
@@ -47,11 +56,6 @@ nmap <leader>fw :FixWhitespace<cr>
 " multiple cursors - the best feature of sublime I can't live without
 let g:multi_cursor_next_key='<C-d>'
 
-" NERDTree
-set autochdir
-let NERDTreeQuitOnOpen=1
-let NERDTreeChDirMode=2
-nnoremap <leader>p :NERDTree .<cr>
 
 " indentation
 set expandtab
