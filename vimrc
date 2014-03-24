@@ -17,6 +17,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'editorconfig/editorconfig-vim'
+Bundle 'itspriddle/vim-marked'
 
 " git
 Bundle 'tpope/vim-fugitive'
