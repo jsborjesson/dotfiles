@@ -72,6 +72,7 @@ set relativenumber
 " searching
 set incsearch
 set ignorecase
+set smartcase " ignore case if all underscore
 
 " config
 set nocompatible
