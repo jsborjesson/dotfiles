@@ -2,9 +2,10 @@
 
 ## Installation
 
-1. Install the Mac OSX [Command Line Tools](https://developer.apple.com/downloads/index.action)
-2. Change the shell to zsh with `chsh -s /bin/zsh`
-3. `rake install` to symlink all the dotfiles to your home directory
+* Install the Mac OSX [Command Line Tools](https://developer.apple.com/downloads/index.action)
+* Change the shell to zsh with `chsh -s /bin/zsh`
+* Set iTerm2's terminal type to xterm-256color
+* `rake install` to symlink all the dotfiles to your home directory
 
 ### Vim
 
