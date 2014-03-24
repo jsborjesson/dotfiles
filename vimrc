@@ -17,8 +17,16 @@ Bundle 'tpope/vim-rails'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'airblade/vim-gitgutter'
+
+" git
 Bundle 'tpope/vim-fugitive'
+nmap <leader>gc :Gcommit<cr>
+nmap <leader>ga :Gwrite<cr>
+nmap <leader>gd :Gdiff<cr>
+
+" whitespace
 Bundle 'bronson/vim-trailing-whitespace'
+nmap <leader>fw :FixWhitespace<cr>
 
 " multiple cursors - the best feature of sublime I can't live without
 Bundle 'terryma/vim-multiple-cursors'
