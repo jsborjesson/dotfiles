@@ -12,7 +12,10 @@
 Install the [Lokaltog/powerline-fonts](https://github.com/Lokaltog/powerline-fonts).
 You might also need to set them in iTerm2's settings.
 
-    # install vundle and then
+    # install vundle
+    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+    # in vim
     :BundleInstall
 
 
