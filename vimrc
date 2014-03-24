@@ -14,9 +14,6 @@ Bundle 'vim-scripts/tComment'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'itspriddle/vim-marked'
-Bundle 'tpope/vim-fugitive'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'bronson/vim-trailing-whitespace'
 
 let mapleader=","
 
@@ -38,25 +35,26 @@ Bundle 'bling/vim-airline'
 set laststatus=2  " Always show status line
 let g:airline_powerline_fonts=1
 
-" Enable filetypes
-syntax on
-filetype on
-filetype plugin indent on
+" whitespace
+Bundle 'bronson/vim-trailing-whitespace'
+nmap <leader>fw :FixWhitespace<cr>
 
+" multiple cursors - the best feature of sublime I can't live without
+Bundle 'terryma/vim-multiple-cursors'
+let g:multi_cursor_next_key='<C-d>'
 
 " git
+Bundle 'tpope/vim-fugitive'
 nmap <leader>gc :Gcommit<cr>
 nmap <leader>ga :Gwrite<cr>
 nmap <leader>gd :Gdiff<cr>
 nmap <leader>gp :Git push<cr>
 nmap <leader>gb :Gbrowse<cr>
 
-" whitespace
-nmap <leader>fw :FixWhitespace<cr>
-
-" multiple cursors - the best feature of sublime I can't live without
-let g:multi_cursor_next_key='<C-d>'
-
+" Enable filetypes
+syntax on
+filetype on
+filetype plugin indent on
 
 " indentation
 set expandtab
