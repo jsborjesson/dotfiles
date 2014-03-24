@@ -1,12 +1,8 @@
 " Vundle
-set nocompatible              " be iMproved, required
-filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
-filetype plugin indent on " required
 
 " bundles
 Bundle 'gmarik/vundle'
@@ -25,39 +21,18 @@ Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'bling/vim-airline'
 Bundle 'nanotech/jellybeans.vim'
 
-" config
-let mapleader=","
-nmap <space> :
-set noesckeys " no delay on esc
-map Q <Nop>
-map K <Nop>
-
-" make backspace work as expected
-set backspace=indent,eol,start
-
 " Enable filetypes
-filetype on
-filetype plugin on
-filetype indent on
 syntax on
+filetype on
+filetype plugin indent on
 
-" indentation
-set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set autoindent
-set smartindent
-set smarttab
+" theme
+colorscheme jellybeans
+set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+set laststatus=2  " Always show status line
+let g:airline_powerline_fonts=1
 
-" line numbers
-set number
-set relativenumber
-
-" searching
-set incsearch
-set ignorecase
-set smartcase
+let mapleader=","
 
 " git
 nmap <leader>gc :Gcommit<cr>
@@ -78,10 +53,27 @@ let NERDTreeQuitOnOpen=1
 let NERDTreeChDirMode=2
 nnoremap <leader>p :NERDTree .<cr>
 
-" theme
-colorscheme jellybeans
-set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+" indentation
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set autoindent
+set smartindent
+set smarttab
 
-let g:airline_powerline_fonts=1
-set laststatus=2  " Always show status line
+" line numbers
+set number
+set relativenumber
 
+" searching
+set incsearch
+set ignorecase
+
+" config
+set nocompatible
+set ttimeoutlen=1 " fixes delay on escape without breaking arrowkeys like noesckeys
+set backspace=indent,eol,start " make backspace work as expected
+nmap <space> :
+map Q <Nop>
+map K <Nop>
