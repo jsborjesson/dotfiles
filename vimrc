@@ -18,6 +18,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-fugitive'
+Bundle 'bronson/vim-trailing-whitespace'
 
 " multiple cursors - the best feature of sublime I can't live without
 Bundle 'terryma/vim-multiple-cursors'
@@ -35,7 +36,6 @@ nmap <space> :
 set noesckeys " no delay on esc
 map Q <Nop>
 map K <Nop>
-autocmd BufWritePre * :%s/\s\+$//e " trim trailing whitespace
 
 " make backspace work as expected
 set backspace=indent,eol,start
@@ -65,6 +65,4 @@ set relativenumber
 set incsearch
 set ignorecase
 set smartcase
-
-
 
