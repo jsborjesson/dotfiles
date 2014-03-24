@@ -47,6 +47,7 @@ let g:multi_cursor_next_key='<C-d>'
 Bundle 'tpope/vim-fugitive'
 nmap <leader>gc :Gcommit<cr>
 nmap <leader>ga :Gwrite<cr>
+nmap <leader>gac :Gwrite<cr>:Gcommit<cr>
 nmap <leader>gd :Gdiff<cr>
 nmap <leader>gp :Git push<cr>
 nmap <leader>gb :Gbrowse<cr>
@@ -79,6 +80,7 @@ set nocompatible
 set ttimeoutlen=1 " fixes delay on escape without breaking arrowkeys like noesckeys
 set backspace=indent,eol,start " make backspace work as expected
 set title
+set showcmd
 nmap <space> :
 map Q <Nop>
 map K <Nop>
