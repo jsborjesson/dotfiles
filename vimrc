@@ -29,6 +29,7 @@ Bundle 'tpope/vim-fugitive'
 nmap <leader>gc :Gcommit<cr>
 nmap <leader>ga :Gwrite<cr>
 nmap <leader>gd :Gdiff<cr>
+nmap <leader>gp :Git push<cr>
 
 " whitespace
 Bundle 'bronson/vim-trailing-whitespace'
