@@ -19,6 +19,11 @@ Bundle 'vim-scripts/tComment'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'editorconfig/editorconfig-vim'
 
+" NERDTree
+Bundle 'scrooloose/nerdtree'
+let NERDTreeQuitOnOpen=1
+nmap <leader>p :NERDTree<cr>
+
 " git
 Bundle 'tpope/vim-fugitive'
 nmap <leader>gc :Gcommit<cr>
