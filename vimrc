@@ -19,6 +19,10 @@ Bundle 'vim-scripts/tComment'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-fugitive'
 
+" multiple cursors - the best feature of sublime I can't live without
+Bundle 'terryma/vim-multiple-cursors'
+let g:multi_cursor_next_key='<C-d>'
+
 " theme
 Bundle 'nanotech/jellybeans.vim'
 colorscheme jellybeans
