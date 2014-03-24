@@ -10,7 +10,6 @@ filetype plugin indent on " required
 
 " bundles
 Bundle 'gmarik/vundle'
-Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
@@ -18,11 +17,6 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'editorconfig/editorconfig-vim'
-
-" NERDTree
-Bundle 'scrooloose/nerdtree'
-let NERDTreeQuitOnOpen=1
-nmap <leader>p :NERDTree<cr>
 
 " git
 Bundle 'tpope/vim-fugitive'
@@ -40,11 +34,20 @@ nmap <leader>fw :FixWhitespace<cr>
 Bundle 'terryma/vim-multiple-cursors'
 let g:multi_cursor_next_key='<C-d>'
 
+" NERDTree
+Bundle 'scrooloose/nerdtree'
+let NERDTreeQuitOnOpen=1
+nmap <leader>p :NERDTree<cr>
+
 " theme
 Bundle 'nanotech/jellybeans.vim'
 colorscheme jellybeans
 set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+
+Bundle 'bling/vim-airline'
 let g:airline_powerline_fonts=1
+set laststatus=2  " Always show status line
+
 
 " config
 let mapleader=","
@@ -61,8 +64,6 @@ filetype on
 filetype plugin on
 filetype indent on
 syntax on
-
-set laststatus=2  " Always show status line
 
 " indentation
 set expandtab
