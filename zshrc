@@ -1,6 +1,8 @@
 source $HOME/.zsh_prompt
 source $HOME/.zsh/aliases
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
 ## completions
 autoload -U compinit
 compinit -C
