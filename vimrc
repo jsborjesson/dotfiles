@@ -59,6 +59,10 @@ syntax on
 filetype on
 filetype plugin indent on
 
+" ruby
+" TODO: move this to a ~/.vim/after/ftplugin/ruby.vim?
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+
 " indentation
 set expandtab
 set tabstop=4
