@@ -19,9 +19,7 @@ let mapleader=","
 
 " NERDTree
 Bundle 'scrooloose/nerdtree'
-set autochdir
 let NERDTreeQuitOnOpen=1
-let NERDTreeChDirMode=2
 let g:NERDTreeWindowSize=38
 nnoremap <leader>p :NERDTree .<cr>
 
