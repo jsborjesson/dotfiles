@@ -37,6 +37,7 @@ task :install do
       link_file(file)
     end
 
+    system %Q{mkdir ~/.tmp}
   end
 end
 
