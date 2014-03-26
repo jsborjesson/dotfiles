@@ -12,7 +12,8 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 setopt auto_cd
 
-### vi keybindings http://dougblack.io/words/zsh-vi-mode.html
+### vi keybindings
+# http://dougblack.io/words/zsh-vi-mode.html
 bindkey -v
 
 bindkey '^P' up-history
@@ -32,6 +33,10 @@ zle -N zle-line-init
 zle -N zle-keymap-select
 export KEYTIMEOUT=1
 ### end vi keybindings
+
+# fix forwards delete key
+# http://superuser.com/questions/169920/binding-fn-delete-in-zsh-on-mac-os-x
+bindkey "^[[3~" delete-char
 
 export EDITOR=vim
 
