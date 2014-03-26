@@ -5,44 +5,45 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " bundles
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-surround'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-rails'
-Bundle 'kien/ctrlp.vim'
-Bundle 'vim-scripts/tComment'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'editorconfig/editorconfig-vim'
-Bundle 'itspriddle/vim-marked'
+Plugin 'gmarik/vundle'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
+Plugin 'kien/ctrlp.vim'
+Plugin 'vim-scripts/tComment'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'itspriddle/vim-marked'
 
 let mapleader=","
 
 " NERDTree
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 let NERDTreeQuitOnOpen=1
 let g:NERDTreeWindowSize=38
-nnoremap <leader>p :NERDTree .<cr>
+" show the current file on open
+nnoremap <leader>p :NERDTree<cr>
 
 " aesthetics
-Bundle 'nanotech/jellybeans.vim'
+Plugin 'nanotech/jellybeans.vim'
 colorscheme jellybeans
 set guifont=Source\ Code\ Pro\ for\ Powerline:h12
 
 " airline
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 set laststatus=2  " Always show status line
 let g:airline_powerline_fonts=1
 
 " whitespace
-Bundle 'bronson/vim-trailing-whitespace'
+Plugin 'bronson/vim-trailing-whitespace'
 nmap <leader>fw :FixWhitespace<cr>
 
 " multiple cursors - the best feature of sublime I can't live without
-Bundle 'terryma/vim-multiple-cursors'
+Plugin 'terryma/vim-multiple-cursors'
 let g:multi_cursor_next_key='<C-d>'
 
 " git
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 nmap <leader>gc :Gcommit<cr>
 nmap <leader>ga :Gwrite<cr>
 nmap <leader>gac :Gwrite<cr>:Gcommit<cr>
