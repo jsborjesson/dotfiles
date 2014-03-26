@@ -51,6 +51,9 @@ nmap <leader>gd :Gdiff<cr>
 nmap <leader>gp :Git push<cr>
 nmap <leader>gb :Gbrowse<cr>
 
+" autocompletion
+imap <Tab> <C-N>
+
 " backup and swap in tmp, fallback to current dir
 set backupdir=~/.tmp,.
 set backupdir=~/.tmp,.
