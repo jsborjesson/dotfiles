@@ -1,4 +1,4 @@
-# Rebooted dotfiles
+# Dotfiles
 
 ## Installation
 
@@ -15,5 +15,4 @@ You might also need to set them in iTerm2's settings.
     # install vundle
     git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
     vim +PluginInstall +qall
-
 
