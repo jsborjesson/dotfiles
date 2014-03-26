@@ -15,6 +15,7 @@ alias be='bundle exec'
 # navigation
 alias aliases='vim ~/.zsh/aliases'
 alias p='cd ~/Projects'
+alias d='cd ~/Dropbox'
 alias l='ls -l'
 alias la='ls -a'
 
