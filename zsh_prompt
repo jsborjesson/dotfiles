@@ -14,7 +14,7 @@ PROMPT="${P_TIMESTAMP} ${P_DIR} ${P_DOLLAR} %{$reset_color%}"
 
 # [VICMD] to the right when in vi command mode
 function zle-line-init zle-keymap-select {
-    VIM_PROMPT="%{$fg_bold[yellow]%} [% VICMD]%  %{$reset_color%}"
+    VI_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
     RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/}"
     RPS2=$RPS1
     zle reset-prompt
