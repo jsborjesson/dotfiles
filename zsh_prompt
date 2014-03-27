@@ -12,7 +12,7 @@ P_DOLLAR="%{$fg_bold[green]%}\$"
 PROMPT="${P_TIMESTAMP} ${P_DIR} ${P_DOLLAR} %{$reset_color%}"
 
 
-# [VICMD] to the right when in vi command mode
+# [NORMAL] to the right when in vi command mode
 function zle-line-init zle-keymap-select {
     VI_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
     RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/}"
