@@ -4,8 +4,11 @@
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" bundles
+" let vundle handle vundle
 Plugin 'gmarik/vundle'
+
+" Misc plugins
+Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
@@ -13,9 +16,14 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'itspriddle/vim-marked'
 
 let mapleader=","
+
+" snippets
+Bundle 'SirVer/ultisnips'
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " NERDTree
 Plugin 'scrooloose/nerdtree'
@@ -33,6 +41,22 @@ set guifont=Source\ Code\ Pro\ for\ Powerline:h12
 Plugin 'bling/vim-airline'
 set laststatus=2  " Always show status line
 let g:airline_powerline_fonts=1
+
+" promptline
+" timestamp > path >        < git status
+Plugin 'edkolev/promptline.vim'
+let g:promptline_theme='airline'
+let g:promptline_preset = {
+    \'a' : [ '%T' ],
+    \'b' : [ promptline#slices#user() ],
+    \'c' : [ promptline#slices#cwd() ],
+    \'y' : [ promptline#slices#vcs_branch() ],
+    \'warn' : [ promptline#slices#last_exit_code() ]}
+
+" markdown
+Plugin 'plasticboy/vim-markdown'
+Plugin 'itspriddle/vim-marked'
+let g:vim_markdown_folding_disabled=1
 
 " whitespace
 Plugin 'bronson/vim-trailing-whitespace'
