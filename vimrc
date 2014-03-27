@@ -16,7 +16,6 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'edkolev/promptline.vim'
 
 let mapleader=","
 
@@ -38,15 +37,26 @@ Plugin 'nanotech/jellybeans.vim'
 colorscheme jellybeans
 set guifont=Source\ Code\ Pro\ for\ Powerline:h12
 
-" markdown
-Plugin 'plasticboy/vim-markdown'
-Plugin 'itspriddle/vim-marked'
-let g:vim_markdown_folding_disabled=1
-
 " airline
 Plugin 'bling/vim-airline'
 set laststatus=2  " Always show status line
 let g:airline_powerline_fonts=1
+
+" promptline
+" timestamp > path >        < git status
+Plugin 'edkolev/promptline.vim'
+let g:promptline_theme='airline'
+let g:promptline_preset = {
+    \'a' : [ '%T' ],
+    \'b' : [ promptline#slices#user() ],
+    \'c' : [ promptline#slices#cwd() ],
+    \'y' : [ promptline#slices#vcs_branch() ],
+    \'warn' : [ promptline#slices#last_exit_code() ]}
+
+" markdown
+Plugin 'plasticboy/vim-markdown'
+Plugin 'itspriddle/vim-marked'
+let g:vim_markdown_folding_disabled=1
 
 " whitespace
 Plugin 'bronson/vim-trailing-whitespace'
