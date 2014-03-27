@@ -4,8 +4,10 @@
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" bundles
+" let vundle handle vundle
 Plugin 'gmarik/vundle'
+
+" Misc plugins
 Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
@@ -13,7 +15,6 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'itspriddle/vim-marked'
 
 let mapleader=","
 
@@ -28,6 +29,11 @@ nnoremap <leader>p :NERDTree<cr>
 Plugin 'nanotech/jellybeans.vim'
 colorscheme jellybeans
 set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+
+" markdown
+Plugin 'plasticboy/vim-markdown'
+Plugin 'itspriddle/vim-marked'
+let g:vim_markdown_folding_disabled=1
 
 " airline
 Plugin 'bling/vim-airline'
