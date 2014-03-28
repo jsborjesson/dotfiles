@@ -7,6 +7,10 @@
 * Set iTerm2's terminal type to xterm-256color
 * `rake install` to symlink all the dotfiles to your home directory
 
+### Homebrew
+
+After homebrew has been installed, run `brew bundle` from this directory.
+
 ### Vim
 
 Install the [Lokaltog/powerline-fonts](https://github.com/Lokaltog/powerline-fonts).
