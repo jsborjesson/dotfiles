@@ -43,7 +43,6 @@ set laststatus=2  " Always show status line
 let g:airline_powerline_fonts=1
 
 " promptline
-" timestamp > path >        < git status
 Plugin 'edkolev/promptline.vim'
 let g:promptline_theme='airline'
 let g:promptline_preset = {
@@ -71,7 +70,7 @@ let g:multi_cursor_next_key='<C-d>'
 Plugin 'tpope/vim-fugitive'
 nmap <leader>gc :Gcommit<cr>
 nmap <leader>ga :Gwrite<cr>
-nmap <leader>gac :Gwrite<cr>:Gcommit<cr>
+nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
 nmap <leader>gd :Gdiff<cr>
 nmap <leader>gp :Git push<cr>
 nmap <leader>gb :Gbrowse<cr>
