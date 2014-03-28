@@ -1,5 +1,6 @@
-source $HOME/.zsh_prompt
 source $HOME/.zsh/aliases
+source $HOME/.zsh/vi_mode_indicator
+source $HOME/.zsh_prompt
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
