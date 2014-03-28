@@ -1,4 +1,5 @@
 require 'rake'
+Dir.glob('tasks/*.rake').each { |file| import file }
 
 # Most of it stolen from r00k/dotfiles
 
@@ -36,10 +37,10 @@ task :install do
     else
       link_file(file)
     end
-
-    # create vim's temp directory
-    system %Q{mkdir ~/.tmp}
   end
+
+  # create vim's temp directory
+  system %Q{mkdir ~/.tmp}
 end
 
 def link_file(file)
