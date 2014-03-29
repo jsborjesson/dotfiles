@@ -36,7 +36,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 path=(
   'bin'
   '/usr/local/bin'
-  '~/.rvm/bin'
+  $HOME/.rvm/bin
   $path
 )
 export PATH
