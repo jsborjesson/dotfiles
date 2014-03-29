@@ -8,24 +8,14 @@
 ### Manual steps
 
 * Install [Powerline fonts](https://github.com/Lokaltog/powerline-fonts), just a matter of
-    * `git clone https://github.com/Lokaltog/powerline-fonts.git`
-    * doubleclick the fonts and install the ones you need
-    * set them in iTerm2:s settings
-* Set iTerm2's terminal type to xterm-256color
+    1. `git clone https://github.com/Lokaltog/powerline-fonts.git`
+    2. doubleclick the fonts and install the ones you need
+    3. set them in iTerm2:s settings
+* Set iTerm2's terminal type to `xterm-256color`
 
 ### Homebrew
 
-After homebrew has been installed, run `brew bundle` from this directory.
-
-### Vim
-
-Install the [Lokaltog/powerline-fonts](https://github.com/Lokaltog/powerline-fonts).
-You might also need to set them in iTerm2's settings.
-
-    # install vundle
-    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-    vim +PluginInstall +qall
-
+The `Brewfile` can be run with `brew bundle`.
 
 ### Prompt
 
