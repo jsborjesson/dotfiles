@@ -86,7 +86,7 @@ namespace :setup do
   task :rvm do
     unless system("rvm --version")
       puts "Installing RVM..."
-      sh "curl -sSL https://get.rvm.io | bash -s stable"
+      sh "curl -sSL https://get.rvm.io | bash -s stable --ruby"
     end
   end
 
