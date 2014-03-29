@@ -7,6 +7,10 @@
 
 ### Manual steps
 
+* Install [Powerline fonts](https://github.com/Lokaltog/powerline-fonts), just a matter of
+    * `git clone https://github.com/Lokaltog/powerline-fonts.git`
+    * doubleclick the fonts and install the ones you need
+    * set them in iTerm2:s settings
 * Set iTerm2's terminal type to xterm-256color
 
 ### Homebrew
