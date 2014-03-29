@@ -90,8 +90,10 @@ namespace :setup do
   end
 
   task :zsh do
-    puts "Switching to Zsh"
-    sh "chsh -s /bin/zsh"
+    unless ENV["SHELL"] =~ /zsh/
+      puts "Switching to Zsh"
+      system %Q{chsh -s `which zsh`}
+    end
   end
 
 end
