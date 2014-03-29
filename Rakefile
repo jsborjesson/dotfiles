@@ -9,6 +9,7 @@ namespace :setup do
     Rake::Task["setup:zsh"].invoke
     Rake::Task["setup:symlinks"].invoke
     Rake::Task["setup:vim"].invoke
+    Rake::Task["setup:rvm"].invoke
   end
 
   desc 'Symlink dotfiles into home directory'
@@ -60,8 +61,8 @@ namespace :setup do
     system %Q{mkdir ~/.tmp}
 
     # Install Vundle
-    puts "Installing Vundle..."
     unless File.directory? File.expand_path "~/.vim/bundle/vundle"
+      puts "Installing Vundle..."
       sh "git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle"
     end
 
@@ -79,6 +80,13 @@ namespace :setup do
 
     puts "Installing Homebrew packages..."
     sh 'brew bundle'
+  end
+
+  task :rvm do
+    unless system("rvm --version")
+      puts "Installing RVM..."
+      sh "curl -sSL https://get.rvm.io | bash -s stable"
+    end
   end
 
   task :zsh do
