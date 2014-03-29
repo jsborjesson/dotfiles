@@ -14,7 +14,7 @@ namespace :setup do
 
   desc 'Symlink dotfiles into home directory'
   task :symlinks do
-    ignore = %w{Rakefile Brewfile README.md LICENSE}
+    ignore = %w{Rakefile Brewfile scripts README.md LICENSE}
     replace_all = false
 
     Dir['*'].each do |file|
@@ -82,6 +82,7 @@ namespace :setup do
     sh 'brew bundle'
   end
 
+  desc 'Install RVM if not already installed'
   task :rvm do
     unless system("rvm --version")
       puts "Installing RVM..."
@@ -89,11 +90,19 @@ namespace :setup do
     end
   end
 
+  desc 'Switch default shell to Zsh'
   task :zsh do
     unless ENV["SHELL"] =~ /zsh/
       puts "Switching to Zsh"
       system %Q{chsh -s `which zsh`}
     end
+  end
+
+  desc 'Configure Mac OS using the scripts/osx file'
+  task :osx do
+    puts "Running scripts/osx..."
+    system("sh ./scripts/osx")
+    puts "Done! Some of these settings may require a restart."
   end
 
 end
