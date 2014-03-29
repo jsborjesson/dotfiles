@@ -72,9 +72,10 @@ namespace :setup do
 
   desc 'Setup Homebrew and install packages in Brewfile'
   task :brew do
-    puts "Installing Homebrew..."
-    # FIXME: If homebrew installed
-    sh 'ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"'
+    unless system("brew --version")
+      puts "Installing Homebrew..."
+      sh 'ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"'
+    end
 
     puts "Installing Homebrew packages..."
     sh 'brew bundle'
