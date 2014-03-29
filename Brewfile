@@ -26,7 +26,11 @@ install brew-cask
 cask install google-chrome
 cask install iterm2
 cask install alfred
+cask install moom
 cask install xtrafinder
+cask install dropbox
+cask install keepassx
+cask install caffeine
 
 # Make sure the links work in alfred
 cask alfred link
