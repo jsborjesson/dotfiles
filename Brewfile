@@ -32,6 +32,7 @@ cask install dropbox
 cask install keepassx
 cask install caffeine
 cask install spotify
+cask install appcleaner
 
 # Make sure the links work in alfred
 cask alfred link
