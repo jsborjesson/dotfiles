@@ -5,7 +5,6 @@ update
 upgrade
 
 tap homebrew/dupes
-tap homebrew/versions
 
 # Essentials
 install git
@@ -19,5 +18,17 @@ install ag
 install hub
 install sqlite
 install heroku-toolbelt
+
+# Casks
+tap phinze/cask
+install brew-cask
+
+cask install google-chrome
+cask install iterm2
+cask install alfred
+cask install xtrafinder
+
+# Make sure the links work in alfred
+cask alfred link
 
 cleanup
