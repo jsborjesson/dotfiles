@@ -35,7 +35,6 @@ nnoremap <leader>p :NERDTree<cr>
 " aesthetics
 Plugin 'nanotech/jellybeans.vim'
 colorscheme jellybeans
-set guifont=Source\ Code\ Pro\ for\ Powerline:h12
 
 " airline
 Plugin 'bling/vim-airline'
@@ -69,8 +68,8 @@ let g:multi_cursor_next_key='<C-d>'
 " git
 Plugin 'tpope/vim-fugitive'
 nmap <leader>ga :Gwrite<cr>
-nmap <leader>gc :Gcommit -m ""<left>
-nmap <leader>gac :Gcommit -a -m ""<left>
+nmap <leader>gc :Gcommit<cr>
+nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
 nmap <leader>gd :Gdiff<cr>
 nmap <leader>gp :Git push<cr>
 nmap <leader>gb :Gbrowse<cr>

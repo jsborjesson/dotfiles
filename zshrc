@@ -30,10 +30,13 @@ bindkey "^[[3~" delete-char
 
 export EDITOR=vim
 
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 # Prepend path
 path=(
   'bin'
   '/usr/local/bin'
+  '~/.rvm/bin'
   $path
 )
 export PATH
