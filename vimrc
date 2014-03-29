@@ -35,7 +35,6 @@ nnoremap <leader>p :NERDTree<cr>
 " aesthetics
 Plugin 'nanotech/jellybeans.vim'
 colorscheme jellybeans
-set guifont=Source\ Code\ Pro\ for\ Powerline:h12
 
 " airline
 Plugin 'bling/vim-airline'
