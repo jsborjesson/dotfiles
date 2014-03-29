@@ -8,8 +8,10 @@ namespace :setup do
   task :all do
     Rake::Task["setup:zsh"].invoke
     Rake::Task["setup:symlinks"].invoke
+    Rake::Task["setup:osx"].invoke
     Rake::Task["setup:vim"].invoke
     Rake::Task["setup:rvm"].invoke
+    Rake::Task["setup:brew"].invoke
   end
 
   desc 'Symlink dotfiles into home directory'
@@ -32,8 +34,10 @@ namespace :setup do
           end
         end
 
+        # replace all
         replace_file(file) and next if replace_all
 
+        # prompt
         print "overwrite ~/.#{file}? [ynaq] "
         case $stdin.gets.chomp
         when 'a'
