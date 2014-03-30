@@ -12,6 +12,7 @@ compinit -C
 # case-insensitive completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
+# cd without cd
 setopt auto_cd
 
 ### vi keybindings
@@ -33,6 +34,8 @@ export EDITOR=vim
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+export LSCOLORS=ExCxFxFxBxGxGxababaeae
+
 # Prepend path
 path=(
   'bin'
@@ -41,3 +44,4 @@ path=(
   $path
 )
 export PATH
+

@@ -19,7 +19,6 @@ alias p='cd ~/Projects'
 alias d='cd ~/Dropbox'
 alias n='cd ~/Dropbox/notes/ && vim'
 
-alias l='ls -l'
-alias la='ls -a'
-
+# listing
+alias ls='ls -G' # color all output
 
