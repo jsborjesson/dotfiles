@@ -4,6 +4,7 @@ alias git='hub'
 
 alias gs='git status --short'
 alias ga='git add --all'
+alias gb='git browse'
 alias gc='git commit -m'
 alias gd='git diff'
 alias gds='git diff --staged'
