@@ -1,4 +1,5 @@
 source $HOME/.zsh/aliases
+source $HOME/.zsh/functions
 source $HOME/.zsh/vi_mode_indicator
 source $HOME/.zsh_prompt
 
