@@ -1,4 +1,7 @@
-# cd into top finder window location
 cdf() {
-  cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
+    cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
+}
+
+function md() {
+    mkdir -p "$@" && cd "$@"
 }
