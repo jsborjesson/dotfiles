@@ -23,3 +23,5 @@ alias n='cd ~/Dropbox/notes/ && vim'
 # listing
 alias ls='ls -G' # color all output
 
+# other
+alias nzbsync='cp ~/Downloads/*.nzb /Volumes/Data/Downloads/nzbs && rm ~/Downloads/*.nzb'
