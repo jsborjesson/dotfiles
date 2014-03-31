@@ -1,7 +1,4 @@
 require 'rake'
-Dir.glob('tasks/*.rake').each { |file| import file }
-
-# Most of it stolen from r00k/dotfiles
 
 namespace :setup do
   desc 'Do all setup tasks'
@@ -25,25 +22,31 @@ namespace :setup do
       if File.exists?(link_path(file))
 
         if symlinked?(file)
-          puts "already symlinked #{readable_path file}"
+          puts "#{readable_path file} already symlinked"
           next
         end
 
-        replace_file(file) and next if replace_all
+        if replace_all
+          puts "#{readable_path file} symlinked (force)"
+          replace_file(file)
+          next
+        end
 
-        # prompt
-        print "overwrite #{readable_path file}? [yna] "
+        print "#{readable_path file} exists, overwrite? [yna]: "
         case $stdin.gets.chomp
         when 'a'
+          puts "replacing all..."
           replace_all = true
           redo
         when 'y'
-          replace_file(file)
+          replace_file!(file)
+          puts "#{readable_path file} replaced"
         else
-          puts "skipping #{readable_path file}"
+          puts "#{readable_path file} skipped"
         end
       else
-        link_file(file)
+        link_file!(file)
+        puts "#{readable_path file} symlinked"
       end
     end
 
@@ -120,12 +123,11 @@ def symlinked?(file)
   File.readlink(link_path(file)) == source_path(file)
 end
 
-def link_file(file)
-  puts "linking ~/.#{file}"
-  system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
+def link_file!(file)
+  system %Q{ln -s "#{source_path file}" "#{link_path file}"}
 end
 
-def replace_file(file)
-  system %Q{rm "$HOME/.#{file}"}
-  link_file(file)
+def replace_file!(file)
+  system %Q{rm "#{link_path file}"}
+  link_file!(file)
 end
