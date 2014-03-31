@@ -87,6 +87,9 @@ filetype plugin indent on
 " TODO: move this to a ~/.vim/after/ftplugin/ruby.vim?
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 
+" load the correct env in :! commands (use rvm ruby)
+set shellcmdflag=-ic
+
 " indentation
 set expandtab
 set tabstop=4
