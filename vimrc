@@ -42,14 +42,14 @@ set laststatus=2  " Always show status line
 let g:airline_powerline_fonts=1
 
 " promptline
+" :PromptlineSnapshot! ./zsh_prompt
 Plugin 'edkolev/promptline.vim'
 let g:promptline_theme='airline'
 let g:promptline_preset = {
     \'a' : [ '%T' ],
-    \'b' : [ promptline#slices#user() ],
-    \'c' : [ promptline#slices#cwd() ],
-    \'y' : [ promptline#slices#vcs_branch() ],
-    \'x' : [ '$vim_mode' ],
+    \'b' : [ promptline#slices#cwd() ],
+    \'c' : [ promptline#slices#vcs_branch() ],
+    \'z' : [ '$vim_mode' ],
     \'warn' : [ promptline#slices#last_exit_code() ]}
 
 " markdown

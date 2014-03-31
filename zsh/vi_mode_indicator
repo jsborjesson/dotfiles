@@ -1,7 +1,7 @@
 # Enables the '$vim_mode' slice in promptline.vim
 # https://github.com/edkolev/promptline.vim/issues/10
 vim_ins_mode=""
-vim_cmd_mode="N"
+vim_cmd_mode="NORMAL"
 vim_mode=$vim_ins_mode
 
 function zle-keymap-select {
