@@ -21,20 +21,20 @@ namespace :setup do
 
       unless File.exists?(link_path(file))
         link_file!(file)
-        puts "#{readable_path file} symlinked"
+        puts file_info(file, "symlinked")
       else
         if symlinked?(file)
-          puts "#{readable_path file} already symlinked"
+          puts file_info(file, "already symlinked")
           next
         end
 
         if replace_all
-          puts "#{readable_path file} symlinked (force)"
+          puts file_info(file, "symlinked (force)")
           replace_file(file)
           next
         end
 
-        print "#{readable_path file} exists, overwrite? [yna]: "
+        print file_info(file, "exists, overwrite? [yna]: ")
         case $stdin.gets.chomp
         when 'a'
           puts "replacing all..."
@@ -42,9 +42,9 @@ namespace :setup do
           redo
         when 'y'
           replace_file!(file)
-          puts "#{readable_path file} replaced"
+          puts file_info(file, "replaced")
         else
-          puts "#{readable_path file} skipped"
+          puts file_info(file, "skipped")
         end
 
       end
@@ -111,15 +111,16 @@ def source_path(file)
   File.expand_path("./#{file}")
 end
 
-def readable_path(file)
-  "~/.#{file}".ljust(20)
+def human_readable_path(file)
+  "~/.#{file}"
+end
+
+def file_info(file, message)
+  "#{human_readable_path(file).ljust(20)} #{message}"
 end
 
 def symlinked?(file)
-  unless File.symlink?(link_path(file))
-    return false
-  end
-  File.readlink(link_path(file)) == source_path(file)
+  File.symlink?(link_path(file)) && ( File.readlink(link_path(file)) == source_path(file) )
 end
 
 def link_file!(file)
