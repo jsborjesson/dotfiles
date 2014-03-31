@@ -2,9 +2,8 @@
 
 ## Installation
 
-* Install the Mac OSX [Command Line
-* Tools](https://developer.apple.com/downloads/index.action) `rake -T` to see
-* all the available commands and use them to install
+* Install the Mac OSX [Command Line Tools](https://developer.apple.com/downloads/index.action).
+* `rake -T` to see all the available commands and use them to install.
 
 ### Manual steps
 
