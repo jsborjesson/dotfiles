@@ -33,6 +33,7 @@ cask install keepassx
 cask install caffeine
 cask install spotify
 cask install appcleaner
+cask install skype
 
 # Make sure the links work in alfred
 cask alfred link
