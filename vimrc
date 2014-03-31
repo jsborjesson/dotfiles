@@ -86,7 +86,9 @@ filetype plugin indent on
 " TODO: move this to a ~/.vim/after/ftplugin/ruby.vim?
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 
-" load the correct env in :! commands (use rvm ruby)
+" load the zshrc
+" means that the correct ruby version is used
+" also means that if something breaks zsh, it also breaks vim
 set shellcmdflag=-ic
 
 " indentation
