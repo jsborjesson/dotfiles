@@ -112,7 +112,7 @@ def source_path(file)
 end
 
 def readable_path(file)
-  "~/.#{file}"
+  "~/.#{file}".ljust(20)
 end
 
 def symlinked?(file)
