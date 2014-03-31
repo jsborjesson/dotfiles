@@ -19,8 +19,10 @@ namespace :setup do
     Dir['*'].each do |file|
       next if ignore.include? file
 
-      if File.exists?(link_path(file))
-
+      unless File.exists?(link_path(file))
+        link_file!(file)
+        puts "#{readable_path file} symlinked"
+      else
         if symlinked?(file)
           puts "#{readable_path file} already symlinked"
           next
@@ -44,12 +46,9 @@ namespace :setup do
         else
           puts "#{readable_path file} skipped"
         end
-      else
-        link_file!(file)
-        puts "#{readable_path file} symlinked"
+
       end
     end
-
   end
 
   desc 'Setup Vundle and install plugins, create temp dir'
