@@ -29,7 +29,7 @@ namespace :setup do
         # symlink already exists
         if File.symlink?(full_path)
           if File.readlink(full_path) == File.expand_path("./#{file}")
-            puts "~/.#{file} already symlinked"
+            puts "already symlinked ~/.#{file}"
             next
           end
         end
