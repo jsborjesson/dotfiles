@@ -29,7 +29,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 Plugin 'scrooloose/nerdtree'
 let NERDTreeQuitOnOpen=1
 let g:NERDTreeWindowSize=38
-" show the current file on open
 nnoremap <leader>p :NERDTree<cr>
 
 " aesthetics
