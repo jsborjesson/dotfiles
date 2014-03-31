@@ -31,6 +31,7 @@ cask install xtrafinder
 cask install dropbox
 cask install keepassx
 cask install caffeine
+cask install flux
 cask install spotify
 cask install appcleaner
 cask install skype
