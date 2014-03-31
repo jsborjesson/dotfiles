@@ -22,36 +22,26 @@ namespace :setup do
     Dir['*'].each do |file|
       next if ignore.include? file
 
-      full_path = File.join(ENV['HOME'], ".#{file}")
+      if File.exists?(link_path(file))
 
-      if File.exists?(full_path)
-
-        # symlink already exists
-        if File.symlink?(full_path)
-          if File.readlink(full_path) == File.expand_path("./#{file}")
-            puts "already symlinked ~/.#{file}"
-            next
-          end
+        if symlinked?(file)
+          puts "already symlinked #{readable_path file}"
+          next
         end
 
-        # replace all
         replace_file(file) and next if replace_all
 
         # prompt
-        print "overwrite ~/.#{file}? [ynaq] "
+        print "overwrite #{readable_path file}? [yna] "
         case $stdin.gets.chomp
         when 'a'
           replace_all = true
-          replace_file(file)
+          redo
         when 'y'
           replace_file(file)
-        when 'q'
-          puts 'aborting'
-          exit
         else
-          puts "skipping"
+          puts "skipping #{readable_path file}"
         end
-
       else
         link_file(file)
       end
@@ -111,7 +101,24 @@ namespace :setup do
 
 end
 
+def link_path(file)
+  File.join(ENV['HOME'], ".#{file}")
+end
 
+def source_path(file)
+  File.expand_path("./#{file}")
+end
+
+def readable_path(file)
+  "~/.#{file}"
+end
+
+def symlinked?(file)
+  unless File.symlink?(link_path(file))
+    return false
+  end
+  File.readlink(link_path(file)) == source_path(file)
+end
 
 def link_file(file)
   puts "linking ~/.#{file}"
