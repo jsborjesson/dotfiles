@@ -10,6 +10,7 @@ Plugin 'gmarik/vundle'
 " Misc plugins
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-endwise'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'kien/ctrlp.vim'
@@ -18,12 +19,6 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'editorconfig/editorconfig-vim'
 
 let mapleader=","
-
-" snippets
-Bundle 'SirVer/ultisnips'
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " NERDTree
 Plugin 'scrooloose/nerdtree'
