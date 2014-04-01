@@ -80,6 +80,7 @@ filetype plugin indent on
 " ruby
 " TODO: move this to a ~/.vim/after/ftplugin/ruby.vim?
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+nmap <leader>t :! rake test<cr>
 
 " load the zshrc
 " means that the correct ruby version is used
