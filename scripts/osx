@@ -48,5 +48,5 @@ defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
 defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
 defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 
-# # Automatically hide and show the Dock
+# Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
