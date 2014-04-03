@@ -57,7 +57,6 @@ nmap <leader>fw :FixWhitespace<cr>
 
 " multiple cursors - the best feature of sublime I can't live without
 Plugin 'terryma/vim-multiple-cursors'
-let g:multi_cursor_next_key='<C-d>'
 
 " git
 Plugin 'tpope/vim-fugitive'
@@ -67,6 +66,9 @@ nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
 nmap <leader>gd :Gdiff<cr>
 nmap <leader>gp :Git push<cr>
 nmap <leader>gb :Gbrowse<cr>
+
+" switch between vim and terminal with ctrl+d
+noremap <C-d> :sh<cr>
 
 " backup and swap in tmp, fallback to current dir
 set backupdir=~/.tmp,.
