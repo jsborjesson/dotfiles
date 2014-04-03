@@ -23,7 +23,7 @@ let mapleader=","
 " NERDTree
 Plugin 'scrooloose/nerdtree'
 let NERDTreeQuitOnOpen=1
-let g:NERDTreeWindowSize=38
+let g:NERDTreeWindowSize=40
 nnoremap <leader>p :NERDTree<cr>
 
 " aesthetics
