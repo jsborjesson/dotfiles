@@ -57,6 +57,7 @@ nmap <leader>fw :FixWhitespace<cr>
 
 " multiple cursors - the best feature of sublime I can't live without
 Plugin 'terryma/vim-multiple-cursors'
+let g:multi_cursor_next_key='<C-m>'
 
 " git
 Plugin 'tpope/vim-fugitive'
