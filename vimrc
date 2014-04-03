@@ -70,7 +70,7 @@ nmap <leader>gb :Gbrowse<cr>
 
 " backup and swap in tmp, fallback to current dir
 set backupdir=~/.tmp,.
-set backupdir=~/.tmp,.
+set directory=~/.tmp,.
 
 " Enable filetypes
 syntax on
