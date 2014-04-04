@@ -27,6 +27,7 @@ Plugin 'scrooloose/nerdtree'
 let NERDTreeQuitOnOpen=1
 let g:NERDTreeWindowSize=40
 nnoremap <leader>p :NERDTree<cr>
+nnoremap <leader>P :NERDTreeFind<cr>
 
 " aesthetics
 Plugin 'nanotech/jellybeans.vim'
