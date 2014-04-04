@@ -4,8 +4,6 @@ update
 # Upgrade already installed formulae
 upgrade
 
-tap homebrew/dupes
-
 # Essentials
 install git
 install zsh
