@@ -67,7 +67,6 @@ Plugin 'tpope/vim-fugitive'
 nmap <leader>ga :Gwrite<cr>
 nmap <leader>gc :Gcommit<cr>
 nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
-nmap <leader>gd :Gdiff<cr>
 nmap <leader>gp :Git push<cr>
 nmap <leader>gb :Gbrowse<cr>
 
@@ -120,3 +119,4 @@ set showcmd
 nmap <space> :
 map Q <Nop>
 map K <Nop>
+
