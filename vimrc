@@ -51,7 +51,7 @@ let g:promptline_preset = {
 
 " aligning
 Plugin 'junegunn/vim-easy-align'
-vmap <enter> <plug>(EasyAlign)
+vmap a <plug>(EasyAlign)
 
 " markdown
 Plugin 'plasticboy/vim-markdown'
