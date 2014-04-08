@@ -49,6 +49,10 @@ let g:promptline_preset = {
     \'z' : [ '$vim_mode' ],
     \'warn' : [ promptline#slices#last_exit_code() ]}
 
+" aligning
+Plugin 'junegunn/vim-easy-align'
+vmap <enter> <plug>(EasyAlign)
+
 " markdown
 Plugin 'plasticboy/vim-markdown'
 Plugin 'itspriddle/vim-marked'
@@ -77,7 +81,6 @@ noremap <C-d> :sh<cr>
 set backupdir=~/.tmp,.
 set directory=~/.tmp,.
 
-" Enable filetypes
 syntax on
 filetype on
 filetype plugin indent on
