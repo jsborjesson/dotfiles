@@ -115,7 +115,7 @@ set smartcase " ignore case if all underscore
 
 " config
 set nocompatible
-set ttimeoutlen=1 " fixes delay on escape without breaking arrowkeys like noesckeys
+set ttimeoutlen=10 " fixes delay on escape without breaking arrowkeys like noesckeys
 set backspace=indent,eol,start " make backspace work as expected
 set title
 set showcmd
