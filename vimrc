@@ -49,10 +49,6 @@ let g:promptline_preset = {
     \'z' : [ '$vim_mode' ],
     \'warn' : [ promptline#slices#last_exit_code() ]}
 
-" aligning
-Plugin 'junegunn/vim-easy-align'
-vmap a <plug>(EasyAlign)
-
 " markdown
 Plugin 'plasticboy/vim-markdown'
 Plugin 'itspriddle/vim-marked'
@@ -65,6 +61,10 @@ nmap <leader>fw :FixWhitespace<cr>
 " multiple cursors - the best feature of sublime I can't live without
 Plugin 'terryma/vim-multiple-cursors'
 let g:multi_cursor_next_key='<C-m>'
+
+" aligning
+Plugin 'junegunn/vim-easy-align'
+vmap <enter> <plug>(EasyAlign)
 
 " git
 Plugin 'tpope/vim-fugitive'
