@@ -95,6 +95,9 @@ nmap <leader>t :! rake test<cr>
 " also means that if something breaks zsh, it also breaks vim
 set shellcmdflag=-ic
 
+" yank system clipboard
+set clipboard=unnamed
+
 " indentation
 set expandtab
 set tabstop=4
