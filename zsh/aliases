@@ -1,6 +1,6 @@
 # git
+alias git='noglob hub'
 alias g='git'
-alias git='hub'
 
 alias gs='git status --short'
 alias ga='git add --all'

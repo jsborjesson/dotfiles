@@ -6,7 +6,9 @@
     user = alcesleo
 
 [alias]
+    ci = commit
     co = checkout
+    st = status
     br = branch
 
 [core]
