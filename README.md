@@ -25,6 +25,8 @@ prompt are in `vimrc`, change them, source it and regenerate with:
 
     :PromptlineSnapshot! ~/.zsh_prompt
 
+**Don't change `zsh_prompt` directly.**
+
 ## Reinstallation
 
 If you're doing a complete reinstall there are a few extra steps you need to
