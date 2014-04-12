@@ -41,6 +41,7 @@ path=(
   'bin'
   '/usr/local/bin'
   $HOME/.rvm/bin
+  $HOME/.bin
   $path
 )
 export PATH
