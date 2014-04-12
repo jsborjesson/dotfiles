@@ -1,21 +1,24 @@
 [user]
-    name = Jimmy Börjesson
+    name  = Jimmy Börjesson
     email = lagginglion@gmail.com
 
 [github]
     user = alcesleo
 
 [alias]
+    st = status
     ci = commit
     co = checkout
-    st = status
     br = branch
+    di = diff
+    ds = diff --staged
+    amend = commit --amend
 
 [core]
     excludesfile = ~/.gitignore
 
 [color]
-    diff = auto
+    diff   = auto
     status = auto
     branch = auto
 
