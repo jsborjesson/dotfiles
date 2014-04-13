@@ -9,6 +9,7 @@
     st = status
     ci = commit
     co = checkout
+    cl = clone
     br = branch
     di = diff
     ds = diff --staged
