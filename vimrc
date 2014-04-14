@@ -59,8 +59,8 @@ Plugin 'bronson/vim-trailing-whitespace'
 nmap <leader>fw :FixWhitespace<cr>
 
 " multiple cursors - the best feature of sublime I can't live without
-Plugin 'terryma/vim-multiple-cursors'
-let g:multi_cursor_next_key='<C-m>'
+" Plugin 'terryma/vim-multiple-cursors'
+" let g:multi_cursor_next_key='<C-m>'
 
 " aligning
 Plugin 'junegunn/vim-easy-align'
@@ -73,9 +73,6 @@ nmap <leader>gc :Gcommit<cr>
 nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
 nmap <leader>gp :Git push<cr>
 nmap <leader>gb :Gbrowse<cr>
-
-" switch between vim and terminal with ctrl+d
-noremap <C-d> :sh<cr>
 
 " backup and swap in tmp, fallback to current dir
 set backupdir=~/.tmp,.
@@ -95,7 +92,7 @@ nmap <leader>t :! rake test<cr>
 " also means that if something breaks zsh, it also breaks vim
 set shellcmdflag=-ic
 
-" yank system clipboard
+" yank to system clipboard
 set clipboard=unnamed
 
 " indentation
