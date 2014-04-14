@@ -74,6 +74,9 @@ nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
 nmap <leader>gp :Git push<cr>
 nmap <leader>gb :Gbrowse<cr>
 
+" leader commands
+map <leader><leader> <C-^>
+
 " backup and swap in tmp, fallback to current dir
 set backupdir=~/.tmp,.
 set directory=~/.tmp,.
