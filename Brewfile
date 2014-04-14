@@ -10,6 +10,7 @@ install zsh
 install vim --with-python --with-ruby --override-system-vim
 
 # Semi-essentials
+install python
 install postgresql
 install tree
 install ag
