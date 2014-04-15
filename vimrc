@@ -1,4 +1,5 @@
 " Vundle
+set nocompatible
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
@@ -19,28 +20,30 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'editorconfig/editorconfig-vim'
-
-let mapleader=","
-
-" NERDTree
 Plugin 'scrooloose/nerdtree'
-let NERDTreeQuitOnOpen=1
-let g:NERDTreeWindowSize=40
-nnoremap <leader>p :NERDTree<cr>
-nnoremap <leader>P :NERDTreeFind<cr>
-
-" aesthetics
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'bling/vim-airline'
+Plugin 'edkolev/promptline.vim'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'itspriddle/vim-marked'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'junegunn/vim-easy-align'
+Plugin 'tpope/vim-fugitive'
+
+syntax on
+filetype on
+filetype plugin indent on
+
 colorscheme jellybeans
 
-" airline
-Plugin 'bling/vim-airline'
-set laststatus=2  " Always show status line
+let NERDTreeQuitOnOpen=1
+let g:NERDTreeWindowSize=40
 let g:airline_powerline_fonts=1
+let g:vim_markdown_folding_disabled=1
+let g:multi_cursor_next_key='<C-d>'
 
-" promptline
 " :PromptlineSnapshot! ./zsh_prompt
-Plugin 'edkolev/promptline.vim'
 let g:promptline_theme='airline'
 let g:promptline_preset = {
     \'a' : [ '%T' ],
@@ -49,50 +52,18 @@ let g:promptline_preset = {
     \'z' : [ '$vim_mode' ],
     \'warn' : [ promptline#slices#last_exit_code() ]}
 
-" markdown
-Plugin 'plasticboy/vim-markdown'
-Plugin 'itspriddle/vim-marked'
-let g:vim_markdown_folding_disabled=1
+" Ruby
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 
-" whitespace
-Plugin 'bronson/vim-trailing-whitespace'
-nmap <leader>fw :FixWhitespace<cr>
-
-" multiple cursors - the best feature of sublime I can't live without
-Plugin 'terryma/vim-multiple-cursors'
-let g:multi_cursor_next_key='<C-d>'
-
-" aligning
-Plugin 'junegunn/vim-easy-align'
-vmap <enter> <plug>(EasyAlign)
-
-" git
-Plugin 'tpope/vim-fugitive'
-nmap <leader>ga :Gwrite<cr>
-nmap <leader>gc :Gcommit<cr>
-nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
-nmap <leader>gp :Git push<cr>
-nmap <leader>gb :Gbrowse<cr>
-
-" leader commands
-map <leader><leader> <C-^>
-
-" backup and swap in tmp, fallback to current dir
+set ttimeoutlen=10 " fixes delay on escape without breaking arrowkeys like noesckeys
+set backspace=indent,eol,start " make backspace work as expected
+set title
+set showcmd
+set laststatus=2  " Always show status line
 set backupdir=~/.tmp,.
 set directory=~/.tmp,.
 
-syntax on
-filetype on
-filetype plugin indent on
-
-" ruby
-" TODO: move this to a ~/.vim/after/ftplugin/ruby.vim?
-autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
-nmap <leader>t :! rake test<cr>
-
 " load the zshrc
-" means that the correct ruby version is used
-" also means that if something breaks zsh, it also breaks vim
 set shellcmdflag=-ic
 
 " yank to system clipboard
@@ -116,13 +87,23 @@ set incsearch
 set ignorecase
 set smartcase " ignore case if all underscore
 
-" config
-set nocompatible
-set ttimeoutlen=10 " fixes delay on escape without breaking arrowkeys like noesckeys
-set backspace=indent,eol,start " make backspace work as expected
-set title
-set showcmd
+let mapleader=","
+
+nnoremap <leader>p :NERDTree<cr>
+nnoremap <leader>P :NERDTreeFind<cr>
+nmap <leader>fw :FixWhitespace<cr>
+vmap <enter> <plug>(EasyAlign)
+map <leader><leader> <C-^>
 nmap <space> :
 map Q <Nop>
 map K <Nop>
+
+nmap <leader>t :! rake test<cr>
+
+" git
+nmap <leader>ga :Gwrite<cr>
+nmap <leader>gc :Gcommit<cr>
+nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
+nmap <leader>gp :Git push<cr>
+nmap <leader>gb :Gbrowse<cr>
 
