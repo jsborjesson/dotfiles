@@ -87,16 +87,22 @@ set incsearch
 set ignorecase
 set smartcase " ignore case if all underscore
 
+" remaps
+map Q <Nop>
+map K <Nop>
+nmap <space> :
+
+" leader commands
+
 let mapleader=","
 
 nnoremap <leader>p :NERDTree<cr>
 nnoremap <leader>P :NERDTreeFind<cr>
 nmap <leader>fw :FixWhitespace<cr>
 vmap <enter> <plug>(EasyAlign)
-map <leader><leader> <C-^>
-nmap <space> :
-map Q <Nop>
-map K <Nop>
+nmap <leader><leader> <C-^>
+nmap <leader>s :w<cr>
+nmap <leader>w :wq<cr>
 
 nmap <leader>t :! rake test<cr>
 
