@@ -96,14 +96,23 @@ nmap <space> :
 
 let mapleader=","
 
-nnoremap <leader>p :NERDTree<cr>
-nnoremap <leader>P :NERDTreeFind<cr>
+" navigation
+nmap <leader>p <C-p>
+nnoremap <leader>m :NERDTree<cr>
+nnoremap <leader>M :NERDTreeFind<cr>
+nmap <leader><leader> <C-^>
+nmap <leader>s :w<cr>
+nmap <leader>x :wq<cr>
+" split navigation
+nmap <leader>ww <C-w>w
+nmap <leader>wr <C-w>r
+nmap <leader>wh <C-w>h
+nmap <leader>wj <C-w>j
+nmap <leader>wk <C-w>k
+nmap <leader>wl <C-w>l
+
 nmap <leader>fw :FixWhitespace<cr>
 vmap <enter> <plug>(EasyAlign)
-nmap <leader><leader> <C-^>
-nmap <leader>w :w<cr>
-nmap <leader>x :wq<cr>
-
 nmap <leader>t :! rake test<cr>
 
 " git
