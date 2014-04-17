@@ -101,8 +101,8 @@ nnoremap <leader>P :NERDTreeFind<cr>
 nmap <leader>fw :FixWhitespace<cr>
 vmap <enter> <plug>(EasyAlign)
 nmap <leader><leader> <C-^>
-nmap <leader>s :w<cr>
-nmap <leader>w :wq<cr>
+nmap <leader>w :w<cr>
+nmap <leader>x :wq<cr>
 
 nmap <leader>t :! rake test<cr>
 
