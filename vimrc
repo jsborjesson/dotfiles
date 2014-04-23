@@ -103,6 +103,7 @@ nnoremap <leader>M :NERDTreeFind<cr>
 nmap <leader><leader> <C-^>
 nmap <leader>s :w<cr>
 nmap <leader>x :wq<cr>
+nmap <leader>c :!
 " split navigation
 nmap <leader>ww <C-w>w
 nmap <leader>wr <C-w>r
