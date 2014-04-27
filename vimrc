@@ -104,13 +104,13 @@ nmap <leader><leader> <C-^>
 nmap <leader>s :w<cr>
 nmap <leader>x :wq<cr>
 nmap <leader>c :!
-" split navigation
-nmap <leader>ww <C-w>w
-nmap <leader>wr <C-w>r
-nmap <leader>wh <C-w>h
-nmap <leader>wj <C-w>j
-nmap <leader>wk <C-w>k
-nmap <leader>wl <C-w>l
+
+" split navkgation
+nmap <C-w> <C-w>w
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
 
 nmap <leader>fw :FixWhitespace<cr>
 vmap <enter> <plug>(EasyAlign)
