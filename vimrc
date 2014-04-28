@@ -101,12 +101,12 @@ nmap <leader>p <C-p>
 nnoremap <leader>m :NERDTree<cr>
 nnoremap <leader>M :NERDTreeFind<cr>
 nmap <leader><leader> <C-^>
-nmap <leader>s :w<cr>
+nmap <leader>w :w<cr>
 nmap <leader>x :wq<cr>
 nmap <leader>c :!
 
 " split navkgation
-nmap <C-w> <C-w>w
+nmap <leader>s <C-w>w
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
