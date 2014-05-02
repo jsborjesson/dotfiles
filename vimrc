@@ -36,6 +36,7 @@ filetype on
 filetype plugin indent on
 
 colorscheme jellybeans
+set t_Co=256
 
 let NERDTreeQuitOnOpen=1
 let g:NERDTreeWindowSize=40
