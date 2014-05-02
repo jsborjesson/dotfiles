@@ -17,6 +17,8 @@ install ag
 install hub
 install sqlite
 install heroku-toolbelt
+install tmux
+install htop
 
 # Casks
 tap phinze/cask
