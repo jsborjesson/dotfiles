@@ -1,7 +1,9 @@
-# git
+# remaps, these CHANGE preexisting commands
+alias ls='ls -G' # color all output
 alias git='noglob hub'
-alias g='git'
 
+# git
+alias g='git'
 alias gs='git status --short'
 alias ga='git add --all'
 alias gb='git browse'
@@ -22,9 +24,6 @@ alias aliases='vim ~/.zsh/aliases'
 alias p='cd ~/Projects'
 alias d='cd ~/Dropbox'
 alias n='cd ~/Dropbox/notes/ && vim'
-
-# listing
-alias ls='ls -G' # color all output
 
 # other
 alias nzbsync='cp ~/Downloads/*.nzb /Volumes/Data/Downloads/nzbs && rm ~/Downloads/*.nzb'
