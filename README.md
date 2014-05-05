@@ -70,9 +70,11 @@ If you copied it over and get an error like this:
 
 Then you need to set the permissions correctly, like so:
 
-    sudo chmod 600 ~/.ssh/id_rsa*
-    sudo chmod 644 ~/.ssh/known_hosts
-    sudo chmod 755 ~/.ssh
+```bash
+sudo chmod 600 ~/.ssh/id_rsa*
+sudo chmod 644 ~/.ssh/known_hosts
+sudo chmod 755 ~/.ssh
+```
 
 #### Filesystem
 
