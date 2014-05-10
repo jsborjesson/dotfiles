@@ -4,12 +4,9 @@ update
 # Upgrade already installed formulae
 upgrade
 
-# Essentials
 install git
 install zsh
 install vim --with-python --with-ruby --override-system-vim
-
-# Semi-essentials
 install python
 install postgresql
 install tree
@@ -18,7 +15,7 @@ install hub
 install sqlite
 install heroku-toolbelt
 install tmux
-install reattach-to-user-namespace
+install reattach-to-user-namespace # copy paste in tmux
 install htop
 
 # Casks
