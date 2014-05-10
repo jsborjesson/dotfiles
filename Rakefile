@@ -51,7 +51,6 @@ end
 
 desc 'Setup Vundle and install plugins, create temp dir'
 task :vim do
-  # create vim's temp directory
   system %Q{mkdir ~/.tmp}
 
   # Install Vundle
@@ -60,7 +59,6 @@ task :vim do
     sh "git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle"
   end
 
-  # Install all the plugins
   puts "Installing Vim plugins..."
   sh "vim +PluginInstall +qall"
 end
