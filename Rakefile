@@ -3,11 +3,10 @@ require 'rake'
 namespace :setup do
   desc 'Do all setup tasks'
   task :all do
-    Rake::Task["setup:zsh"].invoke
     Rake::Task["setup:symlinks"].invoke
     Rake::Task["setup:osx"].invoke
-    Rake::Task["setup:vim"].invoke
     Rake::Task["setup:rvm"].invoke
+    Rake::Task["setup:vim"].invoke
     Rake::Task["setup:brew"].invoke
   end
 
@@ -83,14 +82,6 @@ namespace :setup do
     unless system("rvm --version")
       puts "Installing RVM..."
       sh "curl -sSL https://get.rvm.io | bash -s stable --ruby"
-    end
-  end
-
-  desc 'Switch default shell to Zsh'
-  task :zsh do
-    unless ENV["SHELL"] =~ /zsh/
-      puts "Switching to Zsh"
-      system %Q{chsh -s `which zsh`}
     end
   end
 

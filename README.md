@@ -12,12 +12,15 @@
     2. doubleclick the fonts and install the ones you need
     3. set them in iTerm2:s settings
 * Set iTerm2's terminal type to `xterm-256color`
+* Set the default shell to Zsh
 
 ### Homebrew
 
 The `Brewfile` can be run with `brew bundle`.
 
 ### Zsh
+
+You change the default shell to zsh using `chsh -s zsh`.
 
 A new version of Zsh is installed with the Brewfile, you can check which version you are
 running with:
