@@ -1,13 +1,7 @@
 require 'rake'
 
 desc 'Do all setup tasks'
-task :all do
-  Rake::Task["setup:symlinks"].invoke
-  Rake::Task["setup:osx"].invoke
-  Rake::Task["setup:rvm"].invoke
-  Rake::Task["setup:vim"].invoke
-  Rake::Task["setup:brew"].invoke
-end
+task :all => [:symlinks, :osx, :rvm, :vim, :brew]
 
 desc 'Symlink dotfiles into home directory'
 task :symlinks do
