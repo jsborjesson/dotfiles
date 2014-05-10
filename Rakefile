@@ -83,6 +83,8 @@ task :osx do
   puts "Done! Some of these settings may require a restart."
 end
 
+task default: :symlinks
+
 def link_path(file)
   File.join(ENV['HOME'], ".#{file}")
 end
