@@ -85,6 +85,8 @@ end
 
 task default: :symlinks
 
+### Helper functions ###
+
 def link_path(file)
   File.join(ENV['HOME'], ".#{file}")
 end
