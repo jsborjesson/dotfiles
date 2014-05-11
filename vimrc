@@ -31,7 +31,6 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'tpope/vim-fugitive'
 
 syntax on
-filetype on
 filetype plugin indent on
 
 colorscheme jellybeans
