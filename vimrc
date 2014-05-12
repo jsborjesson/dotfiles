@@ -9,7 +9,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" Misc plugins
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-endwise'
@@ -124,4 +123,3 @@ nmap <leader>gc :Gcommit<cr>
 nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
 nmap <leader>gp :Git push<cr>
 nmap <leader>gb :Gbrowse<cr>
-
