@@ -48,9 +48,9 @@ task :vim do
   system %Q{mkdir ~/.tmp}
 
   # Install Vundle
-  unless File.directory? File.expand_path "~/.vim/bundle/vundle"
+  unless File.directory? File.expand_path "~/.vim/bundle/Vundle.vim"
     puts "Installing Vundle..."
-    sh "git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle"
+    sh "git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
   end
 
   puts "Installing Vim plugins..."
