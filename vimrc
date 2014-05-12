@@ -1,12 +1,13 @@
 " Vundle
-set nocompatible
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-" let vundle handle vundle
-Plugin 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
 
 " Misc plugins
 Plugin 'ervandew/supertab'
@@ -30,9 +31,11 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'tpope/vim-fugitive'
 
-syntax on
-filetype plugin indent on
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
+syntax on
 colorscheme jellybeans
 set t_Co=256
 
