@@ -93,6 +93,7 @@ set smartcase " ignore case if all underscore
 map Q <Nop>
 map K <Nop>
 nmap <space> :
+vmap <space> :
 
 " leader commands
 
