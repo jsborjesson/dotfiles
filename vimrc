@@ -86,8 +86,7 @@ set relativenumber
 
 " searching
 set incsearch
-set ignorecase
-set smartcase " ignore case if all underscore
+set smartcase " ignore case if all lowercase
 
 " remaps
 map Q <Nop>
