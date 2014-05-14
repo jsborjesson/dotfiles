@@ -13,7 +13,6 @@ nmap <leader>p <C-p>
 nmap <leader><leader> <C-^>
 nmap <leader>w :w<cr>
 nmap <leader>q @q
-nmap <leader>x :wq<cr>
 nmap <leader>c :!
 
 " split navkgation
