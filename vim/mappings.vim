@@ -13,8 +13,8 @@ map <space> :
 
 " navigation
 nmap <leader>p <C-p>
-nnoremap <leader>m :NERDTree<cr>
-nnoremap <leader>M :NERDTreeFind<cr>
+nmap <leader>m :NERDTree<cr>
+nmap <leader>M :NERDTreeFind<cr>
 nmap <leader><leader> <C-^>
 nmap <leader>w :w<cr>
 nmap <leader>q @q
