@@ -35,16 +35,15 @@ set backspace=indent,eol,start " make backspace work as expected
 set title
 set showcmd
 set laststatus=2  " Always show status line
-set backupdir=~/.tmp,.
-set directory=~/.tmp,.
+set shellcmdflag=-ic " load the zshrc
+set clipboard=unnamed " yank to system clipboard
 
-" load the zshrc
-set shellcmdflag=-ic
 
-" yank to system clipboard
-set clipboard=unnamed
+" ==================== Backup and swap ====================
+set nobackup
+set noswapfile
 
-" indentation
+" ==================== Indentaion ====================
 set expandtab
 set tabstop=4
 set softtabstop=4
@@ -53,7 +52,7 @@ set autoindent
 set smartindent
 set smarttab
 
-" line numbers
+" ==================== Line numbers ====================
 set number
 set relativenumber
 
