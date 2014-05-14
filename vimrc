@@ -56,6 +56,8 @@ let g:promptline_preset = {
 " Ruby
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 
+" ==================== Config ====================
+
 set ttimeoutlen=10 " fixes delay on escape without breaking arrowkeys like noesckeys
 set backspace=indent,eol,start " make backspace work as expected
 set title
@@ -85,13 +87,16 @@ set relativenumber
 
 " searching
 set incsearch
+set ignorecase
 set smartcase " ignore case if all lowercase
+
+" ==================== Mappings ====================
 
 " remaps
 map Q <Nop>
 map K <Nop>
 nmap <space> :
-vmap <space> :
+map <space> :
 
 " leader commands
 
