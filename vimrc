@@ -58,7 +58,7 @@ autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 
 " ==================== Config ====================
 
-set ttimeoutlen=10 " fixes delay on escape without breaking arrowkeys like noesckeys
+set ttimeoutlen=1 " fixes delay on escape without breaking arrowkeys like noesckeys
 set backspace=indent,eol,start " make backspace work as expected
 set title
 set showcmd
