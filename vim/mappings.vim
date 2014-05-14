@@ -23,7 +23,7 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
-nmap <leader>t :! rake test<cr>
+nmap <leader>t :w<cr>:! rake test<cr>
 
 " ==================== Plugins ====================
 
