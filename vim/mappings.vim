@@ -17,7 +17,7 @@ nnoremap <leader>m :NERDTree<cr>
 nnoremap <leader>M :NERDTreeFind<cr>
 nmap <leader><leader> <C-^>
 nmap <leader>w :w<cr>
-nmap <leader>q :q<cr>
+nmap <leader>q @q
 nmap <leader>x :wq<cr>
 nmap <leader>c :!
 
