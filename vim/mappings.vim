@@ -1,6 +1,3 @@
-
-" ==================== Mappings ====================
-
 " unmaps
 map Q <Nop>
 map K <Nop>
@@ -13,8 +10,6 @@ map <space> :
 
 " navigation
 nmap <leader>p <C-p>
-nmap <leader>m :NERDTree<cr>
-nmap <leader>M :NERDTreeFind<cr>
 nmap <leader><leader> <C-^>
 nmap <leader>w :w<cr>
 nmap <leader>q @q
@@ -28,11 +23,16 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
-nmap <leader>fw :FixWhitespace<cr>
-vmap <enter> <plug>(EasyAlign)
 nmap <leader>t :! rake test<cr>
 
-" git
+" ==================== Plugins ====================
+
+nmap <leader>fw :FixWhitespace<cr>
+vmap <enter> <plug>(EasyAlign)
+nmap <leader>m :NERDTree<cr>
+nmap <leader>M :NERDTreeFind<cr>
+
+" Git
 nmap <leader>ga :Gwrite<cr>
 nmap <leader>gc :Gcommit<cr>
 nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
