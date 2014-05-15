@@ -6,6 +6,7 @@ if filereadable(expand("~/.vim/plugins.vim"))
   source ~/.vim/plugins.vim
 endif
 
+" ==================== Colors ====================
 syntax on
 colorscheme jellybeans
 set t_Co=256
