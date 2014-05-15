@@ -3,7 +3,6 @@ map Q <Nop>
 map K <Nop>
 
 " command mode with space
-nmap <space> :
 map <space> :
 
 " leader commands
