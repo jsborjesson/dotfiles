@@ -6,9 +6,9 @@ if filereadable(expand("~/.vim/plugins.vim"))
   source ~/.vim/plugins.vim
 endif
 
-" loads all the plugins specified in the plugins.vim file
+" ==================== Key mappings ====================
 if filereadable(expand("~/.vim/mappings.vim"))
-  source ~/.vim/plugins.vim
+  source ~/.vim/mappings.vim
 endif
 
 syntax on
