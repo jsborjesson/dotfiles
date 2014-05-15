@@ -6,11 +6,6 @@ if filereadable(expand("~/.vim/plugins.vim"))
   source ~/.vim/plugins.vim
 endif
 
-" ==================== Key mappings ====================
-if filereadable(expand("~/.vim/mappings.vim"))
-  source ~/.vim/mappings.vim
-endif
-
 syntax on
 colorscheme jellybeans
 set t_Co=256
@@ -33,9 +28,14 @@ let g:promptline_preset = {
 " Ruby
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 
-" ==================== Config ====================
-
+" ==================== Key mappings ====================
 let mapleader=","
+
+if filereadable(expand("~/.vim/mappings.vim"))
+  source ~/.vim/mappings.vim
+endif
+
+" ==================== Config ====================
 
 set ttimeoutlen=1 " fixes delay on escape without breaking arrowkeys like noesckeys
 set backspace=indent,eol,start " make backspace work as expected
