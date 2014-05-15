@@ -5,8 +5,6 @@ map K <Nop>
 " command mode with space
 map <space> :
 
-" leader commands
-
 " navigation
 nmap <leader>p <C-p>
 nmap <leader><leader> <C-^>
@@ -21,16 +19,17 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
+" save and test
 nmap <leader>t :w<cr>:! rake test<cr>
 
-" ==================== Plugins ====================
+" plugins
 
 nmap <leader>fw :FixWhitespace<cr>
 vmap <enter> <plug>(EasyAlign)
 nmap <leader>m :NERDTree<cr>
 nmap <leader>M :NERDTreeFind<cr>
 
-" Git
+" git
 nmap <leader>ga :Gwrite<cr>
 nmap <leader>gc :Gcommit<cr>
 nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
