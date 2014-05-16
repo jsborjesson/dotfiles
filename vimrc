@@ -1,12 +1,12 @@
 set nocompatible              " be iMproved, required
 
-" ==================== Vundle ====================
+" ==================== Vundle ==============================
 " loads all the plugins specified in the plugins.vim file
 if filereadable(expand("~/.vim/plugins.vim"))
   source ~/.vim/plugins.vim
 endif
 
-" ==================== Colors ====================
+" ==================== Colors ==============================
 syntax on
 colorscheme jellybeans
 set t_Co=256
@@ -29,14 +29,11 @@ let g:promptline_preset = {
 " Ruby
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 
-" ==================== Key mappings ====================
+" ==================== Key mappings ========================
 let mapleader=","
+source ~/.vim/mappings.vim
 
-if filereadable(expand("~/.vim/mappings.vim"))
-  source ~/.vim/mappings.vim
-endif
-
-" ==================== Config ====================
+" ==================== Config ==============================
 
 set ttimeoutlen=1 " fixes delay on escape without breaking arrowkeys like noesckeys
 set backspace=indent,eol,start " make backspace work as expected
@@ -47,13 +44,12 @@ set shellcmdflag=-ic " load the zshrc
 set clipboard=unnamed " yank to system clipboard
 
 
-" ==================== Backup and swap ====================
+" ==================== Backup and swap =====================
 
 set nobackup
 set noswapfile
 
-
-" ==================== Indentaion ====================
+" ==================== Indentaion ==========================
 
 set expandtab
 set tabstop=4
@@ -64,13 +60,13 @@ set smartindent
 set smarttab
 
 
-" ==================== Line numbers ====================
+" ==================== Line numbers ========================
 
 set number
 set relativenumber
 
 
-" ==================== Searching ====================
+" ==================== Searching ===========================
 
 set incsearch
 set ignorecase
