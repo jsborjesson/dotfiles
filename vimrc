@@ -43,6 +43,7 @@ set laststatus=2  " Always show status line
 set shellcmdflag=-ic " load the zshrc
 set clipboard=unnamed " yank to system clipboard
 
+runtime macros/matchit.vim
 
 " ==================== Backup and swap =====================
 
