@@ -43,6 +43,7 @@ set shellcmdflag=-ic " load the zshrc
 set clipboard=unnamed " yank to system clipboard
 set scrolloff=3
 set history=1000
+set hidden
 
 runtime macros/matchit.vim
 
