@@ -35,6 +35,10 @@ cask install spotify
 cask install appcleaner
 cask install skype
 
+# Fonts
+tap caskroom/eonts
+cask install font-sauce-code-powerline
+
 # Make sure the links work in alfred
 cask alfred link
 
