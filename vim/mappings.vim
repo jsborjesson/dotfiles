@@ -12,6 +12,10 @@ nmap <leader>w :w<cr>
 nmap <leader>q @q
 nmap <leader>x :!
 
+" faster scrolling
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
+
 " split navkgation
 nmap <leader>s <C-w>w
 nmap <C-h> <C-w>h
