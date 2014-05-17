@@ -6,7 +6,7 @@ map K <Nop>
 map <space> :
 
 " source vimrc
-nmap <leader>s :so ~/.vimrc<cr>
+nmap <leader>s :w<cr>:so ~/.vimrc<cr>
 
 " navigation
 nmap <leader>f <C-p>
