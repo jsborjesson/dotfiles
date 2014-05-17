@@ -5,6 +5,9 @@ map K <Nop>
 " command mode with space
 map <space> :
 
+" source vimrc
+nmap <leader>s :so ~/.vimrc<cr>
+
 " navigation
 nmap <leader>f <C-p>
 nmap <leader><leader> <C-^>
@@ -17,7 +20,6 @@ nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
 " split navkgation
-nmap <leader>s <C-w>w
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
