@@ -6,7 +6,7 @@ map K <Nop>
 map <space> :
 
 " navigation
-nmap <leader>p <C-p>
+nmap <leader>f <C-p>
 nmap <leader><leader> <C-^>
 nmap <leader>w :w<cr>
 nmap <leader>q @q
@@ -28,7 +28,6 @@ nmap <leader>t :w<cr>:! rake test<cr>
 
 " plugins
 
-nmap <leader>fw :FixWhitespace<cr>
 vmap <enter> <plug>(EasyAlign)
 nmap <leader>m :NERDTree<cr>
 nmap <leader>M :NERDTreeFind<cr>
