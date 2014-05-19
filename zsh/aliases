@@ -23,6 +23,7 @@ alias pryr='pry -r ./config/environment' # open pry with rails env
 alias aliases='vim ~/.zsh/aliases'
 alias p='cd ~/Projects'
 alias d='cd ~/Dropbox'
+alias df='cd ~/Projects/dotfiles'
 alias n='cd ~/Dropbox/notes/ && vim'
 
 # other
