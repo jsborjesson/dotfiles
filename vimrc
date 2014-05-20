@@ -1,4 +1,4 @@
-set nocompatible              " be iMproved, required
+set nocompatible
 
 " ==================== Vundle ==============================
 " loads all the plugins specified in the plugins.vim file
@@ -17,6 +17,8 @@ let g:NERDTreeWindowSize=40
 let g:airline_powerline_fonts=1
 let g:vim_markdown_folding_disabled=1
 let g:multi_cursor_next_key='<C-d>'
+
+let g:AutoPairsShortcutFastWrap='<Nop>'
 
 " ==================== Promptline ==========================
 " :PromptlineSnapshot! ./zsh_prompt
