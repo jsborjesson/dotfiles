@@ -2,8 +2,8 @@
 map Q <Nop>
 map K <Nop>
 
-" command mode with space
 map <space> :
+nmap <esc><esc> :w<cr>
 
 " source vimrc
 nmap <leader>s :w<cr>:so ~/.vimrc<cr>
@@ -11,7 +11,6 @@ nmap <leader>s :w<cr>:so ~/.vimrc<cr>
 " navigation
 nmap <leader>f <C-p>
 nmap <leader><leader> <C-^>
-nmap <leader>w :w<cr>
 nmap <leader>q @q
 nmap <leader>x :!
 
