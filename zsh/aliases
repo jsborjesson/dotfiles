@@ -15,6 +15,7 @@ alias glg='git log --graph --oneline --all'
 alias gp='git push'
 
 # ruby
+alias r='rails'
 alias b='bundle'
 alias be='bundle exec'
 alias pryr='pry -r ./config/environment' # open pry with rails env
