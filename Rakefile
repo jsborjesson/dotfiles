@@ -1,7 +1,7 @@
 require 'rake'
 
 desc 'Do all setup tasks'
-task :all => [:symlinks, :osx, :rvm, :vim, :brew]
+task :all => [:symlinks, :osx, :vim, :brew]
 
 desc 'Symlink dotfiles into home directory'
 task :symlinks do
@@ -66,14 +66,6 @@ task :brew do
 
   puts "Installing Homebrew packages..."
   sh 'brew bundle'
-end
-
-desc 'Install RVM if not already installed'
-task :rvm do
-  unless system("rvm --version")
-    puts "Installing RVM..."
-    sh "curl -sSL https://get.rvm.io | bash -s stable --ruby"
-  end
 end
 
 desc 'Configure Mac OS using the scripts/osx file'

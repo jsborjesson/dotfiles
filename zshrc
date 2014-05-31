@@ -3,8 +3,6 @@ source $HOME/.zsh/functions
 source $HOME/.zsh/vim_mode
 source $HOME/.zsh_prompt
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
 # completions
 autoload -U compinit
 compinit -C
@@ -40,7 +38,6 @@ export LSCOLORS=ExCxFxFxBxGxGxababaeae
 path=(
   'bin'
   '/usr/local/bin'
-  $HOME/.rvm/bin
   $HOME/.bin
   $path
 )
