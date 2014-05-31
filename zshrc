@@ -3,6 +3,9 @@ source $HOME/.zsh/functions
 source $HOME/.zsh/vim_mode
 source $HOME/.zsh_prompt
 
+# chruby
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+
 # completions
 autoload -U compinit
 compinit -C

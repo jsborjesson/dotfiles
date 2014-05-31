@@ -75,6 +75,11 @@ task :osx do
   puts "Done! Some of these settings may require a restart."
 end
 
+desc 'Install latest stable ruby'
+task :ruby do
+  sh "ruby-install stable"
+end
+
 task default: :symlinks
 
 ### Helper functions ###

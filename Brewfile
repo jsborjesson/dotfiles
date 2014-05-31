@@ -7,6 +7,8 @@ upgrade
 install git
 install zsh
 install vim --with-python --with-ruby --override-system-vim
+install chruby
+install ruby-install
 install python
 install postgresql
 install tree
