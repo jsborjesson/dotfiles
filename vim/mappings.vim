@@ -23,7 +23,7 @@ nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
-nmap <leader>w <C-w>w
+nmap <leader>s <C-w>w
 
 " save and test
 nmap <leader>t :w<cr>:! rake test<cr>
