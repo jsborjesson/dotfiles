@@ -45,7 +45,7 @@ end
 
 desc 'Setup Vundle and install plugins, create temp dir'
 task :vim do
-  system %Q{mkdir ~/.tmp}
+  system "mkdir ~/.tmp"
 
   # Install Vundle
   unless File.directory? File.expand_path "~/.vim/bundle/Vundle.vim"
