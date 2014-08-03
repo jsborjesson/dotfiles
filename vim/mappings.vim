@@ -2,6 +2,9 @@
 map Q <Nop>
 map K <Nop>
 
+" U for redo is much more natural
+nnoremap U <C-r>
+
 map <space> :
 nmap <leader>w :w<cr>
 
