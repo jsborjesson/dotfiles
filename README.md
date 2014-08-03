@@ -7,10 +7,12 @@
 
 ### Manual steps
 
-* set font to **Sauce Code Powerline** in iTerm2 (installed by homebrew)
-* Set iTerm2's terminal type to `xterm-256color`
+* **iTerm2**
+    * Set font to **Sauce Code Powerline** (installed by homebrew)
+    * Set terminal type to `xterm-256color`
+    * Set scrollbacklines to 0 to prevent 2-finger scrolling in Vim, use tmux instead
 * Set the default shell to Zsh
-* Rebind caps lock to escape using Seil.
+* Rebind caps lock to escape using **Seil**.
 
 ### Homebrew
 
