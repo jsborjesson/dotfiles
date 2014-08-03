@@ -14,6 +14,7 @@
     di = diff
     ds = diff --staged
     amend = commit --amend
+    yolo  = push --force
 
 [core]
     excludesfile = ~/.gitignore
