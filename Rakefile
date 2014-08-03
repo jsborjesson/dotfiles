@@ -75,9 +75,10 @@ task :osx do
   puts "Done! Some of these settings may require a restart."
 end
 
-desc 'Install latest stable ruby'
-task :ruby do
-  sh "ruby-install stable"
+desc 'Install latest stable ruby and global gems from Gemfile'
+task :ruby => :brew do
+  sh "ruby-install ruby"
+  sh "bundle install --system"
 end
 
 task default: :symlinks
