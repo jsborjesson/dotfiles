@@ -41,6 +41,9 @@ nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
 nmap <leader>gp :Git push<cr>
 nmap <leader>gb :Gbrowse<cr>
 
+" Open with pry
+nmap <leader>p :!pry -r ./%<cr>
+
 " Seeing is believing
 nmap <buffer> <F5> <Plug>(seeing-is-believing-run)
 xmap <buffer> <F5> <Plug>(seeing-is-believing-run)
