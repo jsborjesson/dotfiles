@@ -38,7 +38,7 @@ cask install appcleaner
 cask install skype
 
 # Fonts
-tap caskroom/eonts
+tap caskroom/fonts
 cask install font-sauce-code-powerline
 
 # Make sure the links work in alfred
