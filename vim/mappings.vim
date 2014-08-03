@@ -41,11 +41,11 @@ nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
 nmap <leader>gp :Git push<cr>
 nmap <leader>gb :Gbrowse<cr>
 
-" inline ruby interpretation
-" Example output when run over the top line:
-"
-"     3.times { |num| puts num }
-"     # => 0
-"     # => 1
-"     # => 2
-vmap <leader>r :!tee >(cat) \| ruby \| sed 's/^/\\# \=> /'<cr>
+" Seeing is believing
+nmap <buffer> <F5> <Plug>(seeing-is-believing-run)
+xmap <buffer> <F5> <Plug>(seeing-is-believing-run)
+imap <buffer> <F5> <Plug>(seeing-is-believing-run)
+
+nmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+xmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+imap <buffer> <F4> <Plug>(seeing-is-believing-mark)
