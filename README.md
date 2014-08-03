@@ -10,6 +10,7 @@
 * set font to **Sauce Code Powerline** in iTerm2 (installed by homebrew)
 * Set iTerm2's terminal type to `xterm-256color`
 * Set the default shell to Zsh
+* Rebind caps lock to escape using Seil.
 
 ### Homebrew
 

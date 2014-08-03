@@ -36,6 +36,7 @@ cask install flux
 cask install spotify
 cask install appcleaner
 cask install skype
+cask install seil
 
 # Fonts
 tap caskroom/fonts
