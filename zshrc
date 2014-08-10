@@ -5,6 +5,7 @@ source $HOME/.zsh_prompt
 
 # chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
+chruby ruby-2.1.2
 
 # completions
 autoload -U compinit
