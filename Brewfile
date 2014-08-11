@@ -37,6 +37,7 @@ cask install spotify
 cask install appcleaner
 cask install skype
 cask install seil
+cask install dash
 
 # Fonts
 tap caskroom/fonts
