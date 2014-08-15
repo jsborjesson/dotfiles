@@ -30,3 +30,4 @@ alias n='cd ~/Dropbox/notes/ && vim'
 # other
 alias nzbsync='cp ~/Downloads/*.nzb /Volumes/Data/Downloads/nzbs && rm ~/Downloads/*.nzb'
 alias pessimize='pessimize --no-backup'
+alias c='pygmentize -O style=monokai -f console256 -g'
