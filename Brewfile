@@ -6,7 +6,7 @@ upgrade
 
 install git
 install zsh
-install vim --with-python --with-ruby --override-system-vim
+install vim --with-python3 --with-ruby --override-system-vi
 install chruby
 install ruby-install
 install python
