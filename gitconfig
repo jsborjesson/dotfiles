@@ -13,9 +13,11 @@
     br = branch
     di = diff
     ds = diff --staged
-    amend = commit --amend
-    tree  = log --graph --oneline --decorate --all
-    yolo  = push --force
+    amend    = commit --amend
+    tree     = log --graph --oneline --decorate --all
+    yolo     = push --force
+    forget   = update-index --assume-unchanged
+    remember = update-index --no-assume-unchanged
 
 [core]
     excludesfile = ~/.gitignore
