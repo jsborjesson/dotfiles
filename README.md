@@ -12,7 +12,7 @@
     * Set terminal type to `xterm-256color`
     * Set scrollbacklines to 0 to prevent 2-finger scrolling in Vim, use tmux instead
 * Set the default shell to Zsh
-* Rebind caps lock to escape using **Seil**.
+* Rebind keys using **Seil**.
 
 ### Homebrew
 
