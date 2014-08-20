@@ -29,6 +29,7 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'tpope/vim-fugitive'
+Plugin 'slim-template/vim-slim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
