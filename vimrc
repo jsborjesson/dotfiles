@@ -21,7 +21,6 @@ let g:multi_cursor_next_key='<C-d>'
 let g:AutoPairsShortcutFastWrap='<Nop>'
 
 " UltiSnips
-let g:UltiSnipsSnippetDirectories=["snips"]
 let g:UltiSnipsExpandTrigger='<c-j>'
 let g:UltiSnipsJumpForwardTrigger='<c-j>'
 let g:UltiSnipsJumpBackwardTrigger='<c-k>'
