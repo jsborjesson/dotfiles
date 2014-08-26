@@ -27,6 +27,8 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 nmap <leader>s <C-w>w
+nnoremap <silent> <leader>+ :vertical resize +10<cr>
+nnoremap <silent> <leader>- :vertical resize -10<cr>
 
 " save and test
 nmap <leader>t :w<cr>:! rake test<cr>
