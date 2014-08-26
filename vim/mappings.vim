@@ -48,10 +48,10 @@ nmap <leader>gb :Gbrowse<cr>
 nmap <leader>p :!pry -r ./%<cr>
 
 " Seeing is believing
-nmap <buffer> <F5> <Plug>(seeing-is-believing-run)
-xmap <buffer> <F5> <Plug>(seeing-is-believing-run)
-imap <buffer> <F5> <Plug>(seeing-is-believing-run)
+nmap <F5> <Plug>(seeing-is-believing-run)
+xmap <F5> <Plug>(seeing-is-believing-run)
+imap <F5> <Plug>(seeing-is-believing-run)
 
-nmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
-xmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
-imap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+nmap <F4> <Plug>(seeing-is-believing-mark)
+xmap <F4> <Plug>(seeing-is-believing-mark)
+imap <F4> <Plug>(seeing-is-believing-mark)
