@@ -17,7 +17,7 @@ install hub
 install sqlite
 install heroku-toolbelt
 install tmux
-install reattach-to-user-namespace # copy paste in tmux
+install reattach-to-user-namespace --wrap-pbcopy-and-pbpaste
 install htop
 
 # Casks
