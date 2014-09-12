@@ -16,6 +16,12 @@ def self.${1:class_method_name}(${2:args})
 end
 endsnippet
 
+snippet source
+source 'https://rubygems.org'
+endsnippet
+
+### Testing ###
+
 snippet desc
 describe ${1:ClassName} do
   $0
@@ -26,4 +32,14 @@ snippet it
 it "${1:does something}" do
   $0
 end
+endsnippet
+
+snippet exp
+expect(${1:object}).${2:to} ${3:eq} ${4:expectation}
+endsnippet
+
+snippet rtask "Run rspec as default rake task"
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new(:spec)
+task :default => :spec
 endsnippet
