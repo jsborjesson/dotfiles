@@ -5,7 +5,7 @@ task :all => [:symlinks, :osx, :vim, :brew]
 
 desc 'Symlink dotfiles into home directory'
 task :symlinks do
-  ignore = %w{Rakefile Brewfile scripts README.md LICENSE}
+  ignore = %w{Rakefile Brewfile Gemfile Gemfile.lock scripts README.md LICENSE}
   replace_all = false
 
   Dir['*'].each do |file|
