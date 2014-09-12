@@ -31,7 +31,7 @@ nnoremap <silent> <leader>+ :vertical resize +10<cr>
 nnoremap <silent> <leader>- :vertical resize -10<cr>
 
 " save and test
-nmap <leader>t :w<cr>:! rake test<cr>
+nmap <leader>r :w<cr>:! rake<cr>
 
 " plugins
 
