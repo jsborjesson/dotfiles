@@ -38,6 +38,7 @@ cask install spotify
 cask install appcleaner
 cask install skype
 cask install seil
+cask install karabiner
 cask install dash
 
 # Fonts
