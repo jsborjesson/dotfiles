@@ -10,6 +10,7 @@ install vim --with-python3 --with-ruby --override-system-vi
 install chruby
 install ruby-install
 install python
+install python3
 install postgresql
 install tree
 install ag
