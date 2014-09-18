@@ -1,0 +1,13 @@
+{
+  "linewrap": 79,
+  "journals": {
+    "default": "~/Dropbox/apps/jrnl/default.txt"
+  },
+  "highlight": true,
+  "encrypt": false,
+  "default_minute": 55,
+  "default_hour": 5,
+  "editor": "vim",
+  "timeformat": "%Y-%m-%d %H:%M",
+  "tagsymbols": "@"
+}

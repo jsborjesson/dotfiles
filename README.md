@@ -13,6 +13,7 @@
     * Set scrollbacklines to 0 to prevent 2-finger scrolling in Vim, use tmux instead
 * Set the default shell to Zsh
 * Rebind keys using **Seil**.
+* `pip3 install jrnl`
 
 ### Homebrew
 
