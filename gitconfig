@@ -13,11 +13,12 @@
     br = branch
     di = diff
     ds = diff --staged
-    amend    = commit --amend
-    tree     = log --graph --oneline --decorate --all
-    yolo     = push --force
-    forget   = update-index --assume-unchanged
-    remember = update-index --no-assume-unchanged
+
+    amend     = commit --amend
+    tree      = log --graph --oneline --decorate --all
+    yolo      = push --force
+    forget    = update-index --assume-unchanged
+    remember  = update-index --no-assume-unchanged
     changelog = !git log --oneline `git describe --abbrev=0`..HEAD
 
 [core]
