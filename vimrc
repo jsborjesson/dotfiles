@@ -47,7 +47,7 @@ set backspace=indent,eol,start " make backspace work as expected
 set title
 set showcmd
 set laststatus=2  " Always show status line
-set shellcmdflag=-ic " load the zshrc
+" set shellcmdflag=-ic " load the zshrc
 set clipboard=unnamed " yank to system clipboard
 set scrolloff=3
 set history=1000
