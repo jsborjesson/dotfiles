@@ -1,14 +1,13 @@
 {
-  "encrypt": false,
   "default_minute": 55,
-  "editor": "vim",
-  "linewrap": 79,
-  "default_hour": 5,
-  "timeformat": "%Y-%m-%d %H:%M",
   "highlight": true,
+  "timeformat": "%Y-%m-%d %H:%M",
   "tagsymbols": "@",
+  "default_hour": 5,
+  "linewrap": 79,
+  "editor": "vim",
   "journals": {
-    "default": "~/Dropbox/apps/jrnl/default.txt",
-    "code": "~/Dropbox/apps/jrnl/code.txt"
-  }
+    "default": "~/Dropbox/apps/jrnl/default.txt"
+  },
+  "encrypt": false
 }
