@@ -74,6 +74,9 @@ autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 set number
 set relativenumber
 
+" Relative numbers in command mode, and normal in insert mode
+autocmd InsertEnter * :set norelativenumber
+autocmd InsertLeave * :set relativenumber
 
 " ==================== Searching ===========================
 set incsearch
