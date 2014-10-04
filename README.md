@@ -7,6 +7,7 @@
 
 ### Manual steps
 
+* Turn off `cmd+space` for Spotlight and bind it to Alfred
 * **iTerm2**
     * Set font to **Sauce Code Powerline** (installed by homebrew)
     * Set terminal type to `xterm-256color`
