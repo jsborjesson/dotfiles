@@ -26,6 +26,9 @@ let g:UltiSnipsJumpForwardTrigger='<c-j>'
 let g:UltiSnipsJumpBackwardTrigger='<c-k>'
 let g:UltiSnipsEditSplit='vertical'
 
+" Marked
+let g:marked_app = "Marked"
+
 " ==================== Promptline ==========================
 " :PromptlineSnapshot! ./zsh_prompt
 let g:promptline_theme='airline'
