@@ -1,3 +1,7 @@
+snippet shebang
+#!/usr/bin/env ruby
+endsnippet
+
 snippet def
 def ${1:method_name}(${2:args})
   $0
@@ -16,8 +20,24 @@ def self.${1:class_method_name}(${2:args})
 end
 endsnippet
 
+snippet aa
+attr_accessor :${1:instance_variable}
+endsnippet
+
+snippet ar
+attr_reader :${1:instance_variable}
+endsnippet
+
+snippet alias
+alias_method :${1:new}, :${2:old}
+endsnippet
+
 snippet source
 source "https://rubygems.org"
+endsnippet
+
+snippet rr "require_relative"
+require_relative "$0"
 endsnippet
 
 snippet pry "Start pry here"
