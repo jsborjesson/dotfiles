@@ -2,6 +2,9 @@
 alias ls='ls -G' # color all output
 alias git='noglob hub'
 
+# vim
+alias v='vim'
+
 # git
 alias g='git'
 alias gs='git status --short'
