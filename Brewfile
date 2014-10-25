@@ -22,8 +22,8 @@ install reattach-to-user-namespace --wrap-pbcopy-and-pbpaste
 install htop
 
 # Casks
-tap phinze/cask
-install brew-cask
+brew install caskroom/cask/brew-cask
+tap caskroom/versions
 
 cask install google-chrome
 cask install iterm2
