@@ -1,3 +1,6 @@
+" source vimrc
+nmap <leader>v :w<cr>:so ~/.vimrc<cr>
+
 " unmaps
 map Q <Nop>
 map K <Nop>
@@ -7,12 +10,6 @@ nnoremap U <C-r>
 
 map <space> :
 map <Esc><Esc> :w<cr>
-
-" source vimrc
-nmap <leader>v :w<cr>:so ~/.vimrc<cr>
-
-" navigation
-nmap <leader>f <C-p>
 nmap <leader><leader> <C-^>
 nmap <leader>q @q
 nmap <leader>x :!
@@ -33,9 +30,11 @@ nnoremap <silent> <leader>- :vertical resize -10<cr>
 " save and rake
 nmap <leader>r :w<cr>:! rake<cr>
 
+" plugins
 vmap <enter> <plug>(EasyAlign)
 nmap <leader>m :NERDTree<cr>
 nmap <leader>M :NERDTreeFind<cr>
+nmap <leader>f <C-p>
 
 " git
 nmap <leader>ga :Gwrite<cr>
