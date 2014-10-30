@@ -6,7 +6,7 @@ map K <Nop>
 nnoremap U <C-r>
 
 map <space> :
-nmap <leader>w :w<cr>
+map <Esc><Esc> :w<cr>
 
 " source vimrc
 nmap <leader>v :w<cr>:so ~/.vimrc<cr>
@@ -30,10 +30,8 @@ nmap <leader>s <C-w>w
 nnoremap <silent> <leader>+ :vertical resize +10<cr>
 nnoremap <silent> <leader>- :vertical resize -10<cr>
 
-" save and test
+" save and rake
 nmap <leader>r :w<cr>:! rake<cr>
-
-" plugins
 
 vmap <enter> <plug>(EasyAlign)
 nmap <leader>m :NERDTree<cr>
