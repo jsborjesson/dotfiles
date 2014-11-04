@@ -17,6 +17,9 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # cd without cd
 setopt auto_cd
 
+# allow other apps to use ctrl-s
+stty -ixon -ixoff
+
 ### vi keybindings
 # http://dougblack.io/words/zsh-vi-mode.html
 bindkey -v

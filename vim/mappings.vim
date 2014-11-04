@@ -9,7 +9,11 @@ map K <Nop>
 nnoremap U <C-r>
 
 map <space> :
-map <Esc><Esc> :w<cr>
+
+nmap <C-s> :update<cr>
+vmap <C-s> <Esc><C-s>gv
+imap <C-s> <Esc><C-s>
+
 nmap <leader><leader> <C-^>
 nmap <leader>q @q
 nmap <leader>x :!

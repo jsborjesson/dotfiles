@@ -13,8 +13,11 @@
     * Set terminal type to `xterm-256color`
     * Set scrollbacklines to 0 to prevent 2-finger scrolling in Vim, use tmux instead
 * Set the default shell to Zsh
-* Rebind keys using **Seil**. (caps -> esc, rcmd -> enter)
-* Enable things in **Karabiner**. (faster key repeat, vim-mode)
+* Rebind keys using **Seil**. (right cmd -> enter)
+* Enable things in **Karabiner**. 
+    * faster key repeat
+    * vim-mode
+    * `Control_L to Control_L + Escape`
 * `pip3 install jrnl`
 
 ### Homebrew
