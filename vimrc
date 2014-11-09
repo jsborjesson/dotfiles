@@ -89,6 +89,7 @@ set clipboard=unnamed " yank to system clipboard
 set scrolloff=3
 set history=1000
 set hidden
+set autoread
 
 runtime macros/matchit.vim
 
