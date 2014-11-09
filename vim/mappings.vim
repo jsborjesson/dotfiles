@@ -10,6 +10,8 @@ nnoremap U <C-r>
 
 map <space> :
 
+nmap <enter> :nohlsearch<cr>
+
 nmap <C-s> :update<cr>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>

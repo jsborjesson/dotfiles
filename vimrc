@@ -90,6 +90,7 @@ set scrolloff=3
 set history=1000
 set hidden
 set autoread
+set hlsearch
 
 runtime macros/matchit.vim
 
