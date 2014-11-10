@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# status        pick out relevant info    remove the semicolons
+pmset -g batt | egrep "([0-9]+\%).*" -o | sed 's/;//g'
