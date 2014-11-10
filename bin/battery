@@ -1,4 +1,2 @@
 #!/bin/bash
-
-# status        pick out relevant info    use commas instead of semicolons
-pmset -g batt | egrep "([0-9]+\%).*" -o | sed 's/;/,/g'
+pmset -g batt | egrep "([0-9]+\%)" -o
