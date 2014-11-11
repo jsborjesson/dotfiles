@@ -28,6 +28,7 @@ gem_group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'did_you_mean'
+  gem 'rack-mini-profiler'
   gem 'quiet_assets'
 end
 
