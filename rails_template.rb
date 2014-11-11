@@ -100,7 +100,9 @@ remove_dir 'app/controllers/concerns'
 remove_dir 'app/models/concerns'
 
 # Make the application.css into scss
-run "mv app/assets/stylesheets/application.css app/assets/stylesheets/application.css.scss"
+inside "app/assets/stylesheets/" do
+  run "mv application.css application.css.scss"
+end
 
 
 ########################################
