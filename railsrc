@@ -1,0 +1,4 @@
+--skip-bundle
+--skip-javascript
+--skip-test-unit
+--template=~/.rails_template.rb
