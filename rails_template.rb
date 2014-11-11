@@ -79,7 +79,7 @@ inject_into_class 'config/application.rb', "Application", <<CONFIG
 
 CONFIG
 
-
+# Make sure the Gemfile.lock is up to date before committing
 run 'bundle'
 
 ########################################
