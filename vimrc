@@ -85,16 +85,23 @@ map K <Nop>
 " U for redo is much more natural
 nnoremap U <C-r>
 
+" Space to enter commands
 map <space> :
 
+" Quick clear search highlights
 nmap <enter> :nohlsearch<cr>
 
+" Increase/decrease numbers with ctrl-x/c
+nnoremap <C-c> <C-a>
+
+" ctrl-s for saving
 nmap <C-s> :update<cr>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>
 
+" ,, to go to last file
 nmap <leader><leader> <C-^>
-nmap <leader>q @q
+
 nmap <leader>x :!
 
 " faster scrolling
