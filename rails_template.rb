@@ -15,6 +15,7 @@
 #
 #     rm -rf test_app && rails new test_app -m rails_template.rb -B -J -T
 
+
 ########################################
 # Add testing and development gems
 ########################################
@@ -72,6 +73,11 @@ remove_dir 'app/models/concerns'
 # Make the application.css into scss
 run "mv app/assets/stylesheets/application.css app/assets/stylesheets/application.css.scss"
 
+
+########################################
+# Configuration
+########################################
+
 # Disable some annoying generators
 inject_into_class 'config/application.rb', "Application", <<CONFIG
 
@@ -86,9 +92,11 @@ CONFIG
 # Make sure the Gemfile.lock is up to date before committing
 run 'bundle'
 
+
 ########################################
 # Git
 ########################################
+
 git :init
 git add: "."
 git commit: "--quiet -m 'Initial commit'"
