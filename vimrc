@@ -1,7 +1,6 @@
 set nocompatible
 
 " ==================== Vundle ==============================
-" loads all the plugins specified in the plugins.vim file
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
