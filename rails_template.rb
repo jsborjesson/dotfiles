@@ -20,6 +20,8 @@
 # Add gems
 ########################################
 
+say 'Adding gems'
+
 gem_group :development, :test do
   gem 'rspec-rails'
 end
@@ -43,6 +45,8 @@ run 'bundle'
 # Configure RSpec
 ########################################
 
+say "Configuring RSpec"
+
 generate 'rspec:install'
 
 # uncomment the entire standard config block
@@ -55,6 +59,8 @@ comment_lines 'spec/spec_helper.rb', /profile_examples/
 ########################################
 # Configure SimpleCov
 ########################################
+
+say "Configuring SimpleCov"
 
 # configure code coverage
 prepend_to_file 'spec/spec_helper.rb', <<CODE
@@ -75,6 +81,8 @@ CODE
 # Configure generators
 ########################################
 
+say "Configuring Rails generators"
+
 # Disable some annoying generators
 inject_into_class 'config/application.rb', "Application", <<CONFIG
 
@@ -90,6 +98,8 @@ CONFIG
 ########################################
 # Cleanup
 ########################################
+
+say "Cleaning up"
 
 # Markdown readme
 remove_file 'README.rdoc'
@@ -109,8 +119,8 @@ end
 # Git
 ########################################
 
+say "Initializing git repository"
+
 git :init
 git add: "."
 git commit: "--quiet -m 'Initial commit'"
-
-say "Generated custom rails app!"
