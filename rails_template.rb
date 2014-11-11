@@ -17,7 +17,7 @@
 
 
 ########################################
-# Add testing and development gems
+# Add gems
 ########################################
 
 gem_group :development, :test do
@@ -35,6 +35,13 @@ gem_group :test do
   gem 'simplecov', require: false
 end
 
+run 'bundle'
+
+
+########################################
+# Configure RSpec
+########################################
+
 generate 'rspec:install'
 
 # uncomment the entire standard config block
@@ -43,14 +50,19 @@ gsub_file 'spec/spec_helper.rb', /=(begin|end)\n/, ''
 # turn off profile examples by default
 comment_lines 'spec/spec_helper.rb', /profile_examples/
 
+
+########################################
 # Configure SimpleCov
+########################################
+
+# configure code coverage
 prepend_to_file 'spec/spec_helper.rb', <<CODE
 require 'simplecov'
 SimpleCov.start 'rails'
 
 CODE
 
-# Ignore SimpleCov output
+# gitignore output
 append_to_file '.gitignore', <<CODE
 
 # Ignore SimpleCov output
@@ -59,7 +71,23 @@ CODE
 
 
 ########################################
-# Cleanups
+# Configure generators
+########################################
+
+# Disable some annoying generators
+inject_into_class 'config/application.rb', "Application", <<CONFIG
+
+    # Disable some annoying generators
+    config.generators do |generate|
+      generate.helper false
+      generate.assets false
+    end
+
+CONFIG
+
+
+########################################
+# Cleanup
 ########################################
 
 # Markdown readme
@@ -75,28 +103,11 @@ run "mv app/assets/stylesheets/application.css app/assets/stylesheets/applicatio
 
 
 ########################################
-# Configuration
-########################################
-
-# Disable some annoying generators
-inject_into_class 'config/application.rb', "Application", <<CONFIG
-
-    # Disable some annoying generators
-    config.generators do |generate|
-      generate.helper false
-      generate.assets false
-    end
-
-CONFIG
-
-# Make sure the Gemfile.lock is up to date before committing
-run 'bundle'
-
-
-########################################
 # Git
 ########################################
 
 git :init
 git add: "."
 git commit: "--quiet -m 'Initial commit'"
+
+say "Generated custom rails app!"
