@@ -50,7 +50,11 @@ SimpleCov.start 'rails'
 CODE
 
 # Ignore SimpleCov output
-append_to_file '.gitignore', '/coverage'
+append_to_file '.gitignore', <<CODE
+
+# Ignore SimpleCov output
+/coverage
+CODE
 
 
 ########################################
