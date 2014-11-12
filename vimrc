@@ -51,7 +51,8 @@ filetype plugin indent on    " required
 " ==================== vimrc ==============================
 " Reload .vimrc on save
 augroup reload_vimrc
-    autocmd!
+    " make sure to not register the autocmd again when reloading
+    autocmd! 
     autocmd BufWritePost vimrc source $MYVIMRC
 augroup END
 
