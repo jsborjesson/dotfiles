@@ -156,8 +156,8 @@ set clipboard=unnamed " yank to system clipboard
 set scrolloff=3
 set history=1000
 set hidden
-set autoread
-set hlsearch
+set autoread " reload files automatically
+set hlsearch " highlight search results
 
 runtime macros/matchit.vim
 
@@ -173,6 +173,8 @@ set shiftwidth=4
 set autoindent
 set smartindent
 set smarttab
+
+" ==================== Ruby stuff ==========================
 
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 
