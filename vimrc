@@ -159,6 +159,7 @@ set history=1000
 set hidden
 set autoread " reload files automatically
 set hlsearch " highlight search results
+set wildmenu " show list of commands when tabbing
 
 runtime macros/matchit.vim
 
