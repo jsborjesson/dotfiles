@@ -51,7 +51,7 @@ filetype plugin indent on    " required
 " Reload .vimrc on save
 augroup reload_vimrc " {
     autocmd!
-    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+    autocmd BufWritePost vimrc source $MYVIMRC
 augroup END " }
 
 " ==================== Colors ==============================
@@ -88,6 +88,9 @@ let g:promptline_preset = {
 
 " ==================== Key mappings ========================
 let mapleader=","
+
+" manually source vimrc
+nmap <leader>v :source $MYVIMRC<cr>
 
 " unmaps
 map Q <Nop>
