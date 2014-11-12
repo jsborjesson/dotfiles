@@ -55,6 +55,9 @@ gsub_file 'spec/spec_helper.rb', /=(begin|end)\n/, ''
 # turn off profile examples by default
 comment_lines 'spec/spec_helper.rb', /profile_examples/
 
+# run with bundle exec automatically
+run 'bundle binstubs rspec-core'
+
 
 ########################################
 # Configure SimpleCov
