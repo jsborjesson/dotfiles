@@ -42,6 +42,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-endwise'
 Plugin 'hwartig/vim-seeing-is-believing'
 Plugin 'jgdavey/vim-blockle'
+Plugin 'thoughtbot/vim-rspec'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -66,6 +67,7 @@ let g:airline_powerline_fonts=1
 let g:vim_markdown_folding_disabled=1
 let g:multi_cursor_next_key='<C-d>'
 let g:AutoPairsShortcutFastWrap='<Nop>'
+let g:rspec_command = "!bundle exec rspec {spec}"
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger='<c-j>'
@@ -127,7 +129,6 @@ nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
-nmap <leader>s <C-w>w
 nnoremap <silent> <leader>+ :vertical resize +10<cr>
 nnoremap <silent> <leader>- :vertical resize -10<cr>
 
@@ -158,6 +159,12 @@ imap <F5> <Plug>(seeing-is-believing-run)
 nmap <F4> <Plug>(seeing-is-believing-mark)
 xmap <F4> <Plug>(seeing-is-believing-mark)
 imap <F4> <Plug>(seeing-is-believing-mark)
+
+" RSpec
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 
 " ==================== Config ==============================
 
