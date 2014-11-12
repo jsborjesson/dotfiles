@@ -168,10 +168,11 @@ set clipboard=unnamed " yank to system clipboard
 set scrolloff=3
 set history=1000
 set hidden
-set autoread " reload files automatically
-set hlsearch " highlight search results
-set wildmenu " show list of commands when tabbing
+set autoread     " reload files automatically
+set hlsearch     " highlight search results
+set wildmenu     " show list of commands when tabbing
 set nojoinspaces " Join lines containing punctuation correctly
+set cursorline   " highlight current line
 
 runtime macros/matchit.vim
 
