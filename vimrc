@@ -47,6 +47,13 @@ Plugin 'jgdavey/vim-blockle'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" ==================== vimrc ==============================
+" Reload .vimrc on save
+augroup reload_vimrc " {
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END " }
+
 " ==================== Colors ==============================
 syntax on
 colorscheme jellybeans
@@ -81,9 +88,6 @@ let g:promptline_preset = {
 
 " ==================== Key mappings ========================
 let mapleader=","
-
-" source vimrc
-nmap <leader>v :w<cr>:so ~/.vimrc<cr>
 
 " unmaps
 map Q <Nop>
