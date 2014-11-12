@@ -50,10 +50,10 @@ filetype plugin indent on    " required
 
 " ==================== vimrc ==============================
 " Reload .vimrc on save
-augroup reload_vimrc " {
+augroup reload_vimrc
     autocmd!
     autocmd BufWritePost vimrc source $MYVIMRC
-augroup END " }
+augroup END
 
 " ==================== Colors ==============================
 syntax on
