@@ -160,6 +160,7 @@ set hidden
 set autoread " reload files automatically
 set hlsearch " highlight search results
 set wildmenu " show list of commands when tabbing
+set nojoinspaces " Join lines containing punctuation correctly
 
 runtime macros/matchit.vim
 
