@@ -10,24 +10,29 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+" Editing
 Plugin 'SirVer/ultisnips'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'danro/rename.vim'
-Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-commentary'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'itspriddle/vim-marked'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'junegunn/vim-easy-align'
+
+" Files and navigation
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'danro/rename.vim'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'slim-template/vim-slim'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'itspriddle/vim-marked'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'slim-template/vim-slim'
+
+" Theme
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'bling/vim-airline'
 Plugin 'edkolev/promptline.vim'
