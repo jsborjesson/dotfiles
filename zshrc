@@ -43,7 +43,7 @@ export LSCOLORS=ExCxFxFxBxGxGxababaeae
 
 # Prepend path
 path=(
-  'bin'
+  './bin'
   '/usr/local/bin'
   $HOME/.bin
   $path
