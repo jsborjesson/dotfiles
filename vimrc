@@ -95,7 +95,7 @@ let mapleader=","
 " manually source vimrc
 nmap <leader>v :source $MYVIMRC<cr>
 
-" unmaps
+" Unmap Ex-mode and man-lookup
 map Q <Nop>
 map K <Nop>
 
