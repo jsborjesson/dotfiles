@@ -185,6 +185,9 @@ set wildmenu     " show list of commands when tabbing
 set nojoinspaces " Join lines containing punctuation correctly
 set cursorline   " highlight current line
 
+" Trim trailing whitespace on save
+autocmd BufWritePre * :FixWhitespace
+
 runtime macros/matchit.vim
 
 " ==================== Backup and swap =====================
