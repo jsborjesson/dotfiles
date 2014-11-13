@@ -184,6 +184,7 @@ set hlsearch     " highlight search results
 set wildmenu     " show list of commands when tabbing
 set nojoinspaces " Join lines containing punctuation correctly
 set cursorline   " highlight current line
+set shiftround   " make >> indent to the correct level if cursor is between tab widths
 
 " Trim trailing whitespace on save
 autocmd BufWritePre * :FixWhitespace
