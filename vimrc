@@ -142,7 +142,6 @@ nmap <leader>r :w<cr>:! rake<cr>
 vmap <enter> <plug>(EasyAlign)
 nmap <leader>m :NERDTree<cr>
 nmap <leader>M :NERDTreeFind<cr>
-nmap <leader>f <C-p>
 
 " Git
 nmap <leader>ga :Gwrite<cr>
