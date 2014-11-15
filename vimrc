@@ -68,8 +68,11 @@ let g:NERDTreeWindowSize=40
 let g:airline_powerline_fonts=1
 let g:vim_markdown_folding_disabled=1
 let g:multi_cursor_next_key='<C-d>'
-let g:AutoPairsShortcutFastWrap='<Nop>'
 let g:rspec_command = "!bundle exec rspec {spec}"
+
+" AutoPairs
+let g:AutoPairsShortcutFastWrap=''
+let g:AutoPairsFlyMode=1
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger='<c-j>'
