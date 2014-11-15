@@ -22,7 +22,7 @@ install reattach-to-user-namespace --wrap-pbcopy-and-pbpaste
 install htop
 
 # Casks
-brew install caskroom/cask/brew-cask
+install caskroom/cask/brew-cask
 tap caskroom/versions
 
 cask install google-chrome
