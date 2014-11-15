@@ -61,9 +61,3 @@ endsnippet
 snippet exp
 expect(${1:object}).${2:to} ${3:eq} ${4:expectation}
 endsnippet
-
-snippet rtask "Run rspec as default rake task"
-require 'rspec/core/rake_task'
-RSpec::Core::RakeTask.new(:spec)
-task :default => :spec
-endsnippet

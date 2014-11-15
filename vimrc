@@ -31,6 +31,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'itspriddle/vim-marked'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'rking/ag.vim'
 
 " Theme
 Plugin 'nanotech/jellybeans.vim'
@@ -92,7 +93,7 @@ let g:promptline_preset = {
 " ==================== Key mappings ========================
 let mapleader=","
 
-" manually source vimrc
+" Manually source vimrc
 nmap <leader>v :source $MYVIMRC<cr>
 
 " Unmap Ex-mode and man-lookup
@@ -119,13 +120,14 @@ imap <C-s> <Esc><C-s>
 " ,, to go to last file
 nmap <leader><leader> <C-^>
 
+" External commands
 nmap <leader>x :!
 
-" faster scrolling
+" Faster scrolling
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
-" split navkgation
+" Split navkgation
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
@@ -133,16 +135,16 @@ nmap <C-l> <C-w>l
 nnoremap <silent> <leader>+ :vertical resize +10<cr>
 nnoremap <silent> <leader>- :vertical resize -10<cr>
 
-" save and rake
+" Save and rake
 nmap <leader>r :w<cr>:! rake<cr>
 
-" plugins
+" Plugins
 vmap <enter> <plug>(EasyAlign)
 nmap <leader>m :NERDTree<cr>
 nmap <leader>M :NERDTreeFind<cr>
 nmap <leader>f <C-p>
 
-" git
+" Git
 nmap <leader>ga :Gwrite<cr>
 nmap <leader>gc :Gcommit<cr>
 nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
@@ -173,18 +175,18 @@ set ttimeoutlen=1 " fixes delay on escape without breaking arrowkeys like noesck
 set backspace=indent,eol,start " make backspace work as expected
 set title
 set showcmd
-set laststatus=2  " Always show status line
 " set shellcmdflag=-ic " load the zshrc
-set clipboard=unnamed " yank to system clipboard
 set scrolloff=3
 set history=1000
 set hidden
-set autoread     " reload files automatically
-set hlsearch     " highlight search results
-set wildmenu     " show list of commands when tabbing
-set nojoinspaces " Join lines containing punctuation correctly
-set cursorline   " highlight current line
-set shiftround   " make >> indent to the correct level if cursor is between tab widths
+set laststatus=2      " always show status line
+set clipboard=unnamed " yank to system clipboard
+set autoread          " reload files automatically
+set hlsearch          " highlight search results
+set wildmenu          " show list of commands when tabbing
+set nojoinspaces      " join lines containing punctuation correctly
+set cursorline        " highlight current line
+set shiftround        " make >> indent to the correct level if cursor is between tab widths
 
 " Trim trailing whitespace on save
 autocmd BufWritePre * :FixWhitespace
@@ -192,6 +194,7 @@ autocmd BufWritePre * :FixWhitespace
 runtime macros/matchit.vim
 
 " ==================== Backup and swap =====================
+" Don't need it
 set nobackup
 set noswapfile
 
