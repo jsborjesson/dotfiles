@@ -100,7 +100,7 @@ nmap <leader>v :source $MYVIMRC<cr>
 map Q <Nop>
 map K <Nop>
 
-" U for redo is much more natural
+" U for normal redo is much more natural
 nnoremap U <C-r>
 
 " Space to enter commands
@@ -138,9 +138,12 @@ nnoremap <silent> <leader>- :vertical resize -10<cr>
 " Save and rake
 nmap <leader>r :w<cr>:! rake<cr>
 
-" Plugins
+" Align selection
 vmap <enter> <plug>(EasyAlign)
+
+" Open NERDTree
 nmap <leader>m :NERDTree<cr>
+" Open NERDTree focusing on the current file
 nmap <leader>M :NERDTreeFind<cr>
 
 " Git
