@@ -63,12 +63,9 @@ colorscheme jellybeans
 set t_Co=256
 
 " ==================== Plugin settings =====================
+" NERDTree
 let NERDTreeQuitOnOpen=1
 let g:NERDTreeWindowSize=40
-let g:airline_powerline_fonts=1
-let g:vim_markdown_folding_disabled=1
-let g:multi_cursor_next_key='<C-d>'
-let g:rspec_command = "!bundle exec rspec {spec}"
 
 " AutoPairs
 let g:AutoPairsShortcutFastWrap=''
@@ -80,7 +77,11 @@ let g:UltiSnipsJumpForwardTrigger='<c-j>'
 let g:UltiSnipsJumpBackwardTrigger='<c-k>'
 let g:UltiSnipsEditSplit='vertical'
 
-" Marked
+" Misc
+let g:airline_powerline_fonts=1
+let g:vim_markdown_folding_disabled=1
+let g:multi_cursor_next_key='<C-d>'
+let g:rspec_command = "!bundle exec rspec {spec}"
 let g:marked_app = "Marked"
 
 " ==================== Promptline ==========================
