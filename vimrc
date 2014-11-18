@@ -69,7 +69,6 @@ let g:NERDTreeWindowSize=40
 
 " AutoPairs
 let g:AutoPairsShortcutFastWrap=''
-let g:AutoPairsFlyMode=1
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger='<c-j>'
