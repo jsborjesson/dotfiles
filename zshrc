@@ -17,6 +17,10 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # cd without cd
 setopt auto_cd
 
+# Leave patterns which has no matches as they are, instead of printing
+# an error. This prevents the need to use noglob in many cases.
+unsetopt nomatch
+
 # allow other apps to use ctrl-s
 stty -ixon -ixoff
 
