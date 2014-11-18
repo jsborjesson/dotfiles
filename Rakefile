@@ -1,7 +1,7 @@
 require 'rake'
 
-desc 'Do all setup tasks'
-task :all => [:symlinks, :osx, :vim, :brew]
+# You can set the test mode by running `rake mytask test=true`
+puts 'Running in test mode' if ENV['test']
 
 desc 'Symlink dotfiles into home directory'
 task :symlinks do
@@ -106,7 +106,7 @@ def symlinked?(file)
 end
 
 def link_file!(file)
-  system %Q{ln -s "#{source_path file}" "#{link_path file}"}
+  `ln -s "#{source_path file}" "#{link_path file}"` unless ENV['test']
 end
 
 def replace_file!(file)
