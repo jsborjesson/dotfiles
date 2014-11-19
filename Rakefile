@@ -37,7 +37,7 @@ task :brew do
   end
 
   puts "Installing Homebrew packages..."
-  sh 'brew bundle'
+  sh 'bash ./scripts/brew.sh'
 end
 
 desc 'Configure Mac OS using the scripts/osx file'
