@@ -6,22 +6,16 @@ puts 'Running in test mode' if ENV['test']
 desc 'Symlink dotfiles into home directory'
 task :symlinks do
   dotfiles = FileList.new('*')
-  ignore   = %w{ Rakefileasdf Brewfile Gemfile Gemfile.lock scripts README.md LICENSE }
-  dotfiles.exclude(*ignore)
+  dotfiles.exclude(
+    *%w{ Rakefile Brewfile Gemfile Gemfile.lock scripts README.md LICENSE }
+  )
 
-  dotfiles.each do |file|
-    unless File.exists?(link_path(file))
-      link_file!(file)
-      puts file_info(file, "symlinked")
-    else
-      if symlinked?(file)
-        puts file_info(file, "already symlinked")
-      else
-        puts file_info(file, "FILE EXISTS")
-      end
-    end
+  dotfiles.each do |filename|
+    Dotfile.new(filename).symlink
   end
 end
+
+task default: :symlinks
 
 desc 'Setup Vundle and install plugins'
 task :vim do
@@ -59,30 +53,54 @@ task :ruby => :brew do
   sh "bundle install --system"
 end
 
-task default: :symlinks
+### Helper class ###
 
-### Helper functions ###
+class Dotfile
 
-def link_path(file)
-  File.join(ENV['HOME'], ".#{file}")
-end
+  attr_reader :filename
+  def initialize(filename)
+    @filename = filename
+  end
 
-def source_path(file)
-  File.expand_path("./#{file}")
-end
+  def symlink
+    if symlinked?
+      info("already symlinked")
+    elsif exists?
+      info("FILE EXISTS")
+    else
+      create_symlink!
+      info("symlinked")
+    end
+  end
 
-def human_readable_path(file)
-  "~/.#{file}"
-end
+  def to_s
+    "~/.#{filename}"
+  end
 
-def file_info(file, message)
-  "#{human_readable_path(file).ljust(20)} #{message}"
-end
+private
 
-def symlinked?(file)
-  File.symlink?(link_path(file)) && ( File.readlink(link_path(file)) == source_path(file) )
-end
+  def info(message)
+    puts "#{to_s.ljust(20)} #{message}"
+  end
 
-def link_file!(file)
-  `ln -s "#{source_path file}" "#{link_path file}"` unless ENV['test']
+  def exists?
+    File.exists?(destination_path)
+  end
+
+  def symlinked?
+    File.symlink?(destination_path) && ( File.readlink(destination_path) == source_path )
+  end
+
+  def create_symlink!
+    FileUtils.ln_s(source_path, destination_path) unless ENV['test']
+  end
+
+  def destination_path
+    File.join(ENV['HOME'], ".#{filename}")
+  end
+
+  def source_path
+    File.expand_path("./#{filename}")
+  end
+
 end
