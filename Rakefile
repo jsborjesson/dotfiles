@@ -43,7 +43,7 @@ end
 desc 'Configure Mac OS using the scripts/osx file'
 task :osx do
   puts "Running scripts/osx..."
-  sh "bash ./scripts/osx"
+  sh "bash ./scripts/osx.sh"
   puts "Done! Some of these settings may require a restart."
 end
 
