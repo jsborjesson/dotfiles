@@ -50,7 +50,7 @@ task :vim do
   system "mkdir ~/.tmp"
 
   # Install Vundle
-  unless File.directory? File.expand_path "~/.vim/bundle/Vundle.vim"
+  unless File.directory?(File.expand_path("~/.vim/bundle/Vundle.vim"))
     puts "Installing Vundle..."
     sh "git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
   end
