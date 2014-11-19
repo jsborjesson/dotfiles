@@ -9,38 +9,16 @@ task :symlinks do
   ignore   = %w{ Rakefileasdf Brewfile Gemfile Gemfile.lock scripts README.md LICENSE }
   dotfiles.exclude(*ignore)
 
-  replace_all = false
-
   dotfiles.each do |file|
-
     unless File.exists?(link_path(file))
       link_file!(file)
       puts file_info(file, "symlinked")
     else
       if symlinked?(file)
         puts file_info(file, "already symlinked")
-        next
-      end
-
-      if replace_all
-        puts file_info(file, "symlinked (force)")
-        replace_file(file)
-        next
-      end
-
-      print file_info(file, "exists, overwrite? [yna]: ")
-      case $stdin.gets.chomp
-      when 'a'
-        puts "replacing all..."
-        replace_all = true
-        redo
-      when 'y'
-        replace_file!(file)
-        puts file_info(file, "replaced")
       else
-        puts file_info(file, "skipped")
+        puts file_info(file, "FILE EXISTS")
       end
-
     end
   end
 end
@@ -109,9 +87,4 @@ end
 
 def link_file!(file)
   `ln -s "#{source_path file}" "#{link_path file}"` unless ENV['test']
-end
-
-def replace_file!(file)
-  system %Q{rm "#{link_path file}"}
-  link_file!(file)
 end
