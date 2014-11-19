@@ -23,10 +23,8 @@ task :symlinks do
   end
 end
 
-desc 'Setup Vundle and install plugins, create temp dir'
+desc 'Setup Vundle and install plugins'
 task :vim do
-  system "mkdir ~/.tmp"
-
   # Install Vundle
   unless File.directory?(File.expand_path("~/.vim/bundle/Vundle.vim"))
     puts "Installing Vundle..."
