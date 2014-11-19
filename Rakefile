@@ -5,11 +5,13 @@ puts 'Running in test mode' if ENV['test']
 
 desc 'Symlink dotfiles into home directory'
 task :symlinks do
-  ignore = %w{Rakefile Brewfile Gemfile Gemfile.lock scripts README.md LICENSE}
+  dotfiles = FileList.new('*')
+  ignore   = %w{ Rakefileasdf Brewfile Gemfile Gemfile.lock scripts README.md LICENSE }
+  dotfiles.exclude(*ignore)
+
   replace_all = false
 
-  Dir['*'].each do |file|
-    next if ignore.include? file
+  dotfiles.each do |file|
 
     unless File.exists?(link_path(file))
       link_file!(file)
