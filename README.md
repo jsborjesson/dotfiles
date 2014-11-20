@@ -2,33 +2,30 @@
 
 ## Installation
 
-* Install the Mac OSX [Command Line Tools](https://developer.apple.com/downloads/index.action).
+* Install the Mac OSX Command Line Tools.
 * `rake -T` to see all the available commands and use them to install.
 
 ### Manual steps
 
-* Turn off `cmd+space` for Spotlight and bind it to Alfred
+* Turn off `cmd+space` for Spotlight and bind it to Alfred.
+* Bind caps lock to control.
 * **iTerm2**
-    * Set font to **Sauce Code Powerline** (installed by homebrew)
-    * Set terminal type to `xterm-256color`
-    * Set scrollbacklines to 0 to prevent 2-finger scrolling in Vim, use tmux instead
-* Set the default shell to Zsh
+    * Set font to **Sauce Code Powerline** (installed by homebrew).
+    * Set terminal type to `xterm-256color`.
+    * Set scrollbacklines to 0 to prevent 2-finger scrolling in Vim, use tmux instead.
+* Set the default shell to Zsh.
 * Rebind keys using **Seil**. (right cmd -> enter)
-* Enable things in **Karabiner**. 
+* Enable things in **Karabiner**.
     * faster key repeat
     * vim-mode
     * `Control_L to Control_L + Escape`
 * `pip3 install jrnl`
 
-### Homebrew
-
-The `Brewfile` can be run with `brew bundle`.
-
 ### Zsh
 
 You change the default shell to zsh using `chsh -s zsh`.
 
-A new version of Zsh is installed with the Brewfile, you can check which version you are
+A new version of Zsh is installed with homebrew, you can check which version you are
 running with:
 
 ```bash
@@ -63,7 +60,7 @@ prompt are in `vimrc`, change them, source it and regenerate with:
 If you're doing a complete reinstall there are a few extra steps you need to
 consider.
 
-#### SSH keys
+### SSH keys
 
 Make sure to bring your `~/.ssh` with you when you reinstall.
 
@@ -85,7 +82,7 @@ sudo chmod 644 ~/.ssh/known_hosts
 sudo chmod 755 ~/.ssh
 ```
 
-#### Filesystem
+### Filesystem
 
 I like the case sensitive one, it's not standard on Mac but it is the way it's
 done on Linux, and I haven't found any issues with it. The only real difference
