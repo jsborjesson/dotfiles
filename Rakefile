@@ -35,15 +35,14 @@ task :vim do
   sh "vim +PluginInstall +qall"
 end
 
-desc 'Setup Homebrew and install packages in scripts/brew.sh'
+desc 'Install Homebrew'
 task :brew do
   unless system("brew --version")
     puts "Installing Homebrew..."
     sh 'ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"'
   end
 
-  puts "Installing Homebrew packages..."
-  sh 'bash ./scripts/brew.sh'
+  puts "Install Homebrew packages either by running ./scripts/brew.sh or copy pasting the commands you need."
 end
 
 desc 'Configure Mac OS using the scripts/osx.sh file'
