@@ -54,7 +54,7 @@ task :osx do
 end
 
 desc 'Install latest stable ruby and global gems from Gemfile'
-task :ruby => :brew do
+task :ruby do
   sh "ruby-install ruby"
   sh "bundle install --system"
 end
