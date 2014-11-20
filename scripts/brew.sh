@@ -40,6 +40,8 @@ brew cask install skype
 brew cask install seil
 brew cask install karabiner
 brew cask install dash
+brew cask install sophos-anti-virus-home-edition
+brew cask install hipchat
 
 # Fonts
 brew tap caskroom/fonts
