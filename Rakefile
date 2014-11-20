@@ -3,19 +3,25 @@ require 'rake'
 # You can set the test mode by running `rake mytask test=true`
 puts 'Running in test mode' if ENV['test']
 
-desc 'Symlink dotfiles into home directory'
-task :symlinks do
-  dotfiles = FileList.new('*')
-  dotfiles.exclude(
-    *%w{ Rakefile Brewfile Gemfile Gemfile.lock scripts README.md LICENSE }
-  )
+DOTFILES = FileList.new('*').exclude(
+  *%w{ Rakefile Brewfile Gemfile Gemfile.lock scripts README.md LICENSE }
+)
 
-  dotfiles.each do |filename|
-    Dotfile.new(filename).symlink
+desc 'Symlink dotfiles into home directory'
+task :link do
+  DOTFILES.each do |filename|
+    Dotfile.new(filename).link
   end
 end
 
-task default: :symlinks
+task default: :link
+
+desc 'Remove symlinks (smart enough to not delete something else)'
+task :unlink do
+  DOTFILES.each do |filename|
+    Dotfile.new(filename).unlink
+  end
+end
 
 desc 'Setup Vundle and install plugins'
 task :vim do
@@ -62,14 +68,23 @@ class Dotfile
     @filename = filename
   end
 
-  def symlink
+  def link
     if symlinked?
       info("already symlinked")
     elsif exists?
       info("FILE EXISTS")
     else
-      create_symlink!
+      create_symlink
       info("symlinked")
+    end
+  end
+
+  def unlink
+    if symlinked?
+      remove_symlink
+      info("symlink removed")
+    else
+      info("ignored")
     end
   end
 
@@ -91,8 +106,12 @@ private
     File.symlink?(destination_path) && ( File.readlink(destination_path) == source_path )
   end
 
-  def create_symlink!
+  def create_symlink
     FileUtils.ln_s(source_path, destination_path) unless ENV['test']
+  end
+
+  def remove_symlink
+    FileUtils.rm(destination_path) unless ENV['test']
   end
 
   def destination_path
