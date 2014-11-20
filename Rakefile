@@ -35,7 +35,7 @@ task :vim do
   sh "vim +PluginInstall +qall"
 end
 
-desc 'Setup Homebrew and install packages in Brewfile'
+desc 'Setup Homebrew and install packages in scripts/brew.sh'
 task :brew do
   unless system("brew --version")
     puts "Installing Homebrew..."
@@ -46,7 +46,7 @@ task :brew do
   sh 'bash ./scripts/brew.sh'
 end
 
-desc 'Configure Mac OS using the scripts/osx file'
+desc 'Configure Mac OS using the scripts/osx.sh file'
 task :osx do
   puts "Running scripts/osx..."
   sh "bash ./scripts/osx.sh"
