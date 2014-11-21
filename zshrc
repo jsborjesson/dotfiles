@@ -34,7 +34,7 @@ bindkey '^h' backward-delete-char
 bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
 
-# fix forwards delete key
+# fix forward delete key
 # http://superuser.com/questions/169920/binding-fn-delete-in-zsh-on-mac-os-x
 bindkey "^[[3~" delete-char
 
