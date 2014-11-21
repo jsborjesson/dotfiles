@@ -39,6 +39,23 @@ echo $ZSH_VERSION
 To be allowed to set the new version as the standard shell with `chsh -s zsh` you need to
 make sure it is in `/etc/shells`, otherwise you'll get an error.
 
+### Ruby
+
+Rbenv handles versions.
+
+```bash
+rbenv install -l     # list available ruby versions
+rbenv install 2.1.2  # install the ruby you want
+rbenv global 2.1.2   # set it as the default
+
+# cannot live without bundle
+gem install bundler
+rbenv rehash
+
+# Install global gems
+bundle install --system
+```
+
 ### Tmux
 
 Starting a new terminal session is not enough to enable the clipboard settings in tmux, you might have to run:

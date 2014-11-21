@@ -7,8 +7,8 @@ brew upgrade
 brew install git
 brew install zsh
 brew install vim --with-python3 --with-ruby --override-system-vi
-brew install chruby
-brew install ruby-install
+brew install rbenv
+brew install ruby-build
 brew install python
 brew install python3
 brew install postgresql
