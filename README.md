@@ -56,6 +56,8 @@ rbenv rehash
 bundle install --system
 ```
 
+**Don't forget to run `rbenv rehash` after installing a gem that adds commands (like bundler).**
+
 ### Tmux
 
 Starting a new terminal session is not enough to enable the clipboard settings in tmux, you might have to run:
