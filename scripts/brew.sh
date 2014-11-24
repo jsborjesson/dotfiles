@@ -11,7 +11,6 @@ brew install rbenv
 brew install ruby-build
 brew install python
 brew install python3
-brew install postgresql
 brew install tree
 brew install ag
 brew install hub
@@ -42,6 +41,7 @@ brew cask install karabiner
 brew cask install dash
 brew cask install sophos-anti-virus-home-edition
 brew cask install hipchat
+brew cask install postgres
 
 # Fonts
 brew tap caskroom/fonts
