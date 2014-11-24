@@ -21,6 +21,8 @@ alias r='rails'
 alias b='bundle'
 alias be='bundle exec'
 alias pryr='pry -r ./config/environment' # open pry with rails env
+alias fr='foreman run'
+alias frbe='foreman run bundle exec'
 
 # navigation
 alias aliases='vim ~/.zsh/aliases'
