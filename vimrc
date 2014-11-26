@@ -18,7 +18,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-commentary'
 Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'terryma/vim-multiple-cursors'
 Plugin 'junegunn/vim-easy-align'
 
 " Files and navigation
