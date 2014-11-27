@@ -13,6 +13,7 @@
     br = branch
     di = diff
     ds = diff --staged
+    ff = pull --ff-only
 
     amend     = commit --amend
     tree      = log --graph --oneline --decorate --all
