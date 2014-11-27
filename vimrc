@@ -35,7 +35,6 @@ Plugin 'rking/ag.vim'
 " Theme
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'bling/vim-airline'
-Plugin 'edkolev/promptline.vim'
 
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
@@ -82,15 +81,6 @@ let g:multi_cursor_next_key='<C-d>'
 let g:rspec_command = "!bundle exec rspec {spec}"
 let g:marked_app = "Marked"
 
-" ==================== Promptline ==========================
-" :PromptlineSnapshot! ./zsh_prompt
-let g:promptline_theme='airline'
-let g:promptline_preset = {
-    \'a' : [ '%T' ],
-    \'b' : [ promptline#slices#cwd() ],
-    \'c' : [ promptline#slices#vcs_branch() ],
-    \'z' : [ '$vim_mode' ],
-    \'warn' : [ promptline#slices#last_exit_code() ]}
 
 " ==================== Key mappings ========================
 let mapleader=","

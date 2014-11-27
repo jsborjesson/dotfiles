@@ -1,7 +1,6 @@
 source $HOME/.zsh/aliases
 source $HOME/.zsh/functions
 source $HOME/.zsh/vim_mode
-source $HOME/.zsh_prompt
 
 # rbenv
 eval "$(rbenv init -)"
@@ -53,3 +52,5 @@ path=(
 )
 export PATH
 
+# Customize prompt
+PROMPT='%B%t%b %0~$ '
