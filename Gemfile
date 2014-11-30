@@ -4,6 +4,7 @@
 source 'https://rubygems.org'
 
 gem 'pry'
+gem 'byebug'
 gem 'rails'
 gem 'cheat'
 gem 'seeing_is_believing'
