@@ -53,4 +53,13 @@ path=(
 export PATH
 
 # Customize prompt
-PROMPT='%B%t%b %0~$ '
+
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git*' formats "[%b]"
+precmd() {
+    vcs_info
+}
+setopt prompt_subst
+
+PROMPT='%B%t%b %0~ ${vcs_info_msg_0_}$ '
