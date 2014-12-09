@@ -135,7 +135,6 @@ map <Leader>a :call RunAllSpecs()<CR>
 set ttimeoutlen=1 " fixes delay on escape without breaking arrowkeys like noesckeys
 set backspace=indent,eol,start " make backspace work as expected
 set title
-set showcmd
 " set shellcmdflag=-ic " load the zshrc
 set scrolloff=3
 set history=1000
