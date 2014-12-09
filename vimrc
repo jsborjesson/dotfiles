@@ -156,6 +156,10 @@ runtime macros/matchit.vim
 set nobackup
 set noswapfile
 
+" persistent-undo
+set undodir=~/.vim/undo
+set undofile
+
 " ==================== Indentaion ==========================
 set expandtab
 set tabstop=4
