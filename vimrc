@@ -26,11 +26,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'danro/rename.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'slim-template/vim-slim'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'itspriddle/vim-marked'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'rking/ag.vim'
 
 " Theme
 Plugin 'nanotech/jellybeans.vim'
@@ -39,8 +37,6 @@ Plugin 'bling/vim-airline'
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-endwise'
-Plugin 'hwartig/vim-seeing-is-believing'
-Plugin 'jgdavey/vim-blockle'
 Plugin 'thoughtbot/vim-rspec'
 
 " All of your Plugins must be added before the following line
@@ -68,16 +64,8 @@ let g:NERDTreeWindowSize=40
 " AutoPairs
 let g:AutoPairsShortcutFastWrap=''
 
-" UltiSnips
-let g:UltiSnipsExpandTrigger='<c-j>'
-let g:UltiSnipsJumpForwardTrigger='<c-j>'
-let g:UltiSnipsJumpBackwardTrigger='<c-k>'
-let g:UltiSnipsEditSplit='vertical'
-
 " Misc
 let g:airline_powerline_fonts=1
-let g:vim_markdown_folding_disabled=1
-let g:multi_cursor_next_key='<C-d>'
 let g:rspec_command = "!bundle exec rspec {spec}"
 let g:marked_app = "Marked"
 
@@ -101,9 +89,6 @@ map <space> :
 " Quick clear search highlights
 nmap <enter> :nohlsearch<cr>
 
-" Increase/decrease numbers with ctrl-x/c
-nnoremap <C-c> <C-a>
-
 " ctrl-s for saving
 nmap <C-s> :update<cr>
 vmap <C-s> <Esc><C-s>gv
@@ -111,9 +96,6 @@ imap <C-s> <Esc><C-s>
 
 " ,, to go to last file
 nmap <leader><leader> <C-^>
-
-" External commands
-nmap <leader>x :!
 
 " Faster scrolling
 nnoremap <C-e> 3<C-e>
@@ -126,9 +108,6 @@ nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 nnoremap <silent> <leader>+ :vertical resize +10<cr>
 nnoremap <silent> <leader>- :vertical resize -10<cr>
-
-" Save and rake
-nmap <leader>r :w<cr>:! rake<cr>
 
 " Align selection
 vmap <enter> <plug>(EasyAlign)
@@ -144,18 +123,6 @@ nmap <leader>gc :Gcommit<cr>
 nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
 nmap <leader>gp :Git push<cr>
 nmap <leader>gb :Gbrowse<cr>
-
-" Open with pry
-nmap <leader>p :!pry -r ./%<cr>
-
-" Seeing is believing
-nmap <F5> <Plug>(seeing-is-believing-run)
-xmap <F5> <Plug>(seeing-is-believing-run)
-imap <F5> <Plug>(seeing-is-believing-run)
-
-nmap <F4> <Plug>(seeing-is-believing-mark)
-xmap <F4> <Plug>(seeing-is-believing-mark)
-imap <F4> <Plug>(seeing-is-believing-mark)
 
 " RSpec
 map <Leader>t :call RunCurrentSpecFile()<CR>
