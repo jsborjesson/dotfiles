@@ -26,7 +26,6 @@ brew tap caskroom/versions
 
 brew cask install google-chrome
 brew cask install iterm2
-brew cask install alfred
 brew cask install moom
 brew cask install xtrafinder
 brew cask install dropbox
