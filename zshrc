@@ -22,16 +22,9 @@ unsetopt nomatch
 # allow other apps to use ctrl-s
 stty -ixon -ixoff
 
-### vi keybindings
-# http://dougblack.io/words/zsh-vi-mode.html
-bindkey -v
+### Emacs mode
+bindkey -e
 export KEYTIMEOUT=1
-bindkey '^P' up-history
-bindkey '^N' down-history
-bindkey '^?' backward-delete-char
-bindkey '^h' backward-delete-char
-bindkey '^w' backward-kill-word
-bindkey '^r' history-incremental-search-backward
 
 # fix forward delete key
 # http://superuser.com/questions/169920/binding-fn-delete-in-zsh-on-mac-os-x
