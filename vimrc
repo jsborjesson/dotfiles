@@ -143,11 +143,9 @@ set hidden
 set laststatus=2      " always show status line
 set clipboard=unnamed " yank to system clipboard
 set autoread          " reload files automatically
-set hlsearch          " highlight search results
 set wildmenu          " show list of commands when tabbing
 set nojoinspaces      " join lines containing punctuation correctly
 set cursorline        " highlight current line
-set shiftround        " make >> indent to the correct level if cursor is between tab widths
 
 " Trim trailing whitespace on save
 autocmd BufWritePre * :FixWhitespace
@@ -167,6 +165,7 @@ set shiftwidth=4
 set autoindent
 set smartindent
 set smarttab
+set shiftround " make >> indent to the correct level if cursor is between tab widths
 
 " ==================== Ruby stuff ==========================
 
@@ -181,6 +180,7 @@ autocmd InsertEnter * :set norelativenumber
 autocmd InsertLeave * :set relativenumber
 
 " ==================== Searching ===========================
+set hlsearch  " highlight search results
 set incsearch
 set ignorecase
 set smartcase " ignore case if all lowercase
