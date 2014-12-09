@@ -1,6 +1,6 @@
 # remaps, these CHANGE preexisting commands
 alias ls='ls -G' # color all output
-alias git='noglob hub'
+alias git='hub'
 
 # vim
 alias v='vim'
