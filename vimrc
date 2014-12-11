@@ -92,6 +92,10 @@ nnoremap Y y$
 " Space to enter commands
 map <space> :
 
+" Don't jump wrapped lines
+nmap j gj
+nmap k gk
+
 " Quick clear search highlights
 nmap <enter> :nohlsearch<cr>
 
