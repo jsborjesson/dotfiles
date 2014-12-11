@@ -83,6 +83,12 @@ map K <Nop>
 " U for normal redo is much more natural
 nnoremap U <C-r>
 
+" Only go to last non-whitespace char
+noremap $ g_
+
+" Make Y work like all the other upper-case actions
+nnoremap Y y$
+
 " Space to enter commands
 map <space> :
 
