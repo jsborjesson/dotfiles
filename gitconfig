@@ -22,6 +22,7 @@
     remember  = update-index --no-assume-unchanged
     changelog = !git log --oneline `git describe --abbrev=0`..HEAD
     supdate   = submodule update --init --recursive
+    pulled    = log -p --reverse --no-merges --stat @{1}..
 
 [core]
     excludesfile = ~/.gitignore
