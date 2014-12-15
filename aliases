@@ -26,6 +26,7 @@ alias reh='rbenv rehash'
 
 # navigation
 alias aliases='vim ~/.aliases'
+alias sor='. ~/.bash_profile'
 alias p='cd ~/Projects'
 alias d='cd ~/Dropbox'
 alias df='cd ~/Projects/dotfiles'
