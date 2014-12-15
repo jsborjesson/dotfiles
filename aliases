@@ -25,7 +25,7 @@ alias fr='foreman run'
 alias frbe='foreman run bundle exec'
 
 # navigation
-alias aliases='vim ~/.zsh/aliases'
+alias aliases='vim ~/.aliases'
 alias p='cd ~/Projects'
 alias d='cd ~/Dropbox'
 alias df='cd ~/Projects/dotfiles'
