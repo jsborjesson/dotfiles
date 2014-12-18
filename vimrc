@@ -12,7 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Editing
 Plugin 'SirVer/ultisnips'
-Plugin 'ervandew/supertab'
+" Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
@@ -66,7 +66,7 @@ let g:AutoPairsShortcutFastWrap=''
 
 " Misc
 let g:airline_powerline_fonts=1
-let g:rspec_command = "!bundle exec rspec {spec}"
+let g:rspec_command = "!foreman run bundle exec rspec {spec}"
 let g:marked_app = "Marked"
 
 
@@ -97,7 +97,7 @@ nmap j gj
 nmap k gk
 
 " Quick clear search highlights
-nmap <enter> :nohlsearch<cr>
+nmap <CR> :nohlsearch<cr>
 
 " ctrl-s for saving
 nmap <C-s> :update<cr>
@@ -111,11 +111,15 @@ nmap <leader><leader> <C-^>
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
+" Insert newlines in normal mode
+nmap <C-j> o<Esc>
+nmap <C-k> O<Esc>
+
 " Split navkgation
-nmap <C-h> <C-w>h
-nmap <C-j> <C-w>j
-nmap <C-k> <C-w>k
-nmap <C-l> <C-w>l
+" nmap <C-h> <C-w>h
+" nmap <C-j> <C-w>j
+" nmap <C-k> <C-w>k
+" nmap <C-l> <C-w>l
 nnoremap <silent> <leader>+ :vertical resize +10<cr>
 nnoremap <silent> <leader>- :vertical resize -10<cr>
 
@@ -145,7 +149,7 @@ map <Leader>a :call RunAllSpecs()<CR>
 set ttimeoutlen=1 " fixes delay on escape without breaking arrowkeys like noesckeys
 set backspace=indent,eol,start " make backspace work as expected
 set title
-" set shellcmdflag=-ic " load the zshrc
+" set shellcmdflag=-ic  " load the zshrc
 set scrolloff=3
 set history=1000
 set hidden
@@ -182,7 +186,7 @@ set shiftround " make >> indent to the correct level if cursor is between tab wi
 
 " ==================== Ruby stuff ==========================
 
-autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype ruby setlocal ts=2 sw=2 sts=2
 
 " ==================== Line numbers ========================
 set number
