@@ -12,6 +12,7 @@
     cl = clone
     br = branch
     di = diff
+    dt = difftool
     ds = diff --staged
     ff = pull --ff-only
 
@@ -35,6 +36,9 @@
 
 [push]
     default = current
+
+[diff]
+    tool = vimdiff
 
 [credential]
     helper = osxkeychain
