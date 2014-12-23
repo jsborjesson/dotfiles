@@ -1,4 +1,4 @@
-source $HOME/.zsh/aliases
+source $HOME/.aliases
 source $HOME/.zsh/functions
 source $HOME/.zsh/vim_mode
 
