@@ -8,8 +8,7 @@ brew install bash bash-completion
 brew install git
 brew install zsh
 brew install vim --with-python3 --with-ruby --override-system-vi
-brew install rbenv
-brew install ruby-build
+brew install rbenv ruby-build
 brew install python
 brew install python3
 brew install tree
@@ -17,8 +16,7 @@ brew install ag
 brew install hub
 brew install sqlite
 brew install heroku-toolbelt
-brew install tmux
-brew install reattach-to-user-namespace --wrap-pbcopy-and-pbpaste
+brew install tmux reattach-to-user-namespace --wrap-pbcopy-and-pbpaste
 brew install htop
 
 # Casks
