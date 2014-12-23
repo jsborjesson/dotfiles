@@ -4,6 +4,7 @@ brew update
 # Upgrade already installed formulae
 brew upgrade
 
+brew install bash bash-completion
 brew install git
 brew install zsh
 brew install vim --with-python3 --with-ruby --override-system-vi
