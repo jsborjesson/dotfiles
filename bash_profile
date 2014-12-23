@@ -26,4 +26,4 @@ stty -ixon
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
 # Set prompt
-PS1="\n\h:\W \$(__git_ps1 \" (%s) \")\n\$ "
+PS1="\n\A \w\$(__git_ps1 \" (%s) \")\n\$ "
