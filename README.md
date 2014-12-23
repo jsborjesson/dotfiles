@@ -15,7 +15,9 @@
     * Set longer scrollback
     * Split panes in same directory
     * Enable option->=Esc to support Meta
-* Set the default shell to Zsh.
+* After `brew install`ing the new version of your preferred shell:
+    * `sudo vim /etc/shells` and add it there. (Probably something like `/usr/local/bin/bash`)
+    * `chsh -s /usr/local/bin/bash` to set it as default
 * Rebind keys using **Seil**. (right cmd -> enter)
 * Enable things in **Karabiner**.
     * faster key repeat
