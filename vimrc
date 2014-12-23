@@ -12,7 +12,6 @@ Plugin 'gmarik/Vundle.vim'
 
 " Editing
 Plugin 'SirVer/ultisnips'
-" Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
@@ -29,6 +28,7 @@ Plugin 'slim-template/vim-slim'
 Plugin 'itspriddle/vim-marked'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'rking/ag.vim'
 
 " Theme
 Plugin 'nanotech/jellybeans.vim'
