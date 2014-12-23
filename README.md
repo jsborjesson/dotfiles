@@ -12,7 +12,9 @@
 * **iTerm2**
     * Set font to **Sauce Code Powerline** (installed by homebrew).
     * Set terminal type to `xterm-256color`.
-    * Set scrollbacklines to 0 to prevent 2-finger scrolling in Vim, use tmux instead.
+    * Set longer scrollback
+    * Split panes in same directory
+    * Enable option->=Esc to support Meta
 * Set the default shell to Zsh.
 * Rebind keys using **Seil**. (right cmd -> enter)
 * Enable things in **Karabiner**.

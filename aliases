@@ -1,6 +1,6 @@
 # remaps, these CHANGE preexisting commands
 alias ls='ls -G' # color all output
-alias git='noglob hub'
+alias git='hub'
 
 # vim
 alias v='vim'
@@ -20,12 +20,13 @@ alias gp='git push'
 alias r='rails'
 alias b='bundle'
 alias be='bundle exec'
-alias pryr='pry -r ./config/environment' # open pry with rails env
 alias fr='foreman run'
 alias frbe='foreman run bundle exec'
+alias reh='rbenv rehash'
 
 # navigation
-alias aliases='vim ~/.zsh/aliases'
+alias aliases='vim ~/.aliases'
+alias sor='. ~/.bash_profile'
 alias p='cd ~/Projects'
 alias d='cd ~/Dropbox'
 alias df='cd ~/Projects/dotfiles'

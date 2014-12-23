@@ -12,7 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Editing
 Plugin 'SirVer/ultisnips'
-Plugin 'ervandew/supertab'
+" Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
@@ -26,11 +26,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'danro/rename.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'slim-template/vim-slim'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'itspriddle/vim-marked'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'rking/ag.vim'
 
 " Theme
 Plugin 'nanotech/jellybeans.vim'
@@ -39,8 +37,6 @@ Plugin 'bling/vim-airline'
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-endwise'
-Plugin 'hwartig/vim-seeing-is-believing'
-Plugin 'jgdavey/vim-blockle'
 Plugin 'thoughtbot/vim-rspec'
 
 " All of your Plugins must be added before the following line
@@ -68,17 +64,9 @@ let g:NERDTreeWindowSize=40
 " AutoPairs
 let g:AutoPairsShortcutFastWrap=''
 
-" UltiSnips
-let g:UltiSnipsExpandTrigger='<c-j>'
-let g:UltiSnipsJumpForwardTrigger='<c-j>'
-let g:UltiSnipsJumpBackwardTrigger='<c-k>'
-let g:UltiSnipsEditSplit='vertical'
-
 " Misc
 let g:airline_powerline_fonts=1
-let g:vim_markdown_folding_disabled=1
-let g:multi_cursor_next_key='<C-d>'
-let g:rspec_command = "!bundle exec rspec {spec}"
+let g:rspec_command = "!foreman run bundle exec rspec {spec}"
 let g:marked_app = "Marked"
 
 
@@ -95,14 +83,21 @@ map K <Nop>
 " U for normal redo is much more natural
 nnoremap U <C-r>
 
+" Only go to last non-whitespace char
+noremap $ g_
+
+" Make Y work like all the other upper-case actions
+nnoremap Y y$
+
 " Space to enter commands
 map <space> :
 
-" Quick clear search highlights
-nmap <enter> :nohlsearch<cr>
+" Don't jump wrapped lines
+nmap j gj
+nmap k gk
 
-" Increase/decrease numbers with ctrl-x/c
-nnoremap <C-c> <C-a>
+" Quick clear search highlights
+nmap <CR> :nohlsearch<cr>
 
 " ctrl-s for saving
 nmap <C-s> :update<cr>
@@ -112,23 +107,21 @@ imap <C-s> <Esc><C-s>
 " ,, to go to last file
 nmap <leader><leader> <C-^>
 
-" External commands
-nmap <leader>x :!
-
 " Faster scrolling
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
+" Insert newlines in normal mode
+nmap <C-j> o<Esc>
+nmap <C-k> O<Esc>
+
 " Split navkgation
-nmap <C-h> <C-w>h
-nmap <C-j> <C-w>j
-nmap <C-k> <C-w>k
-nmap <C-l> <C-w>l
+" nmap <C-h> <C-w>h
+" nmap <C-j> <C-w>j
+" nmap <C-k> <C-w>k
+" nmap <C-l> <C-w>l
 nnoremap <silent> <leader>+ :vertical resize +10<cr>
 nnoremap <silent> <leader>- :vertical resize -10<cr>
-
-" Save and rake
-nmap <leader>r :w<cr>:! rake<cr>
 
 " Align selection
 vmap <enter> <plug>(EasyAlign)
@@ -145,18 +138,6 @@ nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
 nmap <leader>gp :Git push<cr>
 nmap <leader>gb :Gbrowse<cr>
 
-" Open with pry
-nmap <leader>p :!pry -r ./%<cr>
-
-" Seeing is believing
-nmap <F5> <Plug>(seeing-is-believing-run)
-xmap <F5> <Plug>(seeing-is-believing-run)
-imap <F5> <Plug>(seeing-is-believing-run)
-
-nmap <F4> <Plug>(seeing-is-believing-mark)
-xmap <F4> <Plug>(seeing-is-believing-mark)
-imap <F4> <Plug>(seeing-is-believing-mark)
-
 " RSpec
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
@@ -168,19 +149,16 @@ map <Leader>a :call RunAllSpecs()<CR>
 set ttimeoutlen=1 " fixes delay on escape without breaking arrowkeys like noesckeys
 set backspace=indent,eol,start " make backspace work as expected
 set title
-set showcmd
-" set shellcmdflag=-ic " load the zshrc
+" set shellcmdflag=-ic  " load the zshrc
 set scrolloff=3
 set history=1000
 set hidden
 set laststatus=2      " always show status line
 set clipboard=unnamed " yank to system clipboard
 set autoread          " reload files automatically
-set hlsearch          " highlight search results
 set wildmenu          " show list of commands when tabbing
 set nojoinspaces      " join lines containing punctuation correctly
 set cursorline        " highlight current line
-set shiftround        " make >> indent to the correct level if cursor is between tab widths
 
 " Trim trailing whitespace on save
 autocmd BufWritePre * :FixWhitespace
@@ -192,6 +170,10 @@ runtime macros/matchit.vim
 set nobackup
 set noswapfile
 
+" persistent-undo
+set undodir=~/.vim/undo
+set undofile
+
 " ==================== Indentaion ==========================
 set expandtab
 set tabstop=4
@@ -200,10 +182,11 @@ set shiftwidth=4
 set autoindent
 set smartindent
 set smarttab
+set shiftround " make >> indent to the correct level if cursor is between tab widths
 
 " ==================== Ruby stuff ==========================
 
-autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype ruby setlocal ts=2 sw=2 sts=2
 
 " ==================== Line numbers ========================
 set number
@@ -214,6 +197,7 @@ autocmd InsertEnter * :set norelativenumber
 autocmd InsertLeave * :set relativenumber
 
 " ==================== Searching ===========================
+set hlsearch  " highlight search results
 set incsearch
 set ignorecase
 set smartcase " ignore case if all lowercase
