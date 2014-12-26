@@ -64,6 +64,11 @@ let g:NERDTreeWindowSize=40
 " AutoPairs
 let g:AutoPairsShortcutFastWrap=''
 
+" UltiSnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<c-u>"
+
 " Misc
 let g:airline_powerline_fonts=1
 let g:rspec_command = "!foreman run bundle exec rspec {spec}"
