@@ -68,6 +68,7 @@ let g:AutoPairsShortcutFastWrap=''
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<c-u>"
+let g:UltiSnipsEditSplit="vertical"
 
 " Misc
 let g:airline_powerline_fonts=1
@@ -100,6 +101,10 @@ map <space> :
 " Don't jump wrapped lines
 nmap j gj
 nmap k gk
+
+" Emacs style forward/back in insert mode
+imap <C-f> <right>
+imap <C-b> <left>
 
 " Quick clear search highlights
 nmap <CR> :nohlsearch<cr>
