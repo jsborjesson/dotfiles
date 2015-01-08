@@ -122,7 +122,7 @@ end
 # Ruby version
 ########################################
 
-create_file ".ruby-version", RUBY_VERSION
+create_file ".ruby-version", RUBY_VERSION + "\n"
 
 
 ########################################
