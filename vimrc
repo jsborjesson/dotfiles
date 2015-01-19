@@ -171,7 +171,6 @@ set autoread          " reload files automatically
 set wildmenu          " show list of commands when tabbing
 set nojoinspaces      " join lines containing punctuation correctly
 set cursorline        " highlight current line
-set iskeyword-=_      " jump individual words in snake_case
 
 " Trim trailing whitespace on save
 autocmd BufWritePre * :FixWhitespace
