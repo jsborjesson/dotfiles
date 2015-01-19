@@ -17,12 +17,13 @@ alias gl='git log --oneline -10'
 alias gp='git push'
 
 # ruby
+alias reh='rbenv rehash'
 alias r='rails'
 alias b='bundle'
 alias be='bundle exec'
 alias fr='foreman run'
 alias frbe='foreman run bundle exec'
-alias reh='rbenv rehash'
+alias fsw='foreman start web'
 
 # navigation
 alias aliases='vim ~/.aliases'
