@@ -18,11 +18,11 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-commentary'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'junegunn/vim-easy-align'
+Plugin 'terryma/vim-multiple-cursors'
 
 " Files and navigation
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'danro/rename.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'slim-template/vim-slim'
 Plugin 'itspriddle/vim-marked'
@@ -88,6 +88,8 @@ map K <Nop>
 
 " U for normal redo is much more natural
 nnoremap U <C-r>
+
+nmap <C-c> <Esc>
 
 " Only go to last non-whitespace char
 noremap $ g_
@@ -169,6 +171,7 @@ set autoread          " reload files automatically
 set wildmenu          " show list of commands when tabbing
 set nojoinspaces      " join lines containing punctuation correctly
 set cursorline        " highlight current line
+set iskeyword-=_      " jump individual words in snake_case
 
 " Trim trailing whitespace on save
 autocmd BufWritePre * :FixWhitespace
