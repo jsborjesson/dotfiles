@@ -91,6 +91,7 @@ map K <Nop>
 " U for normal redo is much more natural
 nnoremap U <C-r>
 
+" Can't think of when I would ever want a normal C-c
 nmap <C-c> <Esc>
 
 " Only go to last non-whitespace char
