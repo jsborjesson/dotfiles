@@ -19,6 +19,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'kana/vim-textobj-user'
 
 " Files and navigation
 Plugin 'kien/ctrlp.vim'
@@ -38,6 +39,7 @@ Plugin 'bling/vim-airline'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-endwise'
 Plugin 'thoughtbot/vim-rspec'
+Plugin 'nelstrom/vim-textobj-rubyblock'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
