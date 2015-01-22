@@ -130,11 +130,7 @@ nnoremap <C-y> 3<C-y>
 nmap <C-j> o<Esc>
 nmap <C-k> O<Esc>
 
-" Split navkgation
-" nmap <C-h> <C-w>h
-" nmap <C-j> <C-w>j
-" nmap <C-k> <C-w>k
-" nmap <C-l> <C-w>l
+" Resize splits
 nnoremap <silent> <leader>+ :vertical resize +10<cr>
 nnoremap <silent> <leader>- :vertical resize -10<cr>
 
