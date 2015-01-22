@@ -199,6 +199,10 @@ set shiftround " make >> indent to the correct level if cursor is between tab wi
 
 autocmd Filetype ruby setlocal ts=2 sw=2 sts=2
 
+" Switch between do- and bracket-block types
+let @b = '%ciw{``ciw}'
+let @d = '%sdo``send'
+
 " ==================== Line numbers ========================
 set number
 set relativenumber
