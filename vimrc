@@ -101,6 +101,9 @@ noremap $ g_
 " Make Y work like all the other upper-case actions
 nnoremap Y y$
 
+" K for split lines, as an opposite of J
+nnoremap K i<CR><Esc>
+
 " Space to enter commands
 map <space> :
 
