@@ -3,7 +3,7 @@ alias ls='ls -G' # color all output
 alias git='hub'
 
 # vim
-alias v='vim'
+alias v='nvim'
 
 # git
 alias g='git'
