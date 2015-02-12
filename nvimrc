@@ -10,6 +10,7 @@ Plug 'tpope/vim-rsi'        " Readline key-mappings for insert and command mode
 Plug 'kien/ctrlp.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'sjl/badwolf'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -72,3 +73,6 @@ nmap <C-k> O<Esc>
 " ==================== Plugin settings ====================
 vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
+
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
