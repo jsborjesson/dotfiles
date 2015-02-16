@@ -5,7 +5,7 @@ Plug 'tpope/vim-repeat'     " Make . work with plugins
 Plug 'tpope/vim-commentary' " Comment lines with gc
 Plug 'tpope/vim-surround'   " Change surrounding quotes, tags...
 Plug 'tpope/vim-fugitive'   " Git helpers
-Plug 'tpope/vim-eunuch'     " Unix helpers such as :Move and :SudoWrite
+Plug 'tpope/vim-eunuch'     " Unix helpers such as :Move, :Rename and :SudoWrite
 Plug 'tpope/vim-abolish'    " case insensitive search and camel/snake/mixed-switching
 Plug 'tpope/vim-sleuth'     " set indentation settings automatically
 Plug 'tpope/vim-rsi'        " Readline key-mappings for insert and command mode
