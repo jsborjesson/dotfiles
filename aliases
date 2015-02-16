@@ -1,3 +1,5 @@
+shopt -s expand_aliases
+
 # remaps, these CHANGE preexisting commands
 alias ls='ls -G' # color all output
 alias git='hub'

@@ -56,6 +56,9 @@ set noswapfile
 set undodir=~/.nvim/undo
 set undofile
 
+" Load shell aliases
+let $BASH_ENV = "~/.aliases"
+
 " ==================== Key mappings ========================
 let mapleader=","
 
