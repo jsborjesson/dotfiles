@@ -60,6 +60,9 @@ set undofile
 " Load shell aliases
 let $BASH_ENV = "~/.aliases"
 
+" Don't insert comments with O
+autocmd FileType * setlocal formatoptions-=o
+
 " ==================== Key mappings ========================
 let mapleader=","
 
