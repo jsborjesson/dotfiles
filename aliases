@@ -39,3 +39,13 @@ alias n='cd ~/Dropbox/notes/ && vim'
 alias nzbsync='cp ~/Downloads/*.nzb /Volumes/Data/Downloads/nzbs && rm ~/Downloads/*.nzb'
 alias pessimize='pessimize --no-backup'
 alias c='pygmentize -O style=monokai -f console256 -g'
+
+# cd to location of topmost Finder window
+function cdf() {
+    cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
+}
+
+# mkdir and enter it
+function md() {
+    mkdir -p "$@" && cd "$@"
+}
