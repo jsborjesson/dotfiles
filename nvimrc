@@ -1,7 +1,9 @@
 " ==================== Plugins =============================
 call plug#begin('~/.nvim/plugged')
 
+Plug 'tpope/vim-repeat'     " Make . work with plugins
 Plug 'tpope/vim-commentary' " Comment lines with gc
+Plug 'tpope/vim-surround'   " Change surrounding quotes, tags...
 Plug 'tpope/vim-fugitive'   " Git helpers
 Plug 'tpope/vim-eunuch'     " Unix helpers such as :Move and :SudoWrite
 Plug 'tpope/vim-abolish'    " case insensitive search and camel/snake/mixed-switching
@@ -11,8 +13,12 @@ Plug 'kien/ctrlp.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'sjl/badwolf'
 Plug 'airblade/vim-gitgutter'
+Plug 'AndrewRadev/switch.vim' " Clever toggling with gs
+Plug 'bronson/vim-trailing-whitespace'
 
 call plug#end()
+
+runtime macros/matchit.vim
 
 " ==================== reload nvimrc =======================
 " Reload .nvimrc on save
@@ -41,6 +47,14 @@ set ignorecase
 set smartcase " ignore case if all lowercase
 
 set number
+
+" Don't need it
+set nobackup
+set noswapfile
+
+" persistent undo
+set undodir=~/.nvim/undo
+set undofile
 
 " ==================== Key mappings ========================
 let mapleader=","
@@ -76,3 +90,16 @@ nmap ga <Plug>(EasyAlign)
 
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
+
+" Git
+nmap <leader>ga :Gwrite<cr>
+nmap <leader>gc :Gcommit<cr>
+nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
+nmap <leader>gp :Git push<cr>
+nmap <leader>gb :Gbrowse<cr>
+
+" Trim whitespace on save
+augroup fix_whitespace
+    autocmd!
+    autocmd BufWritePre * :FixWhitespace
+augroup END
