@@ -20,12 +20,16 @@ call plug#end()
 
 runtime macros/matchit.vim
 
-" ==================== reload nvimrc =======================
-" Reload .nvimrc on save
-augroup reload_nvimrc
-    " make sure to not register the autocmd again when reloading
+" ==================== autocmds ============================
+augroup settings
+    " make sure to not register the autocmds again when reloading nvimrc
     autocmd!
+
+    " Reload .nvimrc on save
     autocmd BufWritePost nvimrc source $MYVIMRC
+
+    " Don't insert comments with O
+    autocmd FileType * setlocal formatoptions-=o
 augroup END
 
 " ==================== theme ===============================
@@ -59,9 +63,6 @@ set undofile
 
 " Load shell aliases
 let $BASH_ENV = "~/.aliases"
-
-" Don't insert comments with O
-autocmd FileType * setlocal formatoptions-=o
 
 " ==================== Key mappings ========================
 let mapleader=","
