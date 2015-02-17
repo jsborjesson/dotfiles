@@ -66,7 +66,7 @@ class Dotfile
     if symlinked?
       info("already symlinked")
     elsif exists?
-      info("FILE EXISTS")
+      info("EXISTS")
     else
       create_symlink
       info("symlinked")
