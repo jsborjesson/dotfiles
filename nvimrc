@@ -31,6 +31,9 @@ augroup settings
 
     " Don't insert comments with O
     autocmd FileType * setlocal formatoptions-=o
+
+    " Trim whitespace on save
+    autocmd BufWritePre * :FixWhitespace
 augroup END
 
 " ==================== theme ===============================
@@ -106,9 +109,3 @@ nmap <leader>gc :Gcommit<cr>
 nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
 nmap <leader>gp :Git push<cr>
 nmap <leader>gb :Gbrowse<cr>
-
-" Trim whitespace on save
-augroup fix_whitespace
-    autocmd!
-    autocmd BufWritePre * :FixWhitespace
-augroup END
