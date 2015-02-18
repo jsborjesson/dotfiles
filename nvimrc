@@ -9,6 +9,7 @@ Plug 'tpope/vim-eunuch'     " Unix helpers such as :Move, :Rename and :SudoWrite
 Plug 'tpope/vim-abolish'    " case insensitive search and camel/snake/mixed-switching
 Plug 'tpope/vim-sleuth'     " set indentation settings automatically
 Plug 'tpope/vim-rsi'        " Readline key-mappings for insert and command mode
+Plug 'tpope/vim-vinegar'    " Better netrw filebrowser
 Plug 'kien/ctrlp.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'sjl/badwolf'
