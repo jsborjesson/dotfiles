@@ -89,9 +89,6 @@ nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 " go to last file
 nmap <leader><leader> <C-^>
 
-" K for split lines, as an opposite of J
-nnoremap K i<CR><Esc>
-
 " Insert newlines in normal mode
 nmap <C-j> o<Esc>
 nmap <C-k> O<Esc>
