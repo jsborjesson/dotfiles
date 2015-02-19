@@ -17,7 +17,7 @@ bind "set completion-ignore-case on"
 # don't tab twice to show results
 bind "set show-all-if-ambiguous on"
 
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # Turn off flow control and free up C-s and C-q
 stty -ixon
