@@ -10,12 +10,14 @@ Plug 'tpope/vim-abolish'    " case insensitive search and camel/snake/mixed-swit
 Plug 'tpope/vim-sleuth'     " set indentation settings automatically
 Plug 'tpope/vim-rsi'        " Readline key-mappings for insert and command mode
 Plug 'tpope/vim-vinegar'    " Better netrw filebrowser
+Plug 'tpope/vim-endwise'    " Put in end automatically
 Plug 'kien/ctrlp.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'sjl/badwolf'
 Plug 'airblade/vim-gitgutter'
 Plug 'AndrewRadev/switch.vim' " Clever toggling with gs
 Plug 'bronson/vim-trailing-whitespace'
+Plug 'jgdavey/vim-blockle'
 
 call plug#end()
 
