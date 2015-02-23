@@ -57,6 +57,8 @@ set smartcase " ignore case if all lowercase
 
 set number
 
+set synmaxcol=512 " turn of syntax for absurdely long lines (makes opening huge json-files quick)
+
 " Don't need it
 set nobackup
 set noswapfile
