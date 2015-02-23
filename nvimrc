@@ -80,6 +80,10 @@ map <C-c> <Esc>
 " Y yanks to the end of the line, entire line is still available with yy
 map Y y$
 
+" Navigate wrapped lines easier
+nmap j gj
+nmap k gk
+
 " Space to enter commands
 map <space> :
 
