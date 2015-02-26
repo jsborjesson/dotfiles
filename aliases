@@ -33,7 +33,7 @@ alias sor='. ~/.bash_profile'
 alias p='cd ~/Projects'
 alias d='cd ~/Dropbox'
 alias df='cd ~/Projects/dotfiles'
-alias n='cd ~/Dropbox/notes/ && vim'
+alias n='cd ~/Dropbox/notes/ && v'
 
 # other
 alias nzbsync='cp ~/Downloads/*.nzb /Volumes/Data/Downloads/nzbs && rm ~/Downloads/*.nzb'
