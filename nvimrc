@@ -6,8 +6,8 @@ Plug 'tpope/vim-commentary' " Comment lines with gc
 Plug 'tpope/vim-surround'   " Change surrounding quotes, tags...
 Plug 'tpope/vim-fugitive'   " Git helpers
 Plug 'tpope/vim-eunuch'     " Unix helpers such as :Move, :Rename and :SudoWrite
-Plug 'tpope/vim-abolish'    " case insensitive search and camel/snake/mixed-switching
-Plug 'tpope/vim-sleuth'     " set indentation settings automatically
+Plug 'tpope/vim-abolish'    " Case insensitive search and camel/snake/mixed-switching
+Plug 'tpope/vim-sleuth'     " Set indentation settings automatically
 Plug 'tpope/vim-rsi'        " Readline key-mappings for insert and command mode
 Plug 'tpope/vim-vinegar'    " Better netrw filebrowser
 Plug 'tpope/vim-endwise'    " Put in end automatically
@@ -28,7 +28,7 @@ runtime macros/matchit.vim
 
 " ==================== autocmds ============================
 augroup settings
-    " make sure to not register the autocmds again when reloading nvimrc
+    " Make sure to not register the autocmds again when reloading nvimrc
     autocmd!
 
     " Reload .nvimrc on save
@@ -47,27 +47,27 @@ colorscheme badwolf
 " ==================== Settings ============================
 syntax on
 
-set backspace=indent,eol,start " make backspace work as expected
+set backspace=indent,eol,start " Make backspace work as expected
 
-set clipboard=unnamed " yank to system clipboard
-set autoread          " reload files automatically
-set wildmenu          " show list of commands when tabbing
-set nojoinspaces      " join lines containing punctuation correctly
+set clipboard=unnamed " Yank to system clipboard
+set autoread          " Reload files automatically
+set wildmenu          " Show list of commands when tabbing
+set nojoinspaces      " Join lines containing punctuation correctly
 
 set hlsearch
 set incsearch
 set ignorecase
-set smartcase " ignore case if all lowercase
+set smartcase " Ignore case if all lowercase
 
 set number
 
-set synmaxcol=512 " turn of syntax for absurdely long lines (makes opening huge json-files quick)
+set synmaxcol=512 " Turn of syntax for absurdely long lines (makes opening huge json-files quick)
 
 " Don't need it
 set nobackup
 set noswapfile
 
-" persistent undo
+" Persistent undo
 set undodir=~/.nvim/undo
 set undofile
 
@@ -96,7 +96,7 @@ map <space> :
 " Quick clear search highlights
 nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 
-" go to last file
+" Go to last file
 nmap <leader><leader> <C-^>
 
 " Insert newlines in normal mode
