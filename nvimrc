@@ -18,6 +18,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'AndrewRadev/switch.vim' " Clever toggling with gs
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'jgdavey/vim-blockle'
+Plug 'kana/vim-textobj-user'
+Plug 'rhysd/vim-textobj-ruby'
+Plug 'rking/ag.vim'
 
 call plug#end()
 
@@ -50,7 +53,6 @@ set clipboard=unnamed " yank to system clipboard
 set autoread          " reload files automatically
 set wildmenu          " show list of commands when tabbing
 set nojoinspaces      " join lines containing punctuation correctly
-set formatoptions-=o  " Don't insert comments with O
 
 set hlsearch
 set incsearch
