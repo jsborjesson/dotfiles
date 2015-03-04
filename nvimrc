@@ -104,11 +104,10 @@ nmap <C-j> o<Esc>
 nmap <C-k> O<Esc>
 
 " ==================== Plugin settings ====================
+
+" EasyAlign
 vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
-
-let g:gitgutter_realtime = 0
-let g:gitgutter_eager = 0
 
 " Git
 nmap <leader>ga :Gwrite<cr>
@@ -116,3 +115,13 @@ nmap <leader>gc :Gcommit<cr>
 nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
 nmap <leader>gp :Git push<cr>
 nmap <leader>gb :Gbrowse<cr>
+
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
+
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+let g:switch_custom_definitions =
+    \ [
+    \   ['if', 'unless']
+    \ ]
