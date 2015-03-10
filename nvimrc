@@ -58,6 +58,7 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase " Ignore case if all lowercase
+set nowrap
 
 set number
 
