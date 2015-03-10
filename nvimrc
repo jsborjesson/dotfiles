@@ -71,6 +71,10 @@ set noswapfile
 set undodir=~/.nvim/undo
 set undofile
 
+" Enable per project nvimrcs
+set exrc
+set secure
+
 " Load shell aliases
 let $BASH_ENV = "~/.aliases"
 
