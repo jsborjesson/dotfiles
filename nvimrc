@@ -123,6 +123,9 @@ nmap <leader>gb :Gbrowse<cr>
 
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
+let g:gitgutter_map_keys = 0
+nmap <Leader>ha <Plug>GitGutterStageHunk
+nmap <Leader>hu <Plug>GitGutterRevertHunk
 
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
