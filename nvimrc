@@ -49,7 +49,7 @@ syntax on
 
 set backspace=indent,eol,start " Make backspace work as expected
 
-set clipboard=unnamed " Yank to system clipboard
+set clipboard=        " Yank to system clipboard
 set autoread          " Reload files automatically
 set wildmenu          " Show list of commands when tabbing
 set nojoinspaces      " Join lines containing punctuation correctly
@@ -58,11 +58,11 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase " Ignore case if all lowercase
+
 set nowrap
-
 set number
-
 set synmaxcol=512 " Turn of syntax for absurdely long lines (makes opening huge json-files quick)
+set iskeyword+=?,! " For better method autocomplete in Ruby
 
 " Don't need it
 set nobackup
