@@ -11,6 +11,7 @@ Plug 'tpope/vim-sleuth'     " Set indentation settings automatically
 Plug 'tpope/vim-rsi'        " Readline key-mappings for insert and command mode
 Plug 'tpope/vim-vinegar'    " Better netrw filebrowser
 Plug 'tpope/vim-endwise'    " Put in end automatically
+Plug 'tpope/vim-jdaddy'     " gqaj to format json, also aj and ij text-objects
 Plug 'kien/ctrlp.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'sjl/badwolf'
@@ -21,6 +22,7 @@ Plug 'jgdavey/vim-blockle'
 Plug 'kana/vim-textobj-user'
 Plug 'rhysd/vim-textobj-ruby'
 Plug 'rking/ag.vim'
+Plug 'hwartig/vim-seeing-is-believing'
 
 call plug#end()
 
@@ -134,3 +136,12 @@ let g:switch_custom_definitions =
     \   ['if', 'unless'],
     \   ['to', 'not_to']
     \ ]
+
+" Seeing Is Believing
+nmap <buffer> <F5> <Plug>(seeing-is-believing-run)
+xmap <buffer> <F5> <Plug>(seeing-is-believing-run)
+imap <buffer> <F5> <Plug>(seeing-is-believing-run)
+
+nmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+xmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+imap <buffer> <F4> <Plug>(seeing-is-believing-mark)
