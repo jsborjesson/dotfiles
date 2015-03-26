@@ -131,5 +131,6 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 let g:switch_custom_definitions =
     \ [
-    \   ['if', 'unless']
+    \   ['if', 'unless'],
+    \   ['to', 'not_to']
     \ ]
