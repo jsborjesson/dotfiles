@@ -23,10 +23,19 @@ Plug 'kana/vim-textobj-user'
 Plug 'rhysd/vim-textobj-ruby'
 Plug 'rking/ag.vim'
 Plug 'hwartig/vim-seeing-is-believing'
+Plug 'slim-template/vim-slim'
+
+" Trial
+Plug 'svermeulen/vim-easyclip'
+Plug 'tpope/vim-fireplace'
+Plug 'thoughtbot/vim-rspec'
+Plug 'rizzatti/dash.vim'
 
 call plug#end()
 
 runtime macros/matchit.vim
+" TODO:
+" reorganize nvimrc
 
 " ==================== autocmds ============================
 augroup settings
@@ -78,6 +87,11 @@ set undofile
 set exrc
 set secure
 
+set laststatus=2
+set statusline=%F
+set statusline+=\ (%{fugitive#head(8)})
+set statusline+=\ %y
+
 " Load shell aliases
 let $BASH_ENV = "~/.aliases"
 
@@ -91,7 +105,7 @@ map U <C-r>
 map <C-c> <Esc>
 
 " Y yanks to the end of the line, entire line is still available with yy
-map Y y$
+nmap Y y$
 
 " Navigate wrapped lines easier
 nmap j gj
@@ -116,21 +130,44 @@ nmap <C-k> O<Esc>
 vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
-" Git
-nmap <leader>ga :Gwrite<cr>
-nmap <leader>gc :Gcommit<cr>
-nmap <leader>gac :Gwrite<cr>:Gcommit -m ""<left>
-nmap <leader>gp :Git push<cr>
-nmap <leader>gb :Gbrowse<cr>
+" Fugitive
+nmap <Leader>ga :Gwrite<cr>
+nmap <Leader>gc :Gcommit<cr>
+nmap <Leader>gac :Gwrite<cr>:Gcommit -m ""<left>
+nmap <Leader>gp :Gpush<cr>
+nmap <Leader>gb :Gbrowse<cr>
 
+" RSpec
+let g:rspec_command = "!foreman run bundle exec rspec {spec}"
+nmap <Leader>t :call RunCurrentSpecFile()<CR>
+nmap <Leader>s :call RunNearestSpec()<CR>
+nmap <Leader>l :call RunLastSpec()<CR>
+nmap <Leader>a :call RunAllSpecs()<CR>
+
+" Gitgutter
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
 let g:gitgutter_map_keys = 0
 nmap <Leader>ha <Plug>GitGutterStageHunk
 nmap <Leader>hu <Plug>GitGutterRevertHunk
 
+" EasyClip
+let g:EasyClipUseCutDefaults = 0
+nmap x  <Plug>MoveMotionPlug
+xmap x  <Plug>MoveMotionXPlug
+nmap xx <Plug>MoveMotionLinePlug
+nmap X  <Plug>MoveMotionEndOfLinePlug
+
+let g:EasyClipUsePasteToggleDefaults = 0
+nmap <M-p> <plug>EasyClipSwapPasteForward
+nmap <M-n> <plug>EasyClipSwapPasteBackwards
+
+let g:EasyClipAutoFormat = 1
+
+" Ag
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
+" Switch
 let g:switch_custom_definitions =
     \ [
     \   ['if', 'unless'],
