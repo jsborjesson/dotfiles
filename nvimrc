@@ -18,16 +18,21 @@ Plug 'sjl/badwolf'
 Plug 'airblade/vim-gitgutter'
 Plug 'AndrewRadev/switch.vim' " Clever toggling with gs
 Plug 'bronson/vim-trailing-whitespace'
-Plug 'jgdavey/vim-blockle'
 Plug 'kana/vim-textobj-user'
-Plug 'rhysd/vim-textobj-ruby'
 Plug 'rking/ag.vim'
-Plug 'hwartig/vim-seeing-is-believing'
+
+" Ruby
+Plug 'rhysd/vim-textobj-ruby'
 Plug 'slim-template/vim-slim'
+Plug 'hwartig/vim-seeing-is-believing'
+Plug 'jgdavey/vim-blockle'
+
+" Clojure
+Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-classpath'
 
 " Trial
 Plug 'svermeulen/vim-easyclip'
-Plug 'tpope/vim-fireplace'
 Plug 'thoughtbot/vim-rspec'
 Plug 'rizzatti/dash.vim'
 
