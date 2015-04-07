@@ -77,7 +77,7 @@ set smartcase " Ignore case if all lowercase
 
 set nowrap
 set number
-set synmaxcol=512 " Turn of syntax for absurdely long lines (makes opening huge json-files quick)
+set synmaxcol=512 " Turn of syntax for absurdly long lines (makes opening huge json-files quick)
 set iskeyword+=?,! " For better method autocomplete in Ruby
 
 " Don't need it
