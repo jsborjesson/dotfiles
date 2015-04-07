@@ -39,8 +39,6 @@ Plug 'rizzatti/dash.vim'
 call plug#end()
 
 runtime macros/matchit.vim
-" TODO:
-" reorganize nvimrc
 
 " ==================== autocmds ============================
 augroup settings
