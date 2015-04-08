@@ -141,7 +141,7 @@ nmap <Leader>gp :Gpush<cr>
 nmap <Leader>gb :Gbrowse<cr>
 
 " RSpec
-let g:rspec_command = "!foreman run bundle exec rspec {spec}"
+let g:rspec_command = "!frbe rspec {spec}"
 nmap <Leader>t :call RunCurrentSpecFile()<CR>
 nmap <Leader>s :call RunNearestSpec()<CR>
 nmap <Leader>l :call RunLastSpec()<CR>
