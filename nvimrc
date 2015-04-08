@@ -167,7 +167,7 @@ nmap <M-n> <plug>EasyClipSwapPasteBackwards
 
 let g:EasyClipAutoFormat = 1
 
-" Ag
+" CtrlP
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 " Switch
