@@ -8,6 +8,9 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     source $(brew --prefix)/etc/bash_completion
 fi
 
+# Enable git completion for the g alias
+__git_complete g __git_main
+
 # cd without cd
 shopt -s autocd
 
