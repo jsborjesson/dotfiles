@@ -32,6 +32,7 @@ stty -ixon
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 export PATH=./bin:$PATH
 
+### Prompt
 
 # Reset
 Color_Off='\e[0m'       # Text Reset
