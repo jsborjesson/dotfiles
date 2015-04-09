@@ -12,6 +12,7 @@ Plug 'tpope/vim-rsi'        " Readline key-mappings for insert and command mode
 Plug 'tpope/vim-vinegar'    " Better netrw filebrowser
 Plug 'tpope/vim-endwise'    " Put in end automatically
 Plug 'tpope/vim-jdaddy'     " gqaj to format json, also aj and ij text-objects
+Plug 'tpope/vim-speeddating' " Makes C-a and C-x work for dates
 Plug 'kien/ctrlp.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'sjl/badwolf'
@@ -166,6 +167,7 @@ nmap <M-p> <plug>EasyClipSwapPasteForward
 nmap <M-n> <plug>EasyClipSwapPasteBackwards
 
 let g:EasyClipAutoFormat = 1
+nmap <leader>cf <plug>EasyClipToggleFormattedPaste
 
 " CtrlP
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
