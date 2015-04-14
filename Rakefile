@@ -35,6 +35,14 @@ task :vim do
   sh "vim +PluginInstall +qall"
 end
 
+namespace :nvim do
+  desc 'Update NeoVim'
+  task :update do
+    sh "brew update"
+    sh "brew reinstall --HEAD neovim"
+  end
+end
+
 desc 'Install Homebrew'
 task :brew do
   unless system("brew --version > /dev/null")
