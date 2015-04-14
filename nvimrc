@@ -141,13 +141,6 @@ nmap <Leader>gac :Gwrite<cr>:Gcommit -m ""<left>
 nmap <Leader>gp :Gpush<cr>
 nmap <Leader>gb :Gbrowse<cr>
 
-" RSpec
-let g:rspec_command = "!frbe rspec {spec}"
-nmap <Leader>t :call RunCurrentSpecFile()<CR>
-nmap <Leader>s :call RunNearestSpec()<CR>
-nmap <Leader>l :call RunLastSpec()<CR>
-nmap <Leader>a :call RunAllSpecs()<CR>
-
 " Gitgutter
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
@@ -178,6 +171,13 @@ let g:switch_custom_definitions =
     \   ['if', 'unless'],
     \   ['to', 'not_to']
     \ ]
+
+" RSpec
+let g:rspec_command = "!frbe rspec {spec}"
+nmap <Leader>t :call RunCurrentSpecFile()<CR>
+nmap <Leader>s :call RunNearestSpec()<CR>
+nmap <Leader>l :call RunLastSpec()<CR>
+nmap <Leader>a :call RunAllSpecs()<CR>
 
 " Seeing Is Believing
 nmap <buffer> <F5> <Plug>(seeing-is-believing-run)
