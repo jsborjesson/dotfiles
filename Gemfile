@@ -3,6 +3,8 @@
 
 source 'https://rubygems.org'
 
+gem 'bundler'
+gem 'foreman'
 gem 'pry'
 gem 'byebug'
 gem 'gem-open'
