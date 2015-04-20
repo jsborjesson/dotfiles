@@ -11,6 +11,9 @@ fi
 # Enable git completion for the g alias
 __git_complete g __git_main
 
+# Show * for dirty repo
+export GIT_PS1_SHOWDIRTYSTATE=1
+
 # cd without cd
 shopt -s autocd
 
