@@ -36,6 +36,7 @@ Plug 'tpope/vim-classpath'
 Plug 'svermeulen/vim-easyclip'
 Plug 'thoughtbot/vim-rspec'
 Plug 'rizzatti/dash.vim'
+Plug 'jaxbot/github-issues.vim'
 
 call plug#end()
 
@@ -103,7 +104,7 @@ let $BASH_ENV = "~/.aliases"
 let mapleader=","
 
 " U for normal redo is much more natural
-map U <C-r>
+nmap U <C-r>
 
 " Can't think of when I would ever want a normal C-c
 map <C-c> <Esc>
@@ -187,3 +188,10 @@ imap <buffer> <F5> <Plug>(seeing-is-believing-run)
 nmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
 xmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
 imap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+
+" Github Issues
+
+" Enable for private repos
+" let g:github_access_token = ""
+
+let g:gissues_lazy_load = 1
