@@ -33,7 +33,6 @@ Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-classpath'
 
 " Trial
-Plug 'svermeulen/vim-easyclip'
 Plug 'thoughtbot/vim-rspec'
 Plug 'rizzatti/dash.vim'
 Plug 'jaxbot/github-issues.vim'
@@ -65,7 +64,7 @@ syntax on
 
 set backspace=indent,eol,start " Make backspace work as expected
 
-set clipboard=        " Yank to system clipboard
+set clipboard=unnamed " Yank to system clipboard
 set autoread          " Reload files automatically
 set wildmenu          " Show list of commands when tabbing
 set nojoinspaces      " Join lines containing punctuation correctly
@@ -148,20 +147,6 @@ let g:gitgutter_eager = 0
 let g:gitgutter_map_keys = 0
 nmap <Leader>ha <Plug>GitGutterStageHunk
 nmap <Leader>hu <Plug>GitGutterRevertHunk
-
-" EasyClip
-let g:EasyClipUseCutDefaults = 0
-nmap x  <Plug>MoveMotionPlug
-xmap x  <Plug>MoveMotionXPlug
-nmap xx <Plug>MoveMotionLinePlug
-nmap X  <Plug>MoveMotionEndOfLinePlug
-
-let g:EasyClipUsePasteToggleDefaults = 0
-nmap <M-p> <plug>EasyClipSwapPasteForward
-nmap <M-n> <plug>EasyClipSwapPasteBackwards
-
-let g:EasyClipAutoFormat = 1
-nmap <leader>cf <plug>EasyClipToggleFormattedPaste
 
 " CtrlP
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
