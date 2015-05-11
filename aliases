@@ -24,11 +24,12 @@ alias r='rails'
 alias b='bundle'
 alias be='bundle exec'
 alias fr='foreman run'
+alias frb='foreman run bundle'
 alias frbe='foreman run bundle exec'
 alias fsw='foreman start web'
 
 # navigation
-alias aliases='vim ~/.aliases'
+alias aliases='v ~/.aliases'
 alias sor='. ~/.bash_profile'
 alias p='cd ~/Projects'
 alias d='cd ~/Dropbox'
@@ -39,6 +40,7 @@ alias n='cd ~/Dropbox/notes/ && v'
 alias nzbsync='cp ~/Downloads/*.nzb /Volumes/Data/Downloads/nzbs && rm ~/Downloads/*.nzb'
 alias pessimize='pessimize --no-backup'
 alias c='pygmentize -O style=monokai -f console256 -g'
+alias back='cd ~/Projects/allryder-backend'
 
 # cd to location of topmost Finder window
 function cdf() {
