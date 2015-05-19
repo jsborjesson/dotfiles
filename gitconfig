@@ -33,13 +33,13 @@
     diff   = auto
     status = auto
     branch = auto
-    ui = true
+    ui     = true
 
 [push]
     default = current
 
 [diff]
-    tool = vimdiff
+    tool      = vimdiff
     algorithm = patience
 
 [credential]
