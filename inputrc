@@ -1,2 +1,9 @@
+# Search completion with arrow keys
 "\e[A": history-search-backward
 "\e[B": history-search-forward
+
+# case insensitive tab complete
+set completion-ignore-case on
+
+# don't tab twice to show results
+set show-all-if-ambiguous on
