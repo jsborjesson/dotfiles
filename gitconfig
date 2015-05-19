@@ -44,3 +44,6 @@
 
 [credential]
     helper = osxkeychain
+
+[filter "trimWhitespace"]
+	clean = git-stripspace
