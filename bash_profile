@@ -33,6 +33,7 @@ stty -ixon
 
 # Path
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
+export PATH=~/.bin:$PATH
 export PATH=./bin:$PATH
 
 # Make folder color visible
