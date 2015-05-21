@@ -15,6 +15,7 @@
     dt = difftool
     ds = diff --staged
     ff = pull --ff-only
+    pr = pull-request
 
     amend     = commit --amend
     tree      = log --graph --oneline --decorate --all
