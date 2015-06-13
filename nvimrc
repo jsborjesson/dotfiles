@@ -172,3 +172,6 @@ imap <buffer> <F5> <Plug>(seeing-is-believing-run)
 nmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
 xmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
 imap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+
+" GitGutter
+let g:gitgutter_sign_removed_first_line = "_^"
