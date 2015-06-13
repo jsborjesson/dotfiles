@@ -27,6 +27,8 @@ Plug 'rhysd/vim-textobj-ruby'
 Plug 'slim-template/vim-slim'
 Plug 'hwartig/vim-seeing-is-believing'
 Plug 'jgdavey/vim-blockle'
+Plug 'tpope/vim-rbenv'
+Plug 't9md/vim-ruby-xmpfilter'
 
 " Clojure
 Plug 'tpope/vim-fireplace'
@@ -102,7 +104,7 @@ let $BASH_ENV = "~/.aliases"
 let mapleader=","
 
 " U for normal redo is much more natural
-nmap U <C-r>
+nnoremap U <C-r>
 
 " Can't think of when I would ever want a normal C-c
 map <C-c> <Esc>
@@ -164,14 +166,14 @@ nmap <Leader>s :call RunNearestSpec()<CR>
 nmap <Leader>l :call RunLastSpec()<CR>
 nmap <Leader>a :call RunAllSpecs()<CR>
 
-" Seeing Is Believing
-nmap <buffer> <F5> <Plug>(seeing-is-believing-run)
-xmap <buffer> <F5> <Plug>(seeing-is-believing-run)
-imap <buffer> <F5> <Plug>(seeing-is-believing-run)
+" XmpFilter
+autocmd FileType ruby nmap <buffer> <C-m> <Plug>(xmpfilter-mark)
+autocmd FileType ruby xmap <buffer> <C-m> <Plug>(xmpfilter-mark)
+autocmd FileType ruby imap <buffer> <C-m> <Plug>(xmpfilter-mark)
 
-nmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
-xmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
-imap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+autocmd FileType ruby nmap <buffer> <C-r> <Plug>(xmpfilter-run)
+autocmd FileType ruby xmap <buffer> <C-r> <Plug>(xmpfilter-run)
+autocmd FileType ruby imap <buffer> <C-r> <Plug>(xmpfilter-run)
 
 " GitGutter
 let g:gitgutter_sign_removed_first_line = "_^"
