@@ -41,6 +41,23 @@ namespace :nvim do
     sh "brew update"
     sh "brew reinstall --HEAD neovim"
   end
+
+  desc 'Install NeoVim, install Plug and update plugins'
+  task :install do
+    puts "Updating NeoVim"
+    sh "brew update && brew install --HEAD neovim"
+
+    puts "Installing python module"
+    sh "pip install neovim"
+
+    unless File.directory?(File.expand_path("~/.nvim/autoload/plug.vim"))
+      puts "Installing vim-plug"
+      sh "curl -fLo ~/.nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+
+      puts "Installing plugins"
+      sh "nvim +PlugInstall +qall"
+    end
+  end
 end
 
 desc 'Install Homebrew'
