@@ -173,13 +173,13 @@ nmap <Leader>l :call RunLastSpec()<CR>
 nmap <Leader>a :call RunAllSpecs()<CR>
 
 " XmpFilter
-autocmd FileType ruby nmap <buffer> <C-m> <Plug>(xmpfilter-mark)
-autocmd FileType ruby xmap <buffer> <C-m> <Plug>(xmpfilter-mark)
-autocmd FileType ruby imap <buffer> <C-m> <Plug>(xmpfilter-mark)
+autocmd FileType ruby nmap <buffer> <M-m> <Plug>(xmpfilter-mark)
+autocmd FileType ruby xmap <buffer> <M-m> <Plug>(xmpfilter-mark)
+autocmd FileType ruby imap <buffer> <M-m> <Plug>(xmpfilter-mark)
 
-autocmd FileType ruby nmap <buffer> <C-r> <Plug>(xmpfilter-run)
-autocmd FileType ruby xmap <buffer> <C-r> <Plug>(xmpfilter-run)
-autocmd FileType ruby imap <buffer> <C-r> <Plug>(xmpfilter-run)
+autocmd FileType ruby nmap <buffer> <M-r> <Plug>(xmpfilter-run)
+autocmd FileType ruby xmap <buffer> <M-r> <Plug>(xmpfilter-run)
+autocmd FileType ruby imap <buffer> <M-r> <Plug>(xmpfilter-run)
 
 " GitGutter
 let g:gitgutter_sign_removed_first_line = "_^"
