@@ -129,7 +129,13 @@ nmap <leader><leader> <C-^>
 nmap <C-j> o<Esc>
 nmap <C-k> O<Esc>
 
+" Search for selection
+vmap \ y/<C-r>"<Enter>
+
 " ==================== Plugin settings ====================
+
+" Commentary
+let g:commentary_map_backslash=0
 
 " EasyAlign
 vmap <Enter> <Plug>(EasyAlign)
