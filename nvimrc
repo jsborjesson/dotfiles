@@ -132,6 +132,11 @@ nmap <C-k> O<Esc>
 " Search for selection
 vmap \ y/<C-r>"<Enter>
 
+" Save with C-s
+nmap <C-s> :update<cr>
+vmap <C-s> <Esc><C-s>gv
+imap <C-s> <Esc><C-s>
+
 " ==================== Plugin settings ====================
 
 " Commentary
