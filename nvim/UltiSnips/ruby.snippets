@@ -28,6 +28,17 @@ snippet @
 @${1:instance_var} = $1$0
 endsnippet
 
+snippet defi
+attr_reader :${1/\w+, /$0:/g}
+
+def initialize($1)`!p
+snip.shift();
+for m in re.findall(r"\w+", t[1]):
+    snip.rv += snip.mkline("\n")
+    snip.rv += snip.mkline("@{0} = {0}".format(m))`
+end
+endsnippet
+
 snippet aa
 attr_accessor :${1:instance_variable}
 endsnippet
