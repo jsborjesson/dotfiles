@@ -21,11 +21,11 @@ end
 endsnippet
 
 snippet {
-{ |${1:args}| $0
+{ |${1:args}|
 endsnippet
 
 snippet @
-@${1:instance_var} = $1$0
+@${1:instance_var} = $1
 endsnippet
 
 snippet defi
@@ -56,7 +56,7 @@ source "https://rubygems.org"
 endsnippet
 
 snippet rr "require_relative"
-require_relative "$0"
+require_relative "$1"
 endsnippet
 
 snippet pry "Start pry here"
@@ -82,7 +82,7 @@ end
 endsnippet
 
 snippet exp
-expect(${1:object}).${2:to} ${3:eq} ${4:expectation}
+expect(${1:subject}).${2:to} ${3:eq} ${4:expectation}
 endsnippet
 
 snippet rtask "Run rspec as default rake task"
