@@ -37,6 +37,7 @@ Plug 'tpope/vim-classpath'
 " Trial
 Plug 'thoughtbot/vim-rspec'
 Plug 'rizzatti/dash.vim'
+Plug 'SirVer/ultisnips'
 
 call plug#end()
 
@@ -188,3 +189,9 @@ autocmd FileType ruby imap <buffer> <M-r> <Plug>(xmpfilter-run)
 
 " GitGutter
 let g:gitgutter_sign_removed_first_line = "_^"
+
+" UltiSnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsSnippetDirectories=["$HOME/.nvim/snippet"]
