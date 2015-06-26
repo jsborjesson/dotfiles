@@ -13,3 +13,7 @@ gem 'cheat'
 gem 'rcodetools'
 gem 'minitest'
 gem 'rspec'
+
+# Extra goodies
+gem 'hammertime'
+gem 'git-wayback-machine'
