@@ -21,7 +21,6 @@ Plug 'AndrewRadev/switch.vim' " Clever toggling with gs
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'kana/vim-textobj-user'
 Plug 'rking/ag.vim'
-Plug 'SirVer/ultisnips'
 
 " Ruby
 Plug 'rhysd/vim-textobj-ruby'
@@ -38,8 +37,7 @@ Plug 'tpope/vim-classpath'
 " Trial
 Plug 'thoughtbot/vim-rspec'
 Plug 'rizzatti/dash.vim'
-Plug 'tpope/vim-flagship'
-Plug 'luochen1990/rainbow'
+Plug 'SirVer/ultisnips'
 
 call plug#end()
 
@@ -196,6 +194,3 @@ let g:gitgutter_sign_removed_first_line = "_^"
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
-
-" Rainbow
-let g:rainbow_active = 0
