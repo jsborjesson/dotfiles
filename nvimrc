@@ -29,13 +29,13 @@ Plug 'hwartig/vim-seeing-is-believing'
 Plug 'jgdavey/vim-blockle'
 Plug 'tpope/vim-rbenv'
 Plug 't9md/vim-ruby-xmpfilter'
+Plug 'thoughtbot/vim-rspec'
 
 " Clojure
 Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-classpath'
 
 " Trial
-Plug 'thoughtbot/vim-rspec'
 Plug 'rizzatti/dash.vim'
 Plug 'SirVer/ultisnips'
 
