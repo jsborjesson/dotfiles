@@ -170,7 +170,8 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 let g:switch_custom_definitions =
     \ [
     \   ['if', 'unless'],
-    \   ['to', 'not_to']
+    \   ['to', 'not_to'],
+    \   ['first', 'last'],
     \ ]
 
 " RSpec
