@@ -138,7 +138,7 @@ nmap <C-s> :update<cr>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>
 
-nmap <leader>d :%s/,/,\r/g<cr><C-l>
+nmap <leader>d :s/,/,\r/g<cr><C-l>
 
 " ==================== Plugin settings ====================
 
