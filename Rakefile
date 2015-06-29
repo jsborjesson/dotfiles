@@ -4,7 +4,7 @@ require 'rake'
 puts 'Running in test mode' if ENV['test']
 
 DOTFILES = FileList.new('*').exclude(
-  *%w{ Rakefile Brewfile Gemfile Gemfile.lock scripts README.md LICENSE }
+  *%w{ Rakefile Brewfile Gemfile Gemfile.lock scripts README.md LICENSE NOTES.md }
 )
 
 desc 'Symlink dotfiles into home directory'
