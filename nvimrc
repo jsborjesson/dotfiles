@@ -66,6 +66,12 @@ syntax on
 
 set backspace=indent,eol,start " Make backspace work as expected
 
+" Default indentation settings
+set tabstop=4
+set shiftwidth=4
+set softtabstop=0
+set expandtab
+
 set clipboard=unnamed " Yank to system clipboard
 set autoread          " Reload files automatically
 set wildmenu          " Show list of commands when tabbing
