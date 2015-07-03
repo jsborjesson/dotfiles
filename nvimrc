@@ -119,6 +119,9 @@ map <C-c> <Esc>
 " Y yanks to the end of the line, entire line is still available with yy
 nmap Y y$
 
+" / searches for selection in visual mode
+vmap / "sy/<C-r>s<Enter>
+
 " Navigate wrapped lines easier
 nmap j gj
 nmap k gk
@@ -136,8 +139,6 @@ nmap <leader><leader> <C-^>
 nmap <C-j> o<Esc>
 nmap <C-k> O<Esc>
 
-" Search for selection
-vmap \ y/<C-r>"<Enter>
 
 " Save with C-s
 nmap <C-s> :update<cr>
