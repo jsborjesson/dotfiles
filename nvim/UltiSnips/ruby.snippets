@@ -8,6 +8,12 @@ def ${1:method_name}(${2:args})
 end
 endsnippet
 
+snippet defs
+def self.${1:class_method_name}(${2:args})
+  $0
+end
+endsnippet
+
 snippet do
 do |${1:args}|
   $0
@@ -15,18 +21,21 @@ end
 endsnippet
 
 snippet {
-{ |${1:args}| $0
+{ |${1:args}|
+endsnippet
+
+snippet @
+@${1:instance_var} = $1
 endsnippet
 
 snippet defi
-def initialize(${1:args})
-  $0
-end
-endsnippet
+attr_reader :${1/\w+, /$0:/g}
 
-snippet defs
-def self.${1:class_method_name}(${2:args})
-  $0
+def initialize($1)`!p
+snip.shift();
+for m in re.findall(r"\w+", t[1]):
+    snip.rv += snip.mkline("\n")
+    snip.rv += snip.mkline("@{0} = {0}".format(m))`
 end
 endsnippet
 
@@ -47,11 +56,15 @@ source "https://rubygems.org"
 endsnippet
 
 snippet rr "require_relative"
-require_relative "$0"
+require_relative "$1"
 endsnippet
 
 snippet pry "Start pry here"
 require 'pry'; binding.pry
+endsnippet
+
+snippet bye "Start byebug here"
+require 'byebug'; byebug
 endsnippet
 
 ### Testing ###
@@ -69,7 +82,7 @@ end
 endsnippet
 
 snippet exp
-expect(${1:object}).${2:to} ${3:eq} ${4:expectation}
+expect(${1:subject}).${2:to} ${3:eq} ${4:expectation}
 endsnippet
 
 snippet rtask "Run rspec as default rake task"

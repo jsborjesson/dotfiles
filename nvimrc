@@ -29,14 +29,15 @@ Plug 'hwartig/vim-seeing-is-believing'
 Plug 'jgdavey/vim-blockle'
 Plug 'tpope/vim-rbenv'
 Plug 't9md/vim-ruby-xmpfilter'
+Plug 'thoughtbot/vim-rspec'
 
 " Clojure
 Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-classpath'
 
 " Trial
-Plug 'thoughtbot/vim-rspec'
 Plug 'rizzatti/dash.vim'
+Plug 'SirVer/ultisnips'
 
 call plug#end()
 
@@ -64,6 +65,12 @@ colorscheme badwolf
 syntax on
 
 set backspace=indent,eol,start " Make backspace work as expected
+
+" Default indentation settings
+set tabstop=4
+set shiftwidth=4
+set softtabstop=0
+set expandtab
 
 set clipboard=unnamed " Yank to system clipboard
 set autoread          " Reload files automatically
@@ -112,6 +119,9 @@ map <C-c> <Esc>
 " Y yanks to the end of the line, entire line is still available with yy
 nmap Y y$
 
+" / searches for selection in visual mode
+vmap / "sy/<C-r>s<Enter>
+
 " Navigate wrapped lines easier
 nmap j gj
 nmap k gk
@@ -129,13 +139,13 @@ nmap <leader><leader> <C-^>
 nmap <C-j> o<Esc>
 nmap <C-k> O<Esc>
 
-" Search for selection
-vmap \ y/<C-r>"<Enter>
 
 " Save with C-s
 nmap <C-s> :update<cr>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>
+
+nmap <leader>d :s/,/,\r/g<cr><C-l>
 
 " ==================== Plugin settings ====================
 
@@ -167,7 +177,8 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 let g:switch_custom_definitions =
     \ [
     \   ['if', 'unless'],
-    \   ['to', 'not_to']
+    \   ['to', 'not_to'],
+    \   ['first', 'last'],
     \ ]
 
 " RSpec
@@ -188,3 +199,8 @@ autocmd FileType ruby imap <buffer> <M-r> <Plug>(xmpfilter-run)
 
 " GitGutter
 let g:gitgutter_sign_removed_first_line = "_^"
+
+" UltiSnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-tab>"

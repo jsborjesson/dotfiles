@@ -1,3 +1,4 @@
-vim/bundle
 vim/undo
 Gemfile.lock
+nvim/
+!nvim/UltiSnips/
