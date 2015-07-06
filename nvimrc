@@ -21,6 +21,7 @@ Plug 'AndrewRadev/switch.vim' " Clever toggling with gs
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'kana/vim-textobj-user'
 Plug 'rking/ag.vim'
+Plug 'jiangmiao/auto-pairs'
 
 " Ruby
 Plug 'rhysd/vim-textobj-ruby'
@@ -204,3 +205,6 @@ let g:gitgutter_sign_removed_first_line = "_^"
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
+
+" AutoPairs
+let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`', '|':'|'}
