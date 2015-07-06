@@ -9,8 +9,8 @@ brew install git
 brew install zsh
 brew install vim --with-python3 --with-ruby --override-system-vi
 brew install rbenv ruby-build
-brew install python
-brew install python3
+brew install python python3
+brew install leiningen
 brew install tree
 brew install ag
 brew install hub

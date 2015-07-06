@@ -13,6 +13,7 @@ gem 'cheat'
 gem 'rcodetools'
 gem 'minitest'
 gem 'rspec'
+gem 'benchmark-ips'
 
 # Extra goodies
 gem 'hammertime'
