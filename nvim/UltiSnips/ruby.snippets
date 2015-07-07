@@ -51,6 +51,12 @@ snippet alias
 alias_method :${1:new}, :${2:old}
 endsnippet
 
+snippet class
+class `!p snip.rv = "".join(map(lambda s:s.capitalize(), fn[:-3].split("_")))`
+  $0
+end
+endsnippet
+
 snippet source
 source "https://rubygems.org"
 endsnippet
