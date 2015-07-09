@@ -182,22 +182,6 @@ let g:switch_custom_definitions =
     \   ['first', 'last'],
     \ ]
 
-" RSpec
-let g:rspec_command = "!frbe rspec {spec}"
-nmap <Leader>t :call RunCurrentSpecFile()<CR>
-nmap <Leader>s :call RunNearestSpec()<CR>
-nmap <Leader>l :call RunLastSpec()<CR>
-nmap <Leader>a :call RunAllSpecs()<CR>
-
-" XmpFilter
-autocmd FileType ruby nmap <buffer> <M-m> <Plug>(xmpfilter-mark)
-autocmd FileType ruby xmap <buffer> <M-m> <Plug>(xmpfilter-mark)
-autocmd FileType ruby imap <buffer> <M-m> <Plug>(xmpfilter-mark)
-
-autocmd FileType ruby nmap <buffer> <M-r> <Plug>(xmpfilter-run)
-autocmd FileType ruby xmap <buffer> <M-r> <Plug>(xmpfilter-run)
-autocmd FileType ruby imap <buffer> <M-r> <Plug>(xmpfilter-run)
-
 " GitGutter
 let g:gitgutter_sign_removed_first_line = "_^"
 

@@ -1,4 +1,4 @@
-vim/undo
 Gemfile.lock
-nvim/
+nvim/*
 !nvim/UltiSnips/
+!nvim/ftplugin/
