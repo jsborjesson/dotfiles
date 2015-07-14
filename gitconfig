@@ -20,7 +20,7 @@
     amend     = commit --amend
     tree      = log --graph --oneline --decorate --all
     yolo      = push --force
-    gtfo      = !git checkout -- . && git clean -fd
+    tfo       = !git checkout -- . && git clean -fd
     forget    = update-index --assume-unchanged
     remember  = update-index --no-assume-unchanged
     changelog = !git log --oneline `git describe --abbrev=0`..HEAD
