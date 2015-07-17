@@ -17,6 +17,9 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # cd without cd
 shopt -s autocd
 
+# Enable ** for recursive globbing
+shopt -s globstar
+
 export EDITOR='nvim'
 
 # Turn off flow control and free up C-s and C-q
