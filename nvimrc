@@ -192,6 +192,7 @@ let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
 " AutoPairs
 let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`', '|':'|'}
+let g:AutoPairsMultilineClose = 0
 
 " Syntax highlighting for Lasp
 autocmd BufNewFile,BufRead *.lasp setlocal syntax=clojure
