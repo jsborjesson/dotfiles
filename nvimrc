@@ -39,6 +39,8 @@ Plug 'tpope/vim-classpath'
 
 " Trial
 Plug 'rizzatti/dash.vim'
+Plug 'guns/vim-sexp'
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
 
 call plug#end()
 
