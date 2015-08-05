@@ -22,6 +22,7 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'kana/vim-textobj-user'
 Plug 'rking/ag.vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'SirVer/ultisnips'
 
 " Ruby
 Plug 'rhysd/vim-textobj-ruby'
@@ -38,7 +39,6 @@ Plug 'tpope/vim-classpath'
 
 " Trial
 Plug 'rizzatti/dash.vim'
-Plug 'SirVer/ultisnips'
 
 call plug#end()
 
