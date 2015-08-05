@@ -195,4 +195,4 @@ let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`', '|':'|'}
 let g:AutoPairsMultilineClose = 0
 
 " Syntax highlighting for Lasp
-autocmd BufNewFile,BufRead *.lasp setlocal syntax=clojure
+autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure
