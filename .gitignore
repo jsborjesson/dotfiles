@@ -1,4 +1,5 @@
 Gemfile.lock
+lein/repl-history
 nvim/*
 !nvim/UltiSnips/
 !nvim/ftplugin/
