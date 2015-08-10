@@ -14,7 +14,8 @@
     * Set terminal type to `xterm-256color`.
     * Set longer scrollback
     * Split panes in same directory
-    * Enable option->=Esc to support Meta
+    * Enable xterm mouse reporting
+    * Enable "Keys -> option key acts as +Esc" to support Meta keys
 * After `brew install`ing the new version of your preferred shell:
     * `sudo vim /etc/shells` and add it there. (Probably something like `/usr/local/bin/bash`)
     * `chsh -s /usr/local/bin/bash` to set it as default
