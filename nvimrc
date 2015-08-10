@@ -35,7 +35,7 @@ Plug 'thoughtbot/vim-rspec'
 
 " Clojure
 Plug 'tpope/vim-fireplace'
-Plug 'tpope/vim-classpath'
+Plug 'tpope/vim-salve'
 
 " Trial
 Plug 'rizzatti/dash.vim'
