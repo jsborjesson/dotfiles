@@ -42,6 +42,7 @@ Plug 'tpope/vim-sexp-mappings-for-regular-people'
 " Trial
 Plug 'rizzatti/dash.vim'
 Plug 'svermeulen/vim-easyclip'
+Plug 'justinmk/vim-sneak'
 
 call plug#end()
 
@@ -212,6 +213,14 @@ let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`', '|':'|'}
 let g:AutoPairsMultilineClose = 0
 let g:AutoPairsShortcutJump = 'Nop'
 let g:AutoPairsShortcutToggle = 'Nop'
+
+" Sneak
+nmap f <Plug>Sneak_s
+nmap F <Plug>Sneak_S
+xmap f <Plug>Sneak_s
+xmap F <Plug>Sneak_S
+omap f <Plug>Sneak_s
+omap F <Plug>Sneak_S
 
 " Syntax highlighting for Lasp
 autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure
