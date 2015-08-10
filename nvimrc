@@ -43,6 +43,7 @@ Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'rizzatti/dash.vim'
 Plug 'svermeulen/vim-easyclip'
 Plug 'justinmk/vim-sneak'
+Plug 'kopischke/vim-fetch'
 
 call plug#end()
 
