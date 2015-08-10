@@ -19,6 +19,9 @@ brew install heroku-toolbelt
 brew install tmux reattach-to-user-namespace --wrap-pbcopy-and-pbpaste
 brew install htop
 
+brew install pandoc
+brew install homebrew/binary/kindlegen
+
 # Casks
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
