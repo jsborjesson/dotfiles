@@ -145,7 +145,7 @@ nmap <C-k> O<Esc>
 
 
 " Save with C-s
-nmap <C-s> :update<cr>
+nmap <C-s> :write<cr>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>
 
