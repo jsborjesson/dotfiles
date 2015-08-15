@@ -17,3 +17,6 @@ imap <buffer> <M-m> <Plug>(xmpfilter-mark)
 nmap <buffer> <M-r> <Plug>(xmpfilter-run)
 xmap <buffer> <M-r> <Plug>(xmpfilter-run)
 imap <buffer> <M-r> <Plug>(xmpfilter-run)
+
+" AutoPairs
+let b:AutoPairs = {'(':')', '[':']', '{':'}', "'":"'", '"':'"', '`':'`', '|':'|'}
