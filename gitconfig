@@ -23,6 +23,7 @@
     tfo       = !git checkout -- . && git clean -fd
     forget    = update-index --assume-unchanged
     remember  = update-index --no-assume-unchanged
+    forgotten = !git ls-files -v | grep ^[a-z]
     changelog = !git log --oneline `git describe --abbrev=0`..HEAD
     supdate   = submodule update --init --recursive
     pulled    = log -p --reverse --no-merges --stat @{1}..
