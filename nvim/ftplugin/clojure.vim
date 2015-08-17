@@ -1,2 +1,2 @@
 " AutoPairs
-let b:AutoPairs = {'(':')', '[':']', '{':'}'}
+let b:AutoPairs = {'(':')', '[':']', '{':'}', '"':'"'}
