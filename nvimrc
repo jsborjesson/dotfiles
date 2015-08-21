@@ -62,6 +62,10 @@ augroup settings
 
     " Trim whitespace on save
     autocmd BufWritePre * :FixWhitespace
+
+    " Relative numbers in command mode, and normal in insert mode
+    autocmd InsertEnter * set norelativenumber
+    autocmd InsertLeave * set relativenumber
 augroup END
 
 " ==================== theme ===============================
@@ -90,6 +94,7 @@ set smartcase " Ignore case if all lowercase
 
 set nowrap
 set number
+set relativenumber
 set synmaxcol=512 " Turn of syntax for absurdly long lines (makes opening huge json-files quick)
 set iskeyword+=?,! " For better method autocomplete in Ruby
 
