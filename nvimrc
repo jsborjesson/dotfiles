@@ -151,11 +151,6 @@ nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 " Go to last file
 nmap <leader><leader> <C-^>
 
-" Insert newlines in normal mode
-nmap <C-j> o<Esc>
-nmap <C-k> O<Esc>
-
-
 " Save with C-s
 nmap <C-s> :write<cr>
 vmap <C-s> <Esc><C-s>gv
