@@ -1,6 +1,7 @@
 " ==================== Plugins =============================
 call plug#begin('~/.nvim/plugged')
 
+" Vim standard library
 Plug 'tpope/vim-repeat'      " Make . work with plugins
 Plug 'tpope/vim-commentary'  " Comment lines with gc
 Plug 'tpope/vim-surround'    " Change surrounding quotes, tags...
@@ -13,6 +14,10 @@ Plug 'tpope/vim-vinegar'     " Better netrw filebrowser
 Plug 'tpope/vim-endwise'     " Put in end automatically
 Plug 'tpope/vim-jdaddy'      " gqaj to format json, also aj and ij text-objects
 Plug 'tpope/vim-speeddating' " Makes C-a and C-x work for dates
+Plug 'tpope/vim-unimpaired'  " Lots of clever pairs of mappings
+
+" Extra features
+Plug 'tommcdo/vim-exchange'
 Plug 'kien/ctrlp.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'sjl/badwolf'
