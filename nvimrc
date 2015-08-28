@@ -20,14 +20,14 @@ Plug 'tpope/vim-unimpaired'  " Lots of clever pairs of mappings
 Plug 'tommcdo/vim-exchange'
 Plug 'kien/ctrlp.vim'
 Plug 'junegunn/vim-easy-align'
+Plug 'AndrewRadev/switch.vim' " Clever toggling with gs
+Plug 'jiangmiao/auto-pairs'
+Plug 'SirVer/ultisnips'
 Plug 'sjl/badwolf'
 Plug 'airblade/vim-gitgutter'
-Plug 'AndrewRadev/switch.vim' " Clever toggling with gs
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'kana/vim-textobj-user'
 Plug 'rking/ag.vim'
-Plug 'jiangmiao/auto-pairs'
-Plug 'SirVer/ultisnips'
 
 " Ruby
 Plug 'rhysd/vim-textobj-ruby'
