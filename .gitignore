@@ -3,3 +3,4 @@ lein/repl-history
 nvim/*
 !nvim/UltiSnips/
 !nvim/ftplugin/
+ruby-tapas-downloader
