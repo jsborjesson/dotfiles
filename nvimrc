@@ -25,7 +25,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
 Plug 'sjl/badwolf'
 Plug 'airblade/vim-gitgutter'
-Plug 'bronson/vim-trailing-whitespace'
 Plug 'kana/vim-textobj-user'
 Plug 'rking/ag.vim'
 
@@ -54,13 +53,6 @@ call plug#end()
 
 runtime macros/matchit.vim
 
-" TODO: Clean up
-function! TrimTrailingNewlines()
-    let save_cursor = getpos(".")
-    :silent! %s#\($\n\s*\)\+\%$##
-    call setpos('.', save_cursor)
-endfunction
-
 " ==================== autocmds ============================
 augroup settings
     " Make sure to not register the autocmds again when reloading nvimrc
@@ -73,13 +65,32 @@ augroup settings
     autocmd FileType * setlocal formatoptions-=o
 
     " Trim whitespace on save
-    autocmd BufWritePre * :FixWhitespace
-    autocmd BufWritePre * :call TrimTrailingNewlines()
+    autocmd BufWritePre * :Trim
 
     " Relative numbers in command mode, and normal in insert mode
     autocmd InsertEnter * set norelativenumber
     autocmd InsertLeave * set relativenumber
 augroup END
+
+" ==================== Trim whitespace ====================
+" Highlight EOL whitespace, http://vim.wikia.com/wiki/Highlight_unwanted_spaces
+highlight default ExtraWhitespace ctermbg=darkred guibg=darkred
+autocmd BufRead * match ExtraWhitespace /^\s\+$/
+
+" The above flashes annoyingly while typing, be calmer in insert mode
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+
+function! TrimWhitespace()
+    let l:save_cursor = getpos(".")
+    " Remove trailing whitespace at the end of lines
+    silent! execute ':%s/\s\+$//'
+    " Remove trailing newlines at the end of file
+    silent! execute ':%s/\($\n\s*\)\+\%$//'
+    call setpos('.', l:save_cursor)
+endfunction
+
+command! Trim execute ':call TrimWhitespace()'
 
 " ==================== theme ===============================
 colorscheme badwolf
