@@ -54,6 +54,13 @@ call plug#end()
 
 runtime macros/matchit.vim
 
+" TODO: Clean up
+function! TrimTrailingNewlines()
+    let save_cursor = getpos(".")
+    :silent! %s#\($\n\s*\)\+\%$##
+    call setpos('.', save_cursor)
+endfunction
+
 " ==================== autocmds ============================
 augroup settings
     " Make sure to not register the autocmds again when reloading nvimrc
@@ -67,6 +74,7 @@ augroup settings
 
     " Trim whitespace on save
     autocmd BufWritePre * :FixWhitespace
+    autocmd BufWritePre * :call TrimTrailingNewlines()
 
     " Relative numbers in command mode, and normal in insert mode
     autocmd InsertEnter * set norelativenumber
