@@ -32,7 +32,7 @@ Plug 'rking/ag.vim'
 Plug 'rhysd/vim-textobj-ruby'
 Plug 'slim-template/vim-slim'
 Plug 'hwartig/vim-seeing-is-believing'
-Plug 'jgdavey/vim-blockle'
+Plug 'jgdavey/vim-blockle' " Switch out for switch.vim?
 Plug 'tpope/vim-rbenv'
 Plug 't9md/vim-ruby-xmpfilter'
 Plug 'thoughtbot/vim-rspec'
@@ -47,7 +47,7 @@ Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'rizzatti/dash.vim'
 Plug 'svermeulen/vim-easyclip'
 Plug 'justinmk/vim-sneak'
-Plug 'kopischke/vim-fetch'
+Plug 'kopischke/vim-fetch' " Handle line:column numbers in filenames
 
 call plug#end()
 
@@ -142,6 +142,10 @@ set statusline+=\ %y
 " Load shell aliases
 let $BASH_ENV = "~/.aliases"
 
+" Escape in terminal mode
+tnoremap <Esc> <c-\><c-n>
+tnoremap <S-Esc> <Esc>
+
 " ==================== Key mappings ========================
 let mapleader=","
 
@@ -175,6 +179,7 @@ nmap <C-s> :write<cr>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>
 
+" Split line on comma
 nmap <leader>d :s/,/,\r/g<cr><C-l>
 
 " ==================== Plugin settings ====================
