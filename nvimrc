@@ -248,8 +248,8 @@ let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 " AutoPairs
 let g:AutoPairs = {'(':')', '[':']', '{':'}', "'":"'", '"':'"', '`':'`'}
 let g:AutoPairsMultilineClose = 0
-let g:AutoPairsShortcutJump = 'Nop'
-let g:AutoPairsShortcutToggle = 'Nop'
+let g:AutoPairsShortcutJump = '<Nop>'
+let g:AutoPairsShortcutToggle = '<Nop>'
 
 " Sneak
 nmap <leader>f <Plug>Sneak_s
