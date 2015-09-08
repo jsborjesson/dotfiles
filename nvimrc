@@ -155,9 +155,6 @@ let mapleader=","
 " U for normal redo is much more natural
 nnoremap U <C-r>
 
-" Can't think of when I would ever want a normal C-c
-map <C-c> <Esc>
-
 " Y yanks to the end of the line, entire line is still available with yy
 nmap Y y$
 
