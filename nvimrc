@@ -23,7 +23,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'AndrewRadev/switch.vim' " Clever toggling with gs
 Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
-Plug 'sjl/badwolf'
+Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'airblade/vim-gitgutter'
 Plug 'kana/vim-textobj-user'
 Plug 'rking/ag.vim'
@@ -52,6 +52,12 @@ Plug 'kopischke/vim-fetch' " Handle line:column numbers in filenames
 call plug#end()
 
 runtime macros/matchit.vim
+
+" ==================== theme ===============================
+colorscheme hybrid_reverse
+
+" No split separator char
+set fillchars+=vert:\ " There's significant whitespace before this comment
 
 " ==================== autocmds ============================
 augroup settings
@@ -91,9 +97,6 @@ function! TrimWhitespace()
 endfunction
 
 command! Trim execute ':call TrimWhitespace()'
-
-" ==================== theme ===============================
-colorscheme badwolf
 
 " ==================== Settings ============================
 syntax on
