@@ -45,7 +45,6 @@ Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
 
 " Trial
-Plug 'rizzatti/dash.vim'
 Plug 'svermeulen/vim-easyclip'
 Plug 'justinmk/vim-sneak'
 Plug 'kopischke/vim-fetch' " Handle line:column numbers in filenames
