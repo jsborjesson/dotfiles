@@ -27,7 +27,6 @@ Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'airblade/vim-gitgutter'
 Plug 'kana/vim-textobj-user'
 Plug 'rking/ag.vim'
-Plug 'scrooloose/nerdtree'
 
 " Ruby
 Plug 'rhysd/vim-textobj-ruby'
@@ -222,9 +221,8 @@ nmap <leader>cf <plug>EasyClipToggleFormattedPaste
 " CtrlP
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
-" NERDTree
-let NERDTreeQuitOnOpen=1
-nnoremap <BS> :NERDTreeToggle<cr>
+" NERDTree-style netrw
+let g:netrw_liststyle=3
 
 " Switch
 let g:switch_custom_definitions =
