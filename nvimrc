@@ -178,6 +178,9 @@ nmap <C-s> :write<cr>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>
 
+" Run the q macro instead of stupid Ex-mode
+nmap Q @q
+
 " Split line on comma
 nmap <leader>d :s/,/,\r/g<cr><C-l>
 
