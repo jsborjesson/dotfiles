@@ -142,6 +142,9 @@ set secure
 set ttimeout
 set ttimeoutlen=1
 
+" Don't wait so long to complete a sequence
+set timeoutlen=500
+
 " Statusline
 set laststatus=2
 set statusline=%F
