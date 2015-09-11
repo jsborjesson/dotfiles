@@ -107,6 +107,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=0
 set expandtab
+set shiftround
 
 set clipboard=unnamed " Yank to system clipboard
 set autoread          " Reload files automatically
