@@ -136,6 +136,11 @@ set undofile
 set exrc
 set secure
 
+" Fix escape lag
+set ttimeout
+set ttimeoutlen=1
+
+" Statusline
 set laststatus=2
 set statusline=%F
 set statusline+=\ (%{fugitive#head(8)})
