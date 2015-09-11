@@ -118,6 +118,7 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase " Ignore case if all lowercase
+set lazyredraw " Don't redraw until macro has finished running
 
 set nowrap
 set number
