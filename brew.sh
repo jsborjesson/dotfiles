@@ -41,6 +41,7 @@ brew cask install karabiner
 brew cask install dash
 brew cask install sophos-anti-virus-home-edition
 brew cask install postgres
+brew cask install keycastr
 
 # Fonts
 brew tap caskroom/fonts
