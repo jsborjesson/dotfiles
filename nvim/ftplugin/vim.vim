@@ -1,1 +1,1 @@
-noremap <buffer> K "xyiw:help <C-r>x<CR>
+noremap <buffer> K :help <C-r><C-w><CR>
