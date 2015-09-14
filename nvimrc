@@ -87,7 +87,7 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 
 function! TrimWhitespace()
-    let l:save_cursor = getpos(".")
+    let l:save_cursor = getpos('.')
     " Remove trailing whitespace at the end of lines
     silent! execute ':%s/\s\+$//'
     " Remove trailing newlines at the end of file
