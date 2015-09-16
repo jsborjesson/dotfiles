@@ -155,8 +155,7 @@ set statusline+=\ %y
 let $BASH_ENV = "~/.aliases"
 
 " Escape in terminal mode
-tnoremap <Esc> <c-\><c-n>
-tnoremap <S-Esc> <Esc>
+tnoremap <Esc><Esc> <C-\><C-n>G:call search(".", "b")<CR>$
 
 " ==================== Key mappings ========================
 let mapleader=","
