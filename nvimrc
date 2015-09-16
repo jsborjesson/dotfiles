@@ -173,7 +173,7 @@ vmap / <Esc>/<C-r><C-w><Enter>
 nmap j gj
 nmap k gk
 
-" Space to enter commands
+" Space to enter command-line mode
 map <space> :
 
 " Quick clear search highlights
