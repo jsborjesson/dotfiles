@@ -167,7 +167,7 @@ nnoremap U <C-r>
 nmap Y y$
 
 " / searches for selection in visual mode
-vmap / "sy/<C-r>s<Enter>
+vmap / <Esc>/<C-r><C-w><Enter>
 
 " Navigate wrapped lines easier
 nmap j gj
