@@ -176,6 +176,10 @@ vmap / <Esc>/<C-r><C-w><Enter>
 nmap j gj
 nmap k gk
 
+" Search command history with C-p and C-n
+cmap <C-p> <Up>
+cmap <C-n> <Down>
+
 " Space to enter command-line mode
 map <space> :
 
