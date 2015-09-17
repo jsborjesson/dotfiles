@@ -1,6 +1,8 @@
-# Search completion with arrow keys
+# Search completion with arrow keys or C-p/C-n
 "\e[A": history-search-backward
+"\C-p": history-search-backward
 "\e[B": history-search-forward
+"\C-n": history-search-forward
 
 # case insensitive tab complete
 set completion-ignore-case on
