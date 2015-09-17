@@ -158,7 +158,7 @@ set statusline+=\ %{strftime('%a\ %d\ %b\ %R')}\  " Clock
 let $BASH_ENV = "~/.aliases"
 
 " Escape in terminal mode
-tnoremap <Esc><Esc> <C-\><C-n>G:call search(".", "b")<CR>$
+tnoremap <silent> <Esc><Esc> <C-\><C-n>G:call search(".", "b")<CR>$<C-l>
 
 " ==================== Key mappings ========================
 let mapleader=","
