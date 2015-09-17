@@ -147,12 +147,12 @@ set timeoutlen=500
 
 " Statusline
 set laststatus=2
-set statusline=%F                             " Path
-set statusline+=\ %y                          " Filetype
-set statusline+=\ (%{fugitive#head(8)})       " Git branch
-set statusline+=%=                            " Right alingn after this
-set statusline+=%{strftime('%a\ %d\ %b\ %R')} " Clock
-set statusline+=\                             " One char offset from right
+set statusline=\ %F                               " Path
+set statusline+=\ %y                              " Filetype
+set statusline+=\ (%{fugitive#head(8)})           " Git branch
+set statusline+=%=                                " Right alingn after this
+set statusline+=\ %c,%l/%L\ -                     " col,line/total lines
+set statusline+=\ %{strftime('%a\ %d\ %b\ %R')}\  " Clock
 
 " Load shell aliases
 let $BASH_ENV = "~/.aliases"
