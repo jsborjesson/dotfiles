@@ -25,9 +25,6 @@ export EDITOR='nvim'
 # Turn off flow control and free up C-s and C-q
 stty -ixon
 
-# Cycle through completions
-# [[ $- = *i* ]] && bind TAB:menu-complete
-
 # Path
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 export PATH=~/.bin:$PATH

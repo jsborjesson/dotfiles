@@ -7,5 +7,6 @@
 # case insensitive tab complete
 set completion-ignore-case on
 
-# don't tab twice to show results
+# Tab shows ambiguous suggestions then cycles
+TAB: menu-complete
 set show-all-if-ambiguous on
