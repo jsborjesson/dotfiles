@@ -161,8 +161,6 @@ let $BASH_ENV = "~/.aliases"
 tnoremap <silent> <Esc><Esc> <C-\><C-n>G:call search(".", "b")<CR>$<C-l>
 
 " ==================== Key mappings ========================
-let mapleader=","
-
 " U for normal redo is much more natural
 nnoremap U <C-r>
 
@@ -180,6 +178,11 @@ nmap k gk
 cmap <C-p> <Up>
 cmap <C-n> <Down>
 
+" Run the q macro instead of stupid Ex-mode
+nmap Q @q
+
+let mapleader=","
+
 " Space to enter command-line mode
 map <space> :
 
@@ -193,9 +196,6 @@ nmap <leader><leader> <C-^>
 nmap <C-s> :write<cr>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>
-
-" Run the q macro instead of stupid Ex-mode
-nmap Q @q
 
 " Split line on comma
 nmap <leader>d :s/,/,\r/g<cr><C-l>
