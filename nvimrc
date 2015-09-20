@@ -243,9 +243,6 @@ nmap <leader>cf <plug>EasyClipToggleFormattedPaste
 " CtrlP
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
-" NERDTree-style netrw
-let g:netrw_liststyle=3
-
 " Switch
 let g:switch_custom_definitions =
     \ [
