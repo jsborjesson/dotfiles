@@ -156,9 +156,6 @@ set statusline+=\ %{strftime('%a\ %d\ %b\ %R')}\  " Clock
 " Load shell aliases
 let $BASH_ENV = "~/.aliases"
 
-" Escape in terminal mode
-tnoremap <silent> <Esc><Esc> <C-\><C-n>G:call search(".", "b")<CR>$<C-l>
-
 " ==================== Key mappings ========================
 let mapleader=","
 
@@ -201,6 +198,9 @@ nmap Q @q
 
 " Split line on comma
 nmap <leader>d :s/,/,\r/g<cr><C-l>
+
+" Escape in terminal mode
+tnoremap <silent> <Esc> <C-\><C-n>G:call search(".", "b")<CR>$<C-l>
 
 " ==================== Plugin settings ====================
 
