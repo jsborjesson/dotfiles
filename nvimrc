@@ -183,13 +183,13 @@ cnoremap <C-n> <Down>
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " Space to enter command-line mode
-noremap <space> :
+noremap <Space> :
 
 " Quick clear search highlights
-nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 
 " Go to last file
-nnoremap <leader><leader> <C-^>
+nnoremap <Leader><Leader> <C-^>
 
 " Save with C-s
 nnoremap <C-s> :write<cr>
@@ -197,13 +197,13 @@ vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>
 
 " Split line on comma
-nmap <leader>s :s/,/,\r/g<cr><C-l>
+nmap <Leader>s :s/,/,\r/g<cr><C-l>
 
 " Escape in terminal mode
 tnoremap <silent> <Esc> <C-\><C-n>G:call search(".", "b")<CR>$<C-l>
 
 " Black hole redirection
-nnoremap <leader>d "_
+nnoremap <Leader>d "_
 
 " ==================== Plugin settings ====================
 
@@ -243,9 +243,9 @@ let g:switch_custom_definitions =
 let g:gitgutter_sign_removed_first_line = "_^"
 
 " UltiSnips
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
+let g:UltiSnipsExpandTrigger="<Tab>"
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
 " AutoPairs
 let g:AutoPairs = {'(':')', '[':']', '{':'}', "'":"'", '"':'"', '`':'`'}
@@ -254,12 +254,12 @@ let g:AutoPairsShortcutJump = ''
 let g:AutoPairsShortcutToggle = ''
 
 " Sneak
-nmap <leader>f <Plug>Sneak_s
-nmap <leader>F <Plug>Sneak_S
-xmap <leader>f <Plug>Sneak_s
-xmap <leader>F <Plug>Sneak_S
-omap <leader>f <Plug>Sneak_s
-omap <leader>F <Plug>Sneak_S
+nmap <Leader>f <Plug>Sneak_s
+nmap <Leader>F <Plug>Sneak_S
+xmap <Leader>f <Plug>Sneak_s
+xmap <Leader>F <Plug>Sneak_S
+omap <Leader>f <Plug>Sneak_s
+omap <Leader>F <Plug>Sneak_S
 
 " Syntax highlighting for Lasp
 autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure
