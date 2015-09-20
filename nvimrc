@@ -177,8 +177,11 @@ nmap j gj
 nmap k gk
 
 " Search command history with C-p and C-n
-cmap <C-p> <Up>
-cmap <C-n> <Down>
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+
+" Bring in path to folder of current file in command-line with %%
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " Space to enter command-line mode
 map <space> :
