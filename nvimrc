@@ -166,14 +166,14 @@ nnoremap U <C-r>
 nnoremap Q @q
 
 " Y yanks to the end of the line, entire line is still available with yy
-nmap Y y$
+nnoremap Y y$
 
 " / searches for selection in visual mode
-vmap / <Esc>/<C-r><C-w><Enter>
+vnoremap / <Esc>/<C-r><C-w><Enter>
 
 " Navigate wrapped lines easier
-nmap j gj
-nmap k gk
+nnoremap j gj
+nnoremap k gk
 
 " Search command history with C-p and C-n
 cnoremap <C-p> <Up>
@@ -183,16 +183,16 @@ cnoremap <C-n> <Down>
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " Space to enter command-line mode
-map <space> :
+noremap <space> :
 
 " Quick clear search highlights
 nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 
 " Go to last file
-nmap <leader><leader> <C-^>
+nnoremap <leader><leader> <C-^>
 
 " Save with C-s
-nmap <C-s> :write<cr>
+nnoremap <C-s> :write<cr>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>
 
@@ -203,7 +203,7 @@ nmap <leader>s :s/,/,\r/g<cr><C-l>
 tnoremap <silent> <Esc> <C-\><C-n>G:call search(".", "b")<CR>$<C-l>
 
 " Black hole redirection
-nmap <leader>d "_
+nnoremap <leader>d "_
 
 " ==================== Plugin settings ====================
 
@@ -215,11 +215,11 @@ vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " Fugitive
-nmap <Leader>ga :Gwrite<cr>
-nmap <Leader>gc :Gcommit<cr>
-nmap <Leader>gac :Gwrite<cr>:Gcommit -m ""<left>
-nmap <Leader>gp :Gpush<cr>
-nmap <Leader>gb :Gbrowse<cr>
+nnoremap <Leader>ga :Gwrite<cr>
+nnoremap <Leader>gc :Gcommit<cr>
+nnoremap <Leader>gac :Gwrite<cr>:Gcommit -m ""<left>
+nnoremap <Leader>gp :Gpush<cr>
+nnoremap <Leader>gb :Gbrowse<cr>
 
 " Gitgutter
 let g:gitgutter_realtime = 0
