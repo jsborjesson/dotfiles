@@ -197,10 +197,13 @@ imap <C-s> <Esc><C-s>
 nmap Q @q
 
 " Split line on comma
-nmap <leader>d :s/,/,\r/g<cr><C-l>
+nmap <leader>s :s/,/,\r/g<cr><C-l>
 
 " Escape in terminal mode
 tnoremap <silent> <Esc> <C-\><C-n>G:call search(".", "b")<CR>$<C-l>
+
+" Black hole redirection
+nmap <leader>d "_
 
 " ==================== Plugin settings ====================
 
