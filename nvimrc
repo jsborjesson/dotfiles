@@ -44,7 +44,6 @@ Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
 
 " Trial
-Plug 'svermeulen/vim-easyclip'
 Plug 'justinmk/vim-sneak'
 Plug 'kopischke/vim-fetch' " Handle line:column numbers in filenames
 
@@ -225,20 +224,6 @@ let g:gitgutter_eager = 0
 let g:gitgutter_map_keys = 0
 nmap <Leader>ha <Plug>GitGutterStageHunk
 nmap <Leader>hu <Plug>GitGutterRevertHunk
-
-" EasyClip
-let g:EasyClipUseCutDefaults = 0
-nmap x  <Plug>MoveMotionPlug
-xmap x  <Plug>MoveMotionXPlug
-nmap xx <Plug>MoveMotionLinePlug
-nmap X  <Plug>MoveMotionEndOfLinePlug
-
-let g:EasyClipUsePasteToggleDefaults = 0
-nmap <M-p> <plug>EasyClipSwapPasteForward
-nmap <M-n> <plug>EasyClipSwapPasteBackwards
-
-let g:EasyClipAutoFormat = 1
-nmap <leader>cf <plug>EasyClipToggleFormattedPaste
 
 " CtrlP
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
