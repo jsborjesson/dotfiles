@@ -217,7 +217,7 @@ nmap ga <Plug>(EasyAlign)
 " Fugitive
 nnoremap <Leader>ga :Gwrite<cr>
 nnoremap <Leader>gc :Gcommit<cr>
-nnoremap <Leader>gac :Gwrite<cr>:Gcommit -m ""<left>
+nnoremap <Leader>gac :Gwrite<cr>:Gcommit<cr>
 nnoremap <Leader>gp :Gpush<cr>
 nnoremap <Leader>gb :Gbrowse<cr>
 
