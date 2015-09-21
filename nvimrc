@@ -122,6 +122,10 @@ set autoread          " Reload files automatically
 set wildmenu          " Show list of commands when tabbing
 set nojoinspaces      " Join lines containing punctuation correctly
 
+" More natural split destinations
+set splitright
+set splitbelow
+
 set hlsearch
 set incsearch
 set ignorecase
