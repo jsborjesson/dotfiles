@@ -51,6 +51,8 @@ call plug#end()
 
 runtime macros/matchit.vim
 
+syntax on
+
 " ==================== theme ===============================
 colorscheme hybrid_reverse
 
@@ -106,9 +108,8 @@ function! BreakLineOn()
 endfunction
 
 " ==================== Settings ============================
-syntax on
-
-set backspace=indent,eol,start " Make backspace work as expected
+" Make backspace work as expected
+set backspace=indent,eol,start
 
 " Default indentation settings
 set tabstop=4
