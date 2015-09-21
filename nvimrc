@@ -176,7 +176,7 @@ nnoremap Q @q
 nnoremap Y y$
 
 " / searches for selection in visual mode
-vnoremap / <Esc>/<C-r><C-w><Enter>
+vnoremap / "xy/<C-r>x<CR>
 
 " Navigate wrapped lines easier
 nnoremap j gj
