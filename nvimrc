@@ -237,6 +237,7 @@ nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gac :Gwrite<CR>:Gcommit<CR>
 nnoremap <Leader>gp :Gpush<CR>
 nnoremap <Leader>gb :Gbrowse<CR>
+vnoremap <Leader>gb :Gbrowse<CR>
 
 " Gitgutter
 let g:gitgutter_realtime = 0
