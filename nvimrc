@@ -44,7 +44,6 @@ Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
 
 " Trial
-Plug 'svermeulen/vim-easyclip'
 Plug 'justinmk/vim-sneak'
 Plug 'kopischke/vim-fetch' " Handle line:column numbers in filenames
 
@@ -157,26 +156,29 @@ set statusline+=\ %{strftime('%a\ %d\ %b\ %R')}\  " Clock
 " Load shell aliases
 let $BASH_ENV = "~/.aliases"
 
-" Escape in terminal mode
-tnoremap <silent> <Esc><Esc> <C-\><C-n>G:call search(".", "b")<CR>$<C-l>
-
 " ==================== Key mappings ========================
 " U for normal redo is much more natural
 nnoremap U <C-r>
 
+" Run the q macro instead of stupid Ex-mode
+nnoremap Q @q
+
 " Y yanks to the end of the line, entire line is still available with yy
-nmap Y y$
+nnoremap Y y$
 
 " / searches for selection in visual mode
-vmap / <Esc>/<C-r><C-w><Enter>
+vnoremap / <Esc>/<C-r><C-w><Enter>
 
 " Navigate wrapped lines easier
-nmap j gj
-nmap k gk
+nnoremap j gj
+nnoremap k gk
 
 " Search command history with C-p and C-n
-cmap <C-p> <Up>
-cmap <C-n> <Down>
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+
+" Bring in path to folder of current file in command-line with %%
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " Run the q macro instead of stupid Ex-mode
 nmap Q @q
@@ -184,21 +186,27 @@ nmap Q @q
 let mapleader=","
 
 " Space to enter command-line mode
-map <space> :
+noremap <Space> :
 
 " Quick clear search highlights
-nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 
 " Go to last file
-nmap <leader><leader> <C-^>
+nnoremap <Leader><Leader> <C-^>
 
 " Save with C-s
-nmap <C-s> :write<cr>
+nnoremap <C-s> :write<cr>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>
 
 " Split line on comma
-nmap <leader>d :s/,/,\r/g<cr><C-l>
+nmap <Leader>s :s/,/,\r/g<cr><C-l>
+
+" Escape in terminal mode
+tnoremap <silent> <Esc> <C-\><C-n>G:call search(".", "b")<CR>$<C-l>
+
+" Black hole redirection
+nnoremap <Leader>d "_
 
 " ==================== Plugin settings ====================
 
@@ -210,11 +218,11 @@ vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " Fugitive
-nmap <Leader>ga :Gwrite<cr>
-nmap <Leader>gc :Gcommit<cr>
-nmap <Leader>gac :Gwrite<cr>:Gcommit -m ""<left>
-nmap <Leader>gp :Gpush<cr>
-nmap <Leader>gb :Gbrowse<cr>
+nnoremap <Leader>ga :Gwrite<cr>
+nnoremap <Leader>gc :Gcommit<cr>
+nnoremap <Leader>gac :Gwrite<cr>:Gcommit<cr>
+nnoremap <Leader>gp :Gpush<cr>
+nnoremap <Leader>gb :Gbrowse<cr>
 
 " Gitgutter
 let g:gitgutter_realtime = 0
@@ -223,25 +231,8 @@ let g:gitgutter_map_keys = 0
 nmap <Leader>ha <Plug>GitGutterStageHunk
 nmap <Leader>hu <Plug>GitGutterRevertHunk
 
-" EasyClip
-let g:EasyClipUseCutDefaults = 0
-nmap x  <Plug>MoveMotionPlug
-xmap x  <Plug>MoveMotionXPlug
-nmap xx <Plug>MoveMotionLinePlug
-nmap X  <Plug>MoveMotionEndOfLinePlug
-
-let g:EasyClipUsePasteToggleDefaults = 0
-nmap <M-p> <plug>EasyClipSwapPasteForward
-nmap <M-n> <plug>EasyClipSwapPasteBackwards
-
-let g:EasyClipAutoFormat = 1
-nmap <leader>cf <plug>EasyClipToggleFormattedPaste
-
 " CtrlP
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-" NERDTree-style netrw
-let g:netrw_liststyle=3
 
 " Switch
 let g:switch_custom_definitions =
@@ -255,23 +246,23 @@ let g:switch_custom_definitions =
 let g:gitgutter_sign_removed_first_line = "_^"
 
 " UltiSnips
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
+let g:UltiSnipsExpandTrigger="<Tab>"
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
 " AutoPairs
 let g:AutoPairs = {'(':')', '[':']', '{':'}', "'":"'", '"':'"', '`':'`'}
 let g:AutoPairsMultilineClose = 0
-let g:AutoPairsShortcutJump = '<Nop>'
-let g:AutoPairsShortcutToggle = '<Nop>'
+let g:AutoPairsShortcutJump = ''
+let g:AutoPairsShortcutToggle = ''
 
 " Sneak
-nmap <leader>f <Plug>Sneak_s
-nmap <leader>F <Plug>Sneak_S
-xmap <leader>f <Plug>Sneak_s
-xmap <leader>F <Plug>Sneak_S
-omap <leader>f <Plug>Sneak_s
-omap <leader>F <Plug>Sneak_S
+nmap <Leader>f <Plug>Sneak_s
+nmap <Leader>F <Plug>Sneak_S
+xmap <Leader>f <Plug>Sneak_s
+xmap <Leader>F <Plug>Sneak_S
+omap <Leader>f <Plug>Sneak_s
+omap <Leader>F <Plug>Sneak_S
 
 " Syntax highlighting for Lasp
 autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure
