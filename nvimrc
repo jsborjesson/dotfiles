@@ -76,7 +76,7 @@ augroup settings
     autocmd InsertLeave * set relativenumber
 augroup END
 
-" ==================== Trim whitespace ====================
+" ==================== Trim whitespace =====================
 " Highlight EOL whitespace, http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 highlight default ExtraWhitespace ctermbg=darkred guibg=darkred
 autocmd BufRead * match ExtraWhitespace /^\s\+$/
@@ -95,6 +95,15 @@ function! TrimWhitespace()
 endfunction
 
 command! Trim execute ':call TrimWhitespace()'
+
+
+" ==================== Break line on =======================
+function! BreakLineOn()
+    call inputsave()
+    let split = input('Break line on: ')
+    call inputrestore()
+    silent! execute ':s/' . split . '/' . split . '\r/g'
+endfunction
 
 " ==================== Settings ============================
 syntax on
@@ -199,8 +208,8 @@ nnoremap <C-s> :write<cr>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>
 
-" Split line on comma
-nmap <Leader>s :s/,/,\r/g<cr><C-l>
+" Break line on input
+nmap <Leader>s :call BreakLineOn()<CR>
 
 " Escape in terminal mode
 tnoremap <silent> <Esc> <C-\><C-n>G:call search(".", "b")<CR>$<C-l>
