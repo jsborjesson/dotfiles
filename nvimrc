@@ -204,7 +204,7 @@ nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 nnoremap <Leader><Leader> <C-^>
 
 " Save with C-s
-nnoremap <C-s> :write<cr>
+nnoremap <C-s> :write<CR>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>
 
@@ -227,11 +227,11 @@ vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " Fugitive
-nnoremap <Leader>ga :Gwrite<cr>
-nnoremap <Leader>gc :Gcommit<cr>
-nnoremap <Leader>gac :Gwrite<cr>:Gcommit<cr>
-nnoremap <Leader>gp :Gpush<cr>
-nnoremap <Leader>gb :Gbrowse<cr>
+nnoremap <Leader>ga :Gwrite<CR>
+nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gac :Gwrite<CR>:Gcommit<CR>
+nnoremap <Leader>gp :Gpush<CR>
+nnoremap <Leader>gb :Gbrowse<CR>
 
 " Gitgutter
 let g:gitgutter_realtime = 0
