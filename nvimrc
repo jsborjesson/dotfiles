@@ -218,7 +218,7 @@ vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>
 
 " Break line on input
-nnoremap <Leader>s :call BreakLineOn()<CR>
+nnoremap <Leader>w :call BreakLineOn()<CR>
 
 " Escape in terminal mode
 tnoremap <silent> <Esc> <C-\><C-n>G:call search(".", "b")<CR>$<C-l>
