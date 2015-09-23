@@ -176,7 +176,7 @@ let $BASH_ENV = "~/.aliases"
 
 " ==================== Key mappings ========================
 " U for normal redo is much more natural
-nnoremap U <C-r>
+nnoremap U <C-R>
 
 " Run the q macro instead of stupid Ex-mode
 nnoremap Q @q
@@ -185,15 +185,15 @@ nnoremap Q @q
 nnoremap Y y$
 
 " / searches for selection in visual mode
-vnoremap / "xy/<C-r>x<CR>
+vnoremap / "xy/<C-R>x<CR>
 
 " Navigate wrapped lines easier
 nnoremap j gj
 nnoremap k gk
 
 " Search command history with C-p and C-n
-cnoremap <C-p> <Up>
-cnoremap <C-n> <Down>
+cnoremap <C-P> <Up>
+cnoremap <C-N> <Down>
 
 " Bring in path to folder of current file in command-line with %%
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
@@ -207,21 +207,21 @@ let mapleader=","
 noremap <Space> :
 
 " Quick clear search highlights
-nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
+nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 
 " Go to last file
 nnoremap <Leader><Leader> <C-^>
 
 " Save with C-s
-nnoremap <C-s> :write<CR>
-vmap <C-s> <Esc><C-s>gv
-imap <C-s> <Esc><C-s>
+nnoremap <C-S> :write<CR>
+vmap <C-S> <Esc><C-S>gv
+imap <C-S> <Esc><C-S>
 
 " Break line on input
 nnoremap <Leader>w :call BreakLineOn()<CR>
 
 " Escape in terminal mode
-tnoremap <silent> <Esc> <C-\><C-n>G:call search(".", "b")<CR>$<C-l>
+tnoremap <silent> <Esc> <C-\><C-N>G:call search(".", "b")<CR>$<C-L>
 
 " Black hole redirection
 nnoremap <Leader>d "_
