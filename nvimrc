@@ -232,7 +232,7 @@ nnoremap <Leader>d "_
 let g:commentary_map_backslash=0
 
 " EasyAlign
-vmap <Enter> <Plug>(EasyAlign)
+vmap <CR> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " Fugitive
