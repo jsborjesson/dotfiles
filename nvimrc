@@ -198,9 +198,6 @@ cnoremap <C-N> <Down>
 " Bring in path to folder of current file in command-line with %%
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
-" Run the q macro instead of stupid Ex-mode
-nmap Q @q
-
 let mapleader=","
 
 " Space to enter command-line mode
