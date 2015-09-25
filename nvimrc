@@ -181,6 +181,9 @@ nnoremap U <C-R>
 " Run the q macro instead of stupid Ex-mode
 nnoremap Q @q
 
+" Run macro over multiple lines
+vnoremap Q :normal @q<CR>
+
 " Y yanks to the end of the line, entire line is still available with yy
 nnoremap Y y$
 
