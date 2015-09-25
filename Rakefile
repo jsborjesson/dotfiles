@@ -81,8 +81,8 @@ end
 ### Helper class ###
 
 class Dotfile
-
   attr_reader :filename
+
   def initialize(filename)
     @filename = filename
   end
@@ -111,7 +111,7 @@ class Dotfile
     "~/.#{filename}"
   end
 
-private
+  private
 
   def info(message)
     puts "#{to_s.ljust(20)} #{message}"
@@ -140,5 +140,4 @@ private
   def source_path
     File.expand_path("./#{filename}")
   end
-
 end
