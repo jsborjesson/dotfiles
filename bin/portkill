@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Kills the process listening on specified port, for instance if you closed a
+# terminal but the webserver is still running.
+#
+# Example use: portkill 5000
+kill -9 $(lsof -t -i:$1)
