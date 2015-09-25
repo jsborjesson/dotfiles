@@ -68,13 +68,13 @@ task :brew do
   end
 
   puts "Homebrew is installed."
-  puts "Install Homebrew packages either by running ./scripts/brew.sh or copy pasting the commands you need."
+  puts "Install Homebrew packages either by running ./brew.sh or copy pasting the commands you need."
 end
 
-desc 'Configure Mac OS using the scripts/osx.sh file'
+desc 'Configure Mac OS using the osx.sh file'
 task :osx do
-  puts "Running scripts/osx..."
-  sh "bash ./scripts/osx.sh"
+  puts "Running osx.sh..."
+  sh "bash ./osx.sh"
   puts "Done! Some of these settings may require a restart."
 end
 
