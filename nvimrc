@@ -187,8 +187,9 @@ vnoremap Q :normal @q<CR>
 " Y yanks to the end of the line, entire line is still available with yy
 nnoremap Y y$
 
-" // searches for selection in visual mode
-vnoremap // "xy/\V<C-R>x<CR>
+" Make * and # search for selection in visual mode
+vnoremap * "xy/\V<C-R>=escape(@x, '/\')<CR><CR>
+vnoremap # "xy?\V<C-R>=escape(@x, '?\')<CR><CR>
 
 " Navigate wrapped lines easier
 nnoremap j gj
