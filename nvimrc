@@ -188,7 +188,7 @@ vnoremap Q :normal @q<CR>
 nnoremap Y y$
 
 " // searches for selection in visual mode
-vnoremap // "xy/<C-R>x<CR>
+vnoremap // "xy/\V<C-R>x<CR>
 
 " Navigate wrapped lines easier
 nnoremap j gj
