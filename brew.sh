@@ -42,6 +42,7 @@ brew cask install dash
 brew cask install sophos-anti-virus-home-edition
 brew cask install postgres
 brew cask install keycastr
+brew cask install the-unarchiver
 
 # Fonts
 brew tap caskroom/fonts
