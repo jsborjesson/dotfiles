@@ -45,6 +45,7 @@ namespace :nvim do
   desc 'Install NeoVim, install Plug and update plugins'
   task :install do
     puts "Updating NeoVim"
+    sh "brew tap neovim/neovim"
     sh "brew update && brew install --HEAD neovim"
 
     puts "Installing python module"
