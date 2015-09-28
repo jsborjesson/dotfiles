@@ -7,6 +7,7 @@
 # case insensitive tab complete
 set completion-ignore-case on
 
-# Tab shows ambiguous suggestions then cycles
+# Tab and S-Tab to cycle autocompletions
 TAB: menu-complete
+"\e[Z": "\e-1\C-i"
 set show-all-if-ambiguous on
