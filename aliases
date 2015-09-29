@@ -30,7 +30,7 @@ alias fsw='foreman start web'
 
 # navigation
 alias aliases='v ~/.aliases'
-alias sor='. ~/.bash_profile'
+alias src='source ~/.bash_profile'
 alias p='cd ~/Projects'
 alias d='cd ~/Dropbox'
 alias df='cd ~/Projects/dotfiles'

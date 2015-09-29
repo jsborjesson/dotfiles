@@ -16,6 +16,7 @@ brew install pandoc
 brew install python python3
 brew install rbenv ruby-build
 brew install tree
+brew install z
 
 # Casks
 brew install caskroom/cask/brew-cask
