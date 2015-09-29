@@ -14,6 +14,11 @@ __git_complete g __git_main
 # Show * for dirty repo
 export GIT_PS1_SHOWDIRTYSTATE=1
 
+# Source z
+if [ -f $(brew --prefix)/etc/profile.d/z.sh ]; then
+    source $(brew --prefix)/etc/profile.d/z.sh
+fi
+
 # cd without cd
 shopt -s autocd
 
