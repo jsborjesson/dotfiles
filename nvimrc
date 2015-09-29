@@ -46,6 +46,7 @@ Plug 'tpope/vim-sexp-mappings-for-regular-people'
 " Trial
 Plug 'justinmk/vim-sneak'
 Plug 'kopischke/vim-fetch' " Handle line:column numbers in filenames
+Plug 'tpope/vim-liquid'
 
 call plug#end()
 
