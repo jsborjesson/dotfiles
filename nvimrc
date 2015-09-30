@@ -113,9 +113,6 @@ function! BreakLineOn()
 endfunction
 
 " ==================== Settings ============================
-" Make backspace work as expected
-set backspace=indent,eol,start
-
 " Default indentation settings
 set tabstop=4
 set shiftwidth=4
@@ -124,16 +121,12 @@ set expandtab
 set shiftround
 
 set clipboard=unnamed " Yank to system clipboard
-set autoread          " Reload files automatically
-set wildmenu          " Show list of commands when tabbing
 set nojoinspaces      " Join lines containing punctuation correctly
 
 " More natural split destinations
 set splitright
 set splitbelow
 
-set hlsearch
-set incsearch
 set ignorecase
 set smartcase " Ignore case if all lowercase
 set lazyredraw " Don't redraw until macro has finished running
