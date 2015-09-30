@@ -171,6 +171,9 @@ let $BASH_ENV = "~/.aliases"
 " Increase scrollback in terminal mode
 let g:terminal_scrollback_buffer_size=10000
 
+" Thin cursor in insert mode
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
 " ==================== Key mappings ========================
 " U for normal redo is much more natural
 nnoremap U <C-R>
