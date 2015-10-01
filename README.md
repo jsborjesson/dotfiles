@@ -20,24 +20,6 @@
     * faster key repeat
     * `Control_L to Control_L + Escape`
 
-### Zsh
-
-You change the default shell to zsh using `chsh -s zsh`.
-
-A new version of Zsh is installed with homebrew, you can check which version you are
-running with:
-
-```bash
-# current version
-echo $ZSH_VERSION
-
-# other version
-/bin/zsh --version
-```
-
-To be allowed to set the new version as the standard shell with `chsh -s zsh` you need to
-make sure it is in `/etc/shells`, otherwise you'll get an error.
-
 ### Ruby
 
 Rbenv handles versions.
