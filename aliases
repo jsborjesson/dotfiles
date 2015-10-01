@@ -38,9 +38,7 @@ alias n='cd ~/Dropbox/notes/ && v'
 
 # other
 alias nzbsync='cp ~/Downloads/*.nzb /Volumes/Data/Downloads/nzbs && rm ~/Downloads/*.nzb'
-alias pessimize='pessimize --no-backup'
 alias c='pygmentize -O style=monokai -f console256 -g'
-alias back='cd ~/Projects/allryder-backend'
 
 # cd to location of topmost Finder window
 function cdf() {
