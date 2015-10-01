@@ -8,35 +8,30 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     source $(brew --prefix)/etc/bash_completion
 fi
 
-# Enable git completion for the g alias
-__git_complete g __git_main
-
-# Show * for dirty repo
-export GIT_PS1_SHOWDIRTYSTATE=1
-
 # Source z
 if [ -f $(brew --prefix)/etc/profile.d/z.sh ]; then
     source $(brew --prefix)/etc/profile.d/z.sh
 fi
 
-# cd without cd
-shopt -s autocd
-
-# Enable ** for recursive globbing
-shopt -s globstar
-
-export EDITOR='nvim'
-
-# Turn off flow control and free up C-s and C-q
-stty -ixon
+shopt -s autocd   # cd without cd
+shopt -s globstar # Enable ** for recursive globbing
 
 # Path
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 export PATH=~/.bin:$PATH
 export PATH=./bin:$PATH
 
-# Make folder color visible
-export LSCOLORS=GxBxhxDxfxhxhxhxhxcxcx
+export LSCOLORS=GxBxhxDxfxhxhxhxhxcxcx # Make folder color visible
+
+export EDITOR='nvim'
+
+export GIT_PS1_SHOWDIRTYSTATE=1 # Show * for dirty repo
+
+# Enable git completion for the g alias
+__git_complete g __git_main
+
+# Turn off flow control and free up C-s and C-q
+stty -ixon
 
 ### Prompt
 
