@@ -72,7 +72,7 @@ augroup settings
     autocmd FileType * setlocal formatoptions-=o
 
     " Trim whitespace on save
-    autocmd BufWritePre * :Trim
+    " autocmd BufWritePre * :Trim
 
     " Relative numbers in command mode, and normal in insert mode
     autocmd InsertEnter * set norelativenumber
@@ -214,7 +214,7 @@ nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 nnoremap <Leader><Leader> <C-^>
 
 " Save with C-s
-nnoremap <C-S> :write<CR>
+nnoremap <C-S> :Trim<CR>:write<CR>
 vmap <C-S> <Esc><C-S>gv
 imap <C-S> <Esc><C-S>
 
