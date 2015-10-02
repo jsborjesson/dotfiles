@@ -115,7 +115,7 @@ class Dotfile
   private
 
   def info(message)
-    puts "#{to_s.ljust(20)} #{message}"
+    puts "#{to_s.ljust(25)} #{message}"
   end
 
   def exists?
