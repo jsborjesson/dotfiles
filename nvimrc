@@ -121,6 +121,7 @@ set expandtab
 set shiftround
 
 set hidden
+set gdefault
 set clipboard=unnamed " Yank to system clipboard
 set nojoinspaces      " Join lines containing punctuation correctly
 
