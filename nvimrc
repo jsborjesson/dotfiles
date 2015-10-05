@@ -201,6 +201,10 @@ nnoremap k gk
 cnoremap <C-P> <Up>
 cnoremap <C-N> <Down>
 
+" Better and more consistent &
+nnoremap & :&&<CR>
+xnoremap & :&&<CR>
+
 " Bring in path to folder of current file in command-line with %%
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
