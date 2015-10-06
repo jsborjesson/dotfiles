@@ -17,8 +17,10 @@
     * `sudo vim /etc/shells` and add it there. (Probably something like `/usr/local/bin/bash`)
     * `chsh -s /usr/local/bin/bash` to set it as default
 * Enable things in **Karabiner**.
-    * faster key repeat
+    * Faster key repeat
     * `Control_L to Control_L + Escape`
+    * `Control+J to Enter`
+    * `E+F to ESCAPE/J+I to ESCAPE`
 
 ### Ruby
 
