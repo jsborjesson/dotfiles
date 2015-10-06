@@ -234,6 +234,14 @@ tnoremap <Esc> <C-\><C-N>
 " Black hole redirection
 nnoremap <Leader>d "_
 
+" Quick paste last yank
+nnoremap <Leader>p "0p
+vnoremap <Leader>p "0p
+
+" Count matches from last search
+nnoremap <Leader>c :%s///n<CR>
+vnoremap <Leader>c :s///n<CR>
+
 " ==================== Plugin settings ====================
 
 " Commentary
@@ -297,7 +305,9 @@ omap <Leader>F <Plug>Sneak_S
 call arpeggio#load()
 Arpeggio inoremap jk <Esc>
 Arpeggio vnoremap jk <Esc>
-Arpeggio inoremap df <CR>
+Arpeggio cnoremap jk <Esc>
+Arpeggio inoremap kl <CR>
+Arpeggio vmap kl <CR>
 Arpeggio inoremap sd <BS>
 
 " Syntax highlighting for Lasp
