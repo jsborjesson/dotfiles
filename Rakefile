@@ -79,6 +79,18 @@ task :osx do
   puts "Done! Some of these settings may require a restart."
 end
 
+namespace :karabiner do
+  desc "Overwrite karabiner.sh with current Karabiner settings"
+  task :save do
+    sh "/Applications/Karabiner.app/Contents/Library/bin/karabiner export > ./karabiner.sh"
+  end
+
+  desc "Load Karabiner settings from karabiner.sh"
+  task :load do
+    sh "sh ./karabiner.sh"
+  end
+end
+
 ### Helper class ###
 
 class Dotfile
