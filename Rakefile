@@ -3,9 +3,8 @@ require 'rake'
 # You can set the test mode by running `rake mytask test=true`
 puts 'Running in test mode' if ENV['test']
 
-DOTFILES = FileList.new('*').exclude(
-  *%w{ Rakefile Brewfile Gemfile Gemfile.lock *.sh README.md LICENSE NOTES.md }
-)
+EXCLUDES = %w{ Rakefile Brewfile Gemfile Gemfile.lock *.sh README.md LICENSE NOTES.md }
+DOTFILES = FileList.new('*').exclude(*EXCLUDES)
 
 desc 'Symlink dotfiles into home directory'
 task :link do
