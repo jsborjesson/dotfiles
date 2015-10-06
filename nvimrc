@@ -198,6 +198,10 @@ vnoremap # "xy?\V<C-R>=escape(@x, '?\')<CR><CR>
 nnoremap j gj
 nnoremap k gk
 
+" Fast skipping
+nnoremap <C-J> 10gj
+nnoremap <C-k> 10gk
+
 " Search command history with C-p and C-n
 cnoremap <C-P> <Up>
 cnoremap <C-N> <Down>
@@ -271,7 +275,7 @@ nmap ]h <Plug>GitGutterNextHunk
 " CtrlP
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
-" Switch
+" Switc
 let g:switch_custom_definitions =
     \ [
     \   ['if', 'unless'],
