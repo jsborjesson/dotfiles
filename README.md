@@ -16,10 +16,12 @@
 * After `brew install`ing the new version of your preferred shell:
     * `sudo vim /etc/shells` and add it there. (Probably something like `/usr/local/bin/bash`)
     * `chsh -s /usr/local/bin/bash` to set it as default
+* In `Keyboard` settings, remap Caps Lock to Control
 * Enable things in **Karabiner**.
     * Faster key repeat
     * `Control_L to Control_L + Escape`
     * `Control+J to Enter`
+    * `Control+H to Delete`
     * `E+F to ESCAPE/J+I to ESCAPE`
 
 ### Ruby
