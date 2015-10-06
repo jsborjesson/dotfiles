@@ -1,12 +1,12 @@
-require 'rake'
+require "rake"
 
 # You can set the test mode by running `rake mytask test=true`
-puts 'Running in test mode' if ENV['test']
+puts "Running in test mode" if ENV["test"]
 
 EXCLUDES = %w{ Rakefile Brewfile Gemfile Gemfile.lock *.sh README.md LICENSE NOTES.md }
-DOTFILES = FileList.new('*').exclude(*EXCLUDES)
+DOTFILES = FileList.new("*").exclude(*EXCLUDES)
 
-desc 'Symlink dotfiles into home directory'
+desc "Symlink dotfiles into home directory"
 task :link do
   DOTFILES.each do |filename|
     Dotfile.new(filename).link
@@ -15,14 +15,14 @@ end
 
 task default: :link
 
-desc 'Remove symlinks (smart enough to not delete something else)'
+desc "Remove symlinks (smart enough to not delete something else)"
 task :unlink do
   DOTFILES.each do |filename|
     Dotfile.new(filename).unlink
   end
 end
 
-desc 'Setup Vundle and install plugins'
+desc "Setup Vundle and install plugins"
 task :vim do
   # Install Vundle
   unless File.directory?(File.expand_path("~/.vim/bundle/Vundle.vim"))
@@ -35,13 +35,13 @@ task :vim do
 end
 
 namespace :nvim do
-  desc 'Update NeoVim'
+  desc "Update NeoVim"
   task :update do
     sh "brew update"
     sh "brew reinstall --HEAD neovim"
   end
 
-  desc 'Install NeoVim, install Plug and update plugins'
+  desc "Install NeoVim, install Plug and update plugins"
   task :install do
     puts "Updating NeoVim"
     sh "brew tap neovim/neovim"
@@ -60,7 +60,7 @@ namespace :nvim do
   end
 end
 
-desc 'Install Homebrew'
+desc "Install Homebrew"
 task :brew do
   unless system("brew --version > /dev/null")
     puts "Installing Homebrew..."
@@ -71,7 +71,7 @@ task :brew do
   puts "Install Homebrew packages either by running ./brew.sh or copy pasting the commands you need."
 end
 
-desc 'Configure Mac OS using the osx.sh file'
+desc "Configure Mac OS using the osx.sh file"
 task :osx do
   puts "Running osx.sh..."
   sh "bash ./osx.sh"
@@ -138,15 +138,15 @@ class Dotfile
   end
 
   def create_symlink
-    FileUtils.ln_s(source_path, destination_path) unless ENV['test']
+    FileUtils.ln_s(source_path, destination_path) unless ENV["test"]
   end
 
   def remove_symlink
-    FileUtils.rm(destination_path) unless ENV['test']
+    FileUtils.rm(destination_path) unless ENV["test"]
   end
 
   def destination_path
-    File.join(ENV['HOME'], ".#{filename}")
+    File.join(ENV["HOME"], ".#{filename}")
   end
 
   def source_path

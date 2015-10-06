@@ -20,25 +20,25 @@
 # Add gems
 ########################################
 
-say 'Adding gems'
+say "Adding gems"
 
 gem_group :development, :test do
-  gem 'rspec-rails'
+  gem "rspec-rails"
 end
 
 gem_group :development do
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'did_you_mean'
-  gem 'rack-mini-profiler'
-  gem 'quiet_assets'
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem "did_you_mean"
+  gem "rack-mini-profiler"
+  gem "quiet_assets"
 end
 
 gem_group :test do
-  gem 'simplecov', require: false
+  gem "simplecov", require: false
 end
 
-run 'bundle'
+run "bundle"
 
 
 ########################################
@@ -47,16 +47,16 @@ run 'bundle'
 
 say "Configuring RSpec"
 
-generate 'rspec:install'
+generate "rspec:install"
 
 # uncomment the entire standard config block
-gsub_file 'spec/spec_helper.rb', /=(begin|end)\n/, ''
+gsub_file "spec/spec_helper.rb", /=(begin|end)\n/, ""
 
 # turn off profile examples by default
-comment_lines 'spec/spec_helper.rb', /profile_examples/
+comment_lines "spec/spec_helper.rb", /profile_examples/
 
 # run with bundle exec automatically
-run 'bundle binstubs rspec-core'
+run "bundle binstubs rspec-core"
 
 
 ########################################
@@ -66,14 +66,14 @@ run 'bundle binstubs rspec-core'
 say "Configuring SimpleCov"
 
 # configure code coverage
-prepend_to_file 'spec/spec_helper.rb', <<CODE
-require 'simplecov'
-SimpleCov.start 'rails'
+prepend_to_file "spec/spec_helper.rb", <<CODE
+require "simplecov"
+SimpleCov.start "rails"
 
 CODE
 
 # gitignore output
-append_to_file '.gitignore', <<CODE
+append_to_file ".gitignore", <<CODE
 
 # Ignore SimpleCov output
 /coverage
@@ -87,7 +87,7 @@ CODE
 say "Configuring Rails generators"
 
 # Disable some annoying generators
-inject_into_class 'config/application.rb', "Application", <<CONFIG
+inject_into_class "config/application.rb", "Application", <<CONFIG
 
     # Disable some annoying generators
     config.generators do |generate|
@@ -105,12 +105,12 @@ CONFIG
 say "Cleaning up"
 
 # Markdown readme
-remove_file 'README.rdoc'
-create_file 'README.md', "# #{@app_name}"
+remove_file "README.rdoc"
+create_file "README.md", "# #{@app_name}"
 
 # I hate concerns
-remove_dir 'app/controllers/concerns'
-remove_dir 'app/models/concerns'
+remove_dir "app/controllers/concerns"
+remove_dir "app/models/concerns"
 
 # Make the application.css into scss
 inside "app/assets/stylesheets/" do
