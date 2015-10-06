@@ -297,8 +297,8 @@ omap <Leader>F <Plug>Sneak_S
 call arpeggio#load()
 Arpeggio inoremap jk <Esc>
 Arpeggio vnoremap jk <Esc>
-Arpeggio inoremap kl <CR>
-Arpeggio inoremap df <BS>
+Arpeggio inoremap df <CR>
+Arpeggio inoremap sd <BS>
 
 " Syntax highlighting for Lasp
 autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure
