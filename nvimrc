@@ -47,7 +47,6 @@ Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'justinmk/vim-sneak'
 Plug 'kopischke/vim-fetch' " Handle line:column numbers in filenames
 Plug 'tpope/vim-liquid'
-Plug 'kana/vim-arpeggio'
 
 call plug#end()
 
@@ -304,15 +303,6 @@ xmap <Leader>f <Plug>Sneak_s
 xmap <Leader>F <Plug>Sneak_S
 omap <Leader>f <Plug>Sneak_s
 omap <Leader>F <Plug>Sneak_S
-
-" Arpeggio
-call arpeggio#load()
-Arpeggio inoremap jk <Esc>
-Arpeggio vnoremap jk <Esc>
-Arpeggio cnoremap jk <Esc>
-Arpeggio inoremap kl <CR>
-Arpeggio vmap kl <CR>
-Arpeggio inoremap sd <BS>
 
 " Syntax highlighting for Lasp
 autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure
