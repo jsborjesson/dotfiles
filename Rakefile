@@ -22,18 +22,6 @@ task :unlink do
   end
 end
 
-desc "Setup Vundle and install plugins"
-task :vim do
-  # Install Vundle
-  unless File.directory?(File.expand_path("~/.vim/bundle/Vundle.vim"))
-    puts "Installing Vundle..."
-    sh "git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
-  end
-
-  puts "Installing Vim plugins..."
-  sh "vim +PluginInstall +qall"
-end
-
 namespace :nvim do
   desc "Update NeoVim"
   task :update do
