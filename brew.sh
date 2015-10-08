@@ -19,6 +19,10 @@ brew install shellcheck
 brew install tree
 brew install z
 
+# NeoVim
+brew tap neovim/neovim
+brew install --HEAD neovim
+
 # Casks
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
