@@ -39,7 +39,4 @@ brew cask install spotify
 brew cask install sqlitebrowser
 brew cask install the-unarchiver
 
-# Make sure the links work in alfred
-brew cask alfred link
-
 brew cleanup
