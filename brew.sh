@@ -36,6 +36,7 @@ brew cask install postgres
 brew cask install skype
 brew cask install sophos-anti-virus-home-edition
 brew cask install spotify
+brew cask install sqlitebrowser
 brew cask install the-unarchiver
 
 # Fonts
