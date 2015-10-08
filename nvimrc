@@ -29,19 +29,19 @@ Plug 'kana/vim-textobj-user'
 Plug 'rking/ag.vim'
 
 " Ruby
-Plug 'rhysd/vim-textobj-ruby'
-Plug 'slim-template/vim-slim'
-Plug 'hwartig/vim-seeing-is-believing'
-Plug 'jgdavey/vim-blockle' " Switch out for switch.vim?
-Plug 'tpope/vim-rbenv'
-Plug 't9md/vim-ruby-xmpfilter'
-Plug 'thoughtbot/vim-rspec'
+Plug 'rhysd/vim-textobj-ruby',                     { 'for': 'ruby'    }
+Plug 'slim-template/vim-slim',                     { 'for': 'ruby'    }
+Plug 'hwartig/vim-seeing-is-believing',            { 'for': 'ruby'    }
+Plug 'jgdavey/vim-blockle',                        { 'for': 'ruby'    }
+Plug 'tpope/vim-rbenv',                            { 'for': 'ruby'    }
+Plug 't9md/vim-ruby-xmpfilter',                    { 'for': 'ruby'    }
+Plug 'thoughtbot/vim-rspec',                       { 'for': 'ruby'    }
 
 " Clojure
-Plug 'tpope/vim-fireplace'
-Plug 'tpope/vim-salve'
-Plug 'guns/vim-sexp'
-Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'tpope/vim-fireplace',                        { 'for': 'clojure' }
+Plug 'tpope/vim-salve',                            { 'for': 'clojure' }
+Plug 'guns/vim-sexp',                              { 'for': 'clojure' }
+Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 
 " Trial
 Plug 'justinmk/vim-sneak'
@@ -275,6 +275,7 @@ nmap ]h <Plug>GitGutterNextHunk
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 " Switch
+" TODO: map, noremap
 let g:switch_custom_definitions =
     \ [
     \   ['if', 'unless'],
