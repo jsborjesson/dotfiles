@@ -39,10 +39,6 @@ brew cask install spotify
 brew cask install sqlitebrowser
 brew cask install the-unarchiver
 
-# Fonts
-brew tap caskroom/fonts
-brew cask install font-sauce-code-powerline
-
 # Make sure the links work in alfred
 brew cask alfred link
 
