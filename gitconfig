@@ -6,27 +6,27 @@
     user = alcesleo
 
 [alias]
-    st = status
-    ci = commit
-    co = checkout
-    cl = clone
     br = branch
+    ci = commit
+    cl = clone
+    co = checkout
     di = diff
-    dt = difftool
     ds = diff --staged
+    dt = difftool
     ff = pull --ff-only
     pr = pull-request
+    st = status
 
     amend     = commit --amend
+    changelog = !git log --oneline `git describe --abbrev=0`..HEAD
+    forget    = update-index --assume-unchanged
+    forgotten = !git ls-files -v | grep ^[a-z]
+    pulled    = log -p --reverse --no-merges --stat @{1}..
+    remember  = update-index --no-assume-unchanged
+    supdate   = submodule update --init --recursive
+    tfo       = !git checkout -- . && git clean -fd
     tree      = log --graph --oneline --decorate --all
     yolo      = push --force
-    tfo       = !git checkout -- . && git clean -fd
-    forget    = update-index --assume-unchanged
-    remember  = update-index --no-assume-unchanged
-    forgotten = !git ls-files -v | grep ^[a-z]
-    changelog = !git log --oneline `git describe --abbrev=0`..HEAD
-    supdate   = submodule update --init --recursive
-    pulled    = log -p --reverse --no-merges --stat @{1}..
 
 [core]
     excludesfile = ~/.gitignore
