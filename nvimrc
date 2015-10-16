@@ -188,6 +188,9 @@ vnoremap Q :normal @q<CR>
 " Y yanks to the end of the line, entire line is still available with yy
 nnoremap Y y$
 
+" C-J already behaves like enter, this makes it work for bindings to <CR> too
+imap <C-J> <CR>
+
 " Make * and # search for selection in visual mode
 vnoremap * "xy/\V<C-R>=escape(@x, '/\')<CR><CR>
 vnoremap # "xy?\V<C-R>=escape(@x, '?\')<CR><CR>
