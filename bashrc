@@ -17,7 +17,7 @@ shopt -s autocd   # cd without cd
 shopt -s globstar # Enable ** for recursive globbing
 
 # Path
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 export PATH=~/.bin:$PATH
 export PATH=./bin:$PATH
 
