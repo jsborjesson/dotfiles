@@ -2,6 +2,9 @@
 setlocal tabstop=2
 setlocal shiftwidth=2
 
+" ? and ! are part of method names
+setlocal iskeyword+=?,!
+
 " RSpec
 let g:rspec_command = "!frbe rspec {spec}"
 nmap <buffer> <Leader>t :call RunCurrentSpecFile()<CR>

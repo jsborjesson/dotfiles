@@ -137,7 +137,6 @@ set nowrap
 set number
 set relativenumber
 set synmaxcol=512 " Turn of syntax for absurdly long lines (makes opening huge json-files quick)
-set iskeyword+=?,!
 
 " Don't need it
 set nobackup
