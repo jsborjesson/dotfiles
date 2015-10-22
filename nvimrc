@@ -113,6 +113,16 @@ function! BreakLineOn()
 endfunction
 
 " ==================== Settings ============================
+set hidden
+set gdefault
+set clipboard=unnamed " Yank to system clipboard
+set nojoinspaces      " Join lines containing punctuation correctly
+set lazyredraw        " Don't redraw until macro has finished running
+set nowrap
+set number
+set relativenumber
+set synmaxcol=512     " Turn of syntax for absurdly long lines (makes opening huge json-files quick)
+
 " Default indentation settings
 set tabstop=4
 set shiftwidth=4
@@ -120,23 +130,12 @@ set softtabstop=0
 set expandtab
 set shiftround
 
-set hidden
-set gdefault
-set clipboard=unnamed " Yank to system clipboard
-set nojoinspaces      " Join lines containing punctuation correctly
-
 " More natural split destinations
 set splitright
 set splitbelow
 
 set ignorecase
 set smartcase " Ignore case if all lowercase
-set lazyredraw " Don't redraw until macro has finished running
-
-set nowrap
-set number
-set relativenumber
-set synmaxcol=512 " Turn of syntax for absurdly long lines (makes opening huge json-files quick)
 
 " Don't need it
 set nobackup
