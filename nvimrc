@@ -220,7 +220,7 @@ let mapleader=","
 noremap <Space> :
 
 " Quick clear search highlights
-nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+nnoremap <silent> <C-L> :nohlsearch<CR>:diffupdate<CR><C-L>
 
 " Go to last file
 nnoremap <Leader><Leader> <C-^>
