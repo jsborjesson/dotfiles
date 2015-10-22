@@ -260,7 +260,7 @@ nmap ga <Plug>(EasyAlign)
 nnoremap <Leader>ga :Gwrite<CR>
 nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gv :Gcommit -v<CR>
-nnoremap <Leader>gac :Gwrite<CR>:Gcommit -v<CR>i
+nnoremap <Leader>gf :Gwrite<CR>:Gcommit -v<CR>i
 nnoremap <Leader>gp :Gpush<CR>
 nnoremap <Leader>gb :Gbrowse<CR>
 vnoremap <Leader>gb :Gbrowse<CR>
