@@ -253,8 +253,8 @@ vnoremap <Leader>c :s///n<CR>
 let g:commentary_map_backslash=0
 
 " EasyAlign
-vmap <CR> <Plug>(EasyAlign)
-nmap ga <Plug>(EasyAlign)
+vmap g<Space> <Plug>(EasyAlign)
+nmap g<Space> <Plug>(EasyAlign)
 
 " Fugitive
 nnoremap <Leader>ga :Gwrite<CR>
