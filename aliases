@@ -45,6 +45,15 @@ function cdf() {
     cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')"
 }
 
+# cd to root of git repo
+function cdr() {
+    TEMP_DIR=$(pwd)
+    while ! [ -d .git ]; do
+        cd ..
+    done
+    OLDPWD=$TEMP_DIR
+}
+
 # mkdir and enter it
 function md() {
     mkdir -p "$@" && cd "$@"
