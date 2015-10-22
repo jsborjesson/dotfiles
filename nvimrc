@@ -123,6 +123,7 @@ set number
 set relativenumber
 set synmaxcol=512     " Turn of syntax for absurdly long lines (makes opening huge json-files quick)
 set listchars+=tab:»·
+set diffopt+=vertical
 
 " Default indentation settings
 set tabstop=4
