@@ -71,9 +71,6 @@ augroup settings
     " Don't insert comments with O
     autocmd FileType * setlocal formatoptions-=o
 
-    " Trim whitespace on save
-    " autocmd BufWritePre * :Trim
-
     " Relative numbers in command mode, and normal in insert mode
     autocmd InsertEnter * set norelativenumber
     autocmd InsertLeave * set relativenumber
