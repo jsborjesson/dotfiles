@@ -201,7 +201,7 @@ nnoremap k gk
 
 " Fast skipping
 nnoremap <C-J> 10gj
-nnoremap <C-k> 10gk
+nnoremap <C-K> 10gk
 
 " Search command history with C-p and C-n
 cnoremap <C-P> <Up>
