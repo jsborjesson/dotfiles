@@ -232,7 +232,7 @@ imap <C-S> <Esc><C-S>
 nnoremap <Leader>w :call BreakLineOn()<CR>
 
 " Escape in terminal mode
-tnoremap <Esc> <C-\><C-N>
+tnoremap <Esc><Esc> <C-\><C-N>
 
 " Black hole redirection
 nnoremap <Leader>d "_
