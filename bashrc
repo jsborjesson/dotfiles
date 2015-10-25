@@ -1,4 +1,4 @@
-source ~/.aliases
+source ~/.alias
 
 # initialize rbenv
 eval "$(rbenv init -)"
