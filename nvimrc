@@ -98,7 +98,7 @@ function! TrimWhitespace()
     call setpos('.', l:save_cursor)
 endfunction
 
-command! Trim execute ':call TrimWhitespace()'
+command! TrimWhitespace execute ':call TrimWhitespace()'
 
 
 " ==================== Break line on =======================
@@ -225,7 +225,7 @@ nnoremap <silent> <C-L> :nohlsearch<CR>:diffupdate<CR><C-L>
 nnoremap <Leader><Leader> <C-^>
 
 " Save with C-s
-nnoremap <C-S> :Trim<CR>:write<CR>
+nnoremap <C-S> :TrimWhitespace<CR>:write<CR>
 vmap <C-S> <Esc><C-S>gv
 imap <C-S> <Esc><C-S>
 
