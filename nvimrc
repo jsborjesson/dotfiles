@@ -55,7 +55,7 @@ runtime macros/matchit.vim
 
 syntax on
 
-" ==================== theme ===============================
+" ==================== Theme ===============================
 colorscheme hybrid_reverse
 
 " No split separator char
