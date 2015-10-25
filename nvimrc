@@ -47,6 +47,7 @@ Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 Plug 'justinmk/vim-sneak'
 Plug 'kopischke/vim-fetch' " Handle line:column numbers in filenames
 Plug 'tpope/vim-liquid'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
