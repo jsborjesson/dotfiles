@@ -55,6 +55,6 @@ function cdr() {
 }
 
 # mkdir and enter it
-function md() {
+function mkd() {
     mkdir -p "$@" && cd "$@"
 }
