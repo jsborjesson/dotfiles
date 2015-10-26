@@ -107,7 +107,7 @@ function! BreakLineOn()
     let split = input('Break line on: ')
     call inputrestore()
 
-    silent! execute ':s/' . split . '/' . split . '\r/g'
+    silent! execute ':s/' . split . '/' . split . '\r/' . (&gdefault ? '' : 'g')
 endfunction
 
 " ==================== Settings ============================
