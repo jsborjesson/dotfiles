@@ -17,6 +17,7 @@ alias gd='git diff'
 alias gds='git diff --staged'
 alias gl='git log --decorate --oneline -10'
 alias gp='git push'
+alias cib='open $(git ci-status -v | cut -f2 -d" ")'
 
 # ruby
 alias reh='rbenv rehash'
