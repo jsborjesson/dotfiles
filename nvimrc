@@ -189,6 +189,7 @@ nnoremap Y y$
 
 " C-J already behaves like enter, this makes it work for bindings to <CR> too
 imap <C-J> <CR>
+nmap <C-J> <CR>
 
 " Make * and # search for selection in visual mode
 vnoremap * "xy/\V<C-R>=escape(@x, '/\')<CR><CR>
@@ -197,10 +198,6 @@ vnoremap # "xy?\V<C-R>=escape(@x, '?\')<CR><CR>
 " Navigate wrapped lines easier
 nnoremap j gj
 nnoremap k gk
-
-" Fast skipping
-nnoremap <C-J> 10gj
-nnoremap <C-K> 10gk
 
 " Search command history with C-p and C-n
 cnoremap <C-P> <Up>
