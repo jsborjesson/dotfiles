@@ -258,6 +258,9 @@ let g:commentary_map_backslash=0
 vmap g<Space> <Plug>(EasyAlign)
 nmap g<Space> <Plug>(EasyAlign)
 
+" Support vim comments too
+let g:easy_align_delimiters = { '"': { 'pattern': '"\+', 'delimiter_align': 'l', 'ignore_groups': ['!Comment']  } }
+
 " Fugitive
 nnoremap <Leader>ga :Gwrite<CR>
 nnoremap <Leader>gc :Gcommit<CR>
