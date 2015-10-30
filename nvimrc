@@ -280,12 +280,15 @@ nmap ]h <Plug>GitGutterNextHunk
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 " Switch
-" TODO: map, noremap
 let g:switch_custom_definitions =
     \ [
     \   ['if', 'unless'],
     \   ['to', 'not_to'],
     \   ['first', 'last'],
+    \   {
+    \     '\zs\([cilnosvx]*\)map': '\1noremap',
+    \     '\zs\([cilnosvx]*\)noremap': '\1map',
+    \   }
     \ ]
 
 " GitGutter
