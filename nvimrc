@@ -232,6 +232,9 @@ imap <C-S> <Esc><C-S>
 " Break line on input
 nnoremap <Leader>w :call BreakLineOn()<CR>
 
+" Wrap until end of line in parenthesis
+nmap g( ysg_)
+
 " Escape in terminal mode
 tnoremap <Esc><Esc> <C-\><C-N>
 
