@@ -82,7 +82,7 @@ endsnippet
 ### Testing ###
 
 snippet desc
-describe ${1:ClassName} do
+describe `!p snip.rv = "".join(map(lambda s:s.capitalize(), fn[:-8].split("_")))` do
   $0
 end
 endsnippet
