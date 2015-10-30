@@ -2,6 +2,6 @@ Gemfile.lock
 lein/repl-history
 nvim/*
 !nvim/UltiSnips/
-!nvim/ftplugin/
+!nvim/after/
 !nvim/undo/.keep
 ruby-tapas-downloader
