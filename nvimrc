@@ -184,6 +184,9 @@ nnoremap Q @q
 " Run macro over multiple lines
 vnoremap Q :normal @q<CR>
 
+" Repeat command over multiple lines
+vnoremap . :normal .<CR>
+
 " Y yanks to the end of the line, entire line is still available with yy
 nnoremap Y y$
 
