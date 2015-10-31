@@ -15,6 +15,7 @@ Plug 'tpope/vim-endwise'     " Put in end automatically
 Plug 'tpope/vim-jdaddy'      " gqaj to format json, also aj and ij text-objects
 Plug 'tpope/vim-speeddating' " Makes C-a and C-x work for dates
 Plug 'tpope/vim-unimpaired'  " Lots of clever pairs of mappings
+Plug 'kopischke/vim-fetch'   " Handle line:column numbers in filenames
 
 " Extra features
 Plug 'tommcdo/vim-exchange'
@@ -45,7 +46,6 @@ Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 
 " Trial
 Plug 'justinmk/vim-sneak'
-Plug 'kopischke/vim-fetch' " Handle line:column numbers in filenames
 Plug 'tpope/vim-liquid'
 Plug 'rust-lang/rust.vim'
 
