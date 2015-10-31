@@ -44,10 +44,13 @@ Plug 'tpope/vim-salve',                            { 'for': 'clojure' }
 Plug 'guns/vim-sexp',                              { 'for': 'clojure' }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 
+" Rust
+Plug 'cespare/vim-toml'
+Plug 'rust-lang/rust.vim'
+
 " Trial
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-liquid'
-Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
