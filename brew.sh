@@ -33,8 +33,8 @@ brew cask install dropbox
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install karabiner
-brew cask install keepassx
 brew cask install keycastr
+brew cask install macpass
 brew cask install postgres
 brew cask install skype
 brew cask install sophos-anti-virus-home-edition
