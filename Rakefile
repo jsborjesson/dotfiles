@@ -27,14 +27,20 @@ namespace :nvim do
   task :update do
     sh "brew update"
     sh "brew reinstall --HEAD neovim"
+    sh "pip install neovim --upgrade"
   end
 
   desc "Install and set up NeoVim dependencies"
-  task :install do
+  task :install => :link do
+    puts "Symlinking files into .config directory"
+    sh "mkdir -p ~/.config"
+    sh "ln -si ~/.nvim ~/.config/nvim"
+    sh "ln -si ~/.nvimrc ~/.config/nvim/init.vim"
+
     puts "Installing python module"
     sh "pip install neovim"
 
-    unless File.directory?(File.expand_path("~/.nvim/autoload/plug.vim"))
+    unless File.exist?(File.expand_path("~/.nvim/autoload/plug.vim"))
       puts "Installing vim-plug"
       sh "curl -fLo ~/.nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 
