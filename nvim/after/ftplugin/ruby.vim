@@ -23,3 +23,11 @@ imap <buffer> <M-r> <Plug>(xmpfilter-run)
 
 " AutoPairs
 let b:AutoPairs = {'(':')', '[':']', '{':'}', "'":"'", '"':'"', '`':'`', '|':'|'}
+
+" Switch
+let b:switch_custom_definitions =
+    \ [
+    \   ['if', 'unless'],
+    \   ['to', 'not_to'],
+    \   ['first', 'last'],
+    \ ]

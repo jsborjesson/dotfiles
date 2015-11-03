@@ -285,18 +285,6 @@ nmap ]h <Plug>GitGutterNextHunk
 " CtrlP
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
-" Switch
-let g:switch_custom_definitions =
-    \ [
-    \   ['if', 'unless'],
-    \   ['to', 'not_to'],
-    \   ['first', 'last'],
-    \   {
-    \     '\zs\([cilnosvx]*\)map': '\1noremap',
-    \     '\zs\([cilnosvx]*\)noremap': '\1map',
-    \   }
-    \ ]
-
 " GitGutter
 let g:gitgutter_sign_removed_first_line = "_^"
 
