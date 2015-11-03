@@ -30,4 +30,8 @@ let b:switch_custom_definitions =
     \   ['if', 'unless'],
     \   ['to', 'not_to'],
     \   ['first', 'last'],
+    \   {
+    \       '\(\w\+\)\[\([^]]*\)\]': '\1.fetch(\2)',
+    \       '\(\w\+\)\.fetch(\([^)]*\))': '\1[\2]',
+    \   }
     \ ]
