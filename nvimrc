@@ -169,7 +169,7 @@ set statusline+=\ %c,%l/%L\ -                     " col,line/total lines
 set statusline+=\ %{strftime('%a\ %d\ %b\ %R')}\  " Clock
 
 " Load shell aliases
-let $BASH_ENV = "~/.aliases"
+let $BASH_ENV = "~/.alias"
 
 " Increase scrollback in terminal mode
 let g:terminal_scrollback_buffer_size=10000

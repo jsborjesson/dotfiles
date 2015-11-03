@@ -30,7 +30,6 @@ alias frbe='foreman run bundle exec'
 alias fsw='foreman start web'
 
 # navigation
-alias aliases='v ~/.aliases'
 alias src='source ~/.bash_profile'
 alias n='cd ~/Dropbox/notes/ && v'
 
