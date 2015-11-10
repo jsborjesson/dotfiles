@@ -51,7 +51,7 @@
     helper = osxkeychain
 
 [filter "trimWhitespace"]
-	clean = git-stripspace
+    clean = git-stripspace
 
 [rerere]
-	enabled = true
+    enabled = true
