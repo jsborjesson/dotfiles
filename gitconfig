@@ -52,3 +52,6 @@
 
 [filter "trimWhitespace"]
 	clean = git-stripspace
+
+[rerere]
+	enabled = true
