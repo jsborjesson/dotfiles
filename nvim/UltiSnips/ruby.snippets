@@ -88,7 +88,7 @@ end
 endsnippet
 
 snippet rdesc "Insert require and describe based on path"
-require "`!p snip.rv = re.match(r"spec/(.*)_spec.rb", path).group(1)`"
+require "./`!p snip.rv = re.match(r"spec/(.*)_spec.rb", path).group(1)`"
 
 describe `!p snip.rv = "".join(map(lambda s:s.capitalize(), fn[:-8].split("_")))` do
   $0
