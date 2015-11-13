@@ -110,7 +110,7 @@ subject { ${1:described_class.new}$2 }
 endsnippet
 
 snippet rtask "Run rspec as default rake task"
-require 'rspec/core/rake_task'
+require "rspec/core/rake_task"
 RSpec::Core::RakeTask.new(:spec)
 task :default => :spec
 endsnippet
