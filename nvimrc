@@ -188,10 +188,10 @@ xnoremap @@ :normal @@<CR>
 nnoremap Q @q
 
 " Run macro over multiple lines
-vnoremap Q :normal @q<CR>
+xnoremap Q :normal @q<CR>
 
 " Repeat command over multiple lines
-vnoremap . :normal .<CR>
+xnoremap . :normal .<CR>
 
 " Y yanks to the end of the line, entire line is still available with yy
 nnoremap Y y$
@@ -201,8 +201,8 @@ imap <C-J> <CR>
 nmap <C-J> <CR>
 
 " Make * and # search for selection in visual mode
-vnoremap * "xy/\V<C-R>=escape(@x, '/\')<CR><CR>
-vnoremap # "xy?\V<C-R>=escape(@x, '?\')<CR><CR>
+xnoremap * "xy/\V<C-R>=escape(@x, '/\')<CR><CR>
+xnoremap # "xy?\V<C-R>=escape(@x, '?\')<CR><CR>
 
 " Navigate wrapped lines easier
 nnoremap j gj
@@ -249,11 +249,11 @@ nnoremap <Leader>d "_
 
 " Quick paste last yank
 nnoremap <Leader>p "0p
-vnoremap <Leader>p "0p
+xnoremap <Leader>p "0p
 
 " Count matches from last search
 nnoremap <Leader>c :%s///n<CR>
-vnoremap <Leader>c :s///n<CR>
+xnoremap <Leader>c :s///n<CR>
 
 " ==================== Plugin settings ====================
 
@@ -274,7 +274,7 @@ nnoremap <Leader>gv :Gcommit -v<CR>
 nnoremap <Leader>gf :Gwrite<CR>:Gcommit -v<CR>i
 nnoremap <Leader>gp :Gpush<CR>
 nnoremap <Leader>gb :Gbrowse<CR>
-vnoremap <Leader>gb :Gbrowse<CR>
+xnoremap <Leader>gb :Gbrowse<CR>
 
 " Gitgutter
 let g:gitgutter_realtime = 0
