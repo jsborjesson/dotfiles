@@ -181,6 +181,9 @@ let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 " U for normal redo is much more natural
 nnoremap U <C-R>
 
+" Enable @@ usage over several lines in selection
+xnoremap @@ :normal @@<CR>
+
 " Run the q macro instead of stupid Ex-mode
 nnoremap Q @q
 
