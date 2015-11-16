@@ -1,0 +1,44 @@
+#!/usr/local/bin/python
+"""
+Looks up synonyms for a word using Big Huge Labs' Thesaurus API.
+
+Usage:
+    the elephant
+"""
+
+import sys
+import os
+import urllib2
+import json
+
+def get_api_key():
+    try:
+        path = os.path.join(os.path.expanduser('~'), ".the")
+        with open(path, "r") as rcfile:
+            return rcfile.read().strip()
+    except IOError:
+        print "You need to put your API key in ~/.the - get your own key here: http://words.bighugelabs.com/getkey.php"
+        sys.exit(1)
+
+def request_synonyms(word):
+    url = "http://words.bighugelabs.com/api/2/{0}/{1}/json".format(get_api_key(), word)
+    try:
+        response = urllib2.urlopen(url)
+        return response.read()
+    except urllib2.HTTPError, e:
+        if e.code == 404:
+            print "No synonyms found"
+            sys.exit(1)
+        else:
+            raise e
+
+def synonyms(word):
+    synonyms = json.loads(request_synonyms(word))
+    return synonyms["noun"]["syn"]
+
+def print_synonyms(synonyms):
+    for word in synonyms:
+        print(word)
+
+if __name__ == "__main__":
+    print_synonyms(synonyms(sys.argv[1]))
