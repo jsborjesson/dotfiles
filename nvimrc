@@ -310,5 +310,8 @@ xmap <Leader>F <Plug>Sneak_S
 omap <Leader>f <Plug>Sneak_s
 omap <Leader>F <Plug>Sneak_S
 
+" Thesaurus
+nmap gK :!the <C-R><C-W><CR>
+
 " Syntax highlighting for Lasp
 autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure
