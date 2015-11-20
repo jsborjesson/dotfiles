@@ -21,7 +21,8 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 export PATH=~/.bin:$PATH
 export PATH=./bin:$PATH
 
-export LSCOLORS=GxBxhxDxfxhxhxhxhxcxcx # Make folder color visible
+# Make folder color visible
+export LSCOLORS=GxBxhxDxfxhxhxhxhxcxcx
 
 export EDITOR='nvim'
 
