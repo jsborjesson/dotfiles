@@ -1,6 +1,6 @@
 [user]
     name  = Jimmy Börjesson
-    email = alcesleo@gmail.com
+    email = (none)
 
 [github]
     user = alcesleo
@@ -25,6 +25,7 @@
     forgotten     = !git ls-files -v | grep ^[a-z]
     pulled        = log -p --reverse --no-merges --stat @{1}..
     remember      = update-index --no-assume-unchanged
+    stashes       = stash list
     supdate       = submodule update --init --recursive
     tfo           = !git checkout -- . && git clean -fd
     todo          = grep --line-number -E "(TODO|FIXME).*"
