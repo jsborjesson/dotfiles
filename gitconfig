@@ -55,5 +55,5 @@
     clean = git-stripspace
 
 [rerere]
-    enabled = true
+    enabled    = true
     autoupdate = true
