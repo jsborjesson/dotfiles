@@ -36,11 +36,11 @@ stty -ixon
 
 # Colors
 # https://gist.github.com/alcesleo/e8628664df11b3218321
-Color_Off='\e[0m'
-IBlue='\e[0;94m'
-IGreen='\e[0;92m'
-IWhite='\e[0;97m'
-IYellow='\e[0;93m'
+Color_Off='\[\e[0m\]'
+IBlue='\[\e[0;94m\]'
+IGreen='\[\e[0;92m\]'
+IWhite='\[\e[0;97m\]'
+IYellow='\[\e[0;93m\]'
 
 # Set prompt
-PS1="\n\[$IYellow\]\A \[$IGreen\]\w\[$IBlue\]\$(__git_ps1 \" (%s) \")\n\[$IWhite\]\$ \[$Color_Off\]"
+PS1="\n$IYellow\A $IGreen\w$IBlue\$(__git_ps1 \" (%s) \")\n$IWhite\$ $Color_Off"
