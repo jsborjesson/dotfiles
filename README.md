@@ -70,5 +70,3 @@ I like the case sensitive one, it's not standard on Mac but it is the way it's
 done on Linux, and I haven't found any issues with it. The only real difference
 is that you can do things like `mv MyFile.txt myfile.txt` directly, having to
 do a temporary rename pisses me off.
-
-`brew doctor` will put up a warning but everything seems to work fine.
