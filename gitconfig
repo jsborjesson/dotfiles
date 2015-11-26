@@ -20,6 +20,7 @@
     amend         = commit --amend
     changed-files = show --pretty="format:" --name-only
     changelog     = !git log --oneline `git describe --abbrev=0`..HEAD
+    cob           = checkout -b
     fix           = commit --amend -C HEAD
     forget        = update-index --assume-unchanged
     forgotten     = !git ls-files -v | grep ^[a-z]
