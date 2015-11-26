@@ -37,7 +37,7 @@ bundle install --system
 
 **Don't forget to run `rbenv rehash` after installing a gem that adds commands (like bundler).**
 
-## Reinstallation
+## Re-installation
 
 If you're doing a complete reinstall there are a few extra steps you need to
 consider.
@@ -64,7 +64,7 @@ sudo chmod 644 ~/.ssh/known_hosts
 sudo chmod 755 ~/.ssh
 ```
 
-### Filesystem
+### File system
 
 I like the case sensitive one, it's not standard on Mac but it is the way it's
 done on Linux, and I haven't found any issues with it. The only real difference
