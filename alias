@@ -9,7 +9,6 @@ alias v='nvim'
 
 # git
 alias g='git'
-alias gs='git status --short'
 alias ga='git add --all'
 alias gb='git browse'
 alias gc='git commit -m'
@@ -17,6 +16,8 @@ alias gd='git diff'
 alias gds='git diff --staged'
 alias gl='git log --decorate --oneline -10'
 alias gp='git push'
+alias gs='git status --short'
+alias gv='git commit -v'
 alias cib='open $(git ci-status -v | cut -f2 -d" ")'
 
 # ruby
