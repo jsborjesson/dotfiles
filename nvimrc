@@ -257,6 +257,9 @@ xnoremap <Leader>c :s///n<CR>
 
 " ==================== Plugin settings ====================
 
+" Ag
+nnoremap <Leader>a :Ag<Space>
+
 " Commentary
 let g:commentary_map_backslash=0
 
