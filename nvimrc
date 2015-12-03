@@ -255,6 +255,10 @@ xnoremap <Leader>p "0p
 nnoremap <Leader>c :%s///n<CR>
 xnoremap <Leader>c :s///n<CR>
 
+" Set 2 or 4 space indent
+nnoremap <Leader>2 :set et sw=2<CR>
+nnoremap <Leader>4 :set et sw=4<CR>
+
 " ==================== Plugin settings ====================
 
 " Ag
