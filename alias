@@ -1,6 +1,6 @@
 shopt -s expand_aliases
 
-# remaps, these CHANGE preexisting commands
+# Remaps, you can always access the unaliased version by prepending \
 alias ls='ls -G' # color all output
 alias git='hub'
 
