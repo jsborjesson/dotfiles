@@ -43,4 +43,4 @@ IWhite='\[\e[0;97m\]'
 IYellow='\[\e[0;93m\]'
 
 # Set prompt
-PS1="\n$IYellow\A $IGreen\w$IBlue\$(__git_ps1 \" (%s) \")\n$IWhite\$ $Color_Off"
+PS1="\n$IYellow\A $IGreen\w $IBlue\$(__git_ps1 '(%s)')\n$IWhite\$$Color_Off "
