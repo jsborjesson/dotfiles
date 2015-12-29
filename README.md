@@ -2,7 +2,7 @@
 
 ## Installation
 
-* Install the Mac OSX Command Line Tools.
+* `xcode-select --install` to install the Mac OSX Command Line Tools.
 * `rake -T` to see all the available commands and use them to install.
 
 ### Manual steps
