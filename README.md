@@ -37,6 +37,10 @@ bundle install --system
 
 **Don't forget to run `rbenv rehash` after installing a gem that adds commands (like bundler).**
 
+The `railsrc` and `rails_template.rb` files take over the `rails new` command
+and make it automatically do a lot of things that I tend to do directly after
+running `rails new` anyway.
+
 ## Re-installation
 
 If you're doing a complete reinstall there are a few extra steps you need to
