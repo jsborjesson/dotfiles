@@ -87,7 +87,7 @@ CODE
 say "Configuring Rails generators"
 
 # Disable some annoying generators
-inject_into_class "config/application.rb", "Application", <<CONFIG
+inject_into_class "config/application.rb", "Application", <<CODE
 
     # Disable some annoying generators
     config.generators do |generate|
@@ -95,7 +95,7 @@ inject_into_class "config/application.rb", "Application", <<CONFIG
       generate.assets false
     end
 
-CONFIG
+CODE
 
 
 ########################################
