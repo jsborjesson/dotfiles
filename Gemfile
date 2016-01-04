@@ -3,6 +3,7 @@
 
 source 'https://rubygems.org'
 
+gem 'awesome_print'
 gem 'benchmark-ips'
 gem 'bundler'
 gem 'byebug'
