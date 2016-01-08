@@ -10,7 +10,7 @@
 * **iTerm2**
     * Set terminal type to `xterm-256color`.
     * Set longer scrollback
-    * Split panes in same directory
+    * Reuse previous session's directory
     * Enable xterm mouse reporting
     * Enable "Keys -> option key acts as +Esc" to support Meta keys
 * After `brew install`ing the new version of your preferred shell:
