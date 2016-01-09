@@ -4,7 +4,7 @@
   "encrypt": false,
   "default_minute": 55,
   "tagsymbols": "@",
-  "editor": "vim",
+  "editor": "nvim",
   "timeformat": "%Y-%m-%d %H:%M",
   "highlight": true,
   "journals": {
