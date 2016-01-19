@@ -59,6 +59,7 @@ function mkd() {
     mkdir -p "$@" && cd "$@"
 }
 
+# Example: `calc 5*6`
 calc () {
     bc -l <<< "$@"
 }
