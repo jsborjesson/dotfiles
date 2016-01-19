@@ -60,6 +60,6 @@ function mkd() {
 }
 
 # Example: `calc 5*6`
-calc () {
+function calc () {
     bc -l <<< "$@"
 }
