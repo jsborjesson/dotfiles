@@ -204,6 +204,10 @@ nmap <C-J> <CR>
 xnoremap * "xy/\V<C-R>=escape(@x, '/\')<CR><CR>
 xnoremap # "xy?\V<C-R>=escape(@x, '?\')<CR><CR>
 
+" Highlight word but don't jump to the next match
+nmap <Leader>* *``
+nmap <Leader># #``
+
 " Navigate wrapped lines easier
 nnoremap j gj
 nnoremap k gk
