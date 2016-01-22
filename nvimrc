@@ -197,6 +197,7 @@ xnoremap . :normal .<CR>
 nnoremap Y y$
 
 " C-J already behaves like enter, this makes it work for bindings to <CR> too
+" (C-M also mostly behaves like enter)
 imap <C-J> <CR>
 nmap <C-J> <CR>
 
