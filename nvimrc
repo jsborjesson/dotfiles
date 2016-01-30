@@ -209,6 +209,8 @@ xnoremap # "xy?\V<C-R>=escape(@x, '?\')<CR><CR>
 " Highlight word but don't jump to the next match
 nmap <Leader>* *``
 nmap <Leader># #``
+xmap <Leader>* *``
+xmap <Leader># #``
 
 " Navigate wrapped lines easier
 nnoremap j gj
