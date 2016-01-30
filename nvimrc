@@ -51,6 +51,7 @@ Plug 'rust-lang/rust.vim'
 " Trial
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-liquid'
+Plug 'freitass/todo.txt-vim'
 
 call plug#end()
 
@@ -225,6 +226,7 @@ xnoremap & :&&<CR>
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 let mapleader=","
+let maplocalleader=","
 
 " Space to enter command-line mode
 noremap <Space> :
