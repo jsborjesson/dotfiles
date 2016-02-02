@@ -52,6 +52,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-liquid'
 Plug 'freitass/todo.txt-vim'
+Plug 'mattn/gist-vim' | Plug 'mattn/webapi-vim'
 
 call plug#end()
 
