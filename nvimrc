@@ -228,6 +228,18 @@ xnoremap & :&&<CR>
 " Bring in path to folder of current file in command-line with %%
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
+" Add missing J mappings that take motions
+" To join a paragraph, normally you first have to select it by doing vipJ.
+" ,J takes a motion so you can do ,Jip
+nnoremap <Leader>J  :set operatorfunc=JoinOperator<CR>g@
+nnoremap <Leader>gJ :set operatorfunc=GJoinOperator<CR>g@
+func! JoinOperator(submode)
+    '[,']join
+endfunc
+func! GJoinOperator(submode)
+    '[,']join!
+endfunc
+
 let mapleader=","
 let maplocalleader=","
 
