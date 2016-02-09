@@ -179,18 +179,18 @@ let g:terminal_scrollback_buffer_size=10000
 " Thin cursor in insert mode
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
-" ==================== Key mappings ========================
+" ==================== Vim++ mappings ======================
+" This first section of mappings I categorize as either fixing or
+" supercharging Vim's behaviour - it fixes flaws, makes standard commands
+" better and fills holes in Vim's interface.
+"
+" Basically - anything I think should be standard Vim goes here:
+
 " U for normal redo is much more natural
 nnoremap U <C-R>
 
 " Enable @@ usage over several lines in selection
 xnoremap @@ :normal @@<CR>
-
-" Run the q macro instead of stupid Ex-mode
-nnoremap Q @q
-
-" Run macro over multiple lines
-xnoremap Q :normal @q<CR>
 
 " Repeat command over multiple lines
 xnoremap . :normal .<CR>
@@ -198,24 +198,9 @@ xnoremap . :normal .<CR>
 " Y yanks to the end of the line, entire line is still available with yy
 nnoremap Y y$
 
-" C-J already behaves like enter, this makes it work for bindings to <CR> too
-" (C-M also mostly behaves like enter)
-imap <C-J> <CR>
-nmap <C-J> <CR>
-
 " Make * and # search for selection in visual mode
 xnoremap * "xy/\V<C-R>=escape(@x, '/\')<CR><CR>
 xnoremap # "xy?\V<C-R>=escape(@x, '?\')<CR><CR>
-
-" Highlight word but don't jump to the next match
-nmap <Leader>* *``
-nmap <Leader># #``
-xmap <Leader>* *``
-xmap <Leader># #``
-
-" Navigate wrapped lines easier
-nnoremap j gj
-nnoremap k gk
 
 " Search command history with C-p and C-n
 cnoremap <C-P> <Up>
@@ -225,8 +210,57 @@ cnoremap <C-N> <Down>
 nnoremap & :&&<CR>
 xnoremap & :&&<CR>
 
+" ==================== Key mappings ========================
+
+" C-J already behaves like enter, this makes it work for bindings to <CR> too
+" (C-M also mostly behaves like enter)
+imap <C-J> <CR>
+nmap <C-J> <CR>
+
+" Navigate wrapped lines easier
+nnoremap j gj
+nnoremap k gk
+
+" Space to enter command-line mode
+noremap <Space> :
+
+" Run the q macro instead of stupid Ex-mode
+nnoremap Q @q
+
+" Run the q macro over multiple lines
+xnoremap Q :normal @q<CR>
+
+" Quick clear search highlights
+nnoremap <silent> <C-L> :nohlsearch<CR>:diffupdate<CR><C-L>
+
+" Save with C-s
+nnoremap <C-S> :TrimWhitespace<CR>:write<CR>
+vmap <C-S> <Esc><C-S>gv
+imap <C-S> <Esc><C-S>
+
+" Resize splits
+nmap <C-A-k> :resize +10<CR>
+nmap <C-A-j> :resize -10<CR>
+nmap <C-A-l> :vertical resize +10<CR>
+" This mapping doesn't work, <C-h> = BS
+" nmap <C-A-h> :vertical resize -10<CR>
+nmap <A-BS> :vertical resize -10<CR>
+
+" Escape in terminal mode
+tnoremap <Esc><Esc> <C-\><C-N>
+
 " Bring in path to folder of current file in command-line with %%
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
+
+" ==================== Leader commands =====================
+" Mappings that I haven't found a better key combination for yet.
+
+let mapleader=","
+let maplocalleader=","
+
+" Go to last file
+nnoremap <Leader><Leader> <C-^>
 
 " Add missing J mappings that take motions
 " To join a paragraph, normally you first have to select it by doing vipJ.
@@ -240,38 +274,17 @@ func! GJoinOperator(submode)
     '[,']join!
 endfunc
 
-let mapleader=","
-let maplocalleader=","
-
-" Space to enter command-line mode
-noremap <Space> :
-
-" Quick clear search highlights
-nnoremap <silent> <C-L> :nohlsearch<CR>:diffupdate<CR><C-L>
-
-" Go to last file
-nnoremap <Leader><Leader> <C-^>
-
-" Save with C-s
-nnoremap <C-S> :TrimWhitespace<CR>:write<CR>
-vmap <C-S> <Esc><C-S>gv
-imap <C-S> <Esc><C-S>
-
-" Resize splits
-nmap <C-A-k> :resize +10<CR>
-nmap <C-A-j> :resize -10<CR>
-nmap <C-A-l> :vertical resize +10<CR>
-" This mapping doesn't work, <C-h> = BS: nmap <C-A-h> :vertical resize -10<CR>
-nmap <A-BS> :vertical resize -10<CR>
+" Highlight word but don't jump to the next match
+nmap <Leader>* *``
+nmap <Leader># #``
+xmap <Leader>* *``
+xmap <Leader># #``
 
 " Break line on input
 nnoremap <Leader>w :call BreakLineOn()<CR>
 
 " Wrap until end of line in parenthesis
-nmap g( ysg_)
-
-" Escape in terminal mode
-tnoremap <Esc><Esc> <C-\><C-N>
+nmap <Leader>( ysg_)
 
 " Black hole redirection
 nnoremap <Leader>d "_
@@ -287,6 +300,7 @@ xnoremap <Leader>c :s///n<CR>
 " Set 2 or 4 space indent
 nnoremap <Leader>2 :set et sw=2<CR>
 nnoremap <Leader>4 :set et sw=4<CR>
+
 
 " ==================== Plugin settings ====================
 
