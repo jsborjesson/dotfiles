@@ -32,6 +32,9 @@ namespace :nvim do
 
   desc "Install and set up NeoVim dependencies"
   task :install => :link do
+    sh "brew tab neovim/neovim"
+    sh "brew install neovim"
+
     puts "Symlinking files into .config directory"
     sh "mkdir -p ~/.config"
     sh "ln -si ~/.nvim ~/.config/nvim"
