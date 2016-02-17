@@ -86,6 +86,8 @@ end
 ### Helper class ###
 
 class Dotfile
+  FILENAME_ALIGN_WIDTH = 25
+
   attr_reader :filename
 
   def initialize(filename)
@@ -113,13 +115,17 @@ class Dotfile
   end
 
   def to_s
-    "~/.#{filename}"
+    "~/#{dotfilename}"
   end
 
   private
 
+  def dotfilename
+    ".#{filename}"
+  end
+
   def info(message)
-    puts "#{to_s.ljust(25)} #{message}"
+    puts "#{to_s.ljust(FILENAME_ALIGN_WIDTH)} #{message}"
   end
 
   def exists?
@@ -139,7 +145,7 @@ class Dotfile
   end
 
   def destination_path
-    File.join(ENV["HOME"], ".#{filename}")
+    File.join(ENV["HOME"], dotfilename)
   end
 
   def source_path
