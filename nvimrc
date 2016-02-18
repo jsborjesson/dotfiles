@@ -60,6 +60,13 @@ runtime macros/matchit.vim
 syntax on
 
 " ==================== Theme ===============================
+
+" Make sure colors work in tmux
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
+" Thin cursor in insert mode
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
 colorscheme hybrid_reverse
 
 " No split separator char
@@ -174,9 +181,6 @@ let $BASH_ENV = "~/.alias"
 
 " Increase scrollback in terminal mode
 let g:terminal_scrollback_buffer_size=10000
-
-" Thin cursor in insert mode
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 " ==================== Vim++ mappings ======================
 " This first section of mappings I categorize as either fixing or
