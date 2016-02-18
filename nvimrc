@@ -220,9 +220,6 @@ nmap <C-J> <CR>
 nnoremap j gj
 nnoremap k gk
 
-" Space to enter command-line mode
-noremap <Space> :
-
 " Run the q macro instead of stupid Ex-mode
 nnoremap Q @q
 
@@ -255,8 +252,11 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 " ==================== Leader commands =====================
 " Mappings that I haven't found a better key combination for yet.
 
-let mapleader=","
-let maplocalleader=","
+let mapleader=" "
+let maplocalleader=" "
+
+" Enter command line mode without shift
+noremap <Leader>; :
 
 " Go to last file
 nnoremap <Leader><Leader> <C-^>
