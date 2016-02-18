@@ -251,8 +251,8 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 " ==================== Leader commands =====================
 " Mappings that I haven't found a better key combination for yet.
 
-let mapleader=" "
-let maplocalleader=" "
+let mapleader="\<Space>"
+let maplocalleader="\<Space>"
 
 " Enter command line mode without shift
 noremap <Leader>; :
