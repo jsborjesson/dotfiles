@@ -63,7 +63,7 @@ syntax on
 colorscheme hybrid_reverse
 
 " No split separator char
-set fillchars+=vert:\ " There's significant whitespace before this comment
+set fillchars+=vert:\  " There's significant whitespace before this comment
 
 " ==================== autocmds ============================
 augroup settings
