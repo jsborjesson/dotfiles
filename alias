@@ -6,6 +6,7 @@ alias git='hub'
 
 # vim
 alias v='nvim'
+alias vp='v +CtrlP'
 
 # git
 alias g='git'
