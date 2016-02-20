@@ -232,6 +232,11 @@ xnoremap Q :normal @q<CR>
 " Quick clear search highlights
 nnoremap <silent> <C-L> :nohlsearch<CR>:diffupdate<CR><C-L>
 
+" Save with C-s
+nnoremap <C-S> :TrimWhitespace<CR>:write<CR>
+vmap <C-S> <Esc><C-S>gv
+imap <C-S> <Esc><C-S>
+
 " Resize splits
 nmap <C-A-k> :resize +10<CR>
 nmap <C-A-j> :resize -10<CR>
@@ -258,10 +263,6 @@ noremap <Leader>; :
 
 " Go to last file
 nnoremap <Leader><Leader> <C-^>
-
-" Save
-nnoremap <Leader>s :TrimWhitespace<CR>:write<CR>
-vmap <Leader>s <Esc><Leader>sgv
 
 " Add missing J mappings that take motions
 " To join a paragraph, normally you first have to select it by doing vipJ.
