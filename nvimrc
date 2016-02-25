@@ -48,6 +48,9 @@ Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 Plug 'cespare/vim-toml'
 Plug 'rust-lang/rust.vim'
 
+" Tmux
+Plug 'christoomey/vim-tmux-runner'
+
 " Trial
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-liquid'
