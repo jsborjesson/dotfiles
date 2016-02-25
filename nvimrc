@@ -265,6 +265,9 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 let mapleader="\<Space>"
 let maplocalleader="\<Space>"
 
+" Manually reload nvimrc
+nnoremap <Leader>r :source $MYVIMRC<CR>
+
 " Enter command line mode without shift
 noremap <Leader>; :
 
