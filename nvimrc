@@ -86,6 +86,9 @@ augroup settings
     " Relative numbers in command mode, and normal in insert mode
     autocmd InsertEnter * set norelativenumber
     autocmd InsertLeave * set relativenumber
+
+    " Automatically rebalance splits on resize
+    autocmd VimResized * :wincmd =
 augroup END
 
 " ==================== Trim whitespace =====================
