@@ -49,6 +49,7 @@ Plug 'cespare/vim-toml'
 Plug 'rust-lang/rust.vim'
 
 " Tmux
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'christoomey/vim-tmux-runner'
 
 " Trial
@@ -357,6 +358,14 @@ let g:AutoPairs = {'(':')', '[':']', '{':'}', "'":"'", '"':'"', '`':'`'}
 let g:AutoPairsMultilineClose = 0
 let g:AutoPairsShortcutJump = ''
 let g:AutoPairsShortcutToggle = ''
+
+" Tmux navigation
+let g:tmux_navigator_no_mappings = 1
+nnoremap <silent> <M-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <M-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <M-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <M-m> :TmuxNavigatePrevious<cr>
 
 " Sneak
 nmap <Leader>f <Plug>Sneak_s
