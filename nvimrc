@@ -359,13 +359,16 @@ let g:AutoPairsMultilineClose = 0
 let g:AutoPairsShortcutJump = ''
 let g:AutoPairsShortcutToggle = ''
 
-" Tmux navigation
+" Tmux interaction
 let g:tmux_navigator_no_mappings = 1
 nnoremap <silent> <M-h> :TmuxNavigateLeft<cr>
 nnoremap <silent> <M-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <M-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
 nnoremap <silent> <M-m> :TmuxNavigatePrevious<cr>
+
+nnoremap <silent> <C-f> :VtrSendLinesToRunner<CR>
+xnoremap <silent> <C-f> :VtrSendLinesToRunner<CR>
 
 " Sneak
 nmap <Leader>f <Plug>Sneak_s
