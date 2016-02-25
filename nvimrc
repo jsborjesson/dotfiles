@@ -66,7 +66,9 @@ syntax on
 " ==================== Theme ===============================
 
 " Make sure colors work in tmux
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+if exists('$TMUX')
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
 
 " Thin cursor in insert mode
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
