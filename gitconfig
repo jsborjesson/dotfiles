@@ -13,8 +13,6 @@
     di = diff
     ds = diff --staged
     dt = difftool
-    ff = pull --ff-only
-    pr = pull-request
     st = status
 
     amend         = commit --amend
