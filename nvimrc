@@ -232,6 +232,12 @@ nmap <C-J> <CR>
 nnoremap j gj
 nnoremap k gk
 
+
+" Shift-; to do the opposite of ; makes a lot of sense, and : now gets the
+" prime real estate it deserves.
+nnoremap : ,
+nnoremap , :
+
 " Run the q macro instead of stupid Ex-mode
 nnoremap Q @q
 
@@ -269,9 +275,6 @@ let maplocalleader="\<Space>"
 
 " Manually reload nvimrc
 nnoremap <Leader>r :source $MYVIMRC<CR>
-
-" Enter command line mode without shift
-noremap <Leader>; :
 
 " Go to last file
 nnoremap <Leader><Leader> <C-^>
