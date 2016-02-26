@@ -42,6 +42,9 @@
     branch = auto
     ui     = true
 
+[fetch]
+    prune = true
+
 [push]
     default = current
 
