@@ -235,8 +235,8 @@ nnoremap k gk
 
 " Shift-; to do the opposite of ; makes a lot of sense, and : now gets the
 " prime real estate it deserves.
-nnoremap : ,
-nnoremap , :
+noremap : ,
+noremap , :
 
 " Run the q macro instead of stupid Ex-mode
 nnoremap Q @q
