@@ -13,6 +13,8 @@
     di = diff
     ds = diff --staged
     dt = difftool
+    pl = pull
+    ps = push
     st = status
 
     amend         = commit --amend
