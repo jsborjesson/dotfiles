@@ -364,6 +364,8 @@ nnoremap <silent> <M-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
 nnoremap <silent> <M-m> :TmuxNavigatePrevious<cr>
 
+nnoremap <Leader>v :VtrAttachToPane<CR>
+
 nnoremap <silent> <C-f> :VtrSendLinesToRunner<CR>
 xnoremap <silent> <C-f> :VtrSendLinesToRunner<CR>
 
