@@ -18,7 +18,7 @@ $cli set option.emacsmode_controlH 1
 /bin/echo -n .
 $cli set repeat.wait 25
 /bin/echo -n .
-$cli set remap.commandR2commandR_enter 1
+$cli set remap.simple_vi_mode 1
 /bin/echo -n .
 $cli set remap.engelbart_escape 1
 /bin/echo -n .
