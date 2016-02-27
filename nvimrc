@@ -252,14 +252,6 @@ nnoremap <C-S> :TrimWhitespace<CR>:write<CR>
 vmap <C-S> <Esc><C-S>gv
 imap <C-S> <Esc><C-S>
 
-" Resize splits
-nmap <C-A-k> :resize +10<CR>
-nmap <C-A-j> :resize -10<CR>
-nmap <C-A-l> :vertical resize +10<CR>
-" This mapping doesn't work, <C-h> = BS
-" nmap <C-A-h> :vertical resize -10<CR>
-nmap <A-BS> :vertical resize -10<CR>
-
 " Escape in terminal mode
 tnoremap <Esc><Esc> <C-\><C-N>
 
