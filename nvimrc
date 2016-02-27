@@ -313,9 +313,6 @@ nnoremap <Leader>4 :set et sw=4<CR>
 
 " ==================== Plugin settings ====================
 
-" Ag
-nnoremap <Leader>a :Ag<Space>
-
 " Commentary
 let g:commentary_map_backslash=0
 
