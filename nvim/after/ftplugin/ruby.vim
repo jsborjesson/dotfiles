@@ -7,10 +7,10 @@ setlocal iskeyword+=?,!
 
 " RSpec
 let g:rspec_command = "call VtrSendCommand('rspec {spec}')"
-nmap <buffer> <Leader>t :call RunCurrentSpecFile()<CR>
-nmap <buffer> <Leader>s :call RunNearestSpec()<CR>
-nmap <buffer> <Leader>l :call RunLastSpec()<CR>
-nmap <buffer> <Leader>a :call RunAllSpecs()<CR>
+nnoremap <buffer> <Leader>t :call RunCurrentSpecFile()<CR>
+nnoremap <buffer> <Leader>s :call RunNearestSpec()<CR>
+nnoremap <buffer> <Leader>l :call RunLastSpec()<CR>
+nnoremap <buffer> <Leader>a :call RunAllSpecs()<CR>
 
 " XmpFilter
 nmap <buffer> <M-m> <Plug>(xmpfilter-mark)
