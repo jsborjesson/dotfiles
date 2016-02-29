@@ -221,6 +221,26 @@ cnoremap <C-N> <Down>
 nnoremap & :&&<CR>
 xnoremap & :&&<CR>
 
+" Correct J and gJ to take a motion, and act on current line when doubled.
+"
+" To join a paragraph, normally you first have to select it by doing vipJ,
+" this makes J take a motion so you can do Jip, and you can still get the old
+" behaviour by doing JJ and gJJ, this is much more consistent with other Vim
+" commands.
+nnoremap <silent> J  :set operatorfunc=JoinOperator<CR>g@
+nnoremap <silent> gJ :set operatorfunc=GJoinOperator<CR>g@
+nnoremap JJ J
+nnoremap gJJ gJ
+
+function! JoinOperator(submode)
+    '[,']join
+endfunction
+
+function! GJoinOperator(submode)
+    '[,']join!
+endfunction
+
+
 " ==================== Key mappings ========================
 
 " C-J already behaves like enter, this makes it work for bindings to <CR> too
@@ -270,18 +290,6 @@ nnoremap <Leader>r :source $MYVIMRC<CR>
 
 " Go to last file
 nnoremap <Leader><Leader> <C-^>
-
-" Add missing J mappings that take motions
-" To join a paragraph, normally you first have to select it by doing vipJ.
-" ,J takes a motion so you can do ,Jip
-nnoremap <Leader>J  :set operatorfunc=JoinOperator<CR>g@
-nnoremap <Leader>gJ :set operatorfunc=GJoinOperator<CR>g@
-func! JoinOperator(submode)
-    '[,']join
-endfunc
-func! GJoinOperator(submode)
-    '[,']join!
-endfunc
 
 " Highlight word but don't jump to the next match
 nmap <Leader>* *``
