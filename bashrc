@@ -5,7 +5,9 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
 export EDITOR='nvim'
 export LSCOLORS=GxBxhxDxfxhxhxhxhxcxcx
+
 export GIT_PS1_SHOWDIRTYSTATE=1 # Show * for dirty repo in prompt
+export GIT_PS1_SHOWUNTRACKEDFILES=1
 
 shopt -s autocd   # cd without cd
 shopt -s globstar # Enable ** for recursive globbing
