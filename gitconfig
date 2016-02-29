@@ -24,6 +24,7 @@
     fix           = commit --amend -C HEAD
     forget        = update-index --assume-unchanged
     forgotten     = !git ls-files -v | grep ^[a-z]
+    issues        = browse -- issues
     pulled        = log -p --reverse --no-merges --stat @{1}..
     remember      = update-index --no-assume-unchanged
     stashes       = stash list
