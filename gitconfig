@@ -7,7 +7,7 @@
 
 [alias]
     br = branch
-    ci = commit
+    cm = commit
     cl = clone
     co = checkout
     di = diff
