@@ -35,6 +35,7 @@
     uncommit      = reset --soft HEAD^
     unstage       = reset
     yolo          = push --force
+    sha           = rev-parse --short HEAD
 
 [core]
     excludesfile = ~/.gitignore
