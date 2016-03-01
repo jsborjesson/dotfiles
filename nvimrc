@@ -32,10 +32,8 @@ Plug 'rking/ag.vim'
 " Ruby
 Plug 'rhysd/vim-textobj-ruby',                     { 'for': 'ruby'    }
 Plug 'slim-template/vim-slim',                     { 'for': 'ruby'    }
-Plug 'hwartig/vim-seeing-is-believing',            { 'for': 'ruby'    }
 Plug 'jgdavey/vim-blockle',                        { 'for': 'ruby'    }
 Plug 'tpope/vim-rbenv',                            { 'for': 'ruby'    }
-Plug 't9md/vim-ruby-xmpfilter',                    { 'for': 'ruby'    }
 Plug 'thoughtbot/vim-rspec',                       { 'for': 'ruby'    }
 
 " Clojure
