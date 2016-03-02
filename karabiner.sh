@@ -16,7 +16,7 @@ $cli set remap.engelbart_control 1
 /bin/echo -n .
 $cli set option.emacsmode_controlH 1
 /bin/echo -n .
-$cli set repeat.wait 25
+$cli set repeat.wait 20
 /bin/echo -n .
 $cli set remap.simple_vi_mode 1
 /bin/echo -n .
