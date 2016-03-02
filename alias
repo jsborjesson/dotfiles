@@ -40,7 +40,7 @@ alias n='cd ~/Dropbox/notes/ && v'
 # other
 alias nzbsync='cp ~/Downloads/*.nzb /Volumes/Data/Downloads/nzbs && rm ~/Downloads/*.nzb'
 alias c='pygmentize -O style=monokai -f console256 -g'
-alias mark='open -F -a Marked'
+alias mark='open -F -a Marked\ 2'
 
 # cd to location of topmost Finder window
 function cdf() {
