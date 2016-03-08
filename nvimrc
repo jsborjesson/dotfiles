@@ -30,11 +30,14 @@ Plug 'kana/vim-textobj-user'
 Plug 'rking/ag.vim'
 
 " Ruby
+Plug 'jgdavey/vim-blockle',                        { 'for': 'ruby'    }
 Plug 'rhysd/vim-textobj-ruby',                     { 'for': 'ruby'    }
 Plug 'slim-template/vim-slim',                     { 'for': 'ruby'    }
-Plug 'jgdavey/vim-blockle',                        { 'for': 'ruby'    }
-Plug 'tpope/vim-rbenv',                            { 'for': 'ruby'    }
 Plug 'thoughtbot/vim-rspec',                       { 'for': 'ruby'    }
+Plug 'tpope/vim-bundler',                          { 'for': 'ruby'    }
+Plug 'tpope/vim-rake',                             { 'for': 'ruby'    }
+Plug 'tpope/vim-rbenv',                            { 'for': 'ruby'    }
+Plug 'vim-ruby/vim-ruby',                          { 'for': 'ruby'    }
 
 " Clojure
 Plug 'tpope/vim-fireplace',                        { 'for': 'clojure' }
