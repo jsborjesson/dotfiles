@@ -299,7 +299,7 @@ xmap <Leader># #``
 nnoremap <Leader>w :call BreakLineOn()<CR>
 
 " Wrap until end of line in parenthesis
-nmap <Leader>( ysg_)
+nmap <Leader>( lysg_)
 
 " Black hole redirection
 nnoremap <Leader>d "_
