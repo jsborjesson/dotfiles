@@ -12,7 +12,6 @@ Plug 'tpope/vim-sleuth'      " Set indentation settings automatically
 Plug 'tpope/vim-rsi'         " Readline key-mappings for insert and command mode
 Plug 'tpope/vim-vinegar'     " Better netrw filebrowser
 Plug 'tpope/vim-endwise'     " Put in end automatically
-Plug 'tpope/vim-jdaddy'      " gqaj to format json, also aj and ij text-objects
 Plug 'tpope/vim-speeddating' " Makes C-a and C-x work for dates
 Plug 'tpope/vim-unimpaired'  " Lots of clever pairs of mappings
 Plug 'kopischke/vim-fetch'   " Handle line:column numbers in filenames
