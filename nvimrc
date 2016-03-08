@@ -2,31 +2,31 @@
 call plug#begin('~/.nvim/plugged')
 
 " Vim standard library
-Plug 'tpope/vim-repeat'      " Make . work with plugins
-Plug 'tpope/vim-commentary'  " Comment lines with gc
-Plug 'tpope/vim-surround'    " Change surrounding quotes, tags...
-Plug 'tpope/vim-fugitive'    " Git helpers
-Plug 'tpope/vim-eunuch'      " Unix helpers such as :Move, :Rename and :SudoWrite
 Plug 'tpope/vim-abolish'     " Case insensitive search and camel/snake/mixed-switching
-Plug 'tpope/vim-sleuth'      " Set indentation settings automatically
-Plug 'tpope/vim-rsi'         " Readline key-mappings for insert and command mode
-Plug 'tpope/vim-vinegar'     " Better netrw filebrowser
+Plug 'tpope/vim-commentary'  " Comment lines with gc
 Plug 'tpope/vim-endwise'     " Put in end automatically
+Plug 'tpope/vim-eunuch'      " Unix helpers such as :Move, :Rename and :SudoWrite
+Plug 'tpope/vim-fugitive'    " Git helpers
+Plug 'tpope/vim-repeat'      " Make . work with plugins
+Plug 'tpope/vim-rsi'         " Readline key-mappings for insert and command mode
+Plug 'tpope/vim-sleuth'      " Set indentation settings automatically
 Plug 'tpope/vim-speeddating' " Makes C-a and C-x work for dates
+Plug 'tpope/vim-surround'    " Change surrounding quotes, tags...
 Plug 'tpope/vim-unimpaired'  " Lots of clever pairs of mappings
-Plug 'kopischke/vim-fetch'   " Handle line:column numbers in filenames
+Plug 'tpope/vim-vinegar'     " Better netrw filebrowser
 
 " Extra features
-Plug 'tommcdo/vim-exchange'
-Plug 'kien/ctrlp.vim'
-Plug 'junegunn/vim-easy-align'
 Plug 'AndrewRadev/switch.vim' " Clever toggling with gs
-Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
-Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'airblade/vim-gitgutter'
+Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/vim-easy-align'
 Plug 'kana/vim-textobj-user'
+Plug 'kien/ctrlp.vim'
+Plug 'kopischke/vim-fetch'   " Handle line:column numbers in filenames
+Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'rking/ag.vim'
+Plug 'tommcdo/vim-exchange'
 
 " Ruby
 Plug 'jgdavey/vim-blockle',                        { 'for': 'ruby'    }
