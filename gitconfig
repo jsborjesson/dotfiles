@@ -20,14 +20,16 @@
     amend         = commit --amend
     changed-files = show --pretty="format:" --name-only
     changelog     = !git log --oneline `git describe --abbrev=0`..HEAD
-    com           = checkout master
     cob           = checkout -b
+    com           = checkout master
+    ctags         = !.git/hooks/ctags
     fix           = commit --amend -C HEAD
     forget        = update-index --assume-unchanged
     forgotten     = !git ls-files -v | grep ^[a-z]
     issues        = browse -- issues
     pulled        = log -p --reverse --no-merges --stat @{1}..
     remember      = update-index --no-assume-unchanged
+    sha           = rev-parse --short HEAD
     stashes       = stash list
     supdate       = submodule update --init --recursive
     tfo           = !git checkout -- . && git clean -fd
@@ -36,10 +38,12 @@
     uncommit      = reset --soft HEAD^
     unstage       = reset
     yolo          = push --force
-    sha           = rev-parse --short HEAD
 
 [core]
     excludesfile = ~/.gitignore
+
+[init]
+    templatedir = ~/.git_template
 
 [color]
     diff   = auto

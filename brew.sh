@@ -6,6 +6,7 @@ brew upgrade
 
 brew install ag
 brew install bash bash-completion
+brew install ctags
 brew install git
 brew install heroku-toolbelt
 brew install homebrew/binary/kindlegen
