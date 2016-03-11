@@ -6,11 +6,11 @@
     user = alcesleo
 
 [alias]
-    br = branch
+    b  = branch
     cl = clone
     cm = commit
     co = checkout
-    di = diff
+    d  = diff
     ds = diff --staged
     dt = difftool
     lo = log --oneline
