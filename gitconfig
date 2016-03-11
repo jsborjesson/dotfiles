@@ -7,12 +7,13 @@
 
 [alias]
     br = branch
-    cm = commit
     cl = clone
+    cm = commit
     co = checkout
     di = diff
     ds = diff --staged
     dt = difftool
+    lo = log --oneline
     pl = pull
     ps = push
     st = status
@@ -28,6 +29,7 @@
     forgotten     = !git ls-files -v | grep ^[a-z]
     issues        = browse -- issues
     pulled        = log -p --reverse --no-merges --stat @{1}..
+    pure          = pull --rebase
     remember      = update-index --no-assume-unchanged
     sha           = rev-parse --short HEAD
     stashes       = stash list
