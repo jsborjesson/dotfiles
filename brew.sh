@@ -15,6 +15,7 @@ brew install hub
 brew install leiningen
 brew install pandoc
 brew install python python3
+brew install ranger
 brew install rbenv ruby-build
 brew install shellcheck
 brew install tmux reattach-to-user-namespace
