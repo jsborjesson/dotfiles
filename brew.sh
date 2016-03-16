@@ -9,7 +9,6 @@ brew install bash bash-completion
 brew install ctags
 brew install git
 brew install heroku-toolbelt
-brew install homebrew/binary/kindlegen
 brew install htop
 brew install hub
 brew install leiningen
@@ -40,11 +39,7 @@ brew cask install keepassx
 brew cask install keycastr
 brew cask install licecap
 brew cask install postgres
-brew cask install skype
-brew cask install sophos-anti-virus-home-edition
 brew cask install spectacle
-brew cask install spotify
-brew cask install sqlitebrowser
 brew cask install the-unarchiver
 
 brew cleanup
