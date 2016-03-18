@@ -27,7 +27,9 @@
     fix           = commit --amend -C HEAD
     forget        = update-index --assume-unchanged
     forgotten     = !git ls-files -v | grep ^[a-z]
-    issues        = browse -- issues
+    h             = browse
+    iss           = browse -- issues
+    prs           = browse -- pulls
     pulled        = log -p --reverse --no-merges --stat @{1}..
     pure          = pull --rebase
     remember      = update-index --no-assume-unchanged
