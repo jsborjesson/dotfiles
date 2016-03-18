@@ -178,11 +178,11 @@ set timeoutlen=500
 
 " Statusline
 set laststatus=2
-set statusline=\ %F                               " Path
-set statusline+=\ %y                              " Filetype
-set statusline+=\ (%{fugitive#head(8)})           " Git branch
-set statusline+=%=                                " Right alingn after this
-set statusline+=\ %c,%l/%L\                       " col,line/total lines
+set statusline=\ %F                                     " Path
+set statusline+=\ %y                                    " Filetype
+set statusline+=\ (%{fugitive#head(8)})                 " Git branch
+set statusline+=%=                                      " Right alingn after this
+set statusline+=\ Line:\ %l/%L\ (%P)\ \|\ Column:\ %c\  " Line/Column
 
 " Load shell aliases
 let $BASH_ENV = "~/.alias"
