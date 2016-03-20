@@ -29,6 +29,7 @@
     forgotten     = !git ls-files -v | grep ^[a-z]
     h             = browse
     iss           = browse -- issues
+    pr            = pull-request
     prs           = browse -- pulls
     pulled        = log -p --reverse --no-merges --stat @{1}..
     pure          = pull --rebase
