@@ -15,18 +15,23 @@ Plug 'tpope/vim-surround'    " Change surrounding quotes, tags...
 Plug 'tpope/vim-unimpaired'  " Lots of clever pairs of mappings
 Plug 'tpope/vim-vinegar'     " Better netrw filebrowser
 
+" Extra text-objects and motions
+Plug 'kana/vim-textobj-user'
+Plug 'christoomey/vim-sort-motion'
+Plug 'kana/vim-textobj-entire'
+Plug 'kana/vim-textobj-indent'
+Plug 'tommcdo/vim-exchange'
+Plug 'junegunn/vim-easy-align'
+
 " Extra features
 Plug 'AndrewRadev/switch.vim' " Clever toggling with gs
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
-Plug 'junegunn/vim-easy-align'
-Plug 'kana/vim-textobj-user'
 Plug 'kien/ctrlp.vim'
 Plug 'kopischke/vim-fetch'   " Handle line:column numbers in filenames
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'rking/ag.vim'
-Plug 'tommcdo/vim-exchange'
 
 " Ruby
 Plug 'jgdavey/vim-blockle',                        { 'for': 'ruby'    }
@@ -394,6 +399,9 @@ xmap <Leader>F <Plug>Sneak_S
 omap <Leader>f <Plug>Sneak_s
 omap <Leader>F <Plug>Sneak_S
 nmap : <Plug>SneakPrevious
+
+" Switch
+let g:switch_mapping = "<Leader>gs"
 
 " Thesaurus
 nmap gK :!the <C-R><C-W><CR>
