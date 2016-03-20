@@ -302,6 +302,9 @@ nmap <Leader># #``
 xmap <Leader>* *``
 xmap <Leader># #``
 
+" Enter insert mode with correct indentation
+nnoremap <Leader><Tab> ddO
+
 " Break line on input
 nnoremap <Leader>w :call BreakLineOn()<CR>
 
