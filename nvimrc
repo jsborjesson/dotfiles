@@ -170,7 +170,7 @@ set noswapfile
 set undodir=~/.nvim/undo
 set undofile
 
-" Enable per project nvimrcs
+" Enable per project nvimrc:s
 set exrc
 set secure
 
@@ -184,9 +184,9 @@ set timeoutlen=500
 " Statusline
 set laststatus=2
 set statusline=\ %F                                     " Path
-set statusline+=\ %y                                    " Filetype
+set statusline+=\ %y                                    " File type
 set statusline+=\ (%{fugitive#head(8)})                 " Git branch
-set statusline+=%=                                      " Right alingn after this
+set statusline+=%=                                      " Right align after this
 set statusline+=\ Line:\ %l/%L\ (%P)\ \|\ Column:\ %c\  " Line/Column
 
 " Load shell aliases
