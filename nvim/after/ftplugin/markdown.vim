@@ -2,4 +2,4 @@
 setlocal linebreak
 setlocal spell
 
-nmap <Leader>r :!mark %<CR>
+nnoremap <Leader>m :!mark %<CR>
