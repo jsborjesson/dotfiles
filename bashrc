@@ -17,8 +17,12 @@ stty -ixon
 
 source ~/.alias
 
-# initialize rbenv
+# Initialize rbenv
 eval "$(rbenv init -)"
+
+# Initialize docker-machine
+# This command will fail silently if docker-machine is not running, or even not installed
+eval "$(docker-machine env default 2>/dev/null)"
 
 # Source bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
