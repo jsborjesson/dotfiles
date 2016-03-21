@@ -28,10 +28,6 @@ alias reh='rbenv rehash'
 alias r='rails'
 alias b='bundle'
 alias be='bundle exec'
-alias fr='foreman run'
-alias frb='foreman run bundle'
-alias frbe='foreman run bundle exec'
-alias fsw='foreman start web'
 
 # navigation
 alias src='source ~/.bashrc'
