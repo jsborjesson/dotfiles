@@ -35,7 +35,7 @@ alias fsw='foreman start web'
 
 # navigation
 alias src='source ~/.bashrc'
-alias n='cd ~/Dropbox/notes/ && v'
+alias wiki='vp ~/Dropbox/wiki/'
 
 # other
 alias nzbsync='cp ~/Downloads/*.nzb /Volumes/Data/Downloads/nzbs && rm ~/Downloads/*.nzb'
