@@ -302,6 +302,9 @@ nmap <Leader># #``
 xmap <Leader>* *``
 xmap <Leader># #``
 
+" Maximize split
+nnoremap <Leader>z :silent tabedit %<CR>
+
 " Enter insert mode with correct indentation
 nnoremap <Leader><Tab> ddO
 
