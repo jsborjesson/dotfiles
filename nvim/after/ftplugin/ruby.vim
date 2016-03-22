@@ -6,7 +6,7 @@ setlocal shiftwidth=2
 setlocal iskeyword+=?,!
 
 " RSpec
-let g:rspec_command = "call VtrSendCommand('bundle exec rspec {spec}')"
+let g:rspec_command = 'call VtrSendCommand('bundle exec rspec {spec}')'
 nnoremap <buffer> <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <buffer> <Leader>s :call RunNearestSpec()<CR>
 nnoremap <buffer> <Leader>l :call RunLastSpec()<CR>

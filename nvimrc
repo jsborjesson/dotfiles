@@ -191,7 +191,7 @@ set statusline+=%=                                      " Right align after this
 set statusline+=\ Line:\ %l/%L\ (%P)\ \|\ Column:\ %c\  " Line/Column
 
 " Load shell aliases
-let $BASH_ENV = "~/.alias"
+let $BASH_ENV = '~/.alias'
 
 " Increase scrollback in terminal mode
 let g:terminal_scrollback_buffer_size=10000
@@ -357,7 +357,7 @@ xnoremap <Leader>gb :Gbrowse<CR>
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager    = 0
 let g:gitgutter_map_keys = 0
-let g:gitgutter_sign_removed_first_line = "_^"
+let g:gitgutter_sign_removed_first_line = '_^'
 nmap <Leader>gh <Plug>GitGutterStageHunk
 nmap <Leader>gr <Plug>GitGutterRevertHunk
 nmap [h <Plug>GitGutterPrevHunk
@@ -367,9 +367,9 @@ nmap ]h <Plug>GitGutterNextHunk
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 " UltiSnips
-let g:UltiSnipsExpandTrigger="<Tab>"
-let g:UltiSnipsJumpForwardTrigger="<Tab>"
-let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+let g:UltiSnipsExpandTrigger='<Tab>'
+let g:UltiSnipsJumpForwardTrigger='<Tab>'
+let g:UltiSnipsJumpBackwardTrigger='<S-Tab>'
 
 " AutoPairs
 let g:AutoPairs = {'(':')', '[':']', '{':'}', "'":"'", '"':'"', '`':'`'}
@@ -409,7 +409,7 @@ omap <Leader>F <Plug>Sneak_S
 nmap : <Plug>SneakPrevious
 
 " Switch
-let g:switch_mapping = "<Leader>gs"
+let g:switch_mapping = '<Leader>gs'
 
 " Thesaurus
 nmap gK :!the <C-R><C-W><CR>
