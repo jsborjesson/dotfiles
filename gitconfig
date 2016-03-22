@@ -32,6 +32,7 @@
     iss           = browse -- issues
     pr            = pull-request
     prs           = browse -- pulls
+    pro           = !git push && hub pull-request -o
     pulled        = log -p --reverse --no-merges --stat @{1}..
     pure          = pull --rebase
     remember      = update-index --no-assume-unchanged
