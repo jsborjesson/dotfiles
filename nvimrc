@@ -132,15 +132,6 @@ endfunction
 command! TrimWhitespace execute ':call TrimWhitespace()'
 
 
-" ==================== Break line on ====================
-function! BreakLineOn()
-    call inputsave()
-    let split = input('Break line on: ')
-    call inputrestore()
-
-    silent! execute ':s/' . split . '/' . split . '\r/' . (&gdefault ? '' : 'g')
-endfunction
-
 " ==================== Settings ====================
 set hidden
 set gdefault
@@ -313,9 +304,6 @@ nnoremap <Leader>z :silent tabedit %<CR>
 
 " Enter insert mode with correct indentation
 nnoremap <Leader><Tab> ddO
-
-" Break line on input
-nnoremap <Leader>w :call BreakLineOn()<CR>
 
 " Wrap until end of line in parenthesis
 nmap <Leader>( lysg_)
