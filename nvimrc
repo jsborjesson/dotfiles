@@ -33,6 +33,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'kopischke/vim-fetch'   " Handle line:column numbers in filenames
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'rking/ag.vim'
+Plug 'vim-scripts/ReplaceWithRegister'
 
 " Ruby
 Plug 'jgdavey/vim-blockle',                        { 'for': 'ruby'    }
