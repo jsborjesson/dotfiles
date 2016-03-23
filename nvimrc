@@ -1,4 +1,4 @@
-" ==================== Plugins =============================
+" ==================== Plugins ====================
 call plug#begin('~/.nvim/plugged')
 
 " Vim standard library
@@ -69,7 +69,7 @@ runtime macros/matchit.vim
 
 syntax on
 
-" ==================== Theme ===============================
+" ==================== Theme ====================
 
 " Make sure colors work in tmux
 if exists('$TMUX')
@@ -84,7 +84,7 @@ colorscheme hybrid_reverse
 " No split separator char
 set fillchars+=vert:\  " There's significant whitespace before this comment
 
-" ==================== autocmds ============================
+" ==================== autocmds ====================
 augroup settings
     " Make sure to not register the autocmds again when reloading nvimrc
     autocmd!
@@ -103,7 +103,7 @@ augroup settings
     autocmd VimResized * :wincmd =
 augroup END
 
-" ==================== Whitespace ==========================
+" ==================== Whitespace ====================
 " Highlight EOL whitespace, http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 highlight default ExtraWhitespace ctermbg=darkred guibg=darkred
 
@@ -132,7 +132,7 @@ endfunction
 command! TrimWhitespace execute ':call TrimWhitespace()'
 
 
-" ==================== Break line on =======================
+" ==================== Break line on ====================
 function! BreakLineOn()
     call inputsave()
     let split = input('Break line on: ')
@@ -141,7 +141,7 @@ function! BreakLineOn()
     silent! execute ':s/' . split . '/' . split . '\r/' . (&gdefault ? '' : 'g')
 endfunction
 
-" ==================== Settings ============================
+" ==================== Settings ====================
 set hidden
 set gdefault
 set clipboard=unnamed " Yank to system clipboard
@@ -201,7 +201,7 @@ let $BASH_ENV = '~/.alias'
 " Increase scrollback in terminal mode
 let g:terminal_scrollback_buffer_size=10000
 
-" ==================== Vim++ mappings ======================
+" ==================== Vim++ mappings ====================
 " This first section of mappings I categorize as either fixing or
 " supercharging Vim's behaviour - it fixes flaws, makes standard commands
 " better and fills holes in Vim's interface.
@@ -252,7 +252,7 @@ function! GJoinOperator(submode)
 endfunction
 
 
-" ==================== Key mappings ========================
+" ==================== Key mappings ====================
 
 " C-J already behaves like enter, this makes it work for bindings to <CR> too
 " (C-M also mostly behaves like enter)
@@ -290,7 +290,7 @@ tnoremap <Esc><Esc> <C-\><C-N>
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 
-" ==================== Leader commands =====================
+" ==================== Leader commands ====================
 " Mappings that I haven't found a better key combination for yet.
 
 let mapleader="\<Space>"
