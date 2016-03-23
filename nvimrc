@@ -103,14 +103,19 @@ augroup settings
     autocmd VimResized * :wincmd =
 augroup END
 
-" ==================== Trim whitespace =====================
+" ==================== Whitespace ==========================
 " Highlight EOL whitespace, http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 highlight default ExtraWhitespace ctermbg=darkred guibg=darkred
-autocmd BufRead * match ExtraWhitespace /^\s\+$/
 
-" The above flashes annoyingly while typing, be calmer in insert mode
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+augroup whitespace
+    autocmd!
+
+    autocmd BufRead * match ExtraWhitespace /^\s\+$/
+
+    " The above flashes annoyingly while typing, be calmer in insert mode
+    autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+    autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+augroup END
 
 function! TrimWhitespace()
     let l:save_cursor = getpos('.')
