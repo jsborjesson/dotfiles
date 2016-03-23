@@ -20,6 +20,7 @@ Plug 'kana/vim-textobj-user'
 Plug 'christoomey/vim-sort-motion'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-indent'
+Plug 'kana/vim-textobj-line'
 Plug 'tommcdo/vim-exchange'
 Plug 'junegunn/vim-easy-align'
 
