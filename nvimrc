@@ -60,7 +60,6 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'christoomey/vim-tmux-runner'
 
 " Trial
-Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-liquid'
 Plug 'freitass/todo.txt-vim'
 
@@ -399,15 +398,6 @@ nnoremap <Leader>v :VtrAttachToPane<CR>
 
 nnoremap <silent> <C-f> :VtrSendLinesToRunner<CR>
 xnoremap <silent> <C-f> :VtrSendLinesToRunner<CR>
-
-" Sneak
-nmap <Leader>f <Plug>Sneak_s
-nmap <Leader>F <Plug>Sneak_S
-xmap <Leader>f <Plug>Sneak_s
-xmap <Leader>F <Plug>Sneak_S
-omap <Leader>f <Plug>Sneak_s
-omap <Leader>F <Plug>Sneak_S
-nmap : <Plug>SneakPrevious
 
 " Switch
 let g:switch_mapping = '<Leader>gs'
