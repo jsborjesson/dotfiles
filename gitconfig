@@ -32,6 +32,7 @@
     forgotten     = !git ls-files -v | grep ^[a-z]
     h             = browse
     iss           = browse -- issues
+    pop           = stash pop
     pr            = pull-request
     pro           = !git push && hub pull-request -o
     prs           = browse -- pulls
@@ -39,6 +40,7 @@
     pure          = pull --rebase
     remember      = update-index --no-assume-unchanged
     sha           = rev-parse --short HEAD
+    stu           = stash --include-untracked
     stashes       = stash list
     supdate       = submodule update --init --recursive
     tfo           = !git reset . && git checkout -- . && git clean -fd
