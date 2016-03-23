@@ -21,10 +21,10 @@
     s  = status --short
 
     amend         = commit --amend
+    bd            = branch --delete
     changed-files = show --pretty="format:" --name-only
     changelog     = !git log --oneline `git describe --abbrev=0`..HEAD
     cob           = checkout -b
-    bd            = branch --delete
     com           = checkout master
     ctags         = !.git/hooks/ctags
     fix           = commit --amend -C HEAD
@@ -33,8 +33,8 @@
     h             = browse
     iss           = browse -- issues
     pr            = pull-request
-    prs           = browse -- pulls
     pro           = !git push && hub pull-request -o
+    prs           = browse -- pulls
     pulled        = log -p --reverse --no-merges --stat @{1}..
     pure          = pull --rebase
     remember      = update-index --no-assume-unchanged
