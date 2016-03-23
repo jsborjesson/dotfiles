@@ -18,6 +18,22 @@
     * `chsh -s /usr/local/bin/bash` to set it as default
 * In `Keyboard` settings, remap Caps Lock to Control
 
+### Vim
+
+Installation:
+
+```bash
+brew install python # python is needed before this step
+rake nvim:install   # installs and sets up everything
+```
+
+Lint the VimScript to be extra clean:
+
+```bash
+pip install vim-vint
+vint --enable-neovim --style nvimrc
+```
+
 ### Ruby
 
 Rbenv handles versions.
