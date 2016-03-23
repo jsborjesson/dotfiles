@@ -43,7 +43,11 @@ snippet ar
 attr_reader :${1:instance_variable}
 endsnippet
 
-snippet alias
+snippet alias "Lexical aliasing"
+alias ${1:new} ${2:old}
+endsnippet
+
+snippet alias_method "Dynamic aliasing"
 alias_method :${1:new}, :${2:old}
 endsnippet
 
