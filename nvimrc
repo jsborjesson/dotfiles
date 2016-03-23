@@ -171,6 +171,9 @@ set undofile
 set exrc
 set secure
 
+" Share spellfile in Dropbox
+set spellfile=~/Dropbox/apps/nvim/en.utf-8.add
+
 " Fix escape lag
 set ttimeout
 set ttimeoutlen=1
