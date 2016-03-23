@@ -12,15 +12,6 @@ nnoremap <buffer> <Leader>s :call RunNearestSpec()<CR>
 nnoremap <buffer> <Leader>l :call RunLastSpec()<CR>
 nnoremap <buffer> <Leader>a :call RunAllSpecs()<CR>
 
-" XmpFilter
-nmap <buffer> <M-m> <Plug>(xmpfilter-mark)
-xmap <buffer> <M-m> <Plug>(xmpfilter-mark)
-imap <buffer> <M-m> <Plug>(xmpfilter-mark)
-
-nmap <buffer> <M-r> <Plug>(xmpfilter-run)
-xmap <buffer> <M-r> <Plug>(xmpfilter-run)
-imap <buffer> <M-r> <Plug>(xmpfilter-run)
-
 " AutoPairs
 let b:AutoPairs = {'(':')', '[':']', '{':'}', "'":"'", '"':'"', '`':'`', '|':'|'}
 
