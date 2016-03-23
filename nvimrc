@@ -284,8 +284,8 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 " ==================== Leader commands ====================
 " Mappings that I haven't found a better key combination for yet.
 
-let mapleader="\<Space>"
-let maplocalleader="\<Space>"
+let g:mapleader="\<Space>"
+let g:maplocalleader="\<Space>"
 
 " Manually reload nvimrc
 nnoremap <Leader>r :source $MYVIMRC<CR>
