@@ -13,10 +13,12 @@
     d  = diff
     ds = diff --staged
     dt = difftool
+    f  = fetch
     lo = log --oneline
+    l  = log
     pl = pull
     ps = push
-    st = status
+    s  = status --short
 
     amend         = commit --amend
     changed-files = show --pretty="format:" --name-only
