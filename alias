@@ -7,6 +7,7 @@ alias git='hub'
 # vim
 alias v='nvim'
 alias vp='v +CtrlP'
+alias vd='v -d' # neovimdiff
 
 # git
 alias g='git'
