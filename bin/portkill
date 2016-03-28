@@ -4,4 +4,9 @@
 # terminal but the webserver is still running.
 #
 # Example use: portkill 5000
-lsof -t -i:$1 > /dev/null && kill -9 $(lsof -t -i:$1) || echo "No process listening on $1"
+if lsof -t -i:$1 > /dev/null; then
+    kill -9 $(lsof -t -i:$1)
+else
+    echo "No process listening on $1"
+    exit 1
+fi
