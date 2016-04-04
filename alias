@@ -4,6 +4,8 @@ shopt -s expand_aliases
 alias ls='ls -G' # color all output
 alias git='hub'
 
+alias tac='tail -r'
+
 # vim
 alias v='nvim'
 alias vp='v +CtrlP'
