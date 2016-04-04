@@ -29,15 +29,13 @@ alias r='rails'
 alias b='bundle'
 alias be='bundle exec'
 
-# navigation
+# other
+alias c='pygmentize -O style=monokai -f console256 -g'
+alias dock='docker-compose -f docker-compose-infrastructure.yml -f docker-compose.yml'
+alias mark='open -F -a Marked\ 2'
+alias nzbsync='cp ~/Downloads/*.nzb /Volumes/Data/Downloads/nzbs && rm ~/Downloads/*.nzb'
 alias src='source ~/.bashrc'
 alias wiki='vp ~/Dropbox/wiki/'
-
-# other
-alias nzbsync='cp ~/Downloads/*.nzb /Volumes/Data/Downloads/nzbs && rm ~/Downloads/*.nzb'
-alias c='pygmentize -O style=monokai -f console256 -g'
-alias mark='open -F -a Marked\ 2'
-alias dock='docker-compose -f docker-compose-infrastructure.yml -f docker-compose.yml'
 
 # cd to location of topmost Finder window
 function cdf() {
