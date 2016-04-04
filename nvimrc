@@ -393,7 +393,7 @@ nnoremap <silent> <M-h> :TmuxNavigateLeft<cr>
 nnoremap <silent> <M-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <M-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
-nnoremap <silent> <M-m> :TmuxNavigatePrevious<cr>
+nnoremap <silent> <M-o> :TmuxNavigatePrevious<cr>
 
 nnoremap <Leader>v :VtrAttachToPane<CR>
 
