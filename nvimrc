@@ -280,8 +280,8 @@ tnoremap <Esc><Esc> <C-\><C-N>
 " Bring in path to folder of current file in command-line with %%
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
-" ==================== Swedish letters ====================
-" Adds mappings to make typing in Swedish fairly OK with US layout
+" ==================== Special characters ====================
+" Overlays the Swedish åäö letters in their correct places with alt
 inoremap <M-[> <C-K>aa
 inoremap <M-'> <C-K>a:
 inoremap <M-;> <C-K>o:
