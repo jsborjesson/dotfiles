@@ -11,6 +11,7 @@ brew install git
 brew install heroku-toolbelt
 brew install htop
 brew install hub
+brew install jrnl
 brew install leiningen
 brew install pandoc
 brew install python python3
