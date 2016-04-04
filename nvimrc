@@ -389,11 +389,11 @@ let g:sexp_enable_insert_mode_mappings = 0
 
 " Tmux interaction
 let g:tmux_navigator_no_mappings = 1
-nnoremap <silent> <M-h> :TmuxNavigateLeft<cr>
-nnoremap <silent> <M-j> :TmuxNavigateDown<cr>
-nnoremap <silent> <M-k> :TmuxNavigateUp<cr>
-nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
-nnoremap <silent> <M-o> :TmuxNavigatePrevious<cr>
+nnoremap <silent> <M-h> :TmuxNavigateLeft<CR>
+nnoremap <silent> <M-j> :TmuxNavigateDown<CR>
+nnoremap <silent> <M-k> :TmuxNavigateUp<CR>
+nnoremap <silent> <M-l> :TmuxNavigateRight<CR>
+nnoremap <silent> <M-o> :TmuxNavigatePrevious<CR>
 
 nnoremap <Leader>v :VtrAttachToPane<CR>
 
