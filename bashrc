@@ -1,8 +1,3 @@
-# Path
-export PATH=~/.bin:$PATH
-export PATH=./bin:$PATH
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-
 export EDITOR='nvim'
 export LSCOLORS=GxBxhxDxfxhxhxhxhxcxcx
 
@@ -47,3 +42,9 @@ IWhite='\[\e[0;97m\]'
 IYellow='\[\e[0;93m\]'
 
 PS1="\n$IYellow\A $IGreen\w $IBlue\$(__git_ps1 '(%s)')\n$IWhite\$$Color_Off "
+
+### Path
+
+export PATH=~/.bin:$PATH
+export PATH=./bin:$PATH
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
