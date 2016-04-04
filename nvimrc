@@ -280,6 +280,14 @@ tnoremap <Esc><Esc> <C-\><C-N>
 " Bring in path to folder of current file in command-line with %%
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
+" ==================== Swedish letters ====================
+" Adds mappings to make typing in Swedish fairly OK with US layout
+inoremap <M-[> <C-K>aa
+inoremap <M-'> <C-K>a:
+inoremap <M-;> <C-K>o:
+inoremap <M-{> <C-K>AA
+inoremap <M-"> <C-K>A:
+inoremap <M-:> <C-K>O:
 
 " ==================== Leader commands ====================
 " Mappings that I haven't found a better key combination for yet.
