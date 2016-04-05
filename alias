@@ -5,6 +5,7 @@ alias ls='ls -G -1' # color the output and put every entry on its own line
 alias git='hub'
 
 alias tac='tail -r'
+alias jason='python -m json.tool'
 
 # vim
 alias v='nvim'
