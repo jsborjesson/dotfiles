@@ -25,6 +25,7 @@
     changed-files = show --pretty="format:" --name-only
     changelog     = !git log --oneline `git describe --abbrev=0`..HEAD
     cob           = checkout -b
+    plush         = !git pull --rebase && git push
     com           = checkout master
     ctags         = !.git/hooks/ctags
     fix           = commit --amend -C HEAD
