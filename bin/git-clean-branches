@@ -1,0 +1,2 @@
+# Removes every merged branch except for master
+git branch --merged | grep -Ev "\*|master" | xargs -n 1 git branch -d
