@@ -21,6 +21,7 @@
     s  = status --short
 
     amend         = commit --amend
+    sf            = !git status --short | awk '{ print $2 }'
     bd            = branch --delete
     changed-files = show --pretty="format:" --name-only
     changelog     = !git log --oneline `git describe --abbrev=0`..HEAD
