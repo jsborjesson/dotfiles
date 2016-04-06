@@ -4,8 +4,8 @@ shopt -s expand_aliases
 alias ls='ls -G -1' # color the output and put every entry on its own line
 alias git='hub'
 
+alias src='source ~/.bashrc'
 alias tac='tail -r'
-alias jason='python -m json.tool'
 
 # vim
 alias v='nvim'
@@ -34,11 +34,13 @@ alias be='bundle exec'
 
 # other
 alias c='pygmentize -O style=monokai -f console256 -g'
-alias dock='docker-compose -f docker-compose-infrastructure.yml -f docker-compose.yml'
+alias jason='python -m json.tool'
 alias mark='open -F -a Marked\ 2'
 alias nzbsync='cp ~/Downloads/*.nzb /Volumes/Data/Downloads/nzbs && rm ~/Downloads/*.nzb'
-alias src='source ~/.bashrc'
 alias wiki='vp ~/Dropbox/wiki/'
+
+# work
+alias dock='docker-compose -f docker-compose-infrastructure.yml -f docker-compose.yml'
 
 # cd to location of topmost Finder window
 function cdf() {
