@@ -14,19 +14,17 @@
     ds = diff --staged
     dt = difftool
     f  = fetch
-    lo = log --oneline
     l  = log
+    lo = log --oneline
     pl = pull
     ps = push
     s  = status --short
 
     amend         = commit --amend
-    sf            = !git status --short | awk '{ print $2 }'
     bd            = branch --delete
     changed-files = show --pretty="format:" --name-only
     changelog     = !git log --oneline `git describe --abbrev=0`..HEAD
     cob           = checkout -b
-    plush         = !git pull --rebase && git push
     com           = checkout master
     ctags         = !.git/hooks/ctags
     fix           = commit --amend -C HEAD
@@ -34,6 +32,7 @@
     forgotten     = !git ls-files -v | grep ^[a-z]
     h             = browse
     iss           = browse -- issues
+    plush         = !git pull --rebase && git push
     pop           = stash pop
     pr            = pull-request
     pro           = !git push && hub pull-request -o
@@ -41,9 +40,10 @@
     pulled        = log -p --reverse --no-merges --stat @{1}..
     pure          = pull --rebase
     remember      = update-index --no-assume-unchanged
+    sf            = !git status --short | awk '{ print $2 }'
     sha           = rev-parse --short HEAD
-    stu           = stash --include-untracked
     stashes       = stash list
+    stu           = stash --include-untracked
     supdate       = submodule update --init --recursive
     tfo           = !git reset . && git checkout -- . && git clean -fd
     todo          = grep --line-number -E "(TODO|FIXME).*"
