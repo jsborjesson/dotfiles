@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Custom</name>
+    <item>
+      <name>Custom pinky characters</name>
+      <identifier>remap.custom_pinky_characters</identifier>
+      <appendix>(F+U to _)</appendix>
+      <appendix>(F+M to -)</appendix>
+      <appendix>(F+, to +)</appendix>
+      <appendix>(F+I to |)</appendix>
+      <appendix>(F+H to ^)</appendix>
+      <appendix>(F+L to $)</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::U, KeyCode::MINUS, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::M, KeyCode::MINUS</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::COMMA, KeyCode::EQUAL, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::I, KeyCode::BACKSLASH, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::H, KeyCode::6, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::L, KeyCode::4, ModifierFlag::SHIFT_L</autogen>
+    </item>
+  </item>
+</root>
