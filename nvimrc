@@ -410,5 +410,5 @@ let g:switch_mapping = '<Leader>gs'
 " Thesaurus
 nmap gK :!the <C-R><C-W><CR>
 
-" Syntax highlighting for Lasp
+" Syntax highlighting for Läsp
 autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure
