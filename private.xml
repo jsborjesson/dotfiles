@@ -18,5 +18,13 @@
       <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::H, KeyCode::6, ModifierFlag::SHIFT_L</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::L, KeyCode::4, ModifierFlag::SHIFT_L</autogen>
     </item>
+    <item>
+      <name>Engelbart COMMAND</name>
+      <identifier>remap.custom_cmd</identifier>
+      <appendix>(A+S to COMMAND_L)</appendix>
+      <appendix>(L+; to COMMAND_R)</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::S, KeyCode::COMMAND_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::L, KeyCode::SEMICOLON, KeyCode::COMMAND_R</autogen>
+    </item>
   </item>
 </root>
