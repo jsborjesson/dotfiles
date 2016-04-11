@@ -8,7 +8,6 @@
 [alias]
     b  = branch
     cl = clone
-    cm = commit
     co = checkout
     d  = diff
     ds = diff --staged
