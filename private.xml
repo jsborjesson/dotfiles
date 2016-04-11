@@ -26,5 +26,13 @@
       <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::S, KeyCode::COMMAND_L</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::L, KeyCode::SEMICOLON, KeyCode::COMMAND_R</autogen>
     </item>
+    <item>
+      <name>Engelbart TAB/ENTER</name>
+      <identifier>remap.custom_tab_enter</identifier>
+      <appendix>(S+F to TAB)</appendix>
+      <appendix>(J+L to ENTER)</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::F, KeyCode::TAB</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::L, KeyCode::ENTER</autogen>
+    </item>
   </item>
 </root>
