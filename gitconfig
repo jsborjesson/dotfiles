@@ -14,9 +14,11 @@
     ds = diff --staged
     dt = difftool
     f  = fetch
+    h  = browse
     l  = log
     lo = log --oneline --decorate
     pl = pull
+    pr = pull-request
     ps = push
     re = rebase
     ri = rebase --interactive
@@ -28,16 +30,15 @@
     changelog     = !git log --oneline `git describe --abbrev=0`..HEAD
     cob           = checkout -b
     com           = checkout master
+    lot           = log --oneline --decorate -15
     conflicts     = !git status --short | grep "^UU" | awk '{ print $2 }'
     ctags         = !.git/hooks/ctags
     fix           = commit --amend -C HEAD
     forget        = update-index --assume-unchanged
     forgotten     = !git ls-files -v | grep ^[a-z]
-    h             = browse
     iss           = browse -- issues
     plush         = !git pull --rebase && git push
     pop           = stash pop
-    pr            = pull-request
     pro           = !git push && hub pull-request -o
     prs           = browse -- pulls
     pulled        = log -p --reverse --no-merges --stat @{1}..
