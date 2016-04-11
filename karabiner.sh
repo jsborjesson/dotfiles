@@ -20,9 +20,13 @@ $cli set repeat.wait 20
 /bin/echo -n .
 $cli set remap.simple_vi_mode 1
 /bin/echo -n .
+$cli set remap.custom_cmd 1
+/bin/echo -n .
 $cli set remap.engelbart_escape 1
 /bin/echo -n .
 $cli set remap.controlL2controlL_escape 1
+/bin/echo -n .
+$cli set remap.custom_pinky_characters 1
 /bin/echo -n .
 $cli set remap.controlJ2enter 1
 /bin/echo -n .
