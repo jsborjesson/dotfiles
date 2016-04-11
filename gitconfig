@@ -32,7 +32,6 @@
     changelog     = !git log --oneline `git describe --abbrev=0`..HEAD
     cob           = checkout -b
     com           = checkout master
-    lot           = log --oneline --decorate -15
     conflicts     = !git status --short | grep "^UU" | awk '{ print $2 }'
     ctags         = !.git/hooks/ctags
     fix           = commit --amend -C HEAD
