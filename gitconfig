@@ -6,6 +6,9 @@
     user = alcesleo
 
 [alias]
+    a  = add
+    aa = add --all
+    au = add --update
     b  = branch
     cl = clone
     co = checkout
