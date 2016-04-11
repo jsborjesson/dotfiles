@@ -14,10 +14,7 @@ alias vd='v -d' # neovimdiff
 
 # git
 alias g='git'
-alias ga='git add --all'
-alias gdw='git diff --color-words'
 alias gds='git diff --staged'
-alias gdsw='git diff --staged --color-words'
 alias gl='git log --decorate --oneline -10'
 
 # ruby

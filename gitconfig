@@ -34,6 +34,8 @@
     com           = checkout master
     conflicts     = !git status --short | grep "^UU" | awk '{ print $2 }'
     ctags         = !.git/hooks/ctags
+    dsw           = diff --staged --color-words
+    dw            = diff --color-words
     fix           = commit --amend -C HEAD
     forget        = update-index --assume-unchanged
     forgotten     = !git ls-files -v | grep ^[a-z]
@@ -45,9 +47,9 @@
     pulled        = log -p --reverse --no-merges --stat @{1}..
     pure          = pull --rebase
     remember      = update-index --no-assume-unchanged
-    status-files  = !git status --short | awk '{ print $2 }'
     sha           = rev-parse --short HEAD
     stashes       = stash list
+    status-files  = !git status --short | awk '{ print $2 }'
     stu           = stash --include-untracked
     supdate       = submodule update --init --recursive
     tfo           = !git reset . && git checkout -- . && git clean -fd
