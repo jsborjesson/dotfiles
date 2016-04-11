@@ -18,6 +18,8 @@
     lo = log --oneline --decorate
     pl = pull
     ps = push
+    re = rebase
+    ri = rebase --interactive
     s  = status --short
 
     amend         = commit --amend
