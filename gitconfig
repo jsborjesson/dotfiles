@@ -15,7 +15,7 @@
     dt = difftool
     f  = fetch
     l  = log
-    lo = log --oneline
+    lo = log --oneline --decorate
     pl = pull
     ps = push
     s  = status --short
