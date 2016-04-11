@@ -41,7 +41,7 @@
     pulled        = log -p --reverse --no-merges --stat @{1}..
     pure          = pull --rebase
     remember      = update-index --no-assume-unchanged
-    sf            = !git status --short | awk '{ print $2 }'
+    status-files  = !git status --short | awk '{ print $2 }'
     sha           = rev-parse --short HEAD
     stashes       = stash list
     stu           = stash --include-untracked
