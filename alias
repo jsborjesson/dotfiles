@@ -16,7 +16,7 @@ alias vd='v -d' # neovimdiff
 alias g='git'
 alias gds='git diff --staged'
 alias gl='git log --decorate --oneline -10'
-alias gs='git diff'
+alias gs='git status --short'
 
 # ruby
 alias reh='rbenv rehash'
