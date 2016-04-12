@@ -26,6 +26,7 @@ alias be='bundle exec'
 
 # other
 alias c='pygmentize -O style=monokai -f console256 -g'
+alias dm='docker-machine'
 alias jason='python -m json.tool'
 alias mark='open -F -a Marked\ 2'
 alias nzbsync='cp ~/Downloads/*.nzb /Volumes/Data/Downloads/nzbs && rm ~/Downloads/*.nzb'
