@@ -10,6 +10,7 @@ brew install ctags
 brew install git
 brew install htop
 brew install hub
+brew install python
 brew install rbenv ruby-build
 brew install tmux reattach-to-user-namespace
 brew install tree
@@ -24,7 +25,6 @@ brew install --HEAD neovim
 # brew install jrnl
 # brew install leiningen
 # brew install pandoc
-# brew install python python3
 # brew install ranger
 # brew install shellcheck
 
