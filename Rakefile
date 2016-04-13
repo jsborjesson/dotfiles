@@ -37,8 +37,8 @@ namespace :nvim do
 
     puts "Symlinking files into .config directory"
     sh "mkdir -p ~/.config"
-    sh "ln -si ~/.nvim ~/.config/nvim"
-    sh "ln -si ~/.nvimrc ~/.config/nvim/init.vim"
+    sh "ln -sf ~/.nvim ~/.config/nvim"
+    sh "ln -sf ~/.nvimrc ~/.config/nvim/init.vim"
 
     puts "Installing python module"
     sh "pip install neovim"
