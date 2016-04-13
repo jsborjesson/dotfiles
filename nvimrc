@@ -245,15 +245,9 @@ endfunction
 
 " ==================== Key mappings ====================
 
-" C-J already behaves like enter, this makes it work for bindings to <CR> too
-" (C-M also mostly behaves like enter)
-imap <C-J> <CR>
-nmap <C-J> <CR>
-
 " Navigate wrapped lines easier
 nnoremap j gj
 nnoremap k gk
-
 
 " Shift-; to do the opposite of ; makes a lot of sense, and : now gets the
 " prime real estate it deserves.
