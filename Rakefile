@@ -3,7 +3,17 @@ require "rake"
 # You can set the test mode by running `rake mytask test=true`
 puts "Running in test mode" if ENV["test"]
 
-EXCLUDES = %w{ Rakefile Brewfile Gemfile Gemfile.lock *.sh README.md LICENSE NOTES.md }
+EXCLUDES = %w{
+  *.sh
+  Brewfile
+  Gemfile
+  Gemfile.lock
+  LICENSE
+  NOTES.md
+  README.md
+  Rakefile
+  private.xml
+}
 DOTFILES = FileList.new("*").exclude(*EXCLUDES)
 
 desc "Symlink dotfiles into home directory"
