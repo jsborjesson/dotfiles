@@ -357,8 +357,8 @@ let g:gitgutter_realtime = 0
 let g:gitgutter_eager    = 0
 let g:gitgutter_map_keys = 0
 let g:gitgutter_sign_removed_first_line = '_^'
-nmap <Leader>gh <Plug>GitGutterStageHunk
-nmap <Leader>gr <Plug>GitGutterRevertHunk
+nmap <Leader>gA <Plug>GitGutterStageHunk
+nmap <Leader>gu <Plug>GitGutterRevertHunk
 nmap [h <Plug>GitGutterPrevHunk
 nmap ]h <Plug>GitGutterNextHunk
 
