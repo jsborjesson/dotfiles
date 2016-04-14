@@ -37,7 +37,6 @@
     dsw           = diff --staged --color-words
     dw            = diff --color-words
     fix           = commit --amend -C HEAD
-    standup       = log --oneline --decorate --author alcesleo --since yesterday
     forget        = update-index --assume-unchanged
     forgotten     = !git ls-files -v | grep ^[a-z]
     iss           = browse -- issues
@@ -48,8 +47,10 @@
     prs           = browse -- pulls
     pulled        = log -p --reverse --no-merges --stat @{1}..
     pure          = pull --rebase
+    rec           = rebase --continue
     remember      = update-index --no-assume-unchanged
     sha           = rev-parse --short HEAD
+    standup       = log --oneline --decorate --author alcesleo --since yesterday
     stashes       = stash list
     status-files  = !git status --short | awk '{ print $2 }'
     stu           = stash --include-untracked
