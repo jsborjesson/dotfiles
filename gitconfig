@@ -37,6 +37,7 @@
     dsw           = diff --staged --color-words
     dw            = diff --color-words
     fix           = commit --amend -C HEAD
+    standup       = log --oneline --decorate --author alcesleo --since yesterday
     forget        = update-index --assume-unchanged
     forgotten     = !git ls-files -v | grep ^[a-z]
     iss           = browse -- issues
