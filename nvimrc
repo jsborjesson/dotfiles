@@ -348,8 +348,8 @@ nnoremap <Leader>ga :Gwrite<CR>
 nnoremap <Leader>gc :Gcommit -v<CR>
 nnoremap <Leader>gf :Gwrite<CR>:Gcommit -v<CR>i
 nnoremap <Leader>gp :Gpush<CR>
-nnoremap <Leader>gb :Gbrowse<CR>
-xnoremap <Leader>gb :Gbrowse<CR>
+nnoremap <Leader>gh :Gbrowse<CR>
+xnoremap <Leader>gh :Gbrowse<CR>
 
 " Gitgutter
 let g:gitgutter_realtime = 0
