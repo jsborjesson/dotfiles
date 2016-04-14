@@ -40,6 +40,7 @@
     forget        = update-index --assume-unchanged
     forgotten     = !git ls-files -v | grep ^[a-z]
     iss           = browse -- issues
+    lol           = log --graph --oneline --decorate --all
     plush         = !git pull --rebase && git push
     pop           = stash pop
     pro           = !git push && hub pull-request -o
@@ -54,7 +55,6 @@
     supdate       = submodule update --init --recursive
     tfo           = !git reset . && git checkout -- . && git clean -fd
     todo          = grep --line-number -E "(TODO|FIXME).*"
-    tree          = log --graph --oneline --decorate --all
     uncommit      = reset --soft HEAD^
     unstage       = reset HEAD
     yolo          = push --force
