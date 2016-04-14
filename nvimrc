@@ -345,8 +345,7 @@ let g:easy_align_delimiters = { '"': { 'pattern': '"\+', 'delimiter_align': 'l',
 
 " Fugitive
 nnoremap <Leader>ga :Gwrite<CR>
-nnoremap <Leader>gc :Gcommit<CR>
-nnoremap <Leader>gv :Gcommit -v<CR>
+nnoremap <Leader>gc :Gcommit -v<CR>
 nnoremap <Leader>gf :Gwrite<CR>:Gcommit -v<CR>i
 nnoremap <Leader>gp :Gpush<CR>
 nnoremap <Leader>gb :Gbrowse<CR>
