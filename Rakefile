@@ -74,6 +74,11 @@ task :brew do
   puts "Install Homebrew packages either by running ./brew.sh or copy pasting the commands you need."
 end
 
+desc "Install tmux plugins"
+task :tmux do
+  sh "git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm"
+end
+
 desc "Configure Mac OS using the osx.sh file"
 task :osx do
   puts "Running osx.sh..."
