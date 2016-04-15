@@ -17,7 +17,7 @@
     dt = difftool
     f  = fetch
     h  = browse
-    l  = log
+    l  = log --oneline --decorate -15
     lo = log --oneline --decorate
     pl = pull
     pr = pull-request
