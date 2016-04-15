@@ -28,6 +28,7 @@
 
     amend         = commit --amend
     bd            = branch --delete
+    bm            = branch -m
     changed-files = show --pretty="format:" --name-only
     changelog     = !git log --oneline `git describe --abbrev=0`..HEAD
     cob           = checkout -b
