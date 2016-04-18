@@ -71,6 +71,9 @@ syntax on
 
 " ==================== Theme ====================
 
+" List of colors here: https://github.com/flazz/vim-colorschemes/tree/master/colors
+colorscheme blackboard
+
 " Make sure colors work in tmux
 if exists('$TMUX')
     let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -78,8 +81,6 @@ endif
 
 " Thin cursor in insert mode
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
-
-colorscheme blackboard
 
 " No split separator char
 set fillchars+=vert:\  " There's significant whitespace before this comment
