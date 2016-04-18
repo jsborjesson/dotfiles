@@ -76,7 +76,11 @@ end
 
 desc "Install tmux plugins"
 task :tmux do
+  puts "Installing TPM"
   sh "git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm"
+
+  puts "Installing plugins"
+  sh "~/.tmux/plugins/tpm/bindings/install_plugins"
 end
 
 desc "Configure Mac OS using the osx.sh file"
