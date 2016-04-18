@@ -96,8 +96,8 @@ augroup settings
     autocmd FileType * setlocal formatoptions-=o
 
     " Relative numbers in command mode, and normal in insert mode
-    autocmd InsertEnter * set norelativenumber
-    autocmd InsertLeave * set relativenumber
+    " autocmd InsertEnter * set norelativenumber
+    " autocmd InsertLeave * set relativenumber
 
     " Automatically rebalance splits on resize
     autocmd VimResized * :wincmd =
@@ -140,7 +140,6 @@ set nojoinspaces      " Join lines containing punctuation correctly
 set lazyredraw        " Don't redraw until macro has finished running
 set nowrap
 set number
-set relativenumber
 set synmaxcol=512     " Turn of syntax for absurdly long lines (makes opening huge json-files quick)
 set listchars+=tab:»·
 set diffopt+=vertical
