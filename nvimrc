@@ -31,7 +31,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'kien/ctrlp.vim'
 Plug 'kopischke/vim-fetch'   " Handle line:column numbers in filenames
-Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'flazz/vim-colorschemes'
 Plug 'rking/ag.vim'
 Plug 'vim-scripts/ReplaceWithRegister'
 
@@ -79,7 +79,7 @@ endif
 " Thin cursor in insert mode
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
-colorscheme hybrid_reverse
+colorscheme blackboard
 
 " No split separator char
 set fillchars+=vert:\  " There's significant whitespace before this comment
