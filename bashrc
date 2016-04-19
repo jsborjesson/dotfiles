@@ -34,14 +34,22 @@ __git_complete g __git_main
 
 ### Prompt
 
+function exit_status() {
+   es=$?
+   if ! [ $es -eq 0 ]; then
+       echo -e "\nExited: ${es}"
+   fi
+}
+
 # https://gist.github.com/alcesleo/e8628664df11b3218321
 Color_Off='\[\e[0m\]'
 IBlue='\[\e[0;94m\]'
 IGreen='\[\e[0;92m\]'
+IRed='\[\e[0;91m\]'
 IWhite='\[\e[0;97m\]'
 IYellow='\[\e[0;93m\]'
 
-PS1="\n$IYellow\A $IGreen\w $IBlue\$(__git_ps1 '(%s)')\n$IWhite\$$Color_Off "
+PS1="$IRed\$(exit_status)\n$IYellow\A $IGreen\w $IBlue\$(__git_ps1 '(%s)')\n$IWhite\$$Color_Off "
 
 ### Path
 
