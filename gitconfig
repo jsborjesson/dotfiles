@@ -50,7 +50,7 @@
     rec           = rebase --continue
     remember      = update-index --no-assume-unchanged
     sha           = rev-parse --short HEAD
-    standup       = log --oneline --decorate --author alcesleo --since yesterday
+    standup       = log --oneline --decorate --author alcesleo --since yesterday --branches
     stashes       = stash list
     status-files  = !git status --short | awk '{ print $2 }'
     stu           = stash --include-untracked
