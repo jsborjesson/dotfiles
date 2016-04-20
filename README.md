@@ -16,7 +16,7 @@
 * After `brew install`ing the new version of your preferred shell:
     * `sudo vim /etc/shells` and add it there. (Probably something like `/usr/local/bin/bash`)
     * `chsh -s /usr/local/bin/bash` to set it as default
-* In `Keyboard` settings, remap Caps Lock to Control
+* Remap caps lock
 
 ### Vim
 
@@ -36,14 +36,11 @@ vint --enable-neovim --style nvimrc
 
 ### Ruby
 
-Rbenv handles versions.
-
 ```bash
 rbenv install -l     # list available ruby versions
 rbenv install 2.1.2  # install the ruby you want
 rbenv global 2.1.2   # set it as the default
 
-# cannot live without bundle
 gem install bundler
 rbenv rehash
 
