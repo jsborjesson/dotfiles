@@ -101,7 +101,8 @@ namespace :karabiner do
     sh "sh ./karabiner.sh"
   end
 
-  task :private do
+  desc "Link the private.xml to where it is loaded by Karabiner"
+  task :link do
     private_xml = File.expand_path("./private.xml")
     destination = File.expand_path("~/Library/Application Support/Karabiner/private.xml")
     FileUtils.ln_sf(private_xml, destination)
