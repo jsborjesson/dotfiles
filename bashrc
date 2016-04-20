@@ -37,7 +37,8 @@ __git_complete g __git_main
 function exit_status() {
    es=$?
    if ! [ $es -eq 0 ]; then
-       echo -e "\nExited: ${es}"
+       # Without the space at the end, bash will truncate the newline
+       echo -e "\nExited: ${es}\n "
    fi
 }
 
