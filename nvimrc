@@ -74,6 +74,7 @@ syntax on
 " List of colors here: https://github.com/flazz/vim-colorschemes/tree/master/colors
 colorscheme blackboard
 highlight SignColumn guifg=#eeeeee guibg=#090B18
+highlight Comment guifg=gray
 
 " Make sure colors work in tmux
 if exists('$TMUX')
