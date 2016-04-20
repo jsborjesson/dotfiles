@@ -4,22 +4,6 @@
   <item>
     <name>Custom</name>
     <item>
-      <name>Custom pinky characters</name>
-      <identifier>remap.custom_pinky_characters</identifier>
-      <appendix>(F+U to _)</appendix>
-      <appendix>(F+M to -)</appendix>
-      <appendix>(F+, to +)</appendix>
-      <appendix>(F+I to |)</appendix>
-      <appendix>(F+H to ^)</appendix>
-      <appendix>(F+L to $)</appendix>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::U, KeyCode::MINUS, ModifierFlag::SHIFT_L</autogen>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::M, KeyCode::MINUS</autogen>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::COMMA, KeyCode::EQUAL, ModifierFlag::SHIFT_L</autogen>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::I, KeyCode::BACKSLASH, ModifierFlag::SHIFT_L</autogen>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::H, KeyCode::6, ModifierFlag::SHIFT_L</autogen>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::L, KeyCode::4, ModifierFlag::SHIFT_L</autogen>
-    </item>
-    <item>
       <name>Engelbart COMMAND</name>
       <identifier>remap.custom_cmd</identifier>
       <appendix>(A+S to COMMAND_L)</appendix>
@@ -34,6 +18,28 @@
       <appendix>(J+L to ENTER)</appendix>
       <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::F, KeyCode::TAB</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::L, KeyCode::ENTER</autogen>
+    </item>
+    <item>
+      <name>Fn special characters</name>
+      <identifier>remap.custom_fn_characters</identifier>
+      <appendix>(Fn+, to +)</appendix>
+      <appendix>(Fn+A to !)</appendix>
+      <appendix>(Fn+B to \)</appendix>
+      <appendix>(Fn+E to =)</appendix>
+      <appendix>(Fn+H to ^)</appendix>
+      <appendix>(Fn+I to |)</appendix>
+      <appendix>(Fn+L to $)</appendix>
+      <appendix>(Fn+M to -)</appendix>
+      <appendix>(Fn+U to _)</appendix>
+      <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::EQUAL,     ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::A,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::1,         ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::B,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::BACKSLASH,                      </autogen>
+      <autogen>__KeyToKey__ KeyCode::E,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::EQUAL,                          </autogen>
+      <autogen>__KeyToKey__ KeyCode::H,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::6,         ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::I,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::BACKSLASH, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::L,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::4,         ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::M,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::MINUS                           </autogen>
+      <autogen>__KeyToKey__ KeyCode::U,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::MINUS,     ModifierFlag::SHIFT_L</autogen>
     </item>
   </item>
 </root>
