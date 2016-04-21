@@ -12,6 +12,14 @@
       <autogen>__SimultaneousKeyPresses__ KeyCode::L, KeyCode::SEMICOLON, KeyCode::COMMAND_R</autogen>
     </item>
     <item>
+      <name>Engelbart SHIFT</name>
+      <identifier>remap.custom_shift</identifier>
+      <appendix>(A+D to SHIFT_L)</appendix>
+      <appendix>(K+; to SHIFT_R)</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::D, KeyCode::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::K, KeyCode::SEMICOLON, KeyCode::SHIFT_R</autogen>
+    </item>
+    <item>
       <name>Engelbart TAB/ENTER</name>
       <identifier>remap.custom_tab_enter</identifier>
       <appendix>(S+F to TAB)</appendix>
