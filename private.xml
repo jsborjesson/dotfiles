@@ -30,6 +30,7 @@
       <appendix>(Fn+E to =)</appendix>
       <appendix>(Fn+I to |)</appendix>
       <appendix>(Fn+M to -)</appendix>
+      <appendix>(Fn+T to ~)</appendix>
       <appendix>(Fn+U to _)</appendix>
       <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::EQUAL,     ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::A,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::1,         ModifierFlag::SHIFT_L</autogen>
@@ -39,6 +40,7 @@
       <autogen>__KeyToKey__ KeyCode::E,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::EQUAL,                          </autogen>
       <autogen>__KeyToKey__ KeyCode::I,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::BACKSLASH, ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::M,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::MINUS                           </autogen>
+      <autogen>__KeyToKey__ KeyCode::T,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::U,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::MINUS,     ModifierFlag::SHIFT_L</autogen>
     </item>
   </item>
