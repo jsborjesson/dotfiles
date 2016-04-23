@@ -6,18 +6,18 @@
     <item>
       <name>Engelbart COMMAND</name>
       <identifier>remap.custom_cmd</identifier>
-      <appendix>(A+S to COMMAND_L)</appendix>
-      <appendix>(L+; to COMMAND_R)</appendix>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::S, KeyCode::COMMAND_L</autogen>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::L, KeyCode::SEMICOLON, KeyCode::COMMAND_R</autogen>
+      <appendix>(F+G to COMMAND_L)</appendix>
+      <appendix>(H+J to COMMAND_R)</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::G, KeyCode::COMMAND_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::H, KeyCode::J, KeyCode::COMMAND_R</autogen>
     </item>
     <item>
       <name>Engelbart SHIFT</name>
       <identifier>remap.custom_shift</identifier>
-      <appendix>(A+D to SHIFT_L)</appendix>
-      <appendix>(K+; to SHIFT_R)</appendix>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::D, KeyCode::SHIFT_L</autogen>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::K, KeyCode::SEMICOLON, KeyCode::SHIFT_R</autogen>
+      <appendix>(A+S to SHIFT_L)</appendix>
+      <appendix>(L+; to SHIFT_R)</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::S, KeyCode::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::L, KeyCode::SEMICOLON, KeyCode::SHIFT_R</autogen>
     </item>
     <item>
       <name>Engelbart TAB/ENTER</name>
