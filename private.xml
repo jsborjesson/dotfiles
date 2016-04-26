@@ -33,6 +33,8 @@
       <appendix>(Fn+' to :)</appendix>
       <appendix>(Fn+, to +)</appendix>
       <appendix>(Fn+/ to ?)</appendix>
+      <appendix>(Fn+0 to ))</appendix>
+      <appendix>(Fn+9 to ()</appendix>
       <appendix>(Fn+; to :)</appendix>
       <appendix>(Fn+A to !)</appendix>
       <appendix>(Fn+B to \)</appendix>
@@ -46,6 +48,8 @@
       <autogen>__KeyToKey__ KeyCode::QUOTE,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::QUOTE,     ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::COMMA,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::EQUAL,     ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::SLASH,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::SLASH,     ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::9,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::9,         ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::0,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::0,         ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::SEMICOLON, ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::A,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::1,         ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::B,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::BACKSLASH,                      </autogen>
