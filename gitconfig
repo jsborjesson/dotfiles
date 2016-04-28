@@ -39,7 +39,7 @@
     dw            = diff --color-words
     fix           = commit --amend -C HEAD
     forget        = update-index --assume-unchanged
-    forgotten     = !git ls-files -v | grep ^[a-z]
+    forgotten     = !git ls-files -v | grep "^h" | awk '{ print $2 }'
     iss           = browse -- issues
     plush         = !git pull --rebase && git push
     pop           = stash pop
