@@ -314,9 +314,6 @@ xmap <Leader># #``
 " Maximize split
 nnoremap <Leader>z :silent tabedit %<CR>
 
-" Enter insert mode with correct indentation
-nnoremap <Leader><Tab> ddO
-
 " Wrap until end of line in parenthesis
 nmap <Leader>( ysg_)
 nmap <Leader>) "_xysg_)
@@ -405,7 +402,7 @@ nnoremap <silent> <C-f> :VtrSendLinesToRunner<CR>
 xnoremap <silent> <C-f> :VtrSendLinesToRunner<CR>
 
 " Switch
-let g:switch_mapping = '<Leader>gs'
+let g:switch_mapping = '<Leader><Tab>'
 
 " Thesaurus
 nmap gK :!the <C-R><C-W><CR>
