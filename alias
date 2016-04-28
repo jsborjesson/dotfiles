@@ -39,7 +39,6 @@ alias nzbsync='cp ~/Downloads/*.nzb /Volumes/Data/Downloads/nzbs && rm ~/Downloa
 alias wiki='vp ~/Dropbox/wiki/'
 
 # work
-alias dock='docker-compose -f docker-compose-infrastructure.yml -f docker-compose.yml'
 alias jail='date +"jail_%Y-%m-%d"'
 
 # cd to location of topmost Finder window
