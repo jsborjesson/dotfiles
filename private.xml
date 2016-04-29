@@ -41,17 +41,17 @@
       <appendix>(Fn+T to ~)</appendix>
       <appendix>(Fn+U to _)</appendix>
       <appendix>(Fn+Q to ?)</appendix>
-      <autogen>__KeyToKey__ KeyCode::A,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::1,         ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::B,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::BACKSLASH,                      </autogen>
-      <autogen>__KeyToKey__ KeyCode::C,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::6,         ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::D,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::4,         ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::E,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::EQUAL,                          </autogen>
-      <autogen>__KeyToKey__ KeyCode::I,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::BACKSLASH, ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::M,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::MINUS                           </autogen>
-      <autogen>__KeyToKey__ KeyCode::P,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::EQUAL,     ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::T,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::U,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::MINUS,     ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::Q,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::SLASH,     ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::FN, KeyCode::1,         ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::FN, KeyCode::BACKSLASH, </autogen>
+      <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::FN, KeyCode::6,         ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::FN, KeyCode::4,         ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::FN, KeyCode::EQUAL,     </autogen>
+      <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::FN, KeyCode::BACKSLASH, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::FN, KeyCode::MINUS                           </autogen>
+      <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::FN, KeyCode::EQUAL,     ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::FN, KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::FN, KeyCode::MINUS,     ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::FN, KeyCode::SLASH,     ModifierFlag::SHIFT_L</autogen>
     </item>
     <item>
       <name>Fn shifted characters</name>
