@@ -58,6 +58,9 @@ Plug 'rust-lang/rust.vim'
 " Elixir
 Plug 'elixir-lang/vim-elixir'
 
+" Go
+Plug 'fatih/vim-go', { 'for': 'go' }
+
 " Tmux
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'christoomey/vim-tmux-runner'
