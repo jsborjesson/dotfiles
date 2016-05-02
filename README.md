@@ -17,6 +17,11 @@
     * `sudo vim /etc/shells` and add it there. (Probably something like `/usr/local/bin/bash`)
     * `chsh -s /usr/local/bin/bash` to set it as default
 * Remap caps lock
+* **Settings**
+    * Settings > General > Use dark menu bar
+    * Settings > Accessibility > Display > Reduce transparency
+    * Settings > Accessibility > Zoom
+    * Settings > Displays > Automatically adjust brightness
 
 ### Vim
 
