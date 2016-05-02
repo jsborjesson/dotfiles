@@ -6,6 +6,7 @@ alias git='hub'
 
 alias src='source ~/.bashrc'
 alias tac='tail -r'
+alias la='ls -la'
 
 # vim
 alias v='nvim'
