@@ -49,11 +49,7 @@ function cdf() {
 
 # cd to root of git repo
 function cdr() {
-    TEMP_DIR=$(pwd)
-    while ! [ -d .git ]; do
-        cd ..
-    done
-    OLDPWD=$TEMP_DIR
+   git rev-parse --show-toplevel > /dev/null && cd $(git rev-parse --show-toplevel)
 }
 
 # mkdir and enter it
