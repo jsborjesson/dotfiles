@@ -32,6 +32,9 @@ fi
 # Enable git completion for the g alias
 __git_complete g __git_main
 
+
+export GOPATH=~/.go
+
 ### Prompt
 
 function exit_status() {
@@ -57,3 +60,4 @@ PS1="$IRed\$(exit_status)\n$IYellow\A $IGreen\w $IBlue\$(__git_ps1 '(%s)')\n$IWh
 export PATH=~/.bin:$PATH
 export PATH=./bin:$PATH
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+export PATH=$PATH:${GOPATH//://bin:}/bin
