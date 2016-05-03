@@ -5,3 +5,4 @@ nvim/*
 !nvim/after/
 !nvim/undo/.keep
 ruby-tapas-downloader
+bashrc.local

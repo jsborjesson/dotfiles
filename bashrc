@@ -61,3 +61,10 @@ export PATH=~/.bin:$PATH
 export PATH=./bin:$PATH
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 export PATH=$PATH:${GOPATH//://bin:}/bin
+
+
+### Source local bashrc
+
+if [ -f ~/.bashrc.local ]; then
+    source ~/.bashrc.local
+fi
