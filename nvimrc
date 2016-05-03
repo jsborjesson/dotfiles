@@ -143,6 +143,7 @@ command! TrimWhitespace execute ':call TrimWhitespace()'
 
 
 " ==================== Settings ====================
+" General settings
 set hidden
 set gdefault
 set clipboard=unnamed " Yank to system clipboard
@@ -155,6 +156,10 @@ set listchars+=tab:»·
 set diffopt+=vertical
 set wildignorecase
 
+" Ignore case if all lowercase
+set ignorecase
+set smartcase
+
 " Default indentation settings
 set tabstop=8
 set shiftwidth=4
@@ -165,9 +170,6 @@ set shiftround
 " More natural split destinations
 set splitright
 set splitbelow
-
-set ignorecase
-set smartcase " Ignore case if all lowercase
 
 " Don't need it
 set nobackup
