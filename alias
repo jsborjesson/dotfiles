@@ -36,6 +36,7 @@ alias jason='python -m json.tool'
 alias jw='jrnl work'
 alias mark='open -F -a Marked\ 2'
 alias nzbsync='cp ~/Downloads/*.nzb /Volumes/Data/Downloads/nzbs && rm ~/Downloads/*.nzb'
+alias path='echo $PATH | tr : \\n'
 alias wiki='vp ~/Dropbox/wiki/'
 
 # work
