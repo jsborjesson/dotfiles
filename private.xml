@@ -4,14 +4,6 @@
   <item>
     <name>Custom</name>
     <item>
-      <name>Engelbart COMMAND</name>
-      <identifier>remap.custom_cmd</identifier>
-      <appendix>(F+G to COMMAND_L)</appendix>
-      <appendix>(H+J to COMMAND_R)</appendix>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::G, KeyCode::COMMAND_L</autogen>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::H, KeyCode::J, KeyCode::COMMAND_R</autogen>
-    </item>
-    <item>
       <name>Engelbart SHIFT</name>
       <identifier>remap.custom_shift</identifier>
       <appendix>(A+S to SHIFT_L)</appendix>
