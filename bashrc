@@ -1,7 +1,5 @@
 export EDITOR='nvim'
 
-export LSCOLORS=GxBxhxDxfxhxhxhxhxcxcx # Only as fallback for BSD ls
-
 shopt -s autocd   # cd without cd
 shopt -s globstar # Enable ** for recursive globbing
 
@@ -62,6 +60,7 @@ PS1="$IRed\$(exit_status)\n$IYellow\A $IGreen\w $IBlue\$(__git_ps1 '(%s)')\n$IWh
 # ----- Path -----
 export PATH=~/.bin:$PATH
 export PATH=./bin:$PATH
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 export PATH=$PATH:${GOPATH//://bin:}/bin
 

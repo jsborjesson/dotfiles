@@ -1,12 +1,11 @@
 shopt -s expand_aliases
 
 # Remaps, you can always access the unaliased version by prepending \
-alias ls='ls -G -1' # color the output and put every entry on its own line
+alias ls='ls --color -1' # color the output and put every entry on its own line
 alias git='hub'
 
 alias src='source ~/.bashrc'
-alias tac='tail -r'
-alias la='ls -la'
+alias la='grc ls -lha --color'
 
 # vim
 alias v='nvim'

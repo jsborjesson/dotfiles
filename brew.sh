@@ -6,8 +6,10 @@ brew upgrade
 
 brew install ag
 brew install bash bash-completion
+brew install coreutils
 brew install ctags
 brew install git
+brew install grc
 brew install htop
 brew install hub
 brew install python
