@@ -25,7 +25,7 @@
       <appendix>(S+F to TAB)</appendix>
       <appendix>(J+L to ENTER)</appendix>
       <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::F, KeyCode::TAB</autogen>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::L, KeyCode::ENTER</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::L, KeyCode::RETURN</autogen>
     </item>
     <item>
       <name>Fn special characters</name>
