@@ -1,8 +1,6 @@
 export EDITOR='nvim'
-export LSCOLORS=GxBxhxDxfxhxhxhxhxcxcx
 
-export GIT_PS1_SHOWDIRTYSTATE=1     # Show * for dirty repo in prompt
-export GIT_PS1_SHOWUNTRACKEDFILES=1 # Show % for untracked files in prompt
+export LSCOLORS=GxBxhxDxfxhxhxhxhxcxcx # Only as fallback for BSD ls
 
 shopt -s autocd   # cd without cd
 shopt -s globstar # Enable ** for recursive globbing
@@ -12,6 +10,8 @@ stty -ixon
 
 source ~/.alias
 
+
+# ----- Initialization -----
 # Initialize rbenv
 eval "$(rbenv init -)"
 
@@ -32,10 +32,13 @@ fi
 # Enable git completion for the g alias
 __git_complete g __git_main
 
-
+# Install go packages here
 export GOPATH=~/.go
 
-### Prompt
+
+# ----- Prompt -----
+export GIT_PS1_SHOWDIRTYSTATE=1     # Show * for dirty repo in prompt
+export GIT_PS1_SHOWUNTRACKEDFILES=1 # Show % for untracked files in prompt
 
 function exit_status() {
    es=$?
@@ -55,16 +58,15 @@ IYellow='\[\e[0;93m\]'
 
 PS1="$IRed\$(exit_status)\n$IYellow\A $IGreen\w $IBlue\$(__git_ps1 '(%s)')\n$IWhite\$$Color_Off "
 
-### Path
 
+# ----- Path -----
 export PATH=~/.bin:$PATH
 export PATH=./bin:$PATH
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 export PATH=$PATH:${GOPATH//://bin:}/bin
 
 
-### Source local bashrc
-
+# ----- bashrc.local -----
 if [ -f ~/.bashrc.local ]; then
     source ~/.bashrc.local
 fi
