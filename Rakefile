@@ -69,9 +69,10 @@ task :brew do
     puts "Installing Homebrew..."
     sh 'ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
   end
-
   puts "Homebrew is installed."
-  puts "Install Homebrew packages either by running ./brew.sh or copy pasting the commands you need."
+
+  puts "Installing packages from brew.sh"
+  sh "sh ./brew.sh"
 end
 
 desc "Install tmux plugins"
