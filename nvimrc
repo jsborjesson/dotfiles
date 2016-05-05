@@ -153,6 +153,7 @@ set listchars+=tab:»·
 set nojoinspaces      " Join lines containing punctuation correctly
 set nowrap
 set number
+set sidescroll=1
 set synmaxcol=512     " Turn of syntax for absurdly long lines (makes opening huge json-files quick)
 set wildignorecase
 
