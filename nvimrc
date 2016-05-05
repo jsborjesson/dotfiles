@@ -144,16 +144,16 @@ command! TrimWhitespace execute ':call TrimWhitespace()'
 
 " ==================== Settings ====================
 " General settings
-set hidden
-set gdefault
 set clipboard=unnamed " Yank to system clipboard
-set nojoinspaces      " Join lines containing punctuation correctly
+set diffopt+=vertical
+set gdefault
+set hidden
 set lazyredraw        " Don't redraw until macro has finished running
+set listchars+=tab:»·
+set nojoinspaces      " Join lines containing punctuation correctly
 set nowrap
 set number
 set synmaxcol=512     " Turn of syntax for absurdly long lines (makes opening huge json-files quick)
-set listchars+=tab:»·
-set diffopt+=vertical
 set wildignorecase
 
 " Ignore case if all lowercase
@@ -161,15 +161,15 @@ set ignorecase
 set smartcase
 
 " Default indentation settings
-set tabstop=8
-set shiftwidth=4
-set softtabstop=0
 set expandtab
 set shiftround
+set shiftwidth=4
+set softtabstop=0
+set tabstop=8
 
 " More natural split destinations
-set splitright
 set splitbelow
+set splitright
 
 " Don't need it
 set nobackup
