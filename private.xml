@@ -47,14 +47,12 @@
     </item>
     <item>
       <name>Fn shifted characters</name>
-      <identifier>remap.custom_fn_shift</identifier>
+      <identifier>remap.custom_fn_shift_chars</identifier>
       <appendix>Use Fn as Shift for some non-alphabetic characters</appendix>
       <appendix>(Fn+' to ")</appendix>
       <appendix>(Fn+, to &lt;)</appendix>
       <appendix>(Fn+. to &gt;)</appendix>
       <appendix>(Fn+/ to ?)</appendix>
-      <appendix>(Fn+0 to ))</appendix>
-      <appendix>(Fn+9 to ()</appendix>
       <appendix>(Fn+; to :)</appendix>
       <appendix>(Fn+[ to {)</appendix>
       <appendix>(Fn+] to })</appendix>
@@ -62,11 +60,24 @@
       <autogen>__KeyToKey__ KeyCode::COMMA,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::COMMA,         ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::DOT,           ModifierFlag::FN | ModifierFlag::NONE, KeyCode::DOT,           ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::SLASH,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::SLASH,         ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::9,             ModifierFlag::FN | ModifierFlag::NONE, KeyCode::9,             ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::0,             ModifierFlag::FN | ModifierFlag::NONE, KeyCode::0,             ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::SEMICOLON,     ModifierFlag::FN | ModifierFlag::NONE, KeyCode::SEMICOLON,     ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT,  ModifierFlag::FN | ModifierFlag::NONE, KeyCode::BRACKET_LEFT,  ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::BRACKET_RIGHT, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
+    </item>
+    <item>
+      <name>Fn shifted numbers</name>
+      <identifier>remap.custom_fn_shift_numbers</identifier>
+      <appendix>Use Fn as Shift for the number row</appendix>
+      <autogen>__KeyToKey__ KeyCode::1, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::1, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::2, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::2, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::3, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::3, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::4, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::4, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::5, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::5, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::6, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::6, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::7, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::7, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::8, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::8, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::9, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::9, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::0, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::0, ModifierFlag::SHIFT_L</autogen>
     </item>
   </item>
 </root>
