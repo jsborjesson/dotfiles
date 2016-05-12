@@ -7,3 +7,5 @@
 
 (require 'org)
 (setq org-log-done t)
+
+(menu-bar-mode -1)
