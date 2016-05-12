@@ -5,3 +5,5 @@
 (require 'evil)
 (evil-mode t)
 
+(require 'org)
+(setq org-log-done t)
