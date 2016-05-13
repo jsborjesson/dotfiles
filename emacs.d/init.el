@@ -8,4 +8,6 @@
 (require 'org)
 (setq org-log-done t)
 
+(setq calendar-week-start-day 1)
+
 (menu-bar-mode -1)
