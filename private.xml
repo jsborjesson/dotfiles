@@ -30,7 +30,7 @@
     <item>
       <name>Fn special characters</name>
       <identifier>remap.custom_fn_characters</identifier>
-      <appendix>(Fn+A to !)</appendix>
+      <appendix>(Fn+A to @)</appendix>
       <appendix>(Fn+B to \)</appendix>
       <appendix>(Fn+C to ^)</appendix>
       <appendix>(Fn+D to $)</appendix>
@@ -39,10 +39,11 @@
       <appendix>(Fn+M to -)</appendix>
       <appendix>(Fn+O to &amp;)</appendix>
       <appendix>(Fn+P to +)</appendix>
+      <appendix>(Fn+Q to ?)</appendix>
       <appendix>(Fn+T to ~)</appendix>
       <appendix>(Fn+U to _)</appendix>
-      <appendix>(Fn+Q to ?)</appendix>
-      <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::FN, KeyCode::1,         ModifierFlag::SHIFT_L</autogen>
+      <appendix>(Fn+X to !)</appendix>
+      <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::FN, KeyCode::2,         ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::FN, KeyCode::BACKSLASH, </autogen>
       <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::FN, KeyCode::6,         ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::FN, KeyCode::4,         ModifierFlag::SHIFT_L</autogen>
@@ -51,9 +52,10 @@
       <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::FN, KeyCode::MINUS                           </autogen>
       <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::FN, KeyCode::7,         ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::FN, KeyCode::EQUAL,     ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::FN, KeyCode::SLASH,     ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::FN, KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::FN, KeyCode::MINUS,     ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::FN, KeyCode::SLASH,     ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::FN, KeyCode::1,         ModifierFlag::SHIFT_L</autogen>
     </item>
     <item>
       <name>Fn shifted characters</name>
