@@ -12,6 +12,14 @@
       <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::L, KeyCode::SHIFT_R</autogen>
     </item>
     <item>
+      <name>Engelbart FN</name>
+      <identifier>remap.custom_fn</identifier>
+      <appendix>(S+V to FN)</appendix>
+      <appendix>(N+L to FN)</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::V, KeyCode::FN</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::N, KeyCode::L, KeyCode::FN</autogen>
+    </item>
+    <item>
       <name>Engelbart TAB/ENTER</name>
       <identifier>remap.custom_tab_enter</identifier>
       <appendix>(S+F to TAB)</appendix>
