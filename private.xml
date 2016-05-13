@@ -6,10 +6,10 @@
     <item>
       <name>Engelbart SHIFT</name>
       <identifier>remap.custom_shift</identifier>
-      <appendix>(A+S to SHIFT_L)</appendix>
-      <appendix>(L+; to SHIFT_R)</appendix>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::S, KeyCode::SHIFT_L</autogen>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::L, KeyCode::SEMICOLON, KeyCode::SHIFT_R</autogen>
+      <appendix>(S+C to SHIFT_L)</appendix>
+      <appendix>(M+L to SHIFT_R)</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::C, KeyCode::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::L, KeyCode::SHIFT_R</autogen>
     </item>
     <item>
       <name>Engelbart TAB/ENTER</name>
