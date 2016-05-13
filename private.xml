@@ -35,6 +35,7 @@
       <appendix>(Fn+C to ^)</appendix>
       <appendix>(Fn+D to $)</appendix>
       <appendix>(Fn+E to =)</appendix>
+      <appendix>(Fn+H to #)</appendix>
       <appendix>(Fn+I to |)</appendix>
       <appendix>(Fn+M to -)</appendix>
       <appendix>(Fn+O to &amp;)</appendix>
@@ -45,10 +46,11 @@
       <appendix>(Fn+U to _)</appendix>
       <appendix>(Fn+X to !)</appendix>
       <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::FN, KeyCode::2,         ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::FN, KeyCode::BACKSLASH, </autogen>
+      <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::FN, KeyCode::BACKSLASH,                      </autogen>
       <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::FN, KeyCode::6,         ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::FN, KeyCode::4,         ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::FN, KeyCode::EQUAL,     </autogen>
+      <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::FN, KeyCode::EQUAL,                          </autogen>
+      <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::FN, KeyCode::3,         ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::FN, KeyCode::BACKSLASH, ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::FN, KeyCode::MINUS                           </autogen>
       <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::FN, KeyCode::7,         ModifierFlag::SHIFT_L</autogen>
