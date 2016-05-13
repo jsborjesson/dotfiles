@@ -40,6 +40,7 @@
       <appendix>(Fn+O to &amp;)</appendix>
       <appendix>(Fn+P to +)</appendix>
       <appendix>(Fn+Q to ?)</appendix>
+      <appendix>(Fn+S to *)</appendix>
       <appendix>(Fn+T to ~)</appendix>
       <appendix>(Fn+U to _)</appendix>
       <appendix>(Fn+X to !)</appendix>
@@ -52,6 +53,7 @@
       <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::FN, KeyCode::MINUS                           </autogen>
       <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::FN, KeyCode::7,         ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::FN, KeyCode::EQUAL,     ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::FN, KeyCode::8,         ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::FN, KeyCode::SLASH,     ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::FN, KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::FN, KeyCode::MINUS,     ModifierFlag::SHIFT_L</autogen>
