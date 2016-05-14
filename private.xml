@@ -4,20 +4,17 @@
   <item>
     <name>Custom</name>
     <item>
-      <name>Engelbart SHIFT</name>
-      <identifier>remap.custom_shift</identifier>
-      <appendix>(S+C to SHIFT_L)</appendix>
-      <appendix>(M+L to SHIFT_R)</appendix>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::C, KeyCode::SHIFT_L</autogen>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::L, KeyCode::SHIFT_R</autogen>
-    </item>
-    <item>
-      <name>Engelbart FN</name>
-      <identifier>remap.custom_fn</identifier>
-      <appendix>(S+V to FN)</appendix>
-      <appendix>(N+L to FN)</appendix>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::V, KeyCode::FN</autogen>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::N, KeyCode::L, KeyCode::FN</autogen>
+      <name>Custom Engelbart Modifiers</name>
+      <identifier>remap.custom_engelbart_modifiers</identifier>
+      <appendix>(S+D and K+L to SHIFT)</appendix>
+      <appendix>(X+C and ,+. to META)</appendix>
+      <appendix>(C+V and M+, to CMD)</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::S,     KeyCode::D,     KeyCode::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::K,     KeyCode::L,     KeyCode::SHIFT_R</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::X,     KeyCode::C,     KeyCode::OPTION_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::COMMA, KeyCode::DOT,   KeyCode::OPTION_R</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::C,     KeyCode::V,     KeyCode::COMMAND_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::M,     KeyCode::COMMA, KeyCode::COMMAND_R</autogen>
     </item>
     <item>
       <name>Engelbart TAB/ENTER</name>
