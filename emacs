@@ -30,3 +30,15 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (setq ring-bell-function 'ignore)
+
+;; Enable line numbers
+(global-linum-mode t)
+
+;; IDO mode
+(ido-mode t)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+
+;; Disable the splash screen
+(setq inhibit-startup-message t
+      inhibit-startup-echo-area-message t)
