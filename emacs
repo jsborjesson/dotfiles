@@ -32,6 +32,9 @@
     (tool-bar-mode -1)
     (scroll-bar-mode -1)))
 
+;; Start in full screen mode
+(toggle-frame-fullscreen)
+
 (setq ring-bell-function 'ignore)
 
 ;; Enable line numbers
