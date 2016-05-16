@@ -18,6 +18,9 @@
 (use-package evil
   :config (evil-mode t))
 
+(use-package evil-surround
+  :config (global-evil-surround-mode t))
+
 (use-package evil-org)
 
 (use-package magit)
