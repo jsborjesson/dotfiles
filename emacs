@@ -1,28 +1,29 @@
 ;; --- Install packages ---
 (require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+(setq package-enable-at-startup nil)
+
+(add-to-list 'package-archives
+	     '("melpa" . "http://melpa.org/packages/") t)
+
 (package-initialize)
 
-(defvar package-list
-      '(
-	evil
-	magit
-	))
+;; Bootstrap `use-package'
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 
-(or
- (file-exists-p package-user-dir)
- (package-refresh-contents))
+;; Always download missing packages
+(setq use-package-always-ensure t)
 
-(dolist (package package-list)
-  (unless (package-installed-p package)
-    (package-install package)))
+(use-package evil
+  :config (evil-mode t))
 
-;; --- Configure packages ---
-(require 'evil)
-(evil-mode t)
+(use-package evil-org)
 
-(require 'org)
-(setq org-log-done t)
+(use-package magit)
+
+(use-package org
+  :config (setq org-log-done t))
 
 ;; --- Settings ---
 ;; Turn off ugly GUI stuff
