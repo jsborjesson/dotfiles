@@ -29,6 +29,9 @@
   :config (setq org-log-done t))
 
 ;; --- Settings ---
+;; Read this file as elisp
+(add-to-list 'auto-mode-alist '("emacs" . emacs-lisp-mode))
+
 ;; Turn off ugly GUI stuff
 (menu-bar-mode -1)
 (if (display-graphic-p)
@@ -42,7 +45,7 @@
 (setq ring-bell-function 'ignore)
 
 ;; Enable line numbers
-(global-linum-mode t)
+;; (global-linum-mode t)
 
 ;; IDO mode
 (ido-mode t)
