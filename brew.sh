@@ -8,6 +8,7 @@ brew install ag
 brew install bash bash-completion
 brew install coreutils
 brew install ctags
+brew install emacs
 brew install git
 brew install grc
 brew install htop
@@ -36,6 +37,7 @@ brew tap caskroom/versions
 
 brew cask install caffeine
 brew cask install dropbox
+brew cask install emacs
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install karabiner
