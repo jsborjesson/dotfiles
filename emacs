@@ -49,9 +49,12 @@
     (scroll-bar-mode -1)))
 
 ;; Start in full screen mode
-(toggle-frame-fullscreen)
+;; (toggle-frame-fullscreen)
 
 (setq ring-bell-function 'ignore)
+
+;; Start calendar on Monday
+(setq calendar-week-start-day 1)
 
 ;; Enable line numbers
 ;; (global-linum-mode t)
