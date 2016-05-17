@@ -12,8 +12,8 @@
       <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::L, KeyCode::SHIFT_R</autogen>
 
       <appendix>(X+C and ,+. to FN)</appendix>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::X, KeyCode::C, KeyCode::FN</autogen>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::COMMA, KeyCode::DOT, KeyCode::FN</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::S, KeyCode::FN</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::L, KeyCode::SEMICOLON, KeyCode::FN</autogen>
 
       <appendix>(E+R and U+I to CONTROL+SHIFT)</appendix>
       <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::R, KeyCode::CONTROL_L, ModifierFlag::SHIFT_L</autogen>
