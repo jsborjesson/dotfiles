@@ -47,6 +47,7 @@
     prs           = browse -- pulls
     pulled        = log -p --reverse --no-merges --stat @{1}..
     pure          = pull --rebase
+    rea           = rebase --abort
     rec           = rebase --continue
     remember      = update-index --no-assume-unchanged
     sha           = rev-parse --short HEAD
