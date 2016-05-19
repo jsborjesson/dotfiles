@@ -29,6 +29,9 @@
 (use-package evil-commentary
   :config (evil-commentary-mode))
 
+(use-package evil-visualstar
+  :config (global-evil-visualstar-mode))
+
 (use-package evil-org)
 
 
