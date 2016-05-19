@@ -61,8 +61,12 @@
     (tool-bar-mode -1)
     (scroll-bar-mode -1)))
 
-;; Start in full screen mode
-;; (toggle-frame-fullscreen)
+;; Enable Cmd key as Super(s)
+(setq mac-command-modifier 'super)
+
+;; Toggle full screen mode with Cmd-RET
+(global-set-key (kbd "s-<RET>") 'toggle-frame-fullscreen)
+
 
 (setq ring-bell-function 'ignore)
 
