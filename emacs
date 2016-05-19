@@ -26,6 +26,9 @@
 (use-package evil-surround
   :config (global-evil-surround-mode t))
 
+(use-package evil-commentary
+  :config (evil-commentary-mode))
+
 (use-package evil-org)
 
 
