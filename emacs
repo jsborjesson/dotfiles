@@ -65,7 +65,7 @@
 (setq mac-command-modifier 'super)
 
 ;; Toggle full screen mode with Cmd-RET
-(global-set-key (kbd "s-<RET>") 'toggle-frame-fullscreen)
+(global-set-key (kbd "s-<return>") 'toggle-frame-fullscreen)
 
 
 (setq ring-bell-function 'ignore)
