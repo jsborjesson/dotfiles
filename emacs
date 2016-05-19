@@ -1,4 +1,4 @@
-;; --- Install packages ---
+;; --- Setup package management ---
 (require 'package)
 (setq package-enable-at-startup nil)
 
@@ -15,13 +15,20 @@
 ;; Always download missing packages
 (setq use-package-always-ensure t)
 
+
+;; --- Install and configure packages ---
+;; Evil
 (use-package evil
-  :config (evil-mode t))
+  :config
+    (evil-mode t)
+    (define-key evil-normal-state-map (kbd "U") 'undo-tree-redo))
 
 (use-package evil-surround
   :config (global-evil-surround-mode t))
 
 (use-package evil-org)
+
+
 
 (use-package magit)
 
