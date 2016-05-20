@@ -45,12 +45,12 @@
   :config
     (setq org-log-done t)
     (setq org-todo-keywords
-      '((sequence "TODO" "WAITING" "IN-PROGRESS" "DONE"))))
+      '((sequence "TODO" "WAITING" "IN-PROGRESS" "DONE")))
     (setq org-todo-keyword-faces
       '(
         ("TODO" . (:foreground "red" :weight bold))
         ("WAITING" . (:foreground "orange" :weight bold))
-        ("IN-PROGRESS" . (:foreground "sky" :weight bold))))
+        ("IN-PROGRESS" . (:foreground "sky" :weight bold)))))
 
 
 ;; --- Settings ---
