@@ -32,6 +32,9 @@
 (use-package evil-visualstar
   :config (global-evil-visualstar-mode))
 
+(use-package evil-mc
+  :config (evil-mc-mode 1))
+
 (use-package evil-org)
 
 
