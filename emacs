@@ -17,6 +17,13 @@
 
 
 ;; --- Install and configure packages ---
+;; Set theme
+(use-package solarized-theme
+  :config
+    (setq solarized-use-variable-pitch nil)
+    (setq solarized-scale-org-headlines nil)
+    (load-theme 'solarized-dark t))
+
 ;; Evil
 (use-package evil
   :config
