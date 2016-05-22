@@ -7,27 +7,35 @@
       <name>Ergonomic Modifiers</name>
       <identifier>remap.custom_ergonomic_modifiers</identifier>
 
-      <appendix>(S+F and J+L to SHIFT)</appendix>
+      <appendix>D+F and J+K to CONTROL</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::D, KeyCode::F, KeyCode::CONTROL_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::K, KeyCode::CONTROL_R</autogen>
+
+      <appendix>S+D and K+Lto META</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::D, KeyCode::OPTION_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::K, KeyCode::L, KeyCode::OPTION_R</autogen>
+
+      <appendix>S+F and J+L to SHIFT</appendix>
       <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::F, KeyCode::SHIFT_L</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::L, KeyCode::SHIFT_R</autogen>
 
-      <appendix>(X+C and ,+. to FN)</appendix>
+      <appendix>A+S and L+; to FN</appendix>
       <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::S, KeyCode::FN</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::L, KeyCode::SEMICOLON, KeyCode::FN</autogen>
 
-      <appendix>(E+R and U+I to CONTROL+SHIFT)</appendix>
+      <appendix>E+R and U+I to CONTROL+SHIFT</appendix>
       <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::R, KeyCode::CONTROL_L, ModifierFlag::SHIFT_L</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::U, KeyCode::I, KeyCode::CONTROL_R, ModifierFlag::SHIFT_R</autogen>
 
-      <appendix>(X+C and M+, to CONTROL+META)</appendix>
+      <appendix>X+C and M+, to CONTROL+META</appendix>
       <autogen>__SimultaneousKeyPresses__ KeyCode::X, KeyCode::C, KeyCode::CONTROL_L, ModifierFlag::OPTION_L</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::COMMA, KeyCode::CONTROL_R, ModifierFlag::OPTION_R</autogen>
 
-      <appendix>(W+E and I+O to META+SHIFT)</appendix>
+      <appendix>W+E and I+O to META+SHIFT</appendix>
       <autogen>__SimultaneousKeyPresses__ KeyCode::W, KeyCode::E, KeyCode::OPTION_L, ModifierFlag::SHIFT_L</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::I, KeyCode::O, KeyCode::OPTION_R, ModifierFlag::SHIFT_R</autogen>
 
-      <appendix>(Q+W and O+P to CONTROL+META+SHIFT)</appendix>
+      <appendix>Q+W and O+P to CONTROL+META+SHIFT</appendix>
       <autogen>__SimultaneousKeyPresses__ KeyCode::Q, KeyCode::W, KeyCode::CONTROL_L, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::O, KeyCode::P, KeyCode::CONTROL_R, ModifierFlag::OPTION_R | ModifierFlag::SHIFT_R</autogen>
     </item>
@@ -35,31 +43,31 @@
       <name>Ergonomic Fringe Keys</name>
       <identifier>remap.custom_ergonomic_fringe_keys</identifier>
 
-      <appendix>(S+C and M+L to TAB)</appendix>
+      <appendix>S+C and M+L to TAB</appendix>
       <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::C, KeyCode::TAB</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::L, KeyCode::TAB</autogen>
 
-      <appendix>(D+C and M+K to ENTER)</appendix>
+      <appendix>D+C and M+K to ENTER</appendix>
       <autogen>__SimultaneousKeyPresses__ KeyCode::D, KeyCode::C, KeyCode::RETURN</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::K, KeyCode::RETURN</autogen>
     </item>
     <item>
       <name>Fn special characters</name>
       <identifier>remap.custom_fn_characters</identifier>
-      <appendix>(Fn+A to @)</appendix>
-      <appendix>(Fn+B to \)</appendix>
-      <appendix>(Fn+C to ^)</appendix>
-      <appendix>(Fn+D to $)</appendix>
-      <appendix>(Fn+E to =)</appendix>
-      <appendix>(Fn+I to |)</appendix>
-      <appendix>(Fn+M to -)</appendix>
-      <appendix>(Fn+O to &amp;)</appendix>
-      <appendix>(Fn+P to +)</appendix>
-      <appendix>(Fn+Q to ?)</appendix>
-      <appendix>(Fn+S to *)</appendix>
-      <appendix>(Fn+T to ~)</appendix>
-      <appendix>(Fn+U to _)</appendix>
-      <appendix>(Fn+X to !)</appendix>
+      <appendix>Fn+A to @</appendix>
+      <appendix>Fn+B to \</appendix>
+      <appendix>Fn+C to ^</appendix>
+      <appendix>Fn+D to $</appendix>
+      <appendix>Fn+E to =</appendix>
+      <appendix>Fn+I to |</appendix>
+      <appendix>Fn+M to -</appendix>
+      <appendix>Fn+O to &amp;</appendix>
+      <appendix>Fn+P to +</appendix>
+      <appendix>Fn+Q to ?</appendix>
+      <appendix>Fn+S to *</appendix>
+      <appendix>Fn+T to ~</appendix>
+      <appendix>Fn+U to _</appendix>
+      <appendix>Fn+X to !</appendix>
       <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::FN, KeyCode::2,         ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::FN, KeyCode::BACKSLASH,                      </autogen>
       <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::FN, KeyCode::6,         ModifierFlag::SHIFT_L</autogen>
@@ -79,13 +87,13 @@
       <name>Fn shifted characters</name>
       <identifier>remap.custom_fn_shift_chars</identifier>
       <appendix>Use Fn as Shift for some non-alphabetic characters</appendix>
-      <appendix>(Fn+' to ")</appendix>
-      <appendix>(Fn+, to &lt;)</appendix>
-      <appendix>(Fn+. to &gt;)</appendix>
-      <appendix>(Fn+/ to ?)</appendix>
-      <appendix>(Fn+; to :)</appendix>
-      <appendix>(Fn+[ to {)</appendix>
-      <appendix>(Fn+] to })</appendix>
+      <appendix>Fn+' to "</appendix>
+      <appendix>Fn+, to &lt;</appendix>
+      <appendix>Fn+. to &gt;</appendix>
+      <appendix>Fn+/ to ?</appendix>
+      <appendix>Fn+; to :</appendix>
+      <appendix>Fn+[ to {</appendix>
+      <appendix>Fn+] to }</appendix>
       <autogen>__KeyToKey__ KeyCode::QUOTE,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::QUOTE,         ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::COMMA,         ModifierFlag::FN | ModifierFlag::NONE, KeyCode::COMMA,         ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::DOT,           ModifierFlag::FN | ModifierFlag::NONE, KeyCode::DOT,           ModifierFlag::SHIFT_L</autogen>
