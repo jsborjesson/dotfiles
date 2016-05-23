@@ -43,6 +43,14 @@
       <name>Ergonomic Fringe Keys</name>
       <identifier>remap.custom_ergonomic_fringe_keys</identifier>
 
+      <appendix>E+F and J+I to ESCAPE</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::F, KeyCode::ESCAPE</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::I, KeyCode::ESCAPE</autogen>
+
+      <appendix>W+F and J+O to DELETE</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::W, KeyCode::F, KeyCode::DELETE</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::O, KeyCode::DELETE</autogen>
+
       <appendix>S+C and M+L to TAB</appendix>
       <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::C, KeyCode::TAB</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::L, KeyCode::TAB</autogen>
