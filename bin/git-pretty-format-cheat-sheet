@@ -1,0 +1,2 @@
+# Opens the man page to show all the percent-notation formatting you can use in git log --pretty=format:
+man -P "less +/The\ placeholders\ are:" git-log
