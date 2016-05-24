@@ -197,6 +197,7 @@ set statusline=\ %F                                     " Path
 set statusline+=\ %y                                    " File type
 set statusline+=\ (%{fugitive#head(8)})                 " Git branch
 set statusline+=%=                                      " Right align after this
+set statusline+=\ %{&ff}\                               " Fileformat
 set statusline+=\ Line:\ %l/%L\ (%P)\ \|\ Column:\ %c\  " Line/Column
 
 " Load shell aliases
