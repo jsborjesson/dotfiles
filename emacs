@@ -59,6 +59,9 @@
         ("WAITING" . (:foreground "orange" :weight bold))
         ("IN-PROGRESS" . (:foreground "sky" :weight bold)))))
 
+(use-package smex
+  :config (global-set-key (kbd "M-x") 'smex))
+
 
 ;; --- Settings ---
 ;; Read this file as elisp
