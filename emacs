@@ -86,6 +86,9 @@
 ;; Start calendar on Monday
 (setq calendar-week-start-day 1)
 
+;; Automatically update changed files
+(global-auto-revert-mode t)
+
 ;; Enable line numbers
 ;; (global-linum-mode t)
 
