@@ -59,9 +59,16 @@
         ("WAITING" . (:foreground "orange" :weight bold))
         ("IN-PROGRESS" . (:foreground "sky" :weight bold)))))
 
-(use-package smex
-  :config (global-set-key (kbd "M-x") 'smex))
-
+(use-package helm
+  :config
+  (progn
+    (require 'helm-config)
+    (helm-mode 1)
+    (setq helm-mode-fuzzy-match t)
+    (setq helm-completion-in-region-fuzzy-match t)
+    (setq helm-M-x-fuzzy-match t))
+  :bind
+  (("M-x" . helm-M-x)))
 
 ;; --- Settings ---
 ;; Read this file as elisp
