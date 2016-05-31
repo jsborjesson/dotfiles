@@ -44,9 +44,8 @@
 
 (use-package evil-org)
 
-
-
-(use-package magit)
+(use-package magit
+  :bind (("C-c C-g" . magit-status)))
 
 (use-package org
   :config
