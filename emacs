@@ -44,9 +44,16 @@
 (use-package magit
   :bind (("C-c C-g" . magit-status)))
 
+(use-package markdown-mode
+  :commands (markdown-mode gfm-mode)
+  :mode (("README\\.md\\'" . gfm-mode)
+         ("\\.md\\'" . markdown-mode)
+         ("\\.markdown\\'" . markdown-mode)))
+
 (use-package org
   :config
     (setq org-log-done t)
+    (setq org-hide-leading-stars t)
     (setq org-todo-keywords
       '((sequence "TODO" "WAITING" "IN-PROGRESS" "DONE")))
     (setq org-todo-keyword-faces
