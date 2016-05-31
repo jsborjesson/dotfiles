@@ -67,6 +67,7 @@
   (progn
     (require 'helm-config)
     (helm-mode 1)
+    (helm-autoresize-mode 1)
     (setq helm-mode-fuzzy-match t)
     (setq helm-completion-in-region-fuzzy-match t)
     (setq helm-M-x-fuzzy-match t))
