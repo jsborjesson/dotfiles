@@ -71,7 +71,8 @@
     (setq helm-completion-in-region-fuzzy-match t)
     (setq helm-M-x-fuzzy-match t))
   :bind
-  (("M-x" . helm-M-x)))
+  (("M-x" . helm-M-x)
+   ("C-c C-f" . helm-find-files)))
 
 ;; --- Settings ---
 ;; Read this file as elisp
