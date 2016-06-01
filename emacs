@@ -26,6 +26,8 @@
 
 ;; Evil
 (use-package evil
+  :init 
+    (setq evil-want-C-i-jump nil)
   :config
     (evil-mode t)
     (define-key evil-normal-state-map (kbd "U") 'undo-tree-redo))
