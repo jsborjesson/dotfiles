@@ -341,6 +341,17 @@ xnoremap <Leader>c :s///n<CR>
 nnoremap <Leader>2 :set et sw=2<CR>
 nnoremap <Leader>4 :set et sw=4<CR>
 
+function! SplitSpec()
+    let path="spec/" . substitute(@%, ".rb", "_spec.rb", "")
+    if filereadable(path)
+        execute 'only'
+        execute 'vsp ' . path
+    else
+        echo 'Spec file not found: ' . path
+    endif
+endfunction
+
+nnoremap <Leader>f :call SplitSpec()<CR>
 
 " ==================== Plugin settings ====================
 
