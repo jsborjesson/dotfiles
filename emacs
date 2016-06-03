@@ -93,7 +93,6 @@
 ;; Toggle full screen mode with Cmd-RET
 (global-set-key (kbd "s-<return>") 'toggle-frame-fullscreen)
 
-
 (setq ring-bell-function 'ignore)
 
 ;; Start calendar on Monday
@@ -113,3 +112,21 @@
 ;; Disable the splash screen
 (setq inhibit-startup-message t
       inhibit-startup-echo-area-message t)
+
+;; --- Keybindings ---
+(global-set-key (kbd "C-x 2") 'jsb/split-window-below-and-switch)
+(global-set-key (kbd "C-x 3") 'jsb/split-window-right-and-switch)
+
+
+;; --- Utility functions ---
+(defun jsb/split-window-below-and-switch ()
+  "Split the window below, then switch to the new pane."
+  (interactive)
+  (split-window-below)
+  (other-window 1))
+
+(defun jsb/split-window-right-and-switch ()
+  "Split the window right, then switch to the new pane."
+  (interactive)
+  (split-window-right)
+  (other-window 1))
