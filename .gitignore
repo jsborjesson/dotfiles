@@ -1,8 +1,10 @@
-Gemfile.lock
-lein/repl-history
 nvim/*
 !nvim/UltiSnips/
 !nvim/after/
 !nvim/undo/.keep
-ruby-tapas-downloader
+
 bashrc.local
+
+Gemfile.lock
+lein/repl-history
+ruby-tapas-downloader
