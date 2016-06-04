@@ -57,7 +57,7 @@
     (setq org-log-done t)
     (setq org-hide-leading-stars t)
     (setq org-todo-keywords
-      '((sequence "TODO" "WAITING" "IN-PROGRESS" "DONE")))
+      '((sequence "TODO(t)" "WAITING(w)" "IN-PROGRESS(i)" "|" "DONE(d)")))
     (setq org-todo-keyword-faces
       '(
         ("TODO" . (:foreground "red" :weight bold))
