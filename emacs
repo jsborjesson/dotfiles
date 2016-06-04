@@ -81,6 +81,8 @@
 ;; Read this file as elisp
 (add-to-list 'auto-mode-alist '("emacs" . emacs-lisp-mode))
 
+(setq require-final-newline t)
+
 ;; Turn off ugly GUI stuff
 (menu-bar-mode -1)
 (if (display-graphic-p)
