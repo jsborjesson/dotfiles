@@ -3,6 +3,8 @@ nvim/*
 !nvim/after/
 !nvim/undo/.keep
 
+emacs.d/*
+
 bashrc.local
 
 Gemfile.lock
