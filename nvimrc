@@ -83,11 +83,6 @@ highlight SignColumn guifg=#eeeeee guibg=#090B18
 highlight VertSplit guifg=#eeeeee guibg=#090B18
 highlight Comment guifg=gray
 
-" Make sure colors work in tmux
-if exists('$TMUX')
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-endif
-
 " Thin cursor in insert mode
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
