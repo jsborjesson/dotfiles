@@ -8,6 +8,7 @@ stty -ixon
 
 source ~/.alias
 
+export TERM=xterm-256color
 
 # ----- Initialization -----
 # Initialize rbenv
