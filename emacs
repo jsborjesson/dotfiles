@@ -44,7 +44,7 @@
 (use-package evil-org)
 
 (use-package magit
-  :bind (("C-c C-g" . magit-status)))
+  :bind (("C-c g" . magit-status)))
 
 (use-package markdown-mode
   :commands (markdown-mode gfm-mode)
@@ -78,7 +78,7 @@
 
 (use-package projectile)
 (use-package helm-projectile
-  :bind (("C-x p" . helm-projectile-find-file)))
+  :bind (("C-c p" . helm-projectile-find-file)))
 
 ;; --- Settings ---
 ;; Read this file as elisp
