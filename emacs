@@ -77,6 +77,7 @@
   (("M-x" . helm-M-x)))
 
 (use-package projectile)
+
 (use-package helm-projectile
   :bind (("C-c p" . helm-projectile-find-file)))
 
