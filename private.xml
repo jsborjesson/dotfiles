@@ -11,7 +11,7 @@
       <autogen>__SimultaneousKeyPresses__ KeyCode::D, KeyCode::F, KeyCode::CONTROL_L</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::K, KeyCode::CONTROL_R</autogen>
 
-      <appendix>S+D and K+Lto META</appendix>
+      <appendix>S+D and K+L to META</appendix>
       <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::D, KeyCode::OPTION_L</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::K, KeyCode::L, KeyCode::OPTION_R</autogen>
 
