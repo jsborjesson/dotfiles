@@ -23,6 +23,10 @@
       <autogen>__SimultaneousKeyPresses__ KeyCode::C, KeyCode::V, KeyCode::FN</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::COMMA, KeyCode::FN</autogen>
 
+      <appendix>X+C and ,+. to CMD</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::X, KeyCode::C, KeyCode::COMMAND_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::COMMA, KeyCode::DOT, KeyCode::COMMAND_R</autogen>
+
       <appendix>E+R and U+I to CONTROL+SHIFT</appendix>
       <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::R, KeyCode::CONTROL_L, ModifierFlag::SHIFT_L</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::U, KeyCode::I, KeyCode::CONTROL_R, ModifierFlag::SHIFT_R</autogen>
