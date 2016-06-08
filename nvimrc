@@ -209,7 +209,7 @@ let g:terminal_scrollback_buffer_size=10000
 " Basically - anything I think should be standard Vim goes here:
 
 " U for normal redo is much more natural
-nnoremap U <C-R>
+nnoremap U <C-r>
 
 " Enable @@ usage over several lines in selection
 xnoremap @@ :normal @@<CR>
@@ -221,12 +221,12 @@ xnoremap . :normal .<CR>
 nnoremap Y y$
 
 " Make * and # search for selection in visual mode
-xnoremap * "xy/\V<C-R>=escape(@x, '/\')<CR><CR>
-xnoremap # "xy?\V<C-R>=escape(@x, '?\')<CR><CR>
+xnoremap * "xy/\V<C-r>=escape(@x, '/\')<CR><CR>
+xnoremap # "xy?\V<C-r>=escape(@x, '?\')<CR><CR>
 
 " Search command history with C-p and C-n
-cnoremap <C-P> <Up>
-cnoremap <C-N> <Down>
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
 
 " Better and more consistent &
 nnoremap & :&&<CR>
@@ -270,31 +270,31 @@ nnoremap Q @q
 xnoremap Q :normal @q<CR>
 
 " Quick clear search highlights
-nnoremap <silent> <C-L> :nohlsearch<CR>:diffupdate<CR><C-L>
+nnoremap <silent> <C-l> :nohlsearch<CR>:diffupdate<CR><C-l>
 
 " Scroll with the cursor in the middle
-nnoremap <C-E> <C-E>M
-nnoremap <C-Y> <C-Y>M
+nnoremap <C-e> <C-e>M
+nnoremap <C-y> <C-y>M
 
 " Save with C-s
-nnoremap <C-S> :TrimWhitespace<CR>:write<CR>
-vmap <C-S> <Esc><C-S>gv
-imap <C-S> <Esc><C-S>
+nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
+vmap <C-s> <Esc><C-s>gv
+imap <C-s> <Esc><C-s>
 
 " Escape in terminal mode
-tnoremap <Esc><Esc> <C-\><C-N>
+tnoremap <Esc><Esc> <C-\><C-n>
 
 " Bring in path to folder of current file in command-line with %%
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " ==================== Special characters ====================
 " Overlays the Swedish åäö letters in their correct places with alt
-inoremap <M-[> <C-K>aa
-inoremap <M-'> <C-K>a:
-inoremap <M-;> <C-K>o:
-inoremap <M-{> <C-K>AA
-inoremap <M-"> <C-K>A:
-inoremap <M-:> <C-K>O:
+inoremap <M-[> <C-k>aa
+inoremap <M-'> <C-k>a:
+inoremap <M-;> <C-k>o:
+inoremap <M-{> <C-k>AA
+inoremap <M-"> <C-k>A:
+inoremap <M-:> <C-k>O:
 
 " ==================== Leader commands ====================
 " Mappings that I haven't found a better key combination for yet.
@@ -419,7 +419,7 @@ xnoremap <silent> <C-f> :VtrSendLinesToRunner<CR>
 let g:switch_mapping = '<Leader><Tab>'
 
 " Thesaurus
-nmap gK :!the <C-R><C-W><CR>
+nmap gK :!the <C-r><C-w><CR>
 
 " Syntax highlighting for Läsp
 autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure
