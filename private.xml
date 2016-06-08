@@ -98,6 +98,7 @@
       <appendix>Fn+M to -</appendix>
       <appendix>Fn+T to ~</appendix>
       <appendix>Fn+U to _</appendix>
+      <appendix>Fn+Q to `</appendix>
 
       <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::FN, KeyCode::EQUAL,     ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::B,     ModifierFlag::FN, KeyCode::BACKSLASH,                      </autogen>
