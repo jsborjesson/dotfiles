@@ -110,14 +110,14 @@
       <autogen>__KeyToKey__ KeyCode::Q,     ModifierFlag::FN, KeyCode::BACKQUOTE                       </autogen>
 
       <appendix>Other brackets above/below parentheses</appendix>
-      <appendix>Fn+O to {</appendix>
-      <appendix>Fn+P to }</appendix>
-      <appendix>Fn+. to [</appendix>
-      <appendix>Fn+/ to ]</appendix>
-      <autogen>__KeyToKey__ KeyCode::O,     ModifierFlag::FN, KeyCode::BRACKET_LEFT,  ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::P,     ModifierFlag::FN, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::DOT,   ModifierFlag::FN, KeyCode::BRACKET_LEFT                        </autogen>
-      <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::FN, KeyCode::BRACKET_RIGHT                       </autogen>
+      <appendix>Fn+O to [</appendix>
+      <appendix>Fn+P to ]</appendix>
+      <appendix>Fn+. to {</appendix>
+      <appendix>Fn+/ to }</appendix>
+      <autogen>__KeyToKey__ KeyCode::O,     ModifierFlag::FN, KeyCode::BRACKET_LEFT                        </autogen>
+      <autogen>__KeyToKey__ KeyCode::P,     ModifierFlag::FN, KeyCode::BRACKET_RIGHT                       </autogen>
+      <autogen>__KeyToKey__ KeyCode::DOT,   ModifierFlag::FN, KeyCode::BRACKET_LEFT,  ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::FN, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
     </item>
   </item>
 </root>
