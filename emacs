@@ -39,8 +39,6 @@
 (use-package evil-visualstar
   :config (global-evil-visualstar-mode))
 
-(use-package evil-org)
-
 (use-package magit
   :bind (("C-c g" . magit-status)))
 
