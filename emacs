@@ -106,7 +106,11 @@
 ;; Toggle full screen mode with Cmd-RET
 (global-set-key (kbd "s-<return>") 'toggle-frame-fullscreen)
 
+;; Don't ring the bell
 (setq ring-bell-function 'ignore)
+
+;; Non-blinking cursor
+(blink-cursor-mode 0)
 
 ;; Start calendar on Monday
 (setq calendar-week-start-day 1)
