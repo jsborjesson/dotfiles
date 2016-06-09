@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#
+# Cuts off characters that go beyond the width of the terminal, this makes the
+# text look like it does not wrap. The characters are actually lost, so it is
+# mostly useful to quickly make output of a command more quickly scannable.
+#
+# Usage:
+#     command_outputting_very_long_lines | unwrap
+cut -c -$(tput cols)
