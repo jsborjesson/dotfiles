@@ -34,6 +34,7 @@
   :config (global-evil-surround-mode t))
 
 (use-package evil-commentary
+  :diminish evil-commentary-mode
   :config (evil-commentary-mode))
 
 (use-package evil-visualstar
@@ -61,6 +62,7 @@
         ("IN-PROGRESS" . (:foreground "sky" :weight bold)))))
 
 (use-package helm
+  :diminish helm-mode
   :config
   (progn
     (require 'helm-config)
@@ -111,6 +113,7 @@
 
 ;; Automatically update changed files
 (global-auto-revert-mode t)
+(diminish 'auto-revert-mode)
 
 ;; Enable line numbers
 ;; (global-linum-mode t)
