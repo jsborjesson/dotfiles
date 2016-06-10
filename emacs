@@ -111,6 +111,9 @@
 ;; Non-blinking cursor
 (blink-cursor-mode 0)
 
+;; Turn off wrapping by default
+(setq-default truncate-lines t)
+
 ;; Start calendar on Monday
 (setq calendar-week-start-day 1)
 
