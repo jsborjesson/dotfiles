@@ -54,11 +54,11 @@
   (setq org-log-done t)
   (setq org-hide-leading-stars t)
   (setq org-todo-keywords
-	'((sequence "TODO(t)" "WAITING(w)" "IN-PROGRESS(i)" "|" "DONE(d)")))
+        '((sequence "TODO(t)" "WAITING(w)" "IN-PROGRESS(i)" "|" "DONE(d)")))
   (setq org-todo-keyword-faces
-	'(("TODO" . (:foreground "red" :weight bold))
-	  ("WAITING" . (:foreground "orange" :weight bold))
-	  ("IN-PROGRESS" . (:foreground "sky" :weight bold)))))
+        '(("TODO" . (:foreground "red" :weight bold))
+          ("WAITING" . (:foreground "orange" :weight bold))
+          ("IN-PROGRESS" . (:foreground "sky" :weight bold)))))
 
 (use-package helm
   :diminish helm-mode
