@@ -3,7 +3,7 @@
 (setq package-enable-at-startup nil)
 
 (add-to-list 'package-archives
-	     '("melpa" . "http://melpa.org/packages/") t)
+             '("melpa" . "http://melpa.org/packages/") t)
 
 (package-initialize)
 
@@ -23,7 +23,7 @@
 
 ;; Evil
 (use-package evil
-  :init 
+  :init
     (setq evil-want-C-i-jump nil)
   :config
     (evil-mode t)
