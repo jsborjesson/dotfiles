@@ -75,6 +75,11 @@
     branch = auto
     ui     = true
 
+[color "diff"]
+  commit = blue bold
+  meta = yellow
+  whitespace = reverse
+
 [fetch]
     prune = true
 
