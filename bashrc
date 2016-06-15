@@ -44,7 +44,7 @@ function exit_status() {
    es=$?
    if ! [ $es -eq 0 ]; then
        # Without the space at the end, bash will truncate the newline
-       echo -e "\nExited: ${es}\n "
+       echo -e "\nExited with status: ${es}\n "
    fi
 }
 
