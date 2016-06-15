@@ -93,3 +93,6 @@
 [rerere]
     enabled    = true
     autoupdate = true
+
+[interactive]
+    diffFilter = diff-highlight
