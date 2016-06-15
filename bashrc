@@ -62,9 +62,10 @@ PS1="$IRed\$(exit_status)\n$IYellow\A $IGreen\w $IBlue\$(__git_ps1 '(%s)')\n$IWh
 export PATH=~/.bin:$PATH
 export PATH=./bin:$PATH
 export PATH=.:$PATH
-export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 export PATH=$PATH:${GOPATH//://bin:}/bin
+export PATH=$PATH:$(brew --prefix git)/share/git-core/contrib/diff-highlight
 
 
 # ----- bashrc.local -----
