@@ -24,11 +24,15 @@
 ;; Evil
 (use-package evil
   :init
-    (setq evil-want-C-i-jump nil)
+  (setq evil-want-C-i-jump nil)
   :config
-    (evil-mode t)
-    (define-key evil-normal-state-map (kbd "q") nil)
-    (define-key evil-normal-state-map (kbd "U") 'undo-tree-redo))
+  (evil-mode t)
+  (define-key evil-normal-state-map (kbd "q") nil)
+  (define-key evil-normal-state-map (kbd "U") 'undo-tree-redo)
+
+  ;; Use emacs-state as insert mode
+  (defalias 'evil-insert-state 'evil-emacs-state)
+  (define-key evil-emacs-state-map (kbd "<escape>") 'evil-normal-state))
 
 (use-package evil-surround
   :config (global-evil-surround-mode t))
