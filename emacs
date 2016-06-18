@@ -90,6 +90,10 @@
   (define-key ctl-x-map [(control ?=)] 'zoom-in/out)
   (define-key ctl-x-map [(control ?0)] 'zoom-in/out))
 
+(use-package eshell
+  :config
+  (setq eshell-scroll-to-bottom-on-input t))
+
 ;; --- Settings ---
 ;; Read this file as elisp
 (add-to-list 'auto-mode-alist '("emacs" . emacs-lisp-mode))
