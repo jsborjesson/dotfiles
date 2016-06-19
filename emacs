@@ -109,7 +109,10 @@
 ;; Read this file as elisp
 (add-to-list 'auto-mode-alist '("emacs" . emacs-lisp-mode))
 
+;; Whitespace
 (setq require-final-newline t)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+(setq sentence-end-double-space nil)
 
 ;; Turn off ugly GUI stuff
 (menu-bar-mode -1)
