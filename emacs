@@ -143,6 +143,9 @@
 (global-auto-revert-mode t)
 (diminish 'auto-revert-mode)
 
+;; Always ask y/n instead of typing out the full word
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 ;; Enable line numbers
 ;; (global-linum-mode t)
 
