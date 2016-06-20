@@ -164,6 +164,10 @@
 ;; Show human readable sizes in dired
 (setq-default dired-listing-switches "-alh")
 
+;; Visually indicate matching pairs of parentheses.
+(show-paren-mode t)
+(setq show-paren-delay 0.0)
+
 ;; --- Keybindings ---
 (global-set-key (kbd "C-x 2") 'jsb/split-window-below-and-switch)
 (global-set-key (kbd "C-x 3") 'jsb/split-window-right-and-switch)
