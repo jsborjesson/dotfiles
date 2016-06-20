@@ -159,7 +159,7 @@
 
 ;; Disable the splash screen
 (setq inhibit-startup-message t
-      inhibit-startup-echo-area-message t)
+      initial-scratch-message nil)
 
 ;; --- Keybindings ---
 (global-set-key (kbd "C-x 2") 'jsb/split-window-below-and-switch)
