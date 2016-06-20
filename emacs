@@ -146,6 +146,9 @@
 ;; Always ask y/n instead of typing out the full word
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+;; Allow usage of more memory before calling GC
+(setq gc-cons-threshold 20000000)
+
 ;; Enable line numbers
 ;; (global-linum-mode t)
 
