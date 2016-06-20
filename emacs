@@ -161,6 +161,9 @@
 (setq inhibit-startup-message t
       initial-scratch-message nil)
 
+;; Show human readable sizes in dired
+(setq-default dired-listing-switches "-alh")
+
 ;; --- Keybindings ---
 (global-set-key (kbd "C-x 2") 'jsb/split-window-below-and-switch)
 (global-set-key (kbd "C-x 3") 'jsb/split-window-right-and-switch)
