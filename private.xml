@@ -68,6 +68,22 @@
       <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::K, KeyCode::RETURN</autogen>
     </item>
     <item>
+      <name>Ergonomic arrow keys</name>
+      <identifier>remap.custom_ergonomic_arrow_keys</identifier>
+
+      <appendix>H+J to LEFT</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::H, KeyCode::J, KeyCode::CURSOR_LEFT</autogen>
+
+      <appendix>H+K to RIGHT</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::H, KeyCode::K, KeyCode::CURSOR_RIGHT</autogen>
+
+      <appendix>Y+U to UP</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::Y, KeyCode::U, KeyCode::CURSOR_UP</autogen>
+
+      <appendix>N+M to DOWN</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::N, KeyCode::M, KeyCode::CURSOR_DOWN</autogen>
+    </item>
+    <item>
       <name>Fn special characters</name>
       <identifier>remap.custom_fn_characters</identifier>
 
