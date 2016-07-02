@@ -94,6 +94,11 @@
   :config
   (setq eshell-scroll-to-bottom-on-input t))
 
+(use-package exec-path-from-shell
+  :config
+  (when (memq window-system '(mac ns))
+    (exec-path-from-shell-initialize)))
+
 (use-package enh-ruby-mode
   :config
   (add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
