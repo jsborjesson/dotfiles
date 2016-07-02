@@ -172,6 +172,9 @@
 (global-set-key (kbd "C-x 2") 'jsb/split-window-below-and-switch)
 (global-set-key (kbd "C-x 3") 'jsb/split-window-right-and-switch)
 
+;; Toggle word wrapping
+(global-set-key (kbd "C-c w") 'toggle-truncate-lines)
+
 
 ;; --- Utility functions ---
 (defun jsb/split-window-below-and-switch ()
