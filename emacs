@@ -47,6 +47,10 @@
 (use-package magit
   :bind (("C-c g" . magit-status)))
 
+(use-package git-gutter
+  :config
+  (global-git-gutter-mode t))
+
 (use-package markdown-mode
   :commands (markdown-mode gfm-mode)
   :mode (("README\\.md\\'" . gfm-mode)
