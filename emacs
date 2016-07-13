@@ -113,6 +113,8 @@
   (add-to-list 'auto-mode-alist '("\\.ru$" . enh-ruby-mode))
   (add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode)))
 
+(use-package helm-ag)
+
 (use-package rust-mode)
 
 (use-package cargo
