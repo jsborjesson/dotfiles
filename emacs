@@ -113,6 +113,12 @@
   (add-to-list 'auto-mode-alist '("\\.ru$" . enh-ruby-mode))
   (add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode)))
 
+(use-package rust-mode)
+
+(use-package cargo
+  :config
+  (add-hook 'rust-mode-hook 'cargo-minor-mode))
+
 
 ;; --- Settings ---
 ;; Read this file as elisp
