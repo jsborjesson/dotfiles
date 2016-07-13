@@ -97,3 +97,6 @@
 
 [interactive]
     diffFilter = diff-highlight
+
+[commit]
+    gpgsign = true
