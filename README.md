@@ -89,6 +89,16 @@ sudo chmod 644 ~/.ssh/known_hosts
 sudo chmod 755 ~/.ssh
 ```
 
+### GPG keys
+
+Use [GPG Suite](https://gpgtools.org/) to handle GPG keys
+
+If you get this error, you need to uncomment `charset utf-8` in `~/.gnupg/gpg.conf`
+
+    gpg: conversion from `US-ASCII' to `utf-8' failed: Illegal byte sequence
+    gpg: conversion from `utf-8' to `US-ASCII' failed: Illegal byte sequence
+
+
 ### File system
 
 I like the case sensitive one, it's not standard on Mac but it is the way it's
