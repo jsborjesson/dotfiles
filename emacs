@@ -28,7 +28,8 @@
   :config
   (evil-mode t)
   (define-key evil-normal-state-map (kbd "q") nil)
-  (define-key evil-normal-state-map (kbd "U") 'undo-tree-redo))
+  (define-key evil-normal-state-map (kbd "U") 'undo-tree-redo)
+  (define-key evil-normal-state-map (kbd "Y") 'jsb/copy-to-end-of-line))
 
 (use-package evil-surround
   :config (global-evil-surround-mode t))
@@ -203,3 +204,7 @@
   (interactive)
   (split-window-right)
   (other-window 1))
+
+(defun jsb/copy-to-end-of-line ()
+  (interactive)
+  (evil-yank (point) (point-at-eol)))
