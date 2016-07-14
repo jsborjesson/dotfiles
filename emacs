@@ -28,11 +28,7 @@
   :config
   (evil-mode t)
   (define-key evil-normal-state-map (kbd "q") nil)
-  (define-key evil-normal-state-map (kbd "U") 'undo-tree-redo)
-
-  ;; Use emacs-state as insert mode
-  (defalias 'evil-insert-state 'evil-emacs-state)
-  (define-key evil-emacs-state-map (kbd "ESC") 'evil-normal-state))
+  (define-key evil-normal-state-map (kbd "U") 'undo-tree-redo))
 
 (use-package evil-surround
   :config (global-evil-surround-mode t))
