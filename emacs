@@ -45,7 +45,9 @@
 
 (use-package git-gutter
   :config
-  (global-git-gutter-mode t))
+  (global-git-gutter-mode t)
+  (define-key evil-normal-state-map (kbd "[ h") 'git-gutter:previous-hunk)
+  (define-key evil-normal-state-map (kbd "] h") 'git-gutter:next-hunk))
 
 (use-package markdown-mode
   :commands (markdown-mode gfm-mode)
