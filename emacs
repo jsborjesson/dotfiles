@@ -170,6 +170,9 @@
 ;; Allow usage of more memory before calling GC
 (setq gc-cons-threshold 20000000)
 
+;; Turn off vc
+(setq vc-handled-backends ())
+
 ;; Enable line numbers
 ;; (global-linum-mode t)
 
