@@ -53,11 +53,7 @@
   (define-key evil-normal-state-map (kbd "[ h") 'git-gutter:previous-hunk)
   (define-key evil-normal-state-map (kbd "] h") 'git-gutter:next-hunk))
 
-(use-package markdown-mode
-  :commands (markdown-mode gfm-mode)
-  :mode (("README\\.md\\'" . gfm-mode)
-         ("\\.md\\'" . markdown-mode)
-         ("\\.markdown\\'" . markdown-mode)))
+(use-package markdown-mode)
 
 (use-package org
   :config
