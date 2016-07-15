@@ -18,8 +18,10 @@
 
 ;; --- Install and configure packages ---
 ;; Set theme
-(use-package jazz-theme
-  :config (load-theme 'jazz t))
+(use-package color-theme-sanityinc-tomorrow
+  :config
+  (setq custom-safe-themes t)
+  (color-theme-sanityinc-tomorrow-night))
 
 ;; Evil
 (use-package evil
