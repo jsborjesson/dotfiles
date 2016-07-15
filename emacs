@@ -29,7 +29,9 @@
   (evil-mode t)
   (define-key evil-normal-state-map (kbd "q") nil)
   (define-key evil-normal-state-map (kbd "U") 'undo-tree-redo)
-  (define-key evil-normal-state-map (kbd "Y") 'jsb/copy-to-end-of-line))
+  (define-key evil-normal-state-map (kbd "Y") 'jsb/copy-to-end-of-line)
+  (define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
+  (define-key evil-insert-state-map (kbd "C-a") 'move-beginning-of-line))
 
 (use-package evil-surround
   :config (global-evil-surround-mode t))
