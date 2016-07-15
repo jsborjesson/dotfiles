@@ -18,9 +18,9 @@
 
 ;; --- Install and configure packages ---
 ;; Set theme
-(use-package soothe-theme
+(use-package color-theme-sanityinc-tomorrow
   :config
-  (load-theme 'soothe t))
+  (color-theme-sanityinc-tomorrow-night))
 
 ;; Evil
 (use-package evil
