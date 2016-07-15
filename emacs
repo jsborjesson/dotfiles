@@ -126,6 +126,8 @@
 ;; Read this file as elisp
 (add-to-list 'auto-mode-alist '("emacs" . emacs-lisp-mode))
 
+(set-face-attribute 'default nil :font "Monaco")
+
 ;; Whitespace
 (setq require-final-newline t)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
