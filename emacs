@@ -82,10 +82,13 @@
   :bind
   (("M-x" . helm-M-x)))
 
-(use-package projectile)
+(use-package projectile
+  :config
+  (projectile-global-mode))
 
 (use-package helm-projectile
-  :bind (("C-c p" . helm-projectile-find-file)))
+  :config
+  (helm-projectile-on))
 
 ;; Zoom everything at once
 (use-package zoom-frm
