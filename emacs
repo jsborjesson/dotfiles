@@ -18,8 +18,9 @@
 
 ;; --- Install and configure packages ---
 ;; Set theme
-(use-package jazz-theme
-  :config (load-theme 'jazz t))
+(use-package soothe-theme
+  :config
+  (load-theme 'soothe t))
 
 ;; Evil
 (use-package evil
