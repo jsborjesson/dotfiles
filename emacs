@@ -170,6 +170,12 @@
 ;; Allow usage of more memory before calling GC
 (setq gc-cons-threshold 20000000)
 
+;; Save backups in the temp directory instead of next to the file
+(setq backup-directory-alist
+    `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+    `((".*" ,temporary-file-directory t)))
+
 ;; Turn off vc
 (setq vc-handled-backends ())
 
