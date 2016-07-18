@@ -54,6 +54,10 @@
   (define-key evil-normal-state-map (kbd "[ h") 'git-gutter:previous-hunk)
   (define-key evil-normal-state-map (kbd "] h") 'git-gutter:next-hunk))
 
+(use-package multiple-cursors
+  :config
+  (global-set-key (kbd "C->") 'mc/mark-next-like-this))
+
 (use-package markdown-mode)
 
 (use-package org
