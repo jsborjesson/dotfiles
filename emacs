@@ -127,6 +127,10 @@
   :config
   (add-hook 'rust-mode-hook 'cargo-minor-mode))
 
+(use-package go-mode
+  :config
+  (add-hook 'before-save-hook 'gofmt-before-save))
+
 
 ;; --- Settings ---
 ;; Read this file as elisp
