@@ -6,6 +6,7 @@ brew upgrade
 
 brew install ag
 brew install bash bash-completion
+brew install cloc
 brew install coreutils
 brew install ctags
 brew install emacs
