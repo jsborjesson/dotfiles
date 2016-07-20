@@ -32,8 +32,11 @@
   (define-key evil-normal-state-map (kbd "q") nil)
   (define-key evil-normal-state-map (kbd "U") 'undo-tree-redo)
   (define-key evil-normal-state-map (kbd "Y") 'jsb/copy-to-end-of-line)
+
+  ;; Bring back some emacs bindings in insert mode
   (define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
-  (define-key evil-insert-state-map (kbd "C-a") 'move-beginning-of-line))
+  (define-key evil-insert-state-map (kbd "C-a") 'move-beginning-of-line)
+  (define-key evil-insert-state-map (kbd "C-d") 'delete-char))
 
 (use-package evil-surround
   :config (global-evil-surround-mode t))
