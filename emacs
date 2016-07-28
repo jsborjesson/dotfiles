@@ -72,7 +72,10 @@
   (setq org-todo-keyword-faces
         '(("TODO" . (:foreground "red" :weight bold))
           ("WAITING" . (:foreground "orange" :weight bold))
-          ("IN-PROGRESS" . (:foreground "sky" :weight bold)))))
+          ("IN-PROGRESS" . (:foreground "sky" :weight bold))))
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((ruby . t))))
 
 (use-package helm
   :diminish helm-mode
