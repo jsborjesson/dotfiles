@@ -90,13 +90,15 @@
   :bind
   (("M-x" . helm-M-x)))
 
-(use-package projectile
-  :config
-  (projectile-global-mode))
-
 (use-package helm-projectile
   :config
   (helm-projectile-on))
+
+(use-package helm-ag)
+
+(use-package projectile
+  :config
+  (projectile-global-mode))
 
 ;; Zoom everything at once
 (use-package zoom-frm
@@ -115,6 +117,8 @@
   (when (memq window-system '(mac ns))
     (exec-path-from-shell-initialize)))
 
+;; Language packages
+
 (use-package enh-ruby-mode
   :config
   (add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
@@ -125,10 +129,7 @@
   (add-to-list 'auto-mode-alist '("\\.ru$" . enh-ruby-mode))
   (add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode)))
 
-(use-package helm-ag)
-
 (use-package rust-mode)
-
 (use-package cargo
   :config
   (add-hook 'rust-mode-hook 'cargo-minor-mode))
