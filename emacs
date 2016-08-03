@@ -138,6 +138,8 @@
   :config
   (add-hook 'before-save-hook 'gofmt-before-save))
 
+(use-package elixir-mode)
+(use-package alchemist)
 
 ;; --- Settings ---
 ;; Read this file as elisp
