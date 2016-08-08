@@ -13,10 +13,10 @@
     * Reuse previous session's directory
     * Enable xterm mouse reporting
     * Enable "Keys -> option key acts as +Esc" to support Meta keys
-* After `brew install`ing the new version of your preferred shell:
+* **Shell**
+    * Install a current version of your preferred shell.
     * `sudo vim /etc/shells` and add it there. (Probably something like `/usr/local/bin/bash`)
     * `chsh -s /usr/local/bin/bash` to set it as default
-* Remap caps lock
 * **Settings**
     * Settings > General > Use dark menu bar
     * Settings > Accessibility > Display > Reduce transparency

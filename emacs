@@ -32,8 +32,11 @@
   (define-key evil-normal-state-map (kbd "q") nil)
   (define-key evil-normal-state-map (kbd "U") 'undo-tree-redo)
   (define-key evil-normal-state-map (kbd "Y") 'jsb/copy-to-end-of-line)
+
+  ;; Bring back some emacs bindings in insert mode
   (define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
-  (define-key evil-insert-state-map (kbd "C-a") 'move-beginning-of-line))
+  (define-key evil-insert-state-map (kbd "C-a") 'move-beginning-of-line)
+  (define-key evil-insert-state-map (kbd "C-d") 'delete-char))
 
 (use-package evil-surround
   :config (global-evil-surround-mode t))
@@ -54,6 +57,10 @@
   (define-key evil-normal-state-map (kbd "[ h") 'git-gutter:previous-hunk)
   (define-key evil-normal-state-map (kbd "] h") 'git-gutter:next-hunk))
 
+(use-package multiple-cursors
+  :config
+  (global-set-key (kbd "C->") 'mc/mark-next-like-this))
+
 (use-package markdown-mode)
 
 (use-package org
@@ -65,7 +72,10 @@
   (setq org-todo-keyword-faces
         '(("TODO" . (:foreground "red" :weight bold))
           ("WAITING" . (:foreground "orange" :weight bold))
-          ("IN-PROGRESS" . (:foreground "sky" :weight bold)))))
+          ("IN-PROGRESS" . (:foreground "sky" :weight bold))))
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((ruby . t))))
 
 (use-package helm
   :diminish helm-mode
@@ -80,13 +90,15 @@
   :bind
   (("M-x" . helm-M-x)))
 
-(use-package projectile
-  :config
-  (projectile-global-mode))
-
 (use-package helm-projectile
   :config
   (helm-projectile-on))
+
+(use-package helm-ag)
+
+(use-package projectile
+  :config
+  (projectile-global-mode))
 
 ;; Zoom everything at once
 (use-package zoom-frm
@@ -105,6 +117,22 @@
   (when (memq window-system '(mac ns))
     (exec-path-from-shell-initialize)))
 
+(use-package smartparens
+  :config
+  (require 'smartparens-config)
+
+  ;; Elixir
+  (sp-with-modes '(elixir-mode)
+    (sp-local-pair "fn" "end"
+		   :when '(("SPC" "RET"))
+		   :actions '(insert navigate))
+    (sp-local-pair "do" "end"
+		   :when '(("SPC" "RET"))
+		   :post-handlers '(sp-ruby-def-post-handler)
+		   :actions '(insert navigate))))
+
+;; Language packages
+
 (use-package enh-ruby-mode
   :config
   (add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
@@ -115,14 +143,17 @@
   (add-to-list 'auto-mode-alist '("\\.ru$" . enh-ruby-mode))
   (add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode)))
 
-(use-package helm-ag)
-
 (use-package rust-mode)
-
 (use-package cargo
   :config
   (add-hook 'rust-mode-hook 'cargo-minor-mode))
 
+(use-package go-mode
+  :config
+  (add-hook 'before-save-hook 'gofmt-before-save))
+
+(use-package elixir-mode)
+(use-package alchemist)
 
 ;; --- Settings ---
 ;; Read this file as elisp
@@ -169,6 +200,12 @@
 
 ;; Allow usage of more memory before calling GC
 (setq gc-cons-threshold 20000000)
+
+;; Save backups in the temp directory instead of next to the file
+(setq backup-directory-alist
+    `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+    `((".*" ,temporary-file-directory t)))
 
 ;; Turn off vc
 (setq vc-handled-backends ())

@@ -2,4 +2,4 @@
 *.swp
 NOTES.md
 .nvimrc
-.rake_tasks~
+*~
