@@ -19,6 +19,11 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 0
 
+# Set a more sensible screenshot location
+mkdir -p ~/Pictures/Screenshots
+defaults write com.apple.screencapture location ~/Pictures/Screenshots
+killall SystemUIServer
+
 # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true
 
