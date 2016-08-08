@@ -139,5 +139,43 @@
       <autogen>__KeyToKey__ KeyCode::DOT,   ModifierFlag::FN, KeyCode::BRACKET_LEFT,  ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::FN, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
     </item>
+
+    <vkopenurldef>
+      <name>KeyCode::VK_OPEN_URL_JXA_KEEPASS_LOGIN</name>
+      <url type="shell">
+        osascript -e '
+          tell application "System Events"
+            keystroke "b" using command down
+            delay 0.3
+            keystroke tab using command down
+            delay 0.3
+            keystroke "v" using command down
+            delay 0.3
+            keystroke tab using command down
+            delay 0.3
+            keystroke "c" using command down
+            delay 0.3
+            keystroke tab using command down
+            delay 0.3
+            keystroke tab
+            delay 0.3
+            keystroke "v" using command down
+          end tell
+        '
+      </url>
+    </vkopenurldef>
+    <item>
+      <name>Login with selected Keepass Entry</name>
+      <identifier>custom.keepass_login</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::P, ModifierFlag::SHIFT_L,
+                    ModifierFlag::CONTROL_L,
+                    ModifierFlag::OPTION_L,
+                    ModifierFlag::COMMAND_L,
+
+        KeyCode::VK_OPEN_URL_JXA_KEEPASS_LOGIN,
+      </autogen>
+    </item>
   </item>
 </root>
