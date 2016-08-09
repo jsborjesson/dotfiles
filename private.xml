@@ -146,19 +146,19 @@
         osascript -e '
           tell application "System Events"
             keystroke "b" using command down
-            delay 0.3
+            delay 0.1
             keystroke tab using command down
-            delay 0.3
+            delay 0.1
             keystroke "v" using command down
-            delay 0.3
+            delay 0.1
             keystroke tab using command down
-            delay 0.3
+            delay 0.1
             keystroke "c" using command down
-            delay 0.3
+            delay 0.1
             keystroke tab using command down
-            delay 0.3
+            delay 0.1
             keystroke tab
-            delay 0.3
+            delay 0.1
             keystroke "v" using command down
           end tell
         '
