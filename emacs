@@ -61,8 +61,6 @@
   :config
   (global-set-key (kbd "C->") 'mc/mark-next-like-this))
 
-(use-package markdown-mode)
-
 (use-package org
   :config
   (setq org-log-done t)
@@ -132,6 +130,8 @@
 		   :actions '(insert navigate))))
 
 ;; Language packages
+
+(use-package markdown-mode)
 
 (use-package enh-ruby-mode
   :config
