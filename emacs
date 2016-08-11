@@ -182,6 +182,11 @@
 ;; Toggle full screen mode with Cmd-RET
 (global-set-key (kbd "s-<return>") 'toggle-frame-fullscreen)
 
+;; Enable mouse scrolling in terminal emacs
+(xterm-mouse-mode)
+(global-set-key (kbd "<mouse-5>") 'evil-scroll-line-down)
+(global-set-key (kbd "<mouse-4>") 'evil-scroll-line-up)
+
 ;; Don't ring the bell
 (setq ring-bell-function 'ignore)
 
