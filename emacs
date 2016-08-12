@@ -241,6 +241,9 @@
 ;; Show human readable sizes in dired
 (setq-default dired-listing-switches "-alh")
 
+;; Autocomplete pairs of brackets by default
+(electric-pair-mode)
+
 ;; Visually indicate matching pairs of parentheses.
 (show-paren-mode t)
 (setq show-paren-delay 0.0)
