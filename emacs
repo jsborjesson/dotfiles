@@ -167,6 +167,7 @@
 (setq require-final-newline t)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (setq sentence-end-double-space nil)
+(setq-default indent-tabs-mode nil)
 (setq default-tab-width 4)
 
 ;; Turn off ugly GUI stuff
