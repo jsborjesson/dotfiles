@@ -152,6 +152,7 @@
 
 (use-package go-mode
   :config
+  (setq gofmt-command "goimports")
   (add-hook 'before-save-hook 'gofmt-before-save))
 
 (use-package dockerfile-mode
