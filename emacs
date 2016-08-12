@@ -54,6 +54,7 @@
 (use-package git-gutter
   :config
   (global-git-gutter-mode t)
+  (git-gutter:linum-setup)
   (define-key evil-normal-state-map (kbd "[ h") 'git-gutter:previous-hunk)
   (define-key evil-normal-state-map (kbd "] h") 'git-gutter:next-hunk))
 
@@ -228,7 +229,8 @@
 (setq vc-handled-backends ())
 
 ;; Enable line numbers
-;; (global-linum-mode t)
+(global-linum-mode t)
+(setq linum-format " %d ")
 
 ;; IDO mode
 (ido-mode t)
