@@ -55,6 +55,7 @@
   :config
   (global-git-gutter-mode t)
   (git-gutter:linum-setup)
+  (setq git-gutter:modified-sign "~")
   (define-key evil-normal-state-map (kbd "[ h") 'git-gutter:previous-hunk)
   (define-key evil-normal-state-map (kbd "] h") 'git-gutter:next-hunk))
 
