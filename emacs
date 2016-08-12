@@ -154,6 +154,7 @@
 
 (use-package go-mode
   :config
+  ;; go get golang.org/x/tools/cmd/goimports
   (setq gofmt-command "goimports")
   (add-hook 'before-save-hook 'gofmt-before-save))
 
