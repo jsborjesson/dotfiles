@@ -133,6 +133,8 @@
 
 (use-package markdown-mode)
 
+(use-package web-mode)
+
 (use-package enh-ruby-mode
   :config
   (add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
