@@ -23,6 +23,12 @@
   (setq custom-safe-themes t)
   (color-theme-sanityinc-tomorrow-night))
 
+;; Clipboard interaction in terminal Emacs
+(use-package simpleclip
+  :bind (("C-c c" . simpleclip-copy)
+         ("C-c v" . simpleclip-paste)
+         ("C-c x" . simpleclip-cut)))
+
 ;; Evil
 (use-package evil
   :init
