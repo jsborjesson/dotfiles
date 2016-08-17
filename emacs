@@ -155,7 +155,11 @@
   ;; Use system Ruby to work on 1.8 as well
   (setq enh-ruby-program "/usr/bin/ruby"))
 
-(use-package rust-mode)
+(use-package rust-mode
+  :config
+  ;; cargo install rustfmt
+  (add-hook 'rust-mode-hook #'rust-enable-format-on-save))
+
 (use-package cargo
   :config
   (add-hook 'rust-mode-hook 'cargo-minor-mode))
