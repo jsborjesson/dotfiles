@@ -44,6 +44,13 @@
   (define-key evil-insert-state-map (kbd "C-a") 'move-beginning-of-line)
   (define-key evil-insert-state-map (kbd "C-d") 'delete-char))
 
+(use-package evil-leader
+  :config
+  (global-evil-leader-mode)
+  (evil-leader/set-leader "<SPC>")
+  (evil-leader/set-key
+    "p" 'helm-projectile))
+
 (use-package evil-surround
   :config (global-evil-surround-mode t))
 
