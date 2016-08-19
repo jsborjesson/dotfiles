@@ -165,11 +165,11 @@
 (use-package rust-mode
   :config
   ;; cargo install rustfmt
-  (add-hook 'rust-mode-hook #'rust-enable-format-on-save))
+  (add-hook 'rust-mode-hook #'rust-enable-format-on-save)
 
-(use-package cargo
-  :config
-  (add-hook 'rust-mode-hook 'cargo-minor-mode))
+  (use-package cargo
+    :config
+    (add-hook 'rust-mode-hook 'cargo-minor-mode)))
 
 (use-package go-mode
   :config
