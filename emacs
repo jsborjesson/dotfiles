@@ -175,7 +175,13 @@
   :config
   ;; go get golang.org/x/tools/cmd/goimports
   (setq gofmt-command "goimports")
-  (add-hook 'before-save-hook 'gofmt-before-save))
+  (add-hook 'before-save-hook 'gofmt-before-save)
+
+  ;; go get golang.org/x/tools/cmd/guru
+  (use-package go-guru
+    :config
+    (add-hook 'go-mode-hook #'go-guru-hl-identifier-mode)
+    (set-face-attribute 'go-guru-hl-identifier-face nil :background "brightblack")))
 
 (use-package dockerfile-mode
   :config
