@@ -40,6 +40,11 @@
   (define-key evil-normal-state-map (kbd "Y") 'jsb/copy-to-end-of-line)
   (define-key evil-normal-state-map (kbd "g x") 'browse-url-at-point)
 
+  (define-key evil-normal-state-map (kbd "[ SPC")
+    (lambda() (interactive) (evil-insert-newline-above) (forward-line)))
+  (define-key evil-normal-state-map (kbd "] SPC")
+    (lambda() (interactive) (evil-insert-newline-below) (forward-line -1)))
+
   ;; Bring back some emacs bindings in insert mode
   (define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
   (define-key evil-insert-state-map (kbd "C-a") 'move-beginning-of-line)
