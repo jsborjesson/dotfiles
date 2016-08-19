@@ -4,8 +4,12 @@ source ~/.path
 # ----- Exports -----
 export EDITOR='nvim'
 export TERM=xterm-256color
-export GOPATH=~/.go # Install go packages here
 
+# ----- Go -----
+if type go > /dev/null; then
+    export GOPATH=~/code/go
+    export PATH="$PATH:$GOPATH/bin"
+fi
 
 # ----- Settings -----
 shopt -s autocd   # cd without cd
