@@ -38,6 +38,7 @@
   (define-key evil-normal-state-map (kbd "q") nil)
   (define-key evil-normal-state-map (kbd "U") 'undo-tree-redo)
   (define-key evil-normal-state-map (kbd "Y") 'jsb/copy-to-end-of-line)
+  (define-key evil-normal-state-map (kbd "g x") 'browse-url-at-point)
 
   ;; Bring back some emacs bindings in insert mode
   (define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
