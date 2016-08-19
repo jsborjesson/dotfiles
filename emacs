@@ -119,13 +119,11 @@
   :config
   (projectile-global-mode))
 
-;; Zoom everything at once
+;; Make zooming in GUI Emacs work the same as in terminal
 (use-package zoom-frm
   :config
-  (define-key ctl-x-map [(control ?+)] 'zoom-in/out)
-  (define-key ctl-x-map [(control ?-)] 'zoom-in/out)
-  (define-key ctl-x-map [(control ?=)] 'zoom-in/out)
-  (define-key ctl-x-map [(control ?0)] 'zoom-in/out))
+  (global-set-key (kbd "s--") 'zoom-out)
+  (global-set-key (kbd "s-=") 'zoom-in))
 
 (use-package eshell
   :config
