@@ -48,24 +48,24 @@
   ;; Bring back some emacs bindings in insert mode
   (define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
   (define-key evil-insert-state-map (kbd "C-a") 'move-beginning-of-line)
-  (define-key evil-insert-state-map (kbd "C-d") 'delete-char))
+  (define-key evil-insert-state-map (kbd "C-d") 'delete-char)
 
-(use-package evil-leader
-  :config
-  (global-evil-leader-mode)
-  (evil-leader/set-leader "<SPC>")
-  (evil-leader/set-key
-    "p" 'helm-projectile))
+  (use-package evil-leader
+    :config
+    (global-evil-leader-mode)
+    (evil-leader/set-leader "<SPC>")
+    (evil-leader/set-key
+      "p" 'helm-projectile))
 
-(use-package evil-surround
-  :config (global-evil-surround-mode t))
+  (use-package evil-surround
+    :config (global-evil-surround-mode t))
 
-(use-package evil-commentary
-  :diminish evil-commentary-mode
-  :config (evil-commentary-mode))
+  (use-package evil-commentary
+    :diminish evil-commentary-mode
+    :config (evil-commentary-mode))
 
-(use-package evil-visualstar
-  :config (global-evil-visualstar-mode))
+  (use-package evil-visualstar
+    :config (global-evil-visualstar-mode)))
 
 (use-package magit
   :bind (("C-c g" . magit-status)))
