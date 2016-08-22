@@ -18,6 +18,7 @@ brew install python
 brew install rbenv ruby-build
 brew install tmux reattach-to-user-namespace
 brew install tree
+brew install yank
 brew install z
 
 # NeoVim
