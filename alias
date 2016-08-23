@@ -7,25 +7,12 @@ alias git='hub'
 alias src='source ~/.bashrc'
 alias la='grc ls -lha --color'
 
-# vim
 alias v='nvim'
-alias vp='v +CtrlP'
-alias vd='v -d' # neovimdiff
-
-# emacs
 alias e='emacs'
-
-# git
 alias g='git'
-alias ga='git add --all'
-alias gd='git diff'
-alias gds='git diff --staged'
-alias gl='git log --oneline --decorate -15'
-alias gs='git status --short'
 
 # ruby
 alias reh='rbenv rehash'
-alias r='rails'
 alias b='bundle'
 alias be='bundle exec'
 
@@ -37,9 +24,7 @@ alias j='jrnl'
 alias jason='python -m json.tool'
 alias jw='jrnl work'
 alias mark='open -F -a Marked\ 2'
-alias nzbsync='cp ~/Downloads/*.nzb /Volumes/Data/Downloads/nzbs && rm ~/Downloads/*.nzb'
 alias path='echo $PATH | tr : \\n'
-alias wiki='vp ~/Dropbox/wiki/'
 
 # work
 alias jail='date +"jail_%Y-%m-%d"'
