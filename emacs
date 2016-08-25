@@ -183,7 +183,10 @@
   (use-package go-guru
     :config
     (add-hook 'go-mode-hook #'go-guru-hl-identifier-mode)
-    (set-face-attribute 'go-guru-hl-identifier-face nil :background "brightblack")))
+    (set-face-attribute 'go-guru-hl-identifier-face nil :background "brightblack"))
+
+  ;; go get golang.org/x/tools/cmd/gorename
+  (use-package go-rename))
 
 (use-package dockerfile-mode
   :config
