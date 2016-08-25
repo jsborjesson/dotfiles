@@ -71,17 +71,17 @@
       <name>Ergonomic arrow keys</name>
       <identifier>remap.custom_ergonomic_arrow_keys</identifier>
 
-      <appendix>H+J to LEFT</appendix>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::H, KeyCode::J, KeyCode::CURSOR_LEFT</autogen>
+      <appendix>SPC+H to LEFT</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::H, KeyCode::CURSOR_LEFT</autogen>
 
-      <appendix>H+K to RIGHT</appendix>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::H, KeyCode::K, KeyCode::CURSOR_RIGHT</autogen>
+      <appendix>SPC+L to RIGHT</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::L, KeyCode::CURSOR_RIGHT</autogen>
 
-      <appendix>Y+U to UP</appendix>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::Y, KeyCode::U, KeyCode::CURSOR_UP</autogen>
+      <appendix>SPC+K to UP</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::K, KeyCode::CURSOR_UP</autogen>
 
-      <appendix>N+M to DOWN</appendix>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::N, KeyCode::M, KeyCode::CURSOR_DOWN</autogen>
+      <appendix>SPC+J to DOWN</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::J, KeyCode::CURSOR_DOWN</autogen>
     </item>
     <item>
       <name>Fn special characters</name>
