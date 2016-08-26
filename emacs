@@ -68,6 +68,8 @@
 (use-package magit
   :bind (("C-c g" . magit-status)))
 
+(use-package github-browse-file)
+
 (use-package git-gutter
   :config
   (global-git-gutter-mode t)
