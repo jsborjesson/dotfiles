@@ -148,6 +148,8 @@
 		   :post-handlers '(sp-ruby-def-post-handler)
 		   :actions '(insert navigate))))
 
+(use-package auto-complete)
+
 ;; Language packages
 
 (use-package markdown-mode)
@@ -177,6 +179,9 @@
 
 (use-package go-mode
   :config
+  ;; To install all the go tools:
+  ;; go get golang.org/x/tools/cmd/...
+
   ;; go get golang.org/x/tools/cmd/goimports
   (setq gofmt-command "goimports")
   (add-hook 'before-save-hook 'gofmt-before-save)
@@ -188,7 +193,13 @@
     (set-face-attribute 'go-guru-hl-identifier-face nil :background "brightblack"))
 
   ;; go get golang.org/x/tools/cmd/gorename
-  (use-package go-rename))
+  (use-package go-rename)
+
+  ;; go get github.com/nsf/gocode
+  (use-package go-autocomplete
+    :config
+    (require 'auto-complete-config)
+    (ac-config-default)))
 
 (use-package dockerfile-mode
   :config
