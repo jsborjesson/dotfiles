@@ -201,6 +201,10 @@
   :config
   (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode)))
 
+(use-package groovy-mode
+  :config
+  (add-to-list 'auto-mode-alist '("Jenkinsfile" . groovy-mode)))
+
 ;; --- Settings ---
 ;; Read this file as elisp
 (add-to-list 'auto-mode-alist '("emacs" . emacs-lisp-mode))
