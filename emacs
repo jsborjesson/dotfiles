@@ -66,7 +66,9 @@
     :config (global-evil-visualstar-mode)))
 
 (use-package magit
-  :bind (("C-c g" . magit-status)))
+  :bind (("C-c g" . magit-status))
+  :config
+  (setq magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1))
 
 (use-package github-browse-file)
 
