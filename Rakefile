@@ -110,6 +110,13 @@ namespace :karabiner do
   end
 end
 
+task :golang do
+  sh "mkdir -p ~/code/go"
+  sh "go get -u golang.org/x/tools/cmd/..."
+  sh "go get -u github.com/nsf/gocode"
+  sh "go get -u github.com/golang/lint/golint"
+end
+
 ### Helper class ###
 
 class Dotfile
