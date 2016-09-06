@@ -1,7 +1,7 @@
 require "rake"
 
-# You can set the test mode by running `rake mytask test=true`
-puts "Running in test mode" if ENV["test"]
+# You can set the dry_run mode by running `rake mytask dry_run=true`
+puts "Running in dry_run mode" if ENV["dry_run"]
 
 EXCLUDES = %w{
   *.sh
@@ -167,15 +167,15 @@ class Dotfile
   end
 
   def symlinked?
-    File.symlink?(destination_path) && ( File.readlink(destination_path) == source_path )
+    File.symlink?(destination_path) && File.readlink(destination_path) == source_path
   end
 
   def create_symlink
-    FileUtils.ln_s(source_path, destination_path) unless ENV["test"]
+    FileUtils.ln_s(source_path, destination_path) unless ENV["dry_run"]
   end
 
   def remove_symlink
-    FileUtils.rm(destination_path) unless ENV["test"]
+    FileUtils.rm(destination_path) unless ENV["dry_run"]
   end
 
   def destination_path
