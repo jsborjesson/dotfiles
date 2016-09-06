@@ -6,15 +6,12 @@
     user = alcesleo
 
 [alias]
-    a  = add
-    aa = add --all
-    au = add --update
+    a  = add --all
     b  = branch
     cl = clone
     co = checkout
     d  = diff
     ds = diff --staged
-    dt = difftool
     f  = fetch
     h  = browse
     l  = log --oneline --decorate -15
@@ -27,41 +24,31 @@
     s  = status --short
 
     amend         = commit --amend
-    bd            = branch --delete
-    bm            = branch -m
     changed-files = show --pretty="format:" --name-only
     changelog     = !git log --oneline `git describe --abbrev=0`..HEAD
     cob           = checkout -b
     com           = checkout master
     conflicts     = !git status --short | grep "^UU" | awk '{ print $2 }'
     ctags         = !.git/hooks/ctags
-    dsw           = diff --staged --color-words
-    dw            = diff --color-words
     fix           = commit --amend -C HEAD
     forget        = update-index --assume-unchanged
     forgotten     = !git ls-files -v | grep "^h" | awk '{ print $2 }'
     iss           = browse -- issues
     lod           = log --pretty='format:%C(yellow)%h %C(green)%<(18)%an %C(blue bold)%<(22)%ar   %Creset%s'
     plush         = !git pull --rebase && git push
-    pop           = stash pop
     pro           = !git push && hub pull-request -o
     prs           = browse -- pulls
     pulled        = log -p --reverse --no-merges --stat @{1}..
     pure          = pull --rebase
-    rea           = rebase --abort
-    rec           = rebase --continue
     remember      = update-index --no-assume-unchanged
     sha           = rev-parse --short HEAD
     standup       = log --oneline --decorate --author alcesleo --since yesterday --branches
-    stashes       = stash list
     status-files  = !git status --short | awk '{ print $2 }'
     stu           = stash --include-untracked
     supdate       = submodule update --init --recursive
     tfo           = !git reset . && git checkout -- . && git clean -fd
     todo          = grep --line-number -E "(TODO|FIXME).*"
     tree          = log --graph --oneline --decorate --all
-    uncommit      = reset --soft HEAD^
-    unstage       = reset HEAD
     yolo          = push --force-with-lease
 
 [core]
