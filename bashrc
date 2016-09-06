@@ -19,7 +19,7 @@ stty -ixon
 eval "$(rbenv init -)"
 
 # Initialize bash completion
-[ -f $(brew --prefix)/etc/bash_completion ] && source $(brew --prefix)/etc/bash_completion
+[ -f $(brew --prefix)/share/bash-completion/bash_completion ] && source $(brew --prefix)/share/bash-completion/bash_completion
 
 # Initialize z
 [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh

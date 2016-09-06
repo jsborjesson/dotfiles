@@ -4,8 +4,10 @@ brew update
 # Upgrade already installed formulae
 brew upgrade
 
+brew tap homebrew/versions
+
 brew install ag
-brew install bash bash-completion
+brew install bash bash-completion2
 brew install cloc
 brew install coreutils
 brew install ctags
