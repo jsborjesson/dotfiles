@@ -30,6 +30,9 @@ if [ -f $(brew --prefix)/etc/profile.d/z.sh ]; then
     source $(brew --prefix)/etc/profile.d/z.sh
 fi
 
+# Source fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 # Golang
 export GOPATH=~/code/go
 

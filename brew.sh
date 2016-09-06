@@ -10,6 +10,7 @@ brew install cloc
 brew install coreutils
 brew install ctags
 brew install emacs
+brew install fzf
 brew install git
 brew install grc
 brew install htop
