@@ -5,12 +5,6 @@ source ~/.path
 export EDITOR='nvim'
 export TERM=xterm-256color
 
-# ----- Go -----
-if type go > /dev/null; then
-    export GOPATH=~/code/go
-    export PATH="$PATH:$GOPATH/bin"
-fi
-
 # ----- Settings -----
 shopt -s autocd   # cd without cd
 shopt -s globstar # Enable ** for recursive globbing
@@ -35,6 +29,9 @@ fi
 if [ -f $(brew --prefix)/etc/profile.d/z.sh ]; then
     source $(brew --prefix)/etc/profile.d/z.sh
 fi
+
+# Golang
+export GOPATH=~/code/go
 
 # Enable git completion for the g alias
 __git_complete g __git_main

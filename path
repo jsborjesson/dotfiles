@@ -3,6 +3,6 @@ export PATH=./bin:$PATH
 export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-export PATH=$PATH:${GOPATH//://bin:}/bin
+export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:~/.multirust/toolchains/nightly/cargo/bin
 export PATH=$PATH:$(brew --prefix git)/share/git-core/contrib/diff-highlight
