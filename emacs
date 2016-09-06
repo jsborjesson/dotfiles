@@ -70,6 +70,10 @@
   :config
   (setq magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1))
 
+(use-package gitconfig-mode
+  :config
+  (add-to-list 'auto-mode-alist '("gitconfig" . gitconfig-mode)))
+
 (use-package github-browse-file)
 
 (use-package git-gutter
