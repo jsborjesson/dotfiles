@@ -1,8 +1,24 @@
-export PATH=~/.bin:$PATH
-export PATH=./bin:$PATH
-export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
+#!/usr/bin/env bash
 
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:~/.multirust/toolchains/nightly/cargo/bin
-export PATH=$PATH:$(brew --prefix git)/share/git-core/contrib/diff-highlight
+function atomic_append_path () {
+    local regex="(^|:)""$1""(:|$)"
+    if ! [[ $PATH =~ $regex ]]; then
+        PATH=$PATH:$1
+    fi
+}
+
+function atomic_prepend_path () {
+    local regex="(^|:)""$1""(:|$)"
+    if ! [[ $PATH =~ $regex ]]; then
+        PATH=$1:$PATH
+    fi
+}
+
+atomic_prepend_path "$HOME/.bin"
+atomic_prepend_path "./bin"
+atomic_prepend_path "$(brew --prefix coreutils)/libexec/gnubin"
+
+atomic_append_path "/Applications/Postgres.app/Contents/Versions/9.4/bin"
+atomic_append_path "$GOPATH/bin"
+atomic_append_path "$HOME/.multirust/toolchains/nightly/cargo/bin"
+atomic_append_path "$(brew --prefix git)/share/git-core/contrib/diff-highlight"
