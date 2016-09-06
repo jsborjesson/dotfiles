@@ -1,5 +1,6 @@
-# ----- Path -----
+# ----- Load files -----
 source ~/.path
+source ~/.alias
 
 # ----- Exports -----
 export EDITOR='nvim'
@@ -12,25 +13,18 @@ shopt -s globstar # Enable ** for recursive globbing
 # Turn off flow control and free up C-s and C-q
 stty -ixon
 
-
 # ----- Initialization -----
-# Aliases
-source ~/.alias
 
 # Initialize rbenv
 eval "$(rbenv init -)"
 
-# Source bash completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    source $(brew --prefix)/etc/bash_completion
-fi
+# Initialize bash completion
+[ -f $(brew --prefix)/etc/bash_completion ] && source $(brew --prefix)/etc/bash_completion
 
-# Source z
-if [ -f $(brew --prefix)/etc/profile.d/z.sh ]; then
-    source $(brew --prefix)/etc/profile.d/z.sh
-fi
+# Initialize z
+[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
 
-# Source fzf
+# Initialize fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # Golang
