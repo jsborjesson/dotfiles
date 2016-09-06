@@ -41,6 +41,7 @@
     pulled        = log -p --reverse --no-merges --stat @{1}..
     pure          = pull --rebase
     remember      = update-index --no-assume-unchanged
+	rename-branch = branch -m
     sha           = rev-parse --short HEAD
     standup       = log --oneline --decorate --author alcesleo --since yesterday --branches
     status-files  = !git status --short | awk '{ print $2 }'
