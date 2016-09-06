@@ -310,6 +310,8 @@
 ;; Toggle word wrapping
 (global-set-key (kbd "C-c w") 'toggle-truncate-lines)
 
+;; Enable shell-script-mode quickly in files that aren't detected as shell script files
+(global-set-key (kbd "C-c s") 'shell-script-mode)
 
 ;; --- Utility functions ---
 (defun jsb/split-window-below-and-switch ()
