@@ -15,6 +15,10 @@ alias path='echo $PATH | tr : \\n'
 alias src='source ~/.bashrc'
 alias v='nvim'
 
+# Key combination aliases
+bind -x '"S":"git status --short"' # M-S-s
+bind -x '"L":"la"'                 # M-S-l
+
 # work
 alias jail='date +"jail_%Y-%m-%d"'
 
