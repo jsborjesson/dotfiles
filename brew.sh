@@ -11,6 +11,7 @@ brew install bash bash-completion2
 brew install cloc
 brew install coreutils
 brew install ctags
+brew install docker-compose
 brew install emacs
 brew install fzf
 brew install git
@@ -42,6 +43,7 @@ brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
 brew cask install caffeine
+brew cask install docker
 brew cask install dropbox
 brew cask install emacs
 brew cask install google-chrome
