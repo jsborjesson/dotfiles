@@ -1,3 +1,9 @@
+# Reset the path to not add things multiple times
+if [ -f /etc/profile ]; then
+    PATH=""
+    source /etc/profile
+fi
+
 export PATH=~/.bin:$PATH
 export PATH=./bin:$PATH
 export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
