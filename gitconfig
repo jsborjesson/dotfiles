@@ -39,9 +39,9 @@
     pro           = !git push && hub pull-request -o
     prs           = browse -- pulls
     pulled        = log -p --reverse --no-merges --stat @{1}..
-    pure          = pull --rebase
+    pure          = pull --rebase --autostash
     remember      = update-index --no-assume-unchanged
-	rename-branch = branch -m
+    rename-branch = branch -m
     sha           = rev-parse --short HEAD
     standup       = log --oneline --decorate --author alcesleo --since yesterday --branches
     status-files  = !git status --short | awk '{ print $2 }'
@@ -60,8 +60,8 @@
     templatedir = ~/.git_template
 
 [color "diff"]
-  meta = yellow
-  whitespace = reverse
+    meta = yellow
+    whitespace = reverse
 
 [fetch]
     prune = true
