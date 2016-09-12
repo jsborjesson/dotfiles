@@ -18,6 +18,7 @@ brew install git
 brew install grc
 brew install htop
 brew install hub
+brew install mycli pgcli
 brew install python
 brew install rbenv ruby-build
 brew install tmux reattach-to-user-namespace
