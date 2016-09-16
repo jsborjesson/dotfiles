@@ -47,15 +47,15 @@ namespace :nvim do
 
     puts "Symlinking files into .config directory"
     sh "mkdir -p ~/.config"
-    sh "ln -sf ~/.nvim ~/.config/nvim"
-    sh "ln -sf ~/.nvimrc ~/.config/nvim/init.vim"
+    sh "ln -sf ~/.vim ~/.config/nvim"
+    sh "ln -sf ~/.vimrc ~/.config/nvim/init.vim"
 
     puts "Installing python module"
     sh "pip install neovim"
 
     unless File.exist?(File.expand_path("~/.nvim/autoload/plug.vim"))
       puts "Installing vim-plug"
-      sh "curl -fLo ~/.nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+      sh "curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 
       puts "Installing plugins"
       sh "nvim +PlugInstall +qall"

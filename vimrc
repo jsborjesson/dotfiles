@@ -1,5 +1,5 @@
 " ==================== Plugins ====================
-call plug#begin('~/.nvim/plugged')
+call plug#begin('~/.vim/plugged')
 
 " Vim standard library
 Plug 'tpope/vim-abolish'     " Case insensitive search and camel/snake/mixed-switching
@@ -83,19 +83,16 @@ highlight SignColumn guifg=#eeeeee guibg=#090B18
 highlight VertSplit guifg=#eeeeee guibg=#090B18
 highlight Comment guifg=gray
 
-" Thin cursor in insert mode
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
-
 " No split separator char
 set fillchars+=vert:\  " There's significant whitespace before this comment
 
 " ==================== autocmds ====================
 augroup settings
-    " Make sure to not register the autocmds again when reloading nvimrc
+    " Make sure to not register the autocmds again when reloading vimrc
     autocmd!
 
-    " Reload .nvimrc on save
-    autocmd BufWritePost nvimrc source $MYVIMRC
+    " Reload .vimrc on save
+    autocmd BufWritePost vimrc source $MYVIMRC
 
     " Don't insert comments with O
     autocmd FileType * setlocal formatoptions-=o
@@ -172,15 +169,15 @@ set nobackup
 set noswapfile
 
 " Persistent undo
-set undodir=~/.nvim/undo
+set undodir=~/.vim/undo
 set undofile
 
-" Enable per project nvimrc:s
+" Enable per project vimrc:s
 set exrc
 set secure
 
 " Share spellfile in Dropbox
-set spellfile=~/Dropbox/apps/nvim/en.utf-8.add
+set spellfile=~/Dropbox/apps/vim/en.utf-8.add
 
 " Fix escape lag
 set ttimeout
@@ -281,9 +278,6 @@ nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>
 
-" Escape in terminal mode
-tnoremap <Esc><Esc> <C-\><C-n>
-
 " Bring in path to folder of current file in command-line with %%
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
@@ -302,7 +296,7 @@ inoremap <M-:> <C-k>O:
 let g:mapleader="\<Space>"
 let g:maplocalleader="\<Space>"
 
-" Manually reload nvimrc
+" Manually reload vimrc
 nnoremap <Leader>r :source $MYVIMRC<CR>
 
 " Go to last file
@@ -423,3 +417,12 @@ nmap gK :!the <C-r><C-w><CR>
 
 " Syntax highlighting for Läsp
 autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure
+
+" Special NeoVim settings
+if has('nvim')
+    " Escape in terminal mode
+    tnoremap <Esc><Esc> <C-\><C-n>
+
+    " Thin cursor in insert mode
+    let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+endif

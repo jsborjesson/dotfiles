@@ -13,7 +13,7 @@ alias ls='ls --color -1' # color the output and put every entry on its own line
 alias mark='open -F -a Marked\ 2'
 alias path='echo $PATH | tr : \\n'
 alias src='source ~/.bashrc'
-alias v='nvim'
+alias v='vim'
 
 # Key combination aliases
 bind -x '"S":"git status --short"' # M-S-s
