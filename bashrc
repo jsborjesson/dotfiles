@@ -3,7 +3,7 @@ source ~/.path
 source ~/.alias
 
 # ----- Exports -----
-export EDITOR='nvim'
+export EDITOR='vim'
 export TERM=xterm-256color
 
 # ----- Settings -----
