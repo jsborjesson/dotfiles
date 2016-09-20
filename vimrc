@@ -135,7 +135,11 @@ command! TrimWhitespace execute ':call TrimWhitespace()'
 
 
 " ==================== Settings ====================
+" Make backspace work as expected
+set backspace=indent,eol,start
+
 " General settings
+set autoread
 set clipboard=unnamed " Yank to system clipboard
 set diffopt+=vertical
 set gdefault
@@ -148,10 +152,13 @@ set number
 set sidescroll=1
 set synmaxcol=512     " Turn of syntax for absurdly long lines (makes opening huge json-files quick)
 set wildignorecase
+set wildmenu
 
 " Ignore case if all lowercase
 set ignorecase
 set smartcase
+set incsearch
+set hlsearch
 
 " Default indentation settings
 set expandtab
@@ -424,5 +431,5 @@ if has('nvim')
     tnoremap <Esc><Esc> <C-\><C-n>
 
     " Thin cursor in insert mode
-    let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+    " let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 endif
