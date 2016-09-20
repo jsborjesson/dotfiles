@@ -5,6 +5,9 @@ source ~/.alias
 # ----- Exports -----
 export EDITOR='vim'
 export TERM=xterm-256color
+export GOPATH=~/code/go
+export GIT_PS1_SHOWDIRTYSTATE=1     # Show * for dirty repo in prompt
+export GIT_PS1_SHOWUNTRACKEDFILES=1 # Show % for untracked files in prompt
 
 # ----- Settings -----
 shopt -s autocd   # cd without cd
@@ -27,16 +30,10 @@ eval "$(rbenv init -)"
 # Initialize fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# Golang
-export GOPATH=~/code/go
-
 # Enable git completion for the g alias
 __git_complete g __git_main
 
 # ----- Prompt -----
-export GIT_PS1_SHOWDIRTYSTATE=1     # Show * for dirty repo in prompt
-export GIT_PS1_SHOWUNTRACKEDFILES=1 # Show % for untracked files in prompt
-
 function exit_status() {
    es=$?
    if ! [ $es -eq 0 ]; then
