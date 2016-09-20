@@ -97,9 +97,8 @@ augroup settings
     " Don't insert comments with O
     autocmd FileType * setlocal formatoptions-=o
 
-    " Relative numbers in command mode, and normal in insert mode
-    " autocmd InsertEnter * set norelativenumber
-    " autocmd InsertLeave * set relativenumber
+    autocmd InsertEnter * set cursorline
+    autocmd InsertLeave * set nocursorline
 
     " Automatically rebalance splits on resize
     autocmd VimResized * :wincmd =
