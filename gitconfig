@@ -30,6 +30,7 @@
     com           = checkout master
     conflicts     = !git status --short | grep "^UU" | awk '{ print $2 }'
     ctags         = !.git/hooks/ctags
+    diff-merge    = !git diff ${1:-HEAD}^1..${1:-HEAD}^2
     fix           = commit --amend -C HEAD
     forget        = update-index --assume-unchanged
     forgotten     = !git ls-files -v | grep "^h" | awk '{ print $2 }'
@@ -43,7 +44,6 @@
     remember      = update-index --no-assume-unchanged
     rename-branch = branch -m
     sha           = rev-parse --short HEAD
-    show-merge    = !git show ${1:-HEAD} && git diff ${1:-HEAD}^1..${1:-HEAD}^2
     standup       = log --oneline --decorate --author alcesleo --since yesterday --branches
     status-files  = !git status --short | awk '{ print $2 }'
     stu           = stash --include-untracked
