@@ -151,6 +151,7 @@ set nowrap
 set number
 set sidescroll=1
 set synmaxcol=512     " Turn of syntax for absurdly long lines (makes opening huge json-files quick)
+set ttyfast           " Indicates a fast terminal connection, enabling smoother redraws
 set wildignorecase
 set wildmenu
 
@@ -182,6 +183,20 @@ set undofile
 " Enable per project vimrc:s
 set exrc
 set secure
+
+" Enable mouse operation
+set mouse=a
+if !has('nvim')
+    set ttymouse=xterm2
+endif
+
+if has('nvim')
+    " Escape in terminal mode
+    tnoremap <Esc><Esc> <C-\><C-n>
+
+    " Thin cursor in insert mode
+    let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+endif
 
 " Share spellfile in Dropbox
 set spellfile=~/Dropbox/apps/vim/en.utf-8.add
@@ -424,12 +439,3 @@ nmap gK :!the <C-r><C-w><CR>
 
 " Syntax highlighting for Läsp
 autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure
-
-" Special NeoVim settings
-if has('nvim')
-    " Escape in terminal mode
-    tnoremap <Esc><Esc> <C-\><C-n>
-
-    " Thin cursor in insert mode
-    " let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
-endif
