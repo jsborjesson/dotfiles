@@ -14,6 +14,7 @@ alias mark='open -F -a Marked\ 2'
 alias path='echo $PATH | tr : \\n'
 alias src='source ~/.bashrc'
 alias v='vim'
+alias vless='$(brew --prefix vim)/share/vim/vim80/macros/less.sh'
 
 # work
 alias jail='date +"jail_%Y-%m-%d"'
