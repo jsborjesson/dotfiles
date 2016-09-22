@@ -39,6 +39,7 @@
     plush         = !git pull --rebase && git push
     pro           = !git push && hub pull-request -o
     prs           = browse -- pulls
+    reset-tags    = !git tag -l | xargs git tag -d && git fetch -t
     pulled        = log -p --reverse --no-merges --stat @{1}..
     pure          = pull --rebase --autostash
     remember      = update-index --no-assume-unchanged
