@@ -351,6 +351,9 @@ xnoremap <Leader>c :s///n<CR>
 nnoremap <Leader>2 :set et sw=2<CR>
 nnoremap <Leader>4 :set et sw=4<CR>
 
+" Use filetype shell easily for files which are not detected
+nnoremap <Leader>s :set filetype=sh<CR>
+
 function! SplitSpec()
     let path="spec/" . substitute(@%, ".rb", "_spec.rb", "")
     if filereadable(path)
