@@ -5,13 +5,17 @@ source ~/.alias
 # ----- Exports -----
 export EDITOR='vim'
 export TERM=xterm-256color
+export HISTCONTROL=ignoredups:erasedups
+export HISTSIZE=10000
+export HISTFILESIZE=10000
 export GOPATH=~/code/go
 export GIT_PS1_SHOWDIRTYSTATE=1     # Show * for dirty repo in prompt
 export GIT_PS1_SHOWUNTRACKEDFILES=1 # Show % for untracked files in prompt
 
 # ----- Settings -----
-shopt -s autocd   # cd without cd
-shopt -s globstar # Enable ** for recursive globbing
+shopt -s autocd     # cd without cd
+shopt -s globstar   # Enable ** for recursive globbing
+shopt -s histappend # Append command history on exit
 
 # Turn off flow control and free up C-s and C-q
 stty -ixon
