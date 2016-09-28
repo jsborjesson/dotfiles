@@ -25,7 +25,7 @@ Plug 'tommcdo/vim-exchange'
 Plug 'junegunn/vim-easy-align'
 
 " Extra features
-Plug 'AndrewRadev/switch.vim' " Clever toggling with gs
+Plug 'AndrewRadev/switch.vim'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
