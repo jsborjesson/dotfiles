@@ -36,14 +36,14 @@ Plug 'rking/ag.vim'
 Plug 'vim-scripts/ReplaceWithRegister'
 
 " Ruby
-Plug 'jgdavey/vim-blockle',    { 'for': 'ruby'    }
-Plug 'rhysd/vim-textobj-ruby', { 'for': 'ruby'    }
-Plug 'slim-template/vim-slim', { 'for': 'ruby'    }
-Plug 'thoughtbot/vim-rspec',   { 'for': 'ruby'    }
-Plug 'tpope/vim-bundler',      { 'for': 'ruby'    }
-Plug 'tpope/vim-rake',         { 'for': 'ruby'    }
-Plug 'tpope/vim-rbenv',        { 'for': 'ruby'    }
-Plug 'vim-ruby/vim-ruby',      { 'for': 'ruby'    }
+Plug 'jgdavey/vim-blockle',    { 'for': 'ruby' }
+Plug 'rhysd/vim-textobj-ruby', { 'for': 'ruby' }
+Plug 'slim-template/vim-slim', { 'for': 'ruby' }
+Plug 'thoughtbot/vim-rspec',   { 'for': 'ruby' }
+Plug 'tpope/vim-bundler',      { 'for': 'ruby' }
+Plug 'tpope/vim-rake',         { 'for': 'ruby' }
+Plug 'tpope/vim-rbenv',        { 'for': 'ruby' }
+Plug 'vim-ruby/vim-ruby',      { 'for': 'ruby' }
 
 " Clojure
 Plug 'tpope/vim-fireplace',                        { 'for': 'clojure' }
