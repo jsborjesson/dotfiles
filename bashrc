@@ -41,7 +41,7 @@ __git_complete g __git_main
 function exit_status() {
    es=$?
    if ! [ $es -eq 0 ]; then
-       echo -e "\nexit status: ${es}\n "
+       echo -e "[${es}]"
    fi
 }
 
@@ -53,7 +53,7 @@ IRed='\[\e[0;91m\]'
 IWhite='\[\e[0;97m\]'
 IYellow='\[\e[0;93m\]'
 
-PS1="$IRed\$(exit_status)\n$IYellow\A $IGreen\w $IBlue\$(__git_ps1 '(%s)')\n$IWhite\$$Color_Off "
+PS1="\n$IYellow\A $IGreen\w $IBlue\$(__git_ps1 '(%s)') $IRed\$(exit_status)\n$IWhite\$$Color_Off "
 
 # ----- bashrc.local -----
 if [ -f ~/.bashrc.local ]; then
