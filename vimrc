@@ -392,10 +392,17 @@ let g:gitgutter_realtime = 0
 let g:gitgutter_eager    = 0
 let g:gitgutter_map_keys = 0
 let g:gitgutter_sign_removed_first_line = '_^'
+let g:gitgutter_sign_column_always = 1
 nmap <Leader>gA <Plug>GitGutterStageHunk
 nmap <Leader>gu <Plug>GitGutterRevertHunk
 nmap [h <Plug>GitGutterPrevHunk
 nmap ]h <Plug>GitGutterNextHunk
+
+highlight SignColumn ctermbg=black
+highlight GitGutterAdd ctermfg=green
+highlight GitGutterChange ctermfg=yellow
+highlight GitGutterDelete ctermfg=red
+highlight GitGutterChangeDelete ctermfg=166
 
 " CtrlP
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
