@@ -113,6 +113,12 @@ namespace :karabiner do
   end
 end
 
+task :spectacle do
+  shortcuts_json = File.expand_path("./Shortcuts.json")
+  destination = File.expand_path("~/Library/Application Support/Spectacle/Shortcuts.json")
+  FileUtils.ln_sf(shortcuts_json, destination)
+end
+
 task :golang do
   sh "mkdir -p ~/code/go"
   sh "go get -u golang.org/x/tools/cmd/..."
