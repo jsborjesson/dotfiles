@@ -71,16 +71,16 @@
       <name>Ergonomic arrow keys</name>
       <identifier>remap.custom_ergonomic_arrow_keys</identifier>
 
-      <appendix>RCMD+H to LEFT</appendix>
+      <appendix>R_CMD+H to LEFT</appendix>
       <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::COMMAND_R, KeyCode::CURSOR_LEFT</autogen>
 
-      <appendix>RCMD+J to DOWN</appendix>
+      <appendix>R_CMD+J to DOWN</appendix>
       <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::COMMAND_R, KeyCode::CURSOR_DOWN</autogen>
 
-      <appendix>RCMD+K to UP</appendix>
+      <appendix>R_CMD+K to UP</appendix>
       <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::COMMAND_R, KeyCode::CURSOR_UP</autogen>
 
-      <appendix>RCMD+L to RIGHT</appendix>
+      <appendix>R_CMD+L to RIGHT</appendix>
       <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::COMMAND_R, KeyCode::CURSOR_RIGHT</autogen>
 
     </item>
@@ -142,7 +142,7 @@
     </item>
 
     <vkopenurldef>
-      <name>KeyCode::VK_OPEN_URL_JXA_KEEPASS_LOGIN</name>
+      <name>KeyCode::VK_OPEN_URL_KEEPASS_LOGIN_MACRO</name>
       <url type="shell">
         osascript -e '
           tell application "System Events"
@@ -175,7 +175,7 @@
                     ModifierFlag::OPTION_L,
                     ModifierFlag::COMMAND_L,
 
-        KeyCode::VK_OPEN_URL_JXA_KEEPASS_LOGIN,
+        KeyCode::VK_OPEN_URL_KEEPASS_LOGIN_MACRO,
       </autogen>
     </item>
   </item>
