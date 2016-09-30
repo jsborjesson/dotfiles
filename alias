@@ -16,9 +16,6 @@ alias src='source ~/.bashrc'
 alias v='vim'
 alias vless='$(brew --prefix vim)/share/vim/vim80/macros/less.sh'
 
-# work
-alias jail='date +"jail_%Y-%m-%d"'
-
 # cd to location of topmost Finder window
 function cdf() {
     cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')"
@@ -34,7 +31,9 @@ function mkd() {
     mkdir -p "$@" && cd "$@"
 }
 
-# Example: `calc 5*6`
-function calc() {
-    bc -l <<< "$@"
+# work
+alias jail='date +"jail_%Y-%m-%d"'
+
+function jiralink () {
+  echo "[$1](https://dawanda.atlassian.net/browse/$1)" | pbcopy
 }
