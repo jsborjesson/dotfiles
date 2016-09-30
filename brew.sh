@@ -21,27 +21,17 @@ brew install hub
 brew install mycli pgcli
 brew install python
 brew install rbenv ruby-build
+brew install shellcheck
 brew install tmux reattach-to-user-namespace
 brew install tree
 brew install vim --with-python3
+brew install vint
 brew install watch
 brew install yank
 brew install z
 
-# NeoVim
-brew tap neovim/neovim
-brew install --HEAD neovim
-
-# Optional extras
-# brew install heroku-toolbelt
-# brew install jrnl
-# brew install leiningen
-# brew install pandoc
-# brew install ranger
-# brew install shellcheck
-
 # Casks
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 brew tap caskroom/versions
 
 brew cask install caffeine
