@@ -32,6 +32,18 @@ task :unlink do
   end
 end
 
+namespace :vim do
+  task :install do
+    unless File.exist?(File.expand_path("~/.vim/autoload/plug.vim"))
+      puts "Installing vim-plug"
+      sh "curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+
+      puts "Installing plugins"
+      sh "vim +PlugInstall +qall"
+    end
+  end
+end
+
 namespace :nvim do
   desc "Update NeoVim"
   task :update do
