@@ -28,15 +28,14 @@
 Installation:
 
 ```bash
-brew install python # python is needed before this step
-rake nvim:install   # installs and sets up everything
+rake vim:install
 ```
 
 Lint the VimScript to be extra clean:
 
 ```bash
 pip install vim-vint
-vint --enable-neovim --style nvimrc
+vint --style vimrc
 ```
 
 ### Ruby
