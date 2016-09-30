@@ -12,7 +12,7 @@
     * Set longer scrollback
     * Reuse previous session's directory
     * Enable xterm mouse reporting
-    * Enable "Keys -> option key acts as +Esc" to support Meta keys
+    * Enable "Profiles > Keys -> option key acts as +Esc" to support Meta keys
 * **Shell**
     * Install a current version of your preferred shell.
     * `sudo vim /etc/shells` and add it there. (Probably something like `/usr/local/bin/bash`)
