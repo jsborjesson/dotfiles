@@ -1,5 +1,8 @@
 echo "Configuring osx..."
 
+# Set dark theme
+defaults write NSGlobalDomain AppleInterfaceStyle Dark
+
 # Menu bar: disable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
