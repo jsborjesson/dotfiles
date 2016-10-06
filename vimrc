@@ -384,6 +384,7 @@ nnoremap <Leader>gc :Gcommit -v<CR>
 nnoremap <Leader>gf :Gwrite<CR>:Gcommit -v<CR>i
 nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <Leader>gp :Gpush<CR>
+nnoremap <Leader>gb :Gblame<CR>
 nnoremap <Leader>gh :Gbrowse<CR>
 xnoremap <Leader>gh :Gbrowse<CR>
 
