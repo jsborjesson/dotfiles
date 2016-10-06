@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # A more user friendly command to remove branches.
 #
-#   Usage: git remove-branch <branch>
+#   Usage: git delete-branch <branch>
 #
 # Replaces these commands, in order:
 #   * git branch -d <branch>
