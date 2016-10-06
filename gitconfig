@@ -49,10 +49,10 @@
     standup              = log --oneline --decorate --author alcesleo --since yesterday --branches
     status-files         = !git status --short | awk '{ print $2 }'
     stu                  = stash --include-untracked
-    supdate              = submodule update --init --recursive
     tfo                  = !git reset . && git checkout -- . && git clean -fd
     todo                 = grep --line-number -E "(TODO|FIXME).*"
     tree                 = log --graph --oneline --decorate --all
+    update-submodules    = submodule update --init --recursive
     yolo                 = push --force-with-lease
 
 [core]
