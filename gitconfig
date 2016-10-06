@@ -23,36 +23,37 @@
     ri = rebase --interactive
     s  = status --short
 
-    amend         = commit --amend
-    changed-files = show --pretty="format:" --name-only
-    changelog     = !git log --oneline `git describe --abbrev=0`..HEAD
-    cob           = checkout -b
-    com           = checkout master
-    conflicts     = !git status --short | grep "^UU" | awk '{ print $2 }'
-    ctags         = !.git/hooks/ctags
-    diff-merge    = !git diff ${1:-HEAD}^1..${1:-HEAD}^2
-    fix           = commit --amend -C HEAD
-    forget        = update-index --assume-unchanged
-    forgotten     = !git ls-files -v | grep "^h" | awk '{ print $2 }'
-    iss           = browse -- issues
-    lod           = log --pretty='format:%C(yellow)%h %C(green)%<(18)%an %C(blue bold)%<(22)%ar   %Creset%s'
-    plush         = !git pull --rebase && git push
-    pro           = !git push && hub pull-request -o
-    prs           = browse -- pulls
-    reset-tags    = !git tag -l | xargs git tag -d && git fetch -t
-    pulled        = log -p --reverse --no-merges --stat @{1}..
-    pure          = pull --rebase --autostash
-    remember      = update-index --no-assume-unchanged
-    rename-branch = branch -m
-    sha           = rev-parse --short HEAD
-    standup       = log --oneline --decorate --author alcesleo --since yesterday --branches
-    status-files  = !git status --short | awk '{ print $2 }'
-    stu           = stash --include-untracked
-    supdate       = submodule update --init --recursive
-    tfo           = !git reset . && git checkout -- . && git clean -fd
-    todo          = grep --line-number -E "(TODO|FIXME).*"
-    tree          = log --graph --oneline --decorate --all
-    yolo          = push --force-with-lease
+    amend                = commit --amend
+    changed-files        = show --pretty="format:" --name-only
+    changelog            = !git log --oneline `git describe --abbrev=0`..HEAD
+    cob                  = checkout -b
+    com                  = checkout master
+    conflicts            = !git status --short | grep "^UU" | awk '{ print $2 }'
+    ctags                = !.git/hooks/ctags
+    delete-remote-branch = push --delete origin
+    diff-merge           = !git diff ${1:-HEAD}^1..${1:-HEAD}^2
+    fix                  = commit --amend -C HEAD
+    forget               = update-index --assume-unchanged
+    forgotten            = !git ls-files -v | grep "^h" | awk '{ print $2 }'
+    iss                  = browse -- issues
+    lod                  = log --pretty='format:%C(yellow)%h %C(green)%<(18)%an %C(blue bold)%<(22)%ar   %Creset%s'
+    plush                = !git pull --rebase && git push
+    pro                  = !git push && hub pull-request -o
+    prs                  = browse -- pulls
+    pulled               = log -p --reverse --no-merges --stat @{1}..
+    pure                 = pull --rebase --autostash
+    remember             = update-index --no-assume-unchanged
+    rename-branch        = branch -m
+    reset-tags           = !git tag -l | xargs git tag -d && git fetch -t
+    sha                  = rev-parse --short HEAD
+    standup              = log --oneline --decorate --author alcesleo --since yesterday --branches
+    status-files         = !git status --short | awk '{ print $2 }'
+    stu                  = stash --include-untracked
+    supdate              = submodule update --init --recursive
+    tfo                  = !git reset . && git checkout -- . && git clean -fd
+    todo                 = grep --line-number -E "(TODO|FIXME).*"
+    tree                 = log --graph --oneline --decorate --all
+    yolo                 = push --force-with-lease
 
 [core]
     excludesfile = ~/.gitignore
