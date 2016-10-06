@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# A more user friendly command to replace:
+#   * git branch -d
+#   * git branch -D
+
+# Attempt to safely remove branch
+output=$(git branch -d $1 2>&1)
+exit_status=$?
+
+if [[ $output == *"not fully merged"* ]]; then
+   # Prompt the user to delete the unmerged branch
+   echo "The branch '$1' is not fully merged."
+   read -r -p "Are you sure you want to remove it? [y/N] " response
+   if [[ $response == "y" || $response == "yes" ]]; then
+      git branch -D $1
+   fi
+else
+   # Something we don't need to intercept happened - show it as is
+   echo "$output"
+   exit $exit_status
+fi
