@@ -113,17 +113,25 @@ namespace :karabiner do
   end
 end
 
+desc "Link Shortcuts.json to where Spectacle wants it"
 task :spectacle do
   shortcuts_json = File.expand_path("./Shortcuts.json")
   destination = File.expand_path("~/Library/Application Support/Spectacle/Shortcuts.json")
   FileUtils.ln_sf(shortcuts_json, destination)
 end
 
+desc "Setup Go tools"
 task :golang do
   sh "mkdir -p ~/code/go"
   sh "go get -u golang.org/x/tools/cmd/..."
   sh "go get -u github.com/nsf/gocode"
   sh "go get -u github.com/golang/lint/golint"
+end
+
+desc "Install global gems"
+task :gems do
+  sh "gem install bundler"
+  sh "bundle install --system"
 end
 
 ### Helper class ###
