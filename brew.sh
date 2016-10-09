@@ -18,6 +18,7 @@ brew install git
 brew install grc
 brew install htop
 brew install hub
+brew install kpcli
 brew install mycli pgcli
 brew install python python3
 brew install rbenv ruby-build
