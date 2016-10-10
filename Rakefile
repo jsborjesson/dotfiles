@@ -1,4 +1,5 @@
 require "rake"
+require "./lib/dotfile"
 
 EXCLUDES = %w{
   *.sh
@@ -10,24 +11,22 @@ EXCLUDES = %w{
   README.md
   Rakefile
   Shortcuts.json
+  lib
   private.xml
 }
-DOTFILES = FileList.new("*").exclude(*EXCLUDES)
+
+DOTFILES = FileList.new("*").exclude(*EXCLUDES).map { |path| Dotfile.new(path) }
 
 desc "Symlink dotfiles into home directory"
 task :link do
-  DOTFILES.each do |filename|
-    Dotfile.new(filename).link
-  end
+  DOTFILES.each(&:link)
 end
 
 task default: :link
 
 desc "Remove symlinks (smart enough to not delete something else)"
 task :unlink do
-  DOTFILES.each do |filename|
-    Dotfile.new(filename).unlink
-  end
+  DOTFILES.each(&:unlink)
 end
 
 namespace :vim do
@@ -114,7 +113,7 @@ end
 desc "Link Shortcuts.json to where Spectacle wants it"
 task :spectacle do
   shortcuts_json = File.expand_path("./Shortcuts.json")
-  destination = File.expand_path("~/Library/Application Support/Spectacle/Shortcuts.json")
+  destination    = File.expand_path("~/Library/Application Support/Spectacle/Shortcuts.json")
   FileUtils.ln_sf(shortcuts_json, destination)
 end
 
@@ -131,74 +130,4 @@ task :gems do
   sh "gem install bundler"
   sh "bundle install --system"
   sh "rbenv rehash"
-end
-
-### Helper class ###
-
-class Dotfile
-  FILENAME_ALIGN_WIDTH = 25
-
-  attr_reader :filename
-
-  def initialize(filename)
-    @filename = filename
-  end
-
-  def link
-    if symlinked?
-      info("already symlinked")
-    elsif exists?
-      info("EXISTS")
-    else
-      create_symlink
-      info("symlinked")
-    end
-  end
-
-  def unlink
-    if symlinked?
-      remove_symlink
-      info("symlink removed")
-    else
-      info("ignored")
-    end
-  end
-
-  def to_s
-    "~/#{dotfilename}"
-  end
-
-  private
-
-  def dotfilename
-    ".#{filename}"
-  end
-
-  def info(message)
-    puts "#{to_s.ljust(FILENAME_ALIGN_WIDTH)} #{message}"
-  end
-
-  def exists?
-    File.exists?(destination_path)
-  end
-
-  def symlinked?
-    File.symlink?(destination_path) && File.readlink(destination_path) == source_path
-  end
-
-  def create_symlink
-    FileUtils.ln_s(source_path, destination_path)
-  end
-
-  def remove_symlink
-    FileUtils.rm(destination_path)
-  end
-
-  def destination_path
-    File.join(ENV["HOME"], dotfilename)
-  end
-
-  def source_path
-    File.expand_path("./#{filename}")
-  end
 end
