@@ -9,6 +9,7 @@ EXCLUDES = %w{
   NOTES.md
   README.md
   Rakefile
+  Shortcuts.json
   private.xml
 }
 DOTFILES = FileList.new("*").exclude(*EXCLUDES)
