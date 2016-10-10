@@ -1,8 +1,5 @@
 require "rake"
 
-# You can set the dry_run mode by running `rake mytask dry_run=true`
-puts "Running in dry_run mode" if ENV["dry_run"]
-
 EXCLUDES = %w{
   *.sh
   Brewfile
@@ -189,11 +186,11 @@ class Dotfile
   end
 
   def create_symlink
-    FileUtils.ln_s(source_path, destination_path) unless ENV["dry_run"]
+    FileUtils.ln_s(source_path, destination_path)
   end
 
   def remove_symlink
-    FileUtils.rm(destination_path) unless ENV["dry_run"]
+    FileUtils.rm(destination_path)
   end
 
   def destination_path
