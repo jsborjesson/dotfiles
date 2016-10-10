@@ -131,3 +131,16 @@ task :gems do
   sh "bundle install --system"
   sh "rbenv rehash"
 end
+
+desc "Set the new version of bash as the standard shell"
+task :bash do
+  shell = "/usr/local/bin/bash"
+
+  puts "Making sure #{shell} is in /etc/shells"
+  sh 'grep -q "/usr/local/bin/bash" /etc/shells || sudo bash -c "echo /usr/local/bin/bash >> /etc/shells"'
+  sh 'cat /etc/shells'
+  puts
+
+  puts "Setting #{shell} as the default shell"
+  sh "chsh -s #{shell}"
+end
