@@ -132,6 +132,7 @@ desc "Install global gems"
 task :gems do
   sh "gem install bundler"
   sh "bundle install --system"
+  sh "rbenv rehash"
 end
 
 ### Helper class ###
