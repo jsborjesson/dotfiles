@@ -20,13 +20,7 @@
 
 ### Vim
 
-Installation:
-
-```bash
-rake vim:install
-```
-
-Lint the VimScript to be extra clean:
+Lint VimScript to be extra clean:
 
 ```bash
 pip install vim-vint
@@ -40,14 +34,11 @@ rbenv install -l     # list available ruby versions
 rbenv install 2.1.2  # install the ruby you want
 rbenv global 2.1.2   # set it as the default
 
-gem install bundler
-rbenv rehash
-
-# Install global gems
-bundle install --system
+# Install the global system gems
+rake gems
 ```
 
-**Don't forget to run `rbenv rehash` after installing a gem that adds commands (like bundler).**
+**Don't forget to run `rbenv rehash` after installing a gem that adds commands.**
 
 The `railsrc` and `rails_template.rb` files take over the `rails new` command
 and make it automatically do a lot of things that I tend to do directly after
