@@ -82,11 +82,3 @@ If you get this error, you need to uncomment `charset utf-8` in `~/.gnupg/gpg.co
 
     gpg: conversion from `US-ASCII' to `utf-8' failed: Illegal byte sequence
     gpg: conversion from `utf-8' to `US-ASCII' failed: Illegal byte sequence
-
-
-### File system
-
-I like the case sensitive one, it's not standard on Mac but it is the way it's
-done on Linux, and I haven't found any issues with it. The only real difference
-is that you can do things like `mv MyFile.txt myfile.txt` directly, having to
-do a temporary rename pisses me off.
