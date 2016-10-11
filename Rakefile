@@ -17,19 +17,35 @@ EXCLUDES = %w{
 
 DOTFILES = FileList.new("*").exclude(*EXCLUDES).map { |path| Dotfile.new(path) }
 
+task default: :link
+
+desc "Set up a new computer from scratch"
+task bootstrap: [:cli_tools,
+                 :bash,
+                 :link,
+                 :brew,
+                 :vim,
+                 :osx,
+                 :"karabiner:link",
+                 :"karabiner:load",
+                 :spectacle]
+
 desc "Symlink dotfiles into home directory"
 task :link do
   DOTFILES.each(&:link)
 end
-
-task default: :link
 
 desc "Remove symlinks (smart enough to not delete something else)"
 task :unlink do
   DOTFILES.each(&:unlink)
 end
 
+task :cli_tools do
+  sh "xcode-select --install || true"
+end
+
 namespace :vim do
+  desc "Install vim plugins"
   task :install do
     unless File.exist?(File.expand_path("~/.vim/autoload/plug.vim"))
       puts "Installing vim-plug"

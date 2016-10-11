@@ -2,8 +2,7 @@
 
 ## Installation
 
-* `xcode-select --install` to install the Mac OSX Command Line Tools.
-* `rake -T` to see all the available commands and use them to install.
+`rake bootstrap` tries to set up everything from scratch on a fresh OSX installation.
 
 ### Manual steps
 
