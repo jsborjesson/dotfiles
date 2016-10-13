@@ -190,12 +190,16 @@ if !has('nvim')
     set ttymouse=xterm2
 endif
 
+" NeoVim specific settings
 if has('nvim')
     " Escape in terminal mode
     tnoremap <Esc><Esc> <C-\><C-n>
 
     " Thin cursor in insert mode
     let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
+    " Increase scrollback in terminal mode
+    let g:terminal_scrollback_buffer_size=10000
 endif
 
 " Share spellfile in Dropbox
@@ -216,9 +220,6 @@ set statusline+=\ Line:\ %l/%L\ (%P)\ \|\ Column:\ %c\  " Line/Column
 
 " Load shell aliases
 let $BASH_ENV = '~/.alias'
-
-" Increase scrollback in terminal mode
-let g:terminal_scrollback_buffer_size=10000
 
 " ==================== Vim++ mappings ====================
 " This first section of mappings I categorize as either fixing or
