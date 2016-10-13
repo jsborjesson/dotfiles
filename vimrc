@@ -79,9 +79,6 @@ syntax on
 
 " List of colors here: https://github.com/flazz/vim-colorschemes/tree/master/colors
 colorscheme blackboard
-highlight SignColumn guifg=#eeeeee guibg=#090B18
-highlight VertSplit guifg=#eeeeee guibg=#090B18
-highlight Comment guifg=gray
 highlight SpellBad ctermbg=52
 
 " No split separator char
