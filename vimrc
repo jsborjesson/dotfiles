@@ -142,14 +142,14 @@ set backspace=indent,eol,start
 set autoread
 set clipboard=unnamed " Yank to system clipboard
 set diffopt+=vertical
-set gdefault
+set gdefault          " Replace all matches by default"
 set hidden
 set lazyredraw        " Don't redraw until macro has finished running
 set listchars+=tab:»·
 set nojoinspaces      " Join lines containing punctuation correctly
 set nowrap
 set number
-set sidescroll=1
+set sidescroll=1      " Scroll sideways smoothly
 set synmaxcol=512     " Turn of syntax for absurdly long lines (makes opening huge json-files quick)
 set ttyfast           " Indicates a fast terminal connection, enabling smoother redraws
 set wildignorecase
