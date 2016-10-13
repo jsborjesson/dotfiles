@@ -83,6 +83,7 @@ colorscheme blackboard
 highlight SignColumn guifg=#eeeeee guibg=#090B18
 highlight VertSplit guifg=#eeeeee guibg=#090B18
 highlight Comment guifg=gray
+highlight SpellBad ctermbg=52
 
 " No split separator char
 set fillchars+=vert:\  " There's significant whitespace before this comment
