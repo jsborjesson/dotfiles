@@ -23,6 +23,7 @@ Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-line'
 Plug 'tommcdo/vim-exchange'
 Plug 'junegunn/vim-easy-align'
+Plug 'wellle/targets.vim'
 
 " Extra features
 Plug 'AndrewRadev/switch.vim'
@@ -370,6 +371,9 @@ nnoremap <Leader>f :call SplitSpec()<CR>
 
 " Commentary
 let g:commentary_map_backslash=0
+
+" Targets
+let g:targets_nlNL = 'nN  '
 
 " EasyAlign
 vmap g<Space> <Plug>(EasyAlign)
