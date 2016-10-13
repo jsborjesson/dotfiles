@@ -331,7 +331,9 @@ nmap <Leader>) "_xysg_)
 
 " Black hole redirection
 nnoremap <Leader>d "_d
+xnoremap <Leader>d "_d
 nnoremap <Leader>x "_
+xnoremap <Leader>x "_
 
 " Quick paste last yank
 nnoremap <Leader>p "0p
