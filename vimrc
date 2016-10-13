@@ -36,6 +36,10 @@ Plug 'flazz/vim-colorschemes'
 Plug 'rking/ag.vim'
 Plug 'vim-scripts/ReplaceWithRegister'
 
+" Tmux
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-runner'
+
 " Ruby
 Plug 'jgdavey/vim-blockle',    { 'for': 'ruby' }
 Plug 'rhysd/vim-textobj-ruby', { 'for': 'ruby' }
@@ -62,13 +66,8 @@ Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 " Go
 Plug 'fatih/vim-go', { 'for': 'go' }
 
-" Tmux
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'christoomey/vim-tmux-runner'
-
 " Trial
 Plug 'tpope/vim-liquid'
-Plug 'freitass/todo.txt-vim'
 
 call plug#end()
 
