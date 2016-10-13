@@ -441,8 +441,5 @@ xnoremap <silent> <C-f> :VtrSendLinesToRunner<CR>
 " Switch
 let g:switch_mapping = '<Leader><Tab>'
 
-" Thesaurus
-nmap gK :!the <C-r><C-w><CR>
-
 " Syntax highlighting for Läsp
 autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure
