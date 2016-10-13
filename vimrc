@@ -304,15 +304,6 @@ imap <C-s> <Esc><C-s>
 " Bring in path to folder of current file in command-line with %%
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
-" ==================== Special characters ====================
-" Overlays the Swedish åäö letters in their correct places with alt
-inoremap <M-[> <C-k>aa
-inoremap <M-'> <C-k>a:
-inoremap <M-;> <C-k>o:
-inoremap <M-{> <C-k>AA
-inoremap <M-"> <C-k>A:
-inoremap <M-:> <C-k>O:
-
 " ==================== Leader commands ====================
 " Mappings that I haven't found a better key combination for yet.
 
