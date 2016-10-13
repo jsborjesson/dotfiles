@@ -103,6 +103,9 @@ augroup settings
 
     " Automatically rebalance splits on resize
     autocmd VimResized * :wincmd =
+
+    " Syntax highlighting for Läsp
+    autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure
 augroup END
 
 " ==================== Whitespace ====================
@@ -440,6 +443,3 @@ xnoremap <silent> <C-f> :VtrSendLinesToRunner<CR>
 
 " Switch
 let g:switch_mapping = '<Leader><Tab>'
-
-" Syntax highlighting for Läsp
-autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure
