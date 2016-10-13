@@ -5,7 +5,7 @@ source ~/.alias
 # ----- Exports -----
 export EDITOR='vim'
 export TERM=xterm-256color
-export HISTCONTROL=ignoredups:erasedups
+export HISTCONTROL=ignoredups:ignorespace:erasedups
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 export HISTIGNORE='ls:bg:fg:history'
