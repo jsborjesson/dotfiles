@@ -23,6 +23,7 @@ Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-line'
 Plug 'tommcdo/vim-exchange'
 Plug 'junegunn/vim-easy-align'
+Plug 'wellle/targets.vim'
 
 " Extra features
 Plug 'AndrewRadev/switch.vim'
@@ -34,6 +35,10 @@ Plug 'kopischke/vim-fetch'   " Handle line:column numbers in filenames
 Plug 'flazz/vim-colorschemes'
 Plug 'rking/ag.vim'
 Plug 'vim-scripts/ReplaceWithRegister'
+
+" Tmux
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-runner'
 
 " Ruby
 Plug 'jgdavey/vim-blockle',    { 'for': 'ruby' }
@@ -61,13 +66,8 @@ Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 " Go
 Plug 'fatih/vim-go', { 'for': 'go' }
 
-" Tmux
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'christoomey/vim-tmux-runner'
-
 " Trial
 Plug 'tpope/vim-liquid'
-Plug 'freitass/todo.txt-vim'
 
 call plug#end()
 
@@ -82,6 +82,7 @@ colorscheme blackboard
 highlight SignColumn guifg=#eeeeee guibg=#090B18
 highlight VertSplit guifg=#eeeeee guibg=#090B18
 highlight Comment guifg=gray
+highlight SpellBad ctermbg=52
 
 " No split separator char
 set fillchars+=vert:\  " There's significant whitespace before this comment
@@ -102,6 +103,9 @@ augroup settings
 
     " Automatically rebalance splits on resize
     autocmd VimResized * :wincmd =
+
+    " Syntax highlighting for Läsp
+    autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure
 augroup END
 
 " ==================== Whitespace ====================
@@ -189,12 +193,16 @@ if !has('nvim')
     set ttymouse=xterm2
 endif
 
+" NeoVim specific settings
 if has('nvim')
     " Escape in terminal mode
     tnoremap <Esc><Esc> <C-\><C-n>
 
     " Thin cursor in insert mode
     let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
+    " Increase scrollback in terminal mode
+    let g:terminal_scrollback_buffer_size=10000
 endif
 
 " Share spellfile in Dropbox
@@ -215,9 +223,6 @@ set statusline+=\ Line:\ %l/%L\ (%P)\ \|\ Column:\ %c\  " Line/Column
 
 " Load shell aliases
 let $BASH_ENV = '~/.alias'
-
-" Increase scrollback in terminal mode
-let g:terminal_scrollback_buffer_size=10000
 
 " ==================== Vim++ mappings ====================
 " This first section of mappings I categorize as either fixing or
@@ -302,15 +307,6 @@ imap <C-s> <Esc><C-s>
 " Bring in path to folder of current file in command-line with %%
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
-" ==================== Special characters ====================
-" Overlays the Swedish åäö letters in their correct places with alt
-inoremap <M-[> <C-k>aa
-inoremap <M-'> <C-k>a:
-inoremap <M-;> <C-k>o:
-inoremap <M-{> <C-k>AA
-inoremap <M-"> <C-k>A:
-inoremap <M-:> <C-k>O:
-
 " ==================== Leader commands ====================
 " Mappings that I haven't found a better key combination for yet.
 
@@ -337,7 +333,8 @@ nmap <Leader>( ysg_)
 nmap <Leader>) "_xysg_)
 
 " Black hole redirection
-nnoremap <Leader>d "_
+nnoremap <Leader>d "_d
+nnoremap <Leader>x "_
 
 " Quick paste last yank
 nnoremap <Leader>p "0p
@@ -370,6 +367,9 @@ nnoremap <Leader>f :call SplitSpec()<CR>
 
 " Commentary
 let g:commentary_map_backslash=0
+
+" Targets
+let g:targets_nlNL = 'nN  '
 
 " EasyAlign
 vmap g<Space> <Plug>(EasyAlign)
@@ -443,9 +443,3 @@ xnoremap <silent> <C-f> :VtrSendLinesToRunner<CR>
 
 " Switch
 let g:switch_mapping = '<Leader><Tab>'
-
-" Thesaurus
-nmap gK :!the <C-r><C-w><CR>
-
-" Syntax highlighting for Läsp
-autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure

@@ -2,8 +2,7 @@
 
 ## Installation
 
-* `xcode-select --install` to install the Mac OSX Command Line Tools.
-* `rake -T` to see all the available commands and use them to install.
+`rake bootstrap` tries to set up everything from scratch on a fresh OSX installation.
 
 ### Manual steps
 
@@ -13,10 +12,6 @@
     * Reuse previous session's directory
     * Enable xterm mouse reporting
     * Enable "Profiles > Keys -> option key acts as +Esc" to support Meta keys
-* **Shell**
-    * Install a current version of your preferred shell.
-    * `sudo vim /etc/shells` and add it there. (Probably something like `/usr/local/bin/bash`)
-    * `chsh -s /usr/local/bin/bash` to set it as default
 * **Settings**
     * Settings > General > Use dark menu bar
     * Settings > Accessibility > Display > Reduce transparency
@@ -25,13 +20,7 @@
 
 ### Vim
 
-Installation:
-
-```bash
-rake vim:install
-```
-
-Lint the VimScript to be extra clean:
+Lint VimScript to be extra clean:
 
 ```bash
 pip install vim-vint
@@ -45,14 +34,11 @@ rbenv install -l     # list available ruby versions
 rbenv install 2.1.2  # install the ruby you want
 rbenv global 2.1.2   # set it as the default
 
-gem install bundler
-rbenv rehash
-
-# Install global gems
-bundle install --system
+# Install the global system gems
+rake gems
 ```
 
-**Don't forget to run `rbenv rehash` after installing a gem that adds commands (like bundler).**
+**Don't forget to run `rbenv rehash` after installing a gem that adds commands.**
 
 The `railsrc` and `rails_template.rb` files take over the `rails new` command
 and make it automatically do a lot of things that I tend to do directly after
@@ -96,11 +82,3 @@ If you get this error, you need to uncomment `charset utf-8` in `~/.gnupg/gpg.co
 
     gpg: conversion from `US-ASCII' to `utf-8' failed: Illegal byte sequence
     gpg: conversion from `utf-8' to `US-ASCII' failed: Illegal byte sequence
-
-
-### File system
-
-I like the case sensitive one, it's not standard on Mac but it is the way it's
-done on Linux, and I haven't found any issues with it. The only real difference
-is that you can do things like `mv MyFile.txt myfile.txt` directly, having to
-do a temporary rename pisses me off.

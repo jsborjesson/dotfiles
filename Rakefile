@@ -1,7 +1,5 @@
 require "rake"
-
-# You can set the dry_run mode by running `rake mytask dry_run=true`
-puts "Running in dry_run mode" if ENV["dry_run"]
+require "./lib/dotfile"
 
 EXCLUDES = %w{
   *.sh
@@ -12,27 +10,42 @@ EXCLUDES = %w{
   NOTES.md
   README.md
   Rakefile
+  Shortcuts.json
+  lib
   private.xml
 }
-DOTFILES = FileList.new("*").exclude(*EXCLUDES)
 
-desc "Symlink dotfiles into home directory"
-task :link do
-  DOTFILES.each do |filename|
-    Dotfile.new(filename).link
-  end
-end
+DOTFILES = FileList.new("*").exclude(*EXCLUDES).map { |path| Dotfile.new(path) }
 
 task default: :link
 
+desc "Set up a new computer from scratch"
+task bootstrap: [:cli_tools,
+                 :bash,
+                 :link,
+                 :brew,
+                 :vim,
+                 :osx,
+                 :"karabiner:link",
+                 :"karabiner:load",
+                 :spectacle]
+
+desc "Symlink dotfiles into home directory"
+task :link do
+  DOTFILES.each(&:link)
+end
+
 desc "Remove symlinks (smart enough to not delete something else)"
 task :unlink do
-  DOTFILES.each do |filename|
-    Dotfile.new(filename).unlink
-  end
+  DOTFILES.each(&:unlink)
+end
+
+task :cli_tools do
+  sh "xcode-select --install || true"
 end
 
 namespace :vim do
+  desc "Install vim plugins"
   task :install do
     unless File.exist?(File.expand_path("~/.vim/autoload/plug.vim"))
       puts "Installing vim-plug"
@@ -116,7 +129,7 @@ end
 desc "Link Shortcuts.json to where Spectacle wants it"
 task :spectacle do
   shortcuts_json = File.expand_path("./Shortcuts.json")
-  destination = File.expand_path("~/Library/Application Support/Spectacle/Shortcuts.json")
+  destination    = File.expand_path("~/Library/Application Support/Spectacle/Shortcuts.json")
   FileUtils.ln_sf(shortcuts_json, destination)
 end
 
@@ -132,74 +145,18 @@ desc "Install global gems"
 task :gems do
   sh "gem install bundler"
   sh "bundle install --system"
+  sh "rbenv rehash"
 end
 
-### Helper class ###
+desc "Set the new version of bash as the standard shell"
+task :bash do
+  shell = "/usr/local/bin/bash"
 
-class Dotfile
-  FILENAME_ALIGN_WIDTH = 25
+  puts "Making sure #{shell} is in /etc/shells"
+  sh 'grep -q "/usr/local/bin/bash" /etc/shells || sudo bash -c "echo /usr/local/bin/bash >> /etc/shells"'
+  sh 'cat /etc/shells'
+  puts
 
-  attr_reader :filename
-
-  def initialize(filename)
-    @filename = filename
-  end
-
-  def link
-    if symlinked?
-      info("already symlinked")
-    elsif exists?
-      info("EXISTS")
-    else
-      create_symlink
-      info("symlinked")
-    end
-  end
-
-  def unlink
-    if symlinked?
-      remove_symlink
-      info("symlink removed")
-    else
-      info("ignored")
-    end
-  end
-
-  def to_s
-    "~/#{dotfilename}"
-  end
-
-  private
-
-  def dotfilename
-    ".#{filename}"
-  end
-
-  def info(message)
-    puts "#{to_s.ljust(FILENAME_ALIGN_WIDTH)} #{message}"
-  end
-
-  def exists?
-    File.exists?(destination_path)
-  end
-
-  def symlinked?
-    File.symlink?(destination_path) && File.readlink(destination_path) == source_path
-  end
-
-  def create_symlink
-    FileUtils.ln_s(source_path, destination_path) unless ENV["dry_run"]
-  end
-
-  def remove_symlink
-    FileUtils.rm(destination_path) unless ENV["dry_run"]
-  end
-
-  def destination_path
-    File.join(ENV["HOME"], dotfilename)
-  end
-
-  def source_path
-    File.expand_path("./#{filename}")
-  end
+  puts "Setting #{shell} as the default shell"
+  sh "chsh -s #{shell}"
 end

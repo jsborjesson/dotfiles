@@ -5,9 +5,11 @@ source ~/.alias
 # ----- Exports -----
 export EDITOR='vim'
 export TERM=xterm-256color
-export HISTCONTROL=ignoredups:erasedups
+export HISTCONTROL=ignoredups:ignorespace:erasedups
 export HISTSIZE=10000
 export HISTFILESIZE=10000
+export HISTIGNORE='ls:bg:fg:history'
+export PROMPT_COMMAND='history -a'  # Append history file after every command
 export GOPATH=~/code/go
 export GIT_PS1_SHOWDIRTYSTATE=1     # Show * for dirty repo in prompt
 export GIT_PS1_SHOWUNTRACKEDFILES=1 # Show % for untracked files in prompt
