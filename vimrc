@@ -186,6 +186,22 @@ set undofile
 set exrc
 set secure
 
+" Share spellfile in Dropbox
+set spellfile=~/Dropbox/apps/vim/en.utf-8.add
+
+" Fix escape lag
+set ttimeout
+set ttimeoutlen=1
+
+" Statusline
+set laststatus=2
+set statusline=\ %F                                     " Path
+set statusline+=\ %y                                    " File type
+set statusline+=\ (%{fugitive#head(8)})                 " Git branch
+set statusline+=%=                                      " Right align after this
+set statusline+=\ %{&ff}\                               " Fileformat
+set statusline+=\ Line:\ %l/%L\ (%P)\ \|\ Column:\ %c\  " Line/Column
+
 " Enable mouse operation
 set mouse=a
 if !has('nvim')
@@ -203,22 +219,6 @@ if has('nvim')
     " Increase scrollback in terminal mode
     let g:terminal_scrollback_buffer_size=10000
 endif
-
-" Share spellfile in Dropbox
-set spellfile=~/Dropbox/apps/vim/en.utf-8.add
-
-" Fix escape lag
-set ttimeout
-set ttimeoutlen=1
-
-" Statusline
-set laststatus=2
-set statusline=\ %F                                     " Path
-set statusline+=\ %y                                    " File type
-set statusline+=\ (%{fugitive#head(8)})                 " Git branch
-set statusline+=%=                                      " Right align after this
-set statusline+=\ %{&ff}\                               " Fileformat
-set statusline+=\ Line:\ %l/%L\ (%P)\ \|\ Column:\ %c\  " Line/Column
 
 " Load shell aliases
 let $BASH_ENV = '~/.alias'
