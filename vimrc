@@ -319,7 +319,7 @@ nnoremap <Leader>r :source $MYVIMRC<CR>
 nnoremap <Leader><Leader> <C-^>
 
 " Copy path to clipboard
-nnoremap <Leader>n :let @* = expand("%:p")<CR>:echo "Copied path to clipboard"<CR>
+nnoremap <Leader>f :let @* = expand("%:p")<CR>:echo "Copied path to clipboard"<CR>
 
 " Highlight word but don't jump to the next match
 nmap <Leader>* *``
@@ -354,18 +354,6 @@ nnoremap <Leader>4 :set et sw=4<CR>
 
 " Use filetype shell easily for files which are not detected
 nnoremap <Leader>s :set filetype=sh<CR>
-
-function! SplitSpec()
-    let path="spec/" . substitute(@%, ".rb", "_spec.rb", "")
-    if filereadable(path)
-        execute 'only'
-        execute 'vsp ' . path
-    else
-        echo 'Spec file not found: ' . path
-    endif
-endfunction
-
-nnoremap <Leader>f :call SplitSpec()<CR>
 
 " ==================== Plugin settings ====================
 

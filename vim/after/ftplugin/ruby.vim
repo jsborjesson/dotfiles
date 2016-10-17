@@ -22,6 +22,19 @@ function! RunLastSpecWithDocumentation()
     let g:rspec_command = l:old_rspec_command
 endfunction
 
+" Try to open spec file in split
+function! SplitSpec()
+    let path="spec/" . substitute(@%, ".rb", "_spec.rb", "")
+    if filereadable(path)
+        execute 'only'
+        execute 'vsp ' . path
+    else
+        echo 'Spec file not found: ' . path
+    endif
+endfunction
+
+nnoremap <Leader>s :call SplitSpec()<CR>
+
 " AutoPairs
 let b:AutoPairs = {'(':')', '[':']', '{':'}', "'":"'", '"':'"', '`':'`', '|':'|'}
 
