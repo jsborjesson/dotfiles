@@ -332,7 +332,6 @@ nnoremap <Leader>z :silent tabedit %<CR>
 
 " Wrap until end of line in parenthesis
 nmap <Leader>( ysg_)
-nmap <Leader>) "_xysg_)
 
 " Black hole redirection
 nnoremap <Leader>d "_d
