@@ -319,7 +319,7 @@ nnoremap <Leader>r :source $MYVIMRC<CR>
 nnoremap <Leader><Leader> <C-^>
 
 " Copy path to clipboard
-nnoremap <Leader>f :let @* = expand("%:p")<CR>:echo "Copied path to clipboard"<CR>
+nnoremap <Leader>f :let @* = substitute(expand("%:p"), '/Users/alcesleo', "~", "")<CR>:echo "Copied path to clipboard"<CR>
 
 " Highlight word but don't jump to the next match
 nmap <Leader>* *``
