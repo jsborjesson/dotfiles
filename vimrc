@@ -318,6 +318,9 @@ nnoremap <Leader>r :source $MYVIMRC<CR>
 " Go to last file
 nnoremap <Leader><Leader> <C-^>
 
+" Copy path to clipboard
+nnoremap <Leader>n :let @* = expand("%:p")<CR>:echo "Copied path to clipboard"<CR>
+
 " Highlight word but don't jump to the next match
 nmap <Leader>* *``
 nmap <Leader># #``
