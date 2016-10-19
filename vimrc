@@ -356,6 +356,7 @@ nnoremap <Leader>s :set filetype=sh<CR>
 
 " ==================== Custom commands ====================
 command! Nmappings execute ':redir! > /tmp/vim_mappings.txt | silent nmap | redir END | !less /tmp/vim_mappings.txt'
+command! Mappings execute ':redir! > /tmp/vim_mappings.txt | silent map | redir END | !less /tmp/vim_mappings.txt'
 
 " ==================== Plugin settings ====================
 
