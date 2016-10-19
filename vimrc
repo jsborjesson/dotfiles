@@ -354,6 +354,9 @@ nnoremap <Leader>4 :set et sw=4<CR>
 " Use filetype shell easily for files which are not detected
 nnoremap <Leader>s :set filetype=sh<CR>
 
+" ==================== Custom commands ====================
+command! Nmappings execute ':redir! > /tmp/vim_mappings.txt | silent nmap | redir END | !less /tmp/vim_mappings.txt'
+
 " ==================== Plugin settings ====================
 
 " Commentary
