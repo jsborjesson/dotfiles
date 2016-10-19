@@ -422,7 +422,7 @@ let g:sexp_mappings = {
     \ }
 let g:sexp_enable_insert_mode_mappings = 0
 
-" Tmux interaction
+" Tmux Navigator
 let g:tmux_navigator_no_mappings = 1
 nnoremap <silent> <M-h> :TmuxNavigateLeft<CR>
 nnoremap <silent> <M-j> :TmuxNavigateDown<CR>
@@ -430,8 +430,8 @@ nnoremap <silent> <M-k> :TmuxNavigateUp<CR>
 nnoremap <silent> <M-l> :TmuxNavigateRight<CR>
 nnoremap <silent> <M-o> :TmuxNavigatePrevious<CR>
 
+" Tmux Runner
 nnoremap <Leader>v :VtrAttachToPane<CR>
-
 nnoremap <silent> <C-f> :VtrSendLinesToRunner<CR>
 xnoremap <silent> <C-f> :VtrSendLinesToRunner<CR>
 
