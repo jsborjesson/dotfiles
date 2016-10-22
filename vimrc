@@ -68,6 +68,7 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 
 " Trial
 Plug 'tpope/vim-liquid'
+Plug 'dag/vim-fish'
 
 call plug#end()
 
