@@ -2,7 +2,9 @@
 
 ## Installation
 
-`rake bootstrap` tries to set up everything from scratch on a fresh OSX installation.
+`rake bootstrap` tries to set up everything from scratch on a fresh OSX
+installation. The `Rakefile` contains the code that manages the dotfiles,
+`rake` is installed by default.
 
 ### Manual steps
 
