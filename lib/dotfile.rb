@@ -1,17 +1,18 @@
 class Dotfile
   FILENAME_ALIGN_WIDTH = 25
 
-  attr_reader :filename
+  attr_reader :source, :destination
 
-  def initialize(filename)
-    @filename = filename
+  def initialize(source, destination = "~/.#{source}")
+    @source      = source
+    @destination = destination
   end
 
   def link
     if symlinked?
       info("already symlinked")
     elsif exists?
-      info("EXISTS")
+      info("EXISTS [#{destination_path.inspect}]")
     else
       create_symlink
       info("symlinked")
@@ -28,14 +29,10 @@ class Dotfile
   end
 
   def to_s
-    "~/#{dotfilename}"
+    source
   end
 
   private
-
-  def dotfilename
-    ".#{filename}"
-  end
 
   def info(message)
     puts "#{to_s.ljust(FILENAME_ALIGN_WIDTH)} #{message}"
@@ -58,10 +55,10 @@ class Dotfile
   end
 
   def destination_path
-    File.join(ENV["HOME"], dotfilename)
+    File.expand_path(destination)
   end
 
   def source_path
-    File.expand_path("./#{filename}")
+    File.expand_path(source)
   end
 end

@@ -1,21 +1,38 @@
 require "rake"
 require "./lib/dotfile"
 
-EXCLUDES = %w{
-  *.sh
-  Brewfile
-  Gemfile
-  Gemfile.lock
-  LICENSE
-  NOTES.md
-  README.md
-  Rakefile
-  Shortcuts.json
-  lib
-  private.xml
-}
+# All files that should be simply symlinked into ~ with a leading .
+DOTFILE_PATHS = %w[
+  alias
+  bash_profile
+  bashrc
+  bashrc.local
+  bin/
+  bundle/
+  emacs
+  gemrc
+  git_template/
+  gitconfig
+  gitignore
+  hushlogin
+  inputrc
+  jrnl_config
+  path
+  pryrc
+  psqlrc
+  rails_template.rb
+  railsrc
+  tmux.conf
+  vim
+  vimrc
+]
 
-DOTFILES = FileList.new("*").exclude(*EXCLUDES).map { |path| Dotfile.new(path) }
+# The files that need to go elsewhere
+DOTFILE_PATHS << ["fish/", "~/.config/fish"]
+DOTFILE_PATHS << ["Shortcuts.json", "~/Library/Application Support/Spectacle/Shortcuts.json"]
+DOTFILE_PATHS << ["private.xml", "~/Library/Application Support/Karabiner/private.xml"]
+
+DOTFILES = DOTFILE_PATHS.map { |path| Dotfile.new(*path) }
 
 task default: :link
 
@@ -26,9 +43,7 @@ task bootstrap: [:cli_tools,
                  :brew,
                  :vim,
                  :osx,
-                 :"karabiner:link",
-                 :"karabiner:load",
-                 :spectacle]
+                 :"karabiner:load"]
 
 desc "Symlink dotfiles into home directory"
 task :link do
@@ -117,20 +132,6 @@ namespace :karabiner do
   task :load do
     sh "sh ./karabiner.sh"
   end
-
-  desc "Link the private.xml to where it is loaded by Karabiner"
-  task :link do
-    private_xml = File.expand_path("./private.xml")
-    destination = File.expand_path("~/Library/Application Support/Karabiner/private.xml")
-    FileUtils.ln_sf(private_xml, destination)
-  end
-end
-
-desc "Link Shortcuts.json to where Spectacle wants it"
-task :spectacle do
-  shortcuts_json = File.expand_path("./Shortcuts.json")
-  destination    = File.expand_path("~/Library/Application Support/Spectacle/Shortcuts.json")
-  FileUtils.ln_sf(shortcuts_json, destination)
 end
 
 desc "Setup Go tools"
