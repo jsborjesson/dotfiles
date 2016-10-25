@@ -37,12 +37,14 @@ DOTFILES = DOTFILE_PATHS.map { |path| Dotfile.new(*path) }
 task default: :link
 
 desc "Set up a new computer from scratch"
-task bootstrap: [:bash,
-                 :brew,
-                 :link,
-                 :"vim:install",
-                 :osx,
-                 :"karabiner:load"]
+task bootstrap: %i[
+  brew
+  bash
+  link
+  vim:install
+  osx
+  karabiner:load
+]
 
 desc "Symlink dotfiles into home directory"
 task :link do
