@@ -2,6 +2,9 @@
 setlocal tabstop=2
 setlocal shiftwidth=2
 
+" Make file jumping work for spec support files
+set path+=spec/
+
 " ? and ! are part of method names
 setlocal iskeyword+=?,!
 
