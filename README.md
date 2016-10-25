@@ -2,9 +2,25 @@
 
 ## Installation
 
-`rake bootstrap` tries to set up everything from scratch on a fresh OSX
-installation. The `Rakefile` contains the code that manages the dotfiles,
-`rake` is installed by default.
+Steps to install dotfiles on a fresh Mac OS installation:
+
+1. Install developer tools
+
+        xcode-select --install
+        
+2. Clone this repository
+
+        mkdir ~/code && git clone https://github.com/alcesleo/dotfiles.git ~/code/dotfiles && cd ~/code/dotfiles
+        
+3. Install things 
+    * `rake brew` installs most essential software
+    * `rake link` installs the configuration
+    * `rake vim:install` install all Vim plugins
+    * `rake karabiner:load` sets all of the keyboard shortcuts
+        
+4. Once you have your SSH keys installed, switch the protocol
+
+        git remote set-url origin git@github.com:alcesleo/dotfiles.git
 
 ### Manual steps
 
