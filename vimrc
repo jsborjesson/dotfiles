@@ -152,6 +152,7 @@ set listchars+=tab:»·
 set nojoinspaces      " Join lines containing punctuation correctly
 set nowrap
 set number
+set path+=**          " Find subdirectories of path
 set sidescroll=1      " Scroll sideways smoothly
 set synmaxcol=512     " Turn of syntax for absurdly long lines (makes opening huge json-files quick)
 set ttyfast           " Indicates a fast terminal connection, enabling smoother redraws
