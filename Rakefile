@@ -37,11 +37,10 @@ DOTFILES = DOTFILE_PATHS.map { |path| Dotfile.new(*path) }
 task default: :link
 
 desc "Set up a new computer from scratch"
-task bootstrap: [:cli_tools,
-                 :bash,
-                 :link,
+task bootstrap: [:bash,
                  :brew,
-                 :vim,
+                 :link,
+                 :"vim:install",
                  :osx,
                  :"karabiner:load"]
 
@@ -53,10 +52,6 @@ end
 desc "Remove symlinks (smart enough to not delete something else)"
 task :unlink do
   DOTFILES.each(&:unlink)
-end
-
-task :cli_tools do
-  sh "xcode-select --install || true"
 end
 
 namespace :vim do
