@@ -38,6 +38,7 @@ brew cask install caffeine
 brew cask install docker
 brew cask install dropbox
 brew cask install emacs
+brew cask install force-paste
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install karabiner
