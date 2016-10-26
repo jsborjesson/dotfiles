@@ -83,6 +83,7 @@ colorscheme blackboard
 highlight SpellBad ctermbg=52
 highlight Pmenu ctermbg=59 ctermfg=15
 highlight PmenuSel ctermbg=226 ctermfg=0
+highlight Folded ctermfg=0
 
 " No split separator char
 set fillchars+=vert:\  " There's significant whitespace before this comment
