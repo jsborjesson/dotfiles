@@ -21,6 +21,10 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # Enable Tab/Space in modal dialogs
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
+# Expand 'Save As…' dialog boxes by default
+defaults write -g NSNavPanelExpandedStateForSaveMode -bool true
+defaults write -g NSNavPanelExpandedStateForSaveMode2 -bool true
+
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
