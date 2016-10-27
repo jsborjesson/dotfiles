@@ -65,11 +65,6 @@ running `rails new` anyway.
 You can also install [rbenv-ctags](https://github.com/tpope/rbenv-ctags) to
 allow tag jumps into the standard library too.
 
-## Re-installation
-
-If you're doing a complete reinstall there are a few extra steps you need to
-consider.
-
 ### SSH keys
 
 Make sure to bring your `~/.ssh` with you when you reinstall.
@@ -90,6 +85,17 @@ Then you need to set the permissions correctly, like so:
 sudo chmod 600 ~/.ssh/id_rsa*
 sudo chmod 644 ~/.ssh/known_hosts
 sudo chmod 755 ~/.ssh
+```
+
+#### It keeps asking for the SSH passphrase
+
+```bash
+# Make sure ssh-agent is running
+$ eval $(ssh-agent)
+Agent pid 98949
+
+# Add the key
+$ ssh-add
 ```
 
 ### GPG keys
