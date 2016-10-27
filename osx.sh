@@ -3,6 +3,9 @@ echo "Configuring osx..."
 # Set dark theme
 defaults write NSGlobalDomain AppleInterfaceStyle Dark
 
+# Menu bar: make it opaque
+defaults write com.apple.universalaccess reduceTransparency -bool true
+
 # Menu bar: disable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
@@ -15,8 +18,7 @@ defaults write NSGlobalDomain AppleHighlightColor -string '0.764700 0.976500 0.5
 # Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
-# Enable full keyboard access for all controls
-# (e.g. enable Tab in modal dialogs)
+# Enable Tab/Space in modal dialogs
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Disable press-and-hold for keys in favor of key repeat
