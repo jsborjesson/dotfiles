@@ -31,7 +31,7 @@
     conflicts            = !git status --short | grep "^UU" | awk '{ print $2 }'
     ctags                = !.git/hooks/ctags
     delete-remote-branch = push --delete origin
-    diff-merge           = !git diff ${1:-HEAD}^1..${1:-HEAD}^2
+    diff-merge           = "!f() { git diff ${1:-HEAD}^1..${1:-HEAD}^2; }; f"
     fix                  = commit --amend -C HEAD
     forget               = update-index --assume-unchanged
     forgotten            = !git ls-files -v | grep "^h" | awk '{ print $2 }'
@@ -46,7 +46,7 @@
     remember             = update-index --no-assume-unchanged
     rename-branch        = branch -m
     reset-tags           = !git tag -l | xargs git tag -d && git fetch -t
-    sha                  = rev-parse --short HEAD
+    sha                  = "!f() { git rev-parse --short ${1:-HEAD}; }; f"
     standup              = log --oneline --decorate --author alcesleo --since yesterday --branches
     status-files         = !git status --short | awk '{ print $2 }'
     stu                  = stash --include-untracked
