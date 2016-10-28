@@ -37,6 +37,7 @@
     forgotten            = !git ls-files -v | grep "^h" | awk '{ print $2 }'
     iss                  = browse -- issues
     lod                  = log --pretty='format:%C(yellow)%h %C(green)%<(18)%an %C(blue bold)%<(22)%ar   %Creset%s'
+    ours                 = checkout --ours
     plush                = !git pull --rebase && git push
     pro                  = !git push && hub pull-request -o
     prs                  = browse -- pulls
@@ -50,6 +51,7 @@
     status-files         = !git status --short | awk '{ print $2 }'
     stu                  = stash --include-untracked
     tfo                  = !git reset . && git checkout -- . && git clean -fd
+    theirs               = checkout --theirs
     todo                 = grep --line-number -E "(TODO|FIXME).*"
     tree                 = log --graph --oneline --decorate --all
     update-submodules    = submodule update --init --recursive
