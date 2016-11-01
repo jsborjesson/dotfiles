@@ -24,11 +24,18 @@ Steps to install dotfiles on a fresh Mac OS installation:
 
 ### Manual steps
 
+Things that I haven't found a way to automate yet.
+
+* **System Preferences**
+    * Accessibility > Zoom
+    * Displays > Automatically adjust brightness
 * **iTerm2**
     * Settings > General > Load preferences from a custom folder
-* **Settings**
-    * Settings > Accessibility > Zoom
-    * Settings > Displays > Automatically adjust brightness
+* **Finder**
+    * Add favourites by drag and drop:
+        * `~`
+        * `~/code`
+        * `~/Pictures/Screenshots/`
 
 ### Vim
 
