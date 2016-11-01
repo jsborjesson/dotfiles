@@ -306,9 +306,6 @@ nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>
 
-" Bring in path to folder of current file in command-line with %%
-cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
-
 " ==================== Leader commands ====================
 " Mappings that I haven't found a better key combination for yet.
 
