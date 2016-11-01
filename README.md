@@ -49,9 +49,9 @@ vint --style vimrc
 ### Ruby
 
 ```bash
-rbenv install -l     # list available ruby versions
-rbenv install 2.1.2  # install the ruby you want
-rbenv global 2.1.2   # set it as the default
+rbenv install -l     # List available ruby versions
+rbenv install 2.1.2  # Install the ruby you want
+rbenv global 2.1.2   # Set it as the default
 
 # Install the global system gems
 rake gems
