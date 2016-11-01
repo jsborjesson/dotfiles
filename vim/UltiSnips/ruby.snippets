@@ -52,14 +52,14 @@ alias_method :${1:new}, :${2:old}
 endsnippet
 
 snippet class
-class `!p snip.rv = "".join(map(lambda s:s.capitalize(), fn[:-3].split("_")))`
-  ${1:${VISUAL:# ...}}$0
+class ${1:`!p snip.rv = "".join(map(lambda s:s.capitalize(), fn[:-3].split("_")))`}$0
+  ${VISUAL:# ...}
 end
 endsnippet
 
 snippet module
-module `!p snip.rv = "".join(map(lambda s:s.capitalize(), path.split("/")[-2].split("_")))`
-  ${1:${VISUAL:# ...}}$0
+module ${1:`!p snip.rv = "".join(map(lambda s:s.capitalize(), path.split("/")[-2].split("_")))`}$0
+  ${VISUAL:# ...}
 end
 endsnippet
 
