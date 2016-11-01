@@ -25,8 +25,7 @@ Steps to install dotfiles on a fresh Mac OS installation:
 ### Manual steps
 
 * **iTerm2**
-    * Enable "Profiles > Keys -> option key acts as +Esc" to support Meta keys
-    * Silence bell
+    * Settings > General > Load preferences from a custom folder
 * **Settings**
     * Settings > Accessibility > Zoom
     * Settings > Displays > Automatically adjust brightness
