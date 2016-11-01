@@ -25,14 +25,9 @@ Steps to install dotfiles on a fresh Mac OS installation:
 ### Manual steps
 
 * **iTerm2**
-    * Set terminal type to `xterm-256color`.
-    * Set longer scrollback
-    * Reuse previous session's directory
-    * Enable xterm mouse reporting
     * Enable "Profiles > Keys -> option key acts as +Esc" to support Meta keys
+    * Silence bell
 * **Settings**
-    * Settings > General > Use dark menu bar
-    * Settings > Accessibility > Display > Reduce transparency
     * Settings > Accessibility > Zoom
     * Settings > Displays > Automatically adjust brightness
 
