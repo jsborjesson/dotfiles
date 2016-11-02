@@ -359,8 +359,10 @@ nnoremap <Leader>4 :set et sw=4<CR>
 nnoremap <Leader>s :set filetype=sh<CR>
 
 " ==================== Custom commands ====================
-command! Nmappings execute ':redir! > /tmp/vim_mappings.txt | silent nmap | redir END | !less /tmp/vim_mappings.txt'
-command! Mappings execute ':redir! > /tmp/vim_mappings.txt | silent map | redir END | !less /tmp/vim_mappings.txt'
+command! Nmappings execute 'redir! > /tmp/vim_mappings.txt | silent nmap | redir END | !less /tmp/vim_mappings.txt'
+command! Mappings execute 'redir! > /tmp/vim_mappings.txt | silent map | redir END | !less /tmp/vim_mappings.txt'
+
+command! MakeDirectories execute '!mkdir -p %:h'
 
 " ==================== Plugin settings ====================
 
