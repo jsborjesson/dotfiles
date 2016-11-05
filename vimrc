@@ -86,6 +86,7 @@ highlight Pmenu ctermbg=59 ctermfg=15
 highlight PmenuSel ctermbg=226 ctermfg=0
 highlight Folded ctermfg=0
 highlight CursorLine ctermbg=233 cterm=NONE
+highlight ColorColumn ctermbg=232
 
 " No split separator char
 set fillchars+=vert:\  " There's significant whitespace before this comment
@@ -354,8 +355,13 @@ nnoremap <Leader>c :%s///n<CR>
 xnoremap <Leader>c :s///n<CR>
 
 " Set 2 or 4 space indent
-nnoremap <Leader>2 :set et sw=2<CR>
-nnoremap <Leader>4 :set et sw=4<CR>
+nnoremap <Leader>2 :set expandtab shiftwidth=2<CR>
+nnoremap <Leader>4 :set expandtab shiftwidth=4<CR>
+
+" Set colorcolumn to 80 or 120 columns
+nnoremap <Leader>8 :set colorcolumn=80<CR>
+nnoremap <Leader>9 :set colorcolumn=120<CR>
+nnoremap <Leader>0 :set colorcolumn=<CR>
 
 " Use filetype shell easily for files which are not detected
 nnoremap <Leader>s :set filetype=sh<CR>
