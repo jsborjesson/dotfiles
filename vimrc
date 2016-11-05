@@ -35,6 +35,7 @@ Plug 'kopischke/vim-fetch'   " Handle line:column numbers in filenames
 Plug 'flazz/vim-colorschemes'
 Plug 'rking/ag.vim'
 Plug 'vim-scripts/ReplaceWithRegister'
+Plug 'alcesleo/vim-uppercase-sql'
 
 " Tmux
 Plug 'christoomey/vim-tmux-navigator'
