@@ -42,7 +42,7 @@ __git_complete g __git_main
 # ----- Prompt -----
 function exit_status() {
    es=$?
-   if ! [ $es -eq 0 ]; then
+   if [ $es -ne 0 ]; then
        echo -e "[${es}]"
    fi
 }
