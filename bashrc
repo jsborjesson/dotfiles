@@ -43,7 +43,14 @@ __git_complete g __git_main
 function exit_status() {
    es=$?
    if [ $es -ne 0 ]; then
-       echo -e "[${es}]"
+       echo -e " [${es}]"
+   fi
+}
+
+function background_jobs() {
+   j="$(jobs | grep 'Stopped\|Running' | awk '{ print $3 }' | paste -sd ',')"
+   if [ $j ]; then
+      echo " {$j}"
    fi
 }
 
@@ -54,8 +61,9 @@ IGreen='\[\e[0;92m\]'
 IRed='\[\e[0;91m\]'
 IWhite='\[\e[0;97m\]'
 IYellow='\[\e[0;93m\]'
+IBlack='\[\e[0;90m\]'
 
-PS1="\n$IYellow\A $IGreen\w $IBlue\$(__git_ps1 '(%s)') $IRed\$(exit_status)\n$IWhite\$$Color_Off "
+PS1="\n$IYellow\A $IGreen\w $IBlue\$(__git_ps1 '(%s)')$IRed\$(exit_status)$IBlack\$(background_jobs)\n$IWhite\$$Color_Off "
 
 # ----- bashrc.local -----
 if [ -f ~/.bashrc.local ]; then
