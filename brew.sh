@@ -43,6 +43,7 @@ brew cask install google-chrome
 brew cask install iterm2
 brew cask install karabiner
 brew cask install keepassx
+brew cask install licecap
 brew cask install seil
 brew cask install slack
 brew cask install spectacle
@@ -51,7 +52,6 @@ brew cask install the-unarchiver
 # Optional extras
 # brew cask install appcleaner
 # brew cask install keycastr
-# brew cask install licecap
 # brew cask install postgres
 # brew cask install sequel-pro
 # brew cask install tunnelblick
