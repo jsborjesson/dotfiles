@@ -43,7 +43,6 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'christoomey/vim-tmux-runner'
 
 " Ruby
-Plug 'jgdavey/vim-blockle',    { 'for': 'ruby' }
 Plug 'rhysd/vim-textobj-ruby', { 'for': 'ruby' }
 Plug 'slim-template/vim-slim', { 'for': 'ruby' }
 Plug 'thoughtbot/vim-rspec',   { 'for': 'ruby' }
