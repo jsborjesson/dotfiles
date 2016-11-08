@@ -373,6 +373,9 @@ command! Mappings execute 'redir! > /tmp/vim_mappings.txt | silent map | redir E
 
 command! MakeDirectories execute '!mkdir -p %:h'
 
+" Make README easier to type
+iabbrev readme README
+
 " ==================== Plugin settings ====================
 
 " Commentary
