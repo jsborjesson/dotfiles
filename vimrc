@@ -16,28 +16,28 @@ Plug 'tpope/vim-unimpaired'  " Lots of clever pairs of mappings
 Plug 'tpope/vim-vinegar'     " Better netrw filebrowser
 
 " Extra text-objects and motions
-Plug 'kana/vim-textobj-user'
 Plug 'christoomey/vim-sort-motion'
+Plug 'junegunn/vim-easy-align'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-line'
+Plug 'kana/vim-textobj-user'
 Plug 'tommcdo/vim-exchange'
-Plug 'junegunn/vim-easy-align'
 Plug 'wellle/targets.vim'
 
 " Extra features
-Plug 'AndrewRadev/switch.vim'
-Plug 'AndrewRadev/splitjoin.vim'
 Plug 'AndrewRadev/sideways.vim'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'AndrewRadev/switch.vim'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
+Plug 'alcesleo/vim-uppercase-sql'
+Plug 'flazz/vim-colorschemes'
 Plug 'jiangmiao/auto-pairs'
 Plug 'kien/ctrlp.vim'
 Plug 'kopischke/vim-fetch'   " Handle line:column numbers in filenames
-Plug 'flazz/vim-colorschemes'
 Plug 'rking/ag.vim'
 Plug 'vim-scripts/ReplaceWithRegister'
-Plug 'alcesleo/vim-uppercase-sql'
 
 " Tmux
 Plug 'christoomey/vim-tmux-navigator'
