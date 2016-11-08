@@ -27,6 +27,7 @@ Plug 'wellle/targets.vim'
 
 " Extra features
 Plug 'AndrewRadev/switch.vim'
+Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
@@ -452,3 +453,8 @@ xnoremap <silent> <C-f> :VtrSendLinesToRunner<CR>
 
 " Switch
 let g:switch_mapping = '<Leader><Tab>'
+
+" SplitJoin
+let g:splitjoin_split_mapping = 'cS'
+let g:splitjoin_join_mapping  = 'cJ'
+let g:splitjoin_trailing_comma = 1
