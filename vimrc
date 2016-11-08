@@ -28,6 +28,7 @@ Plug 'wellle/targets.vim'
 " Extra features
 Plug 'AndrewRadev/switch.vim'
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'AndrewRadev/sideways.vim'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
@@ -457,3 +458,7 @@ let g:switch_mapping = '<Leader><Tab>'
 let g:splitjoin_split_mapping = 'cS'
 let g:splitjoin_join_mapping  = 'cJ'
 let g:splitjoin_trailing_comma = 1
+
+" Sideways
+nnoremap <e :SidewaysLeft<CR>
+nnoremap >e :SidewaysRight<CR>
