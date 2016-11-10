@@ -16,6 +16,7 @@ export GIT_PS1_SHOWUNTRACKEDFILES=1 # Show % for untracked files in prompt
 
 # ----- Settings -----
 shopt -s autocd     # cd without cd
+shopt -s extglob    # Enable negative globbing etc
 shopt -s globstar   # Enable ** for recursive globbing
 shopt -s histappend # Append command history on exit
 
