@@ -33,6 +33,12 @@ function mkd() {
     mkdir -p "$@" && cd "$@"
 }
 
+function colours() {
+    for i in {0..255}; do
+	printf "\x1b[38;5;${i}mcolour${i}\x1b[0m\n"
+    done
+}
+
 # work
 alias jail='date +"jail_%Y-%m-%d"'
 
