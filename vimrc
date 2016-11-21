@@ -88,6 +88,7 @@ highlight PmenuSel ctermbg=226 ctermfg=0
 highlight Folded ctermfg=0
 highlight CursorLine ctermbg=233 cterm=NONE
 highlight ColorColumn ctermbg=232
+highlight Todo ctermfg=white ctermbg=none
 
 " No split separator char
 set fillchars+=vert:\  " There's significant whitespace before this comment
