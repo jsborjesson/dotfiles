@@ -379,6 +379,13 @@ command! Mappings execute 'redir! > /tmp/vim_mappings.txt | silent map | redir E
 
 command! MakeDirectories execute '!mkdir -p %:h'
 
+" Find out the highlighting group under the cursor
+function! HighlightGroup()
+    let l:s = synID(line('.'), col('.'), 1)
+    echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
+endfunction
+command! HighlightGroup call HighlightGroup()
+
 " Make README easier to type
 iabbrev readme README
 
