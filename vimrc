@@ -249,6 +249,12 @@ xnoremap . :normal .<CR>
 " Y yanks to the end of the line, entire line is still available with yy
 nnoremap Y y$
 
+" More natural movements to the beginning and end of line
+nnoremap H ^
+nnoremap L $
+nnoremap gH H
+nnoremap gL L
+
 " Make * and # search for selection in visual mode
 xnoremap * "xy/\V<C-r>=escape(@x, '/\')<CR><CR>
 xnoremap # "xy?\V<C-r>=escape(@x, '?\')<CR><CR>
