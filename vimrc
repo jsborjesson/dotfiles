@@ -329,9 +329,6 @@ nnoremap <Leader>r :source $MYVIMRC<CR>
 " Go to last file
 nnoremap <Leader><Leader> <C-^>
 
-" Close current window
-nnoremap <Leader><Esc> :q<CR>
-
 " Copy path to clipboard
 nnoremap <Leader>f :let @* = substitute(expand("%:p"), '/Users/alcesleo', "~", "")<CR>:echo "Copied path to clipboard"<CR>
 
