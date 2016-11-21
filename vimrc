@@ -308,7 +308,7 @@ nnoremap <C-y> <C-y>M
 " Save with C-s
 nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
 vmap <C-s> <Esc><C-s>gv
-imap <C-s> <Esc><C-s>
+imap <C-s> <Esc><C-s>l
 
 " ==================== Leader commands ====================
 " Mappings that I haven't found a better key combination for yet.
