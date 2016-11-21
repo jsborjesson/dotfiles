@@ -450,6 +450,7 @@ nnoremap <silent> <M-l> :TmuxNavigateRight<CR>
 nnoremap <silent> <M-o> :TmuxNavigatePrevious<CR>
 
 " Tmux Runner
+let g:VtrClearSequence = "q"
 nnoremap <Leader>v :VtrAttachToPane<CR>
 nnoremap <silent> <C-f> :VtrSendLinesToRunner<CR>
 xnoremap <silent> <C-f> :VtrSendLinesToRunner<CR>
