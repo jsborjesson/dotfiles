@@ -251,8 +251,8 @@ xnoremap . :normal .<CR>
 nnoremap Y y$
 
 " More natural movements to the beginning and end of line
-nnoremap H ^
-nnoremap L $
+noremap H ^
+noremap L $
 nnoremap gH H
 nnoremap gL L
 
