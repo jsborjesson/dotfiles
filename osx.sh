@@ -1,5 +1,9 @@
 echo "Configuring osx..."
 
+# Always require password when waking up
+defaults write com.apple.screensaver askForPassword -bool true
+defaults write com.apple.screensaver askForPasswordDelay 0
+
 # Set dark theme
 defaults write NSGlobalDomain AppleInterfaceStyle Dark
 
