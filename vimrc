@@ -34,6 +34,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'alcesleo/vim-uppercase-sql'
 Plug 'flazz/vim-colorschemes'
 Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/gv.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'kopischke/vim-fetch'   " Handle line:column numbers in filenames
 Plug 'rking/ag.vim'
@@ -71,6 +72,7 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 " Trial
 Plug 'tpope/vim-liquid'
 Plug 'dag/vim-fish'
+Plug 'EdJoJob/llvmir-vim'
 
 call plug#end()
 
