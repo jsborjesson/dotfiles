@@ -128,3 +128,17 @@ require "rspec/core/rake_task"
 RSpec::Core::RakeTask.new(:spec)
 task :default => :spec
 endsnippet
+
+snippet mini "MiniTest single file stub"
+class ${1:ClassName}
+end
+
+require "minitest/spec"
+require "minitest/autorun"
+
+describe $1 do
+  it "${2:does something}" do
+    $0
+  end
+end
+endsnippet
