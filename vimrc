@@ -73,6 +73,7 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'tpope/vim-liquid'
 Plug 'dag/vim-fish'
 Plug 'EdJoJob/llvmir-vim'
+Plug 'kchmck/vim-coffee-script'
 
 call plug#end()
 
