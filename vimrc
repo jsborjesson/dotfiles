@@ -244,10 +244,10 @@ let $BASH_ENV = '~/.alias'
 " U for normal redo is much more natural
 nnoremap U <C-r>
 
-" Enable @@ usage over several lines in selection
+" Enable @@ usage over several lines in visual mode
 xnoremap @@ :normal @@<CR>
 
-" Repeat command over multiple lines
+" Repeat command over multiple lines in visual mode
 xnoremap . :normal .<CR>
 
 " Y yanks to the end of the line, entire line is still available with yy
@@ -258,6 +258,7 @@ noremap H ^
 noremap L $
 nnoremap gH H
 nnoremap gL L
+nnoremap gM M
 
 " Make * and # search for selection in visual mode
 xnoremap * "xy/\V<C-r>=escape(@x, '/\')<CR><CR>
@@ -308,14 +309,14 @@ nnoremap Q @q
 " Run the q macro over multiple lines
 xnoremap Q :normal @q<CR>
 
-" Quick clear search highlights
+" Quickly clear search highlights
 nnoremap <silent> <C-l> :nohlsearch<CR>:diffupdate<CR><C-l>
 
 " Scroll with the cursor in the middle
 nnoremap <C-e> <C-e>M
 nnoremap <C-y> <C-y>M
 
-" Save with C-s
+" Save and trim whitespace with C-s
 nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>l
@@ -341,13 +342,11 @@ nmap <Leader># #``
 xmap <Leader>* *``
 xmap <Leader># #``
 
-" Maximize split
+" Maximize split in new tab, almost like <prefix>z in tmux
 nnoremap <Leader>z :silent tabedit %<CR>
 
 " Wrap until end of line in parenthesis
-nmap <Leader>( ysg_)
-nmap <Leader>) l"_xA)<Esc>
-inoremap <C-9> <Esc>ysg_)
+imap <C-l> <Esc>ysg_)
 
 " Black hole redirection
 nnoremap <Leader>d "_d
