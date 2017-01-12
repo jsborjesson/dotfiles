@@ -416,11 +416,6 @@ nnoremap <Leader>gb :Gblame<CR>
 nnoremap <Leader>gh :Gbrowse<CR>
 xnoremap <Leader>gh :Gbrowse<CR>
 
-" Unimpaired
-nnoremap cop :set paste!<CR>
-nnoremap [op :set paste<CR>
-nnoremap ]op :set nopaste<CR>
-
 " Gitgutter
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager    = 0
