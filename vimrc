@@ -347,6 +347,7 @@ nnoremap <Leader>z :silent tabedit %<CR>
 " Wrap until end of line in parenthesis
 nmap <Leader>( ysg_)
 nmap <Leader>) l"_xA)<Esc>
+inoremap <C-9> <Esc>ysg_)
 
 " Black hole redirection
 nnoremap <Leader>d "_d
@@ -414,6 +415,11 @@ nnoremap <Leader>gp :Gpush<CR>
 nnoremap <Leader>gb :Gblame<CR>
 nnoremap <Leader>gh :Gbrowse<CR>
 xnoremap <Leader>gh :Gbrowse<CR>
+
+" Unimpaired
+nnoremap cop :set paste!<CR>
+nnoremap [op :set paste<CR>
+nnoremap ]op :set nopaste<CR>
 
 " Gitgutter
 let g:gitgutter_realtime = 0
