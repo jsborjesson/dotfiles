@@ -154,7 +154,7 @@ set backspace=indent,eol,start
 set autoread
 set clipboard=unnamed " Yank to system clipboard
 set diffopt+=vertical
-set gdefault          " Replace all matches by default"
+set gdefault          " Replace all matches by default
 set hidden
 set lazyredraw        " Don't redraw until macro has finished running
 set listchars+=tab:»·
