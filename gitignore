@@ -1,5 +1,6 @@
 .DS_Store
 *.swp
 NOTES.md
+.vimrc
 .nvimrc
 *~
