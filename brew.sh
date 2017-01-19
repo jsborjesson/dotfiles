@@ -34,6 +34,7 @@ brew install z
 brew tap caskroom/cask
 brew tap caskroom/versions
 
+brew cask install appcleaner
 brew cask install caffeine
 brew cask install docker
 brew cask install dropbox
