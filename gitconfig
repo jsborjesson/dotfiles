@@ -6,28 +6,37 @@
     user = alcesleo
 
 [alias]
-    a  = add --all
-    b  = branch
-    cl = clone
-    co = checkout
-    d  = diff
-    ds = diff --staged
-    f  = fetch
-    h  = browse
-    l  = log --oneline --decorate -15
-    lo = log --oneline --decorate
-    pl = pull
-    pr = pull-request
-    pu = push
-    re = rebase
-    ri = rebase --interactive
-    s  = status --short
+    # Canonical shortcuts
+    a   = add --all
+    b   = branch
+    cl  = clone
+    co  = checkout
+    d   = diff
+    ds  = diff --staged
+    f   = fetch
+    h   = browse
+    l   = log --oneline --decorate -15
+    lo  = log --oneline --decorate
+    pl  = pull
+    pr  = pull-request
+    pu  = push
+    re  = rebase
+    ri  = rebase --interactive
+    s   = status --short
 
+    # Personal shortcuts
+    cob  = new-branch
+    com  = checkout master
+    lod  = log --pretty='format:%C(yellow)%h %C(green)%<(18)%an %C(blue bold)%<(22)%ar   %Creset%s'
+    pro  = !git push && hub pull-request -o
+    stu  = stash --include-untracked
+    tfo  = !git reset . && git checkout -- . && git clean -fd
+    yolo = push --force-with-lease
+
+    # New git commands
     amend                = commit --amend
     changed-files        = show --pretty="format:" --name-only
     changelog            = !git log --oneline `git describe --abbrev=0`..HEAD
-    cob                  = checkout -b
-    com                  = checkout master
     conflicts            = !git status --short | grep "^UU" | awk '{ print $2 }'
     ctags                = !.git/hooks/ctags
     delete-remote-branch = push --delete origin
@@ -35,12 +44,9 @@
     fix                  = commit --amend -C HEAD
     forget               = update-index --assume-unchanged
     forgotten            = !git ls-files -v | grep "^h" | awk '{ print $2 }'
-    iss                  = browse -- issues
-    lod                  = log --pretty='format:%C(yellow)%h %C(green)%<(18)%an %C(blue bold)%<(22)%ar   %Creset%s'
+    new-branch           = checkout -b
     ours                 = checkout --ours
     plush                = !git pull --rebase && git push
-    pro                  = !git push && hub pull-request -o
-    prs                  = browse -- pulls
     pulled               = log -p --reverse --no-merges --stat @{1}..
     pure                 = pull --rebase --autostash
     remember             = "!f() { git update-index --no-assume-unchanged ${@:-$(git forgotten | xargs)}; }; f"
@@ -49,13 +55,10 @@
     sha                  = "!f() { git rev-parse --short ${1:-HEAD}; }; f"
     standup              = log --oneline --decorate --author alcesleo --since yesterday --branches
     status-files         = !git status --short | awk '{ print $2 }'
-    stu                  = stash --include-untracked
-    tfo                  = !git reset . && git checkout -- . && git clean -fd
     theirs               = checkout --theirs
     todo                 = grep --line-number -E "(TODO|FIXME).*"
     tree                 = log --graph --oneline --decorate --all
     update-submodules    = submodule update --init --recursive
-    yolo                 = push --force-with-lease
 
 [core]
     excludesfile = ~/.gitignore
