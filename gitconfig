@@ -40,7 +40,7 @@
     conflicts            = !git status --short | grep "^UU" | awk '{ print $2 }'
     ctags                = !.git/hooks/ctags
     delete-remote-branch = push --delete origin
-    diff-merge           = "!f() { git diff ${1:-HEAD}^1..${1:-HEAD}^2; }; f"
+    show-merge           = show -m
     fix                  = commit --amend -C HEAD
     forget               = update-index --assume-unchanged
     forgotten            = !git ls-files -v | grep "^h" | awk '{ print $2 }'
