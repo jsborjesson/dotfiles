@@ -459,6 +459,12 @@ let g:sexp_enable_insert_mode_mappings = 0
 
 " Tmux Navigator
 let g:tmux_navigator_no_mappings = 1
+" Mend the relevant meta-combinations
+set <M-h>=h
+set <M-j>=j
+set <M-k>=k
+set <M-l>=l
+set <M-o>=o
 nnoremap <silent> <M-h> :TmuxNavigateLeft<CR>
 nnoremap <silent> <M-j> :TmuxNavigateDown<CR>
 nnoremap <silent> <M-k> :TmuxNavigateUp<CR>
