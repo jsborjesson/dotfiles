@@ -113,8 +113,10 @@ augroup settings
     " Automatically rebalance splits on resize
     autocmd VimResized * :wincmd =
 
-    " Syntax highlighting for Läsp
-    autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure
+    " Add syntax highlighting for some special files
+    autocmd BufNewFile,BufRead *.lasp setlocal filetype=clojure
+    autocmd BufNewFile,BufRead gitconfig setlocal filetype=gitconfig
+    autocmd BufNewFile,BufRead path setlocal filetype=sh
 augroup END
 
 " ==================== Whitespace ====================
@@ -346,7 +348,7 @@ xmap <Leader># #``
 nnoremap <Leader>z :silent tabedit %<CR>
 
 " Wrap until end of line in parenthesis
-imap <C-l> <Esc>ysg_)
+imap <C-l> <Esc>lysg_)
 
 " Black hole redirection
 nnoremap <Leader>d "_d
