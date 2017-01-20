@@ -43,7 +43,7 @@
     prs                  = browse -- pulls
     pulled               = log -p --reverse --no-merges --stat @{1}..
     pure                 = pull --rebase --autostash
-    remember             = update-index --no-assume-unchanged
+    remember             = "!f() { git update-index --no-assume-unchanged ${@:-$(git forgotten | xargs)}; }; f"
     rename-branch        = branch -m
     reset-tags           = !git tag -l | xargs git tag -d && git fetch -t
     sha                  = "!f() { git rev-parse --short ${1:-HEAD}; }; f"
