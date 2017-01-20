@@ -323,6 +323,8 @@ nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>l
 
+nnoremap § :q<CR>
+
 " ==================== Leader commands ====================
 " Mappings that I haven't found a better key combination for yet.
 
