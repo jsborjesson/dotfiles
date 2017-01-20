@@ -25,13 +25,13 @@
     s   = status --short
 
     # Personal shortcuts
-    cob  = new-branch
-    com  = checkout master
-    lod  = log --pretty='format:%C(yellow)%h %C(green)%<(18)%an %C(blue bold)%<(22)%ar   %Creset%s'
-    pro  = !git push && hub pull-request -o
-    stu  = stash --include-untracked
-    tfo  = !git reset . && git checkout -- . && git clean -fd
-    yolo = push --force-with-lease
+    cob = new-branch
+    com = checkout master
+    lod = log --pretty='format:%C(yellow)%h %C(green)%<(18)%an %C(blue bold)%<(22)%ar   %Creset%s'
+    pro = !git push && hub pull-request -o
+    stu = stash --include-untracked
+    tfo = !git reset . && git checkout -- . && git clean -fd
+    puf = push --force-with-lease
 
     # New git commands
     amend                = commit --amend
