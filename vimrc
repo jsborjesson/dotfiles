@@ -36,7 +36,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/gv.vim'
 Plug 'kien/ctrlp.vim'
-Plug 'kopischke/vim-fetch'   " Handle line:column numbers in filenames
+Plug 'kopischke/vim-fetch' " Handle line:column numbers in filenames
 Plug 'rking/ag.vim'
 Plug 'vim-scripts/ReplaceWithRegister'
 
