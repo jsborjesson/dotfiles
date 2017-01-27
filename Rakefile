@@ -28,7 +28,6 @@ DOTFILE_PATHS = %w[
 ]
 
 # The files that need to go elsewhere
-DOTFILE_PATHS << ["fish/", "~/.config/fish"]
 DOTFILE_PATHS << ["Shortcuts.json", "~/Library/Application Support/Spectacle/Shortcuts.json"]
 DOTFILE_PATHS << ["private.xml", "~/Library/Application Support/Karabiner/private.xml"]
 
