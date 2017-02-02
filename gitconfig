@@ -20,8 +20,9 @@
     pl  = pull
     pr  = pull-request
     pu  = push
-    re  = rebase
+    rb  = rebase
     ri  = rebase --interactive
+    rs  = reset
     s   = status --short
 
     # Personal shortcuts
