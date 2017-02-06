@@ -115,7 +115,7 @@ augroup settings
     " Add syntax highlighting for some special files
     autocmd BufNewFile,BufRead *.lasp setlocal filetype=clojure
     autocmd BufNewFile,BufRead gitconfig setlocal filetype=gitconfig
-    autocmd BufNewFile,BufRead path setlocal filetype=sh
+    autocmd BufNewFile,BufRead path,alias setlocal filetype=sh
 augroup END
 
 " ==================== Whitespace ====================
