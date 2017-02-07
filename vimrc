@@ -2,18 +2,18 @@
 call plug#begin('~/.vim/plugged')
 
 " Vim standard library
-Plug 'tpope/vim-abolish'     " Case insensitive search and camel/snake/mixed-switching
-Plug 'tpope/vim-commentary'  " Comment lines with gc
-Plug 'tpope/vim-endwise'     " Put in end automatically
-Plug 'tpope/vim-eunuch'      " Unix helpers such as :Move, :Rename and :SudoWrite
-Plug 'tpope/vim-fugitive'    " Git helpers
-Plug 'tpope/vim-repeat'      " Make . work with plugins
-Plug 'tpope/vim-rsi'         " Readline key-mappings for insert and command mode
-Plug 'tpope/vim-sleuth'      " Set indentation settings automatically
-Plug 'tpope/vim-speeddating' " Makes C-a and C-x work for dates
-Plug 'tpope/vim-surround'    " Change surrounding quotes, tags...
-Plug 'tpope/vim-unimpaired'  " Lots of clever pairs of mappings
-Plug 'tpope/vim-vinegar'     " Better netrw filebrowser
+Plug 'tpope/vim-abolish'       " Case insensitive search and camel/snake/mixed-switching
+Plug 'tpope/vim-commentary'    " Comment lines with gc
+Plug 'tpope/vim-endwise'       " Put in end automatically
+Plug 'tpope/vim-eunuch'        " Unix helpers such as :Move, :Rename and :SudoWrite
+Plug 'tpope/vim-fugitive'      " Git helpers
+Plug 'tpope/vim-repeat'        " Make . work with plugins
+Plug 'tpope/vim-rsi'           " Readline key-mappings for insert and command mode
+Plug 'tpope/vim-sleuth'        " Set indentation settings automatically
+Plug 'tpope/vim-speeddating'   " Makes C-a and C-x work for dates
+Plug 'tpope/vim-surround'      " Change surrounding quotes, tags...
+Plug 'tpope/vim-unimpaired'    " Lots of clever pairs of mappings
+Plug 'tpope/vim-vinegar'       " Better netrw filebrowser
 
 " Extra text-objects and motions
 Plug 'christoomey/vim-sort-motion'
