@@ -1,38 +1,4 @@
 require "rake"
-require "./lib/dotfile"
-
-# All files that should be simply symlinked into ~ with a leading .
-DOTFILE_PATHS = %w[
-  alias
-  bash_profile
-  bashrc
-  bashrc.local
-  bin/
-  bundle/
-  emacs
-  gemrc
-  git_template/
-  gitconfig
-  gitignore
-  hushlogin
-  inputrc
-  jrnl_config
-  path
-  pryrc
-  psqlrc
-  rails_template.rb
-  railsrc
-  tmux.conf
-  vim
-  vimrc
-]
-
-# The files that need to go elsewhere
-DOTFILE_PATHS << ["fish/", "~/.config/fish"]
-DOTFILE_PATHS << ["Shortcuts.json", "~/Library/Application Support/Spectacle/Shortcuts.json"]
-DOTFILE_PATHS << ["private.xml", "~/Library/Application Support/Karabiner/private.xml"]
-
-DOTFILES = DOTFILE_PATHS.map { |path| Dotfile.new(*path) }
 
 task default: :link
 
@@ -48,12 +14,7 @@ task bootstrap: %i[
 
 desc "Symlink dotfiles into home directory"
 task :link do
-  DOTFILES.each(&:link)
-end
-
-desc "Remove symlinks (smart enough to not delete something else)"
-task :unlink do
-  DOTFILES.each(&:unlink)
+  sh "bash ./link.sh"
 end
 
 namespace :vim do

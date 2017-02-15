@@ -15,6 +15,7 @@ brew install docker-compose
 brew install emacs
 brew install fzf
 brew install git
+brew install git-extras
 brew install grc
 brew install htop
 brew install hub

@@ -36,7 +36,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/gv.vim'
 Plug 'kien/ctrlp.vim'
-Plug 'kopischke/vim-fetch'   " Handle line:column numbers in filenames
+Plug 'kopischke/vim-fetch' " Handle line:column numbers in filenames
 Plug 'rking/ag.vim'
 Plug 'vim-scripts/ReplaceWithRegister'
 
@@ -71,7 +71,6 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 
 " Trial
 Plug 'tpope/vim-liquid'
-Plug 'dag/vim-fish'
 Plug 'EdJoJob/llvmir-vim'
 Plug 'kchmck/vim-coffee-script'
 
@@ -113,8 +112,10 @@ augroup settings
     " Automatically rebalance splits on resize
     autocmd VimResized * :wincmd =
 
-    " Syntax highlighting for Läsp
-    autocmd BufNewFile,BufRead *.lasp setlocal ft=clojure
+    " Add syntax highlighting for some special files
+    autocmd BufNewFile,BufRead *.lasp setlocal filetype=clojure
+    autocmd BufNewFile,BufRead gitconfig setlocal filetype=gitconfig
+    autocmd BufNewFile,BufRead path,alias setlocal filetype=sh
 augroup END
 
 " ==================== Whitespace ====================
@@ -321,6 +322,8 @@ nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>l
 
+nnoremap § :q<CR>
+
 " ==================== Leader commands ====================
 " Mappings that I haven't found a better key combination for yet.
 
@@ -332,6 +335,9 @@ nnoremap <Leader>r :source $MYVIMRC<CR>
 
 " Go to last file
 nnoremap <Leader><Leader> <C-^>
+
+" Close
+nnoremap <Leader>q :q<CR>
 
 " Copy path to clipboard
 nnoremap <Leader>f :let @* = substitute(expand("%:p"), '/Users/alcesleo', "~", "")<CR>:echo "Copied path to clipboard"<CR>
@@ -346,7 +352,7 @@ xmap <Leader># #``
 nnoremap <Leader>z :silent tabedit %<CR>
 
 " Wrap until end of line in parenthesis
-imap <C-l> <Esc>ysg_)
+nmap <Leader>( lysg_)
 
 " Black hole redirection
 nnoremap <Leader>d "_d
@@ -457,6 +463,12 @@ let g:sexp_enable_insert_mode_mappings = 0
 
 " Tmux Navigator
 let g:tmux_navigator_no_mappings = 1
+" Mend the relevant meta-combinations
+set <M-h>=h
+set <M-j>=j
+set <M-k>=k
+set <M-l>=l
+set <M-o>=o
 nnoremap <silent> <M-h> :TmuxNavigateLeft<CR>
 nnoremap <silent> <M-j> :TmuxNavigateDown<CR>
 nnoremap <silent> <M-k> :TmuxNavigateUp<CR>
