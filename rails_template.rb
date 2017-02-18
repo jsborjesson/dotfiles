@@ -1,21 +1,8 @@
 ########################################
-# My rails application template
+# Rails Application Template
 ########################################
+# Configure `rails new` a bit further
 # Documentation: http://guides.rubyonrails.org/generators.html
-#
-# Generates a new rails app the way I want it.
-#
-# Use like this:
-#
-#     rails new test_app -m rails_template.rb -B -J -T
-#
-# The extra options (skipping bundle, js and test_unit) can be
-# placed in your .railsrc
-#
-# Test easily by running this:
-#
-#     rm -rf test_app && rails new test_app -m rails_template.rb -B -J -T
-
 
 ########################################
 # Manage gems
