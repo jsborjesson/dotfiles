@@ -34,10 +34,6 @@ gem_group :development do
   gem "quiet_assets"
 end
 
-gem_group :test do
-  gem "simplecov", require: false
-end
-
 run "bundle"
 
 
@@ -57,27 +53,6 @@ comment_lines "spec/spec_helper.rb", /profile_examples/
 
 # run with bundle exec automatically
 run "bundle binstubs rspec-core"
-
-
-########################################
-# Configure SimpleCov
-########################################
-
-say "Configuring SimpleCov"
-
-# configure code coverage
-prepend_to_file "spec/spec_helper.rb", <<CODE
-require "simplecov"
-SimpleCov.start "rails"
-
-CODE
-
-# gitignore output
-append_to_file ".gitignore", <<CODE
-
-# Ignore SimpleCov output
-/coverage
-CODE
 
 
 ########################################
