@@ -1,4 +1,4 @@
 --skip-bundle
---skip-javascript
---skip-test-unit
+--skip-turbolinks
 --template=~/.rails_template.rb
+--database=postgresql
