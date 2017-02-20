@@ -7,6 +7,7 @@ Plug 'tpope/vim-commentary'    " Comment lines with gc
 Plug 'tpope/vim-endwise'       " Put in end automatically
 Plug 'tpope/vim-eunuch'        " Unix helpers such as :Move, :Rename and :SudoWrite
 Plug 'tpope/vim-fugitive'      " Git helpers
+Plug 'tpope/vim-projectionist' " Provides alternate file switching, opening the test file etc.
 Plug 'tpope/vim-repeat'        " Make . work with plugins
 Plug 'tpope/vim-rsi'           " Readline key-mappings for insert and command mode
 Plug 'tpope/vim-sleuth'        " Set indentation settings automatically

@@ -25,26 +25,6 @@ function! RunLastSpecWithDocumentation()
     let g:rspec_command = l:old_rspec_command
 endfunction
 
-" Try to open spec file in split
-"
-" We have to check if the function exists first since this file will be loaded
-" when the spec is opened, and by simply using `function!`, at that point it
-" will trigger an error for trying to redefine a function that is currently
-" being run.
-if !exists("*SplitSpec")
-    function SplitSpec()
-        let path="spec/" . substitute(@%, ".rb", "_spec.rb", "")
-        if filereadable(path)
-            execute 'only'
-            execute 'vsp ' . path
-        else
-            echo 'Spec file not found: ' . path
-        endif
-    endfunction
-endif
-
-command! SplitSpec execute ':call SplitSpec()'
-nnoremap <Leader>S :SplitSpec<CR>
 
 " AutoPairs
 let b:AutoPairs = {'(':')', '[':']', '{':'}', "'":"'", '"':'"', '`':'`', '|':'|'}
