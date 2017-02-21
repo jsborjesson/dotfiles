@@ -174,7 +174,7 @@ set wildmenu
 set ignorecase
 set smartcase
 set incsearch
-set hlsearch
+set nohlsearch " This makes using / for navigation less obnoxious, it can quickly be toggled on with coh
 
 " Default indentation settings
 set expandtab
