@@ -323,10 +323,6 @@ xnoremap Q :normal @q<CR>
 " Quickly clear search highlights
 nnoremap <silent> <C-l> :nohlsearch<CR>:diffupdate<CR><C-l>
 
-" Scroll with the cursor in the middle
-nnoremap <C-e> <C-e>M
-nnoremap <C-y> <C-y>M
-
 " Save and trim whitespace with C-s
 nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
 vmap <C-s> <Esc><C-s>gv
