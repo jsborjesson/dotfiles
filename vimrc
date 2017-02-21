@@ -27,6 +27,7 @@ Plug 'tommcdo/vim-exchange'
 Plug 'wellle/targets.vim'
 
 " Extra features
+Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'AndrewRadev/sideways.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'AndrewRadev/switch.vim'
@@ -36,7 +37,6 @@ Plug 'alcesleo/vim-uppercase-sql'
 Plug 'flazz/vim-colorschemes'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/gv.vim'
-Plug 'kien/ctrlp.vim'
 Plug 'kopischke/vim-fetch' " Handle line:column numbers in filenames
 Plug 'rking/ag.vim'
 Plug 'vim-scripts/ReplaceWithRegister'
@@ -407,6 +407,9 @@ iabbrev readme README
 " Commentary
 let g:commentary_map_backslash=0
 
+" FZF
+nnoremap <C-p> :FZF<CR>
+
 " Targets
 let g:targets_nlNL = 'nN  '
 
@@ -443,9 +446,6 @@ highlight GitGutterAdd ctermfg=green
 highlight GitGutterChange ctermfg=yellow
 highlight GitGutterDelete ctermfg=red
 highlight GitGutterChangeDelete ctermfg=166
-
-" CtrlP
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger='<Tab>'
