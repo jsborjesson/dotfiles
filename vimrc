@@ -257,14 +257,10 @@ xnoremap . :normal .<CR>
 nnoremap Y y$
 
 " More natural movements to line/row extremes
-nnoremap H ^
-nnoremap L $
-nnoremap K H
-nnoremap J L
-xnoremap H ^
-xnoremap L $
-xnoremap K H
-xnoremap J L
+noremap H ^
+noremap L $
+noremap K H
+noremap J L
 
 " Preserve the K lookup command under gK
 noremap gK K
