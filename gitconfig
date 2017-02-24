@@ -30,8 +30,8 @@
     com = checkout master
     lod = log --pretty='format:%C(yellow)%h %C(green)%<(18)%an %C(blue bold)%<(22)%ar   %Creset%s'
     pro = !git push && hub pull-request -o
-    stu = stash --include-untracked
     puf = push --force-with-lease
+    stu = stash --include-untracked
 
     # New git commands
     amend                = commit --amend
@@ -40,7 +40,6 @@
     conflicts            = !git status --short | grep "^UU" | awk '{ print $2 }'
     ctags                = !.git/hooks/ctags
     delete-remote-branch = push --delete origin
-    show-merge           = show -m
     fix                  = commit --amend -C HEAD
     forget               = update-index --assume-unchanged
     forgotten            = !git ls-files -v | grep "^h" | awk '{ print $2 }'
@@ -53,6 +52,7 @@
     rename-branch        = branch -m
     reset-tags           = !git tag -l | xargs git tag -d && git fetch -t
     sha                  = "!f() { git rev-parse --short ${1:-HEAD}; }; f"
+    show-merge           = show -m
     standup              = log --oneline --decorate --author alcesleo --since yesterday --branches
     status-files         = !git status --short | awk '{ print $2 }'
     theirs               = checkout --theirs
