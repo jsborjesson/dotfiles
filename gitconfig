@@ -49,6 +49,7 @@
     pulled               = log -p --reverse --no-merges --stat @{1}..
     pure                 = pull --rebase --autostash
     remember             = "!f() { git update-index --no-assume-unchanged ${@:-$(git forgotten | xargs)}; }; f"
+    uncommit             = reset --soft HEAD~
     resolve-conflicts    = !git conflicts | xargs -o $EDITOR '+/<<<<<<<'
     rename-branch        = branch -m
     reset-tags           = !git tag -l | xargs git tag -d && git fetch -t
