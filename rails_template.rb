@@ -21,13 +21,13 @@ run "bundle"
 say "Configuring Rails generators"
 
 # Disable some annoying generators
-initializer "disable_generators.rb", <<CODE
-# Disable some annoying generators
+initializer "generators.rb", <<CODE
 Rails.application.configure do
-  config.generators do |generate|
-    generate.helper false
-    generate.assets false
-    generate.jbuilder false
+  config.generators do |g|
+    # Disable some annoying generators
+    g.helper false
+    g.assets false
+    g.jbuilder false
   end
 end
 CODE
