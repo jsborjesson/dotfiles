@@ -117,7 +117,7 @@ augroup settings
     autocmd BufNewFile,BufRead *.lasp setlocal filetype=clojure
     autocmd BufNewFile,BufRead emacs setlocal filetype=lisp
     autocmd BufNewFile,BufRead gitconfig setlocal filetype=gitconfig
-    autocmd BufNewFile,BufRead alias,bash_profile,.env.example,path,railsrc setlocal filetype=sh
+    autocmd BufNewFile,BufRead alias,bash_profile,.env*,path,railsrc setlocal filetype=sh
 augroup END
 
 " ==================== Whitespace ====================
