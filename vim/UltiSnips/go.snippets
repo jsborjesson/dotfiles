@@ -7,3 +7,9 @@ func Test${1:ThingToTest} (t *testing.T) {
 	$0
 }
 endsnippet
+
+snippet err
+if err != nil {
+	log.Fatal(err)
+}
+endsnippet
