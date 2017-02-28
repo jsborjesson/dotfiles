@@ -117,7 +117,7 @@ augroup settings
     autocmd BufNewFile,BufRead *.lasp setlocal filetype=clojure
     autocmd BufNewFile,BufRead emacs setlocal filetype=lisp
     autocmd BufNewFile,BufRead gitconfig setlocal filetype=gitconfig
-    autocmd BufNewFile,BufRead path,alias,railsrc,bash_profile setlocal filetype=sh
+    autocmd BufNewFile,BufRead alias,bash_profile,.env.example,path,railsrc setlocal filetype=sh
 augroup END
 
 " ==================== Whitespace ====================
@@ -484,7 +484,7 @@ nnoremap <silent> TT :VtrSendLinesToRunner<CR>
 xnoremap <silent> TT :VtrSendLinesToRunner<CR>
 
 " Switch
-let g:switch_mapping = '<Leader><Tab>'
+let g:switch_mapping = '<Tab>'
 
 " SplitJoin
 let g:splitjoin_split_mapping = 'cS'
