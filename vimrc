@@ -340,9 +340,6 @@ nnoremap <Leader><Leader> <C-^>
 " Close
 nnoremap <Leader>q :q<CR>
 
-" Copy path to clipboard
-nnoremap <Leader>f :let @* = substitute(expand("%:p"), '/Users/alcesleo', "~", "")<CR>:echo "Copied path to clipboard"<CR>
-
 " Highlight word but don't jump to the next match
 nmap <Leader>* *``
 nmap <Leader># #``
@@ -386,6 +383,8 @@ command! Nmappings execute 'redir! > /tmp/vim_mappings.txt | silent nmap | redir
 command! Mappings execute 'redir! > /tmp/vim_mappings.txt | silent map | redir END | !less /tmp/vim_mappings.txt'
 
 command! MakeDirectories execute '!mkdir -p %:h'
+
+command! CopyPathToClipboard execute "let @* = substitute(expand('%:p'), '/Users/alcesleo', '~', '')"
 
 " Find out the highlighting group under the cursor
 function! HighlightGroup()
