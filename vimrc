@@ -90,7 +90,7 @@ highlight Pmenu ctermbg=59 ctermfg=15
 highlight PmenuSel ctermbg=226 ctermfg=0
 highlight Folded ctermfg=0
 highlight CursorLine ctermbg=233 cterm=NONE
-highlight ColorColumn ctermbg=232
+highlight ColorColumn ctermbg=233
 highlight Todo ctermfg=white ctermbg=none
 
 " No split separator char
