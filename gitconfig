@@ -49,10 +49,9 @@
     pulled               = log -p --reverse --no-merges --stat @{1}..
     pure                 = pull --rebase --autostash
     remember             = "!f() { git update-index --no-assume-unchanged ${@:-$(git forgotten | xargs)}; }; f"
-    uncommit             = reset --soft HEAD~
-    resolve-conflicts    = !git conflicts | xargs -o $EDITOR '+/<<<<<<<'
     rename-branch        = branch -m
     reset-tags           = !git tag -l | xargs git tag -d && git fetch -t
+    resolve-conflicts    = !git conflicts | xargs -o $EDITOR '+/<<<<<<<'
     sha                  = "!f() { git rev-parse --short ${1:-HEAD}; }; f"
     show-merge           = show -m
     standup              = log --oneline --decorate --author alcesleo --since yesterday --branches
@@ -60,6 +59,8 @@
     theirs               = checkout --theirs
     todo                 = grep --line-number -E "(TODO|FIXME).*"
     tree                 = log --graph --oneline --decorate --all
+    uncommit             = reset --soft HEAD~
+    unstage              = reset
     update-submodules    = submodule update --init --recursive
 
 [core]
