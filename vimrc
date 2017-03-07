@@ -475,11 +475,11 @@ nnoremap <silent> <M-j> :TmuxNavigateDown<CR>
 nnoremap <silent> <M-k> :TmuxNavigateUp<CR>
 nnoremap <silent> <M-l> :TmuxNavigateRight<CR>
 nnoremap <silent> <M-o> :TmuxNavigatePrevious<CR>
-imap <M-h> <Esc><M-h>
-imap <M-j> <Esc><M-j>
-imap <M-k> <Esc><M-k>
-imap <M-l> <Esc><M-l>
-imap <M-o> <Esc><M-o>
+inoremap <silent> <M-h> <Esc>:TmuxNavigateLeft<CR>
+inoremap <silent> <M-j> <Esc>:TmuxNavigateDown<CR>
+inoremap <silent> <M-k> <Esc>:TmuxNavigateUp<CR>
+inoremap <silent> <M-l> <Esc>:TmuxNavigateRight<CR>
+inoremap <silent> <M-o> <Esc>:TmuxNavigatePrevious<CR>
 
 " Tmux Runner
 let g:VtrClearSequence = "q"
