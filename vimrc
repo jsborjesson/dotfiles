@@ -257,14 +257,9 @@ xnoremap . :normal .<CR>
 " Y yanks to the end of the line, entire line is still available with yy
 nnoremap Y y$
 
-" More natural movements to line/row extremes
-noremap H ^
-noremap L $
-noremap K H
-noremap J L
-
-" Preserve the K lookup command under gK
-noremap gK K
+" More natural movements to line extremes
+noremap gh ^
+noremap gl $
 
 " Make * and # search for selection in visual mode
 xnoremap * "xy/\V<C-r>=escape(@x, '/\')<CR><CR>
@@ -287,10 +282,10 @@ xnoremap & :&&<CR>
 " this makes J take a motion so you can do Jip, and you can still get the old
 " behaviour by doing JJ and gJJ, this is much more consistent with other Vim
 " commands.
-nnoremap <silent> gj :set operatorfunc=JoinOperator<CR>g@
+nnoremap <silent> J :set operatorfunc=JoinOperator<CR>g@
 nnoremap <silent> gJ :set operatorfunc=GJoinOperator<CR>g@
+nnoremap JJ J
 nnoremap gJJ gJ
-xnoremap gj J
 
 function! JoinOperator(submode)
     '[,']join
