@@ -37,7 +37,7 @@
     amend                = commit --amend
     changed-files        = show --pretty="format:" --name-only
     changelog            = !git log --oneline `git describe --abbrev=0`..HEAD
-    conflicts            = !git status --short | grep "^UU" | awk '{ print $2 }'
+    conflicts            = !git status --short | grep -E '^UU|^AA' | awk '{ print $2 }'
     ctags                = !.git/hooks/ctags
     delete-remote-branch = push --delete origin
     fix                  = commit --amend -C HEAD
