@@ -22,7 +22,7 @@ brew install hub
 brew install kpcli
 brew install mycli pgcli
 brew install python python3
-brew install rbenv ruby-build
+brew install rbenv ruby-build rbenv-gemset
 brew install shellcheck
 brew install tmux reattach-to-user-namespace
 brew install tree
