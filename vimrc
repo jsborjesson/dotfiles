@@ -74,6 +74,7 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'tpope/vim-liquid'
 Plug 'EdJoJob/llvmir-vim'
 Plug 'kchmck/vim-coffee-script'
+Plug 'majutsushi/tagbar'
 
 call plug#end()
 
@@ -498,3 +499,6 @@ nnoremap >e :SidewaysRight<CR>
 " Go
 let g:go_fmt_command = "goimports"
 let g:go_fmt_fail_silently = 1
+
+" TagBar
+nnoremap <F8> :TagbarToggle<CR>
