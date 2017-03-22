@@ -56,6 +56,7 @@
     show-merge           = show -m
     standup              = log --oneline --decorate --author alcesleo --since yesterday --branches
     status-files         = !git status --short | awk '{ print $2 }'
+    tags                 = tag -n --sort='-version:refname'
     theirs               = checkout --theirs
     todo                 = grep --line-number -E "(TODO|FIXME).*"
     tree                 = log --graph --oneline --decorate --all
