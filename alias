@@ -19,6 +19,11 @@ alias src='source ~/.bashrc'
 alias v='vim'
 alias vless='$(brew --prefix vim)/share/vim/vim80/macros/less.sh'
 
+alias search=ag
+function search-and-replace() {
+    ag $1 -l | xargs sed -i "" "s/$1/$2/g"
+}
+
 # cd to location of topmost Finder window
 function cdf() {
     cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')"
