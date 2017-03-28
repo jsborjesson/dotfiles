@@ -55,6 +55,7 @@
     sha                  = "!f() { git rev-parse --short ${1:-HEAD}; }; f"
     show-merge           = show -m
     standup              = log --oneline --decorate --author alcesleo --since yesterday --branches
+    stashes              = stash list
     status-files         = !git status --short | awk '{ print $2 }'
     tags                 = tag -n --sort='-version:refname'
     theirs               = checkout --theirs
