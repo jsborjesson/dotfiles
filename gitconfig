@@ -32,6 +32,7 @@
     pro = !git push && hub pull-request -o
     puf = push --force-with-lease
     stu = stash --include-untracked
+    tfo = !git reset . && git checkout -- . && git clean -fd
 
     # New git commands
     amend                = commit --amend
