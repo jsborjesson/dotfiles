@@ -107,6 +107,11 @@ task :gems do
   sh "rbenv rehash"
 end
 
+desc "Install FZF autocompletion and keybindings"
+task :fzf do
+  sh "/usr/local/opt/fzf/install"
+end
+
 desc "Set the new version of bash as the standard shell"
 task :bash do
   shell = "/usr/local/bin/bash"
