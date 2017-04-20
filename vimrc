@@ -52,7 +52,7 @@ Plug 'thoughtbot/vim-rspec',   { 'for': 'ruby' }
 Plug 'tpope/vim-bundler',      { 'for': 'ruby' }
 Plug 'tpope/vim-rake',         { 'for': 'ruby' }
 Plug 'tpope/vim-rbenv',        { 'for': 'ruby' }
-" Plug 'vim-ruby/vim-ruby',      { 'for': 'ruby' }
+Plug 'vim-ruby/vim-ruby',      { 'for': 'ruby' }
 
 " Clojure
 Plug 'tpope/vim-fireplace',                        { 'for': 'clojure' }
@@ -239,6 +239,9 @@ endif
 " Load shell aliases
 let $BASH_ENV = '~/.alias'
 
+" Make README easier to type
+iabbrev readme README
+
 " ==================== Vim++ mappings ====================
 " This first section of mappings I categorize as either fixing or
 " supercharging Vim's behaviour - it fixes flaws, makes standard commands
@@ -387,8 +390,10 @@ nnoremap <Leader>s :set filetype=sh<CR>
 command! Nmappings execute 'redir! > /tmp/vim_mappings.txt | silent nmap | redir END | !less /tmp/vim_mappings.txt'
 command! Mappings execute 'redir! > /tmp/vim_mappings.txt | silent map | redir END | !less /tmp/vim_mappings.txt'
 
+" Make all necessary directories to be able to save the current buffer
 command! MakeDirectories silent execute '!mkdir -p %:h' | execute 'redraw!'
 
+" Copy the current path
 command! CopyPathToClipboard execute "let @* = substitute(expand('%:p'), '/Users/alcesleo', '~', '')"
 
 " Count matches from last search
@@ -400,9 +405,6 @@ function! HighlightGroup()
     echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
 endfunction
 command! HighlightGroup call HighlightGroup()
-
-" Make README easier to type
-iabbrev readme README
 
 " ==================== Plugin settings ====================
 
