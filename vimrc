@@ -52,7 +52,7 @@ Plug 'thoughtbot/vim-rspec',   { 'for': 'ruby' }
 Plug 'tpope/vim-bundler',      { 'for': 'ruby' }
 Plug 'tpope/vim-rake',         { 'for': 'ruby' }
 Plug 'tpope/vim-rbenv',        { 'for': 'ruby' }
-Plug 'vim-ruby/vim-ruby',      { 'for': 'ruby' }
+" Plug 'vim-ruby/vim-ruby',      { 'for': 'ruby' }
 
 " Clojure
 Plug 'tpope/vim-fireplace',                        { 'for': 'clojure' }
@@ -412,6 +412,9 @@ let g:commentary_map_backslash=0
 
 " FZF
 nnoremap <C-p> :FZF<CR>
+set <M-x>=x
+nnoremap <M-x> :Commands<CR>
+let g:fzf_commands_expect = 'enter'
 
 " Targets
 let g:targets_nlNL = 'nN  '
