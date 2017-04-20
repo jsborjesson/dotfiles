@@ -371,10 +371,6 @@ xnoremap <Leader>x "_
 nnoremap <Leader>p "0p
 xnoremap <Leader>p "0p
 
-" Count matches from last search
-nnoremap <Leader>c :%s///n<CR>
-xnoremap <Leader>c :s///n<CR>
-
 " Set 2 or 4 space indent
 nnoremap <Leader>2 :set expandtab shiftwidth=2<CR>
 nnoremap <Leader>4 :set expandtab shiftwidth=4<CR>
@@ -394,6 +390,9 @@ command! Mappings execute 'redir! > /tmp/vim_mappings.txt | silent map | redir E
 command! MakeDirectories silent execute '!mkdir -p %:h' | execute 'redraw!'
 
 command! CopyPathToClipboard execute "let @* = substitute(expand('%:p'), '/Users/alcesleo', '~', '')"
+
+" Count matches from last search
+command! CountMatches execute '%s///n'
 
 " Find out the highlighting group under the cursor
 function! HighlightGroup()
