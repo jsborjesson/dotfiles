@@ -391,7 +391,7 @@ nnoremap <Leader>s :set filetype=sh<CR>
 command! Nmappings execute 'redir! > /tmp/vim_mappings.txt | silent nmap | redir END | !less /tmp/vim_mappings.txt'
 command! Mappings execute 'redir! > /tmp/vim_mappings.txt | silent map | redir END | !less /tmp/vim_mappings.txt'
 
-command! MakeDirectories execute '!mkdir -p %:h'
+command! MakeDirectories silent execute '!mkdir -p %:h' | execute 'redraw!'
 
 command! CopyPathToClipboard execute "let @* = substitute(expand('%:p'), '/Users/alcesleo', '~', '')"
 
