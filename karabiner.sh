@@ -4,6 +4,10 @@ cli=/Applications/Karabiner.app/Contents/Library/bin/karabiner
 
 $cli set custom.keepass_login 1
 /bin/echo -n .
+$cli set option.emacsmode_controlAE 1
+/bin/echo -n .
+$cli set option.emacsmode_controlD_nomodifiers 1
+/bin/echo -n .
 $cli set remap.custom_ergonomic_arrow_keys 1
 /bin/echo -n .
 $cli set remap.custom_ergonomic_fringe_keys 1
