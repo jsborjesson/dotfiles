@@ -8,6 +8,7 @@
 [alias]
     # Canonical shortcuts
     a   = add --all
+    ap  = add --patch
     b   = branch
     cl  = clone
     co  = checkout
