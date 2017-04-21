@@ -518,3 +518,4 @@ let g:go_fmt_fail_silently = 1
 
 " TagBar
 nnoremap <F8> :TagbarToggle<CR>
+nnoremap <F9> :TagbarShowTag<CR>
