@@ -465,6 +465,7 @@ highlight GitGutterChangeDelete ctermfg=166
 let g:UltiSnipsExpandTrigger='<Tab>'
 let g:UltiSnipsJumpForwardTrigger='<Tab>'
 let g:UltiSnipsJumpBackwardTrigger='<S-Tab>'
+let g:UltiSnipsSnippetsDir='~/.vim/snips'
 
 " AutoPairs
 let g:AutoPairs = {'(':')', '[':']', '{':'}', "'":"'", '"':'"', '`':'`'}

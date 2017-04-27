@@ -145,14 +145,11 @@ RSpec::Core::RakeTask.new(:spec)
 task :default => :spec
 endsnippet
 
-snippet mini "MiniTest single file stub"
-class ${1:ClassName}
-end
-
+snippet mini "MiniTest template"
 require "minitest/spec"
 require "minitest/autorun"
 
-describe $1 do
+describe ${1:ClassName} do
   it "${2:does something}" do
     $0
   end
