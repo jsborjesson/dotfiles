@@ -247,8 +247,10 @@ endif
 " Load shell aliases
 let $BASH_ENV = '~/.alias'
 
-" Make README easier to type
+" Make names with annoying capitalisation easy to type
 iabbrev readme README
+iabbrev rubocop RuboCop
+iabbrev github GitHub
 " }}}
 
 " Remappings {{{
