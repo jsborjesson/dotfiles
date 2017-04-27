@@ -1,6 +1,7 @@
-vim/*
-!vim/UltiSnips/
-!vim/after/
+vim/.netrwhist
+vim/autoload
+vim/plugged
+vim/undo
 !vim/undo/.keep
 
 emacs.d/*
