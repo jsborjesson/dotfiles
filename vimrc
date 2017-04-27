@@ -166,6 +166,7 @@ set backspace=indent,eol,start
 set autoread
 set clipboard=unnamed " Yank to system clipboard
 set diffopt+=vertical
+set foldlevelstart=20
 set gdefault          " Replace all matches by default
 set hidden
 set lazyredraw        " Don't redraw until macro has finished running
@@ -179,7 +180,6 @@ set synmaxcol=512     " Turn of syntax for absurdly long lines (makes opening hu
 set ttyfast           " Indicates a fast terminal connection, enabling smoother redraws
 set wildignorecase
 set wildmenu
-set foldlevelstart=20
 
 " Ignore case if all lowercase
 set ignorecase
