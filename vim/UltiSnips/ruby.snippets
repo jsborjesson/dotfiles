@@ -71,6 +71,11 @@ snippet source
 source "https://rubygems.org"
 endsnippet
 
+snippet load_path
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+endsnippet
+
 snippet rr "require_relative"
 require_relative "$1"
 endsnippet
