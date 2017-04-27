@@ -113,13 +113,17 @@ augroup settings
 
     " Automatically rebalance splits on resize
     autocmd VimResized * :wincmd =
+augroup END
 
-    " Add syntax highlighting for some special files
-    autocmd BufNewFile,BufRead *.lasp setlocal filetype=clojure
+" Add syntax highlighting for some special files
+augroup filetypes
+    autocmd!
+
+    autocmd BufNewFile,BufRead *.lasp                                setlocal filetype=clojure
     autocmd BufNewFile,BufRead alias,bash_profile,.env*,path,railsrc setlocal filetype=sh
-    autocmd BufNewFile,BufRead emacs setlocal filetype=lisp
-    autocmd BufNewFile,BufRead gitconfig setlocal filetype=gitconfig
-    autocmd BufNewFile,BufRead pryrc setlocal filetype=ruby
+    autocmd BufNewFile,BufRead emacs                                 setlocal filetype=lisp
+    autocmd BufNewFile,BufRead gitconfig                             setlocal filetype=gitconfig
+    autocmd BufNewFile,BufRead pryrc                                 setlocal filetype=ruby
 augroup END
 
 " ==================== Whitespace ====================
