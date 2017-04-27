@@ -1,4 +1,4 @@
-" ==================== Plugins ====================
+" Plugins {{{
 call plug#begin('~/.vim/plugged')
 
 " Vim standard library
@@ -75,15 +75,16 @@ Plug 'tpope/vim-liquid'
 Plug 'EdJoJob/llvmir-vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'majutsushi/tagbar'
+Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 
 runtime macros/matchit.vim
 
 syntax on
+" }}}
 
-" ==================== Theme ====================
-
+" Theme {{{
 " List of colors here: https://github.com/flazz/vim-colorschemes/tree/master/colors
 colorscheme blackboard
 highlight SpellBad ctermbg=52
@@ -96,8 +97,9 @@ highlight Todo ctermfg=white ctermbg=none
 
 " No split separator char
 set fillchars+=vert:\  " There's significant whitespace before this comment
+" }}}
 
-" ==================== autocmds ====================
+" autocmds {{{
 augroup settings
     " Make sure to not register the autocmds again when reloading vimrc
     autocmd!
@@ -125,8 +127,9 @@ augroup filetypes
     autocmd BufNewFile,BufRead gitconfig                             setlocal filetype=gitconfig
     autocmd BufNewFile,BufRead pryrc                                 setlocal filetype=ruby
 augroup END
+" }}}
 
-" ==================== Whitespace ====================
+" Whitespace {{{
 " Highlight EOL whitespace, http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 highlight default ExtraWhitespace ctermbg=darkred guibg=darkred
 
@@ -153,9 +156,9 @@ function! TrimWhitespace()
 endfunction
 
 command! TrimWhitespace execute ':call TrimWhitespace()'
+" }}}
 
-
-" ==================== Settings ====================
+" Settings {{{
 " Make backspace work as expected
 set backspace=indent,eol,start
 
@@ -176,6 +179,7 @@ set synmaxcol=512     " Turn of syntax for absurdly long lines (makes opening hu
 set ttyfast           " Indicates a fast terminal connection, enabling smoother redraws
 set wildignorecase
 set wildmenu
+set foldlevelstart=20
 
 " Ignore case if all lowercase
 set ignorecase
@@ -245,13 +249,10 @@ let $BASH_ENV = '~/.alias'
 
 " Make README easier to type
 iabbrev readme README
+" }}}
 
-" ==================== Vim++ mappings ====================
-" This first section of mappings I categorize as either fixing or
-" supercharging Vim's behaviour - it fixes flaws, makes standard commands
-" better and fills holes in Vim's interface.
-"
-" Basically - anything I think should be standard Vim goes here:
+" Remappings {{{
+" General mappings that **fix or improve** Vim's default behaviour
 
 " U for normal redo is much more natural
 nnoremap U <C-r>
@@ -265,9 +266,8 @@ xnoremap . :normal .<CR>
 " Y yanks to the end of the line, entire line is still available with yy
 nnoremap Y y$
 
-" More natural movements to line extremes
-noremap gh ^
-noremap gl $
+" Also clear search highlights and update diff when redrawing the screen
+nnoremap <silent> <C-l> :nohlsearch<CR>:diffupdate<CR><C-l>
 
 " Make * and # search for selection in visual mode
 xnoremap * "xy/\V<C-r>=escape(@x, '/\')<CR><CR>
@@ -302,13 +302,18 @@ endfunction
 function! GJoinOperator(submode)
     '[,']join!
 endfunction
+" }}}
 
-
-" ==================== Key mappings ====================
+" Mappings {{{
+" Personal mappings that **change** Vim's behaviour to what I like
 
 " Navigate wrapped lines easier
 nnoremap j gj
 nnoremap k gk
+
+" More natural movements to line extremes
+noremap gh ^
+noremap gl $
 
 " Shift-; to do the opposite of ; makes a lot of sense, and : now gets the
 " prime real estate it deserves.
@@ -317,19 +322,15 @@ noremap , :
 
 " Run the q macro instead of stupid Ex-mode
 nnoremap Q @q
-
-" Run the q macro over multiple lines
 xnoremap Q :normal @q<CR>
-
-" Quickly clear search highlights
-nnoremap <silent> <C-l> :nohlsearch<CR>:diffupdate<CR><C-l>
 
 " Save and trim whitespace with C-s
 nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>l
+" }}}
 
-" ==================== Leader commands ====================
+" Leader mappings{{{
 " Mappings that I haven't found a better key combination for yet.
 
 let g:mapleader="\<Space>"
@@ -389,8 +390,9 @@ nnoremap <Leader>0 :set colorcolumn=<CR>
 
 " Use filetype shell easily for files which are not detected
 nnoremap <Leader>s :set filetype=sh<CR>
+" }}}
 
-" ==================== Custom commands ====================
+" Commands {{{
 command! Nmappings execute 'redir! > /tmp/vim_mappings.txt | silent nmap | redir END | !less /tmp/vim_mappings.txt'
 command! Mappings execute 'redir! > /tmp/vim_mappings.txt | silent map | redir END | !less /tmp/vim_mappings.txt'
 
@@ -409,8 +411,9 @@ function! HighlightGroup()
     echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
 endfunction
 command! HighlightGroup call HighlightGroup()
+" }}}
 
-" ==================== Plugin settings ====================
+" Plugin settings {{{
 
 " Commentary
 let g:commentary_map_backslash=0
@@ -505,7 +508,7 @@ nnoremap <silent> <Leader>tl :VtrSendLinesToRunner<CR>
 xnoremap <silent> <Leader>tl :VtrSendLinesToRunner<CR>
 
 " Switch
-let g:switch_mapping = '<Tab>'
+let g:switch_mapping = '<Leader><Tab>'
 
 " SplitJoin
 let g:splitjoin_split_mapping = 'cS'
@@ -523,3 +526,5 @@ let g:go_fmt_fail_silently = 1
 " TagBar
 nnoremap <F8> :TagbarToggle<CR>
 nnoremap <F9> :TagbarShowTag<CR>
+
+" }}}
