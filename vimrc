@@ -116,7 +116,9 @@ augroup settings
     " Automatically rebalance splits on resize
     autocmd VimResized * :wincmd =
 augroup END
+" }}}
 
+" Filetypes {{{
 " Add syntax highlighting for some special files
 augroup filetypes
     autocmd!
@@ -126,6 +128,7 @@ augroup filetypes
     autocmd BufNewFile,BufRead emacs                                 setlocal filetype=lisp
     autocmd BufNewFile,BufRead gitconfig                             setlocal filetype=gitconfig
     autocmd BufNewFile,BufRead pryrc                                 setlocal filetype=ruby
+    autocmd BufNewFile,BufRead crontab.snippets                      setlocal filetype=snippets
 augroup END
 " }}}
 
