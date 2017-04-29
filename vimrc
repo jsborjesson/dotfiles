@@ -86,7 +86,7 @@ syntax on
 " }}}
 " Theme {{{
 
-" List of colors here: https://github.com/flazz/vim-colorschemes/tree/master/colors
+" List of themes here: https://github.com/flazz/vim-colorschemes/tree/master/colors
 colorscheme blackboard
 highlight SpellBad ctermbg=52
 highlight Pmenu ctermbg=59 ctermfg=15
