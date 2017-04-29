@@ -82,9 +82,10 @@ call plug#end()
 runtime macros/matchit.vim
 
 syntax on
-" }}}
 
+" }}}
 " Theme {{{
+
 " List of colors here: https://github.com/flazz/vim-colorschemes/tree/master/colors
 colorscheme blackboard
 highlight SpellBad ctermbg=52
@@ -97,9 +98,10 @@ highlight Todo ctermfg=white ctermbg=none
 
 " No split separator char
 set fillchars+=vert:\  " There's significant whitespace before this comment
-" }}}
 
+" }}}
 " autocmds {{{
+
 augroup settings
     " Make sure to not register the autocmds again when reloading vimrc
     autocmd!
@@ -116,9 +118,10 @@ augroup settings
     " Automatically rebalance splits on resize
     autocmd VimResized * :wincmd =
 augroup END
-" }}}
 
+" }}}
 " Filetypes {{{
+
 " Add syntax highlighting for some special files
 augroup filetypes
     autocmd!
@@ -130,9 +133,10 @@ augroup filetypes
     autocmd BufNewFile,BufRead pryrc                                 setlocal filetype=ruby
     autocmd BufNewFile,BufRead crontab.snippets                      setlocal filetype=snippets
 augroup END
-" }}}
 
+" }}}
 " Whitespace {{{
+
 " Highlight EOL whitespace, http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 highlight default ExtraWhitespace ctermbg=darkred guibg=darkred
 
@@ -159,9 +163,10 @@ function! TrimWhitespace()
 endfunction
 
 command! TrimWhitespace execute ':call TrimWhitespace()'
-" }}}
 
+" }}}
 " Settings {{{
+
 " Make backspace work as expected
 set backspace=indent,eol,start
 
@@ -254,9 +259,10 @@ let $BASH_ENV = '~/.alias'
 iabbrev readme README
 iabbrev rubocop RuboCop
 iabbrev github GitHub
-" }}}
 
+" }}}
 " Remappings {{{
+
 " General mappings that **fix or improve** Vim's default behaviour
 
 " U for normal redo is much more natural
@@ -307,9 +313,10 @@ endfunction
 function! GJoinOperator(submode)
     '[,']join!
 endfunction
-" }}}
 
+" }}}
 " Mappings {{{
+
 " Personal mappings that **change** Vim's behaviour to what I like
 
 " Navigate wrapped lines easier
@@ -333,9 +340,10 @@ xnoremap Q :normal @q<CR>
 nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>l
-" }}}
 
+" }}}
 " Leader mappings{{{
+
 " Mappings that I haven't found a better key combination for yet.
 
 let g:mapleader="\<Space>"
@@ -395,9 +403,10 @@ nnoremap <Leader>0 :set colorcolumn=<CR>
 
 " Use filetype shell easily for files which are not detected
 nnoremap <Leader>s :set filetype=sh<CR>
-" }}}
 
+" }}}
 " Commands {{{
+
 command! Nmappings execute 'redir! > /tmp/vim_mappings.txt | silent nmap | redir END | !less /tmp/vim_mappings.txt'
 command! Mappings execute 'redir! > /tmp/vim_mappings.txt | silent map | redir END | !less /tmp/vim_mappings.txt'
 
@@ -416,8 +425,8 @@ function! HighlightGroup()
     echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
 endfunction
 command! HighlightGroup call HighlightGroup()
-" }}}
 
+" }}}
 " Plugin settings {{{
 
 " Commentary
