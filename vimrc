@@ -335,6 +335,8 @@ noremap , :
 " Run the q macro instead of stupid Ex-mode
 nnoremap Q @q
 xnoremap Q :normal @q<CR>
+" Edit the q macro in place
+nnoremap gQ :let @q='<C-r><C-r>q'<Left>
 
 " Save and trim whitespace with C-s
 nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
