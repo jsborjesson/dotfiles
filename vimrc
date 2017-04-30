@@ -96,7 +96,7 @@ highlight Todo ctermfg=white ctermbg=none
 set fillchars+=vert:\  " There's significant whitespace before this comment
 
 " }}}
-" autocmds {{{
+" Autocmds {{{
 
 augroup settings
     " Make sure to not register the autocmds again when reloading vimrc
@@ -237,6 +237,9 @@ endif
 
 " Load shell aliases
 let $BASH_ENV = '~/.alias'
+
+" }}}
+" Iabbrevs {{{
 
 " Make names with annoying capitalisation easy to type
 iabbrev readme README
