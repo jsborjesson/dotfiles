@@ -158,7 +158,7 @@ function! TrimWhitespace()
     call setpos('.', l:save_cursor)
 endfunction
 
-command! TrimWhitespace execute ':call TrimWhitespace()'
+command! TrimWhitespace call TrimWhitespace()
 
 " }}}
 " Settings {{{
