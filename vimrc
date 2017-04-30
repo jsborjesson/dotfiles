@@ -16,7 +16,7 @@ Plug 'tpope/vim-surround'      " Change surrounding quotes, tags...
 Plug 'tpope/vim-unimpaired'    " Lots of clever pairs of mappings
 Plug 'tpope/vim-vinegar'       " Better netrw filebrowser
 
-" Extra text-objects and motions
+" Text-objects and motions
 Plug 'christoomey/vim-sort-motion'
 Plug 'junegunn/vim-easy-align'
 Plug 'kana/vim-textobj-entire'
@@ -26,7 +26,7 @@ Plug 'kana/vim-textobj-user'
 Plug 'tommcdo/vim-exchange'
 Plug 'wellle/targets.vim'
 
-" Extra features
+" General
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'AndrewRadev/sideways.vim'
 Plug 'AndrewRadev/splitjoin.vim'
@@ -60,15 +60,11 @@ Plug 'tpope/vim-salve',                            { 'for': 'clojure' }
 Plug 'guns/vim-sexp',                              { 'for': 'clojure' }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 
-" Rust
+" Misc
 Plug 'cespare/vim-toml'
-Plug 'rust-lang/rust.vim'
-
-" Elixir
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
-
-" Go
-Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'fatih/vim-go',           { 'for': 'go' }
+Plug 'rust-lang/rust.vim'
 
 " Trial
 Plug 'tpope/vim-liquid'
