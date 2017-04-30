@@ -217,15 +217,6 @@ set secure
 " Share spellfile in Dropbox
 set spellfile=~/Dropbox/apps/vim/en.utf-8.add
 
-" Statusline
-set laststatus=2
-set statusline=\ %F                                     " Path
-set statusline+=\ %y                                    " File type
-set statusline+=\ (%{fugitive#head(8)})                 " Git branch
-set statusline+=%=                                      " Right align after this
-set statusline+=\ %{&ff}\                               " Fileformat
-set statusline+=\ Line:\ %l/%L\ (%P)\ \|\ Column:\ %c\  " Line/Column
-
 " Enable mouse operation
 set mouse=a
 if !has('nvim')
@@ -251,6 +242,17 @@ let $BASH_ENV = '~/.alias'
 iabbrev readme README
 iabbrev rubocop RuboCop
 iabbrev github GitHub
+
+" }}}
+" Statusline {{{
+
+set laststatus=2
+set statusline=\ %F                                     " Path
+set statusline+=\ %y                                    " File type
+set statusline+=\ (%{fugitive#head(8)})                 " Git branch
+set statusline+=%=                                      " Right align after this
+set statusline+=\ %{&ff}\                               " Fileformat
+set statusline+=\ Line:\ %l/%L\ (%P)\ \|\ Column:\ %c\  " Line/Column
 
 " }}}
 " Remappings {{{
