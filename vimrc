@@ -343,6 +343,9 @@ nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>l
 
+" Close
+nnoremap <C-q> :q<CR>
+
 " }}}
 " Leader mappings{{{
 
@@ -356,9 +359,6 @@ nnoremap <Leader>r :source $MYVIMRC<CR>
 
 " Go to last file
 nnoremap <Leader><Leader> <C-^>
-
-" Close
-nnoremap <Leader>q :q<CR>
 
 " Highlight word but don't jump to the next match
 nmap <Leader>* *``
