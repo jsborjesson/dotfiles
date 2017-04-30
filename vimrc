@@ -77,10 +77,10 @@ call plug#end()
 
 runtime macros/matchit.vim
 
-syntax on
-
 " }}}
 " Theme {{{
+
+syntax on
 
 " List of themes here: https://github.com/flazz/vim-colorschemes/tree/master/colors
 colorscheme blackboard
