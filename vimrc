@@ -181,32 +181,32 @@ set number
 set path+=**          " Find subdirectories of path
 set sidescroll=1      " Scroll sideways smoothly
 set synmaxcol=512     " Turn of syntax for absurdly long lines (makes opening huge json-files quick)
+set ttimeout
+set ttimeoutlen=1
 set ttyfast           " Indicates a fast terminal connection, enabling smoother redraws
 set wildignorecase
 set wildmenu
 
-" Ignore case if all lowercase
+" Searching
 set ignorecase
 set smartcase
 set incsearch
 set nohlsearch " This makes using / for navigation less obnoxious, it can quickly be toggled on with coh
 
-" Default indentation settings
+" Indentation
 set expandtab
 set shiftround
 set shiftwidth=4
 set softtabstop=0
 set tabstop=8
 
-" More natural split destinations
+" Splits
 set splitbelow
 set splitright
 
-" Don't need it
+" Backups
 set nobackup
 set noswapfile
-
-" Persistent undo
 set undodir=~/.vim/undo
 set undofile
 
@@ -216,10 +216,6 @@ set secure
 
 " Share spellfile in Dropbox
 set spellfile=~/Dropbox/apps/vim/en.utf-8.add
-
-" Fix escape lag
-set ttimeout
-set ttimeoutlen=1
 
 " Statusline
 set laststatus=2
