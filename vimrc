@@ -96,26 +96,6 @@ highlight Todo ctermfg=white ctermbg=none
 set fillchars+=vert:\  " There's significant whitespace before this comment
 
 " }}}
-" Autocmds {{{
-
-augroup settings
-    " Make sure to not register the autocmds again when reloading vimrc
-    autocmd!
-
-    " Reload .vimrc on save
-    autocmd BufWritePost vimrc source $MYVIMRC
-
-    " Don't insert comments with O
-    autocmd FileType * setlocal formatoptions-=o
-
-    autocmd InsertEnter * set cursorline
-    autocmd InsertLeave * set nocursorline
-
-    " Automatically rebalance splits on resize
-    autocmd VimResized * :wincmd =
-augroup END
-
-" }}}
 " Filetypes {{{
 
 " Add syntax highlighting for some special files
@@ -129,36 +109,6 @@ augroup filetypes
     autocmd BufNewFile,BufRead pryrc                                 setlocal filetype=ruby
     autocmd BufNewFile,BufRead crontab.snippets                      setlocal filetype=snippets
 augroup END
-
-" }}}
-" Whitespace {{{
-
-" Highlight EOL whitespace, http://vim.wikia.com/wiki/Highlight_unwanted_spaces
-highlight default ExtraWhitespace ctermbg=darkred guibg=darkred
-
-augroup whitespace
-    autocmd!
-
-    autocmd BufRead * match ExtraWhitespace /^\s\+$/
-
-    " The above flashes annoyingly while typing, be calmer in insert mode
-    autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-    autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-augroup END
-
-function! TrimWhitespace()
-    let l:save_cursor = getpos('.')
-
-    " Remove trailing whitespace at the end of lines
-    silent! execute ':%s/\s\+$//'
-
-    " Remove trailing newlines at the end of file
-    silent! execute ':%s/\($\n\s*\)\+\%$//'
-
-    call setpos('.', l:save_cursor)
-endfunction
-
-command! TrimWhitespace call TrimWhitespace()
 
 " }}}
 " Settings {{{
@@ -239,12 +189,24 @@ endif
 let $BASH_ENV = '~/.alias'
 
 " }}}
-" Iabbrevs {{{
+" Autocmds {{{
 
-" Make names with annoying capitalisation easy to type
-iabbrev readme README
-iabbrev rubocop RuboCop
-iabbrev github GitHub
+augroup settings
+    " Make sure to not register the autocmds again when reloading vimrc
+    autocmd!
+
+    " Reload .vimrc on save
+    autocmd BufWritePost vimrc source $MYVIMRC
+
+    " Don't insert comments with O
+    autocmd FileType * setlocal formatoptions-=o
+
+    autocmd InsertEnter * set cursorline
+    autocmd InsertLeave * set nocursorline
+
+    " Automatically rebalance splits on resize
+    autocmd VimResized * :wincmd =
+augroup END
 
 " }}}
 " Statusline {{{
@@ -256,6 +218,36 @@ set statusline+=\ (%{fugitive#head(8)})                 " Git branch
 set statusline+=%=                                      " Right align after this
 set statusline+=\ %{&ff}\                               " Fileformat
 set statusline+=\ Line:\ %l/%L\ (%P)\ \|\ Column:\ %c\  " Line/Column
+
+" }}}
+" Whitespace {{{
+
+" Highlight EOL whitespace, http://vim.wikia.com/wiki/Highlight_unwanted_spaces
+highlight default ExtraWhitespace ctermbg=darkred guibg=darkred
+
+augroup whitespace
+    autocmd!
+
+    autocmd BufRead * match ExtraWhitespace /^\s\+$/
+
+    " The above flashes annoyingly while typing, be calmer in insert mode
+    autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+    autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+augroup END
+
+function! TrimWhitespace()
+    let l:save_cursor = getpos('.')
+
+    " Remove trailing whitespace at the end of lines
+    silent! execute ':%s/\s\+$//'
+
+    " Remove trailing newlines at the end of file
+    silent! execute ':%s/\($\n\s*\)\+\%$//'
+
+    call setpos('.', l:save_cursor)
+endfunction
+
+command! TrimWhitespace call TrimWhitespace()
 
 " }}}
 " Remappings {{{
@@ -352,7 +344,7 @@ imap <C-s> <Esc><C-s>l
 nnoremap <C-q> :q<CR>
 
 " }}}
-" Leader mappings{{{
+" Leader mappings {{{
 
 " Mappings that I haven't found a better key combination for yet.
 
@@ -410,6 +402,14 @@ nnoremap <Leader>0 :set colorcolumn=<CR>
 
 " Use filetype shell easily for files which are not detected
 nnoremap <Leader>s :set filetype=sh<CR>
+
+" }}}
+" Iabbrevs {{{
+
+" Make names with annoying capitalisation easy to type
+iabbrev readme README
+iabbrev rubocop RuboCop
+iabbrev github GitHub
 
 " }}}
 " Commands {{{
