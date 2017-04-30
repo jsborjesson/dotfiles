@@ -494,6 +494,7 @@ let g:AutoPairsMultilineClose = 0
 let g:AutoPairsShortcutJump = ''
 let g:AutoPairsShortcutToggle = ''
 
+" Sexp
 " Disable some vim-sexp mappings to make space for tmux navigator
 let g:sexp_mappings = {
     \ 'sexp_swap_list_backward':    '',
