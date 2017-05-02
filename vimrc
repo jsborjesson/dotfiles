@@ -71,7 +71,7 @@ Plug 'tpope/vim-liquid'
 Plug 'EdJoJob/llvmir-vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'majutsushi/tagbar'
-Plug 'plasticboy/vim-markdown'
+Plug 'nelstrom/vim-markdown-folding'
 
 call plug#end()
 
