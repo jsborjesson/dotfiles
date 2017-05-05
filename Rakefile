@@ -17,19 +17,6 @@ task :link do
   sh "bash ./link.sh"
 end
 
-namespace :vim do
-  desc "Install vim plugins"
-  task :install do
-    unless File.exist?(File.expand_path("~/.vim/autoload/plug.vim"))
-      puts "Installing vim-plug"
-      sh "curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
-
-      puts "Installing plugins"
-      sh "vim +PlugInstall +qall"
-    end
-  end
-end
-
 namespace :nvim do
   desc "Update NeoVim"
   task :update do
@@ -50,14 +37,6 @@ namespace :nvim do
 
     puts "Installing python module"
     sh "pip install neovim"
-
-    unless File.exist?(File.expand_path("~/.nvim/autoload/plug.vim"))
-      puts "Installing vim-plug"
-      sh "curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
-
-      puts "Installing plugins"
-      sh "nvim +PlugInstall +qall"
-    end
   end
 end
 
