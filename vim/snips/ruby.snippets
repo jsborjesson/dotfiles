@@ -145,7 +145,7 @@ RSpec::Core::RakeTask.new(:spec)
 task :default => :spec
 endsnippet
 
-snippet mini "MiniTest template"
+snippet minispec "MiniTest spec template"
 require "minitest/spec"
 require "minitest/autorun"
 
@@ -154,4 +154,26 @@ describe ${1:ClassName} do
     $0
   end
 end
+endsnippet
+
+snippet minitest "MiniTest template"
+require "minitest/autorun"
+
+class ${1:TestName}Test < Minitest::Test
+  $0
+end
+endsnippet
+
+snippet t "Define test method"
+def test_${1:that_it_works}
+  $0
+end
+endsnippet
+
+snippet ae "assert_equal"
+assert_equal(${1:expectation}, ${2:actual})
+endsnippet
+
+snippet re "refute_equal"
+refute_equal(${1:expectation}, ${2:actual})
 endsnippet
