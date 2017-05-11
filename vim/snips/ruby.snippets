@@ -56,8 +56,8 @@ alias_method :${1:new}, :${2:old}
 endsnippet
 
 snippet class
-class ${1:`!p snip.rv = "".join(map(lambda s:s.capitalize(), fn[:-3].split("_")))`}$0
-  ${VISUAL:# ...}
+class ${1:`!p snip.rv = "".join(map(lambda s:s.capitalize(), fn[:-3].split("_")))`}
+  ${0:${VISUAL:# ...}}
 end
 endsnippet
 
@@ -170,8 +170,16 @@ def test_${1:that_it_works}
 end
 endsnippet
 
+snippet a "assert"
+assert(${2:actual})
+endsnippet
+
 snippet ae "assert_equal"
 assert_equal(${1:expectation}, ${2:actual})
+endsnippet
+
+snippet r "refute"
+refute(${2:actual})
 endsnippet
 
 snippet re "refute_equal"
