@@ -33,12 +33,14 @@ let b:AutoPairs = {'(':')', '[':']', '{':'}', "'":"'", '"':'"', '`':'`', '|':'|'
 let b:switch_custom_definitions =
     \ [
     \   ['if', 'unless'],
-    \   ['to', 'not_to'],
     \   ['first', 'last'],
     \   ['before', 'after'],
     \   ['require', 'require_relative'],
     \   {
     \       '\(\w\+\)\[\([^]]*\)\]': '\1.fetch(\2)',
     \       '\(\w\+\)\.fetch(\([^)]*\))': '\1[\2]',
-    \   }
+    \   },
+    \   ['to', 'not_to'],
+    \   ['assert', 'refute'],
+    \   ['must', 'wont'],
     \ ]
