@@ -25,15 +25,21 @@ Plug 'tpope/vim-surround'      " Change surrounding quotes, tags...
 Plug 'tpope/vim-unimpaired'    " Lots of clever pairs of mappings
 Plug 'tpope/vim-vinegar'       " Better netrw filebrowser
 
-" Text-objects and motions
+" Text-objects, motions and extensions
 Plug 'christoomey/vim-sort-motion'
+Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-easy-align'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-line'
 Plug 'kana/vim-textobj-user'
+Plug 'kopischke/vim-fetch'
 Plug 'tommcdo/vim-exchange'
+Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'wellle/targets.vim'
+
+" Themes
+Plug 'flazz/vim-colorschemes'
 
 " General
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -42,17 +48,12 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'AndrewRadev/switch.vim'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
-Plug 'alcesleo/vim-uppercase-sql'
-Plug 'flazz/vim-colorschemes'
-Plug 'jiangmiao/auto-pairs'
-Plug 'junegunn/gv.vim'
-Plug 'kopischke/vim-fetch' " Handle line:column numbers in filenames
-Plug 'rking/ag.vim'
-Plug 'vim-scripts/ReplaceWithRegister'
-
-" Tmux
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'christoomey/vim-tmux-runner'
+Plug 'junegunn/gv.vim'
+Plug 'rking/ag.vim'
+
+" Language specific plugins
 
 " Ruby
 Plug 'rhysd/vim-textobj-ruby', { 'for': 'ruby' }
@@ -70,17 +71,16 @@ Plug 'guns/vim-sexp',                              { 'for': 'clojure' }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 
 " Misc
+Plug 'EdJoJob/llvmir-vim'
+Plug 'alcesleo/vim-uppercase-sql'
 Plug 'cespare/vim-toml'
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 Plug 'fatih/vim-go',           { 'for': 'go' }
-Plug 'rust-lang/rust.vim'
-
-" Trial
-Plug 'tpope/vim-liquid'
-Plug 'EdJoJob/llvmir-vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'majutsushi/tagbar'
 Plug 'nelstrom/vim-markdown-folding'
+Plug 'rust-lang/rust.vim'
+Plug 'tpope/vim-liquid'
 
 call plug#end()
 
