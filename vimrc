@@ -542,8 +542,8 @@ let g:splitjoin_join_mapping  = 'cJ'
 let g:splitjoin_trailing_comma = 1
 
 " Sideways
-nnoremap <e :SidewaysLeft<CR>
-nnoremap >e :SidewaysRight<CR>
+nnoremap <silent> <e :SidewaysLeft<CR>
+nnoremap <silent> >e :SidewaysRight<CR>
 
 " Go
 let g:go_fmt_command = "goimports"
