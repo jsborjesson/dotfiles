@@ -138,6 +138,7 @@ set nojoinspaces      " Join lines containing punctuation correctly
 set nowrap
 set number
 set path+=**          " Find subdirectories of path
+set scrolloff=1
 set sidescroll=1      " Scroll sideways smoothly
 set synmaxcol=512     " Turn of syntax for absurdly long lines (makes opening huge json-files quick)
 set ttimeout
