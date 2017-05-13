@@ -17,6 +17,7 @@ Plug 'tpope/vim-eunuch'        " Unix helpers such as :Move, :Rename and :SudoWr
 Plug 'tpope/vim-fugitive'      " Git helpers
 Plug 'tpope/vim-projectionist' " Provides alternate file switching, opening the test file etc.
 Plug 'tpope/vim-repeat'        " Make . work with plugins
+Plug 'tpope/vim-rhubarb'       " GitHub helpers
 Plug 'tpope/vim-rsi'           " Readline key-mappings for insert and command mode
 Plug 'tpope/vim-sleuth'        " Set indentation settings automatically
 Plug 'tpope/vim-speeddating'   " Makes C-a and C-x work for dates
