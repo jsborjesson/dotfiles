@@ -25,7 +25,7 @@ snippet @
 endsnippet
 
 snippet defi
-attr_reader :${1/\w+, /$0:/g}
+attr_reader `!p snip.rv += ", ".join(map(lambda arg: ":" + arg, re.findall(r"\w+", t[1])))`
 
 def initialize($1)`!p
 snip.shift();
