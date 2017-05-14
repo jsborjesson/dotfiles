@@ -25,32 +25,39 @@ snippet @
 endsnippet
 
 snippet defi "initialize method"
-def initialize($1)`!p
+`!p ruby_args = r"(\w+)(?:: \w+)?"
+`def initialize($1)`!p
 snip.shift();
-for m in re.findall(r"\w+", t[1]):
+for m in re.findall(ruby_args, t[1]):
     snip.rv += snip.mkline("\n")
     snip.rv += snip.mkline("@{0} = {0}".format(m))`
 end
 endsnippet
 
 snippet defia "initialize method with attribute readers"
-attr_reader `!p snip.rv += ", ".join(map(lambda arg: ":" + arg, re.findall(r"\w+", t[1])))`
+`!p
+ruby_args          = r"(\w+)(?:: \w+)?"
+ruby_args_symbols  = ", ".join(map(lambda arg: ":" + arg, re.findall(ruby_args, t[1])))
+`attr_reader `!p snip.rv += ruby_args_symbols`
 
 def initialize($1)`!p
 snip.shift();
-for m in re.findall(r"\w+", t[1]):
+for m in re.findall(ruby_args, t[1]):
     snip.rv += snip.mkline("\n")
     snip.rv += snip.mkline("@{0} = {0}".format(m))`
 end
 endsnippet
 
 snippet defiap "initialize method with private attribute readers"
-attr_reader `!p snip.rv += ", ".join(map(lambda arg: ":" + arg, re.findall(r"\w+", t[1])))`
-private `!p snip.rv += ", ".join(map(lambda arg: ":" + arg, re.findall(r"\w+", t[1])))`
+`!p
+ruby_args          = r"(\w+)(?:: \w+)?"
+ruby_args_symbols  = ", ".join(map(lambda arg: ":" + arg, re.findall(ruby_args, t[1])))
+`attr_reader `!p snip.rv += ruby_args_symbols`
+private `!p snip.rv += ruby_args_symbols`
 
 def initialize($1)`!p
 snip.shift();
-for m in re.findall(r"\w+", t[1]):
+for m in re.findall(ruby_args, t[1]):
     snip.rv += snip.mkline("\n")
     snip.rv += snip.mkline("@{0} = {0}".format(m))`
 end
