@@ -31,7 +31,7 @@ function cdf() {
 
 # cd to root of git repo
 function cdr() {
-   git rev-parse --show-toplevel > /dev/null && cd $(git rev-parse --show-toplevel)
+    git rev-parse --show-toplevel > /dev/null && cd $(git rev-parse --show-toplevel)
 }
 
 # mkdir and enter it
@@ -41,7 +41,7 @@ function mkd() {
 
 function colours() {
     for i in {0..255}; do
-	printf "\x1b[38;5;${i}mcolour${i}\x1b[0m\n"
+        printf "\x1b[38;5;${i}mcolour${i}\x1b[0m\n"
     done
 }
 
@@ -49,5 +49,5 @@ function colours() {
 alias jail='date +"jail_%Y-%m-%d"'
 
 function jiralink () {
-  echo "[$1](https://dawanda.atlassian.net/browse/$1)" | pbcopy
+    echo "[$1](https://dawanda.atlassian.net/browse/$1)" | pbcopy
 }
