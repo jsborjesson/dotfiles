@@ -93,12 +93,13 @@ syntax on
 
 " List of themes here: https://github.com/flazz/vim-colorschemes/tree/master/colors
 colorscheme blackboard
-highlight SpellBad ctermbg=52
+highlight ColorColumn ctermbg=233
+highlight CursorLine ctermbg=233 cterm=NONE
+highlight Folded ctermfg=0
 highlight Pmenu ctermbg=59 ctermfg=15
 highlight PmenuSel ctermbg=226 ctermfg=0
-highlight Folded ctermfg=0
-highlight CursorLine ctermbg=233 cterm=NONE
-highlight ColorColumn ctermbg=233
+highlight SignColumn ctermbg=black
+highlight SpellBad ctermbg=52
 highlight Todo ctermfg=white ctermbg=none
 
 " No split separator char
@@ -485,11 +486,10 @@ nmap <Leader>gu <Plug>GitGutterRevertHunk
 nmap [h <Plug>GitGutterPrevHunk
 nmap ]h <Plug>GitGutterNextHunk
 
-highlight SignColumn ctermbg=black
 highlight GitGutterAdd ctermfg=green
 highlight GitGutterChange ctermfg=yellow
-highlight GitGutterDelete ctermfg=red
 highlight GitGutterChangeDelete ctermfg=166
+highlight GitGutterDelete ctermfg=red
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger='<Tab>'
