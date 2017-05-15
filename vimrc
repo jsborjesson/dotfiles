@@ -51,6 +51,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'christoomey/vim-tmux-runner'
 Plug 'junegunn/gv.vim'
+Plug 'mbbill/undotree'
 Plug 'rking/ag.vim'
 
 " Language specific plugins
