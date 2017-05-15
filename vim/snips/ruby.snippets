@@ -1,3 +1,15 @@
+snippet class
+class ${1:`!p snip.rv = "".join(map(lambda s:s.capitalize(), fn[:-3].split("_")))`}
+  ${0:${VISUAL:# ...}}
+end
+endsnippet
+
+snippet module
+module ${1:`!p snip.rv = "".join(map(lambda s:s.capitalize(), path.split("/")[-2].split("_")))`}$0
+  ${VISUAL:# ...}
+end
+endsnippet
+
 snippet def
 def ${1:method_name}(${2:args})
   ${3:fail NotImplementedError}$0
@@ -8,20 +20,6 @@ snippet defs
 def self.${1:class_method_name}(${2:args})
   ${3:fail NotImplementedError}$0
 end
-endsnippet
-
-snippet do
-do |${1:args}|
-  $0
-end
-endsnippet
-
-snippet {
-{ |${1:args}|
-endsnippet
-
-snippet @
-@${1:instance_var} = $1
 endsnippet
 
 snippet defi "initialize method"
@@ -83,16 +81,18 @@ snippet alias_method "Dynamic aliasing"
 alias_method :${1:new}, :${2:old}
 endsnippet
 
-snippet class
-class ${1:`!p snip.rv = "".join(map(lambda s:s.capitalize(), fn[:-3].split("_")))`}
-  ${0:${VISUAL:# ...}}
+snippet do
+do |${1:args}|
+  $0
 end
 endsnippet
 
-snippet module
-module ${1:`!p snip.rv = "".join(map(lambda s:s.capitalize(), path.split("/")[-2].split("_")))`}$0
-  ${VISUAL:# ...}
-end
+snippet {
+{ |${1:args}|
+endsnippet
+
+snippet @
+@${1:instance_var} = $1
 endsnippet
 
 snippet source
