@@ -449,6 +449,7 @@ command! HighlightGroup call HighlightGroup()
 " Plugin settings {{{
 
 " Ack
+set shellpipe=> " Don't leak search results to terminal
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
