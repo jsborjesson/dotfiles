@@ -342,19 +342,31 @@ noremap gl $
 noremap : ,
 noremap , :
 
-" Run the q macro instead of stupid Ex-mode
-nnoremap Q @q
-xnoremap Q :normal @q<CR>
-" Edit the q macro in place
-nnoremap gQ :let @q='<C-r><C-r>q'<Left>
+" Always quit with q
+" Some windows already do this, but it's very confusing which ones they are.
+" Quitting is common and deserves this unambiguous lower-case key.
+nnoremap q :q<CR>
+
+" Create markers with Q
+" I use them far less than macros, and it gives them a slightly less prominent
+" but still decent mnemonic of 'quote' since you go to them with ` and ''
+nnoremap Q m
+
+" Macros deserve a better place than q, they are so important that the lower
+" case m should be for macro, not marker.
+nnoremap m q
+
+" Conveniently run the m macro
+nnoremap gm @m
+xnoremap gm :normal @m<CR>
+
+" Edit the m macro in place
+nnoremap gM :let @m='<C-r><C-r>q'<Left>
 
 " Save and trim whitespace with C-s
 nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>l
-
-" Close
-nnoremap <C-q> :q<CR>
 
 " }}}
 " Leader mappings {{{
