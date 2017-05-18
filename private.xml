@@ -59,12 +59,12 @@
       <autogen>__SimultaneousKeyPresses__ KeyCode::W, KeyCode::F, KeyCode::DELETE</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::O, KeyCode::DELETE</autogen>
 
-      <appendix>S+C and M+L to TAB</appendix>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::C, KeyCode::TAB</autogen>
+      <appendix>S+V and M+L to TAB</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::V, KeyCode::TAB</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::L, KeyCode::TAB</autogen>
 
-      <appendix>D+C and M+K to ENTER</appendix>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::D, KeyCode::C, KeyCode::RETURN</autogen>
+      <appendix>D+V and M+K to ENTER</appendix>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::D, KeyCode::V, KeyCode::RETURN</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::K, KeyCode::RETURN</autogen>
     </item>
     <item>
