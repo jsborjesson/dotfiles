@@ -1,5 +1,3 @@
-set foldmethod=marker
-
 nnoremap <buffer> K :help <C-r><C-w><CR>
 vnoremap <buffer> K "xy:help <C-r>x<CR>
 
