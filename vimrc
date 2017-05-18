@@ -52,7 +52,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'christoomey/vim-tmux-runner'
 Plug 'junegunn/gv.vim'
 Plug 'mbbill/undotree'
-Plug 'rking/ag.vim'
+Plug 'mileszs/ack.vim'
 
 " Language specific plugins
 
@@ -447,6 +447,13 @@ command! HighlightGroup call HighlightGroup()
 
 " }}}
 " Plugin settings {{{
+
+" Ack
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+command! -nargs=1 Search Ack! <q-args>
+nnoremap <Leader>/ :Search<Space>
 
 " Commentary
 let g:commentary_map_backslash=0
