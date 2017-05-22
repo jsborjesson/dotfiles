@@ -79,6 +79,7 @@ Plug 'cespare/vim-toml'
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 Plug 'fatih/vim-go',           { 'for': 'go' }
 Plug 'kchmck/vim-coffee-script'
+Plug 'leafgarland/typescript-vim'
 Plug 'majutsushi/tagbar'
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'rust-lang/rust.vim'
