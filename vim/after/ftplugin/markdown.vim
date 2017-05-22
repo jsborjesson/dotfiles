@@ -1,4 +1,4 @@
-" Smarter word wrapping when wrap is set
+setlocal wrap
 setlocal linebreak
 setlocal spell
 
