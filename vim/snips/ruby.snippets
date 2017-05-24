@@ -104,6 +104,10 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 endsnippet
 
+snippet spec.files "Don't use Git to list your files in the gemspec"
+spec.files         = Dir["Gemfile", "LICENSE.txt", "README.md", "Rakefile", "{lib,spec,test,exe}/**/*", "`!p snip.rv = snip.fn`"]
+endsnippet
+
 snippet r "require"
 require "$1"
 endsnippet
@@ -111,6 +115,8 @@ endsnippet
 snippet rr "require_relative"
 require_relative "$1"
 endsnippet
+
+### Debugging ###
 
 snippet pry "Start pry here"
 require "pry"; binding.pry
