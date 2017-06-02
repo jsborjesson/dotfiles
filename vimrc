@@ -430,14 +430,6 @@ nnoremap <Leader>0 :set colorcolumn=<CR>
 nnoremap <Leader>s :set filetype=sh<CR>
 
 " }}}
-" Iabbrevs {{{
-
-" Make names with annoying capitalisation easy to type
-iabbrev readme README
-iabbrev rubocop RuboCop
-iabbrev github GitHub
-
-" }}}
 " Commands {{{
 
 command! Nmappings execute 'redir! > /tmp/vim_mappings.txt | silent nmap | redir END | !less /tmp/vim_mappings.txt'
