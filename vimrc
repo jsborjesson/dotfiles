@@ -27,6 +27,7 @@ Plug 'tpope/vim-unimpaired'    " Lots of clever pairs of mappings
 Plug 'tpope/vim-vinegar'       " Better netrw filebrowser
 
 " Text-objects, motions and extensions
+Plug 'bkad/CamelCaseMotion'
 Plug 'christoomey/vim-sort-motion'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-easy-align'
@@ -483,6 +484,9 @@ let g:fzf_commands_expect = 'enter'
 
 " Targets
 let g:targets_nlNL = 'nN  '
+
+" CamelCaseMotion
+call camelcasemotion#CreateMotionMappings('<leader>')
 
 " EasyAlign
 vmap g<Space> <Plug>(EasyAlign)
