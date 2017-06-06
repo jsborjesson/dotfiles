@@ -6,11 +6,17 @@ fi
 
 PATH=~/.bin:$PATH
 PATH=./bin:$PATH
-PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
-PATH=$(brew --prefix ctags)/bin:$PATH
+
+# PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
+PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+# PATH=$(brew --prefix ctags)/bin:$PATH
+PATH=/usr/local/opt/ctags/bin:$PATH
 
 PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 PATH=$PATH:$GOPATH/bin
 PATH=$PATH:~/.multirust/toolchains/nightly/cargo/bin
-PATH=$PATH:$(brew --prefix git)/share/git-core/contrib/diff-highlight
+
+# PATH=$PATH:$(brew --prefix git)/share/git-core/contrib/diff-highlight
+PATH=$PATH:/usr/local/opt/git/share/git-core/contrib/diff-highlight
+
 export PATH
