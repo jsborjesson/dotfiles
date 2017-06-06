@@ -390,18 +390,6 @@ nmap <Leader># #``
 xmap <Leader>* *``
 xmap <Leader># #``
 
-" Toggle folding methods
-function! ToggleFoldMethods()
-    if &foldmethod ==# 'manual'
-        setlocal foldmethod=indent
-        echo ':setlocal foldmethod=indent'
-    else
-        setlocal foldmethod=manual
-        echo ':setlocal foldmethod=manual'
-    endif
-endfunction
-nnoremap <Leader>f :call ToggleFoldMethods()<CR>
-
 " Maximize split in new tab, almost like <prefix>z in tmux
 nnoremap <Leader>z :silent tabedit %<CR>
 
