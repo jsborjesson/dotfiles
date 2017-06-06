@@ -416,7 +416,10 @@ nnoremap <Leader>9 :set colorcolumn=120<CR>
 nnoremap <Leader>0 :set colorcolumn=<CR>
 
 " Use filetype shell easily for files which are not detected
-nnoremap <Leader>s :set filetype=sh<CR>
+nnoremap <Leader>fs :set filetype=sh<CR>
+
+" Fix the last spelling error
+nnoremap <silent> <Leader>sp :normal! mm[s1z=`m<CR>
 
 " }}}
 " Commands {{{
