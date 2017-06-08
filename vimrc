@@ -550,10 +550,10 @@ inoremap <silent> <M-o> <Esc>:TmuxNavigatePrevious<CR>
 
 " Tmux Runner
 let g:VtrClearSequence = "q"
-nnoremap <silent> <Leader>ta :VtrAttachToPane<CR>
-nnoremap <silent> <Leader>tt :VtrSendCommandToRunner<CR>
-nnoremap <silent> <Leader>tl :VtrSendLinesToRunner<CR>
-xnoremap <silent> <Leader>tl :VtrSendLinesToRunner<CR>
+nnoremap <silent> <Leader>Ta :VtrAttachToPane<CR>
+nnoremap <silent> <Leader>Tt :VtrSendCommandToRunner<CR>
+nnoremap <silent> <Leader>Tl :VtrSendLinesToRunner<CR>
+xnoremap <silent> <Leader>Tl :VtrSendLinesToRunner<CR>
 
 " Switch
 let g:switch_mapping = '<Leader><Tab>'
