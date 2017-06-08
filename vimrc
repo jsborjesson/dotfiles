@@ -46,7 +46,6 @@ Plug 'flazz/vim-colorschemes'
 " General
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'AndrewRadev/sideways.vim'
-Plug 'AndrewRadev/splitjoin.vim'
 Plug 'AndrewRadev/switch.vim'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
@@ -59,6 +58,7 @@ Plug 'mileszs/ack.vim'
 " Language specific plugins
 
 " Ruby
+Plug 'jgdavey/vim-blockle',    { 'for': 'ruby' }
 Plug 'rhysd/vim-textobj-ruby', { 'for': 'ruby' }
 Plug 'slim-template/vim-slim', { 'for': 'ruby' }
 Plug 'thoughtbot/vim-rspec',   { 'for': 'ruby' }
@@ -558,14 +558,12 @@ xnoremap <silent> <Leader>Tl :VtrSendLinesToRunner<CR>
 " Switch
 let g:switch_mapping = '<Leader><Tab>'
 
-" SplitJoin
-let g:splitjoin_split_mapping = 'cS'
-let g:splitjoin_join_mapping  = 'cJ'
-let g:splitjoin_trailing_comma = 1
-
 " Sideways
 nnoremap <silent> <e :SidewaysLeft<CR>
 nnoremap <silent> >e :SidewaysRight<CR>
+
+" Blockle
+let g:blockle_mapping = '<Leader>b'
 
 " Go
 let g:go_fmt_command = "goimports"
