@@ -10,11 +10,11 @@ setlocal iskeyword+=?,!
 
 " RSpec
 let g:rspec_command = 'call VtrSendCommand("bundle exec rspec {spec}")'
-nnoremap <buffer> <Leader>ta :call RunAllSpecs()<CR>
-nnoremap <buffer> <Leader>tt :call RunNearestSpec()<CR>
-nnoremap <buffer> <Leader>tl :call RunLastSpec()<CR>
-nnoremap <buffer> <Leader>td :call RunLastSpecWithDocumentation()<CR>
-nnoremap <buffer> <Leader>tf :call RunCurrentSpecFile()<CR>
+nnoremap <buffer> <Leader>t<Leader>a :call RunAllSpecs()<CR>
+nnoremap <buffer> <Leader>t<Leader>t :call RunNearestSpec()<CR>
+nnoremap <buffer> <Leader>t<Leader>l :call RunLastSpec()<CR>
+nnoremap <buffer> <Leader>t<Leader>d :call RunLastSpecWithDocumentation()<CR>
+nnoremap <buffer> <Leader>t<Leader>f :call RunCurrentSpecFile()<CR>
 
 function! RunLastSpecWithDocumentation()
     let l:old_rspec_command = g:rspec_command
