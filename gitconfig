@@ -55,6 +55,7 @@
     reset-tags           = !git tag -l | xargs git tag -d && git fetch -t
     resolve-conflicts    = !git conflicts | xargs -o $EDITOR '+/<<<<<<<'
     sha                  = "!f() { git rev-parse --short ${1:-HEAD}; }; f"
+    shove                = push --force-with-lease
     show-merge           = show -m
     standup              = log --oneline --decorate --author alcesleo --since yesterday --branches
     stashes              = stash list
