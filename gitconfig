@@ -20,7 +20,7 @@
     lo  = log --oneline --decorate
     pl  = pull
     pr  = pull-request
-    pu  = push
+    ps  = push
     rb  = rebase
     ri  = rebase --interactive
     rs  = reset
@@ -31,7 +31,6 @@
     com = checkout master
     lod = log --pretty='format:%C(yellow)%h %C(green)%<(18)%an %C(blue bold)%<(22)%ar   %Creset%s'
     pro = !git push && hub pull-request -o
-    puf = push --force-with-lease
     stu = stash --include-untracked
     tfo = !git reset . && git checkout -- . && git clean -fd
 
