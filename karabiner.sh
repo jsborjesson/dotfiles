@@ -4,10 +4,6 @@ cli=/Applications/Karabiner.app/Contents/Library/bin/karabiner
 
 $cli set custom.keepass_login 1
 /bin/echo -n .
-$cli set option.emacsmode_controlAE 1
-/bin/echo -n .
-$cli set option.emacsmode_controlD_nomodifiers 1
-/bin/echo -n .
 $cli set remap.custom_ergonomic_arrow_keys 1
 /bin/echo -n .
 $cli set remap.custom_ergonomic_fringe_keys 1
@@ -22,8 +18,8 @@ $cli set remap.mouse_keys_mode_2 1
 /bin/echo -n .
 $cli set remap.move_mouse_cursor_center_fn_alone 1
 /bin/echo -n .
-$cli set repeat.initial_wait 250
+$cli set repeat.initial_wait 200
 /bin/echo -n .
-$cli set repeat.wait 20
+$cli set repeat.wait 50
 /bin/echo -n .
 /bin/echo
