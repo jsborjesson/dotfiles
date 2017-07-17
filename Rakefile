@@ -25,8 +25,14 @@ task :brew do
   end
   puts "Homebrew is installed."
 
-  puts "Installing packages from brew.sh"
-  sh "sh ./brew.sh"
+  puts
+  puts "Installing packages from Brewfile"
+  sh "brew bundle"
+
+  puts
+  puts "Running cleanup tasks"
+  sh "brew cleanup"
+  sh "brew cask cleanup"
 end
 
 desc "Configure Mac OS using the osx.sh file"
