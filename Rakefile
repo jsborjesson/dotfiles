@@ -17,29 +17,6 @@ task :link do
   sh "bash ./link.sh"
 end
 
-namespace :nvim do
-  desc "Update NeoVim"
-  task :update do
-    sh "brew update"
-    sh "brew reinstall --HEAD neovim"
-    sh "pip install neovim --upgrade"
-  end
-
-  desc "Install and set up NeoVim dependencies"
-  task :install => :link do
-    sh "brew tap neovim/neovim"
-    sh "brew install neovim"
-
-    puts "Symlinking files into .config directory"
-    sh "mkdir -p ~/.config"
-    sh "ln -sf ~/.vim ~/.config/nvim"
-    sh "ln -sf ~/.vimrc ~/.config/nvim/init.vim"
-
-    puts "Installing python module"
-    sh "pip install neovim"
-  end
-end
-
 desc "Install Homebrew"
 task :brew do
   unless system("brew --version > /dev/null")
