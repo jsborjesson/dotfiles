@@ -120,7 +120,7 @@ augroup filetypes
     autocmd BufNewFile,BufRead alias,bash_profile,.env*,path,railsrc setlocal filetype=sh
     autocmd BufNewFile,BufRead emacs                                 setlocal filetype=lisp
     autocmd BufNewFile,BufRead gitconfig                             setlocal filetype=gitconfig
-    autocmd BufNewFile,BufRead pryrc                                 setlocal filetype=ruby
+    autocmd BufNewFile,BufRead pryrc,Brewfile                        setlocal filetype=ruby
     autocmd BufNewFile,BufRead crontab.snippets                      setlocal filetype=snippets
 augroup END
 
