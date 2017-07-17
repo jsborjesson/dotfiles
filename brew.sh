@@ -44,8 +44,8 @@ brew cask install force-paste
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install karabiner
-brew cask install keepassx
 brew cask install licecap
+brew cask install macpass
 brew cask install seil
 brew cask install slack
 brew cask install spectacle
