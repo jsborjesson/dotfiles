@@ -64,7 +64,7 @@
     todo                 = grep --line-number -E "(TODO|FIXME).*"
     tree                 = log --graph --oneline --decorate --all
     uncommit             = reset --soft HEAD~
-    unstage              = reset
+    unstage              = reset --
     update-submodules    = submodule update --init --recursive
 
 [core]
