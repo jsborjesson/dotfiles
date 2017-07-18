@@ -370,7 +370,7 @@ nnoremap q :q<CR>
 
 " Create markers with Q
 " I use them far less than macros, and it gives them a slightly less prominent
-" but still decent mnemonic of 'quote' since you go to them with ` and ''
+" but still decent mnemonic of 'quote' since you jump to them with ` and '
 nnoremap Q m
 
 " Macros deserve a better place than q, they are so important that the lower
