@@ -221,18 +221,37 @@ augroup settings
 
     " Automatically rebalance splits on resize
     autocmd VimResized * :wincmd =
+
+    " Use a simpler statusline when the window is split
+    autocmd WinEnter,WinLeave * :call AdjustStatusline()
 augroup END
 
 " }}}
 " Statusline {{{
 
 set laststatus=2
-set statusline=\ %F                                     " Path
-set statusline+=\ %y                                    " File type
-set statusline+=\ (%{fugitive#head(8)})                 " Git branch
-set statusline+=%=                                      " Right align after this
-set statusline+=\ %{&ff}\                               " Fileformat
-set statusline+=\ Line:\ %l/%L\ (%P)\ \|\ Column:\ %c\  " Line/Column
+
+function! ComplexStatusLine()
+    set statusline=\ %F                                     " Path
+    set statusline+=\ %y                                    " File type
+    set statusline+=\ (%{fugitive#head(8)})                 " Git branch
+    set statusline+=%=                                      " Right align after this
+    set statusline+=\ %{&ff}\                               " Fileformat
+    set statusline+=\ Line:\ %l/%L\ (%P)\ \|\ Column:\ %c\  " Line/Column
+endfunction
+
+function! SimpleStatusline()
+    set statusline=\ %F
+endfunction
+
+function! AdjustStatusline()
+    let num_splits_in_window = len(tabpagebuflist())
+    if num_splits_in_window > 1
+        call SimpleStatusline()
+    else
+        call ComplexStatusLine()
+    endif
+endfunction
 
 " }}}
 " Whitespace {{{
