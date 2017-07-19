@@ -234,7 +234,11 @@ set laststatus=2
 function! ComplexStatusLine()
     set statusline=\ %F                                     " Path
     set statusline+=\ %y                                    " File type
-    set statusline+=\ (%{fugitive#head(8)})                 " Git branch
+
+    if strlen(fugitive#head(8)) > 0
+        set statusline+=\ (%{fugitive#head(8)})             " Git branch
+    endif
+
     set statusline+=%=                                      " Right align after this
     set statusline+=\ %{&ff}\                               " Fileformat
     set statusline+=\ Line:\ %l/%L\ (%P)\ \|\ Column:\ %c\  " Line/Column
