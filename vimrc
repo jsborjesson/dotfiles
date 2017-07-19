@@ -223,7 +223,7 @@ augroup settings
     autocmd VimResized * :wincmd =
 
     " Use a simpler statusline when the window is split
-    autocmd WinEnter,WinLeave * :call AdjustStatusline()
+    autocmd WinEnter,WinLeave,VimEnter * :call AdjustStatusline()
 augroup END
 
 " }}}
