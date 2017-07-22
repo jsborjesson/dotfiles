@@ -52,6 +52,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'christoomey/vim-tmux-runner'
 Plug 'junegunn/gv.vim'
+Plug 'majutsushi/tagbar'
 Plug 'mbbill/undotree'
 Plug 'mileszs/ack.vim'
 
@@ -67,13 +68,13 @@ Plug 'tpope/vim-rake',         { 'for': 'ruby' }
 Plug 'tpope/vim-rbenv',        { 'for': 'ruby' }
 Plug 'vim-ruby/vim-ruby',      { 'for': 'ruby' }
 
-" Clojure
+" Lisp / Clojure
 Plug 'tpope/vim-fireplace',                        { 'for': 'clojure' }
 Plug 'tpope/vim-salve',                            { 'for': 'clojure' }
 Plug 'guns/vim-sexp',                              { 'for': 'clojure' }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 
-" Misc
+" Misc languages
 Plug 'EdJoJob/llvmir-vim'
 Plug 'alcesleo/vim-uppercase-sql'
 Plug 'cespare/vim-toml'
@@ -81,7 +82,6 @@ Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 Plug 'fatih/vim-go',           { 'for': 'go' }
 Plug 'kchmck/vim-coffee-script'
 Plug 'leafgarland/typescript-vim'
-Plug 'majutsushi/tagbar'
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-liquid'
