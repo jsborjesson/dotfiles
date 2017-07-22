@@ -25,6 +25,7 @@
     ri  = rebase --interactive
     rs  = reset
     s   = status --short
+    st  = status
 
     # Personal shortcuts
     cob = new-branch
