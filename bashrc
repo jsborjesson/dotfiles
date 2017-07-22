@@ -4,8 +4,8 @@ source ~/.alias
 
 # ----- Exports -----
 export EDITOR='vim'
-export GIT_PS1_SHOWDIRTYSTATE=1     # Show * for dirty repo in prompt
-export GIT_PS1_SHOWUNTRACKEDFILES=1 # Show % for untracked files in prompt
+export GIT_PS1_SHOWDIRTYSTATE=1     # Show * and + for unstaged and staged changes
+export GIT_PS1_SHOWUNTRACKEDFILES=1 # Show % for untracked files
 export GOPATH=~/code/go
 export HISTCONTROL=ignoredups:ignorespace:erasedups
 export HISTFILESIZE=10000
@@ -64,6 +64,10 @@ IWhite='\[\e[0;97m\]'
 IYellow='\[\e[0;93m\]'
 IBlack='\[\e[0;90m\]'
 
+# Set the prompt
+#
+# Documentation for the __git_ps1 command:
+# https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
 PS1="\n$IYellow\A $IGreen\w $IBlue\$(__git_ps1 '(%s)')$IRed\$(exit_status)$IBlack\$(background_jobs)\n$IWhite\$$Color_Off "
 
 # ----- bashrc.local -----
