@@ -249,8 +249,8 @@ function! SimpleStatusline()
 endfunction
 
 function! AdjustStatusline()
-    let num_splits_in_window = len(tabpagebuflist())
-    if num_splits_in_window > 1
+    let num_splits_in_tab = len(tabpagebuflist())
+    if num_splits_in_tab > 1
         call SimpleStatusline()
     else
         call ComplexStatusLine()
