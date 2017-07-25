@@ -15,7 +15,6 @@ Steps to install dotfiles on a fresh Mac OS installation:
 3. Install things
     * `rake brew` installs most essential software
     * `rake link` installs the configuration
-    * `rake vim:install` install all Vim plugins
     * `rake karabiner:load` sets all of the keyboard shortcuts
 
 4. Once you have your SSH keys installed, switch the protocol
