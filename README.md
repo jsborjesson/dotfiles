@@ -17,7 +17,7 @@ Steps to install dotfiles on a fresh Mac OS installation:
     * `rake link` installs the configuration
     * `rake karabiner:load` sets all of the keyboard shortcuts
 
-4. Once you have your SSH keys installed, switch the protocol
+4. Once you have your [SSH keys](https://help.github.com/articles/connecting-to-github-with-ssh/) installed, switch the protocol
 
         git remote set-url origin git@github.com:alcesleo/dotfiles.git
 
