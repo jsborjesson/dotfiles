@@ -29,7 +29,7 @@ Things that I haven't found a way to automate yet.
     * Accessibility > Zoom
     * Displays > Automatically adjust brightness
 * **iTerm2**
-    * Settings > General > Load preferences from a custom folder
+    * Profiles > Keys > Option Keys act as +Esc
 * **Finder**
     * Add favourites by drag and drop:
         * `~`
