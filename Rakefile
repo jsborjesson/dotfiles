@@ -21,7 +21,7 @@ desc "Install Homebrew"
 task :brew do
   unless system("brew --version > /dev/null")
     puts "Installing Homebrew..."
-    sh 'ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+    sh '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
   end
   puts "Homebrew is installed."
 
