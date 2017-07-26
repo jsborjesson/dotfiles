@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SCRIPT_PATH=$(dirname "$(readlink -f "$0")")
+SCRIPT_PATH=$(pwd)
 
 ln -sfnv $SCRIPT_PATH/alias ~/.alias
 ln -sfnv $SCRIPT_PATH/bash_profile ~/.bash_profile
