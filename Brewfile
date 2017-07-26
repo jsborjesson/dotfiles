@@ -24,6 +24,7 @@ brew "yank"
 brew "z"
 
 cask "caffeine"
+cask "dash"
 cask "docker"
 cask "dropbox"
 cask "force-paste"
@@ -34,10 +35,10 @@ cask "licecap"
 cask "macpass"
 cask "spectacle"
 cask "the-unarchiver"
+cask "veracrypt"
 
 # Install on demand
 # brew cask install appcleaner
-# brew cask install dash
 # brew cask install keycastr
 # brew cask install postgres
 # brew cask install sequel-pro
