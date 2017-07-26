@@ -25,6 +25,8 @@ task :brew do
   end
   puts "Homebrew is installed."
 
+  sh "brew update"
+
   puts
   puts "Installing packages from Brewfile"
   sh "brew bundle"
