@@ -2,7 +2,7 @@ require "rake"
 
 task default: :link
 
-desc "Set up a new computer from scratch"
+desc "Set up a new computer from scratch (experimental)"
 task bootstrap: %i[
   brew
   bash

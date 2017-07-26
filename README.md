@@ -13,11 +13,10 @@ Steps to install dotfiles on a fresh Mac OS installation:
         mkdir ~/code && git clone https://github.com/alcesleo/dotfiles.git ~/code/dotfiles && cd ~/code/dotfiles
 
 3. Install things
-    * `rake brew` installs most essential software
-    * `rake link` installs the configuration
-    * `rake karabiner:load` sets all of the keyboard shortcuts
 
-4. Once you have your [SSH keys](https://help.github.com/articles/connecting-to-github-with-ssh/) installed, switch the protocol
+        rake -T # shows you all available commands
+
+4. Once you have your [SSH keys](https://help.github.com/articles/connecting-to-github-with-ssh/) set up, switch the protocol
 
         git remote set-url origin git@github.com:alcesleo/dotfiles.git
 
@@ -87,7 +86,7 @@ sudo chmod 644 ~/.ssh/known_hosts
 sudo chmod 755 ~/.ssh
 ```
 
-#### It keeps asking for the SSH passphrase
+#### If it keeps asking for the SSH passphrase
 
 ```bash
 # Make sure ssh-agent is running
