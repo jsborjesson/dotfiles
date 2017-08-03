@@ -55,7 +55,6 @@ Plug 'junegunn/gv.vim'
 Plug 'majutsushi/tagbar'
 Plug 'mbbill/undotree'
 Plug 'mileszs/ack.vim'
-Plug 'takac/vim-hardtime'
 
 " Language specific plugins
 
@@ -596,8 +595,5 @@ let g:go_fmt_fail_silently = 1
 " TagBar
 nnoremap <F8> :TagbarToggle<CR>
 nnoremap <F9> :TagbarShowTag<CR>
-
-" Hardtime
-let g:hardtime_default_on = 1
 
 " }}}
