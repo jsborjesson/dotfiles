@@ -116,6 +116,13 @@ snippet rr "require_relative"
 require_relative "$1"
 endsnippet
 
+snippet task "Create a rake task"
+desc "${1:Describe the task}"
+task :${2:task_name} do
+  $0
+end
+endsnippet
+
 ### Debugging ###
 
 snippet pry "Start pry here"
@@ -130,7 +137,7 @@ snippet deb "Start ruby-debug here"
 require "ruby-debug"; debugger
 endsnippet
 
-### Testing ###
+### RSpec ###
 
 snippet desc
 describe "${1:feature}" do
@@ -170,20 +177,15 @@ snippet subj
 subject { ${1:described_class.new}$2 }
 endsnippet
 
-snippet task "Create a rake task"
-desc "${1:Describe the task}"
-task :${2:task_name} do
-  $0
-end
-endsnippet
-
 snippet rtask "Run rspec as default rake task"
 require "rspec/core/rake_task"
 RSpec::Core::RakeTask.new(:spec)
 task :default => :spec
 endsnippet
 
-snippet minispec "MiniTest spec template"
+### Minitest ###
+
+snippet minispec "Minitest spec template"
 require "minitest/spec"
 require "minitest/autorun"
 
@@ -194,12 +196,24 @@ describe ${1:ClassName} do
 end
 endsnippet
 
-snippet minitest "MiniTest template"
+snippet minitest "Minitest template"
 require "minitest/autorun"
 
 class ${1:TestName}Test < Minitest::Test
   $0
 end
+endsnippet
+
+snippet minitesttask "Rakefile for Minitest"
+require "rake/testtask"
+Rake::TestTask.new(:test) do |t|
+  t.libs << "test"
+  t.libs << "lib"
+  t.test_files = FileList["test/**/*_test.rb"]
+  t.warning = true
+end
+
+task default: :test
 endsnippet
 
 snippet t "Define test method"
