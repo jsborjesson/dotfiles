@@ -274,6 +274,11 @@ augroup whitespace
 augroup END
 
 function! TrimWhitespace()
+    " This screws with highlighting in gitcommit buffers for some reason
+    if &filetype == 'gitcommit'
+      return
+    endif
+
     let l:save_cursor = getpos('.')
 
     " Remove trailing whitespace at the end of lines
