@@ -391,7 +391,7 @@ nnoremap gm @m
 xnoremap gm :normal @m<CR>
 
 " Edit the m macro in place
-nnoremap gM :let @m='<C-r><C-r>q'<Left>
+nnoremap gM :let @m='<C-r><C-r>m'<Left>
 
 " Save and trim whitespace with C-s
 nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
