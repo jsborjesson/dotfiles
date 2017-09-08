@@ -224,6 +224,12 @@ augroup settings
 
     " Use a simpler statusline when the window is split
     autocmd WinEnter,WinLeave,VimEnter * :call AdjustStatusline()
+
+    " Create parent directories if they don't exist when writing a file
+    autocmd BufWritePre *
+                \ if !isdirectory(expand('<afile>:p:h')) |
+                    \ call mkdir(expand('<afile>:p:h'), 'p') |
+                \ endif
 augroup END
 
 " }}}
@@ -454,9 +460,6 @@ nnoremap <silent> <Leader>sp :normal! mm[s1z=`m<CR>
 
 command! Nmappings execute 'redir! > /tmp/vim_mappings.txt | silent nmap | redir END | !less /tmp/vim_mappings.txt'
 command! Mappings execute 'redir! > /tmp/vim_mappings.txt | silent map | redir END | !less /tmp/vim_mappings.txt'
-
-" Make all necessary directories to be able to save the current buffer
-command! MakeDirectories silent execute '!mkdir -p %:h' | execute 'redraw!'
 
 " Copy the current path
 command! CopyPathToClipboard execute "let @* = substitute(expand('%:p'), '/Users/alcesleo', '~', '')"
