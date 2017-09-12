@@ -123,8 +123,10 @@ augroup filetypes
     autocmd BufNewFile,BufRead crontab.snippets setlocal filetype=snippets
 
     autocmd BufNewFile,BufRead alias,
-        \bash_profile,
         \.env*,
+        \bash_profile,
+        \env,
+        \env.example,
         \path,
         \railsrc
         \ setlocal filetype=sh

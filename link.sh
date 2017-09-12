@@ -5,10 +5,10 @@ SCRIPT_PATH=$(pwd)
 ln -sfnv $SCRIPT_PATH/alias ~/.alias
 ln -sfnv $SCRIPT_PATH/bash_profile ~/.bash_profile
 ln -sfnv $SCRIPT_PATH/bashrc ~/.bashrc
-ln -sfnv $SCRIPT_PATH/bashrc.local ~/.bashrc.local
 ln -sfnv $SCRIPT_PATH/bin/ ~/.bin
 ln -sfnv $SCRIPT_PATH/bundle/ ~/.bundle
 ln -sfnv $SCRIPT_PATH/emacs ~/.emacs
+ln -sfnv $SCRIPT_PATH/env ~/.env
 ln -sfnv $SCRIPT_PATH/gemrc ~/.gemrc
 ln -sfnv $SCRIPT_PATH/git_template/ ~/.git_template
 ln -sfnv $SCRIPT_PATH/gitconfig ~/.gitconfig

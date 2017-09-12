@@ -70,7 +70,7 @@ IBlack='\[\e[0;90m\]'
 # https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
 PS1="\n$IYellow\A $IGreen\w $IBlue\$(__git_ps1 '(%s)')$IRed\$(exit_status)$IBlack\$(background_jobs)\n$IWhite\$$Color_Off "
 
-# ----- bashrc.local -----
-if [ -f ~/.bashrc.local ]; then
-    source ~/.bashrc.local
+# ----- Local environment variables -----
+if [ -f ~/.env ]; then
+    source ~/.env
 fi
