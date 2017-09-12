@@ -19,8 +19,6 @@ PATH=/usr/local/opt/ctags/bin:$PATH
 
 # Append
 PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-PATH=$PATH:$GOPATH/bin
-PATH=$PATH:~/.multirust/toolchains/nightly/cargo/bin
 PATH=$PATH:/usr/local/opt/git/share/git-core/contrib/diff-highlight
 
 export PATH
