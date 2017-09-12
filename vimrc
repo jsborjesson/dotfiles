@@ -110,18 +110,24 @@ highlight Todo ctermfg=white ctermbg=none
 set fillchars+=vert:\  " There's significant whitespace before this comment
 
 " }}}
-" Filetypes {{{
+" File types {{{
 
-" Add syntax highlighting for some special files
+" Add syntax highlighting for some irregularly named files
 augroup filetypes
     autocmd!
 
-    autocmd BufNewFile,BufRead *.lasp                                setlocal filetype=clojure
-    autocmd BufNewFile,BufRead alias,bash_profile,.env*,path,railsrc setlocal filetype=sh
-    autocmd BufNewFile,BufRead emacs                                 setlocal filetype=lisp
-    autocmd BufNewFile,BufRead gitconfig                             setlocal filetype=gitconfig
-    autocmd BufNewFile,BufRead pryrc,Brewfile                        setlocal filetype=ruby
-    autocmd BufNewFile,BufRead crontab.snippets                      setlocal filetype=snippets
+    autocmd BufNewFile,BufRead *.lasp           setlocal filetype=clojure
+    autocmd BufNewFile,BufRead emacs            setlocal filetype=lisp
+    autocmd BufNewFile,BufRead gitconfig        setlocal filetype=gitconfig
+    autocmd BufNewFile,BufRead pryrc,Brewfile   setlocal filetype=ruby
+    autocmd BufNewFile,BufRead crontab.snippets setlocal filetype=snippets
+
+    autocmd BufNewFile,BufRead alias,
+        \bash_profile,
+        \.env*,
+        \path,
+        \railsrc
+        \ setlocal filetype=sh
 augroup END
 
 " }}}
