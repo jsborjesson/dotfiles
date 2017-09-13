@@ -389,7 +389,7 @@ noremap , :
 " Always quit with q
 " Some windows already do this, but it's very confusing which ones they are.
 " Quitting is common and deserves this unambiguous lower-case key.
-nnoremap q :q<CR>
+nnoremap <silent> q :q<CR>
 
 " Create markers with Q
 " I use them far less than macros, and it gives them a slightly less prominent
