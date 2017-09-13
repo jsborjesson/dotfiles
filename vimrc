@@ -412,6 +412,9 @@ nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>l
 
+" Bring in path to current file command-line
+cnoremap <expr> <C-l> expand('%')
+
 " }}}
 " Leader mappings {{{
 
