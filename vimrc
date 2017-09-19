@@ -361,12 +361,25 @@ function! GJoinOperator(submode)
 endfunction
 
 " Mend meta-mappings
+set <M-S-a>=A
+set <M-a>=a
 set <M-h>=h
 set <M-j>=j
 set <M-k>=k
 set <M-l>=l
 set <M-o>=o
+set <M-u>=u
 set <M-x>=x
+
+" Allow writing Swedish/German letters the 'normal' way on a US layout
+inoremap <M-S-a> <C-k>AA
+inoremap <M-a> <C-k>aa
+inoremap <M-u>A <C-k>A:
+inoremap <M-u>O <C-k>O:
+inoremap <M-u>U <C-k>U:
+inoremap <M-u>a <C-k>a:
+inoremap <M-u>o <C-k>o:
+inoremap <M-u>u <C-k>u:
 
 " }}}
 " Mappings {{{
