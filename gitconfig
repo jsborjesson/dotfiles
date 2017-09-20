@@ -54,6 +54,7 @@
     rename-branch        = branch -m
     reset-tags           = !git tag -l | xargs git tag -d && git fetch -t
     resolve-conflicts    = !git conflicts | xargs -o $EDITOR '+/<<<<<<<'
+    set-date             = "!f() { GIT_COMMITTER_DATE=\"$1\" git commit --date=\"$1\" --amend --reuse-message HEAD; }; f"
     sha                  = "!f() { git rev-parse --short ${1:-HEAD}; }; f"
     shove                = push --force-with-lease
     show-merge           = show -m
