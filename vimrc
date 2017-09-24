@@ -230,8 +230,8 @@ augroup settings
     " Automatically rebalance splits on resize
     autocmd VimResized * :wincmd =
 
-    " Use a simpler statusline when the window is split
-    autocmd WinEnter,WinLeave,VimEnter * :call AdjustStatusline()
+    " Automatically adjust the amount of information in the statusline
+    autocmd WinEnter,WinLeave,VimEnter,VimResized * :call AdjustStatusline()
 
     " Create parent directories if they don't exist when writing a file
     autocmd BufWritePre *
@@ -245,7 +245,7 @@ augroup END
 
 set laststatus=2
 
-function! ComplexStatusLine()
+function! VerboseStatusLine()
     set statusline=\ %F                                     " Path
     set statusline+=\ %y                                    " File type
 
@@ -262,12 +262,14 @@ function! SimpleStatusline()
     set statusline=\ %F
 endfunction
 
+" Only show the verbose statusline when Vim is wide enough, and not split
 function! AdjustStatusline()
     let num_splits_in_tab = len(tabpagebuflist())
-    if num_splits_in_tab > 1
+
+    if num_splits_in_tab > 1 || &columns < 120
         call SimpleStatusline()
     else
-        call ComplexStatusLine()
+        call VerboseStatusLine()
     endif
 endfunction
 
