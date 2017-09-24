@@ -243,7 +243,23 @@ augroup END
 " }}}
 " Statusline {{{
 
+" Always show the statusline
 set laststatus=2
+
+" Only show the verbose statusline when Vim is wide enough, and not split
+function! AdjustStatusline()
+    let num_splits_in_tab = len(tabpagebuflist())
+
+    if num_splits_in_tab > 1 || &columns < 120
+        call SimpleStatusline()
+    else
+        call VerboseStatusLine()
+    endif
+endfunction
+
+function! SimpleStatusline()
+    set statusline=\ %F
+endfunction
 
 function! VerboseStatusLine()
     set statusline=\ %F                                     " Path
@@ -256,21 +272,6 @@ function! VerboseStatusLine()
     set statusline+=%=                                      " Right align after this
     set statusline+=\ %{&ff}\                               " Fileformat
     set statusline+=\ Line:\ %l/%L\ (%P)\ \|\ Column:\ %c\  " Line/Column
-endfunction
-
-function! SimpleStatusline()
-    set statusline=\ %F
-endfunction
-
-" Only show the verbose statusline when Vim is wide enough, and not split
-function! AdjustStatusline()
-    let num_splits_in_tab = len(tabpagebuflist())
-
-    if num_splits_in_tab > 1 || &columns < 120
-        call SimpleStatusline()
-    else
-        call VerboseStatusLine()
-    endif
 endfunction
 
 " }}}
