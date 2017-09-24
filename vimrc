@@ -262,16 +262,17 @@ function! SimpleStatusline()
 endfunction
 
 function! VerboseStatusLine()
-    set statusline=\ %F                                     " Path
-    set statusline+=\ %y                                    " File type
+    set statusline=\ %F                         " Path
+    set statusline+=\ %y                        " File type
 
     if strlen(fugitive#head(8)) > 0
-        set statusline+=\ (%{fugitive#head(8)})             " Git branch
+        set statusline+=\ (%{fugitive#head(8)}) " Git branch
     endif
 
-    set statusline+=%=                                      " Right align after this
-    set statusline+=\ %{&ff}\                               " Fileformat
-    set statusline+=\ Line:\ %l/%L\ (%P)\ \|\ Column:\ %c\  " Line/Column
+    set statusline+=%=                          " Right align after this
+    set statusline+=\ %{&ff}\                   " File format
+    set statusline+=\ line:\ %l/%L\ (%P)        " Line
+    set statusline+=\ \|\ column:\ %c\          " Column
 endfunction
 
 " }}}
