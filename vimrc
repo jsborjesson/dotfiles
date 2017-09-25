@@ -105,6 +105,8 @@ highlight PmenuSel ctermbg=226 ctermfg=0
 highlight SignColumn ctermbg=black
 highlight SpellBad ctermbg=52
 highlight Todo ctermfg=white ctermbg=none
+highlight diffAdded ctermfg=green
+highlight diffRemoved ctermfg=red
 
 " No split separator char
 set fillchars+=vert:\  " There's significant whitespace before this comment
