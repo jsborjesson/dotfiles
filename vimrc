@@ -541,7 +541,7 @@ let g:targets_nlNL = 'nN  '
 call camelcasemotion#CreateMotionMappings('<leader>')
 
 " EasyAlign
-vmap g<Space> <Plug>(EasyAlign)
+xmap g<Space> <Plug>(EasyAlign)
 nmap g<Space> <Plug>(EasyAlign)
 
 " Support vim comments too
