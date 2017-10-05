@@ -378,14 +378,14 @@ set <M-u>=u
 set <M-x>=x
 
 " Allow writing Swedish/German letters the 'normal' way on a US layout
-inoremap <M-S-a> <C-k>AA
-inoremap <M-a> <C-k>aa
-inoremap <M-u>A <C-k>A:
-inoremap <M-u>O <C-k>O:
-inoremap <M-u>U <C-k>U:
-inoremap <M-u>a <C-k>a:
-inoremap <M-u>o <C-k>o:
-inoremap <M-u>u <C-k>u:
+noremap! <M-S-a> <C-k>AA
+noremap! <M-a> <C-k>aa
+noremap! <M-u>A <C-k>A:
+noremap! <M-u>O <C-k>O:
+noremap! <M-u>U <C-k>U:
+noremap! <M-u>a <C-k>a:
+noremap! <M-u>o <C-k>o:
+noremap! <M-u>u <C-k>u:
 
 " }}}
 " Mappings {{{
