@@ -217,7 +217,6 @@ let $BASH_ENV = '~/.alias'
 " Autocmds {{{
 
 augroup settings
-    " Make sure to not register the autocmds again when reloading vimrc
     autocmd!
 
     " Reload .vimrc on save
@@ -280,7 +279,8 @@ endfunction
 " }}}
 " Whitespace {{{
 
-" Highlight EOL whitespace, http://vim.wikia.com/wiki/Highlight_unwanted_spaces
+" Highlight EOL whitespace
+" http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 highlight default ExtraWhitespace ctermbg=darkred guibg=darkred
 
 augroup whitespace
@@ -340,19 +340,15 @@ xnoremap # "xy?\V<C-r>=escape(@x, '?\')<CR><CR>
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 
-" Better and more consistent &
+" Remember flags when repeating last substitute with & (see :h &)
 nnoremap & :&&<CR>
 xnoremap & :&&<CR>
 
-" Correct J and gJ to take a motion, and act on current line when doubled.
-"
-" To not interfere with my overridden HJKL motions, J is moved to gj, which is
-" otherwise a pretty useless command to use manually.
+" Make J and gJ take a motion, and act on current line when doubled.
 "
 " To join a paragraph, normally you first have to select it by doing vipJ,
 " this makes J take a motion so you can do Jip, and you can still get the old
-" behaviour by doing JJ and gJJ, this is much more consistent with other Vim
-" commands.
+" behaviour by doing JJ and gJJ, this is more consistent with other Vim commands.
 nnoremap <silent> J :set operatorfunc=JoinOperator<CR>g@
 nnoremap <silent> gJ :set operatorfunc=GJoinOperator<CR>g@
 nnoremap JJ J
