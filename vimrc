@@ -368,6 +368,7 @@ endfunction
 
 " }}}
 " Mend meta-mappings {{{
+
 set <M-S-a>=A
 set <M-a>=a
 set <M-h>=h
@@ -375,6 +376,7 @@ set <M-j>=j
 set <M-k>=k
 set <M-l>=l
 set <M-o>=o
+set <M-s>=s
 set <M-u>=u
 set <M-x>=x
 
@@ -384,6 +386,7 @@ set <M-x>=x
 " Allow writing Swedish/German letters the 'normal' way on a US layout
 noremap! <M-S-a> <C-k>AA
 noremap! <M-a> <C-k>aa
+noremap! <M-s> <C-k>ss
 noremap! <M-u>A <C-k>A:
 noremap! <M-u>O <C-k>O:
 noremap! <M-u>U <C-k>U:
