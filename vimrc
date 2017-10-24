@@ -366,7 +366,8 @@ function! GJoinOperator(submode)
     '[,']join!
 endfunction
 
-" Mend meta-mappings
+" }}}
+" Mend meta-mappings {{{
 set <M-S-a>=A
 set <M-a>=a
 set <M-h>=h
