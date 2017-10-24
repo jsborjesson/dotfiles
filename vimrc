@@ -389,6 +389,7 @@ noremap! <M-u>U <C-k>U:
 noremap! <M-u>a <C-k>a:
 noremap! <M-u>o <C-k>o:
 noremap! <M-u>u <C-k>u:
+noremap! <M-u>i <C-k>i:
 
 " }}}
 " Mappings {{{
