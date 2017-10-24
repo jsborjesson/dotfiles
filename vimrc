@@ -377,6 +377,9 @@ set <M-o>=o
 set <M-u>=u
 set <M-x>=x
 
+" }}}
+" International letters {{{
+
 " Allow writing Swedish/German letters the 'normal' way on a US layout
 noremap! <M-S-a> <C-k>AA
 noremap! <M-a> <C-k>aa
