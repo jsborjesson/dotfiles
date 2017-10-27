@@ -367,6 +367,7 @@ endfunction
 
 set <M-S-a>=A
 set <M-a>=a
+set <M-e>=e
 set <M-h>=h
 set <M-j>=j
 set <M-k>=k
@@ -382,8 +383,11 @@ set <M-x>=x
 " Allow writing Swedish/German letters the 'normal' way on a US layout
 noremap! <M-S-a> <C-k>AA
 noremap! <M-a> <C-k>aa
+noremap! <M-e>E <C-k>E'
+noremap! <M-e>e <C-k>e'
 noremap! <M-s> <C-k>ss
 noremap! <M-u>A <C-k>A:
+noremap! <M-u>I <C-k>I:
 noremap! <M-u>O <C-k>O:
 noremap! <M-u>U <C-k>U:
 noremap! <M-u>a <C-k>a:
