@@ -148,9 +148,7 @@ set foldlevelstart=20
 set gdefault          " Replace all matches by default
 set hidden
 set lazyredraw        " Don't redraw until macro has finished running
-set listchars+=tab:»·
 set nojoinspaces      " Join lines containing punctuation correctly
-set nowrap
 set number
 set path+=**          " Find subdirectories of path
 set scrolloff=0
@@ -161,6 +159,10 @@ set ttimeoutlen=1
 set ttyfast           " Indicates a fast terminal connection, enabling smoother redraws
 set wildignorecase
 set wildmenu
+
+" Text
+set listchars+=tab:»·
+set nowrap
 
 " Searching
 set ignorecase
