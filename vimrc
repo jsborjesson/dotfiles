@@ -147,18 +147,20 @@ set diffopt+=vertical
 set foldlevelstart=20
 set gdefault          " Replace all matches by default
 set hidden
-set lazyredraw        " Don't redraw until macro has finished running
 set nojoinspaces      " Join lines containing punctuation correctly
 set number
 set path+=**          " Find subdirectories of path
 set scrolloff=0
 set sidescroll=1      " Scroll sideways smoothly
 set synmaxcol=512     " Turn of syntax for absurdly long lines (makes opening huge json-files quick)
+set wildignorecase
+set wildmenu
+
+" Performance
 set ttimeout
 set ttimeoutlen=1
 set ttyfast           " Indicates a fast terminal connection, enabling smoother redraws
-set wildignorecase
-set wildmenu
+set lazyredraw        " Don't redraw until macro has finished running
 
 " Text
 set linebreak
