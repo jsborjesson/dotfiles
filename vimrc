@@ -161,6 +161,7 @@ set wildignorecase
 set wildmenu
 
 " Text
+set linebreak
 set listchars+=tab:»·
 set nowrap
 
