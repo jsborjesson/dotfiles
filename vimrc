@@ -76,6 +76,7 @@ Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 
 " Misc languages
 Plug 'EdJoJob/llvmir-vim'
+Plug 'ElmCast/elm-vim'
 Plug 'alcesleo/vim-uppercase-sql'
 Plug 'cespare/vim-toml'
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
