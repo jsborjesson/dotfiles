@@ -42,7 +42,7 @@
     conflicts            = !git status --short | grep -E '^UU|^AA' | awk '{ print $2 }'
     ctags                = !.git/hooks/ctags
     delete-remote-branch = push --delete origin
-    fix                  = commit --amend --reuse-message HEAD
+    fix                  = commit --amend --no-edit
     forget               = update-index --assume-unchanged
     forgotten            = !git ls-files -v | grep "^h" | awk '{ print $2 }'
     new-branch           = checkout -b
