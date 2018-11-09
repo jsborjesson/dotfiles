@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # Small wrapper around git commit. Bare 'cm' will enter normal git commit
 # editor, but with args it will do a direct `commit -m`
