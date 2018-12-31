@@ -45,7 +45,7 @@
     fix                  = commit --amend --no-edit
     forget               = update-index --assume-unchanged
     forgotten            = !git ls-files -v | grep "^h" | awk '{ print $2 }'
-    new-branch           = checkout -b
+    create-branch        = checkout -b
     ours                 = checkout --ours
     plush                = !git pull --rebase && git push
     pulled               = log -p --reverse --no-merges --stat @{1}..
