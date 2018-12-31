@@ -26,4 +26,4 @@ ln -sfnv $SCRIPT_PATH/vim ~/.vim
 ln -sfnv $SCRIPT_PATH/vimrc ~/.vimrc
 
 ln -sfnv $SCRIPT_PATH/Shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
-ln -sfnv $SCRIPT_PATH/private.xml ~/Library/Application\ Support/Karabiner/private.xml
+ln -sfnv $SCRIPT_PATH/karabiner/ ~/.config/
