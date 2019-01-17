@@ -35,7 +35,11 @@ Things that I haven't found a way to automate yet.
         * `~/code`
         * `~/Pictures/Screenshots/`
 
-### Vim
+### Windows
+
+A subset of the configuration is relevant on Windows, you can install them by running the `setup-windows.bat`-script as Administrator.
+
+## Vim
 
 Lint VimScript to be extra clean:
 
@@ -44,7 +48,7 @@ pip install vim-vint
 vint --style vimrc
 ```
 
-### Ruby
+## Ruby
 
 ```bash
 rbenv install -l     # List available ruby versions
@@ -64,7 +68,7 @@ running `rails new` anyway.
 You can also install [rbenv-ctags](https://github.com/tpope/rbenv-ctags) to
 allow tag jumps into the standard library too.
 
-### SSH keys
+## SSH keys
 
 Make sure to bring your `~/.ssh` with you when you reinstall.
 
@@ -86,7 +90,7 @@ sudo chmod 644 ~/.ssh/known_hosts
 sudo chmod 755 ~/.ssh
 ```
 
-#### If it keeps asking for the SSH passphrase
+### If it keeps asking for the SSH passphrase
 
 ```bash
 # Make sure ssh-agent is running
@@ -97,7 +101,7 @@ Agent pid 98949
 $ ssh-add
 ```
 
-### GPG keys
+## GPG keys
 
 Use [GPG Suite](https://gpgtools.org/) to handle GPG keys
 
