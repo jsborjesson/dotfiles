@@ -27,3 +27,4 @@ ln -sfnv $SCRIPT_PATH/vimrc ~/.vimrc
 
 ln -sfnv $SCRIPT_PATH/Shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
 ln -sfnv $SCRIPT_PATH/karabiner/ ~/.config/
+ln -sfnv $SCRIPT_PATH/macos/ssh/config ~/.ssh/config
