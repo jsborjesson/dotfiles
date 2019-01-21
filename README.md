@@ -1,8 +1,6 @@
 # Dotfiles
 
-## Installation
-
-Steps to install dotfiles on a fresh Mac OS installation:
+## macOS
 
 1. Install developer tools
 
@@ -35,7 +33,7 @@ Things that I haven't found a way to automate yet.
         * `~/code`
         * `~/Pictures/Screenshots/`
 
-### Windows
+## Windows
 
 A subset of the configuration is relevant on Windows, you can install them by running the `setup-windows.bat`-script as Administrator.
 
