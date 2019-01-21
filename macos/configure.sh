@@ -7,9 +7,6 @@ defaults write com.apple.screensaver askForPasswordDelay 0
 # Set dark theme
 defaults write NSGlobalDomain AppleInterfaceStyle Dark
 
-# Menu bar: make it opaque
-defaults write com.apple.universalaccess reduceTransparency -bool true
-
 # Menu bar: disable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 

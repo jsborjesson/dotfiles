@@ -36,13 +36,6 @@ task :brew do
   sh "brew cask cleanup"
 end
 
-desc "Configure Mac OS using the osx.sh file"
-task :osx do
-  puts "Running osx.sh..."
-  sh "bash ./osx.sh"
-  puts "Done! Some of these settings may require a restart."
-end
-
 desc "Setup Go tools"
 task :golang do
   sh "mkdir -p ~/code/go"
