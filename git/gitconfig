@@ -40,12 +40,13 @@
     changed-files        = show --pretty="format:" --name-only
     changelog            = !git log --oneline `git describe --abbrev=0`..HEAD
     conflicts            = !git status --short | grep -E '^UU|^AA' | awk '{ print $2 }'
+    context              = blame
+    create-branch        = checkout -b
     ctags                = !.git/hooks/ctags
     delete-remote-branch = push --delete origin
     fix                  = commit --amend --no-edit
     forget               = update-index --assume-unchanged
     forgotten            = !git ls-files -v | grep "^h" | awk '{ print $2 }'
-    create-branch        = checkout -b
     ours                 = checkout --ours
     plush                = !git pull --rebase && git push
     pulled               = log -p --reverse --no-merges --stat @{1}..
