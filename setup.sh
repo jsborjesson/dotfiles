@@ -23,7 +23,6 @@ ln -sfnv $SCRIPT_PATH/ruby/rails_template.rb ~/.rails_template.rb
 ln -sfnv $SCRIPT_PATH/ruby/railsrc ~/.railsrc
 ln -sfnv $SCRIPT_PATH/tmux.conf ~/.tmux.conf
 ln -sfnv $SCRIPT_PATH/vim ~/.vim
-ln -sfnv $SCRIPT_PATH/vimrc ~/.vimrc
 
 ln -sfnv $SCRIPT_PATH/Shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
 ln -sfnv $SCRIPT_PATH/karabiner/ ~/.config/
