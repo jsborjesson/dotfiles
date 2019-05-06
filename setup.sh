@@ -13,6 +13,7 @@ ln -sfnv $SCRIPT_PATH/emacs ~/.emacs
 ln -sfnv $SCRIPT_PATH/env ~/.env
 ln -sfnv $SCRIPT_PATH/git/git_template/ ~/.git_template
 ln -sfnv $SCRIPT_PATH/git/gitconfig ~/.gitconfig
+ln -sfnv $SCRIPT_PATH/git/gitconfig-mac ~/.gitconfig-mac
 ln -sfnv $SCRIPT_PATH/git/gitignore ~/.gitignore
 ln -sfnv $SCRIPT_PATH/jrnl_config ~/.jrnl_config
 ln -sfnv $SCRIPT_PATH/psqlrc ~/.psqlrc

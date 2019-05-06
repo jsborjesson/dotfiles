@@ -72,7 +72,6 @@
 
 [core]
     excludesfile = ~/.gitignore
-    pager        = diff-highlight | less
 
 [init]
     templatedir = ~/.git_template
@@ -91,9 +90,6 @@
     tool      = vimdiff
     algorithm = patience
 
-[credential]
-    helper = osxkeychain
-
 [filter "trimWhitespace"]
     clean = git-stripspace
 
@@ -101,5 +97,7 @@
     enabled    = true
     autoupdate = true
 
-[interactive]
-    diffFilter = diff-highlight
+[include]
+	path = .gitconfig-mac
+	path = .gitconfig-windows
+	path = .gitconfig-local
