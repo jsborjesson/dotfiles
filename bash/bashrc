@@ -11,6 +11,7 @@ export HISTCONTROL=ignoredups:ignorespace:erasedups
 export HISTFILESIZE=10000
 export HISTIGNORE='ls:bg:fg:history'
 export HISTSIZE=10000
+export LANG=en_US
 export PROMPT_COMMAND='history -a'  # Append history file after every command
 export TERM=xterm-256color
 
