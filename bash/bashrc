@@ -29,7 +29,10 @@ stty -ixon
 eval "$(rbenv init -)"
 
 # Initialize bash completion
-[ -f $(brew --prefix)/share/bash-completion/bash_completion ] && source $(brew --prefix)/share/bash-completion/bash_completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
+# Source git-completion
+[ -f $(brew --prefix)/etc/bash_completion.d/git-prompt.sh ] && source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 
 # Initialize z
 [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
@@ -38,7 +41,7 @@ eval "$(rbenv init -)"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # Enable git completion for the g alias
-__git_complete g __git_main
+# __git_complete g __git_main
 
 # ----- Prompt -----
 function exit_status() {
