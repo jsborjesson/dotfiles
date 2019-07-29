@@ -6,3 +6,6 @@
 
 [interactive]
     diffFilter = diff-highlight
+
+[init]
+    templatedir = ~/.git_template
