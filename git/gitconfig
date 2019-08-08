@@ -46,6 +46,7 @@
     delete-remote-branch = push --delete origin
     done                 = "!f() { git commit -eF $(git rev-parse --show-toplevel)/COMMIT_MSG.txt; }; f"
     fix                  = commit --amend --no-edit
+    force                = push --force-with-lease
     forget               = update-index --assume-unchanged
     forgotten            = !git ls-files -v | grep "^h" | awk '{ print $2 }'
     ours                 = checkout --ours
@@ -59,7 +60,6 @@
     root                 = rev-parse --show-toplevel
     set-date             = "!f() { GIT_COMMITTER_DATE=\"$1\" git commit --date=\"$1\" --amend --reuse-message HEAD; }; f"
     sha                  = "!f() { git rev-parse --short ${1:-HEAD}; }; f"
-    shove                = push --force-with-lease
     show-files           = "!f() { git diff-tree --no-commit-id --name-only -r ${1:-HEAD}; }; f"
     show-merge           = show -m
     standup              = log --oneline --decorate --author alcesleo --since yesterday --branches
