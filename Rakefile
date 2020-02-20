@@ -9,7 +9,6 @@ task bootstrap: %i[
   link
   vim:install
   osx
-  karabiner:load
 ]
 
 desc "Symlink dotfiles into home directory"
@@ -35,25 +34,6 @@ task :brew do
   puts "Running cleanup tasks"
   sh "brew cleanup"
   sh "brew cask cleanup"
-end
-
-desc "Configure Mac OS using the osx.sh file"
-task :osx do
-  puts "Running osx.sh..."
-  sh "bash ./osx.sh"
-  puts "Done! Some of these settings may require a restart."
-end
-
-namespace :karabiner do
-  desc "Overwrite karabiner.sh with current Karabiner settings"
-  task :save do
-    sh "/Applications/Karabiner.app/Contents/Library/bin/karabiner export > ./karabiner.sh"
-  end
-
-  desc "Load Karabiner settings from karabiner.sh"
-  task :load do
-    sh "sh ./karabiner.sh"
-  end
 end
 
 desc "Setup Go tools"

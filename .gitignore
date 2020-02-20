@@ -7,7 +7,7 @@ vim/undo
 emacs.d/*
 
 Gemfile.lock
-bundle/cache/
+ruby/bundle/cache/
 env
 lein/repl-history
 ruby-tapas-downloader

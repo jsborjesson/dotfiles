@@ -1,0 +1,11 @@
+[core]
+    pager = diff-highlight | less
+
+[credential]
+    helper = osxkeychain
+
+[interactive]
+    diffFilter = diff-highlight
+
+[init]
+    templatedir = ~/.git_template

@@ -40,12 +40,15 @@
     changed-files        = show --pretty="format:" --name-only
     changelog            = !git log --oneline `git describe --abbrev=0`..HEAD
     conflicts            = !git status --short | grep -E '^UU|^AA' | awk '{ print $2 }'
+    context              = blame
+    create-branch        = checkout -b
     ctags                = !.git/hooks/ctags
     delete-remote-branch = push --delete origin
-    fix                  = commit --amend --reuse-message HEAD
+    done                 = "!f() { git commit -eF $(git rev-parse --show-toplevel)/COMMIT_MSG.txt; }; f"
+    fix                  = commit --amend --no-edit
+    force                = push --force-with-lease
     forget               = update-index --assume-unchanged
     forgotten            = !git ls-files -v | grep "^h" | awk '{ print $2 }'
-    new-branch           = checkout -b
     ours                 = checkout --ours
     plush                = !git pull --rebase && git push
     pulled               = log -p --reverse --no-merges --stat @{1}..
@@ -54,9 +57,10 @@
     rename-branch        = branch -m
     reset-tags           = !git tag -l | xargs git tag -d && git fetch -t
     resolve-conflicts    = !git conflicts | xargs -o $EDITOR '+/<<<<<<<'
+    root                 = rev-parse --show-toplevel
     set-date             = "!f() { GIT_COMMITTER_DATE=\"$1\" git commit --date=\"$1\" --amend --reuse-message HEAD; }; f"
     sha                  = "!f() { git rev-parse --short ${1:-HEAD}; }; f"
-    shove                = push --force-with-lease
+    show-files           = "!f() { git diff-tree --no-commit-id --name-only -r ${1:-HEAD}; }; f"
     show-merge           = show -m
     standup              = log --oneline --decorate --author alcesleo --since yesterday --branches
     stashes              = stash list
@@ -71,10 +75,6 @@
 
 [core]
     excludesfile = ~/.gitignore
-    pager        = diff-highlight | less
-
-[init]
-    templatedir = ~/.git_template
 
 [color "diff"]
     meta = yellow
@@ -90,9 +90,6 @@
     tool      = vimdiff
     algorithm = patience
 
-[credential]
-    helper = osxkeychain
-
 [filter "trimWhitespace"]
     clean = git-stripspace
 
@@ -100,5 +97,7 @@
     enabled    = true
     autoupdate = true
 
-[interactive]
-    diffFilter = diff-highlight
+[include]
+	path = .gitconfig-mac
+	path = .gitconfig-windows
+	path = .gitconfig-local

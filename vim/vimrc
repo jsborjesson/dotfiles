@@ -165,7 +165,7 @@ set lazyredraw        " Don't redraw until macro has finished running
 
 " Text
 set linebreak
-set listchars+=tab:»·
+" set listchars+=tab:»·
 set nowrap
 
 " Searching
