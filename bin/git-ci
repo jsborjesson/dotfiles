@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-# Open CI website
-open $(hub ci-status -v | cut -f2 -d" ")

@@ -1,4 +1,0 @@
-#!/usr/bin/env bash -e
-
-# Removes every merged branch except for master
-git branch --merged | grep -Ev "\*|master|deploy" | xargs -n 1 git branch -d

@@ -1,4 +1,0 @@
---skip-bundle
---skip-turbolinks
---template=~/.rails_template.rb
---database=postgresql
