@@ -1,7 +1,7 @@
 # Dotfiles
 
 ```
-docker build -t dotfiles . && docker run -it dotfiles
+docker build -t dotfiles . && docker run -it -v C:\Development:/mnt/development dotfiles
 ```
 
 ## Resources
