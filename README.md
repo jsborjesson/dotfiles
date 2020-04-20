@@ -4,8 +4,8 @@
 
 The development environment can be run in isolation in a docker container:
 
-```
-docker build -t dotfiles . && docker run -it -v C:\Development:/mnt/development dotfiles
+```bash
+docker build -t dotfiles . && docker run -it -v C:\Development:/mnt/development -v /var/run/docker.sock:/var/run/docker.sock dotfiles
 ```
 
 ## Local
