@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  dotfiles:
+    build: .
+    volumes:
+      - .:/home/dotfiles
+      - /var/run/docker.sock:/var/run/docker.sock
+      - C:\Development:/mnt/development
