@@ -3,7 +3,6 @@ services:
   dotfiles:
     build: .
     volumes:
-      - .:/home/dotfiles
-      - ~/.ssh:/root/.ssh
+      - ~/.ssh:/home/alcesleo/.ssh
       - /var/run/docker.sock:/var/run/docker.sock
       - C:\Development:/mnt/development
