@@ -16,5 +16,8 @@ RUN apt-get update && apt-get install -y \
     tmux
 
 # Link dotfiles
+RUN rm /root/.bashrc
 ADD . /home/dotfiles
-RUN stow --verbose --dir /home/dotfiles --target ~ git
+RUN stow --verbose --dir /home/dotfiles --target ~ \
+    git \
+    bash
