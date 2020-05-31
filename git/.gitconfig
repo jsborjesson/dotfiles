@@ -8,65 +8,38 @@
 [alias]
     # Canonical shortcuts
     a   = add --all
-    ap  = add --patch
     b   = branch
     cl  = clone
     co  = checkout
     d   = diff
     ds  = diff --staged
-    f   = fetch
-    h   = browse
     l   = log --oneline --decorate -15
     lo  = log --oneline --decorate
-    pl  = pull
-    pr  = pull-request
-    ps  = push
-    rb  = rebase
-    ri  = rebase --interactive
-    rs  = reset
     s   = status --short
     st  = status
 
     # Personal shortcuts
-    cob = new-branch
-    com = checkout master
     lod = log --pretty='format:%C(yellow)%h %C(green)%<(18)%an %C(blue bold)%<(22)%ar   %Creset%s'
-    pro = !git push && hub pull-request -o
-    stu = stash --include-untracked
     tfo = !git reset . && git checkout -- . && git clean -fd
 
     # New git commands
     amend                = commit --amend
     changed-files        = show --pretty="format:" --name-only
-    changelog            = !git log --oneline `git describe --abbrev=0`..HEAD
-    conflicts            = !git status --short | grep -E '^UU|^AA' | awk '{ print $2 }'
     context              = blame
-    create-branch        = checkout -b
-    ctags                = !.git/hooks/ctags
-    delete-remote-branch = push --delete origin
-    done                 = "!f() { git commit -eF $(git rev-parse --show-toplevel)/COMMIT_MSG.txt; }; f"
     fix                  = commit --amend --no-edit
     force                = push --force-with-lease
     forget               = update-index --assume-unchanged
     forgotten            = !git ls-files -v | grep "^h" | awk '{ print $2 }'
-    ours                 = checkout --ours
-    plush                = !git pull --rebase && git push
     pulled               = log -p --reverse --no-merges --stat @{1}..
     pure                 = pull --rebase --autostash
     remember             = "!f() { git update-index --no-assume-unchanged ${@:-$(git forgotten | xargs)}; }; f"
-    rename-branch        = branch -m
-    reset-tags           = !git tag -l | xargs git tag -d && git fetch -t
     resolve-conflicts    = !git conflicts | xargs -o $EDITOR '+/<<<<<<<'
     root                 = rev-parse --show-toplevel
     set-date             = "!f() { GIT_COMMITTER_DATE=\"$1\" git commit --date=\"$1\" --amend --reuse-message HEAD; }; f"
     sha                  = "!f() { git rev-parse --short ${1:-HEAD}; }; f"
     show-files           = "!f() { git diff-tree --no-commit-id --name-only -r ${1:-HEAD}; }; f"
-    show-merge           = show -m
-    standup              = log --oneline --decorate --author alcesleo --since yesterday --branches
-    stashes              = stash list
     status-files         = !git status --short | awk '{ print $2 }'
     tags                 = tag -n --sort='-version:refname'
-    theirs               = checkout --theirs
     todo                 = grep --line-number -E "(TODO|FIXME).*"
     tree                 = log --graph --oneline --decorate --all
     uncommit             = reset --soft HEAD~
@@ -87,12 +60,4 @@
     default = current
 
 [diff]
-    tool      = vimdiff
-    algorithm = patience
-
-[filter "trimWhitespace"]
-    clean = git-stripspace
-
-[rerere]
-    enabled    = true
-    autoupdate = true
+    tool = vimdiff
