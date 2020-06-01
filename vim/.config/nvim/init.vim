@@ -12,9 +12,15 @@ unlet autoload_plug_path
 
 call plug#begin('~/.config/nvim/plugins')
 Plug 'tpope/vim-commentary'    " Comment lines with gc
+Plug 'tpope/vim-sleuth'        " Set indentation settings automatically
 call plug#end()
 
 if plug_install
     PlugInstall --sync
 endif
 unlet plug_install
+
+" Plugin Settings
+
+" Settings
+set shiftround " Snap to indentation multiples when indenting
