@@ -81,7 +81,18 @@ nnoremap Q m
 " are. Quitting is common and deserves this unambiguous lower-case key.
 nnoremap <silent> q :q<CR>
 
-" More natural movements to line extremes
+" Redo with U
+"
+" Redoing is a very common action and should follow the same convention as
+" many other commands where the shifted key is the opposite.
+nnoremap U <C-r>
+
+" Yank to end of line with Y
+"
+" Yank entire line is still available with yy
+nnoremap Y y$
+
+" More ergonomic movements to line extremes
 noremap gh ^
 noremap gl $
 
