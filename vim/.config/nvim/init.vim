@@ -13,6 +13,8 @@ unlet autoload_plug_path
 call plug#begin('~/.config/nvim/plugins')
 Plug 'tpope/vim-commentary'    " Comment lines with gc
 Plug 'tpope/vim-sleuth'        " Set indentation settings automatically
+
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 if plug_install
@@ -21,6 +23,7 @@ endif
 unlet plug_install
 
 " Plugin Settings
+let g:ctrlp_map = '<Leader>f'
 
 " Settings
 set shiftround " Snap to indentation multiples when indenting
@@ -86,3 +89,7 @@ noremap gl $
 nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
 xmap <C-s> <C-c><C-s>
 imap <C-s> <C-c><C-s>
+
+" Leader mappings
+let g:mapleader="\<Space>"
+let g:maplocalleader="\<Space>"
