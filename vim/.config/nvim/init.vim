@@ -57,3 +57,27 @@ function! TrimWhitespace()
 endfunction
 
 command! TrimWhitespace call TrimWhitespace()
+
+" Change Vim
+
+" Create macros with m
+"
+" Macros deserve an even better place than q, they are so important that the
+" lower case m should be for macro, not marker.
+nnoremap m q
+
+" Create markers with Q
+"
+" I use them far less than macros, and it gives them a slightly less prominent
+" but still decent mnemonic 'quote' since you jump to them with ` and '.
+nnoremap Q m
+
+" Quit with q
+"
+" Some windows already work like this, but it's very confusing which ones they
+" are. Quitting is common and deserves this unambiguous lower-case key.
+nnoremap <silent> q :q<CR>
+
+" More natural movements to line extremes
+noremap gh ^
+noremap gl $
