@@ -11,7 +11,7 @@ endif
 unlet autoload_plug_path
 
 call plug#begin('~/.config/nvim/plugins')
-" Plugins
+Plug 'tpope/vim-commentary'    " Comment lines with gc
 call plug#end()
 
 if plug_install
