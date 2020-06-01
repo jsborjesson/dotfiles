@@ -58,7 +58,7 @@ endfunction
 
 command! TrimWhitespace call TrimWhitespace()
 
-" Change Vim
+" Mappings
 
 " Create macros with m
 "
@@ -81,3 +81,8 @@ nnoremap <silent> q :q<CR>
 " More natural movements to line extremes
 noremap gh ^
 noremap gl $
+
+" Save and trim whitespace with C-s
+nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
+xmap <C-s> <C-c><C-s>
+imap <C-s> <C-c><C-s>
