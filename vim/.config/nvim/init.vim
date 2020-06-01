@@ -104,3 +104,5 @@ imap <C-s> <C-c><C-s>
 " Leader mappings
 let g:mapleader="\<Space>"
 let g:maplocalleader="\<Space>"
+
+nnoremap <Leader>r :source $MYVIMRC<CR>
