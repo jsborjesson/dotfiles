@@ -96,13 +96,33 @@ nnoremap Y y$
 noremap gh ^
 noremap gl $
 
+" Make J and gJ take a motion, and act on current line when doubled.
+"
+" To join a paragraph, normally you first have to select it by doing vipJ,
+" this makes J take a motion so you can do Jip, and you can still get the old
+" behaviour by doing JJ and gJJ, this is more consistent with other Vim commands.
+nnoremap <silent> J :set operatorfunc=JoinOperator<CR>g@
+nnoremap <silent> gJ :set operatorfunc=GJoinOperator<CR>g@
+nnoremap JJ J
+nnoremap gJJ gJ
+
+function! JoinOperator(submode)
+    '[,']join
+endfunction
+
+function! GJoinOperator(submode)
+    '[,']join!
+endfunction
+
 " Save and trim whitespace with C-s
 nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
 xmap <C-s> <C-c><C-s>
 imap <C-s> <C-c><C-s>
+
 
 " Leader mappings
 let g:mapleader="\<Space>"
 let g:maplocalleader="\<Space>"
 
 nnoremap <Leader>r :source $MYVIMRC<CR>
+nnoremap <Leader>l :nohlsearch<CR>
