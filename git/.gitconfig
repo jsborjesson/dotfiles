@@ -10,14 +10,15 @@
 	a   = add --all
 	b   = branch
 	cl  = clone
+	cm  = commit -m
 	co  = checkout
+	cv  = commit -v
 	d   = diff
 	ds  = diff --staged
 	l   = log --oneline --decorate -15
 	lo  = log --oneline --decorate
 	s   = status --short
 	st  = status
-
 
 	# Personal shortcuts
 	lod = log --pretty='format:%C(yellow)%h %C(green)%<(18)%an %C(blue bold)%<(22)%ar   %Creset%s'
