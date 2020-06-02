@@ -61,3 +61,7 @@ let g:maplocalleader="\<Space>"
 
 nnoremap <Leader>r :source $MYVIMRC<CR>
 nnoremap <Leader>l :nohlsearch<CR>
+
+
+" Terminal mappings
+tnoremap <Esc> <C-\><C-n>
