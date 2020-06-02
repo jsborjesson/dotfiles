@@ -16,3 +16,4 @@ alias l='ls -CF'
 # One letter commands for the most common programs
 alias v='vim'
 alias g='git'
+alias t='tmux'
