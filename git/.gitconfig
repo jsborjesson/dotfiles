@@ -2,9 +2,6 @@
 	name  = Jimmy Börjesson
 	email = alcesleo@gmail.com
 
-[github]
-	user = alcesleo
-
 [alias]
 	# Canonical shortcuts
 	a   = add --all
@@ -21,31 +18,19 @@
 	st  = status
 
 	# Personal shortcuts
-	lod = log --pretty='format:%C(yellow)%h %C(green)%<(18)%an %C(blue bold)%<(22)%ar   %Creset%s'
-	tfo = !git reset . && git checkout -- . && git clean -fd
+	log-pretty = log --pretty='format:%C(yellow)%h %C(green)%<(18)%an %C(blue bold)%<(22)%ar   %Creset%s'
 
 	# New git commands
 	amend                = commit --amend
-	changed-files        = show --pretty="format:" --name-only
 	context              = blame
 	fix                  = commit --amend --no-edit
 	force                = push --force-with-lease
-	forget               = update-index --assume-unchanged
-	forgotten            = !git ls-files -v | grep "^h" | awk '{ print $2 }'
-	pulled               = log -p --reverse --no-merges --stat @{1}..
 	pure                 = pull --rebase --autostash
-	remember             = "!f() { git update-index --no-assume-unchanged ${@:-$(git forgotten | xargs)}; }; f"
-	resolve-conflicts    = !git conflicts | xargs -o $EDITOR '+/<<<<<<<'
 	root                 = rev-parse --show-toplevel
-	set-date             = "!f() { GIT_COMMITTER_DATE=\"$1\" git commit --date=\"$1\" --amend --reuse-message HEAD; }; f"
 	sha                  = "!f() { git rev-parse --short ${1:-HEAD}; }; f"
-	show-files           = "!f() { git diff-tree --no-commit-id --name-only -r ${1:-HEAD}; }; f"
-	status-files         = !git status --short | awk '{ print $2 }'
 	tags                 = tag -n --sort='-version:refname'
 	todo                 = grep --line-number -E "(TODO|FIXME).*"
 	tree                 = log --graph --oneline --decorate --all
-	uncommit             = reset --soft HEAD~
-	unstage              = reset --
 	update-submodules    = submodule update --init --recursive
 
 [core]
@@ -53,13 +38,9 @@
 
 [color "diff"]
 	meta = yellow
-	whitespace = reverse
 
 [fetch]
 	prune = true
-
-[push]
-	default = current
 
 [diff]
 	tool = vimdiff
