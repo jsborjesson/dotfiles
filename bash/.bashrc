@@ -5,6 +5,6 @@ elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-source $HOME/.config/bash/aliases.sh
-source $HOME/.config/bash/environment.sh
-source $HOME/.config/bash/prompt.sh
+source $HOME/.config/bash/aliases.bash
+source $HOME/.config/bash/environment.bash
+source $HOME/.config/bash/prompt.bash
