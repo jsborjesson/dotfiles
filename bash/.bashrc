@@ -6,3 +6,4 @@ elif [ -f /etc/bash_completion ]; then
 fi
 
 source $HOME/.config/bash/prompt.sh
+source $HOME/.config/bash/aliases.sh
