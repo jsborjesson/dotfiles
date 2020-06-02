@@ -1,3 +1,6 @@
+# Quickly reload Bash configuration
+alias src='source ~/.bashrc'
+
 # Enable coloring of common commands
 #
 # Extracted from Ubuntu's .bashrc
