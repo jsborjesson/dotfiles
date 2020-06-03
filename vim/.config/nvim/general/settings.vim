@@ -6,6 +6,10 @@ set nowrap
 set splitright
 set splitbelow
 
+" Default indentation
+set expandtab    " Use spaces
+set shiftwidth=4 " Use 4 spaces
+set tabstop=8    " Display tabs as 8 spaces
 
 set ignorecase " Case insensitive search
 set smartcase  " When an upper case character is typed, make it strict
