@@ -16,7 +16,7 @@ set smartcase  " When an upper case character is typed, make it strict
 
 " Be totally case insensitive in command mode though.
 "
-" Lets you type :plug<Tab>i<Tab> to get :PlugInstall.
+" Lets you type :pl<Tab>i<Tab> to get :PlugInstall.
 " This would otherwise insist on you capitalizing the I yourself since the P
 " would be capitalized and turn the case insensitivity off.
 augroup dynamic_smartcase
