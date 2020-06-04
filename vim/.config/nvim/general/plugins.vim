@@ -14,6 +14,7 @@ Plug 'tpope/vim-commentary'    " Comment lines with gc
 Plug 'tpope/vim-sleuth'        " Set indentation settings automatically
 
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 if plug_install

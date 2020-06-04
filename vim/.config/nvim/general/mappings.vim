@@ -81,6 +81,8 @@ nnoremap <Leader>w <C-w>
 nnoremap <Leader>tv :vsplit term://bash<CR>i
 nnoremap <Leader>ts :split term://bash<CR>i
 
+nnoremap <Leader>d :NERDTreeToggle<CR>
+
 
 " Terminal mappings
 tnoremap <Esc> <C-\><C-n>
