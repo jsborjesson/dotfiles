@@ -6,3 +6,4 @@ source $HOME/.config/nvim/general/mappings.vim
 
 " Plugin Settings
 source $HOME/.config/nvim/plugin-settings/ctrlp.vim
+source $HOME/.config/nvim/plugin-settings/fugitive.vim

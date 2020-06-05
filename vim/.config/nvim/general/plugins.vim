@@ -19,6 +19,7 @@ unlet autoload_plug_path
 call plug#begin('~/.config/nvim/plugins')
 
 Plug 'tpope/vim-commentary'    " Comment lines with gc
+Plug 'tpope/vim-fugitive'      " Git integration
 Plug 'tpope/vim-sleuth'        " Set indentation settings automatically
 Plug 'tpope/vim-surround'      " Motions to change brackets and quotes
 
