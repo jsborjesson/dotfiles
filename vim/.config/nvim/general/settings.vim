@@ -25,12 +25,6 @@ augroup dynamic_smartcase
     autocmd CmdLineLeave : set smartcase
 augroup END
 
-" Make tab characters stand out
-set list
-set listchars=tab:>-
-highlight Whitespace guifg=darkgray ctermfg=darkgray
-
-
 " :terminal settings
 augroup terminal
     autocmd!
