@@ -84,3 +84,25 @@ nnoremap <Leader>ts :split term://bash<CR>i
 " Terminal mappings
 tnoremap <Esc> <C-\><C-n>
 nnoremap <Leader>tt <C-w><C-w>i<C-p><CR><C-\><C-n><C-w><C-w>
+
+" :Search and :Replace
+function! s:Search(search)
+    " Save the search globally for the Replace command
+    let g:last_search = a:search
+
+    " Use vim-fugitive to search respecting .gitignore
+    execute "Ggrep! " . a:search
+
+    " Open the quickfix window and highlight the matches
+    copen
+    execute "match Search /" . a:search . "/"
+endfunction
+command! -nargs=1 Search call s:Search(<f-args>)
+
+function! s:Replace(replacement)
+    execute "cfdo %substitute/" . g:last_search . "/" . a:replacement . "/gec | update"
+endfunction
+command! -nargs=1 Replace call s:Replace(<f-args>)
+
+nnoremap <Leader>s :Search<Space>
+nnoremap <Leader>S :Replace<Space>
