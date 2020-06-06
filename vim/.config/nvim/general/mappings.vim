@@ -86,3 +86,4 @@ nnoremap <Leader>d :NERDTreeToggle<CR>
 
 " Terminal mappings
 tnoremap <Esc> <C-\><C-n>
+nnoremap <Leader>tt <C-w><C-w>i<C-p><CR><C-\><C-n><C-w><C-w>
