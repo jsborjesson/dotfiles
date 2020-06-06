@@ -28,4 +28,5 @@ Plug 'christoomey/vim-sort-motion'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'preservim/nerdtree'
 
+Plug 'joshdick/onedark.vim'
 call plug#end()

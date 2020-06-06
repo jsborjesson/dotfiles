@@ -1,3 +1,5 @@
+colorscheme onedark
+
 " No matter the theme, diffs should always be red and green
 highlight diffAdded ctermfg=green
 highlight diffRemoved ctermfg=red
