@@ -19,6 +19,7 @@ unlet autoload_plug_path
 call plug#begin('~/.config/nvim/plugins')
 
 Plug 'tpope/vim-commentary'    " Comment lines with gc
+Plug 'tpope/vim-eunuch'        " :Rename, :Move, etc
 Plug 'tpope/vim-fugitive'      " Git integration
 Plug 'tpope/vim-rsi'           " Readline key-mappings for insert and command mode
 Plug 'tpope/vim-sleuth'        " Set indentation settings automatically
