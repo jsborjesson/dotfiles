@@ -29,4 +29,5 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'preservim/nerdtree'
 
 Plug 'joshdick/onedark.vim'
+Plug 'mhinz/vim-signify'
 call plug#end()
