@@ -78,12 +78,12 @@ nnoremap <Leader>r :source $MYVIMRC<CR>
 nnoremap <Leader>l :nohlsearch<CR>
 nnoremap <Leader>w <C-w>
 
+" Terminal mappings
 nnoremap <Leader>tv :vsplit term://bash<CR>i
 nnoremap <Leader>ts :split term://bash<CR>i
 
-" Terminal mappings
 tnoremap <Esc> <C-\><C-n>
-nnoremap <Leader>tt <C-w><C-w>i<C-p><CR><C-\><C-n><C-w><C-w>
+nnoremap <Leader>tt <C-w><C-w>i<C-l><C-p><CR><C-\><C-n><C-w><C-w>
 
 " :Search and :Replace
 function! s:Search(search)
