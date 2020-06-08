@@ -30,6 +30,7 @@ Plug 'christoomey/vim-sort-motion'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'preservim/nerdtree'
 Plug 'junegunn/vim-easy-align'
+Plug 'tommcdo/vim-fubitive'    " Enables :Gbrowse from vim-fugitive for BitBucket
 
 Plug 'joshdick/onedark.vim'
 Plug 'mhinz/vim-signify'
