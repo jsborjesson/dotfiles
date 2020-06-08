@@ -28,6 +28,7 @@ Plug 'tpope/vim-surround'      " Motions to change brackets and quotes
 Plug 'christoomey/vim-sort-motion'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'preservim/nerdtree'
+Plug 'junegunn/vim-easy-align'
 
 Plug 'joshdick/onedark.vim'
 Plug 'mhinz/vim-signify'
