@@ -27,6 +27,9 @@ nnoremap U <C-r>
 " Yank entire line is still available with yy
 nnoremap Y y$
 
+" Repeat command over multiple lines in visual mode
+xnoremap <silent> . :normal .<CR>
+
 " More ergonomic movements to line extremes
 noremap gh ^
 noremap gl $
