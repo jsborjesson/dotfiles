@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-stow -vt ~ bash git vim
+stow -vt ~ bash git vim tmux
 ```
 
 ## Troubleshooting
