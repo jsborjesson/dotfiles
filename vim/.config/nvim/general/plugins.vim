@@ -25,6 +25,7 @@ Plug 'tpope/vim-rhubarb'       " Enables :Gbrowse from vim-fugitive for GitHub
 Plug 'tpope/vim-rsi'           " Readline key-mappings for insert and command mode
 Plug 'tpope/vim-sleuth'        " Set indentation settings automatically
 Plug 'tpope/vim-surround'      " Motions to change brackets and quotes
+Plug 'tpope/vim-unimpaired'    " Pairs of mappings
 
 Plug 'christoomey/vim-sort-motion'
 Plug 'ctrlpvim/ctrlp.vim'
