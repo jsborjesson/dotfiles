@@ -20,3 +20,8 @@ alias l='ls -CF'
 alias v='vim'
 alias g='git'
 alias t='tmux'
+
+# Enable autocomplete for the g alias if available
+type __git_complete >/dev/null 2>&1 && {
+    __git_complete g __git_main
+}
