@@ -81,6 +81,12 @@ nnoremap <Leader>r :source $MYVIMRC<CR>
 nnoremap <Leader>l :nohlsearch<CR>
 nnoremap <Leader>w <C-w>
 
+" Don't jump to the next selection with *#
+nmap <Leader>* *``
+nmap <Leader># #``
+xmap <Leader>* *``
+xmap <Leader># #``
+
 " Terminal mappings
 nnoremap <Leader>tv :vsplit term://bash<CR>i
 nnoremap <Leader>ts :split term://bash<CR>i
