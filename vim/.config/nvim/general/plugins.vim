@@ -33,6 +33,7 @@ Plug 'preservim/nerdtree'
 Plug 'junegunn/vim-easy-align'
 Plug 'tommcdo/vim-fubitive'    " Enables :Gbrowse from vim-fugitive for BitBucket
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dhruvasagar/vim-table-mode'
 
 Plug 'joshdick/onedark.vim'
 Plug 'mhinz/vim-signify'
