@@ -57,6 +57,8 @@ nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
 xmap <C-s> <C-c><C-s>
 imap <C-s> <C-c><C-s>
 
+" Also clear highlights when clearing the screen
+nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 
 " Search for visual selection
 " https://vim.fandom.com/wiki/Search_for_visually_selected_text
@@ -78,7 +80,6 @@ let g:mapleader="\<Space>"
 let g:maplocalleader="\<Space>"
 
 nnoremap <Leader>r :source $MYVIMRC<CR>
-nnoremap <Leader>l :nohlsearch<CR>
 nnoremap <Leader>w <C-w>
 
 " Don't jump to the next selection with *#
@@ -88,10 +89,14 @@ xmap <Leader>* *``
 xmap <Leader># #``
 
 " Terminal mappings
+
+" Make escape work as normal in terminal mode
+tnoremap <Esc> <C-\><C-n>
+
 nnoremap <Leader>tv :vsplit term://bash<CR>i
 nnoremap <Leader>ts :split term://bash<CR>i
 
-tnoremap <Esc> <C-\><C-n>
+" Rerun the last terminal command
 nnoremap <Leader>tt <C-w><C-w>i<C-l><C-p><CR><C-\><C-n><C-w><C-w>
 
 " :Search and :Replace
