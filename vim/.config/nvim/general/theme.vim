@@ -5,7 +5,10 @@ highlight diffAdded ctermfg=green
 highlight diffRemoved ctermfg=red
 highlight diffFile ctermfg=yellow
 
-set statusline=%f\ %y%=%l:%c
+" More informative statusline
+set statusline=%f\ %y
+set statusline+=\ %{&spell==0?'':'('.&spelllang.')'}
+set statusline+=%=%l:%c
 
 " Make whitespace characters stand out
 set list

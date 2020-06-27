@@ -13,7 +13,8 @@ set tabstop=8    " Display tabs as 8 spaces
 set shiftround   " Snap to multiples of shiftwidth when indenting
 
 " Spell checking
-set spellfile=~/.config/nvim/spell/en.utf-8.add
+set spelllang=en,sv
+set spellfile=~/.config/nvim/spell/en.utf-8.add,~/.config/nvim/spell/sv.utf-8.add
 
 " Searching
 set ignorecase " Case insensitive search

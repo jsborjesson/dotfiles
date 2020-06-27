@@ -88,6 +88,14 @@ nmap <Leader># #``
 xmap <Leader>* *``
 xmap <Leader># #``
 
+" Spell mappings
+nnoremap <Leader>ll :set spell!<CR>
+
+function! FixLastSpellingError()
+  normal! mm[s1z=`m"
+endfunction
+nnoremap <leader>lf :call FixLastSpellingError()<cr>
+
 " Terminal mappings
 
 " Make escape work as normal in terminal mode
