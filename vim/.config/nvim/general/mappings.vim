@@ -74,7 +74,6 @@ vnoremap <silent> # :<C-U>
   \gVzv:call setreg('"', old_reg, old_regtype)<CR>
 
 
-
 " Leader mappings
 let g:mapleader="\<Space>"
 let g:maplocalleader="\<Space>"
@@ -88,8 +87,17 @@ nmap <Leader># #``
 xmap <Leader>* *``
 xmap <Leader># #``
 
+" Turn on and off line length warning
+nnoremap <Leader>8 :set colorcolumn=81<CR>
+nnoremap <Leader>9 :set colorcolumn=121<CR>
+nnoremap <Leader>0 :set colorcolumn=<CR>
+
 " Spell mappings
 nnoremap <Leader>ll :set spell!<CR>
+
+" Add lower cased word to dictionary
+nnoremap <Leader>zg guiwzgu
+nnoremap <Leader>2zg guiw2zgu
 
 function! FixLastSpellingError()
   normal! mm[s1z=`m"
