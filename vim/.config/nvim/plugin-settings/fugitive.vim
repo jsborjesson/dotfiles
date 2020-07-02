@@ -7,3 +7,6 @@ nnoremap <Leader>gs :Git<CR>
 
 nnoremap <Leader>gh :Gbrowse<CR>
 xnoremap <Leader>gh :Gbrowse<CR>
+
+" Quickly commit the current file in the wiki
+nnoremap <Leader>gw :Gwrite<CR>:Git commit -m "Update <C-R>=strftime('%F %T')<CR>"<CR>
