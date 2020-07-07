@@ -104,6 +104,12 @@ function! FixLastSpellingError()
 endfunction
 nnoremap <leader>lf :call FixLastSpellingError()<cr>
 
+" Wiki-mappings
+" Quickly commit the current file in the wiki
+nnoremap <Leader>nc :Gwrite<CR>:Git commit -m "Update <C-R>=strftime('%F %T')<CR>"<CR>
+" Quickly create a dated file in the current directory
+nnoremap <Leader>nf :edit %:h/<C-R>=strftime('%F_')<CR>.md<Left><Left><Left>
+
 " Terminal mappings
 
 " Make escape work as normal in terminal mode
