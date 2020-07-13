@@ -37,5 +37,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dhruvasagar/vim-table-mode'
 
 Plug 'joshdick/onedark.vim'
+Plug 'machakann/vim-highlightedyank'
 Plug 'mhinz/vim-signify'
 call plug#end()
