@@ -21,6 +21,7 @@ call plug#begin('~/.config/nvim/plugins')
 Plug 'tpope/vim-commentary'    " Comment lines with gc
 Plug 'tpope/vim-eunuch'        " :Rename, :Move, etc
 Plug 'tpope/vim-fugitive'      " Git integration
+Plug 'tpope/vim-repeat'        " Make . work with plugins
 Plug 'tpope/vim-rhubarb'       " Enables :Gbrowse from vim-fugitive for GitHub
 Plug 'tpope/vim-rsi'           " Readline key-mappings for insert and command mode
 Plug 'tpope/vim-sleuth'        " Set indentation settings automatically
