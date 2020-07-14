@@ -39,4 +39,5 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'joshdick/onedark.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'mhinz/vim-signify'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
