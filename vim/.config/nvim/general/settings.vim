@@ -17,8 +17,9 @@ set spelllang=en,sv
 set spellfile=~/.config/nvim/spell/en.utf-8.add,~/.config/nvim/spell/sv.utf-8.add
 
 " Searching
-set ignorecase " Case insensitive search
-set smartcase  " When an upper case character is typed, make it strict
+set ignorecase         " Case insensitive search
+set smartcase          " When an upper case character is typed, make it strict
+set inccommand=nosplit " Interactively show search-results when substituting
 
 " Be totally case insensitive in command mode though.
 "
