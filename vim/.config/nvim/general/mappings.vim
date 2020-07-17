@@ -119,7 +119,7 @@ nnoremap <Leader>tv :vsplit term://bash<CR>i
 nnoremap <Leader>ts :split term://bash<CR>i
 
 " Rerun the last terminal command
-nnoremap <Leader>tt <C-w><C-p>i<C-l><C-p><CR><C-\><C-n><C-w><C-p>
+nnoremap <Leader>tt <C-w><C-w>i<C-l><C-p><CR><C-\><C-n><C-w><C-w>
 
 " :Search and :Replace
 function! s:Search(search)
