@@ -34,6 +34,10 @@ xnoremap <silent> . :normal .<CR>
 noremap gh ^
 noremap gl $
 
+" More sensical line movements when navigating wrapped lines
+noremap j gj
+noremap k gk
+
 " Make J and gJ take a motion, and act on current line when doubled.
 "
 " To join a paragraph, normally you first have to select it by doing vipJ,
