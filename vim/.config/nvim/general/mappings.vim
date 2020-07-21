@@ -98,6 +98,10 @@ nmap <Leader># #``
 xmap <Leader>* *``
 xmap <Leader># #``
 
+" Manually change the indentation level
+nnoremap <Leader>2 :set shiftwidth=2<CR>
+nnoremap <Leader>4 :set shiftwidth=4<CR>
+
 " Turn on and off line length warning
 nnoremap <Leader>8 :set colorcolumn=81<CR>
 nnoremap <Leader>9 :set colorcolumn=121<CR>
