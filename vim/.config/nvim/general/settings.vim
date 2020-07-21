@@ -1,6 +1,7 @@
 set mouse=a
 set number
 set nowrap
+set sidescroll=1 " Scroll sideways more naturally
 
 " More natural splits
 set splitright
