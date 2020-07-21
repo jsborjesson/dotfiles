@@ -6,6 +6,9 @@ set nowrap
 set splitright
 set splitbelow
 
+" Allow switching buffers without saving
+set hidden
+
 " Default indentation
 set expandtab    " Use spaces
 set shiftwidth=4 " Use 4 spaces
