@@ -21,6 +21,10 @@ set ignorecase         " Case insensitive search
 set smartcase          " When an upper case character is typed, make it strict
 set inccommand=nosplit " Interactively show search-results when substituting
 
+" Persist undo history between sessions
+set undodir=~/.config/nvim/undo
+set undofile
+
 " Be totally case insensitive in command mode though.
 "
 " Lets you type :pl<Tab>i<Tab> to get :PlugInstall.
