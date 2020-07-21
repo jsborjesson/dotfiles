@@ -1,3 +1,7 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" General
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Create macros with m
 "
 " Macros deserve an even better place than q, they are so important that the
@@ -78,7 +82,10 @@ vnoremap <silent> # :<C-U>
   \gVzv:call setreg('"', old_reg, old_regtype)<CR>
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Leader mappings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 let g:mapleader="\<Space>"
 let g:maplocalleader="\<Space>"
 
@@ -108,13 +115,20 @@ function! FixLastSpellingError()
 endfunction
 nnoremap <leader>lf :call FixLastSpellingError()<cr>
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Wiki-mappings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Quickly commit the current file in the wiki
 nnoremap <Leader>nc :Gwrite<CR>:Git commit -m "Update <C-R>=strftime('%F %T')<CR>"<CR>
 " Quickly create a dated file in the current directory
 nnoremap <Leader>nf :edit %:h/<C-R>=strftime('%F_')<CR>.md<Left><Left><Left>
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Terminal mappings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Make escape work as normal in terminal mode
 tnoremap <Esc> <C-\><C-n>
@@ -125,7 +139,11 @@ nnoremap <Leader>ts :split term://bash<CR>i
 " Rerun the last terminal command
 nnoremap <Leader>tt <C-w><C-w>i<C-l><C-p><CR><C-\><C-n><C-w><C-w>
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " :Search and :Replace
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 function! s:Search(search)
     " Save the search globally for the Replace command
     let g:last_search = a:search
