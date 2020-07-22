@@ -141,7 +141,11 @@ nnoremap <Leader>tv :vsplit term://bash<CR>i
 nnoremap <Leader>ts :split term://bash<CR>i
 
 " Rerun the last terminal command
-nnoremap <Leader>tt <C-w><C-w>i<C-l><C-p><CR><C-\><C-n><C-w><C-w>
+"
+" Move to the terminal split, clear and rerun the last command, then return to
+" the last window.
+nnoremap <Leader>tt :execute bufwinnr("term://") 'wincmd w'<CR>
+            \i<C-l><C-p><CR><C-\><C-n><C-w><C-p>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
