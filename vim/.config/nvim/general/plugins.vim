@@ -18,6 +18,7 @@ unlet autoload_plug_path
 
 call plug#begin('~/.config/nvim/plugins')
 
+" Vim standard library
 Plug 'tpope/vim-commentary'    " Comment lines with gc
 Plug 'tpope/vim-eunuch'        " :Rename, :Move, etc
 Plug 'tpope/vim-fugitive'      " Git integration
@@ -28,14 +29,20 @@ Plug 'tpope/vim-sleuth'        " Set indentation settings automatically
 Plug 'tpope/vim-surround'      " Motions to change brackets and quotes
 Plug 'tpope/vim-unimpaired'    " Pairs of mappings
 
+" Add features
 Plug 'christoomey/vim-sort-motion'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'preservim/nerdtree'
-Plug 'junegunn/vim-easy-align'
-Plug 'tommcdo/vim-fubitive'    " Enables :Gbrowse from vim-fugitive for BitBucket
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'junegunn/vim-easy-align'
+Plug 'kana/vim-textobj-entire'
+Plug 'kana/vim-textobj-indent'
+Plug 'kana/vim-textobj-line'
+Plug 'kana/vim-textobj-user'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'preservim/nerdtree'
+Plug 'tommcdo/vim-fubitive'    " Enables :Gbrowse from vim-fugitive for BitBucket
 
+" Passive improvements
 Plug 'joshdick/onedark.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'mhinz/vim-signify'
