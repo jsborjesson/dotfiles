@@ -92,6 +92,12 @@ let g:maplocalleader="\<Space>"
 nnoremap <Leader>r :source $MYVIMRC<CR>
 nnoremap <Leader>w <C-w>
 
+" Ergonomically copy to system clipboard
+nnoremap <Leader>y "+y
+xnoremap <Leader>y "+y
+nnoremap <Leader>Y "+y$
+xnoremap <Leader>Y "+y$
+
 " Don't jump to the next selection with *#
 nmap <Leader>* *``
 nmap <Leader># #``
