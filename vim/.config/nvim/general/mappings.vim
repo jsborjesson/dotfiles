@@ -60,6 +60,12 @@ function! GJoinOperator(submode)
     '[,']join!
 endfunction
 
+" Resize splits using arrow keys
+nnoremap <Up> :resize -10<CR>
+nnoremap <Down> :resize +10<CR>
+nnoremap <Left> :vertical resize -10<CR>
+nnoremap <Right> :vertical resize +10<CR>
+
 " Save and trim whitespace with C-s
 nnoremap <C-s> :TrimWhitespace<CR>:write<CR>
 xmap <C-s> <C-c><C-s>
