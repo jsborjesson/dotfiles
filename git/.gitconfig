@@ -43,3 +43,5 @@
 
 [diff]
 	tool = vimdiff
+[push]
+	default = current
