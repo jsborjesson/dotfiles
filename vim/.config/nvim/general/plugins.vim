@@ -19,6 +19,7 @@ unlet autoload_plug_path
 call plug#begin('~/.config/nvim/plugins')
 
 " Vim standard library
+Plug 'tpope/vim-abolish'       " Case coercion
 Plug 'tpope/vim-commentary'    " Comment lines with gc
 Plug 'tpope/vim-eunuch'        " :Rename, :Move, etc
 Plug 'tpope/vim-fugitive'      " Git integration
