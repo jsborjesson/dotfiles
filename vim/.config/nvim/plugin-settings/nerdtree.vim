@@ -8,5 +8,5 @@ augroup nerdtree
 augroup END
 
 
-nnoremap <Leader>D :NERDTreeToggle<CR>
-nnoremap <Leader>d :NERDTreeFind<CR>
+nnoremap <Leader>G :NERDTreeToggle<CR>
+nnoremap <Leader>g :NERDTreeFind<CR>

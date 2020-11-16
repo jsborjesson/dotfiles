@@ -104,6 +104,18 @@ xnoremap <Leader>y "+y
 nnoremap <Leader>Y "+y$
 xnoremap <Leader>Y "+y$
 
+" Ergonomically paste to system clipboard
+nnoremap <Leader>p "+p
+xnoremap <Leader>p "+p
+nnoremap <Leader>P "+P
+xnoremap <Leader>P "+P
+
+" Ergonomically delete without copying
+nnoremap <Leader>d "_d
+xnoremap <Leader>d "_d
+nnoremap <Leader>D "_D
+xnoremap <Leader>D "_D
+
 " Don't jump to the next selection with *#
 nmap <Leader>* *``
 nmap <Leader># #``
