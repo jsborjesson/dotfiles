@@ -45,3 +45,5 @@
 	tool = vimdiff
 [push]
 	default = current
+[pull]
+	ff = only
