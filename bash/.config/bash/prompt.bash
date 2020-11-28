@@ -12,7 +12,7 @@ function background_jobs() {
    fi
 }
 
-# https://gist.github.com/alcesleo/e8628664df11b3218321
+# https://gist.github.com/jsborjesson/e8628664df11b3218321
 Color_Off='\[\e[0m\]'
 IBlue='\[\e[0;94m\]'
 IGreen='\[\e[0;92m\]'
