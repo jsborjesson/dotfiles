@@ -21,6 +21,12 @@ alias v='vim'
 alias g='git'
 alias t='tmux'
 
+# Shortcuts for moving up the tree
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
 # Enable autocomplete for the g alias if available
 type __git_complete >/dev/null 2>&1 && {
     __git_complete g __git_main
