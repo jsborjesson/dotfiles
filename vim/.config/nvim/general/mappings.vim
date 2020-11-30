@@ -161,8 +161,8 @@ nnoremap <Leader>nf :edit %:h/<C-R>=strftime('%F_')<CR>.md<Left><Left><Left>
 " Make escape work as normal in terminal mode
 tnoremap <Esc> <C-\><C-n>
 
-nnoremap <Leader>tv :vsplit term://bash<CR>i
-nnoremap <Leader>ts :split term://bash<CR>i
+nnoremap <Leader>tv :vsplit term://bash<CR>
+nnoremap <Leader>ts :split term://bash<CR>
 
 " Rerun the last terminal command
 "
