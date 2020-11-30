@@ -134,10 +134,6 @@ nnoremap <Leader>0 :set colorcolumn=<CR>
 " Spell mappings
 nnoremap <Leader>ll :set spell!<CR>
 
-" Add lower cased word to dictionary
-nnoremap <Leader>zg guiwzgu
-nnoremap <Leader>2zg guiw2zgu
-
 function! FixLastSpellingError()
   normal! mm[s1z=`m"
 endfunction
