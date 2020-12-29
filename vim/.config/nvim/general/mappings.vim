@@ -104,7 +104,7 @@ xnoremap <Leader>y "+y
 nnoremap <Leader>Y "+y$
 xnoremap <Leader>Y "+y$
 
-" Ergonomically paste to system clipboard
+" Ergonomically paste from system clipboard
 nnoremap <Leader>p "+p
 xnoremap <Leader>p "+p
 nnoremap <Leader>P "+P
