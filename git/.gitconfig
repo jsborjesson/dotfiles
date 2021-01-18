@@ -6,6 +6,7 @@
 	# Canonical shortcuts
 	a   = add --all
 	b   = branch
+	cb  = checkout -b
 	cl  = clone
 	cm  = commit -m
 	co  = checkout
