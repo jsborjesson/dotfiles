@@ -132,7 +132,10 @@ nnoremap <Leader>9 :set colorcolumn=121<CR>
 nnoremap <Leader>0 :set colorcolumn=<CR>
 
 " Spell mappings
-nnoremap <Leader>ll :set spell!<CR>
+nnoremap <Leader>zz :set spell!<CR>
+
+nnoremap <Leader>z1 guiwzgu
+nnoremap <Leader>z2 guiw2zgu
 
 function! FixLastSpellingError()
   normal! mm[s1z=`m"
