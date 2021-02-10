@@ -38,8 +38,10 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use <C-l> for trigger snippet expand.
-imap <C-l> <Plug>(coc-snippets-expand)
+" imap <C-l> <Plug>(coc-snippets-expand)
 
 " Ignore virtualenvs when loading host Python
 " https://github.com/neovim/neovim/issues/1887
 let g:python3_host_prog = '/usr/bin/python3'
+
+let g:coc_global_extensions = ['coc-tsserver', 'coc-vetur']
