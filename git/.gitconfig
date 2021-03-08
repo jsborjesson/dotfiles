@@ -26,6 +26,8 @@
 	context              = blame
 	fix                  = commit --amend --no-edit
 	force                = push --force-with-lease
+	merged               = !git branch --merged | grep -Ev 'master|develop|production|staging|stable'
+	merged-delete        = !git merged | xargs git branch -d
 	pure                 = pull --rebase --autostash
 	root                 = rev-parse --show-toplevel
 	sha                  = "!f() { git rev-parse --short ${1:-HEAD}; }; f"
