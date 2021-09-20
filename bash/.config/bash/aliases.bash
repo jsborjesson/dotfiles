@@ -16,10 +16,12 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# One letter commands for the most common programs
+# Shortcuts for the most common programs
 alias v='vim'
 alias g='git'
 alias t='tmux'
+alias d='docker'
+alias dc='docker-compose'
 
 # Shortcuts for moving up the tree
 alias ..='cd ..'
