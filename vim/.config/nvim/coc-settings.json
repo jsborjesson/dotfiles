@@ -1,3 +1,8 @@
 {
-    "python.jediEnabled": false
+    "python.jediEnabled": false,
+    "solargraph.transport": "external",
+    "solargraph.externalServer": {
+        "host": "localhost",
+        "port": 7658
+    }
 }
