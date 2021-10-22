@@ -74,6 +74,10 @@ imap <C-s> <C-c><C-s>
 " Also clear highlights when clearing the screen
 nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 
+" Count matches of last search
+nnoremap <Leader>7 :%s///ng<CR>
+
+
 " Search for visual selection
 " https://vim.fandom.com/wiki/Search_for_visually_selected_text
 vnoremap <silent> * :<C-U>
@@ -87,9 +91,6 @@ vnoremap <silent> # :<C-U>
   \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
   \gVzv:call setreg('"', old_reg, old_regtype)<CR>
 
-
-" Count matches of last search
-nnoremap <Leader>7 :%s///ng<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Leader mappings
