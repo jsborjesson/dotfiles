@@ -173,29 +173,3 @@ nnoremap <Leader>ts :split term://bash<CR>
 " the last window.
 nnoremap <Leader>tt :execute bufwinnr("term://") 'wincmd w'<CR>
             \i<C-l><C-p><CR><C-\><C-n><C-w><C-p>
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" :Search and :Replace
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-function! s:Search(search)
-    " Save the search globally for the Replace command
-    let g:last_search = a:search
-
-    " Use vim-fugitive to search respecting .gitignore
-    execute "Ggrep! " . a:search
-
-    " Open the quickfix window and highlight the matches
-    copen
-    execute "match Search /" . a:search . "/"
-endfunction
-command! -nargs=1 Search call s:Search(<f-args>)
-
-function! s:Replace(replacement)
-    execute "cfdo %substitute/" . g:last_search . "/" . a:replacement . "/gec | update"
-endfunction
-command! -nargs=1 Replace call s:Replace(<f-args>)
-
-nnoremap <Leader>s :Search<Space>
-nnoremap <Leader>S :Replace<Space>

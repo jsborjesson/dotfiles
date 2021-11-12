@@ -32,8 +32,9 @@ Plug 'tpope/vim-unimpaired'    " Pairs of mappings
 
 " Add features
 Plug 'christoomey/vim-sort-motion'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-indent'

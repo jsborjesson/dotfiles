@@ -7,8 +7,8 @@ source $HOME/.config/nvim/general/theme.vim
 
 " Plugin Settings
 source $HOME/.config/nvim/plugin-settings/coc.vim
-source $HOME/.config/nvim/plugin-settings/ctrlp.vim
 source $HOME/.config/nvim/plugin-settings/easy-align.vim
 source $HOME/.config/nvim/plugin-settings/fugitive.vim
+source $HOME/.config/nvim/plugin-settings/fzf.vim
 source $HOME/.config/nvim/plugin-settings/nerdtree.vim
 source $HOME/.config/nvim/plugin-settings/table-mode.vim
