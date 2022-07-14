@@ -31,6 +31,7 @@
 	pure                 = pull --rebase --autostash
 	root                 = rev-parse --show-toplevel
 	sha                  = "!f() { git rev-parse --short ${1:-HEAD}; }; f"
+	sup                  = submodule update --init --recursive
 	tags                 = tag -n --sort='-version:refname'
 	todo                 = grep --line-number -E "(TODO|FIXME).*"
 	tree                 = log --graph --oneline --decorate --all
