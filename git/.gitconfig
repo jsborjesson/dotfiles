@@ -23,6 +23,7 @@
 	# New git commands
 	amend                = commit --amend
 	context              = blame
+	ff                   = merge --ff-only
 	fix                  = commit --amend --no-edit
 	force                = push --force-with-lease
 	merged               = !git branch --merged | grep -Ev 'master|develop|production|staging|stable'
