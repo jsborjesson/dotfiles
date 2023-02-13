@@ -23,7 +23,8 @@ alias t='tmux'
 alias d='docker'
 alias dc='docker-compose'
 
-# Shortcuts for moving up the tree
+# Shortcuts for moving folders
+alias -- -='cd -'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
