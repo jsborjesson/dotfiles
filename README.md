@@ -3,6 +3,8 @@
 ## Installation
 
 ```
+sudo apt install stow
+mv ~/.bashrc ~/.bashrc.bak
 stow -vt ~ bash git vim tmux
 ```
 
