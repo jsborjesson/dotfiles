@@ -2,26 +2,24 @@
 
 ## Installation
 
-```
+```bash
+# Set up an SSH key
+ssh-keygen -t ed25519 -C "email@example.com"
+cat ~/.ssh/id_ed25519.pub
+
+# Clone the repo
+git clone git@github.com:jsborjesson/dotfiles.git
+
+# To not accidentally commit with the wrong email for work stuff, email is set per repo
+git config user.email "email@example.com"
+
+# Ubuntu
 sudo apt install stow
+
+# Fedora
+sudo dnf install stow xclip
+echo ". /usr/share/git-core/contrib/completion/git-prompt.sh" >> ~/.bashrc.local
+
 mv ~/.bashrc ~/.bashrc.bak
 stow -vt ~ bash git vim tmux
 ```
-
-## Troubleshooting
-
-    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
-    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    Permissions 0777 for '/root/.ssh/id_rsa' are too open.
-    It is required that your private key files are NOT accessible by others.
-    This private key will be ignored.
-    Load key "/root/.ssh/id_rsa": bad permissions
-    git@github.com: Permission denied (publickey).
-    fatal: Could not read from remote repository.
-
-    Please make sure you have the correct access rights
-    and the repository exists.
-
-This often happens after copying the key or when running on Windows which doesn't respect the Linux file
-permissions. Set more restricted permissions to the key: `chmod 600 /root/.ssh/id_rsa`.
