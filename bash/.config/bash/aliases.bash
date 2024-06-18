@@ -31,7 +31,7 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 # Quickly create and move into folder
-mkd() { mkdir "$1" && cd "$1"; }
+mkd() { mkdir -p "$1" && cd "$1"; }
 
 # Shortcuts for getting columns
 alias col-1="awk '{print \$NF}'"
