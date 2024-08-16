@@ -48,6 +48,7 @@
 
 [diff]
 	tool = vimdiff
+	wsErrorHighlight = all
 [push]
 	default = current
 [pull]
