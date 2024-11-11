@@ -51,8 +51,5 @@
 	wsErrorHighlight = all
 [push]
 	default = current
-	autoSetupRemote = true
 [pull]
 	ff = only
-[branch]
-	autoSetupMerge = always
