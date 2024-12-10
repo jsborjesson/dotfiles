@@ -49,7 +49,7 @@
 [diff]
 	tool = vimdiff
 	wsErrorHighlight = all
-[push]
-	default = current
 [pull]
 	ff = only
+[push]
+	autoSetupRemote = true
