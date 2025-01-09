@@ -11,3 +11,6 @@ source $HOME/.config/bash/prompt.bash
 if [ -f $HOME/.bashrc.local ]; then
     source $HOME/.bashrc.local
 fi
+
+# If running interactively and not already in Tmux, start it
+[[ $TERM_PROGRAM != 'vscode' ]] && [[ $- == *i* ]] && [[ -z "$TMUX" ]] && exec tmux
