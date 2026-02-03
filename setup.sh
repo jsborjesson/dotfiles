@@ -14,7 +14,7 @@ if [ -f ~/.bashrc ]; then
    mv ~/.bashrc ~/.bashrc.bak
 fi
 
-stow -vt ~ bash git vim tmux 
+stow -vt ~ bash git nvim vim tmux 
 
 chsh -s /bin/bash $USER
 

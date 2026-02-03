@@ -1,5 +1,5 @@
-vim/.config/nvim/.netrwhist
-vim/.config/nvim/autoload
-vim/.config/nvim/plugins
-vim/.config/nvim/spell/*
-vim/.config/nvim/undo/*
+nvim/.config/nvim/.netrwhist
+nvim/.config/nvim/autoload
+nvim/.config/nvim/plugins
+nvim/.config/nvim/spell/*
+nvim/.config/nvim/undo/*
