@@ -6,7 +6,8 @@ function exit_status() {
 }
 
 function background_jobs() {
-   local j="$(jobs -s |  awk '{ print $3 }' | paste -sd ',')"
+   local j="$(jobs -s | awk '{print $3}' | tr '\n' ',' | sed 's/,$//')"
+
    if [ $j ]; then
       echo " {$j}"
    fi
