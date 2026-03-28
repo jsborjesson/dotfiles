@@ -13,6 +13,6 @@ if [ -f $HOME/.bashrc.local ]; then
 fi
 
 # If running interactively and not already in Tmux, start it
-if [[ $TERM_PROGRAM != 'vscode' ]] && [[ $- == *i* ]] && [[ -z "$TMUX" ]]; then
+if [[ $TERM_PROGRAM != 'vscode' ]] && [[ $- == *i* ]] && [[ -z "$TMUX" ]] && command -v tmux &>/dev/null; then
     exec tmux
 fi
