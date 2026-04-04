@@ -21,7 +21,9 @@ alias v='vim'
 alias g='git'
 alias t='tmux'
 alias d='docker'
-alias dc='docker-compose'
+alias dc='docker compose'
+alias p='podman'
+alias pc='podman compose'
 
 # Shortcuts for moving folders
 alias -- -='cd -'
