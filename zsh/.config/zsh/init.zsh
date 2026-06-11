@@ -4,6 +4,9 @@ autoload -Uz compinit && compinit
 # Use git completion for the g alias
 compdef g=git
 
+# Case-insensitive tab completion (lowercase matches uppercase too)
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
 # Enable git prompt support
 autoload -Uz vcs_info
 precmd_functions+=(vcs_info)
