@@ -5,12 +5,9 @@ source $HOME/.config/zsh/prompt.zsh
 
 
 # Local gitignored settings
+#
+# When an installation of a program prompts you to append something
+# to the .zshrc, you can opt to append .local to the command.
 if [ -f $HOME/.zshrc.local ]; then
     source $HOME/.zshrc.local
 fi
-# bun completions
-[ -s "/Users/borjim/.bun/_bun" ] && source "/Users/borjim/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
