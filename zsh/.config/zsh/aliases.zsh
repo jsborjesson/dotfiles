@@ -1,3 +1,4 @@
+zsp aliases-start
 # Quickly reload Zsh configuration
 alias src='source ~/.zshrc'
 

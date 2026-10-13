@@ -1,3 +1,4 @@
+zsp prompt-start
 # Allow parameter expansion / substitution in the prompt
 setopt PROMPT_SUBST
 
@@ -11,3 +12,9 @@ setopt PROMPT_SUBST
 #   %(?.. [%?])  exit status, only shown when non-zero
 #   %(1j. {%j}.)  number of background jobs, only shown when >= 1
 PROMPT=$'\n''%F{11}%T %F{10}%~ %F{12}${vcs_info_msg_0_}%F{9}%(?.. [%?])%F{8}%(1j. {%j}.)'$'\n''%F{15}$%f '
+
+# Profiler: log the moment the very first prompt is about to render (captures
+# vcs_info / first-prompt cost), then unhook so it only fires once.
+autoload -Uz add-zsh-hook
+_zsp_first_prompt() { zsp first-prompt; add-zsh-hook -d precmd _zsp_first_prompt }
+add-zsh-hook precmd _zsp_first_prompt
